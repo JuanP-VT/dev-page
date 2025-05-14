@@ -6,5 +6,10 @@
     "projects": "proyectos",
     "experience": "experiencia",
     "contact": "contacto"
+  },
+  "lang": {
+    "language": "Idioma",
+    "spanish": "español",
+    "english": "inglés"
   }
 }
