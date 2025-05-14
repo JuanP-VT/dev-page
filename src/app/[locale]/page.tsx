@@ -1,9 +1,11 @@
 'use client';
-import React from 'react';
-import { useTranslations } from 'next-intl';
+import NavBar from '@/components/composed/NavBar';
+import { ThemeChanger } from '@/components/ui/buttons/ThemeChanger ';
 
 export default function Page() {
-  const t = useTranslations('navbar');
-
-  return <div>{t('projects')}</div>;
+  return (
+    <div className="px-4 py-8">
+      <NavBar />
+    </div>
+  );
 }
