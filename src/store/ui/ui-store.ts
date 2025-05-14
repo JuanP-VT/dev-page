@@ -1,4 +1,3 @@
-/* eslint-disable */
 import { immer } from 'zustand/middleware/immer';
 import createSelectors from '../selectors';
 import { State, Actions } from './ui-types';
