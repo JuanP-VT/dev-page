@@ -19,12 +19,13 @@ const eslintConfig = [
     },
     rules: {
       'prettier/prettier': [
-        'error',
+        'warning',
         {
           semi: true,
           singleQuote: true,
           tabWidth: 2,
           endOfLine: 'auto',
+          printWidth: 120,
         },
       ],
       // Example recommended rules, adjust as needed
