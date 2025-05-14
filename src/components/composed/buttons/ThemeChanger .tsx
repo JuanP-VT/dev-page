@@ -1,7 +1,7 @@
 'use client';
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
-import { Button } from '../button';
+import { Button } from '../../ui/button';
 import clsx from 'clsx';
 import { MdOutlineWbSunny } from 'react-icons/md';
 import { LuMoonStar } from 'react-icons/lu';

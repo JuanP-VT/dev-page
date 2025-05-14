@@ -1,9 +1,9 @@
 'use client';
 import { useTranslations } from 'next-intl';
-import { ThemeChanger } from '../ui/buttons/ThemeChanger ';
 import { Button } from '../ui/button';
 import { FaBars } from 'react-icons/fa';
-import LanguageChanger from '../ui/buttons/LanguageChanger';
+import LanguageChanger from './buttons/LanguageChanger';
+import { ThemeChanger } from './buttons/ThemeChanger ';
 
 export default function NavBar() {
   const t = useTranslations('navbar');
