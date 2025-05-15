@@ -11,12 +11,16 @@ export default function LanguageChanger() {
 
   return (
     <Select onValueChange={(val) => router.push(val)} value={pathname}>
-      <SelectTrigger size="sm" className="text-gray-600 dark:text-gray-300">
+      <SelectTrigger size="sm" className="cursor-pointer text-gray-600 dark:text-gray-300">
         <SelectValue placeholder={t('language')} />
       </SelectTrigger>
       <SelectContent className="text-gray-600 dark:bg-gray-800/30 dark:text-gray-300">
-        <SelectItem value="es">{t('spanish')}</SelectItem>
-        <SelectItem value="en">{t('english')}</SelectItem>
+        <SelectItem className="cursor-pointer" value="es">
+          {t('spanish')}
+        </SelectItem>
+        <SelectItem className="cursor-pointer" value="en">
+          {t('english')}
+        </SelectItem>
       </SelectContent>
     </Select>
   );

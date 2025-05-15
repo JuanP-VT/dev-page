@@ -4,9 +4,13 @@ import { Button } from '../ui/button';
 import { FaBars } from 'react-icons/fa';
 import LanguageChanger from './buttons/LanguageChanger';
 import { ThemeChanger } from './buttons/ThemeChanger ';
+import { useUiStore } from '@/store/ui/ui-store';
+import clsx from 'clsx';
 
 export default function NavBar() {
   const t = useTranslations('navbar');
+  const setIsDrawerOpen = useUiStore.use.setIsDrawerOpen();
+  const isDrawerOpen = useUiStore.use.isDrawerOpen();
 
   function NavBarOption({ id }: { id: string }) {
     return (
@@ -41,7 +45,16 @@ export default function NavBar() {
           <ThemeChanger />
         </div>
       </div>
-      <Button className="group lg:hidden" variant="outline" size="sm">
+      <Button
+        className={clsx('group transition-opacity duration-300 lg:hidden', {
+          'pointer-events-none opacity-0': isDrawerOpen,
+        })}
+        variant="outline"
+        size="sm"
+        onClick={() => {
+          setIsDrawerOpen(true);
+        }}
+      >
         <FaBars className="text-gray-600 transition-all duration-300 group-hover:text-teal-400 group-active:text-teal-400 dark:text-gray-300 dark:group-hover:text-teal-400 dark:group-active:text-teal-400" />
       </Button>
     </nav>

@@ -30,14 +30,14 @@ export const ThemeChanger = () => {
       size="sm"
       onClick={handleThemeSwitch}
       className={clsx(
-        'relative flex w-20 gap-5 rounded-full bg-gradient-to-r from-red-200 via-orange-300 to-lime-300 dark:from-purple-800 dark:via-indigo-700 dark:to-green-600',
+        'relative flex w-28 gap-10 rounded-full bg-gradient-to-r from-red-200 via-orange-300 to-lime-300 dark:from-purple-800 dark:via-indigo-700 dark:to-green-600',
       )}
     >
       <LuMoonStar className="text-black/50 opacity-0 transition-all duration-200 dark:opacity-100" />
       <MdOutlineWbSunny className="text-white/90 transition-all duration-200 dark:opacity-0" />
       <span
         className={clsx('absolute left-1 h-6 w-6 rounded-full shadow-lg transition-all duration-500', {
-          'translate-x-12 bg-white/50': theme === 'dark',
+          'translate-x-20 bg-white/50': theme === 'dark',
           'bg-white/50': theme === 'light',
         })}
       ></span>
