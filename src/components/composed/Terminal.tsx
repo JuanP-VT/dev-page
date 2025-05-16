@@ -8,7 +8,7 @@ import clsx from 'clsx';
 import { useTheme } from 'next-themes';
 
 export default function Terminal({}) {
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState(false);
   const [hasMounted, setHasMounted] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const t = useTranslations('terminal');
@@ -16,6 +16,9 @@ export default function Terminal({}) {
 
   useEffect(() => {
     setHasMounted(true);
+    setTimeout(() => {
+      setVisible(true);
+    }, 100);
   }, []);
 
   if (!hasMounted) {
