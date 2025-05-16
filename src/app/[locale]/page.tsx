@@ -8,7 +8,7 @@ export default function Page() {
   return (
     <div className="relative">
       <MobileDrawer />
-      <div className="px-4 py-8">
+      <div className="px-4 py-8 md:px-24">
         <NavBar />
         <Terminal />
         <HeroSection />

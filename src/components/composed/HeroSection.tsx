@@ -43,7 +43,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section id="about" className="flex flex-col items-center gap-10 md:flex-row" ref={containerRef}>
+    <section id="about" className="flex flex-col items-center gap-20 lg:flex-row lg:gap-10" ref={containerRef}>
       <div className="flex-1 opacity-0" ref={textRef}>
         <div className="mb-4 inline-block rounded-md border border-gray-200 bg-gray-100 px-3 py-1 font-mono text-sm text-teal-600 dark:border-slate-700 dark:bg-gray-800 dark:text-teal-400">
           <span className="text-gray-500 dark:text-gray-400">const</span>{' '}
@@ -60,7 +60,7 @@ export default function HeroSection() {
 
         <h2 className="mb-6 font-mono text-2xl text-gray-600 md:text-3xl dark:text-gray-300">
           <span className="text-teal-600 dark:text-teal-400">function</span>{' '}
-          <span className="text-sky-600 dark:text-sky-400">buildDigitalExperiences</span>
+          <span className="text-sky-600 dark:text-cyan-400">buildDigitalExperiences</span>
           () &#123; ... &#125;
         </h2>
         <p className="mb-8 text-lg leading-relaxed text-gray-600 dark:text-gray-300">{t('description')}</p>
