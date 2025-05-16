@@ -129,7 +129,7 @@ function FinalCommandLine({
   return (
     <div className="flex items-center gap-2">
       <span className="text-teal-600 dark:text-teal-400">dev@portfolio:~$</span>
-      <span className="animate-caret-blink text-gray-300">_</span>
+      <span className="animate-caret-blink font-bold text-gray-300">_</span>
     </div>
   );
 }
