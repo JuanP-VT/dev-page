@@ -26,5 +26,11 @@
     "6-command": "echo $LANGUAGES",
     "6-output": "Spanish, English",
     "close": "close"
+  },
+  "hero": {
+    "role": "Full-Stack Developer",
+    "description": "A self-taught developer who transitioned from industrial engineering. Bilingual (Spanish/English), based in Mexico, and passionate about creating beautiful, functional web experiences since January 2022.",
+    "contact": "Contact Me",
+    "projects": "View Projects"
   }
 }

@@ -28,9 +28,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning>
-      <body
-        className={`${sfMono.className} antialiased bg-zinc-200 text-zinc-800 dark:bg-zinc-800 dark:text-zinc-200`}
-      >
+      <body className={`${sfMono.className} bg-[#f5f9f9] antialiased dark:bg-[#1a202c]`}>
         <NextIntlClientProvider>
           <ThemeProvider attribute="class" defaultTheme="dark">
             {children}
