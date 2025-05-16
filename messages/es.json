@@ -25,7 +25,8 @@
     "5-output": "México",
     "6-command": "echo $LANGUAGES",
     "6-output": "Español, Inglés",
-    "close": "cerrar"
+    "close": "cerrar",
+    "open": "abrir"
   },
   "hero": {
     "role-t": "rol",

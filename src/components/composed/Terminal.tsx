@@ -32,7 +32,7 @@ export default function Terminal({}) {
           onClick={() => setVisible(!visible)}
           className="rounded-md bg-gray-300 p-1 px-2 text-xs text-gray-700 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600"
         >
-          {t('close')}
+          {visible ? t('close') : t('open')}
         </button>
       </div>
       <div className="overflow-hidden rounded-lg border border-gray-200 bg-white shadow-xl dark:border-gray-700 dark:bg-gray-900">
