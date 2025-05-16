@@ -1,11 +1,11 @@
 {
   "navbar": {
-    "portfolio": "portfolio",
-    "about": "about",
-    "tech": "tech",
-    "projects": "projects",
-    "experience": "experience",
-    "contact": "contact"
+    "portfolio": "Portfolio",
+    "about": "About",
+    "tech": "Tech",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact"
   },
   "lang": {
     "language": "Language",
