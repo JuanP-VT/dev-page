@@ -29,7 +29,7 @@ export default function NavBar() {
       <div className="flex text-lg font-bold">
         <span className="text-teal-400">jp</span>
         <span>@{t('portfolio')}</span>
-        <span className="text-blue-500">:~$</span>
+        <span className="text-sky-500">:~$</span>
       </div>
       <div className="hidden gap-6 lg:flex">
         <div className="flex items-center gap-5 font-mono text-gray-300">
