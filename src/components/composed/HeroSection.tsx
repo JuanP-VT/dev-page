@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import { ArrowRight, Code, Terminal } from 'lucide-react';
+import { Code, Terminal } from 'lucide-react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
@@ -57,7 +57,6 @@ export default function HeroSection() {
             <span className="absolute bottom-0 left-0 h-1 w-full bg-linear-to-r from-teal-600 to-sky-600"></span>
           </span>
         </h1>
-
         <h2 className="mb-6 font-mono text-2xl text-gray-600 md:text-3xl dark:text-gray-300">
           <span className="text-teal-600 dark:text-teal-400">function</span>{' '}
           <span className="text-sky-600 dark:text-cyan-400">buildDigitalExperiences</span>
@@ -67,15 +66,14 @@ export default function HeroSection() {
         <div className="flex gap-4">
           <a
             href="#contact"
-            className="group flex items-center gap-2 rounded-md bg-linear-to-r from-teal-500 to-sky-500 px-6 py-3 font-mono text-white transition-all hover:shadow-lg dark:text-black/70"
+            className="group flex items-center gap-2 rounded-md bg-linear-to-r from-teal-500 to-sky-500 px-4 py-3 font-mono text-sm text-white transition-all hover:shadow-lg md:px-6 dark:text-black/70"
           >
             <Terminal className="h-4 w-4" />
             {t('contact')}
-            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
           </a>
           <a
             href="#projects"
-            className="rounded-md border-2 border-teal-500 px-6 py-3 font-mono text-teal-600 transition-all hover:bg-teal-100/50 dark:text-teal-400 dark:hover:bg-teal-800/50"
+            className="rounded-md border-2 border-teal-500 px-2 py-3 font-mono text-sm text-teal-600 transition-all hover:bg-teal-100/50 md:px-6 dark:text-teal-400 dark:hover:bg-teal-800/50"
           >
             <Code className="mr-2 inline-block h-4 w-4" />
             {t('projects')}
@@ -84,7 +82,7 @@ export default function HeroSection() {
       </div>
       <div className="flex flex-1 justify-center opacity-0" ref={imageRef}>
         <div className="relative">
-          <div className="flex h-64 w-64 rotate-3 items-center justify-center rounded-lg bg-linear-to-r from-teal-500 to-sky-500 text-6xl font-bold text-white shadow-[0_0_50px_rgba(20,184,166,0.3)] md:h-80 md:w-80">
+          <div className="flex h-64 w-64 rotate-3 items-center justify-center rounded-lg bg-linear-to-r from-teal-500 to-sky-500 text-6xl font-bold text-white shadow-[0_0_25px_8px_rgba(20,184,166,0.6)] md:h-80 md:w-80">
             <div className="absolute inset-[3px] flex items-center justify-center rounded-lg bg-white">
               <Image
                 src="/Dobberman.webp"
