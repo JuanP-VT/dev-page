@@ -9,9 +9,18 @@ import { useTheme } from 'next-themes';
 
 export default function Terminal({}) {
   const [visible, setVisible] = useState(true);
+  const [hasMounted, setHasMounted] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const t = useTranslations('terminal');
   const { theme = 'dark' } = useTheme();
+
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
+
+  if (!hasMounted) {
+    return null;
+  } // avoid rendering during SSR
 
   return (
     <div className="relative mt-8 mb-16">
