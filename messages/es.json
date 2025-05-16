@@ -26,5 +26,16 @@
     "6-command": "echo $LANGUAGES",
     "6-output": "Español, Inglés",
     "close": "cerrar"
+  },
+  "hero": {
+    "role-t": "rol",
+    "role": " \"Desarrollador Full-Stack\"",
+    "greeting": "Hola, soy",
+    "description": "Desarrollador autodidacta que hizo la transición desde la ingeniería industrial. Bilingüe (español/inglés), radicado en México y apasionado por crear experiencias web hermosas y funcionales desde enero de 2022.",
+    "contact": "Contáctame",
+    "projects": "Ver Proyectos",
+    "developer": "desarrollador",
+    "creativity": "creatividad",
+    "brain": "'cerebro'"
   }
 }

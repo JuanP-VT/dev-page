@@ -47,54 +47,44 @@ export default function HeroSection() {
       <div className="flex-1 opacity-0" ref={textRef}>
         <div className="mb-4 inline-block rounded-md border border-gray-200 bg-gray-100 px-3 py-1 font-mono text-sm text-teal-600 dark:border-slate-700 dark:bg-gray-800 dark:text-teal-400">
           <span className="text-gray-500 dark:text-gray-400">const</span>{' '}
-          <span className="text-teal-600 dark:text-teal-400">role</span> ={' '}
-          <span className="text-blue-600 dark:text-cyan-400">&quot;Full-Stack Developer&quot;</span>;
+          <span className="text-teal-600 dark:text-teal-400">{t('role-t')}</span> ={' '}
+          <span className="text-sky-600 dark:text-cyan-400">{t('role')}</span>;
         </div>
         <h1 className="mb-4 font-mono text-4xl font-bold md:text-5xl">
-          Hi, I&apos;m{' '}
-          <span className="relative bg-gradient-to-r from-teal-500 to-blue-600 bg-clip-text text-transparent">
-            Your Name
-            <span className="absolute bottom-0 left-0 h-1 w-full bg-gradient-to-r from-teal-500 to-blue-600"></span>
+          {t('greeting')}{' '}
+          <span className="relative bg-linear-to-r from-teal-500 to-sky-600 bg-clip-text text-transparent dark:from-teal-300 dark:to-sky-400">
+            Juan Pablo
+            <span className="absolute bottom-0 left-0 h-1 w-full bg-linear-to-r from-teal-600 to-sky-600"></span>
           </span>
         </h1>
 
-        <h1 className="mb-4 font-mono text-4xl font-bold md:text-5xl">
-          Hi, I'm{' '}
-          <span className="relative bg-gradient-to-r from-teal-400 to-blue-500 bg-clip-text text-transparent">
-            Your Name
-            <span className="absolute bottom-0 left-0 h-1 w-full bg-gradient-to-r from-teal-400 to-blue-500"></span>
-          </span>
-        </h1>
-
-        <h2 className="mb-6 font-mono text-2xl text-gray-600 md:text-3xl">
-          <span className="text-teal-600">function</span> <span className="text-blue-500">buildDigitalExperiences</span>
+        <h2 className="mb-6 font-mono text-2xl text-gray-600 md:text-3xl dark:text-gray-300">
+          <span className="text-teal-600 dark:text-teal-400">function</span>{' '}
+          <span className="text-sky-600 dark:text-sky-400">buildDigitalExperiences</span>
           () &#123; ... &#125;
         </h2>
-        <p className="mb-8 text-lg leading-relaxed text-gray-600">
-          A self-taught developer who transitioned from industrial engineering. Bilingual (Spanish/English), based in
-          Mexico, and passionate about creating beautiful, functional web experiences since January 2022.
-        </p>
+        <p className="mb-8 text-lg leading-relaxed text-gray-600 dark:text-gray-300">{t('description')}</p>
         <div className="flex gap-4">
           <a
             href="#contact"
-            className="group flex items-center gap-2 rounded-md bg-gradient-to-r from-teal-500 to-blue-500 px-6 py-3 font-mono text-white transition-all hover:shadow-lg"
+            className="group flex items-center gap-2 rounded-md bg-linear-to-r from-teal-500 to-sky-500 px-6 py-3 font-mono text-white transition-all hover:shadow-lg dark:text-black/70"
           >
             <Terminal className="h-4 w-4" />
-            Contact Me
+            {t('contact')}
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
           </a>
           <a
             href="#projects"
-            className="rounded-md border-2 border-teal-500 px-6 py-3 font-mono text-teal-600 transition-all hover:bg-teal-50"
+            className="rounded-md border-2 border-teal-500 px-6 py-3 font-mono text-teal-600 transition-all hover:bg-teal-100/50 dark:text-teal-400 dark:hover:bg-teal-800/50"
           >
             <Code className="mr-2 inline-block h-4 w-4" />
-            View Projects
+            {t('projects')}
           </a>
         </div>
       </div>
       <div className="flex flex-1 justify-center opacity-0" ref={imageRef}>
         <div className="relative">
-          <div className="flex h-64 w-64 rotate-3 items-center justify-center rounded-lg bg-gradient-to-r from-teal-500 to-blue-500 text-6xl font-bold text-white shadow-[0_0_50px_rgba(20,184,166,0.3)] md:h-80 md:w-80">
+          <div className="flex h-64 w-64 rotate-3 items-center justify-center rounded-lg bg-linear-to-r from-teal-500 to-sky-500 text-6xl font-bold text-white shadow-[0_0_50px_rgba(20,184,166,0.3)] md:h-80 md:w-80">
             <div className="absolute inset-[3px] flex items-center justify-center rounded-lg bg-white">
               <Image
                 src="/Dobberman.webp"
@@ -107,18 +97,20 @@ export default function HeroSection() {
           </div>
 
           {/* Code snippets floating around */}
-          <div className="animate-float absolute -top-10 -left-10 rotate-6 rounded-md border border-gray-200 bg-white p-3 shadow-md">
+          <div className="animate-float absolute -top-10 -left-10 rotate-6 rounded-md border border-gray-200 bg-white p-3 shadow-md dark:border-slate-700 dark:bg-gray-800">
             <pre className="font-mono text-xs">
-              <span className="text-pink-600">const</span> <span className="text-blue-600">developer</span> ={' '}
-              <span className="text-teal-600">true</span>;
+              <span className="text-pink-600 dark:text-pink-400">const</span>{' '}
+              <span className="text-sky-600 dark:text-cyan-400">{t('developer')}</span> ={' '}
+              <span className="text-teal-600 dark:text-teal-400">true</span>;
             </pre>
           </div>
 
-          <div className="animate-float-delay absolute -right-5 -bottom-10 -rotate-6 rounded-md border border-gray-200 bg-white p-3 shadow-md">
+          <div className="animate-float-delay absolute -right-5 -bottom-10 -rotate-6 rounded-md border border-gray-200 bg-white p-3 shadow-md dark:border-slate-700 dark:bg-gray-800">
             <pre className="font-mono text-xs">
-              <span className="text-pink-600">import</span> &#123; <span className="text-blue-600">creativity</span>
-              &#125; <span className="text-pink-600">from</span>{' '}
-              <span className="text-teal-600">&apos;brain&apos;</span>;
+              <span className="text-pink-600 dark:text-pink-400">import</span> &#123;{' '}
+              <span className="text-sky-600 dark:text-cyan-400">{t('creativity')}</span> &#125;{' '}
+              <span className="text-pink-600 dark:text-pink-400">from</span>{' '}
+              <span className="text-teal-600 dark:text-teal-400">{t('brain')}</span>;
             </pre>
           </div>
         </div>

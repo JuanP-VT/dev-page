@@ -28,9 +28,14 @@
     "close": "close"
   },
   "hero": {
-    "role": "Full-Stack Developer",
+    "role-t": "role",
+    "role": "\"Full-Stack Developer\"",
+    "greeting": "Hi, I'm",
     "description": "A self-taught developer who transitioned from industrial engineering. Bilingual (Spanish/English), based in Mexico, and passionate about creating beautiful, functional web experiences since January 2022.",
     "contact": "Contact Me",
-    "projects": "View Projects"
+    "projects": "View Projects",
+    "developer": "developer",
+    "creativity": "creativity",
+    "brain": "'brain'"
   }
 }
