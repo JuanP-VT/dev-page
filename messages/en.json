@@ -11,5 +11,20 @@
     "language": "Language",
     "spanish": "spanish",
     "english": "english"
+  },
+  "terminal": {
+    "1-command": "whoami",
+    "1-output": "Full-Stack Developer",
+    "2-command": "cat skills.txt",
+    "2-output": "JavaScript, TypeScript, React, Next.js, Node.js, Express, NestJS, SQL, NoSQL",
+    "3-command": "grep experience",
+    "3-output": "1 year professional experience",
+    "4-command": "ls -la projects/",
+    "4-output": "e-commerce-app  marketing-site  family-web-app  crud-api",
+    "5-command": "echo $LOCATION",
+    "5-output": "Mexico",
+    "6-command": "echo $LANGUAGES",
+    "6-output": "Spanish, English",
+    "close": "close"
   }
 }
