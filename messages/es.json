@@ -1,42 +1,42 @@
 {
-  "navbar": {
-    "portfolio": "Portafolio",
-    "about": "Acerca",
-    "tech": "Tech",
-    "projects": "Proyectos",
-    "experience": "Experiencia",
-    "contact": "Contacto"
-  },
-  "lang": {
-    "language": "Idioma",
-    "spanish": "español",
-    "english": "inglés"
-  },
-  "terminal": {
-    "1-command": "whoami",
-    "1-output": "Desarrollador Full-Stack",
-    "2-command": "cat skills.txt",
-    "2-output": "JavaScript, TypeScript, React, Next.js, Node.js, Express, NestJS, SQL, NoSQL",
-    "3-command": "grep experience",
-    "3-output": "1 año de experiencia profesional",
-    "4-command": "ls -la projects/",
-    "4-output": "aplicacion-ecommerce  sitio-marketing  app-familiar-web  api-crud",
-    "5-command": "echo $LOCATION",
-    "5-output": "México",
-    "6-command": "echo $LANGUAGES",
-    "6-output": "Español, Inglés",
-    "close": "cerrar",
-    "open": "abrir"
-  },
-  "hero": {
-    "role-t": "rol",
-    "role": " \"Desarrollador Full-Stack\"",
-    "greeting": "Hola, soy",
-    "description": "Desarrollador autodidacta que hizo la transición desde la ingeniería industrial. Bilingüe (español/inglés), radicado en México y apasionado por crear experiencias web hermosas y funcionales desde enero de 2022.",
-    "contact": "Contáctame",
-    "projects": "Ver Proyectos",
-    "developer": "desarrollador",
-    "creativity": "creatividad",
-    "brain": "'cerebro'"
-  }
+	"navbar": {
+		"portfolio": "Portafolio",
+		"about": "Acerca",
+		"tech": "Tech",
+		"projects": "Proyectos",
+		"experience": "Experiencia",
+		"contact": "Contacto"
+	},
+	"lang": {
+		"language": "Idioma",
+		"spanish": "español",
+		"english": "inglés"
+	},
+	"terminal": {
+		"1-command": "whoami",
+		"1-output": "Desarrollador Full-Stack",
+		"2-command": "cat skills.txt",
+		"2-output": "JavaScript, TypeScript, React, Next.js, Node.js, Express, NestJS, SQL, NoSQL",
+		"3-command": "grep experience",
+		"3-output": "1 año de experiencia profesional",
+		"4-command": "ls -la projects/",
+		"4-output": "aplicacion-ecommerce  sitio-marketing  app-familiar-web  api-crud",
+		"5-command": "echo $LOCATION",
+		"5-output": "México",
+		"6-command": "echo $LANGUAGES",
+		"6-output": "Español, Inglés",
+		"close": "cerrar",
+		"open": "abrir"
+	},
+	"hero": {
+		"role-t": "rol",
+		"role": " \"Desarrollador Full-Stack\"",
+		"greeting": "Hola, soy",
+		"description": "Desarrollador autodidacta que hizo la transición desde la ingeniería industrial. Bilingüe (español/inglés), radicado en México y apasionado por crear experiencias web hermosas y funcionales desde enero de 2022.",
+		"contact": "Contáctame",
+		"projects": "Ver Proyectos",
+		"developer": "desarrollador",
+		"creativity": "creatividad",
+		"brain": "'cerebro'"
+	}
 }

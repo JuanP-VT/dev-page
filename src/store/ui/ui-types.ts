@@ -1,7 +1,7 @@
 export type State = {
-  isDrawerOpen: boolean;
+	isDrawerOpen: boolean;
 };
 
 export type Actions = {
-  setIsDrawerOpen: (isOpen: boolean) => void;
+	setIsDrawerOpen: (isOpen: boolean) => void;
 };
