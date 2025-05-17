@@ -2,10 +2,12 @@
 import { useTranslations } from 'next-intl';
 import { Button } from '../ui/button';
 import { FaBars } from 'react-icons/fa';
+import { RxCross2 } from 'react-icons/rx';
 import LanguageChanger from './buttons/LanguageChanger';
 import { ThemeChanger } from './buttons/ThemeChanger ';
 import { useUiStore } from '@/store/ui/ui-store';
-import clsx from 'clsx';
+
+import MobileDrawer from './dialogs/MobileDrawer';
 
 export default function NavBar() {
   const t = useTranslations('navbar');
@@ -25,38 +27,43 @@ export default function NavBar() {
   }
 
   return (
-    <nav className="flex justify-between rounded-xl bg-white px-6 py-4 text-gray-800 dark:border dark:border-gray-700/50 dark:bg-gray-800/30 dark:text-gray-200 dark:backdrop-blur-md">
-      <div className="flex text-lg font-bold">
-        <span className="text-teal-400">jp</span>
-        <span>@{t('portfolio')}</span>
-        <span className="text-sky-500">:~$</span>
-      </div>
-      <div className="hidden gap-6 lg:flex">
-        <div className="flex items-center gap-5 font-mono text-gray-300">
-          <NavBarOption id="about" />
-          <NavBarOption id="tech" />
-          <NavBarOption id="projects" />
-          <NavBarOption id="experience" />
-          <NavBarOption id="contact" />
+    <>
+      <MobileDrawer />
+      <nav className="fixed z-50 flex h-16 w-full justify-between bg-white px-6 py-4 text-gray-800 shadow-sm sm:rounded-xl dark:border dark:border-gray-700/50 dark:bg-gray-800 dark:text-gray-200">
+        <div className="flex text-lg font-bold">
+          <span className="text-teal-400">jp</span>
+          <span>@{t('portfolio')}</span>
+          <span className="text-sky-500">:~$</span>
         </div>
-        <div className="flex gap-6">
-          <span className="h-full w-[1px] rounded-lg bg-zinc-300/60" />
-          <LanguageChanger />
-          <ThemeChanger />
+        <div className="hidden gap-6 lg:flex">
+          <div className="flex items-center gap-5 font-mono text-gray-300">
+            <NavBarOption id="about" />
+            <NavBarOption id="tech" />
+            <NavBarOption id="projects" />
+            <NavBarOption id="experience" />
+            <NavBarOption id="contact" />
+          </div>
+          <div className="flex gap-6">
+            <span className="h-full w-[1px] rounded-lg bg-zinc-300/60" />
+            <LanguageChanger />
+            <ThemeChanger />
+          </div>
         </div>
-      </div>
-      <Button
-        className={clsx('group transition-opacity duration-300 lg:hidden', {
-          'pointer-events-none opacity-0': isDrawerOpen,
-        })}
-        variant="outline"
-        size="sm"
-        onClick={() => {
-          setIsDrawerOpen(true);
-        }}
-      >
-        <FaBars className="text-gray-600 transition-all duration-300 group-hover:text-teal-400 group-active:text-teal-400 dark:text-gray-300 dark:group-hover:text-teal-400 dark:group-active:text-teal-400" />
-      </Button>
-    </nav>
+        <Button
+          className="group transition-opacity duration-300 lg:hidden"
+          variant="outline"
+          size="sm"
+          onClick={() => {
+            setIsDrawerOpen(!isDrawerOpen);
+          }}
+        >
+          {isDrawerOpen ? (
+            <RxCross2 className="text-gray-600 transition-all duration-300 group-hover:text-teal-400 group-active:text-teal-400 dark:text-gray-300 dark:group-hover:text-teal-400 dark:group-active:text-teal-400" />
+          ) : (
+            <FaBars className="text-gray-600 transition-all duration-300 group-hover:text-teal-400 group-active:text-teal-400 dark:text-gray-300 dark:group-hover:text-teal-400 dark:group-active:text-teal-400" />
+          )}
+        </Button>
+      </nav>
+    </>
   );
 }

@@ -1,5 +1,5 @@
 'use client';
-import MobileDrawer from '@/components/composed/dialogs/MobileDrawer';
+
 import NavBar from '@/components/composed/NavBar';
 import HeroSection from '@/components/composed/HeroSection';
 import Terminal from '@/components/composed/Terminal';
@@ -7,9 +7,8 @@ import Terminal from '@/components/composed/Terminal';
 export default function Page() {
   return (
     <div className="relative">
-      <MobileDrawer />
-      <div className="px-4 py-8 md:px-24">
-        <NavBar />
+      <NavBar />
+      <div className="px-4 py-20 md:px-24">
         <Terminal />
         <HeroSection />
       </div>
