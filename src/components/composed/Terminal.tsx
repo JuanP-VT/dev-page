@@ -30,7 +30,7 @@ export default function Terminal({}) {
       <div className="absolute -top-3 right-3 z-10">
         <button
           onClick={() => setVisible(!visible)}
-          className="rounded-md bg-gray-300 p-1 px-2 text-xs text-gray-700 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600"
+          className="cursor-pointer rounded-md bg-gray-300 p-1 px-2 text-xs text-gray-700 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600"
         >
           {visible ? t('close') : t('open')}
         </button>
