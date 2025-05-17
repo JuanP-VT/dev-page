@@ -13,6 +13,7 @@ function TypingAnimation({ strings, className, startDelay = 0 }: Props) {
 	const typing = useRef<HTMLSpanElement>(null);
 	const typedInstance = useRef<Typed | null>(null);
 
+	// biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
 	useEffect(() => {
 		if (typing.current) {
 			// Destroy previous instance if exists
@@ -39,10 +40,7 @@ function TypingAnimation({ strings, className, startDelay = 0 }: Props) {
 
 	return (
 		<div>
-			<span
-				ref={typing}
-				className={cn(`subpixel-antialiased ${className}`)}
-			></span>
+			<span ref={typing} className={cn(`subpixel-antialiased ${className}`)} />
 		</div>
 	);
 }
