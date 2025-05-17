@@ -14,6 +14,7 @@ export default function HeroSection() {
 	useEffect(() => {
 		const observer = new IntersectionObserver(
 			(entries) => {
+				// biome-ignore lint/complexity/noForEach: <explanation>
 				entries.forEach((entry) => {
 					if (entry.isIntersecting) {
 						if (textRef.current) {
@@ -61,7 +62,7 @@ export default function HeroSection() {
 					{t("greeting")}{" "}
 					<span className="relative bg-linear-to-r from-teal-500 to-sky-600 bg-clip-text text-transparent dark:from-teal-300 dark:to-sky-400">
 						Juan Pablo
-						<span className="absolute bottom-0 left-0 h-1 w-full bg-linear-to-r from-teal-600 to-sky-600"></span>
+						<span className="absolute bottom-0 left-0 h-1 w-full bg-linear-to-r from-teal-600 to-sky-600" />
 					</span>
 				</h1>
 				<h2 className="mb-6 font-mono text-2xl text-gray-600 md:text-3xl dark:text-gray-300">
@@ -112,7 +113,8 @@ export default function HeroSection() {
 							<span className="text-sky-600 dark:text-cyan-400">
 								{t("developer")}
 							</span>{" "}
-							= <span className="text-teal-600 dark:text-teal-400">true</span>;
+							= <span className="text-teal-600 dark:text-teal-400">true</span>
+							{";"}
 						</pre>
 					</div>
 

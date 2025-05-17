@@ -43,7 +43,7 @@ export const ThemeChanger = () => {
 						"bg-white/50": theme === "light",
 					},
 				)}
-			></span>
+			/>
 		</Button>
 	);
 };
