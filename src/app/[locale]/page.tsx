@@ -6,14 +6,14 @@ import Terminal from "@/components/composed/Terminal";
 import TechStack from "@/components/composed/TechStack";
 
 export default function Page() {
-	return (
-		<div className="relative">
-			<NavBar />
-			<div className="px-4 py-20 md:px-24">
-				<Terminal />
-				<HeroSection />
-				<TechStack />
-			</div>
-		</div>
-	);
+  return (
+    <div className="relative">
+      <NavBar />
+      <div className="px-4 py-20 md:px-24">
+        <HeroSection />
+        <Terminal />
+        <TechStack />
+      </div>
+    </div>
+  );
 }

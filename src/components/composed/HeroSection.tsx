@@ -46,7 +46,7 @@ export default function HeroSection() {
 	return (
 		<section
 			id="about"
-			className="flex flex-col items-center gap-20 lg:flex-row lg:gap-10"
+			className="flex flex-col py-20 items-center gap-20 lg:flex-row lg:gap-10"
 			ref={containerRef}
 		>
 			<div className="flex-1 opacity-0" ref={textRef}>
@@ -58,21 +58,15 @@ export default function HeroSection() {
 					= <span className="text-sky-600 dark:text-cyan-400">{t("role")}</span>
 					;
 				</div>
-				<h1 className="mb-4 font-mono text-4xl font-bold md:text-5xl">
+				<h1 className="mb-4 font-mono text-4xl font-bold md:text-5xl pt-4">
 					{t("greeting")}{" "}
 					<span className="relative bg-linear-to-r from-teal-500 to-sky-600 bg-clip-text text-transparent dark:from-teal-300 dark:to-sky-400">
 						Juan Pablo
 						<span className="absolute bottom-0 left-0 h-1 w-full bg-linear-to-r from-teal-600 to-sky-600" />
 					</span>
 				</h1>
-				<h2 className="mb-6 font-mono text-2xl text-gray-600 md:text-3xl dark:text-gray-300">
-					<span className="text-teal-600 dark:text-teal-400">function</span>{" "}
-					<span className="text-sky-600 dark:text-cyan-400">
-						buildDigitalExperiences
-					</span>
-					() &#123; ... &#125;
-				</h2>
-				<p className="mb-8 text-lg leading-relaxed text-gray-600 dark:text-gray-300">
+
+				<p className="mb-8 text-lg leading-relaxed text-gray-600 dark:text-gray-300 pb-4">
 					{t("description")}
 				</p>
 				<div className="flex gap-4">
