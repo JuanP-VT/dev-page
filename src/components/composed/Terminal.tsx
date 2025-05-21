@@ -15,6 +15,15 @@ export default function Terminal() {
 	const t = useTranslations("terminal");
 	const { theme = "dark" } = useTheme();
 
+	//Reset animation on close
+	useEffect(() => {
+		if (visible) return;
+		setCurrentLine(0);
+		setTimeout(() => {
+			setCurrentLine(1);
+		}, 500);
+	}, [visible]);
+
 	useEffect(() => {
 		setHasMounted(true);
 		setTimeout(() => {
@@ -22,7 +31,7 @@ export default function Terminal() {
 		}, 100);
 	}, []);
 
-	if (!hasMounted) {
+	if (!hasMounted ) {
 		return null;
 	} // avoid rendering during SSR
 
@@ -45,6 +54,7 @@ export default function Terminal() {
 					</span>
 				</div>
 				<div
+				
 					ref={containerRef}
 					className={clsx(
 						"overflow-y-auto font-mono text-sm transition-all duration-700",
@@ -56,7 +66,7 @@ export default function Terminal() {
 						},
 					)}
 				>
-					{currentLine >= 1 && (
+					{visible && currentLine >= 1 && (
 						<CommandLine
 							containerRef={containerRef}
 							command={t("1-command")}
@@ -64,7 +74,7 @@ export default function Terminal() {
 							onComplete={() => setCurrentLine((prev) => prev + 1)}
 						/>
 					)}
-					{currentLine >= 2 && (
+					{visible && currentLine >= 2 && (
 						<CommandLine
 							containerRef={containerRef}
 							command={t("2-command")}
@@ -72,7 +82,7 @@ export default function Terminal() {
 							output={t("2-output")}
 						/>
 					)}
-					{currentLine >= 3 && (
+					{visible && currentLine >= 3 && (
 						<CommandLine
 							containerRef={containerRef}
 							command={t("3-command")}
@@ -80,7 +90,7 @@ export default function Terminal() {
 							output={t("3-output")}
 						/>
 					)}
-					{currentLine >= 4 && (
+					{visible && currentLine >= 4 && (
 						<CommandLine
 							containerRef={containerRef}
 							command={t("4-command")}
@@ -88,7 +98,7 @@ export default function Terminal() {
 							onComplete={() => setCurrentLine((prev) => prev + 1)}
 						/>
 					)}
-					{currentLine >= 5 && (
+					{visible && currentLine >= 5 && (
 						<CommandLine
 							containerRef={containerRef}
 							command={t("5-command")}
@@ -96,7 +106,7 @@ export default function Terminal() {
 							onComplete={() => setCurrentLine((prev) => prev + 1)}
 						/>
 					)}
-					{currentLine >= 6 && (
+					{visible && currentLine >= 6 && (
 						<CommandLine
 							containerRef={containerRef}
 							command={t("6-command")}
@@ -104,7 +114,7 @@ export default function Terminal() {
 							onComplete={() => setCurrentLine((prev) => prev + 1)}
 						/>
 					)}
-					{currentLine >= 7 && <FinalCommandLine containerRef={containerRef} />}
+					{visible && currentLine >= 7 && <FinalCommandLine containerRef={containerRef} />}
 				</div>
 			</div>
 		</div>
