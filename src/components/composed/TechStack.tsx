@@ -96,11 +96,6 @@ const technologies = {
 			icon: <SiJest className="h-6 w-6 text-amber-800 dark:text-red-500" />,
 		},
 		{
-			name: "CI/CD",
-			icon: <Cpu className="h-6 w-6 text-gray-600 dark:text-gray-300" />,
-		},
-
-		{
 			name: "AWS",
 			icon: <FaAws className="h-6 w-6 text-yellow-600 dark:text-yellow-400" />,
 		},
@@ -125,51 +120,60 @@ export default function TechStack() {
 	};
 
 	// biome-ignore lint/correctness/useExhaustiveDependencies: <We only want the function to be called once, when the component mounts>
-	useEffect(() => {
-		const observer = new IntersectionObserver(
-			(entries) => {
-				if (entries[0].isIntersecting) {
-					// Animate category headings
-					Object.values(categoryRefs).forEach((ref, index) => {
-						if (ref.current) {
-							setTimeout(() => {
-								ref.current?.classList.add("animate-slide-up");
-								ref.current?.classList.remove("opacity-0");
-							}, index * 150);
-						}
-					});
+useEffect(() => {
+    // Create separate observers for each category
+    const observers: IntersectionObserver[] = [];
 
-					// Animate frontend items
-					animateItems("frontend", 0);
+    // Function to create observer for a category
+    const createCategoryObserver = (category: keyof typeof technologies) => {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry,index) => {
+            if (entry.isIntersecting) {
+              // Mark as animated
+              entry.target.setAttribute('data-animated', 'true');
+              
+              // Animate category heading
+              if (categoryRefs[category].current) {
+                categoryRefs[category].current?.classList.add("animate-slide-up");
+                categoryRefs[category].current?.classList.remove("opacity-0");
+              }
 
-					// Animate backend items with delay
-					setTimeout(() => {
-						animateItems("backend", technologies.frontend.length * 100);
-					}, 300);
+              // Animate items with delay
+              animateItems(category, 0);
 
-					// Animate tools items with delay
-					setTimeout(() => {
-						animateItems(
-							"tools",
-							(technologies.frontend.length + technologies.backend.length) *
-								100,
-						);
-					}, 600);
-				}
-			},
-			{ threshold: 0.1 },
-		);
+              // Stop observing after animation
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { 
+          threshold: 0.2,
+          rootMargin: '0px 0px -50px 0px' // Trigger when 50px from bottom of viewport
+        }
+      );
 
-		if (sectionRef.current) {
-			observer.observe(sectionRef.current);
-		}
+      if (categoryRefs[category].current) {
+        observer.observe(categoryRefs[category].current);
+        observers.push(observer);
+      }
+    };
 
-		return () => {
-			if (sectionRef.current) {
-				observer.unobserve(sectionRef.current);
-			}
-		};
-	}, []);
+    // Create observers for each category
+        (Object.keys(technologies) as Array<keyof typeof technologies>).forEach(
+      (category,index) => {
+        createCategoryObserver(category);
+      }
+    );
+
+    return () => {
+      // Cleanup all observers
+            observers.forEach((observer,index) => {
+        observer.disconnect();
+      });
+    };
+  }, []);
+
 
 	const animateItems = (
 		category: keyof typeof technologies,
