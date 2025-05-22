@@ -120,60 +120,61 @@ export default function TechStack() {
 	};
 
 	// biome-ignore lint/correctness/useExhaustiveDependencies: <We only want the function to be called once, when the component mounts>
-useEffect(() => {
-    // Create separate observers for each category
-    const observers: IntersectionObserver[] = [];
+	useEffect(() => {
+		// Create separate observers for each category
+		const observers: IntersectionObserver[] = [];
 
-    // Function to create observer for a category
-    const createCategoryObserver = (category: keyof typeof technologies) => {
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry,index) => {
-            if (entry.isIntersecting) {
-              // Mark as animated
-              entry.target.setAttribute('data-animated', 'true');
-              
-              // Animate category heading
-              if (categoryRefs[category].current) {
-                categoryRefs[category].current?.classList.add("animate-slide-up");
-                categoryRefs[category].current?.classList.remove("opacity-0");
-              }
+		// Function to create observer for a category
+		const createCategoryObserver = (category: keyof typeof technologies) => {
+			const observer = new IntersectionObserver(
+				(entries) => {
+					entries.forEach((entry, index) => {
+						if (entry.isIntersecting) {
+							// Mark as animated
+							entry.target.setAttribute("data-animated", "true");
 
-              // Animate items with delay
-              animateItems(category, 0);
+							// Animate category heading
+							if (categoryRefs[category].current) {
+								categoryRefs[category].current?.classList.add(
+									"animate-slide-up",
+								);
+								categoryRefs[category].current?.classList.remove("opacity-0");
+							}
 
-              // Stop observing after animation
-              observer.unobserve(entry.target);
-            }
-          });
-        },
-        { 
-          threshold: 0.2,
-          rootMargin: '0px 0px -50px 0px' // Trigger when 50px from bottom of viewport
-        }
-      );
+							// Animate items with delay
+							animateItems(category, 0);
 
-      if (categoryRefs[category].current) {
-        observer.observe(categoryRefs[category].current);
-        observers.push(observer);
-      }
-    };
+							// Stop observing after animation
+							observer.unobserve(entry.target);
+						}
+					});
+				},
+				{
+					threshold: 0.2,
+					rootMargin: "0px 0px -50px 0px", // Trigger when 50px from bottom of viewport
+				},
+			);
 
-    // Create observers for each category
-        (Object.keys(technologies) as Array<keyof typeof technologies>).forEach(
-      (category,index) => {
-        createCategoryObserver(category);
-      }
-    );
+			if (categoryRefs[category].current) {
+				observer.observe(categoryRefs[category].current);
+				observers.push(observer);
+			}
+		};
 
-    return () => {
-      // Cleanup all observers
-            observers.forEach((observer,index) => {
-        observer.disconnect();
-      });
-    };
-  }, []);
+		// Create observers for each category
+		(Object.keys(technologies) as Array<keyof typeof technologies>).forEach(
+			(category, index) => {
+				createCategoryObserver(category);
+			},
+		);
 
+		return () => {
+			// Cleanup all observers
+			observers.forEach((observer, index) => {
+				observer.disconnect();
+			});
+		};
+	}, []);
 
 	const animateItems = (
 		category: keyof typeof technologies,

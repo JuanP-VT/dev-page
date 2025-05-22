@@ -31,7 +31,7 @@ export default function Terminal() {
 		}, 100);
 	}, []);
 
-	if (!hasMounted ) {
+	if (!hasMounted) {
 		return null;
 	} // avoid rendering during SSR
 
@@ -54,7 +54,6 @@ export default function Terminal() {
 					</span>
 				</div>
 				<div
-				
 					ref={containerRef}
 					className={clsx(
 						"overflow-y-auto font-mono text-sm transition-all duration-700",
@@ -114,7 +113,9 @@ export default function Terminal() {
 							onComplete={() => setCurrentLine((prev) => prev + 1)}
 						/>
 					)}
-					{visible && currentLine >= 7 && <FinalCommandLine containerRef={containerRef} />}
+					{visible && currentLine >= 7 && (
+						<FinalCommandLine containerRef={containerRef} />
+					)}
 				</div>
 			</div>
 		</div>
