@@ -1,9 +1,9 @@
 "use client";
 
 import NavBar from "@/components/composed/NavBar";
-import HeroSection from "@/components/composed/HeroSection";
+import HeroSection from "@/components/sections/HeroSection";
 import Terminal from "@/components/composed/Terminal";
-import TechStack from "@/components/composed/TechStack";
+import TechStack from "@/components/sections/TechStack";
 
 export default function Page() {
   return (
