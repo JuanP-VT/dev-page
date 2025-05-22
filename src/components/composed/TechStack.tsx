@@ -200,7 +200,7 @@ useEffect(() => {
 		itemsRef[category].current = [];
 
 		return (
-			<div key={category} className="mb-16">
+			<div key={category} className="">
 				<div
 					ref={categoryRefs[category]}
 					className="opacity-0 mb-8 text-center"
@@ -236,7 +236,7 @@ useEffect(() => {
 	};
 
 	return (
-		<section id="tech" className="py-28" ref={sectionRef}>
+		<section id="tech" className="py-16" ref={sectionRef}>
 			<div className="text-center mb-16">
 				<div className="inline-block px-3 py-1 bg-gray-100 dark:bg-gray-800 text-teal-600 dark:text-teal-400 rounded-md text-sm font-mono mb-4 border border-gray-200 dark:border-gray-700">
 					<span className="text-gray-500 dark:text-gray-400">import</span>{" "}

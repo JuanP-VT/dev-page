@@ -36,7 +36,7 @@ export default function Terminal() {
 	} // avoid rendering during SSR
 
 	return (
-		<div className="relative mt-8 mb-16">
+		<div className="relative mt-8 ">
 			<div className="absolute -top-3 right-3 z-10">
 				<button
 					type="button"
