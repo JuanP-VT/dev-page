@@ -1,11 +1,21 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { ExternalLink, Github, Star, Folder } from "lucide-react";
-import Image from "next/image";
 import ProjectCard from "../composed/ProjectCard";
-
-const profesionalProjects = [
+import clsx from "clsx";
+const levels = ["Professional", "Freelance", "Learning"] as const;
+type Level = (typeof levels)[number];
+type Project = {
+	title: string;
+	description: string;
+	image: string;
+	tags: string[];
+	liveLink: string;
+	githubLink: string;
+	featured: boolean;
+	level: Level;
+};
+const profesionalProjects: Project[] = [
 	{
 		title: "Onsite 2 | Full Rebuild of Core Logistics App",
 		description:
@@ -15,6 +25,7 @@ const profesionalProjects = [
 		liveLink: "#",
 		githubLink: "#",
 		featured: true,
+		level: "Professional",
 	},
 	{
 		title: "Management | Enhancements and Maintenance",
@@ -25,6 +36,7 @@ const profesionalProjects = [
 		liveLink: "#",
 		githubLink: "#",
 		featured: false,
+		level: "Professional",
 	},
 	{
 		title: "Onsite 1 | Legacy Code Maintenance",
@@ -35,21 +47,31 @@ const profesionalProjects = [
 		liveLink: "#",
 		githubLink: "#",
 		featured: false,
+		level: "Professional",
 	},
 ];
 
 export default function Projects() {
 	const sectionRef = useRef<HTMLDivElement>(null);
 	const projectRefs = useRef<(HTMLDivElement | null)[]>([]);
-	const [filter, setFilter] = useState<string | null>(null);
+	const [filter, setFilter] = useState<string>("");
+	const [currentLevel, setCurrentLevel] = useState<Level>("Professional");
 
-	const filteredProjects = filter
-		? profesionalProjects.filter((project) =>
-				project.tags.some((tag) =>
-					tag.toLowerCase().includes(filter.toLowerCase()),
-				),
-			)
-		: profesionalProjects;
+	const filteredProjects = profesionalProjects.filter(
+		(project) =>
+			project.level === currentLevel &&
+			project.tags.some((tag) =>
+				tag.toLowerCase().includes(filter.toLowerCase()),
+			),
+	);
+
+	const allTags = Array.from(
+		new Set(
+			profesionalProjects
+				.filter((p) => p.level === currentLevel)
+				.flatMap((p) => p.tags),
+		),
+	);
 
 	// biome-ignore lint/correctness/useExhaustiveDependencies: <we want to execute this effect only when the filter changes>
 	useEffect(() => {
@@ -78,11 +100,7 @@ export default function Projects() {
 				observer.unobserve(sectionRef.current);
 			}
 		};
-	}, [filter]);
-
-	const allTags = Array.from(
-		new Set(profesionalProjects.flatMap((p) => p.tags)),
-	);
+	}, [filter, currentLevel]);
 
 	return (
 		<section id="projects" className="py-20" ref={sectionRef}>
@@ -99,11 +117,32 @@ export default function Projects() {
 					A selection of my recent work and personal projects
 				</p>
 			</div>
+			<div className="flex w-full bg-gray-800 rounded-md mb-2 p-1">
+				{levels.map((level) => (
+					<button
+						key={level}
+						type="button"
+						className={clsx(
+							"flex w-full text-sm cursor-pointer transition-all duration-500 rounded-sm justify-center p-2 active:-translate-y-1 ",
+							{
+								"bg-gray-700 text-gray-100": level === currentLevel,
+							},
+						)}
+						onClick={() => {
+							setCurrentLevel(level);
+						}}
+					>
+						<span className="bg-gradient-to-r from-teal-200 to-sky-300 bg-clip-text text-transparent">
+							{level}
+						</span>
+					</button>
+				))}
+			</div>
 
 			<div className="flex flex-wrap gap-2 justify-center mb-8">
 				<button
 					type="button"
-					onClick={() => setFilter(null)}
+					onClick={() => setFilter("")}
 					className={`px-3 py-1 rounded-md text-sm font-mono transition-colors cursor-pointer ${
 						filter === null
 							? "bg-teal-500 dark:text-gray-900 text-gray-100"
