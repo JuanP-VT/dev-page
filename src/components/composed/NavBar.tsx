@@ -5,7 +5,7 @@ import { FaBars } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
 import LanguageChanger from "./buttons/LanguageChanger";
 import { ThemeChanger } from "./buttons/ThemeChanger ";
-import { useUiStore } from "@/store/ui/ui-store";
+import { useUiStore } from "@/store/global-store";
 
 import MobileDrawer from "./dialogs/MobileDrawer";
 

@@ -1,5 +1,5 @@
 "use client";
-import { useUiStore } from "@/store/ui/ui-store";
+import { useUiStore } from "@/store/global-store";
 import React from "react";
 import { ThemeChanger } from "../buttons/ThemeChanger ";
 import { useTranslations } from "next-intl";

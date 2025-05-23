@@ -1,13 +1,13 @@
 import { immer } from "zustand/middleware/immer";
-import createSelectors from "../selectors";
-import type { State, Actions } from "./ui-types";
+import createSelectors from "./selectors";
+import type { State, Actions } from "./ui/types";
 import { create } from "zustand";
 
 const initialState: State = {
 	isDrawerOpen: false,
 };
 
-const uiStore = create<State & Actions>()(
+const globalStore = create<State & Actions>()(
 	immer((set) => ({
 		...initialState,
 
@@ -18,5 +18,5 @@ const uiStore = create<State & Actions>()(
 	})),
 );
 
-export const useUiStore = createSelectors(uiStore);
+export const useUiStore = createSelectors(globalStore);
 0;
