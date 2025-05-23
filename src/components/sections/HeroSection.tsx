@@ -51,7 +51,7 @@ export default function HeroSection() {
 		>
 			<div className="flex-1 opacity-0" ref={textRef}>
 				<div className="mb-4 inline-block rounded-md border border-gray-200 bg-gray-100 px-3 py-1 font-mono text-sm text-teal-600 dark:border-slate-700 dark:bg-gray-800 dark:text-teal-400">
-					<span className="text-gray-500 dark:text-gray-400">const</span>{" "}
+					<span className="text-pink-500 dark:text-pink-400">const</span>{" "}
 					<span className="text-teal-600 dark:text-teal-400">
 						{t("role-t")}
 					</span>{" "}

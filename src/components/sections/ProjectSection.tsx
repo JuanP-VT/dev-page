@@ -281,9 +281,9 @@ export default function Projects() {
 		<section id="projects" className="py-20" ref={sectionRef}>
 			<div className="text-center mb-10">
 				<div className="inline-block px-3 py-1 bg-gray-100 dark:bg-gray-800 text-teal-400 rounded-md text-sm font-mono mb-4 border border-gray-200 dark:border-gray-700">
-					<span className="text-gray-500 dark:text-gray-400">git</span>{" "}
-					<span className="text-teal-500 dark:text-teal-400">checkout</span>{" "}
-					<span className="text-cyan-500 dark:text-cyan-400">projects</span>
+					<span className="text-pink-500 dark:text-pink-400">git</span>{" "}
+					<span className="text-teal-600 dark:text-teal-400">checkout</span>{" "}
+					<span className="text-cyan-600 dark:text-cyan-400">projects</span>
 				</div>
 				<h2 className="text-3xl font-bold mb-2 font-mono text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">
 					Projects

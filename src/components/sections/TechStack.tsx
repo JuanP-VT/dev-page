@@ -240,13 +240,11 @@ export default function TechStack() {
 		<section id="tech" className="py-16" ref={sectionRef}>
 			<div className="text-center mb-16">
 				<div className="inline-block px-3 py-1 bg-gray-100 dark:bg-gray-800 text-teal-600 dark:text-teal-400 rounded-md text-sm font-mono mb-4 border border-gray-200 dark:border-gray-700">
-					<span className="text-gray-500 dark:text-gray-400">import</span>{" "}
+					<span className="text-pink-500 dark:text-pink-400">import</span>{" "}
 					&#123;{" "}
 					<span className="text-teal-600 dark:text-teal-400">skills</span>{" "}
-					&#125; <span className="text-gray-500 dark:text-gray-400">from</span>{" "}
-					<span className="text-blue-600 dark:text-blue-400">
-						'./tech-stack'
-					</span>
+					&#125; <span className="text-pink-500 dark:text-pink-400">from</span>{" "}
+					<span className="text-sky-600 dark:text-sky-400">'./tech-stack'</span>
 					;
 				</div>
 				<h2 className="text-3xl font-bold mb-2 font-mono text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-blue-600 dark:from-teal-400 dark:to-blue-500">
