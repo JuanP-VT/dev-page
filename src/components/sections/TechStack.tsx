@@ -99,10 +99,6 @@ const technologies = {
 			name: "AWS",
 			icon: <FaAws className="h-6 w-6 text-yellow-600 dark:text-yellow-400" />,
 		},
-		{
-			name: "Vercel",
-			icon: <SiVercel className="h-6 w-6 " />,
-		},
 	],
 };
 
@@ -201,7 +197,7 @@ export default function TechStack() {
 		itemsRef[category].current = [];
 
 		return (
-			<div key={category} className="">
+			<div key={category} className="mt-1">
 				<div
 					ref={categoryRefs[category]}
 					className="opacity-0 mb-8 text-center"
@@ -209,7 +205,7 @@ export default function TechStack() {
 					<h3 className="text-2xl font-bold font-mono text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-blue-600 dark:from-teal-400 dark:to-blue-500">
 						{capitalizeFirstLetter(category)}
 					</h3>
-					<div className="w-24 h-1 bg-gradient-to-r from-teal-500 to-blue-600 dark:from-teal-400 dark:to-blue-500 mx-auto mt-2 rounded-full" />
+					<div className="w-24 h-1 bg-gradient-to-r from-teal-500 to-blue-600 dark:from-teal-400 dark:to-blue-500 mx-auto mt-1 rounded-full" />
 				</div>
 
 				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
