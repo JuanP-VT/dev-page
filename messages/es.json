@@ -1,42 +1,103 @@
 {
-	"navbar": {
-		"portfolio": "Portafolio",
-		"about": "Acerca",
-		"tech": "Tech",
-		"projects": "Proyectos",
-		"experience": "Experiencia",
-		"contact": "Contacto"
-	},
-	"lang": {
-		"language": "Idioma",
-		"spanish": "español",
-		"english": "inglés"
-	},
-	"terminal": {
-		"1-command": "whoami",
-		"1-output": "Desarrollador Full-Stack",
-		"2-command": "cat skills.txt",
-		"2-output": "JavaScript, TypeScript, React, Next.js, Node.js, Express, NestJS, SQL, NoSQL",
-		"3-command": "grep experience",
-		"3-output": "1 año de experiencia profesional",
-		"4-command": "ls -la projects/",
-		"4-output": "aplicacion-ecommerce  sitio-marketing  app-familiar-web  api-crud",
-		"5-command": "echo $LOCATION",
-		"5-output": "México",
-		"6-command": "echo $LANGUAGES",
-		"6-output": "Español, Inglés",
-		"close": "cerrar",
-		"open": "abrir"
-	},
-	"hero": {
-		"role-t": "rol",
-		"role": " \"Desarrollador Full-Stack\"",
-		"greeting": "Hola, soy",
-		"description": "Desarrollador autodidacta que hizo la transición desde la ingeniería industrial. Bilingüe (español/inglés), radicado en México y apasionado por crear experiencias web hermosas y funcionales desde enero de 2022.",
-		"contact": "Contáctame",
-		"projects": "Ver Proyectos",
-		"developer": "desarrollador",
-		"creativity": "creatividad",
-		"brain": "'cerebro'"
-	}
+  "navbar": {
+    "portfolio": "Portafolio",
+    "about": "Acerca",
+    "tech": "Tech",
+    "projects": "Proyectos",
+    "experience": "Experiencia",
+    "contact": "Contacto"
+  },
+  "lang": {
+    "language": "Idioma",
+    "spanish": "español",
+    "english": "inglés"
+  },
+  "terminal": {
+    "1-command": "whoami",
+    "1-output": "Desarrollador Full-Stack",
+    "2-command": "cat skills.txt",
+    "2-output": "JavaScript, TypeScript, React, Next.js, Node.js, Express, NestJS, SQL, NoSQL",
+    "3-command": "grep experience",
+    "3-output": "1 año de experiencia profesional",
+    "4-command": "ls -la projects/",
+    "4-output": "aplicacion-ecommerce  sitio-marketing  app-familiar-web  api-crud",
+    "5-command": "echo $LOCATION",
+    "5-output": "México",
+    "6-command": "echo $LANGUAGES",
+    "6-output": "Español, Inglés",
+    "close": "cerrar",
+    "open": "abrir"
+  },
+  "hero": {
+    "role-t": "rol",
+    "role": " \"Desarrollador Full-Stack\"",
+    "greeting": "Hola, soy",
+    "description": "Desarrollador autodidacta que hizo la transición desde la ingeniería industrial. Bilingüe (español/inglés), radicado en México y apasionado por crear experiencias web hermosas y funcionales desde enero de 2022.",
+    "contact": "Contáctame",
+    "projects": "Ver Proyectos",
+    "developer": "desarrollador",
+    "creativity": "creatividad",
+    "brain": "'cerebro'"
+  },
+  "projects": {
+    "os2-title": "Onsite 2 | Reconstrucción completa de la aplicación logística principal",
+    "os2-description": "Como uno de los dos desarrolladores, contribuí significativamente a reconstruir la aplicación logística principal de nuestra empresa, utilizada por los clientes para cotizar y enviar paquetes. Reemplazamos una versión legacy basada en jQuery con tecnologías completamente moderna, entregando una nueva UI/UX, mejor rendimiento y mantenibilidad a largo plazo. Esta reescritura se convirtió en la nueva base para el crecimiento continuo del producto.",
+
+    "management-title": "Management | Mejoras y Mantenimiento",
+    "management-description": "Contribuí al desarrollo continuo de la plataforma logística interna de nuestra empresa, que soporta monitoreo operacional, análisis y controles administrativos. Aunque el sistema se estableció antes de mi llegada, fui responsable de implementar nuevos módulos, resolver errores y mejorar características existentes.",
+
+    "onsite1-title": "Onsite 1 | Mantenimiento de Código Legacy",
+    "onsite1-description": "Mantuve y depuré una aplicación legacy crítica para las operaciones logísticas de la empresa. El proyecto fue construido con jQuery, HTML y CSS, y había crecido sin planificación arquitectónica, resultando en archivos largos, desestructurados y modularización inconsistente. A pesar de la deuda técnica y falta de documentación, implementé con éxito correcciones y mejoras cuando fue necesario.",
+
+    "internal-tooling-title": "Herramientas Internas | APIs Backend Temporales con Node.js",
+    "internal-tooling-description": "Para ayudar a nuestro equipo .NET a manejar la carga durante picos de demanda, desarrollé proactivamente varios endpoints en Node.js para permitir el progreso del frontend y desbloquear flujos de trabajo. Estas APIs fueron luego reemplazadas por microservicios .NET, pero jugaron un papel clave en acelerar las fases iniciales de desarrollo y pruebas.",
+
+    "temazcal-title": "Okayhey Temazcal | Presencia Web + Integración CMS",
+    "temazcal-description": "Diseñé y desarrollé un sitio web moderno y responsive para el negocio de temazcal de mi hermano. Integré Contentful CMS para permitir a usuarios no técnicos gestionar contenido dinámico como blogs, galerías y FAQs. El sitio incluía página principal, blog, galería de fotos, FAQ y sección de contacto, todo orientado a impulsar su presencia online y mejorar el compromiso con los clientes.",
+
+    "regina-title": "Regina & Gael Studio | Plataforma E-commerce Fullstack",
+    "regina-description": "Construí una plataforma de e-commerce completa para la tienda digital de artesanías de mi cuñada. La aplicación incluía autenticación de usuarios, gestión de productos, integración con PayPal y entrega segura de archivos digitales mediante URLs firmadas. Desarrollé la arquitectura completa de frontend y backend desde cero, creando una solución escalable para vender contenido descargable online.",
+
+    "pchub-title": "PC Hub | Proyecto de Aprendizaje E-commerce Fullstack",
+    "pchub-description": "Desarrollé un prototipo de eCommerce completamente funcional desde cero para mostrar habilidades fullstack. Incluye autenticación de usuarios, catálogo de productos con filtros, carrito de compras, checkout, perfiles de usuario y panel de administración para gestión de productos.",
+
+    "inventory-title": "App de Gestión de Inventario | Sistema CRUD Fullstack",
+    "inventory-description": "Desarrollé una herramienta fullstack de gestión de inventario. Practiqué integración de APIs, operaciones CRUD y modelado de datos NoSQL. Este proyecto sentó las bases para trabajos más complejos como PC-Hub.",
+
+    "fortnite-title": "App de Carrito de Compras Fortnite | Integración API & Lógica de Carrito",
+    "fortnite-description": "Construí una aplicación estilo eCommerce dinámica que obtiene datos de productos en vivo desde la API Pública de Fortnite. La app incluye página principal, catálogo de productos y un sistema de carrito de compras completamente funcional. Desarrollado con TypeScript y React, enfocándome en componentes funcionales, hooks y enrutamiento del lado del cliente con React Router.",
+
+    "curriculum-title": "Generador de Currículums | Creador Dinámico de PDFs",
+    "curriculum-description": "Creé una aplicación React que permite a los usuarios ingresar información personal y profesional para generar un currículum en PDF descargable. Construido con TypeScript usando componentes basados en clases, este proyecto profundizó mi comprensión del estado de los componentes, métodos de ciclo de vida y manejo de entrada estructurada de usuarios.",
+
+    "weather-title": "App de Pronóstico del Tiempo | Consulta Global del Clima",
+    "weather-description": "Construí una aplicación meteorológica que obtiene datos en tiempo real y un pronóstico de cinco días para cualquier ubicación en el mundo. Enfocado en integración de APIs, lectura de documentación de terceros y mejora de calidad de código con linters y estilos más limpios.",
+
+    "library-title": "App de Biblioteca | Interfaz de Seguimiento de Libros",
+    "library-description": "Desarrollé una aplicación simple de gestión de libros que almacena la entrada del usuario como tarjetas estilizadas. Practiqué principios de código limpio, trabajé con estructuras de datos de JavaScript e implementé persistencia usando LocalStorage.",
+
+    "todo-title": "App Lista de Tareas | Gestor Personal de Actividades",
+    "todo-description": "Construí una aplicación de gestión de tareas que permite a los usuarios organizar actividades en proyectos. Enfocado en arquitectura modular, principios de código limpio y profundización en conocimiento de programación orientada a objetos. Utilicé Webpack para empaquetar y estructurar la aplicación.",
+
+    "restaurant-title": "Página de Restaurante | Interfaz Dinámica con Vanilla JS",
+    "restaurant-description": "Construí un sitio web modular para restaurante con múltiples secciones usando JavaScript vanilla y Webpack. Enfocado en generación dinámica de contenido, estructura de código limpia y principios de modularización.",
+
+    "etch-title": "Etch A Sketch | Pizarra de Dibujo Interactiva",
+    "etch-description": "Desarrollé una pizarra de dibujo basada en navegador con múltiples modos usando JavaScript vanilla. Practiqué manipulación compleja del DOM, manejo de eventos y organización de código.",
+
+    "tictactoe-title": "Tres en Raya | Juego Clásico",
+    "tictactoe-description": "Creé un juego completamente funcional de Tres en Raya para un jugador. Enfocado en modelado de objetos con JavaScript, patrones de diseño y aplicación de lógica más avanzada y técnicas de interacción con el DOM.",
+
+    "rps-title": "Piedra Papel Tijeras | Juego Simple contra la CPU",
+    "rps-description": "Construí el clásico juego de Piedra, Papel o Tijeras. Practiqué implementación de lógica básica y fundamentos de manipulación del DOM.",
+
+    "admin-title": "Panel de Administración | Diseño Estático con CSS Grid & Flexbox",
+    "admin-description": "Creé un diseño responsive de panel de administración usando solo HTML y CSS. Enfocado en dominar Flexbox y Grid para construir diseños limpios y estructurados.",
+
+    "signup-title": "Página de Registro | Formulario Estilizado",
+    "signup-description": "Construí un formulario de registro de usuarios con atención al detalle en estilos, indicaciones de validación y diseño usando HTML y CSS. Practiqué PseudoClases, PseudoElementos y fundamentos de diseño de formularios.",
+
+    "landing-title": "Página de Inicio | Homepage Estática Básica",
+    "landing-description": "Diseñé una página de inicio simple con HTML y CSS básicos. Aprendí el modelo de caja, estructura de elementos y fundamentos de estilos - el primer paso en tu viaje como desarrollador."
+  }
 }

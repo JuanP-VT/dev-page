@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import ProjectCard from "../composed/ProjectCard";
 import clsx from "clsx";
+import { useTranslations } from "next-intl";
 const levels = ["Professional", "Freelance", "Learning"] as const;
 type Level = (typeof levels)[number];
 type Project = {
@@ -16,236 +17,224 @@ type Project = {
 	level: Level;
 };
 
-const profesionalProjects: Project[] = [
-	{
-		title: "Onsite 2 | Full Rebuild of Core Logistics App",
-		description:
-			"As one of two developers, I contributed significantly to rebuilding our company’s main logistics app used by clients to quote and ship packages. We replaced a legacy jQuery-based version with a fully modern tech stack, delivering a fresh UI/UX, better performance, and long-term maintainability. This rewrite became the new foundation for the product’s continued growth.",
-		image: "/img/projects/onsite2/main.webp",
-		tags: ["TypeScript", "React", "Next.js", "Tailwind CSS"],
-		liveLink: "#",
-		githubLink: "#",
-		featured: true,
-		level: "Professional",
-	},
-	{
-		title: "Management | Enhancements and Maintenance",
-		description:
-			"Contributed to the ongoing development of our company's internal logistics platform, which supports operational monitoring, analytics, and administrative controls. Although the system was established prior to my tenure, I was responsible for implementing new modules, resolving bugs, and enhancing existing features.",
-		image: "/img/projects/management/main.webp",
-		tags: ["JavaScript", "React", "Tailwind CSS"],
-		liveLink: "#",
-		githubLink: "#",
-		featured: false,
-		level: "Professional",
-	},
-	{
-		title: "Onsite 1 | Legacy Code Maintenance",
-		description:
-			"Maintained and debugged a legacy application critical to the company’s logistics operations. The project was built with jQuery, HTML, and CSS, and had grown without architectural planning — resulting in long, unstructured files and inconsistent modularization. Despite the technical debt and lack of documentation, I successfully implemented fixes and improvements when needed.",
-		image: "/img/projects/onsite/main.webp",
-		tags: ["JavaScript", "jQuery", "HTML", "CSS"],
-		liveLink: "#",
-		githubLink: "#",
-		featured: false,
-		level: "Professional",
-	},
-	{
-		title: "Internal Tooling | Temporary Node.js Backend APIs",
-		description:
-			"To help our .NET team manage load during peak demand, I proactively developed several Node.js endpoints to enable frontend progress and unblock workflows. These APIs were later replaced by .NET microservices, but played a key role in accelerating initial development and testing phases.",
-		image: "/img/projects/onsite/main.webp",
-		tags: ["TypeScript", "Node.js", "SQL", "NestJS"],
-		liveLink: "#",
-		githubLink: "#",
-		featured: false,
-		level: "Professional",
-	},
-	{
-		title: "Okayhey Temazcal | Freelance Web Presence + CMS Integration",
-		description:
-			"Designed and developed a modern, responsive website for my brother´s temazcal business. Integrated Contentful CMS to allow non-technical users to manage dynamic content such as blogs, gallery, and FAQs. The site included a homepage, blog, photo gallery, FAQ, and contact section — all aimed at boosting their online presence and improving client engagement.",
-		image: "/img/projects/okahey/main.webp",
-		tags: ["TypeScript", "React", "Next.js", "Tailwind CSS"],
-		liveLink: "#",
-		githubLink: "#",
-		featured: false,
-		level: "Freelance",
-	},
-	{
-		title: "Regina & Gael Studio | Fullstack E-commerce Platform",
-		description:
-			"Built a complete e-commerce platform for my sister-in-law’s digital craft store. The app included user authentication, product management, PayPal payment integration, and secure digital file delivery via signed URLs. Developed the full backend and frontend architecture from scratch, creating a scalable solution for selling downloadable content online.",
-		image: "/img/projects/regina/main.webp",
-		tags: ["TypeScript", "React", "Next.js", "Tailwind CSS", "MongoDB", "AWS"],
-		liveLink: "#",
-		githubLink: "#",
-		featured: false,
-		level: "Freelance",
-	},
-	{
-		title: "PC Hub | Fullstack Ecommerce Learning Project",
-		description:
-			"Developed a fully functional eCommerce prototype from scratch to showcase fullstack skills. Features include user authentication, product catalog with filters, shopping cart, checkout, user profiles, and an admin panel for product management.",
-		image: "/img/projects/learning/pc-hub.webp",
-		tags: ["TypeScript", "React", "Next.js", "Tailwind CSS", "MongoDB"],
-		liveLink: "#",
-		githubLink: "#",
-		featured: true,
-		level: "Learning",
-	},
-	{
-		title: "Inventory Manager App | Fullstack CRUD System",
-		description:
-			"Developed a fullstack inventory management tool. Practiced API integration, CRUD operations, and NoSQL data modeling. This project laid the foundation for more complex work like PC-Hub.",
-		image: "/img/projects/learning/inventory.webp",
-		tags: ["JavaScript", "React", "Express.js", "MongoDB"],
-		liveLink: "#",
-		githubLink: "#",
-		featured: false,
-		level: "Learning",
-	},
-	{
-		title: "Fortnite Shopping Cart App | API Integration & Cart Logic",
-		description:
-			"Built a dynamic eCommerce-style app that fetches live product data from the Fortnite Public API. The app features a homepage, product catalog, and a fully functional shopping cart system. Developed with TypeScript and React, focusing on functional components, hooks, and client-side routing with React Router.",
-		image: "/img/projects/learning/shopping-card.webp",
-		tags: ["TypeScript", "React", "CSS"],
-		liveLink: "#",
-		githubLink: "#",
-		featured: false,
-		level: "Learning",
-	},
-	{
-		title: "Curriculum Builder | Dynamic PDF Generator",
-		description:
-			"Created a React application that allows users to input personal and professional information and generate a downloadable PDF résumé. Built with TypeScript using class-based components, this project deepened my understanding of component state, lifecycle methods, and handling structured user input.",
-		image: "/img/projects/learning/cv.webp",
-		tags: ["TypeScript", "React", "CSS"],
-		liveLink: "#",
-		githubLink: "#",
-		featured: false,
-		level: "Learning",
-	},
-	{
-		title: "Weather Forecast App | Global Weather Lookup",
-		description:
-			"Built a weather application that fetches real-time data and a five-day forecast for any location worldwide. Focused on API integration, reading third-party documentation, and improving code quality with linters and cleaner styling.",
-		image: "/img/projects/learning/weather.webp",
-		tags: ["JavaScript", "HTML", "CSS"],
-		liveLink: "#",
-		githubLink: "#",
-		featured: false,
-		level: "Learning",
-	},
-	{
-		title: "Library App | Book Tracking Interface",
-		description:
-			"Developed a simple book management app that stores user input as stylized cards. Practiced clean code principles, worked with JavaScript data structures, and implemented persistence using LocalStorage.",
-		image: "/img/projects/learning/library.webp",
-		tags: ["JavaScript", "HTML", "CSS"],
-		liveLink: "#",
-		githubLink: "#",
-		featured: false,
-		level: "Learning",
-	},
-	{
-		title: "To Do List App | Personal Task Manager",
-		description:
-			"Built a task management app allowing users to organize activities into projects. Focused on modular architecture, clean code principles, and deepened object-oriented programming knowledge. Utilized Webpack to bundle and structure the application.",
-		image: "/img/projects/learning/todo.webp",
-		tags: ["JavaScript", "HTML", "CSS"],
-		liveLink: "#",
-		githubLink: "#",
-		featured: false,
-		level: "Learning",
-	},
-	{
-		title: "Restaurant Page | Dynamic Interface with Vanilla JS",
-		description:
-			"Built a modular, multi-section restaurant website using vanilla JavaScript and Webpack. Focused on dynamic content generation, clean code structure, and modularization principles.",
-		image: "/img/projects/learning/restaurant.webp",
-		tags: ["JavaScript", "HTML", "CSS"],
-		liveLink: "#",
-		githubLink: "#",
-		featured: false,
-		level: "Learning",
-	},
-	{
-		title: "Etch A Sketch | Interactive Drawing Board",
-		description:
-			"Developed a browser-based drawing board with multiple modes using vanilla JavaScript. Practiced complex DOM manipulation, event handling, and code organization.",
-		image: "/img/projects/learning/etch.webp",
-		tags: ["JavaScript", "HTML", "CSS"],
-		liveLink: "#",
-		githubLink: "#",
-		featured: false,
-		level: "Learning",
-	},
-	{
-		title: "Tic Tac Toe | Classic Game",
-		description:
-			"Created a fully playable Tic Tac Toe game for one player. Focused on JavaScript object modeling, design patterns, and applying more advanced logic and DOM interaction techniques.",
-		image: "/img/projects/learning/tic.webp",
-		tags: ["JavaScript", "HTML", "CSS"],
-		liveLink: "#",
-		githubLink: "#",
-		featured: false,
-		level: "Learning",
-	},
-	{
-		title: "Rock Paper Scissors | Simple Game vs CPU",
-		description:
-			"Built a classic Rock-Paper-Scissors game. Practiced core logic implementation and DOM manipulation fundamentals.",
-		image: "/img/projects/learning/rps.webp",
-		tags: ["JavaScript", "HTML", "CSS"],
-		liveLink: "#",
-		githubLink: "#",
-		featured: false,
-		level: "Learning",
-	},
-	{
-		title: "Admin Dashboard | Static Layout with CSS Grid & Flexbox",
-		description:
-			"Created a responsive admin dashboard layout using only HTML and CSS. Focused on mastering Flexbox and Grid to build clean and structured layouts.",
-		image: "/img/projects/learning/admin.webp",
-		tags: ["HTML", "CSS"],
-		liveLink: "#",
-		githubLink: "#",
-		featured: false,
-		level: "Learning",
-	},
-	{
-		title: "Sign Up Page | Styled Registration Form",
-		description:
-			"Built a user registration form with attention to detail in styling, validation cues, and layout using HTML and CSS. Practiced PseudoClasses, PseudoElements, and form design fundamentals.",
-		image: "/img/projects/learning/sign.webp",
-		tags: ["HTML", "CSS"],
-		liveLink: "#",
-		githubLink: "#",
-		featured: false,
-		level: "Learning",
-	},
-	{
-		title: "Landing Page | Basic Static Homepage",
-		description:
-			"Designed a simple homepage with foundational HTML and CSS. Learned the box model, element structure, and styling fundamentals — the very first step in your dev journey.",
-		image: "/img/projects/learning/landing.webp",
-		tags: ["HTML", "CSS"],
-		liveLink: "#",
-		githubLink: "#",
-		featured: false,
-		level: "Learning",
-	},
-];
-
 export default function Projects() {
 	const sectionRef = useRef<HTMLDivElement>(null);
 	const projectRefs = useRef<(HTMLDivElement | null)[]>([]);
 	const [filter, setFilter] = useState<string>("");
 	const [currentLevel, setCurrentLevel] = useState<Level>("Professional");
+	const t = useTranslations("projects");
 
-	const filteredProjects = profesionalProjects.filter(
+	const projects: Project[] = [
+		{
+			title: t("os2-title"),
+			description: t("os2-description"),
+			image: "/img/projects/onsite2/main.webp",
+			tags: ["TypeScript", "React", "Next.js", "Tailwind CSS"],
+			liveLink: "#",
+			githubLink: "#",
+			featured: true,
+			level: "Professional",
+		},
+		{
+			title: t("management-title"),
+			description: t("management-description"),
+			image: "/img/projects/management/main.webp",
+			tags: ["JavaScript", "React", "Tailwind CSS"],
+			liveLink: "#",
+			githubLink: "#",
+			featured: false,
+			level: "Professional",
+		},
+		{
+			title: t("onsite1-title"),
+			description: t("onsite1-description"),
+			image: "/img/projects/onsite/main.webp",
+			tags: ["JavaScript", "jQuery", "HTML", "CSS"],
+			liveLink: "#",
+			githubLink: "#",
+			featured: false,
+			level: "Professional",
+		},
+		{
+			title: t("internal-tooling-title"),
+			description: t("internal-tooling-description"),
+			image: "/img/projects/tooling/main.webp",
+			tags: ["TypeScript", "Node.js", "SQL", "NestJS"],
+			liveLink: "#",
+			githubLink: "#",
+			featured: false,
+			level: "Professional",
+		},
+		{
+			title: t("temazcal-title"),
+			description: t("temazcal-description"),
+			image: "/img/projects/okahey/main.webp",
+			tags: ["TypeScript", "React", "Next.js", "Tailwind CSS"],
+			liveLink: "#",
+			githubLink: "#",
+			featured: false,
+			level: "Freelance",
+		},
+		{
+			title: t("regina-title"),
+			description: t("regina-description"),
+			image: "/img/projects/regina/main.webp",
+			tags: [
+				"TypeScript",
+				"React",
+				"Next.js",
+				"Tailwind CSS",
+				"MongoDB",
+				"AWS",
+			],
+			liveLink: "#",
+			githubLink: "#",
+			featured: false,
+			level: "Freelance",
+		},
+		{
+			title: t("pchub-title"),
+			description: t("pchub-description"),
+			image: "/img/projects/learning/pc-hub.webp",
+			tags: ["TypeScript", "React", "Next.js", "Tailwind CSS", "MongoDB"],
+			liveLink: "#",
+			githubLink: "#",
+			featured: true,
+			level: "Learning",
+		},
+		{
+			title: t("inventory-title"),
+			description: t("inventory-description"),
+			image: "/img/projects/learning/inventory.webp",
+			tags: ["JavaScript", "React", "Express.js", "MongoDB"],
+			liveLink: "#",
+			githubLink: "#",
+			featured: false,
+			level: "Learning",
+		},
+		{
+			title: t("fortnite-title"),
+			description: t("fortnite-description"),
+			image: "/img/projects/learning/shopping-card.webp",
+			tags: ["TypeScript", "React", "CSS"],
+			liveLink: "#",
+			githubLink: "#",
+			featured: false,
+			level: "Learning",
+		},
+		{
+			title: t("curriculum-title"),
+			description: t("curriculum-description"),
+			image: "/img/projects/learning/cv.webp",
+			tags: ["TypeScript", "React", "CSS"],
+			liveLink: "#",
+			githubLink: "#",
+			featured: false,
+			level: "Learning",
+		},
+		{
+			title: t("weather-title"),
+			description: t("weather-description"),
+			image: "/img/projects/learning/weather.webp",
+			tags: ["JavaScript", "HTML", "CSS"],
+			liveLink: "#",
+			githubLink: "#",
+			featured: false,
+			level: "Learning",
+		},
+		{
+			title: t("library-title"),
+			description: t("library-description"),
+			image: "/img/projects/learning/library.webp",
+			tags: ["JavaScript", "HTML", "CSS"],
+			liveLink: "#",
+			githubLink: "#",
+			featured: false,
+			level: "Learning",
+		},
+		{
+			title: t("todo-title"),
+			description: t("todo-description"),
+			image: "/img/projects/learning/todo.webp",
+			tags: ["JavaScript", "HTML", "CSS"],
+			liveLink: "#",
+			githubLink: "#",
+			featured: false,
+			level: "Learning",
+		},
+		{
+			title: t("restaurant-title"),
+			description: t("restaurant-description"),
+			image: "/img/projects/learning/restaurant.webp",
+			tags: ["JavaScript", "HTML", "CSS"],
+			liveLink: "#",
+			githubLink: "#",
+			featured: false,
+			level: "Learning",
+		},
+		{
+			title: t("etch-title"),
+			description: t("etch-description"),
+			image: "/img/projects/learning/etch.webp",
+			tags: ["JavaScript", "HTML", "CSS"],
+			liveLink: "#",
+			githubLink: "#",
+			featured: false,
+			level: "Learning",
+		},
+		{
+			title: t("tictactoe-title"),
+			description: t("tictactoe-description"),
+			image: "/img/projects/learning/tic.webp",
+			tags: ["JavaScript", "HTML", "CSS"],
+			liveLink: "#",
+			githubLink: "#",
+			featured: false,
+			level: "Learning",
+		},
+		{
+			title: t("rps-title"),
+			description: t("rps-description"),
+			image: "/img/projects/learning/rps.webp",
+			tags: ["JavaScript", "HTML", "CSS"],
+			liveLink: "#",
+			githubLink: "#",
+			featured: false,
+			level: "Learning",
+		},
+		{
+			title: t("admin-title"),
+			description: t("admin-description"),
+			image: "/img/projects/learning/admin.webp",
+			tags: ["HTML", "CSS"],
+			liveLink: "#",
+			githubLink: "#",
+			featured: false,
+			level: "Learning",
+		},
+		{
+			title: t("signup-title"),
+			description: t("signup-description"),
+			image: "/img/projects/learning/sign.webp",
+			tags: ["HTML", "CSS"],
+			liveLink: "#",
+			githubLink: "#",
+			featured: false,
+			level: "Learning",
+		},
+		{
+			title: t("landing-title"),
+			description: t("landing-description"),
+			image: "/img/projects/learning/landing.webp",
+			tags: ["HTML", "CSS"],
+			liveLink: "#",
+			githubLink: "#",
+			featured: false,
+			level: "Learning",
+		},
+	];
+
+	const filteredProjects = projects.filter(
 		(project) =>
 			project.level === currentLevel &&
 			project.tags.some((tag) =>
@@ -255,9 +244,7 @@ export default function Projects() {
 
 	const allTags = Array.from(
 		new Set(
-			profesionalProjects
-				.filter((p) => p.level === currentLevel)
-				.flatMap((p) => p.tags),
+			projects.filter((p) => p.level === currentLevel).flatMap((p) => p.tags),
 		),
 	);
 
