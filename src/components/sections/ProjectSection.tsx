@@ -15,6 +15,7 @@ type Project = {
 	featured: boolean;
 	level: Level;
 };
+
 const profesionalProjects: Project[] = [
 	{
 		title: "Onsite 2 | Full Rebuild of Core Logistics App",
@@ -48,6 +49,61 @@ const profesionalProjects: Project[] = [
 		githubLink: "#",
 		featured: false,
 		level: "Professional",
+	},
+	{
+		title: "Internal Tooling | Temporary Nodejs Backend APIs",
+		description:
+			"To help our .NET team manage load during peak demand, I proactively developed several Node.js endpoints to enable frontend progress and unblock workflows. These APIs were later replaced by .NET microservices, but played a key role in accelerating initial development and testing phases.",
+		image: "/img/projects/onsite/main.webp",
+		tags: ["TypeScript", "NodeJs", "SQL", "NestJs"],
+		liveLink: "#",
+		githubLink: "#",
+		featured: false,
+		level: "Professional",
+	},
+	{
+		title: "Okayhey Temazcal | Freelance Web Presence + CMS Integration",
+		description:
+			"Designed and developed a modern, responsive website for my brother´s temazcal business using Next.js, React, and Tailwind CSS. Integrated Contentful CMS to allow non-technical users to manage dynamic content such as blogs, gallery, and FAQs. The site included a homepage, blog, photo gallery, FAQ, and contact section — all aimed at boosting their online presence and improving client engagement.",
+		image: "/img/projects/okahey/main.webp",
+		tags: ["TypeScript", "React", "Next.js", "Tailwind CSS"],
+		liveLink: "#",
+		githubLink: "#",
+		featured: false,
+		level: "Freelance",
+	},
+	{
+		title: "Regina & Gael Studio | Fullstack E-commerce Platform",
+		description:
+			"Built a complete e-commerce platform for my sister-in-law’s digital craft store using Next.js, MongoDB, and AWS S3. The app included user authentication, product management, PayPal payment integration, and secure digital file delivery via signed URLs. Developed the full backend and frontend architecture from scratch, creating a scalable solution for selling downloadable content online.",
+		image: "/img/projects/regina/main.webp",
+		tags: ["TypeScript", "React", "Next.js", "Tailwind CSS", "MongoDB", "AWS"],
+		liveLink: "#",
+		githubLink: "#",
+		featured: false,
+		level: "Freelance",
+	},
+	{
+		title: "PC Hub | Fullstack Ecommerce Learning Project",
+		description:
+			"Developed a fully functional eCommerce prototype from scratch to showcase fullstack skills. Features include user authentication, product catalog with filters, shopping cart, checkout, user profiles, and an admin panel for product management. Built with Next.js, React, TypeScript, Tailwind CSS, and MongoDB, deployed on Vercel.",
+		image: "/img/projects/learning/pc-hub.webp",
+		tags: ["TypeScript", "React", "Next.js", "Tailwind CSS", "MongoDB"],
+		liveLink: "#",
+		githubLink: "#",
+		featured: true,
+		level: "Learning",
+	},
+	{
+		title: "Inventory Manager App | Fullstack CRUD System",
+		description:
+			"Developed a fullstack inventory management tool using React, TypeScript, Express.js, and MongoDB. Practiced API integration, CRUD operations, and NoSQL data modeling. This project laid the foundation for more complex work like PC-Hub.",
+		image: "/img/projects/learning/inventory.webp",
+		tags: ["TypeScript", "React", "Next.js", "Tailwind CSS", "MongoDB"],
+		liveLink: "#",
+		githubLink: "#",
+		featured: false,
+		level: "Learning",
 	},
 ];
 
@@ -129,6 +185,7 @@ export default function Projects() {
 							},
 						)}
 						onClick={() => {
+							setFilter("");
 							setCurrentLevel(level);
 						}}
 					>
@@ -144,7 +201,7 @@ export default function Projects() {
 					type="button"
 					onClick={() => setFilter("")}
 					className={`px-3 py-1 rounded-md text-sm font-mono transition-colors cursor-pointer ${
-						filter === null
+						filter === ""
 							? "bg-teal-500 dark:text-gray-900 text-gray-100"
 							: "dark:bg-gray-800 bg-gray-200 text-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 hover:bg-gray-300"
 					}`}
