@@ -15,6 +15,7 @@ type Project = {
 	featured: boolean;
 	level: Level;
 };
+
 const profesionalProjects: Project[] = [
 	{
 		title: "Onsite 2 | Full Rebuild of Core Logistics App",
@@ -48,6 +49,39 @@ const profesionalProjects: Project[] = [
 		githubLink: "#",
 		featured: false,
 		level: "Professional",
+	},
+	{
+		title: "Internal Tooling | Temporary Nodejs Backend APIs",
+		description:
+			"To help our .NET team manage load during peak demand, I proactively developed several Node.js endpoints to enable frontend progress and unblock workflows. These APIs were later replaced by .NET microservices, but played a key role in accelerating initial development and testing phases.",
+		image: "/img/projects/onsite/main.webp",
+		tags: ["TypeScript", "NodeJs", "SQL", "NestJs"],
+		liveLink: "#",
+		githubLink: "#",
+		featured: false,
+		level: "Professional",
+	},
+	{
+		title: "Okayhey Temazcal | Freelance Web Presence + CMS Integration",
+		description:
+			"Designed and developed a modern, responsive website for my brother´s temazcal business using Next.js, React, and Tailwind CSS. Integrated Contentful CMS to allow non-technical users to manage dynamic content such as blogs, gallery, and FAQs. The site included a homepage, blog, photo gallery, FAQ, and contact section — all aimed at boosting their online presence and improving client engagement.",
+		image: "/img/projects/okahey/main.webp",
+		tags: ["TypeScript", "React", "Next.js", "Tailwind CSS"],
+		liveLink: "#",
+		githubLink: "#",
+		featured: false,
+		level: "Freelance",
+	},
+	{
+		title: "Regina & Gael Studio | Fullstack E-commerce Platform",
+		description:
+			"Built a complete e-commerce platform for my sister-in-law’s digital craft store using Next.js, MongoDB, and AWS S3. The app included user authentication, product management, PayPal payment integration, and secure digital file delivery via signed URLs. Developed the full backend and frontend architecture from scratch, creating a scalable solution for selling downloadable content online.",
+		image: "/img/projects/regina/main.webp",
+		tags: ["TypeScript", "React", "Next.js", "Tailwind CSS", "MongoDB", "AWS"],
+		liveLink: "#",
+		githubLink: "#",
+		featured: false,
+		level: "Freelance",
 	},
 ];
 
