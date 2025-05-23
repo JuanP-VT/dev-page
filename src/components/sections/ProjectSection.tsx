@@ -20,9 +20,9 @@ const profesionalProjects: Project[] = [
 	{
 		title: "Onsite 2 | Full Rebuild of Core Logistics App",
 		description:
-			"As one of two developers, I contributed significantly to rebuilding our company’s main logistics app used by clients to quote and ship packages. We replaced a legacy jQuery-based version with a fully modern tech stack (Next.js, Tailwind CSS, TypeScript), delivering a fresh UI/UX, better performance, and long-term maintainability. This rewrite became the new foundation for the product’s continued growth.",
+			"As one of two developers, I contributed significantly to rebuilding our company’s main logistics app used by clients to quote and ship packages. We replaced a legacy jQuery-based version with a fully modern tech stack, delivering a fresh UI/UX, better performance, and long-term maintainability. This rewrite became the new foundation for the product’s continued growth.",
 		image: "/img/projects/onsite2/main.webp",
-		tags: ["Typescript", "React", "Next.js", "Tailwind CSS"],
+		tags: ["TypeScript", "React", "Next.js", "Tailwind CSS"],
 		liveLink: "#",
 		githubLink: "#",
 		featured: true,
@@ -44,18 +44,18 @@ const profesionalProjects: Project[] = [
 		description:
 			"Maintained and debugged a legacy application critical to the company’s logistics operations. The project was built with jQuery, HTML, and CSS, and had grown without architectural planning — resulting in long, unstructured files and inconsistent modularization. Despite the technical debt and lack of documentation, I successfully implemented fixes and improvements when needed.",
 		image: "/img/projects/onsite/main.webp",
-		tags: ["JavaScript", "jQuery", "Html", "CSS"],
+		tags: ["JavaScript", "jQuery", "HTML", "CSS"],
 		liveLink: "#",
 		githubLink: "#",
 		featured: false,
 		level: "Professional",
 	},
 	{
-		title: "Internal Tooling | Temporary Nodejs Backend APIs",
+		title: "Internal Tooling | Temporary Node.js Backend APIs",
 		description:
 			"To help our .NET team manage load during peak demand, I proactively developed several Node.js endpoints to enable frontend progress and unblock workflows. These APIs were later replaced by .NET microservices, but played a key role in accelerating initial development and testing phases.",
 		image: "/img/projects/onsite/main.webp",
-		tags: ["TypeScript", "NodeJs", "SQL", "NestJs"],
+		tags: ["TypeScript", "Node.js", "SQL", "NestJS"],
 		liveLink: "#",
 		githubLink: "#",
 		featured: false,
@@ -64,7 +64,7 @@ const profesionalProjects: Project[] = [
 	{
 		title: "Okayhey Temazcal | Freelance Web Presence + CMS Integration",
 		description:
-			"Designed and developed a modern, responsive website for my brother´s temazcal business using Next.js, React, and Tailwind CSS. Integrated Contentful CMS to allow non-technical users to manage dynamic content such as blogs, gallery, and FAQs. The site included a homepage, blog, photo gallery, FAQ, and contact section — all aimed at boosting their online presence and improving client engagement.",
+			"Designed and developed a modern, responsive website for my brother´s temazcal business. Integrated Contentful CMS to allow non-technical users to manage dynamic content such as blogs, gallery, and FAQs. The site included a homepage, blog, photo gallery, FAQ, and contact section — all aimed at boosting their online presence and improving client engagement.",
 		image: "/img/projects/okahey/main.webp",
 		tags: ["TypeScript", "React", "Next.js", "Tailwind CSS"],
 		liveLink: "#",
@@ -75,7 +75,7 @@ const profesionalProjects: Project[] = [
 	{
 		title: "Regina & Gael Studio | Fullstack E-commerce Platform",
 		description:
-			"Built a complete e-commerce platform for my sister-in-law’s digital craft store using Next.js, MongoDB, and AWS S3. The app included user authentication, product management, PayPal payment integration, and secure digital file delivery via signed URLs. Developed the full backend and frontend architecture from scratch, creating a scalable solution for selling downloadable content online.",
+			"Built a complete e-commerce platform for my sister-in-law’s digital craft store. The app included user authentication, product management, PayPal payment integration, and secure digital file delivery via signed URLs. Developed the full backend and frontend architecture from scratch, creating a scalable solution for selling downloadable content online.",
 		image: "/img/projects/regina/main.webp",
 		tags: ["TypeScript", "React", "Next.js", "Tailwind CSS", "MongoDB", "AWS"],
 		liveLink: "#",
@@ -86,7 +86,7 @@ const profesionalProjects: Project[] = [
 	{
 		title: "PC Hub | Fullstack Ecommerce Learning Project",
 		description:
-			"Developed a fully functional eCommerce prototype from scratch to showcase fullstack skills. Features include user authentication, product catalog with filters, shopping cart, checkout, user profiles, and an admin panel for product management. Built with Next.js, React, TypeScript, Tailwind CSS, and MongoDB, deployed on Vercel.",
+			"Developed a fully functional eCommerce prototype from scratch to showcase fullstack skills. Features include user authentication, product catalog with filters, shopping cart, checkout, user profiles, and an admin panel for product management.",
 		image: "/img/projects/learning/pc-hub.webp",
 		tags: ["TypeScript", "React", "Next.js", "Tailwind CSS", "MongoDB"],
 		liveLink: "#",
@@ -97,9 +97,9 @@ const profesionalProjects: Project[] = [
 	{
 		title: "Inventory Manager App | Fullstack CRUD System",
 		description:
-			"Developed a fullstack inventory management tool using React, TypeScript, Express.js, and MongoDB. Practiced API integration, CRUD operations, and NoSQL data modeling. This project laid the foundation for more complex work like PC-Hub.",
+			"Developed a fullstack inventory management tool. Practiced API integration, CRUD operations, and NoSQL data modeling. This project laid the foundation for more complex work like PC-Hub.",
 		image: "/img/projects/learning/inventory.webp",
-		tags: ["TypeScript", "React", "Next.js", "Tailwind CSS", "MongoDB"],
+		tags: ["JavaScript", "React", "Express.js", "MongoDB"],
 		liveLink: "#",
 		githubLink: "#",
 		featured: false,
