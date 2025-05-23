@@ -292,7 +292,7 @@ export default function Projects() {
 					A selection of my recent work and personal projects
 				</p>
 			</div>
-			<div className="flex w-full bg-gray-800 rounded-md mb-2 p-1">
+			<div className="flex w-full dark:bg-gray-800 bg-gray-200 rounded-md mb-2 p-1">
 				{levels.map((level) => (
 					<button
 						key={level}
@@ -300,7 +300,7 @@ export default function Projects() {
 						className={clsx(
 							"flex w-full text-sm cursor-pointer transition-all duration-500 rounded-sm justify-center p-2 active:-translate-y-1 ",
 							{
-								"bg-gray-700 text-gray-100": level === currentLevel,
+								"dark:bg-gray-700 bg-slate-300 ": level === currentLevel,
 							},
 						)}
 						onClick={() => {
@@ -308,7 +308,7 @@ export default function Projects() {
 							setCurrentLevel(level);
 						}}
 					>
-						<span className="bg-gradient-to-r from-teal-200 to-sky-300 bg-clip-text text-transparent">
+						<span className="bg-gradient-to-r dark:from-teal-200 dark:to-sky-300 bg-clip-text text-transparent from-teal-600 to-sky-900">
 							{level}
 						</span>
 					</button>

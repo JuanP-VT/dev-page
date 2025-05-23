@@ -58,7 +58,7 @@ const ProjectCard = forwardRef<HTMLDivElement, ProjectCardProps>(
 						className={`p-6 ${project.featured ? "md:col-span-1" : "md:col-span-2"}`}
 					>
 						<h3 className="text-xl font-semibold mb-2 text-gray-700 dark:text-gray-200 font-mono flex items-center gap-2">
-							<Folder className="h-5 w-5 dark:text-teal-400 text-teal-600" />
+							<Folder className="h-5 w-5 dark:text-teal-400 text-teal-600 shrink-0" />
 							{project.title}
 						</h3>
 						<p className="text-gray-600 dark:text-gray-400 mb-4 text-sm">
