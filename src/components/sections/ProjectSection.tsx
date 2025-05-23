@@ -105,6 +105,138 @@ const profesionalProjects: Project[] = [
 		featured: false,
 		level: "Learning",
 	},
+	{
+		title: "Fortnite Shopping Cart App | API Integration & Cart Logic",
+		description:
+			"Built a dynamic eCommerce-style app that fetches live product data from the Fortnite Public API. The app features a homepage, product catalog, and a fully functional shopping cart system. Developed with TypeScript and React, focusing on functional components, hooks, and client-side routing with React Router.",
+		image: "/img/projects/learning/shopping-card.webp",
+		tags: ["TypeScript", "React", "CSS"],
+		liveLink: "#",
+		githubLink: "#",
+		featured: false,
+		level: "Learning",
+	},
+	{
+		title: "Curriculum Builder | Dynamic PDF Generator",
+		description:
+			"Created a React application that allows users to input personal and professional information and generate a downloadable PDF résumé. Built with TypeScript using class-based components, this project deepened my understanding of component state, lifecycle methods, and handling structured user input.",
+		image: "/img/projects/learning/cv.webp",
+		tags: ["TypeScript", "React", "CSS"],
+		liveLink: "#",
+		githubLink: "#",
+		featured: false,
+		level: "Learning",
+	},
+	{
+		title: "Weather Forecast App | Global Weather Lookup",
+		description:
+			"Built a weather application that fetches real-time data and a five-day forecast for any location worldwide. Focused on API integration, reading third-party documentation, and improving code quality with linters and cleaner styling.",
+		image: "/img/projects/learning/weather.webp",
+		tags: ["JavaScript", "HTML", "CSS"],
+		liveLink: "#",
+		githubLink: "#",
+		featured: false,
+		level: "Learning",
+	},
+	{
+		title: "Library App | Book Tracking Interface",
+		description:
+			"Developed a simple book management app that stores user input as stylized cards. Practiced clean code principles, worked with JavaScript data structures, and implemented persistence using LocalStorage.",
+		image: "/img/projects/learning/library.webp",
+		tags: ["JavaScript", "HTML", "CSS"],
+		liveLink: "#",
+		githubLink: "#",
+		featured: false,
+		level: "Learning",
+	},
+	{
+		title: "To Do List App | Personal Task Manager",
+		description:
+			"Built a task management app allowing users to organize activities into projects. Focused on modular architecture, clean code principles, and deepened object-oriented programming knowledge. Utilized Webpack to bundle and structure the application.",
+		image: "/img/projects/learning/todo.webp",
+		tags: ["JavaScript", "HTML", "CSS"],
+		liveLink: "#",
+		githubLink: "#",
+		featured: false,
+		level: "Learning",
+	},
+	{
+		title: "Restaurant Page | Dynamic Interface with Vanilla JS",
+		description:
+			"Built a modular, multi-section restaurant website using vanilla JavaScript and Webpack. Focused on dynamic content generation, clean code structure, and modularization principles.",
+		image: "/img/projects/learning/restaurant.webp",
+		tags: ["JavaScript", "HTML", "CSS"],
+		liveLink: "#",
+		githubLink: "#",
+		featured: false,
+		level: "Learning",
+	},
+	{
+		title: "Etch A Sketch | Interactive Drawing Board",
+		description:
+			"Developed a browser-based drawing board with multiple modes using vanilla JavaScript. Practiced complex DOM manipulation, event handling, and code organization.",
+		image: "/img/projects/learning/etch.webp",
+		tags: ["JavaScript", "HTML", "CSS"],
+		liveLink: "#",
+		githubLink: "#",
+		featured: false,
+		level: "Learning",
+	},
+	{
+		title: "Tic Tac Toe | Classic Game",
+		description:
+			"Created a fully playable Tic Tac Toe game for one player. Focused on JavaScript object modeling, design patterns, and applying more advanced logic and DOM interaction techniques.",
+		image: "/img/projects/learning/tic.webp",
+		tags: ["JavaScript", "HTML", "CSS"],
+		liveLink: "#",
+		githubLink: "#",
+		featured: false,
+		level: "Learning",
+	},
+	{
+		title: "Rock Paper Scissors | Simple Game vs CPU",
+		description:
+			"Built a classic Rock-Paper-Scissors game. Practiced core logic implementation and DOM manipulation fundamentals.",
+		image: "/img/projects/learning/rps.webp",
+		tags: ["JavaScript", "HTML", "CSS"],
+		liveLink: "#",
+		githubLink: "#",
+		featured: false,
+		level: "Learning",
+	},
+	{
+		title: "Admin Dashboard | Static Layout with CSS Grid & Flexbox",
+		description:
+			"Created a responsive admin dashboard layout using only HTML and CSS. Focused on mastering Flexbox and Grid to build clean and structured layouts.",
+		image: "/img/projects/learning/admin.webp",
+		tags: ["HTML", "CSS"],
+		liveLink: "#",
+		githubLink: "#",
+		featured: false,
+		level: "Learning",
+	},
+	{
+		title: "Sign Up Page | Styled Registration Form",
+		description:
+			"Built a user registration form with attention to detail in styling, validation cues, and layout using HTML and CSS. Practiced PseudoClasses, PseudoElements, and form design fundamentals.",
+		image: "/img/projects/learning/sign.webp",
+		tags: ["HTML", "CSS"],
+		liveLink: "#",
+		githubLink: "#",
+		featured: false,
+		level: "Learning",
+	},
+	{
+		title: "Landing Page | Basic Static Homepage",
+		description:
+			"Designed a simple homepage with foundational HTML and CSS. Learned the box model, element structure, and styling fundamentals — the very first step in your dev journey.",
+		image: "/img/projects/learning/landing.webp",
+		tags: ["HTML", "CSS"],
+		liveLink: "#",
+		githubLink: "#",
+		featured: false,
+		level: "Learning",
+	},
 ];
 
 export default function Projects() {
