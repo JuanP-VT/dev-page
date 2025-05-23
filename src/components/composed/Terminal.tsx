@@ -26,9 +26,6 @@ export default function Terminal() {
 
 	useEffect(() => {
 		setHasMounted(true);
-		setTimeout(() => {
-			setVisible(true);
-		}, 100);
 	}, []);
 
 	if (!hasMounted) {
