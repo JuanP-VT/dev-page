@@ -17,7 +17,7 @@ export default function NavBar() {
 	function NavBarOption({ id }: { id: string }) {
 		return (
 			<a
-				href={id}
+				href={`#${id}`}
 				className="group relative font-mono font-medium text-gray-600 transition-colors hover:text-teal-400 dark:text-gray-300"
 			>
 				{t(id)}

@@ -8,7 +8,7 @@ import ProjectSection from "@/components/sections/ProjectSection";
 
 export default function Page() {
 	return (
-		<div className="relative">
+		<div id="about" className="relative">
 			<NavBar />
 			<div className="px-4 py-20 md:px-24">
 				<HeroSection />

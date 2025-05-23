@@ -45,7 +45,6 @@ export default function HeroSection() {
 
 	return (
 		<section
-			id="about"
 			className="flex flex-col py-20 items-center gap-20 lg:flex-row lg:gap-10"
 			ref={containerRef}
 		>
