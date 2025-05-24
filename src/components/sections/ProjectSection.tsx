@@ -1,15 +1,13 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useEffect } from "react";
 import ProjectCard from "../composed/ProjectCard";
 import clsx from "clsx";
+import { useProjects } from "@/lib/getProjects";
 import { useTranslations } from "next-intl";
 import { useGlobalStore } from "@/store/global-store";
-import { levels, type Level, type Project } from "@/types/project.type";
-import { useProjects } from "@/lib/getProjects";
+import { levels } from "@/types/project.type";
 
 export default function Projects() {
-	const sectionRef = useRef<HTMLDivElement>(null);
-	const projectRefs = useRef<(HTMLDivElement | null)[]>([]);
 	const filter = useGlobalStore.use.selectedTech();
 	const setFilter = useGlobalStore.use.setSelectedTech();
 	const { getProjects } = useProjects();
@@ -17,6 +15,7 @@ export default function Projects() {
 	const currentLevel = useGlobalStore.use.level();
 	const setLevel = useGlobalStore.use.setLevel();
 	const projects = useGlobalStore.use.projects();
+
 	const filteredProjects = projects.filter(
 		(project) =>
 			project.level === currentLevel &&
@@ -31,43 +30,14 @@ export default function Projects() {
 		),
 	);
 
-	// biome-ignore lint/correctness/useExhaustiveDependencies: <we want to execute this effect only when the filter changes>
-	useEffect(() => {
-		const observer = new IntersectionObserver(
-			(entries) => {
-				if (entries[0].isIntersecting) {
-					projectRefs.current.forEach((project, index) => {
-						if (project) {
-							setTimeout(() => {
-								project.classList.add("animate-slide-up");
-								project.classList.remove("opacity-0");
-							}, index * 200);
-						}
-					});
-				}
-			},
-			{ threshold: 0.1 },
-		);
-
-		if (sectionRef.current) {
-			observer.observe(sectionRef.current);
-		}
-
-		return () => {
-			if (sectionRef.current) {
-				observer.unobserve(sectionRef.current);
-			}
-		};
-	}, [filter, currentLevel]);
-
-	// biome-ignore lint/correctness/useExhaustiveDependencies: <execute this effect only when the component mounts>
+	// biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
 	useEffect(() => {
 		const projects = getProjects();
 		setProjects(projects);
 	}, []);
 
 	return (
-		<section id="projects" className="py-20" ref={sectionRef}>
+		<section id="projects" className="py-20 min-h-[100vh]">
 			<div className="text-center mb-10">
 				<div className="inline-block px-3 py-1 bg-gray-100 dark:bg-gray-800 text-teal-400 rounded-md text-sm font-mono mb-4 border border-gray-200 dark:border-gray-700">
 					<span className="text-pink-500 dark:text-pink-400">git</span>{" "}
@@ -81,15 +51,16 @@ export default function Projects() {
 					A selection of my recent work and personal projects
 				</p>
 			</div>
+
 			<div className="flex w-full dark:bg-gray-800 bg-gray-200 rounded-md mb-2 p-1">
 				{levels.map((level) => (
 					<button
 						key={level}
 						type="button"
 						className={clsx(
-							"flex w-full text-sm cursor-pointer transition-all duration-500 rounded-sm justify-center p-2 active:-translate-y-1 ",
+							"flex w-full text-sm cursor-pointer transition-all duration-500 rounded-sm justify-center p-2 active:-translate-y-1",
 							{
-								"dark:bg-gray-700 bg-slate-300 ": level === currentLevel,
+								"dark:bg-gray-700 bg-slate-300": level === currentLevel,
 							},
 						)}
 						onClick={() => {
@@ -133,14 +104,8 @@ export default function Projects() {
 			</div>
 
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-				{filteredProjects.map((project, index) => (
-					<ProjectCard
-						key={project.title}
-						project={project}
-						ref={(el) => {
-							if (el) projectRefs.current[index] = el;
-						}}
-					/>
+				{filteredProjects.map((project) => (
+					<ProjectCard key={project.title} project={project} />
 				))}
 			</div>
 		</section>
