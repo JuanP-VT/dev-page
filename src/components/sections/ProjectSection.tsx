@@ -1,239 +1,22 @@
 "use client";
-
 import { useEffect, useRef, useState } from "react";
 import ProjectCard from "../composed/ProjectCard";
 import clsx from "clsx";
 import { useTranslations } from "next-intl";
-const levels = ["Professional", "Freelance", "Learning"] as const;
-type Level = (typeof levels)[number];
-type Project = {
-	title: string;
-	description: string;
-	image: string;
-	tags: string[];
-	liveLink: string;
-	githubLink: string;
-	featured: boolean;
-	level: Level;
-};
+import { useGlobalStore } from "@/store/global-store";
+import { levels, type Level, type Project } from "@/types/project.type";
+import { useProjects } from "@/lib/getProjects";
 
 export default function Projects() {
 	const sectionRef = useRef<HTMLDivElement>(null);
 	const projectRefs = useRef<(HTMLDivElement | null)[]>([]);
-	const [filter, setFilter] = useState<string>("");
-	const [currentLevel, setCurrentLevel] = useState<Level>("Professional");
-	const t = useTranslations("projects");
-
-	const projects: Project[] = [
-		{
-			title: t("os2-title"),
-			description: t("os2-description"),
-			image: "/img/projects/onsite2/main.webp",
-			tags: ["TypeScript", "React", "Next.js", "Tailwind CSS"],
-			liveLink: "#",
-			githubLink: "#",
-			featured: true,
-			level: "Professional",
-		},
-		{
-			title: t("management-title"),
-			description: t("management-description"),
-			image: "/img/projects/management/main.webp",
-			tags: ["JavaScript", "React", "Tailwind CSS"],
-			liveLink: "#",
-			githubLink: "#",
-			featured: false,
-			level: "Professional",
-		},
-		{
-			title: t("onsite1-title"),
-			description: t("onsite1-description"),
-			image: "/img/projects/onsite/main.webp",
-			tags: ["JavaScript", "jQuery", "HTML", "CSS"],
-			liveLink: "#",
-			githubLink: "#",
-			featured: false,
-			level: "Professional",
-		},
-		{
-			title: t("internal-tooling-title"),
-			description: t("internal-tooling-description"),
-			image: "/img/projects/tooling/main.webp",
-			tags: ["TypeScript", "Node.js", "SQL", "NestJS"],
-			liveLink: "#",
-			githubLink: "#",
-			featured: false,
-			level: "Professional",
-		},
-		{
-			title: t("temazcal-title"),
-			description: t("temazcal-description"),
-			image: "/img/projects/okahey/main.webp",
-			tags: ["TypeScript", "React", "Next.js", "Tailwind CSS"],
-			liveLink: "#",
-			githubLink: "#",
-			featured: false,
-			level: "Freelance",
-		},
-		{
-			title: t("regina-title"),
-			description: t("regina-description"),
-			image: "/img/projects/regina/main.webp",
-			tags: [
-				"TypeScript",
-				"React",
-				"Next.js",
-				"Tailwind CSS",
-				"MongoDB",
-				"AWS",
-			],
-			liveLink: "#",
-			githubLink: "#",
-			featured: false,
-			level: "Freelance",
-		},
-		{
-			title: t("pchub-title"),
-			description: t("pchub-description"),
-			image: "/img/projects/learning/pc-hub.webp",
-			tags: ["TypeScript", "React", "Next.js", "Tailwind CSS", "MongoDB"],
-			liveLink: "#",
-			githubLink: "#",
-			featured: true,
-			level: "Learning",
-		},
-		{
-			title: t("inventory-title"),
-			description: t("inventory-description"),
-			image: "/img/projects/learning/inventory.webp",
-			tags: ["JavaScript", "React", "Express.js", "MongoDB"],
-			liveLink: "#",
-			githubLink: "#",
-			featured: false,
-			level: "Learning",
-		},
-		{
-			title: t("fortnite-title"),
-			description: t("fortnite-description"),
-			image: "/img/projects/learning/shopping-card.webp",
-			tags: ["TypeScript", "React", "CSS"],
-			liveLink: "#",
-			githubLink: "#",
-			featured: false,
-			level: "Learning",
-		},
-		{
-			title: t("curriculum-title"),
-			description: t("curriculum-description"),
-			image: "/img/projects/learning/cv.webp",
-			tags: ["TypeScript", "React", "CSS"],
-			liveLink: "#",
-			githubLink: "#",
-			featured: false,
-			level: "Learning",
-		},
-		{
-			title: t("weather-title"),
-			description: t("weather-description"),
-			image: "/img/projects/learning/weather.webp",
-			tags: ["JavaScript", "HTML", "CSS"],
-			liveLink: "#",
-			githubLink: "#",
-			featured: false,
-			level: "Learning",
-		},
-		{
-			title: t("library-title"),
-			description: t("library-description"),
-			image: "/img/projects/learning/library.webp",
-			tags: ["JavaScript", "HTML", "CSS"],
-			liveLink: "#",
-			githubLink: "#",
-			featured: false,
-			level: "Learning",
-		},
-		{
-			title: t("todo-title"),
-			description: t("todo-description"),
-			image: "/img/projects/learning/todo.webp",
-			tags: ["JavaScript", "HTML", "CSS"],
-			liveLink: "#",
-			githubLink: "#",
-			featured: false,
-			level: "Learning",
-		},
-		{
-			title: t("restaurant-title"),
-			description: t("restaurant-description"),
-			image: "/img/projects/learning/restaurant.webp",
-			tags: ["JavaScript", "HTML", "CSS"],
-			liveLink: "#",
-			githubLink: "#",
-			featured: false,
-			level: "Learning",
-		},
-		{
-			title: t("etch-title"),
-			description: t("etch-description"),
-			image: "/img/projects/learning/etch.webp",
-			tags: ["JavaScript", "HTML", "CSS"],
-			liveLink: "#",
-			githubLink: "#",
-			featured: false,
-			level: "Learning",
-		},
-		{
-			title: t("tictactoe-title"),
-			description: t("tictactoe-description"),
-			image: "/img/projects/learning/tic.webp",
-			tags: ["JavaScript", "HTML", "CSS"],
-			liveLink: "#",
-			githubLink: "#",
-			featured: false,
-			level: "Learning",
-		},
-		{
-			title: t("rps-title"),
-			description: t("rps-description"),
-			image: "/img/projects/learning/rps.webp",
-			tags: ["JavaScript", "HTML", "CSS"],
-			liveLink: "#",
-			githubLink: "#",
-			featured: false,
-			level: "Learning",
-		},
-		{
-			title: t("admin-title"),
-			description: t("admin-description"),
-			image: "/img/projects/learning/admin.webp",
-			tags: ["HTML", "CSS"],
-			liveLink: "#",
-			githubLink: "#",
-			featured: false,
-			level: "Learning",
-		},
-		{
-			title: t("signup-title"),
-			description: t("signup-description"),
-			image: "/img/projects/learning/sign.webp",
-			tags: ["HTML", "CSS"],
-			liveLink: "#",
-			githubLink: "#",
-			featured: false,
-			level: "Learning",
-		},
-		{
-			title: t("landing-title"),
-			description: t("landing-description"),
-			image: "/img/projects/learning/landing.webp",
-			tags: ["HTML", "CSS"],
-			liveLink: "#",
-			githubLink: "#",
-			featured: false,
-			level: "Learning",
-		},
-	];
-
+	const filter = useGlobalStore.use.selectedTech();
+	const setFilter = useGlobalStore.use.setSelectedTech();
+	const { getProjects } = useProjects();
+	const setProjects = useGlobalStore.use.setProjects();
+	const currentLevel = useGlobalStore.use.level();
+	const setLevel = useGlobalStore.use.setLevel();
+	const projects = useGlobalStore.use.projects();
 	const filteredProjects = projects.filter(
 		(project) =>
 			project.level === currentLevel &&
@@ -277,6 +60,12 @@ export default function Projects() {
 		};
 	}, [filter, currentLevel]);
 
+	// biome-ignore lint/correctness/useExhaustiveDependencies: <execute this effect only when the component mounts>
+	useEffect(() => {
+		const projects = getProjects();
+		setProjects(projects);
+	}, []);
+
 	return (
 		<section id="projects" className="py-20" ref={sectionRef}>
 			<div className="text-center mb-10">
@@ -305,7 +94,7 @@ export default function Projects() {
 						)}
 						onClick={() => {
 							setFilter("");
-							setCurrentLevel(level);
+							setLevel(level);
 						}}
 					>
 						<span className="bg-gradient-to-r dark:from-teal-200 dark:to-sky-300 bg-clip-text text-transparent from-teal-600 to-sky-900">

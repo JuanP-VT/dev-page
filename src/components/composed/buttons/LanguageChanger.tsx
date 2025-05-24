@@ -6,7 +6,7 @@ import {
 	SelectTrigger,
 	SelectValue,
 } from "@/components/ui/select";
-import { useUiStore } from "@/store/global-store";
+import { useGlobalStore } from "@/store/global-store";
 import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
@@ -16,7 +16,7 @@ export default function LanguageChanger() {
 	const t = useTranslations("lang");
 	const pathname = usePathname().split("/")[1];
 
-	const setIsOpen = useUiStore.use.setIsDrawerOpen();
+	const setIsOpen = useGlobalStore.use.setIsDrawerOpen();
 
 	return (
 		<Select onValueChange={(val) => router.push(val)} value={pathname}>

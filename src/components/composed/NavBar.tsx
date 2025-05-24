@@ -5,14 +5,14 @@ import { FaBars } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
 import LanguageChanger from "./buttons/LanguageChanger";
 import { ThemeChanger } from "./buttons/ThemeChanger ";
-import { useUiStore } from "@/store/global-store";
+import { useGlobalStore } from "@/store/global-store";
 
 import MobileDrawer from "./dialogs/MobileDrawer";
 
 export default function NavBar() {
 	const t = useTranslations("navbar");
-	const setIsDrawerOpen = useUiStore.use.setIsDrawerOpen();
-	const isDrawerOpen = useUiStore.use.isDrawerOpen();
+	const setIsDrawerOpen = useGlobalStore.use.setIsDrawerOpen();
+	const isDrawerOpen = useGlobalStore.use.isDrawerOpen();
 
 	function NavBarOption({ id }: { id: string }) {
 		return (

@@ -1,5 +1,5 @@
 "use client";
-import { useUiStore } from "@/store/global-store";
+import { useGlobalStore } from "@/store/global-store";
 import React from "react";
 import { ThemeChanger } from "../buttons/ThemeChanger ";
 import { useTranslations } from "next-intl";
@@ -7,7 +7,7 @@ import clsx from "clsx";
 import LanguageChanger from "../buttons/LanguageChanger";
 
 export default function MobileDrawer() {
-	const isOpen = useUiStore.use.isDrawerOpen();
+	const isOpen = useGlobalStore.use.isDrawerOpen();
 	const t = useTranslations("navbar");
 
 	function NavBarOption({ id }: { id: string }) {

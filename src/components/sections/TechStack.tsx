@@ -13,7 +13,6 @@ import {
 	SiNextdotjs,
 	SiTailwindcss,
 	SiTypescript,
-	SiVercel,
 } from "react-icons/si";
 import {
 	FaAws,
@@ -23,6 +22,8 @@ import {
 	FaNodeJs,
 	FaReact,
 } from "react-icons/fa";
+import { useGlobalStore } from "@/store/global-store";
+import { useRouter } from "next/navigation";
 
 // Organized technologies by category
 const technologies = {
@@ -66,7 +67,7 @@ const technologies = {
 			name: "Node.js",
 			icon: <FaNodeJs className="h-6 w-6 text-green-600 dark:text-green-400" />,
 		},
-		{ name: "Express", icon: <SiExpress className="h-6 w-6" /> },
+		{ name: "Express.js", icon: <SiExpress className="h-6 w-6" /> },
 		{
 			name: "NestJS",
 			icon: <SiNestjs className="h-6 w-6 text-red-600 dark:text-red-400" />,
@@ -76,7 +77,7 @@ const technologies = {
 			icon: <SiMysql className="h-6 w-6 text-blue-600 dark:text-blue-400" />,
 		},
 		{
-			name: "NoSQL",
+			name: "MongoDB",
 			icon: (
 				<SiMongodb className="h-6 w-6 text-green-600 dark:text-green-400" />
 			),
@@ -104,6 +105,7 @@ const technologies = {
 
 export default function TechStack() {
 	const sectionRef = useRef<HTMLDivElement>(null);
+	const router = useRouter();
 	const categoryRefs = {
 		frontend: useRef<HTMLDivElement>(null),
 		backend: useRef<HTMLDivElement>(null),
@@ -114,6 +116,9 @@ export default function TechStack() {
 		backend: useRef<(HTMLDivElement | null)[]>([]),
 		tools: useRef<(HTMLDivElement | null)[]>([]),
 	};
+	const setSelectedTech = useGlobalStore.use.setSelectedTech();
+	const setLevel = useGlobalStore.use.setLevel();
+	const projects = useGlobalStore.use.projects();
 
 	// biome-ignore lint/correctness/useExhaustiveDependencies: <We only want the function to be called once, when the component mounts>
 	useEffect(() => {
@@ -189,6 +194,38 @@ export default function TechStack() {
 		});
 	};
 
+	const handleOnClick = (tech: string) => {
+		//Check if a professional project exists with the selected tech
+		const hasProfessionalProject = projects.some((project) => {
+			return (
+				project.level === "Professional" &&
+				project.tags.some((tag) => tag.toLowerCase() === tech.toLowerCase())
+			);
+		});
+
+		if (hasProfessionalProject) {
+			setSelectedTech(tech);
+			setLevel("Professional");
+			router.push("#projects");
+			return;
+		}
+
+		//Check if a freelance project exists with the selected tech
+		const hasFreelanceProject = projects.some((project) => {
+			return (
+				project.level === "Freelance" &&
+				project.tags.some((tag) => tag.toLowerCase() === tech.toLowerCase())
+			);
+		});
+
+		if (hasFreelanceProject) {
+			setSelectedTech(tech);
+			setLevel("Freelance");
+			router.push("#projects");
+			return;
+		}
+	};
+
 	const renderTechCategory = (
 		category: keyof typeof technologies,
 		index: number,
@@ -208,13 +245,15 @@ export default function TechStack() {
 					<div className="w-24 h-1 bg-gradient-to-r from-teal-500 to-blue-600 dark:from-teal-400 dark:to-blue-500 mx-auto mt-1 rounded-full" />
 				</div>
 
-				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto cursor-pointer">
 					{technologies[category].map((tech, techIndex) => (
 						<div
 							key={tech.name}
 							ref={(el) => {
 								itemsRef[category].current[techIndex] = el;
 							}}
+							onClick={() => handleOnClick(tech.name)}
+							onKeyDown={() => handleOnClick(tech.name)}
 							className="p-4 rounded-lg bg-white dark:bg-gray-800 backdrop-blur-sm border border-gray-200 dark:border-gray-700 hover:border-teal-400 dark:hover:border-teal-500 transition-all opacity-0 group shadow-sm"
 						>
 							<div className="flex items-center gap-3 mb-3">
