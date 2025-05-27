@@ -129,7 +129,7 @@ export default function TechStack() {
 		const createCategoryObserver = (category: keyof typeof technologies) => {
 			const observer = new IntersectionObserver(
 				(entries) => {
-					entries.forEach((entry, index) => {
+					entries.forEach((entry, _) => {
 						if (entry.isIntersecting) {
 							// Mark as animated
 							entry.target.setAttribute("data-animated", "true");
@@ -164,14 +164,14 @@ export default function TechStack() {
 
 		// Create observers for each category
 		(Object.keys(technologies) as Array<keyof typeof technologies>).forEach(
-			(category, index) => {
+			(category, _) => {
 				createCategoryObserver(category);
 			},
 		);
 
 		return () => {
 			// Cleanup all observers
-			observers.forEach((observer, index) => {
+			observers.forEach((observer, _) => {
 				observer.disconnect();
 			});
 		};
@@ -228,7 +228,7 @@ export default function TechStack() {
 
 	const renderTechCategory = (
 		category: keyof typeof technologies,
-		index: number,
+		_: number,
 	) => {
 		// Reset refs array for this category
 		itemsRef[category].current = [];
