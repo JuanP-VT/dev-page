@@ -204,32 +204,10 @@ export default function Page() {
 										</div>
 									</div>
 									<ul className="space-y-3">
-										<BulletPoint
-											text={
-												<>
-													<strong>Designed component-based architecture</strong>
-													using React and TypeScript for better maintainability
-													and type safety
-												</>
-											}
-										/>
-										<BulletPoint
-											text={
-												<>
-													<strong>Implemented design system</strong> with HeroUi
-													components, ensuring consistency across all modules
-												</>
-											}
-										/>
-										<BulletPoint
-											text={
-												<>
-													<strong>Built responsive layouts</strong> with
-													Tailwind CSS, making the dashboard fully
-													mobile-friendly
-												</>
-											}
-										/>
+										<BulletPoint text="Redesigned the app with a modular, component-based architecture using React and TypeScript, improving scalability and maintainability" />
+										<BulletPoint text="Rebuilt the entire UI using Next.js App Router, leveraging server components and layouts for faster page loads and clearer structure" />
+										<BulletPoint text="Used Tailwind CSS and Headless UI to deliver a fully responsive and accessible experience across all screen sizes" />
+										<BulletPoint text="Created reusable UI components tailored to the business needs, improving consistency across modules like quotations, shipments, and invoices" />
 									</ul>
 								</div>
 
@@ -238,31 +216,9 @@ export default function Page() {
 										Performance Optimizations
 									</h3>
 									<ul className="space-y-3">
-										<BulletPoint
-											text={
-												<>
-													<strong>Implemented virtual scrolling</strong> for
-													large data tables, reducing render time by 80%
-												</>
-											}
-										/>
-										<BulletPoint
-											text={
-												<>
-													<strong>Added intelligent caching</strong> with React
-													Query, minimizing unnecessary API calls
-												</>
-											}
-										/>
-										<BulletPoint
-											text={
-												<>
-													<strong>Optimized bundle size</strong> through code
-													splitting and lazy loading, reducing initial load by
-													60%
-												</>
-											}
-										/>
+										<BulletPoint text="Implemented pagination and virtual scrolling for data-heavy tables, drastically improving load performance on shipment and tracking views" />
+										<BulletPoint text="Tuned API interactions for better perceived performance, caching key views using Next.js server components and smart rendering patterns" />
+										<BulletPoint text="Minimized unnecessary re-renders and reduced bundle weight by leveraging code-splitting and lazy loading within Next.js." />
 									</ul>
 								</div>
 
@@ -271,33 +227,9 @@ export default function Page() {
 										Collaboration & Process
 									</h3>
 									<ul className="space-y-3">
-										<BulletPoint
-											text={
-												<>
-													<strong>Worked closely with UX designer</strong> to
-													translate wireframes into pixel-perfect, interactive
-													components
-												</>
-											}
-										/>
-										<BulletPoint
-											text={
-												<>
-													<strong>Collaborated with backend team</strong> to
-													design efficient API contracts and error handling
-													strategies
-												</>
-											}
-										/>
-										<BulletPoint
-											text={
-												<>
-													<strong>Implemented comprehensive testing</strong>
-													with Jest and React Testing Library, achieving 85%
-													code coverage
-												</>
-											}
-										/>
+										<BulletPoint text="Co-led the frontend rewrite as one of two developers, actively planning and executing migration tasks in coordination with the business team" />
+										<BulletPoint text="Worked closely with our coordinator, who also took on a UX role, to iterate on flows and improve user experience with real client feedback." />
+										<BulletPoint text="Designed around legacy backend APIs, solving edge cases and handling inconsistent data structures with graceful error handling and fallback logic." />
 									</ul>
 								</div>
 							</div>
