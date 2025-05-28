@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import CasesNavBar from "@/components/composed/CasesNavBar";
-
+import { Geist } from 'next/font/google'
+ 
+const geist = Geist({
+  subsets: ['latin'],
+})
 export const metadata: Metadata = {
 	title: "Case Study",
 	description: "Case Study",
@@ -12,7 +16,7 @@ type LayoutProps = {
 
 export default async function Layout({ children }: LayoutProps) {
 	return (
-		<div>
+		<div className={geist.className}>
 			<CasesNavBar />
 			{children}
 		</div>
