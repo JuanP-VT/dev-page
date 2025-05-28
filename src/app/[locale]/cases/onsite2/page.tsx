@@ -14,6 +14,7 @@ import React from "react";
 import ThemeImage from "../components/ThemeImage";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import BulletPoint from "../components/BulletPoint";
 
 export default function Page() {
 	return (
@@ -94,34 +95,51 @@ export default function Page() {
 							<div className="grid md:grid-cols-2 gap-8">
 								<Card>
 									<CardContent className="p-6">
+										<h3 className="text-xl font-semibold mb-4 text-green-600">
+											Goals
+										</h3>
+										<ul className="space-y-3">
+											<BulletPoint
+												text="			Modernize the user experience by replacing the
+													outdated interface with a clean, responsive UI"
+											/>
+											<BulletPoint
+												text="			Increase maintainability by migrating to a modern
+													stack with well-structured, reusable components"
+											/>
+											<BulletPoint
+												text="Optimize performance and reliability, especially for
+													data-heavy views and complex form interactions"
+											/>
+											<BulletPoint
+												text="Ensure mobile compatibility, delivering a seamless
+													experience across devices"
+											/>
+										</ul>
+									</CardContent>
+								</Card>
+								<Card>
+									<CardContent className="p-6">
 										<h3 className="text-xl font-semibold mb-4 text-red-600">
 											Major Problems
 										</h3>
 										<ul className="space-y-3">
-											<li className="flex items-start gap-2">
-												<div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0" />
-												<span>
-													Inconsistent UI patterns across different modules
-												</span>
-											</li>
-											<li className="flex items-start gap-2">
-												<div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0" />
-												<span>
-													Poor performance when rendering or filtering large
-													datasets
-												</span>
-											</li>
-											<li className="flex items-start gap-2">
-												<div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0" />
-												<span>Broken or unusable mobile experience</span>
-											</li>
-											<li className="flex items-start gap-2">
-												<div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0" />
-												<span>
-													Unstructured legacy jQuery codebase with no
-													documentation
-												</span>
-											</li>
+											<BulletPoint
+												text="Inconsistent UI patterns across different modules"
+												className="bg-red-500"
+											/>
+											<BulletPoint
+												text="Poor performance when rendering or filtering large datasets"
+												className="bg-red-500"
+											/>
+											<BulletPoint
+												text="Broken or unusable mobile experience"
+												className="bg-red-500"
+											/>
+											<BulletPoint
+												text="Unstructured legacy codebase with no documentation"
+												className="bg-red-500"
+											/>
 										</ul>
 									</CardContent>
 								</Card>
@@ -132,35 +150,27 @@ export default function Page() {
 											Key Challenges
 										</h3>
 										<ul className="space-y-3">
-											<li className="flex items-start gap-2">
-												<div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0" />
-												<span>
-													Rebuilding UI components under tight business
+											<BulletPoint
+												text="Rebuilding UI components under tight business
 													constraints and with dependencies on unfinished
-													backend features
-												</span>
-											</li>
-											<li className="flex items-start gap-2">
-												<div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0" />
-												<span>
-													Managing complex forms and state without sacrificing
-													UI performance
-												</span>
-											</li>
-											<li className="flex items-start gap-2">
-												<div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0" />
-												<span>
-													Balancing speed of delivery with reusability and
-													maintainability of components
-												</span>
-											</li>
-											<li className="flex items-start gap-2">
-												<div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0" />
-												<span>
-													Ensuring smooth integration with legacy backend
-													systems
-												</span>
-											</li>
+													backend features"
+												className="bg-blue-500"
+											/>
+											<BulletPoint
+												text="Managing complex forms and state without sacrificing
+													UI performance"
+												className="bg-blue-500"
+											/>
+											<BulletPoint
+												text="Balancing speed of delivery with reusability and
+													maintainability of components"
+												className="bg-blue-500"
+											/>
+											<BulletPoint
+												text="Ensuring smooth integration with legacy backend
+													systems"
+												className="bg-blue-500"
+											/>
 										</ul>
 									</CardContent>
 								</Card>
@@ -194,28 +204,32 @@ export default function Page() {
 										</div>
 									</div>
 									<ul className="space-y-3">
-										<li className="flex items-start gap-2">
-											<div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0" />
-											<span>
-												<strong>Designed component-based architecture</strong>{" "}
-												using React and TypeScript for better maintainability
-												and type safety
-											</span>
-										</li>
-										<li className="flex items-start gap-2">
-											<div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0" />
-											<span>
-												<strong>Implemented design system</strong> with HeroUi
-												components, ensuring consistency across all modules
-											</span>
-										</li>
-										<li className="flex items-start gap-2">
-											<div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0" />
-											<span>
-												<strong>Built responsive layouts</strong> with Tailwind
-												CSS, making the dashboard fully mobile-friendly
-											</span>
-										</li>
+										<BulletPoint
+											text={
+												<>
+													<strong>Designed component-based architecture</strong>
+													using React and TypeScript for better maintainability
+													and type safety
+												</>
+											}
+										/>
+										<BulletPoint
+											text={
+												<>
+													<strong>Implemented design system</strong> with HeroUi
+													components, ensuring consistency across all modules
+												</>
+											}
+										/>
+										<BulletPoint
+											text={
+												<>
+													<strong>Built responsive layouts</strong> with
+													Tailwind CSS, making the dashboard fully
+													mobile-friendly
+												</>
+											}
+										/>
 									</ul>
 								</div>
 
@@ -224,27 +238,31 @@ export default function Page() {
 										Performance Optimizations
 									</h3>
 									<ul className="space-y-3">
-										<li className="flex items-start gap-2">
-											<div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0" />
-											<span>
-												<strong>Implemented virtual scrolling</strong> for large
-												data tables, reducing render time by 80%
-											</span>
-										</li>
-										<li className="flex items-start gap-2">
-											<div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0" />
-											<span>
-												<strong>Added intelligent caching</strong> with React
-												Query, minimizing unnecessary API calls
-											</span>
-										</li>
-										<li className="flex items-start gap-2">
-											<div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0" />
-											<span>
-												<strong>Optimized bundle size</strong> through code
-												splitting and lazy loading, reducing initial load by 60%
-											</span>
-										</li>
+										<BulletPoint
+											text={
+												<>
+													<strong>Implemented virtual scrolling</strong> for
+													large data tables, reducing render time by 80%
+												</>
+											}
+										/>
+										<BulletPoint
+											text={
+												<>
+													<strong>Added intelligent caching</strong> with React
+													Query, minimizing unnecessary API calls
+												</>
+											}
+										/>
+										<BulletPoint
+											text={
+												<>
+													<strong>Optimized bundle size</strong> through code
+													splitting and lazy loading, reducing initial load by
+													60%
+												</>
+											}
+										/>
 									</ul>
 								</div>
 
@@ -253,30 +271,33 @@ export default function Page() {
 										Collaboration & Process
 									</h3>
 									<ul className="space-y-3">
-										<li className="flex items-start gap-2">
-											<div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0" />
-											<span>
-												<strong>Worked closely with UX designer</strong> to
-												translate wireframes into pixel-perfect, interactive
-												components
-											</span>
-										</li>
-										<li className="flex items-start gap-2">
-											<div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0" />
-											<span>
-												<strong>Collaborated with backend team</strong> to
-												design efficient API contracts and error handling
-												strategies
-											</span>
-										</li>
-										<li className="flex items-start gap-2">
-											<div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0" />
-											<span>
-												<strong>Implemented comprehensive testing</strong> with
-												Jest and React Testing Library, achieving 85% code
-												coverage
-											</span>
-										</li>
+										<BulletPoint
+											text={
+												<>
+													<strong>Worked closely with UX designer</strong> to
+													translate wireframes into pixel-perfect, interactive
+													components
+												</>
+											}
+										/>
+										<BulletPoint
+											text={
+												<>
+													<strong>Collaborated with backend team</strong> to
+													design efficient API contracts and error handling
+													strategies
+												</>
+											}
+										/>
+										<BulletPoint
+											text={
+												<>
+													<strong>Implemented comprehensive testing</strong>
+													with Jest and React Testing Library, achieving 85%
+													code coverage
+												</>
+											}
+										/>
 									</ul>
 								</div>
 							</div>
@@ -302,10 +323,10 @@ export default function Page() {
 											className="w-full rounded border mb-4"
 										/>
 										<ul className="space-y-2 text-sm">
-											<li>• Cluttered, inconsistent interface</li>
-											<li>• 5+ second load times</li>
-											<li>• No mobile support</li>
-											<li>• Difficult navigation</li>
+											<BulletPoint text="Cluttered, inconsistent interface" />
+											<BulletPoint text="5+ second load times" />
+											<BulletPoint text="No mobile support" />
+											<BulletPoint text="Difficult navigation" />
 										</ul>
 									</CardContent>
 								</Card>
@@ -323,10 +344,10 @@ export default function Page() {
 											className="w-full rounded border mb-4"
 										/>
 										<ul className="space-y-2 text-sm">
-											<li>• Clean, modern design system</li>
-											<li>• Sub-second load times</li>
-											<li>• Fully responsive</li>
-											<li>• Intuitive user experience</li>
+											<BulletPoint text="Clean, modern design system" />
+											<BulletPoint text="Sub-second load times" />
+											<BulletPoint text="Fully responsive" />
+											<BulletPoint text="Intuitive user experience" />
 										</ul>
 									</CardContent>
 								</Card>

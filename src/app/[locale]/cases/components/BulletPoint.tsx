@@ -1,8 +1,8 @@
 import { cn } from "@/lib/utils";
-import React from "react";
+import type React from "react";
 
 type Props = {
-	text: string;
+	text: string | React.ReactNode;
 	className?: string;
 };
 
