@@ -303,7 +303,7 @@ export default function Page() {
 											80%
 										</div>
 										<div className="text-sm text-muted-foreground">
-											Faster Load Times
+											Faster render times
 										</div>
 									</CardContent>
 								</Card>
@@ -313,7 +313,7 @@ export default function Page() {
 											60%
 										</div>
 										<div className="text-sm text-muted-foreground">
-											Reduction in Support Tickets
+											Estimated UI code reduction
 										</div>
 									</CardContent>
 								</Card>
@@ -323,7 +323,7 @@ export default function Page() {
 											95%
 										</div>
 										<div className="text-sm text-muted-foreground">
-											User Satisfaction
+											Positive feedback from internal stakeholders
 										</div>
 									</CardContent>
 								</Card>
@@ -331,13 +331,14 @@ export default function Page() {
 
 							<div className="mt-8 prose prose-lg max-w-none">
 								<p className="text-lg leading-relaxed">
-									The rebuild transformed how our logistics team operates daily.
-									Internal users reported significantly improved usability and
-									clarity, with many commenting that tasks that previously took
-									10+ clicks now require just 2-3. The development team can now
-									implement new features in days rather than weeks, and the
-									modular architecture has made the codebase much more
-									maintainable and scalable.
+									The rebuild marks a major leap in usability and
+									maintainability. Internal stakeholders involved in testing
+									have praised the cleaner design and clearer structure, noting
+									that previously confusing workflows are now streamlined. From
+									a development perspective, the new modular architecture has
+									significantly improved scalability and speed of
+									implementation, setting the foundation for faster iteration
+									and long-term product evolution.
 								</p>
 							</div>
 						</section>
