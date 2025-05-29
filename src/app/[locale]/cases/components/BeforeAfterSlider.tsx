@@ -18,9 +18,9 @@ type BeforeAfterSliderProps = {
 };
 
 export default function BeforeAfterSlider({
-	beforeImage,
-	afterImage,
-	title,
+	beforeImage = "",
+	afterImage = "",
+	title = "",
 	beforeLabel = "Before",
 	afterLabel = "After",
 	height = 600,
@@ -92,11 +92,11 @@ export default function BeforeAfterSlider({
 	};
 
 	return (
-		<div className="relative w-full max-w-full mx-auto ">
+		<div className="relative w-full max-w-full mx-auto flex flex-col items-center">
 			<span className="flex p-2 text-xl">{title}</span>
 			<div
 				ref={containerRef}
-				className="relative overflow-hidden rounded-lg shadow-lg"
+				className="relative overflow-hidden rounded-lg shadow-lg w-full"
 				style={{ height: `${height}px`, maxWidth: `${width}px` }}
 			>
 				{/* After image (full width) */}

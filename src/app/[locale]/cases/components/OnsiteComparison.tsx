@@ -1,0 +1,155 @@
+"use client";
+import React, { useEffect, useState } from "react";
+import BeforeAfterSlider from "./BeforeAfterSlider";
+import clsx from "clsx";
+const desktopData: CarrouselEntry[] = [
+	{
+		title: "Dashboard",
+		beforeImage: "/img/projects/onsite/carrousel/desktop/oldonsite-main.webp",
+		afterImage: "/img/projects/onsite2/carrousel/desktop/onsite-main.webp",
+	},
+	{
+		title: "Account Summary",
+		beforeImage:
+			"/img/projects/onsite/carrousel/desktop/oldonsite-accountstate.webp",
+		afterImage:
+			"/img/projects/onsite2/carrousel/desktop/onsite-accountstate.webp",
+	},
+	{
+		title: "Shipping",
+		beforeImage: "/img/projects/onsite/carrousel/desktop/oldonsite-doc.webp",
+		afterImage: "/img/projects/onsite2/carrousel/desktop/onsite-doc.webp",
+	},
+	{
+		title: "Mass Shipping",
+		beforeImage:
+			"/img/projects/onsite/carrousel/desktop/oldonsite-massdoc.webp",
+		afterImage: "/img/projects/onsite2/carrousel/desktop/onsite-massdoc.webp",
+	},
+	{
+		title: "My Profile",
+		beforeImage:
+			"/img/projects/onsite/carrousel/desktop/oldonsite-profile.webp",
+		afterImage: "/img/projects/onsite2/carrousel/desktop/onsite-profile.webp",
+	},
+	{
+		title: "My Shipments",
+		beforeImage:
+			"/img/projects/onsite/carrousel/desktop/oldonsite-shipments.webp",
+		afterImage: "/img/projects/onsite2/carrousel/desktop/onsite-shipments.webp",
+	},
+];
+
+const mobileData: CarrouselEntry[] = [
+	{
+		title: "Dashboard",
+		beforeImage:
+			"/img/projects/onsite/carrousel/mobile/oldonsite-dashboard-m.webp",
+		afterImage:
+			"/img/projects/onsite2/carrousel/mobile/onsite-dashboard-m.webp",
+	},
+	{
+		title: "Account Summary",
+		beforeImage:
+			"/img/projects/onsite/carrousel/desktop/oldonsite-accountstate-m.webp",
+		afterImage:
+			"/img/projects/onsite2/carrousel/desktop/onsite-accountstate-m.webp",
+	},
+	{
+		title: "Shipping",
+		beforeImage: "/img/projects/onsite/carrousel/desktop/oldonsite-doc-m.webp",
+		afterImage: "/img/projects/onsite2/carrousel/desktop/onsite-doc-m.webp",
+	},
+	{
+		title: "Mass Shipping",
+		beforeImage:
+			"/img/projects/onsite/carrousel/desktop/oldonsite-massdoc-m.webp",
+		afterImage: "/img/projects/onsite2/carrousel/desktop/onsite-massdoc-m.webp",
+	},
+	{
+		title: "My Profile",
+		beforeImage:
+			"/img/projects/onsite/carrousel/desktop/oldonsite-profile.webp-m",
+		afterImage: "/img/projects/onsite2/carrousel/desktop/onsite-profile.webp-m",
+	},
+	{
+		title: "My Shipments",
+		beforeImage:
+			"/img/projects/onsite/carrousel/desktop/oldonsite-shipments-m.webp",
+		afterImage:
+			"/img/projects/onsite2/carrousel/desktop/onsite-shipments-m.webp",
+	},
+];
+
+type CarrouselEntry = {
+	title: string;
+	beforeImage: string;
+	afterImage: string;
+};
+const filters = ["Desktop", "Mobile"] as const;
+type Filter = (typeof filters)[number];
+export default function OnsiteComparison() {
+	const [currentIndex, setCurrentIndex] = useState(0);
+	const [currentFilter, setCurrentFilter] = useState<Filter>("Desktop");
+	const [data, setData] = useState<CarrouselEntry[]>([]);
+
+	const handleNext = () => {
+		if (currentIndex + 1 < data.length) {
+			setCurrentIndex((prev) => prev + 1);
+			return;
+		}
+		setCurrentIndex(0);
+	};
+	const handlePrev = () => {
+		if (currentIndex - 1 >= 0) {
+			setCurrentIndex((prev) => prev - 1);
+			return;
+		}
+		setCurrentIndex(data.length - 1);
+	};
+
+	useEffect(() => {
+		setCurrentIndex(0);
+		if (currentFilter === "Desktop") {
+			setData(desktopData);
+		} else {
+			setData(mobileData);
+		}
+	}, [currentFilter]);
+	return (
+		<div className="flex flex-col">
+			<div className="flex">
+				{filters.map((filter) => (
+					<button
+						key={filter}
+						type="button"
+						className={clsx(
+							"flex w-full text-sm cursor-pointer transition-all duration-500 rounded-sm justify-center p-2 active:-translate-y-1",
+							{
+								"dark:bg-gray-700 bg-slate-300": filter === currentFilter,
+							},
+						)}
+						onClick={() => {
+							setCurrentFilter(filter);
+						}}
+					>
+						<span className="bg-gradient-to-r dark:from-teal-200 dark:to-sky-300 bg-clip-text text-transparent from-teal-600 to-sky-900">
+							{filter}
+						</span>
+					</button>
+				))}
+			</div>
+			<div className="w-full flex justify-center items-center">
+				<BeforeAfterSlider
+					title={data[currentIndex]?.title}
+					width={currentFilter === "Desktop" ? 900 : 300}
+					height={650}
+					beforeImage={data[currentIndex]?.beforeImage}
+					afterImage={data[currentIndex]?.afterImage}
+					onClickNext={handleNext}
+					onClickPrev={handlePrev}
+				/>
+			</div>
+		</div>
+	);
+}

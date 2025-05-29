@@ -15,6 +15,7 @@ import ThemeImage from "../components/ThemeImage";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import BulletPoint from "../components/BulletPoint";
+import OnsiteComparison from "../components/OnsiteComparison";
 
 export default function Page() {
 	return (
@@ -238,51 +239,40 @@ export default function Page() {
 						<Separator className="my-16" />
 
 						{/* Before vs After */}
-						<section className="mb-16">
+						<section className="mb-16 flex w-full flex-col">
 							<h2 className="text-3xl font-bold mb-8">Before vs. After</h2>
 
-							<div className="grid md:grid-cols-2 gap-8">
-								<Card>
-									<CardContent className="p-6">
-										<h3 className="text-xl font-semibold mb-4 text-red-600">
-											Before
-										</h3>
-										<Image
-											src="/placeholder.svg?height=200&width=300"
-											alt="Old Dashboard Interface"
-											width={300}
-											height={200}
-											className="w-full rounded border mb-4"
-										/>
-										<ul className="space-y-2 text-sm">
-											<BulletPoint text="Cluttered, inconsistent interface" />
-											<BulletPoint text="5+ second load times" />
-											<BulletPoint text="No mobile support" />
-											<BulletPoint text="Difficult navigation" />
-										</ul>
-									</CardContent>
-								</Card>
+							<div className="flex w-full flex-col">
+								<OnsiteComparison />
+								<div className="grid grid-cols-1 sm:grid-cols-2">
+									<Card>
+										<CardContent className="p-6">
+											<h3 className="text-xl font-semibold mb-4 text-red-600">
+												Before
+											</h3>
+											<ul className="space-y-2 text-sm">
+												<BulletPoint text="'Feels like a government page'" />
+												<BulletPoint text="Inconsistent load time" />
+												<BulletPoint text="Bad mobile support" />
+												<BulletPoint text="Fragile UX" />
+											</ul>
+										</CardContent>
+									</Card>
 
-								<Card>
-									<CardContent className="p-6">
-										<h3 className="text-xl font-semibold mb-4 text-green-600">
-											After
-										</h3>
-										<Image
-											src="/placeholder.svg?height=200&width=300"
-											alt="New Dashboard Interface"
-											width={300}
-											height={200}
-											className="w-full rounded border mb-4"
-										/>
-										<ul className="space-y-2 text-sm">
-											<BulletPoint text="Clean, modern design system" />
-											<BulletPoint text="Sub-second load times" />
-											<BulletPoint text="Fully responsive" />
-											<BulletPoint text="Intuitive user experience" />
-										</ul>
-									</CardContent>
-								</Card>
+									<Card>
+										<CardContent className="p-6">
+											<h3 className="text-xl font-semibold mb-4 text-green-600">
+												After
+											</h3>
+											<ul className="space-y-2 text-sm">
+												<BulletPoint text="Clean, modern design system" />
+												<BulletPoint text="Sub-second load times" />
+												<BulletPoint text="Mobile Friendly" />
+												<BulletPoint text="Intuitive user experience" />
+											</ul>
+										</CardContent>
+									</Card>
+								</div>
 							</div>
 						</section>
 
