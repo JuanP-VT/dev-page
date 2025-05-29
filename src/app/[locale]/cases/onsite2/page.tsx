@@ -8,7 +8,6 @@ import {
 	TrendingUp,
 	Users,
 } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import ThemeImage from "../components/ThemeImage";
@@ -244,7 +243,7 @@ export default function Page() {
 
 							<div className="flex w-full flex-col">
 								<OnsiteComparison />
-								<div className="grid grid-cols-1 sm:grid-cols-2">
+								<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
 									<Card>
 										<CardContent className="p-6">
 											<h3 className="text-xl font-semibold mb-4 text-red-600">

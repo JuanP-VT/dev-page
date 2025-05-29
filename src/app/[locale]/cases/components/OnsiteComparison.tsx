@@ -51,33 +51,28 @@ const mobileData: CarrouselEntry[] = [
 	{
 		title: "Account Summary",
 		beforeImage:
-			"/img/projects/onsite/carrousel/desktop/oldonsite-accountstate-m.webp",
+			"/img/projects/onsite/carrousel/mobile/oldonsite-accountstate-m.webp",
 		afterImage:
-			"/img/projects/onsite2/carrousel/desktop/onsite-accountstate-m.webp",
+			"/img/projects/onsite2/carrousel/mobile/onsite-accoutstate-m.webp",
 	},
 	{
 		title: "Shipping",
-		beforeImage: "/img/projects/onsite/carrousel/desktop/oldonsite-doc-m.webp",
-		afterImage: "/img/projects/onsite2/carrousel/desktop/onsite-doc-m.webp",
+		beforeImage: "/img/projects/onsite/carrousel/mobile/oldonsite-doc-m.webp",
+		afterImage: "/img/projects/onsite2/carrousel/mobile/onsite-doc-m.webp",
 	},
-	{
-		title: "Mass Shipping",
-		beforeImage:
-			"/img/projects/onsite/carrousel/desktop/oldonsite-massdoc-m.webp",
-		afterImage: "/img/projects/onsite2/carrousel/desktop/onsite-massdoc-m.webp",
-	},
+
 	{
 		title: "My Profile",
 		beforeImage:
-			"/img/projects/onsite/carrousel/desktop/oldonsite-profile.webp-m",
-		afterImage: "/img/projects/onsite2/carrousel/desktop/onsite-profile.webp-m",
+			"/img/projects/onsite/carrousel/mobile/oldonsite-profile-m.webp",
+		afterImage: "/img/projects/onsite2/carrousel/mobile/onsite-profile-m.webp",
 	},
 	{
 		title: "My Shipments",
 		beforeImage:
-			"/img/projects/onsite/carrousel/desktop/oldonsite-shipments-m.webp",
+			"/img/projects/onsite/carrousel/mobile/oldonsite-shipments-m.webp",
 		afterImage:
-			"/img/projects/onsite2/carrousel/desktop/onsite-shipments-m.webp",
+			"/img/projects/onsite2/carrousel/mobile/onsite-shipments-m.webp",
 	},
 ];
 
