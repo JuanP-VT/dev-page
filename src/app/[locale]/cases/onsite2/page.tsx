@@ -250,10 +250,22 @@ export default function Page() {
 												Before
 											</h3>
 											<ul className="space-y-2 text-sm">
-												<BulletPoint text="'Feels like a government page'" />
-												<BulletPoint text="Inconsistent load time" />
-												<BulletPoint text="Bad mobile support" />
-												<BulletPoint text="Fragile UX" />
+												<BulletPoint
+													className="bg-red-500"
+													text="Outdated interface, 'felt like a 2004 government page'"
+												/>
+												<BulletPoint
+													className="bg-red-500"
+													text="Unpredictable loading times"
+												/>
+												<BulletPoint
+													className="bg-red-500"
+													text="Broken mobile experience"
+												/>
+												<BulletPoint
+													className="bg-red-500"
+													text="Clunky and fragile user flows"
+												/>
 											</ul>
 										</CardContent>
 									</Card>
@@ -264,10 +276,10 @@ export default function Page() {
 												After
 											</h3>
 											<ul className="space-y-2 text-sm">
-												<BulletPoint text="Clean, modern design system" />
-												<BulletPoint text="Sub-second load times" />
-												<BulletPoint text="Mobile Friendly" />
-												<BulletPoint text="Intuitive user experience" />
+												<BulletPoint text="Clean, consistent design system with modern UI" />
+												<BulletPoint text="Noticeably faster load times and smoother interactions" />
+												<BulletPoint text="Responsive across devices" />
+												<BulletPoint text="Improved user experience with clearer navigation" />
 											</ul>
 										</CardContent>
 									</Card>
