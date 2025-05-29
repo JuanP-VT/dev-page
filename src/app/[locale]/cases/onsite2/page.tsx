@@ -356,13 +356,23 @@ export default function Page() {
 								<div>
 									<h3 className="text-xl font-semibold mb-3">What I Learned</h3>
 									<p className="text-lg leading-relaxed">
-										This project taught me the importance of balancing technical
-										excellence with business needs. I learned how to effectively
-										communicate technical decisions to non-technical
-										stakeholders and gained valuable experience in large-scale
-										application architecture. The project also reinforced the
-										value of investing time in proper planning and design
-										systems upfront.
+										Working on Onsite 2 pushed me to a new level of ownership
+										and problem-solving. As one of only two developers on the
+										project, I was responsible for independently delivering
+										entire modules from architectural decisions to final UI
+										details often without direct guidance. This experience
+										sharpened my ability to:
+										<div className="py-1 flex flex-col gap-2">
+											<BulletPoint text="Make architectural and tech decisions confidently" />
+											<BulletPoint text="Prioritize maintainability while working under business pressure" />
+											<BulletPoint text="Break down large, ambiguous tasks into achievable steps" />
+											<BulletPoint text="Communicate proactively with non-technical stakeholders to clarify requirements" />
+										</div>
+										While it was challenging at times, the autonomy helped me
+										grow significantly as a frontend developer. I left this
+										project with stronger technical instincts and a clearer
+										understanding of how to build scalable interfaces in
+										real-world product environments.
 									</p>
 								</div>
 
@@ -371,13 +381,17 @@ export default function Page() {
 										What I'd Do Differently
 									</h3>
 									<p className="text-lg leading-relaxed">
-										If I could do it again, I would have implemented more
-										comprehensive user testing earlier in the process. While we
-										had great internal feedback, getting external user input
-										sooner could have identified some UX improvements we
-										discovered later. I'd also invest more time in automated
-										testing from the beginning rather than adding it
-										incrementally.
+										Due to the company's lack of a testing culture and resource
+										constraints, we didn’t implement automated unit,
+										integration, or end-to-end tests. This made manual testing
+										more time-consuming and occasionally led to regressions
+										during development If given the chance to revisit this
+										project or in future projects I would advocate for:
+										<div className="py-1 flex flex-col gap-2">
+											<BulletPoint text="Introducing automated testing early in the development lifecycle" />
+											<BulletPoint text="Establishing a testing strategy appropriate to the project size (unit tests for logic-heavy code, integration tests for critical flows, and light e2e )" />
+											<BulletPoint text="Educating the team on how testing improves confidence, speeds up iteration, and reduces support overhead" />
+										</div>
 									</p>
 								</div>
 
@@ -386,13 +400,18 @@ export default function Page() {
 										What I'm Proudest Of
 									</h3>
 									<p className="text-lg leading-relaxed">
-										I'm most proud of creating a design system that not only
-										solved our immediate needs but also positioned the team for
-										future growth. The component library we built has been
-										adopted across other projects in the company, and the
-										performance optimizations have become a template for other
-										dashboard rebuilds. Seeing the daily impact on our users'
-										productivity has been incredibly rewarding.
+										This project tested me in a real-world where I had to
+										deliver production-ready software with minimal guidance,
+										legacy constraints, and full responsibility over multiple
+										modules. Despite the pressure and challenges, I shipped
+										high-quality features, learned to own my work end-to-end,
+										and contributed to a product that truly matters to users.
+										What makes me most proud is the personal growth: I went from
+										dealing with impostor syndrome to feeling confident in my
+										ability to solve complex problems, collaborate effectively,
+										and make solid technical decisions. This experience
+										solidified my identity as a capable, reliable developer and
+										I'm ready for what’s next
 									</p>
 								</div>
 							</div>
