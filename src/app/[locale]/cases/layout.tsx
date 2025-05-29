@@ -18,7 +18,7 @@ export default async function Layout({ children }: LayoutProps) {
 	return (
 		<div className={geist.className}>
 			<CasesNavBar />
-			{children}
+			<div className="pt-5">{children}</div>
 		</div>
 	);
 }
