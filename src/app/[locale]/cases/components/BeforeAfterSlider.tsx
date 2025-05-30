@@ -91,8 +91,9 @@ export default function BeforeAfterSlider({
 		}
 	};
 
+	//TODO: Fix clipping with navbar
 	return (
-		<div className="relative w-full max-w-full mx-auto flex flex-col items-center -z-10">
+		<div className="relative w-full max-w-full mx-auto flex flex-col items-center ">
 			<span className="flex p-4 text-4xl font-semibold bg-gradient-to-r dark:from-sky-500 dark:to-emerald-400 from-sky-500 to-emerald-400 bg-clip-text text-transparent">
 				{title}
 			</span>
@@ -139,7 +140,7 @@ export default function BeforeAfterSlider({
 				{/* Slider handle */}
 				<div
 					className="absolute top-0 bottom-0 w-1 bg-white cursor-ew-resize shadow-[0_0_0_2px_rgba(255,255,255,0.9)]"
-					style={{ left: `${sliderPosition}%` }}
+					style={{ left: `${sliderPosition}%`, touchAction: "none" }}
 					onMouseDown={handleMouseDown}
 					onTouchStart={handleMouseDown}
 					onTouchEnd={handleMouseUp}
