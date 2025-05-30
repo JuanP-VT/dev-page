@@ -92,13 +92,13 @@ export default function BeforeAfterSlider({
 	};
 
 	return (
-		<div className="relative w-full max-w-full mx-auto flex flex-col items-center">
+		<div className="relative w-full max-w-full mx-auto flex flex-col items-center -z-10">
 			<span className="flex p-4 text-4xl font-semibold bg-gradient-to-r dark:from-sky-500 dark:to-emerald-400 from-sky-500 to-emerald-400 bg-clip-text text-transparent">
 				{title}
 			</span>
 			<div
 				ref={containerRef}
-				className="relative overflow-hidden rounded-lg shadow-lg w-full"
+				className="relative overflow-hidden rounded-lg shadow-lg w-full "
 				style={{ height: `${height}px`, maxWidth: `${width}px` }}
 			>
 				{/* After image (full width) */}
@@ -108,7 +108,7 @@ export default function BeforeAfterSlider({
 				<Button className="absolute top-1/2 right-0 z-10" onClick={onClickNext}>
 					<FaAngleRight />
 				</Button>
-				<div className="absolute inset-0">
+				<div className="absolute inset-0 ">
 					<Image
 						src={afterImage || "/placeholder.svg"}
 						alt={afterLabel}
