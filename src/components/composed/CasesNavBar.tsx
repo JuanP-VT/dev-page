@@ -15,9 +15,9 @@ export default function CasesNavBar() {
 			>
 				<IoArrowBackOutline
 					size="1rem"
-					className="group-hover:text-teal-500 group transition-all duration-300"
+					className="group-hover:text-teal-500 group transition-all duration-300 text-zinc-600 dark:text-zinc-300"
 				/>
-				<span className="group-hover:text-teal-500 transition-all duration-300 ">
+				<span className="group-hover:text-teal-500 transition-all duration-300 text-zinc-600 dark:text-zinc-300">
 					{t("common.back")}
 				</span>
 			</Link>

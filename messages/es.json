@@ -99,5 +99,10 @@
 
     "landing-title": "Página de Inicio | Homepage Estática Básica",
     "landing-description": "Diseñé una página de inicio simple con HTML y CSS básicos. Aprendí el modelo de caja, estructura de elementos y fundamentos de estilos - el primer paso en mi viaje como desarrollador."
+  },
+  "cases": {
+    "common": {
+      "back": "Volver"
+    }
   }
 }

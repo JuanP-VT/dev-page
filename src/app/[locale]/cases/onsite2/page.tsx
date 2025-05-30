@@ -371,7 +371,7 @@ export default function Page() {
 									<h3 className="text-xl font-semibold mb-3 bg-gradient-to-r dark:from-sky-500 dark:to-emerald-400 from-sky-500 to-emerald-400 bg-clip-text text-transparent">
 										What I Learned
 									</h3>
-									<p className="text-lg leading-relaxed">
+									<div className="text-lg leading-relaxed">
 										Working on Onsite 2 pushed me to a new level of ownership
 										and problem-solving. As one of only two developers on the
 										project, I was responsible for independently delivering
@@ -389,7 +389,7 @@ export default function Page() {
 										project with stronger technical instincts and a clearer
 										understanding of how to build scalable interfaces in
 										real-world product environments.
-									</p>
+									</div>
 								</div>
 
 								<div>

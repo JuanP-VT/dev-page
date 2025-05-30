@@ -99,5 +99,10 @@
 
     "landing-title": "Landing Page | Basic Static Homepage",
     "landing-description": "Designed a simple homepage with foundational HTML and CSS. Learned the box model, element structure, and styling fundamentals — the very first step my dev journey."
+  },
+  "cases": {
+    "common": {
+      "back": "Go Back"
+    }
   }
 }
