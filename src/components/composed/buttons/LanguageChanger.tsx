@@ -32,11 +32,11 @@ const LanguageChanger = () => {
 	}, [pathname]);
 
 	return (
-		<div className="relative w-28 ">
+		<div className="relative w-24 ">
 			<button
 				type="button"
 				onClick={toggleDropdown}
-				className="w-full flex items-center justify-between px-4 py-2 text-sm font-medium rounded-lg border cursor-pointer
+				className="w-full flex items-center justify-between px-3 py-1 text-sm font-medium rounded-lg border cursor-pointer
                   bg-white dark:bg-gray-800 border-gray-300 dark:border-gray-600
                   text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700
                   focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent                  "
