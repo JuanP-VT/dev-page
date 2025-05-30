@@ -8,6 +8,7 @@ import {
 	TrendingUp,
 	Users,
 } from "lucide-react";
+import { GrOverview } from "react-icons/gr";
 import Link from "next/link";
 import React from "react";
 import ThemeImage from "../components/ThemeImage";
@@ -27,7 +28,7 @@ export default function Page() {
 							<div className="mb-4 border w-fit py-1 px-3 text-sm rounded-full justify-self-center ">
 								Case Study
 							</div>
-							<h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6 bg-gradient-to-r dark:from-emerald-300 dark:to-sky-400 from-emerald-400 to-sky-500 bg-clip-text text-transparent">
+							<h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6 bg-gradient-to-r dark:from-sky-500 dark:to-emerald-400 from-sky-500 to-emerald-400 bg-clip-text text-transparent">
 								Onsite 2 | Full Rebuild
 							</h1>
 							<p className="text-xl md:text-2xl text-muted-foreground mb-8">
@@ -62,8 +63,10 @@ export default function Page() {
 						{/* Overview Section */}
 						<section className="mb-16">
 							<div className="flex items-center gap-3 mb-6">
-								<Target className="h-6 w-6 text-primary" />
-								<h2 className="text-3xl font-bold">Overview</h2>
+								<GrOverview className="h-6 w-6  text-sky-500 " />
+								<h2 className="text-3xl font-bold bg-gradient-to-r dark:from-sky-500 dark:to-emerald-400 from-sky-500 to-emerald-400 bg-clip-text text-transparent">
+									Overview
+								</h2>
 							</div>
 
 							<div className="prose prose-lg max-w-none">
@@ -88,23 +91,25 @@ export default function Page() {
 						{/* Goals & Challenges */}
 						<section className="mb-16">
 							<div className="flex items-center gap-3 mb-6">
-								<Target className="h-6 w-6 text-primary" />
-								<h2 className="text-3xl font-bold">Goals & Challenges</h2>
+								<Target className="h-6 w-6 text-sky-500" />
+								<h2 className="text-3xl font-bold bg-gradient-to-r dark:from-sky-500 dark:to-emerald-400 from-sky-500 to-emerald-400 bg-clip-text text-transparent">
+									Goals & Challenges
+								</h2>
 							</div>
 
 							<div className="grid md:grid-cols-2 gap-8">
 								<Card>
 									<CardContent className="p-6">
-										<h3 className="text-xl font-semibold mb-4 text-green-600">
+										<h3 className="text-xl font-semibold mb-4 text-emerald-600 dark:text-emerald-500">
 											Goals
 										</h3>
 										<ul className="space-y-3">
 											<BulletPoint
-												text="			Modernize the user experience by replacing the
+												text="Modernize the user experience by replacing the
 													outdated interface with a clean, responsive UI"
 											/>
 											<BulletPoint
-												text="			Increase maintainability by migrating to a modern
+												text="Increase maintainability by migrating to a modern
 													stack with well-structured, reusable components"
 											/>
 											<BulletPoint
@@ -118,35 +123,10 @@ export default function Page() {
 										</ul>
 									</CardContent>
 								</Card>
-								<Card>
-									<CardContent className="p-6">
-										<h3 className="text-xl font-semibold mb-4 text-red-600">
-											Major Problems
-										</h3>
-										<ul className="space-y-3">
-											<BulletPoint
-												text="Inconsistent UI patterns across different modules"
-												className="bg-red-500"
-											/>
-											<BulletPoint
-												text="Poor performance when rendering or filtering large datasets"
-												className="bg-red-500"
-											/>
-											<BulletPoint
-												text="Broken or unusable mobile experience"
-												className="bg-red-500"
-											/>
-											<BulletPoint
-												text="Unstructured legacy codebase with no documentation"
-												className="bg-red-500"
-											/>
-										</ul>
-									</CardContent>
-								</Card>
 
 								<Card>
 									<CardContent className="p-6">
-										<h3 className="text-xl font-semibold mb-4 text-blue-600">
+										<h3 className="text-xl font-semibold mb-4 text-blue-600 dark:text-blue-500">
 											Key Challenges
 										</h3>
 										<ul className="space-y-3">
@@ -174,6 +154,31 @@ export default function Page() {
 										</ul>
 									</CardContent>
 								</Card>
+								<Card>
+									<CardContent className="p-6">
+										<h3 className="text-xl font-semibold mb-4 text-red-600 dark:text-red-500">
+											Major Problems
+										</h3>
+										<ul className="space-y-3">
+											<BulletPoint
+												text="Inconsistent UI patterns across different modules"
+												className="bg-red-500"
+											/>
+											<BulletPoint
+												text="Poor performance when rendering or filtering large datasets"
+												className="bg-red-500"
+											/>
+											<BulletPoint
+												text="Broken or unusable mobile experience"
+												className="bg-red-500"
+											/>
+											<BulletPoint
+												text="Unstructured legacy codebase with no documentation"
+												className="bg-red-500"
+											/>
+										</ul>
+									</CardContent>
+								</Card>
 							</div>
 						</section>
 
@@ -182,15 +187,15 @@ export default function Page() {
 						{/* Solutions & Contributions */}
 						<section className="mb-16">
 							<div className="flex items-center gap-3 mb-6">
-								<Code className="h-6 w-6 text-primary" />
-								<h2 className="text-3xl font-bold">
+								<Code className="h-6 w-6 text-sky-500" />
+								<h2 className="text-3xl font-bold bg-gradient-to-r dark:from-sky-500 dark:to-emerald-400 from-sky-500 to-emerald-400 bg-clip-text text-transparent">
 									Solutions & My Contributions
 								</h2>
 							</div>
 
 							<div className="space-y-8">
 								<div>
-									<h3 className="text-xl font-semibold mb-4">
+									<h3 className="text-xl font-semibold mb-4 bg-gradient-to-r dark:from-sky-500 dark:to-emerald-400 from-sky-500 to-emerald-400 bg-clip-text text-transparent">
 										Technical Architecture
 									</h3>
 									<div className="bg-muted/50 p-6 rounded-lg mb-4">
@@ -212,7 +217,7 @@ export default function Page() {
 								</div>
 
 								<div>
-									<h3 className="text-xl font-semibold mb-4">
+									<h3 className="text-xl font-semibold mb-4 bg-gradient-to-r dark:from-sky-500 dark:to-emerald-400 from-sky-500 to-emerald-400 bg-clip-text text-transparent">
 										Performance Optimizations
 									</h3>
 									<ul className="space-y-3">
@@ -223,7 +228,7 @@ export default function Page() {
 								</div>
 
 								<div>
-									<h3 className="text-xl font-semibold mb-4">
+									<h3 className="text-xl font-semibold mb-4 bg-gradient-to-r dark:from-sky-500 dark:to-emerald-400 from-sky-500 to-emerald-400 bg-clip-text text-transparent">
 										Collaboration & Process
 									</h3>
 									<ul className="space-y-3">
@@ -239,7 +244,12 @@ export default function Page() {
 
 						{/* Before vs After */}
 						<section className="mb-16 flex w-full flex-col">
-							<h2 className="text-3xl font-bold mb-8">Before vs. After</h2>
+							<h2 className="text-3xl font-bold mb-8 bg-gradient-to-r dark:from-sky-500 dark:to-emerald-400 from-sky-500 to-emerald-400 bg-clip-text text-transparent">
+								Before vs. After
+								<span className="block text-xs text-primary font-light">
+									(Move the slider in the center of the image)
+								</span>
+							</h2>
 
 							<div className="flex w-full flex-col">
 								<OnsiteComparison />
@@ -272,7 +282,7 @@ export default function Page() {
 
 									<Card>
 										<CardContent className="p-6">
-											<h3 className="text-xl font-semibold mb-4 text-green-600">
+											<h3 className="text-xl font-semibold mb-4 text-emerald-500">
 												After
 											</h3>
 											<ul className="space-y-2 text-sm">
@@ -292,14 +302,16 @@ export default function Page() {
 						{/* Impact & Results */}
 						<section className="mb-16">
 							<div className="flex items-center gap-3 mb-6">
-								<TrendingUp className="h-6 w-6 text-primary" />
-								<h2 className="text-3xl font-bold">Impact & Results</h2>
+								<TrendingUp className="h-6 w-6  text-sky-500" />
+								<h2 className="text-3xl font-bold bg-gradient-to-r dark:from-sky-500 dark:to-emerald-400 from-sky-500 to-emerald-400 bg-clip-text text-transparent">
+									Impact & Results
+								</h2>
 							</div>
 
 							<div className="grid md:grid-cols-3 gap-6">
 								<Card>
 									<CardContent className="p-6 text-center">
-										<div className="text-3xl font-bold text-green-600 mb-2">
+										<div className="text-3xl font-bold text-emerald-500 mb-2">
 											80%
 										</div>
 										<div className="text-sm text-muted-foreground">
@@ -309,7 +321,7 @@ export default function Page() {
 								</Card>
 								<Card>
 									<CardContent className="p-6 text-center">
-										<div className="text-3xl font-bold text-blue-600 mb-2">
+										<div className="text-3xl font-bold text-teal-500 mb-2">
 											60%
 										</div>
 										<div className="text-sm text-muted-foreground">
@@ -319,7 +331,7 @@ export default function Page() {
 								</Card>
 								<Card>
 									<CardContent className="p-6 text-center">
-										<div className="text-3xl font-bold text-purple-600 mb-2">
+										<div className="text-3xl font-bold text-cyan-500 mb-2">
 											95%
 										</div>
 										<div className="text-sm text-muted-foreground">
@@ -348,13 +360,17 @@ export default function Page() {
 						{/* Reflection */}
 						<section className="mb-16">
 							<div className="flex items-center gap-3 mb-6">
-								<Lightbulb className="h-6 w-6 text-primary" />
-								<h2 className="text-3xl font-bold">Reflection</h2>
+								<Lightbulb className="h-6 w-6  text-sky-500" />
+								<h2 className="text-3xl font-bold bg-gradient-to-r dark:from-sky-500 dark:to-emerald-400 from-sky-500 to-emerald-400 bg-clip-text text-transparent">
+									Reflection
+								</h2>
 							</div>
 
 							<div className="space-y-6">
 								<div>
-									<h3 className="text-xl font-semibold mb-3">What I Learned</h3>
+									<h3 className="text-xl font-semibold mb-3 bg-gradient-to-r dark:from-sky-500 dark:to-emerald-400 from-sky-500 to-emerald-400 bg-clip-text text-transparent">
+										What I Learned
+									</h3>
 									<p className="text-lg leading-relaxed">
 										Working on Onsite 2 pushed me to a new level of ownership
 										and problem-solving. As one of only two developers on the
@@ -377,7 +393,7 @@ export default function Page() {
 								</div>
 
 								<div>
-									<h3 className="text-xl font-semibold mb-3">
+									<h3 className="text-xl font-semibold mb-3 bg-gradient-to-r dark:from-sky-500 dark:to-emerald-400 from-sky-500 to-emerald-400 bg-clip-text text-transparent">
 										What I'd Do Differently
 									</h3>
 									<p className="text-lg leading-relaxed">
@@ -396,7 +412,7 @@ export default function Page() {
 								</div>
 
 								<div>
-									<h3 className="text-xl font-semibold mb-3">
+									<h3 className="text-xl font-semibold mb-3 bg-gradient-to-r dark:from-sky-500 dark:to-emerald-400 from-sky-500 to-emerald-400 bg-clip-text text-transparent">
 										What I'm Proudest Of
 									</h3>
 									<p className="text-lg leading-relaxed">

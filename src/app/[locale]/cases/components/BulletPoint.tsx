@@ -11,7 +11,7 @@ export default function BulletPoint({ text, className = "" }: Props) {
 		<li className="flex items-start gap-2">
 			<div
 				className={cn(
-					`w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0 ${className}`,
+					`w-2 h-2 bg-emerald-500 rounded-full mt-2 flex-shrink-0 ${className}`,
 				)}
 			/>
 			<span>{text}</span>
