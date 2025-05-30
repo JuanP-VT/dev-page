@@ -286,7 +286,7 @@ export default function TechStack() {
 					Tech Stack
 				</h2>
 				<p className="mx-auto max-w-2xl font-mono text-gray-500 dark:text-gray-400">
-					{" // Technologies I've been working with to bring ideas to life"}
+					Technologies I've been working with to bring ideas to life
 				</p>
 			</div>
 			{/* Render each category */}

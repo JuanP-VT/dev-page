@@ -45,7 +45,8 @@ export default function HeroSection() {
 
 	return (
 		<section
-			className="flex flex-col gap-20 items-center py-20 lg:flex-row lg:gap-10"
+			id="about"
+			className="flex flex-col gap-20 items-center py-10 sm:py-20 lg:flex-row lg:gap-10"
 			ref={containerRef}
 		>
 			<div className="flex-1 opacity-0" ref={textRef}>
@@ -85,7 +86,7 @@ export default function HeroSection() {
 					</a>
 				</div>
 			</div>
-			<div className="flex flex-1 justify-center opacity-0" ref={imageRef}>
+			<div className="flex flex-1 justify-center opacity-0 py-2" ref={imageRef}>
 				<div className="relative">
 					<div className="flex h-64 w-64 rotate-3 items-center justify-center rounded-lg bg-linear-to-r from-teal-500 to-sky-500 text-6xl font-bold text-white shadow-[0_0_25px_8px_rgba(20,184,166,0.6)] md:h-80 md:w-80">
 						<div className="flex absolute justify-center items-center bg-white rounded-lg inset-[3px]">

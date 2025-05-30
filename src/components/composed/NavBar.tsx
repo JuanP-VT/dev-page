@@ -29,7 +29,7 @@ export default function NavBar() {
 	return (
 		<>
 			<MobileDrawer />
-			<nav className="flex z-50 justify-between py-3 px-6 w-full  text-gray-800 bg-white shadow-sm  dark:text-gray-200 dark:bg-gray-800 dark:border dark:border-gray-700/50">
+			<nav className="flex z-50 justify-between py-3 px-6 w-full rounded-b-lg  text-gray-800 bg-white shadow-sm  dark:text-gray-200 dark:bg-gray-800 dark:border dark:border-gray-700/50">
 				<div className="flex text-lg font-bold">
 					<span className="text-teal-400">jp</span>
 					<span>@{t("portfolio")}</span>

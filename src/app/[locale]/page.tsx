@@ -11,7 +11,7 @@ export default function Page() {
 			<NavBar />
 			<div
 				id="portfolio"
-				className="py-20 px-4 md:px-24 h-[calc(100dvh-70px)] overflow-y-scroll"
+				className="px-4 md:px-24 h-[calc(100dvh-70px)] overflow-y-scroll "
 			>
 				<HeroSection />
 				<Terminal />
