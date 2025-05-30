@@ -22,10 +22,10 @@ export default function Page() {
 		<div className="">
 			<div className="flex flex-col">
 				{/* Hero Section */}
-				<section className="py-16 md:py-20">
+				<section className="py-10 md:py-16">
 					<div className="container px-4 mx-auto">
 						<div className="mx-auto max-w-4xl text-center">
-							<div className="justify-self-center py-1 px-3 mb-4 text-sm rounded-full border w-fit">
+							<div className="justify-self-center py-1 px-3 mb-4 text-sm rounded-full border w-fit ">
 								Case Study
 							</div>
 							<h1 className="mb-6 text-4xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 md:text-6xl dark:to-emerald-400 from-sky-500 dark:from-sky-500">
@@ -195,17 +195,17 @@ export default function Page() {
 
 							<div className="space-y-8">
 								<div>
-									<h3 className="mb-4 text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 dark:to-emerald-400 from-sky-500 dark:from-sky-500">
+									<h3 className="text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 dark:to-emerald-400 from-sky-500 dark:from-sky-500">
 										Technical Architecture
 									</h3>
-									<div className="p-6 mb-4 rounded-lg bg-muted/50">
+									<div className="p-6 rounded-lg">
 										<div className="flex flex-wrap gap-2">
-											<Badge variant="default">React 18</Badge>
-											<Badge variant="default">TypeScript</Badge>
-											<Badge variant="default">Next.js 14</Badge>
-											<Badge variant="default">Tailwind CSS</Badge>
-											<Badge variant="default">Hero ui</Badge>
-											<Badge variant="default">Zustand</Badge>
+											<Badge variant="outline">React 18</Badge>
+											<Badge variant="outline">TypeScript</Badge>
+											<Badge variant="outline">Next.js 14</Badge>
+											<Badge variant="outline">Tailwind CSS</Badge>
+											<Badge variant="outline">Hero ui</Badge>
+											<Badge variant="outline">Zustand</Badge>
 										</div>
 									</div>
 									<ul className="space-y-3">
@@ -244,12 +244,12 @@ export default function Page() {
 
 						{/* Before vs After */}
 						<section className="flex flex-col mb-16 w-full">
-							<h2 className="mb-8 text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 dark:to-emerald-400 from-sky-500 dark:from-sky-500">
+							<h2 className="mb-2 text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 dark:to-emerald-400 from-sky-500 dark:from-sky-500">
 								Before vs. After
-								<span className="block text-xs font-light text-primary">
-									(Move the slider in the center of the image)
-								</span>
 							</h2>
+							<span className="block text-xs text-primary font-light ">
+								(Move the slider in the center of the image)
+							</span>
 
 							<div className="flex flex-col w-full">
 								<OnsiteComparison />

@@ -94,7 +94,7 @@ export default function BeforeAfterSlider({
 	//TODO: Fix clipping with navbar
 	return (
 		<div className="flex relative flex-col items-center mx-auto w-full max-w-full">
-			<span className="flex p-4 text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 dark:to-emerald-400 from-sky-500 dark:from-sky-500">
+			<span className="flex p-4 py-5 text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 dark:to-emerald-400 from-sky-500 dark:from-sky-500">
 				{title}
 			</span>
 			<div
@@ -103,11 +103,17 @@ export default function BeforeAfterSlider({
 				style={{ height: `${height}px`, maxWidth: `${width}px` }}
 			>
 				{/* After image (full width) */}
-				<Button className="absolute top-1/2 z-10" onClick={onClickPrev}>
-					<FaAngleLeft />
+				<Button
+					className="absolute top-1/2 z-10 bg-zinc-200 "
+					onClick={onClickPrev}
+				>
+					<FaAngleLeft className="text-zinc-500" />
 				</Button>
-				<Button className="absolute right-0 top-1/2 z-10" onClick={onClickNext}>
-					<FaAngleRight />
+				<Button
+					className="absolute right-0 top-1/2 z-10 bg-zinc-200"
+					onClick={onClickNext}
+				>
+					<FaAngleRight className="text-zinc-500" />
 				</Button>
 				<div className="absolute inset-0">
 					<Image
@@ -140,7 +146,7 @@ export default function BeforeAfterSlider({
 				{/* Slider handle */}
 				<div
 					className="absolute top-0 bottom-0 w-1 bg-white cursor-ew-resize shadow-[0_0_0_2px_rgba(255,255,255,0.9)]"
-					style={{ left: `${sliderPosition}%`, touchAction: "none" }}
+					style={{ left: `${sliderPosition}%` }}
 					onMouseDown={handleMouseDown}
 					onTouchStart={handleMouseDown}
 					onTouchEnd={handleMouseUp}
@@ -152,8 +158,7 @@ export default function BeforeAfterSlider({
 					aria-label="Comparison slider"
 					tabIndex={0}
 				>
-					<div className="flex absolute top-1/2 left-1/2 justify-center items-center w-8 h-8 bg-white rounded-full shadow-md -translate-x-1/2 -translate-y-1/2">
-						{/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
+					<div className="flex absolute top-1/2 left-1/2 justify-center items-center w-8 h-8 bg-white rounded-full shadow-md -translate-x-1/2 -translate-y-20">
 						<svg
 							width="16"
 							height="16"
@@ -161,6 +166,7 @@ export default function BeforeAfterSlider({
 							fill="none"
 							xmlns="http://www.w3.org/2000/svg"
 						>
+							<title>Slider</title>
 							<path
 								d="M8.5 18.5L3 12M3 12L8.5 5.5M3 12H21"
 								stroke="black"
