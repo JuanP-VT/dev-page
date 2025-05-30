@@ -16,7 +16,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import BulletPoint from "../components/BulletPoint";
 import OnsiteComparison from "../components/OnsiteComparison";
-import LanguageSelect from "@/components/composed/buttons/Language";
 
 export default function Page() {
 	return (
