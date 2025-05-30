@@ -71,17 +71,18 @@ export default function Page() {
 
 							<div className="max-w-none prose prose-lg">
 								<div className="mb-4 text-lg leading-relaxed">
-									Onsite is our company’s primary logistics web app, used by
-									business clients to manage their shipping operations. Clients
-									can quote and send packages, track shipment status, view
-									historical data, download invoices, and handle account-related
-									actions all from a centralized platform. The project aimed to
-									replace an outdated jQuery-based system that grew organically
-									over time without a clear architecture, resulting in a
-									complex, fragile codebase that was difficult to maintain and
-									extend with a fully modern web application using Next.js,
-									React, TypeScript, and Tailwind CSS, delivering a vastly
-									improved user experience and maintainability.
+									Onsite is our company’s main logistics platform, used by
+									business clients to manage every step of their shipping
+									operations. Clients can quote and send packages, track
+									shipments, download invoices, view historical data, and handle
+									account settings from a single interface. The original version
+									was a legacy jQuery application that grew without a clear
+									structure, resulting in a fragile, inconsistent codebase that
+									was hard to maintain and extend. The goal was to replace it
+									with a fully modern web application built with Next.js, React,
+									TypeScript, and Tailwind CSS. The result is a significantly
+									improved user experience and a much more scalable and
+									maintainable system.
 								</div>
 							</div>
 						</section>
@@ -108,18 +109,9 @@ export default function Page() {
 												text="Modernize the user experience by replacing the
 													outdated interface with a clean, responsive UI"
 											/>
-											<BulletPoint
-												text="Increase maintainability by migrating to a modern
-													stack with well-structured, reusable components"
-											/>
-											<BulletPoint
-												text="Optimize performance and reliability, especially for
-													data-heavy views and complex form interactions"
-											/>
-											<BulletPoint
-												text="Ensure mobile compatibility, delivering a seamless
-													experience across devices"
-											/>
+											<BulletPoint text="Improve maintainability by adopting a modern tech stack with reusable, well-structured components" />
+											<BulletPoint text="Optimize performance and reliability, particularly in data-heavy views and complex form interactions" />
+											<BulletPoint text="Ensure mobile compatibility for a seamless experience across all devices" />
 										</ul>
 									</CardContent>
 								</Card>
@@ -131,24 +123,19 @@ export default function Page() {
 										</h3>
 										<ul className="space-y-3">
 											<BulletPoint
-												text="Rebuilding UI components under tight business
-													constraints and with dependencies on unfinished
-													backend features"
+												text="Rebuilding UI components under tight business constraints and incomplete backend support"
 												className="bg-blue-500"
 											/>
 											<BulletPoint
-												text="Managing complex forms and state without sacrificing
-													UI performance"
+												text="Managing complex forms and application state while maintaining UI responsiveness"
 												className="bg-blue-500"
 											/>
 											<BulletPoint
-												text="Balancing speed of delivery with reusability and
-													maintainability of components"
+												text="Balancing fast delivery with long-term reusability and maintainability of the codebase"
 												className="bg-blue-500"
 											/>
 											<BulletPoint
-												text="Ensuring smooth integration with legacy backend
-													systems"
+												text="Integrating with legacy backend systems that introduced technical debt and limitations"
 												className="bg-blue-500"
 											/>
 										</ul>
@@ -161,15 +148,15 @@ export default function Page() {
 										</h3>
 										<ul className="space-y-3">
 											<BulletPoint
-												text="Inconsistent UI patterns across different modules"
+												text="Inconsistent UI patterns across different parts of the app, leading to confusion and poor UX"
 												className="bg-red-500"
 											/>
 											<BulletPoint
-												text="Poor performance when rendering or filtering large datasets"
+												text="Performance bottlenecks when rendering or filtering large datasets"
 												className="bg-red-500"
 											/>
 											<BulletPoint
-												text="Broken or unusable mobile experience"
+												text="Broken or unusable mobile experience, making the app frustrating on phones and tablets"
 												className="bg-red-500"
 											/>
 											<BulletPoint
@@ -209,10 +196,10 @@ export default function Page() {
 										</div>
 									</div>
 									<ul className="space-y-3">
-										<BulletPoint text="Redesigned the app with a modular, component-based architecture using React and TypeScript, improving scalability and maintainability" />
-										<BulletPoint text="Rebuilt the entire UI using Next.js App Router, leveraging server components and layouts for faster page loads and clearer structure" />
-										<BulletPoint text="Used Tailwind CSS and Headless UI to deliver a fully responsive and accessible experience across all screen sizes" />
-										<BulletPoint text="Created reusable UI components tailored to the business needs, improving consistency across modules like quotations, shipments, and invoices" />
+										<BulletPoint text="Built a modular, component-based architecture with React and TypeScript to improve scalability and long-term maintainability." />
+										<BulletPoint text="Rebuilt the UI using Next.js App Router, leveraging server components and nested layouts for faster load times and clearer structure." />
+										<BulletPoint text="Applied Tailwind CSS and Hero UI to deliver a fully responsive, accessible interface across all devices." />
+										<BulletPoint text="Created reusable, business-specific UI components used across key modules like quotations, shipments, and invoices." />
 									</ul>
 								</div>
 
@@ -221,9 +208,9 @@ export default function Page() {
 										Performance Optimizations
 									</h3>
 									<ul className="space-y-3">
-										<BulletPoint text="Implemented pagination and virtual scrolling for data-heavy tables, drastically improving load performance on shipment and tracking views" />
-										<BulletPoint text="Tuned API interactions for better perceived performance, caching key views using Next.js server components and smart rendering patterns" />
-										<BulletPoint text="Minimized unnecessary re-renders and reduced bundle weight by leveraging code-splitting and lazy loading within Next.js." />
+										<BulletPoint text="Implemented pagination and virtual scrolling for data-heavy tables, drastically improving load performance on shipment and tracking views.." />
+										<BulletPoint text="Used Next.js server components to cache key views and reduce redundant API calls, improving perceived speed." />
+										<BulletPoint text="Minimized re-renders and reduced bundle size with code-splitting and lazy loading strategies." />
 									</ul>
 								</div>
 
@@ -232,9 +219,9 @@ export default function Page() {
 										Collaboration & Process
 									</h3>
 									<ul className="space-y-3">
-										<BulletPoint text="Co-led the frontend rewrite as one of two developers, actively planning and executing migration tasks in coordination with the business team" />
-										<BulletPoint text="Worked closely with our coordinator, who also took on a UX role, to iterate on flows and improve user experience with real client feedback." />
-										<BulletPoint text="Designed around legacy backend APIs, solving edge cases and handling inconsistent data structures with graceful error handling and fallback logic." />
+										<BulletPoint text="Co-led the frontend rewrite as one of two developers, taking ownership of full modules from design to deployment" />
+										<BulletPoint text="Partnered closely with our coordinator (acting as UX) to iterate on flows and interfaces using client feedback." />
+										<BulletPoint text="Integrated with legacy backend APIs, building resilient error handling and working around inconsistent data and undocumented endpoints." />
 									</ul>
 								</div>
 							</div>
@@ -262,7 +249,7 @@ export default function Page() {
 											<ul className="space-y-2 text-sm">
 												<BulletPoint
 													className="bg-red-500"
-													text="Outdated interface, 'felt like a 2004 government page'"
+													text="Outdated interface that “felt like a 2004 government page”"
 												/>
 												<BulletPoint
 													className="bg-red-500"
@@ -270,11 +257,11 @@ export default function Page() {
 												/>
 												<BulletPoint
 													className="bg-red-500"
-													text="Broken mobile experience"
+													text="Broken or unreliable mobile experience"
 												/>
 												<BulletPoint
 													className="bg-red-500"
-													text="Clunky and fragile user flows"
+													text="Clunky user flows with frequent UX issues"
 												/>
 											</ul>
 										</CardContent>
@@ -287,9 +274,9 @@ export default function Page() {
 											</h3>
 											<ul className="space-y-2 text-sm">
 												<BulletPoint text="Clean, consistent design system with modern UI" />
-												<BulletPoint text="Noticeably faster load times and smoother interactions" />
+												<BulletPoint text="Faster load times and smoother interactions" />
 												<BulletPoint text="Responsive across devices" />
-												<BulletPoint text="Improved user experience with clearer navigation" />
+												<BulletPoint text="Clearer navigation and more intuitive user experience" />
 											</ul>
 										</CardContent>
 									</Card>
@@ -380,15 +367,15 @@ export default function Page() {
 										sharpened my ability to:
 										<div className="flex flex-col gap-2 py-1">
 											<BulletPoint text="Make architectural and tech decisions confidently" />
-											<BulletPoint text="Prioritize maintainability while working under business pressure" />
+											<BulletPoint text="Balance maintainability with business-driven deadlines" />
 											<BulletPoint text="Break down large, ambiguous tasks into achievable steps" />
-											<BulletPoint text="Communicate proactively with non-technical stakeholders to clarify requirements" />
+											<BulletPoint text="Communicate effectively with non-technical stakeholders to clarify requirements" />
 										</div>
-										While it was challenging at times, the autonomy helped me
-										grow significantly as a frontend developer. I left this
-										project with stronger technical instincts and a clearer
-										understanding of how to build scalable interfaces in
-										real-world product environments.
+										While the autonomy was challenging, it helped me grow
+										significantly as a frontend developer. I left this project
+										with stronger technical instincts, more confidence in my
+										judgment, and a deeper understanding of how to build
+										scalable interfaces in real-world product environments.
 									</div>
 								</div>
 
@@ -405,7 +392,7 @@ export default function Page() {
 										project or in future projects I would advocate for:
 										<div className="flex flex-col gap-2 py-1">
 											<BulletPoint text="Introducing automated testing early in the development lifecycle" />
-											<BulletPoint text="Establishing a testing strategy appropriate to the project size (unit tests for logic-heavy code, integration tests for critical flows, and light e2e )" />
+											<BulletPoint text="Establishing a testing strategy appropriate to the project size" />
 											<BulletPoint text="Educating the team on how testing improves confidence, speeds up iteration, and reduces support overhead" />
 										</div>
 									</div>
