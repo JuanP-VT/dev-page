@@ -32,7 +32,7 @@ const LanguageChanger = () => {
 	}, [pathname]);
 
 	return (
-		<div className="relative w-24">
+		<div className="relative w-[100px]">
 			<button
 				type="button"
 				onClick={toggleDropdown}
@@ -60,9 +60,7 @@ const LanguageChanger = () => {
 
 			{/* Dropdown Options */}
 			{isOpen && (
-				<div
-					className="overflow-hidden absolute z-10 mt-1 w-full bg-white rounded-md border border-gray-300 shadow-lg dark:bg-gray-800 dark:border-gray-600"
-				>
+				<div className="overflow-hidden absolute z-10 mt-1 w-full bg-white rounded-md border border-gray-300 shadow-lg dark:bg-gray-800 dark:border-gray-600">
 					<ul className="py-1 text-sm text-gray-700 dark:text-gray-200">
 						{languages.map((language) => (
 							<li
