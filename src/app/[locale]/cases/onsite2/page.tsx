@@ -70,7 +70,7 @@ export default function Page() {
 							</div>
 
 							<div className="prose prose-lg max-w-none">
-								<p className="text-lg leading-relaxed mb-4">
+								<div className="text-lg leading-relaxed mb-4">
 									Onsite is our company’s primary logistics web app, used by
 									business clients to manage their shipping operations. Clients
 									can quote and send packages, track shipment status, view
@@ -82,7 +82,7 @@ export default function Page() {
 									extend with a fully modern web application using Next.js,
 									React, TypeScript, and Tailwind CSS, delivering a vastly
 									improved user experience and maintainability.
-								</p>
+								</div>
 							</div>
 						</section>
 
@@ -396,7 +396,7 @@ export default function Page() {
 									<h3 className="text-xl font-semibold mb-3 bg-gradient-to-r dark:from-sky-500 dark:to-emerald-400 from-sky-500 to-emerald-400 bg-clip-text text-transparent">
 										What I'd Do Differently
 									</h3>
-									<p className="text-lg leading-relaxed">
+									<div className="text-lg leading-relaxed">
 										Due to the company's lack of a testing culture and resource
 										constraints, we didn’t implement automated unit,
 										integration, or end-to-end tests. This made manual testing
@@ -408,14 +408,14 @@ export default function Page() {
 											<BulletPoint text="Establishing a testing strategy appropriate to the project size (unit tests for logic-heavy code, integration tests for critical flows, and light e2e )" />
 											<BulletPoint text="Educating the team on how testing improves confidence, speeds up iteration, and reduces support overhead" />
 										</div>
-									</p>
+									</div>
 								</div>
 
 								<div>
 									<h3 className="text-xl font-semibold mb-3 bg-gradient-to-r dark:from-sky-500 dark:to-emerald-400 from-sky-500 to-emerald-400 bg-clip-text text-transparent">
 										What I'm Proudest Of
 									</h3>
-									<p className="text-lg leading-relaxed">
+									<div className="text-lg leading-relaxed">
 										This project tested me in a real-world where I had to
 										deliver production-ready software with minimal guidance,
 										legacy constraints, and full responsibility over multiple
@@ -428,7 +428,7 @@ export default function Page() {
 										and make solid technical decisions. This experience
 										solidified my identity as a capable, reliable developer and
 										I'm ready for what’s next
-									</p>
+									</div>
 								</div>
 							</div>
 						</section>
