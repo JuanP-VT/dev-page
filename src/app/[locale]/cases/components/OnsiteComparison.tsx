@@ -137,8 +137,8 @@ export default function OnsiteComparison() {
 			<div className="flex justify-center items-center w-full">
 				<BeforeAfterSlider
 					title={data[currentIndex]?.title}
-					width={currentFilter === "Desktop" ? 900 : 300}
-					height={650}
+					width={currentFilter === "Desktop" ? 900 : 305}
+					height={currentFilter === "Desktop" ? 450 : 650}
 					beforeImage={data[currentIndex]?.beforeImage}
 					afterImage={data[currentIndex]?.afterImage}
 					onClickNext={handleNext}

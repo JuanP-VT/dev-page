@@ -91,7 +91,6 @@ export default function BeforeAfterSlider({
 		}
 	};
 
-	//TODO: Fix clipping with navbar
 	return (
 		<div className="flex relative flex-col items-center mx-auto w-full max-w-full">
 			<span className="flex p-4 py-5 text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 dark:to-emerald-400 from-sky-500 dark:from-sky-500">
@@ -104,13 +103,13 @@ export default function BeforeAfterSlider({
 			>
 				{/* After image (full width) */}
 				<Button
-					className="absolute top-1/2 z-10 bg-zinc-200 "
+					className="absolute top-1/2 z-10 bg-zinc-200 hover:bg-zinc-200/90 transition-all active:bg-zic-200"
 					onClick={onClickPrev}
 				>
 					<FaAngleLeft className="text-zinc-500" />
 				</Button>
 				<Button
-					className="absolute right-0 top-1/2 z-10 bg-zinc-200"
+					className="absolute right-0 top-1/2 z-10 bg-zinc-200 hover:bg-zinc-200/70 transition-all active:bg-zic-200"
 					onClick={onClickNext}
 				>
 					<FaAngleRight className="text-zinc-500" />
@@ -120,7 +119,7 @@ export default function BeforeAfterSlider({
 						src={afterImage || "/placeholder.svg"}
 						alt={afterLabel}
 						fill
-						style={{ objectFit: "cover" }}
+						style={{ objectFit: "contain" }}
 					/>
 					<div className="absolute right-4 bottom-4 py-1 px-3 text-sm font-medium text-white rounded-full bg-black/70">
 						{afterLabel}
