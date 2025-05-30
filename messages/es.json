@@ -9,8 +9,8 @@
   },
   "lang": {
     "language": "Idioma",
-    "spanish": "español",
-    "english": "inglés"
+    "spanish": "Español",
+    "english": "Inglés"
   },
   "terminal": {
     "1-command": "whoami",
