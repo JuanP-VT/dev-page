@@ -47,32 +47,32 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 				project.featured ? "md:col-span-2" : ""
 			}`}
 		>
-			<div className="p-2 bg-gray-200 dark:bg-gray-900 border-b border-gray-300 dark:border-gray-700 flex items-center">
+			<div className="flex items-center p-2 bg-gray-200 border-b border-gray-300 dark:bg-gray-900 dark:border-gray-700">
 				<div className="flex gap-1.5 mr-3">
-					<div className="w-3 h-3 rounded-full bg-red-500" />
-					<div className="w-3 h-3 rounded-full bg-yellow-500" />
-					<div className="w-3 h-3 rounded-full bg-green-500" />
+					<div className="w-3 h-3 bg-red-500 rounded-full" />
+					<div className="w-3 h-3 bg-yellow-500 rounded-full" />
+					<div className="w-3 h-3 bg-green-500 rounded-full" />
 				</div>
-				<div className="flex-1 text-center text-xs text-gray-700 dark:text-gray-400 font-mono truncate">
+				<div className="flex-1 font-mono text-xs text-center text-gray-700 dark:text-gray-400 truncate">
 					{project.title}
 				</div>
 			</div>
 
-			<div className="grid md:grid-cols-2 gap-0">
+			<div className="grid gap-0 md:grid-cols-2">
 				<div
 					className={`relative ${project.featured ? "md:col-span-1" : "md:col-span-2"}`}
 				>
-					<div className="relative h-60 w-full overflow-hidden">
+					<div className="overflow-hidden relative w-full h-60">
 						<Image
 							src={project.image}
 							alt={project.title}
 							fill
-							className="object-cover transition-transform group-hover:scale-105 duration-500 brightness-90 group-hover:brightness-100"
+							className="object-cover transition-transform duration-500 group-hover:scale-105 brightness-90 group-hover:brightness-100"
 						/>
 					</div>
 					{project.featured && (
-						<div className="absolute top-4 right-4 bg-teal-500 text-gray-100 dark:text-gray-900 px-3 py-1 rounded-md flex items-center gap-1 text-sm font-mono">
-							<Star className="h-3 w-3" /> Featured
+						<div className="flex absolute top-4 right-4 gap-1 items-center py-1 px-3 font-mono text-sm text-gray-100 bg-teal-500 rounded-md dark:text-gray-900">
+							<Star className="w-3 h-3" /> Featured
 						</div>
 					)}
 				</div>
@@ -80,18 +80,18 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 				<div
 					className={`p-6 ${project.featured ? "md:col-span-1" : "md:col-span-2"}`}
 				>
-					<h3 className="text-xl font-semibold mb-2 text-gray-700 dark:text-gray-200 font-mono flex items-center gap-2">
-						<Folder className="h-5 w-5 dark:text-teal-400 text-teal-600 shrink-0" />
+					<h3 className="flex gap-2 items-center mb-2 font-mono text-xl font-semibold text-gray-700 dark:text-gray-200">
+						<Folder className="w-5 h-5 text-teal-600 dark:text-teal-400 shrink-0" />
 						{project.title}
 					</h3>
-					<p className="text-gray-600 dark:text-gray-400 mb-4 text-sm">
+					<p className="mb-4 text-sm text-gray-600 dark:text-gray-400">
 						{project.description}
 					</p>
 					<div className="flex flex-wrap gap-2 mb-6">
 						{project.tags.map((tag) => (
 							<span
 								key={tag}
-								className="px-2 py-1 bg-gray-200 dark:bg-gray-700 text-teal-600 dark:text-teal-400 text-xs rounded-md font-mono"
+								className="py-1 px-2 font-mono text-xs text-teal-600 bg-gray-200 rounded-md dark:text-teal-400 dark:bg-gray-700"
 							>
 								{tag}
 							</span>
@@ -100,15 +100,15 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 					<div className="flex gap-4">
 						<a
 							href={project.liveLink}
-							className="flex items-center gap-1 text-teal-600 hover:text-teal-500 dark:text-teal-400 dark:hover:text-teal-300 transition-colors font-mono text-sm"
+							className="flex gap-1 items-center font-mono text-sm text-teal-600 transition-colors dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300"
 						>
-							<ExternalLink className="h-4 w-4" /> Live Demo
+							<ExternalLink className="w-4 h-4" /> Live Demo
 						</a>
 						<a
 							href={project.githubLink}
-							className="flex items-center gap-1 text-teal-600 hover:text-teal-500 dark:text-teal-400 dark:hover:text-teal-300 transition-colors font-mono text-sm"
+							className="flex gap-1 items-center font-mono text-sm text-teal-600 transition-colors dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300"
 						>
-							<FaGithub className="h-4 w-4" /> GitHub
+							<FaGithub className="w-4 h-4" /> GitHub
 						</a>
 					</div>
 				</div>

@@ -128,13 +128,13 @@ export default function OnsiteComparison() {
 							setCurrentFilter(filter);
 						}}
 					>
-						<span className="bg-gradient-to-r dark:from-teal-200 dark:to-sky-300 bg-clip-text text-transparent from-teal-600 to-sky-900">
+						<span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 dark:from-teal-200 to-sky-900 dark:to-sky-300">
 							{filter}
 						</span>
 					</button>
 				))}
 			</div>
-			<div className="w-full flex justify-center items-center">
+			<div className="flex justify-center items-center w-full">
 				<BeforeAfterSlider
 					title={data[currentIndex]?.title}
 					width={currentFilter === "Desktop" ? 900 : 300}

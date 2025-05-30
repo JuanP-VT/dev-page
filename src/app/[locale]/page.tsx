@@ -10,7 +10,7 @@ export default function Page() {
 	return (
 		<div id="about" className="relative">
 			<NavBar />
-			<div className="px-4 py-20 md:px-24">
+			<div className="py-20 px-4 md:px-24">
 				<HeroSection />
 				<Terminal />
 				<TechStack />

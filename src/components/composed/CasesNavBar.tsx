@@ -8,16 +8,16 @@ import { ThemeChanger } from "./buttons/ThemeChanger ";
 export default function CasesNavBar() {
 	const t = useTranslations("cases");
 	return (
-		<div className="dark:border-b shadow-sm  dark:border-gray-500 p-4 flex justify-between fixed top-0 w-full dark:bg-slate-900 bg-slate-100">
+		<div className="flex fixed top-0 justify-between p-4 w-full shadow-sm dark:border-b dark:border-gray-500 bg-slate-100 dark:bg-slate-900">
 			<Link
 				href="/"
-				className="flex items-center group cursor-pointer gap-2 text-sm"
+				className="flex gap-2 items-center text-sm cursor-pointer group"
 			>
 				<IoArrowBackOutline
 					size="1rem"
-					className="group-hover:text-teal-500 dark:group-hover:text-teal-500 transition-all duration-300 text-zinc-600 dark:text-zinc-300"
+					className="transition-all duration-300 group-hover:text-teal-500 text-zinc-600 dark:group-hover:text-teal-500 dark:text-zinc-300"
 				/>
-				<span className="group-hover:text-teal-500 dark:group-hover:text-teal-500 transition-all duration-300 text-zinc-600 dark:text-zinc-300 ">
+				<span className="transition-all duration-300 group-hover:text-teal-500 text-zinc-600 dark:group-hover:text-teal-500 dark:text-zinc-300">
 					{t("common.back")}
 				</span>
 			</Link>

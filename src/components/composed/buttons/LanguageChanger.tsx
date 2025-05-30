@@ -32,18 +32,15 @@ const LanguageChanger = () => {
 	}, [pathname]);
 
 	return (
-		<div className="relative w-24 ">
+		<div className="relative w-24">
 			<button
 				type="button"
 				onClick={toggleDropdown}
-				className="w-full flex items-center justify-between px-3 py-1 text-sm font-medium rounded-lg border cursor-pointer
-                  bg-white dark:bg-gray-800 border-gray-300 dark:border-gray-600
-                  text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700
-                  focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent                  "
+				className="flex justify-between items-center py-1 px-3 w-full text-sm font-medium text-gray-700 bg-white rounded-lg border border-gray-300 cursor-pointer dark:text-gray-200 dark:bg-gray-800 dark:border-gray-600 hover:bg-gray-50 focus:border-transparent focus:ring-2 focus:ring-blue-500 focus:outline-none dark:hover:bg-gray-700"
 				aria-haspopup="listbox"
 				aria-expanded={isOpen}
 			>
-				<span className="truncate text-xs">
+				<span className="text-xs truncate">
 					{languages.find((lang) => lang.value === selectedLanguage)?.label}
 				</span>
 				<svg
@@ -64,8 +61,7 @@ const LanguageChanger = () => {
 			{/* Dropdown Options */}
 			{isOpen && (
 				<div
-					className="absolute z-10 w-full mt-1 bg-white dark:bg-gray-800 rounded-md shadow-lg
-                    border border-gray-300 dark:border-gray-600 overflow-hidden"
+					className="overflow-hidden absolute z-10 mt-1 w-full bg-white rounded-md border border-gray-300 shadow-lg dark:bg-gray-800 dark:border-gray-600"
 				>
 					<ul className="py-1 text-sm text-gray-700 dark:text-gray-200">
 						{languages.map((language) => (

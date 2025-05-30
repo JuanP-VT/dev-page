@@ -14,7 +14,7 @@ export default function MobileDrawer() {
 		return (
 			<a
 				href={id}
-				className="group relative rounded-sm p-3 font-mono font-medium text-gray-600 transition-colors hover:bg-neutral-50 hover:text-teal-500 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-teal-400"
+				className="relative p-3 font-mono font-medium text-gray-600 rounded-sm transition-colors dark:text-gray-300 hover:text-teal-500 group dark:hover:bg-gray-700 dark:hover:text-teal-400 hover:bg-neutral-50"
 			>
 				{t(id)}
 			</a>

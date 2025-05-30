@@ -93,37 +93,37 @@ export default function BeforeAfterSlider({
 
 	//TODO: Fix clipping with navbar
 	return (
-		<div className="relative w-full max-w-full mx-auto flex flex-col items-center ">
-			<span className="flex p-4 text-4xl font-semibold bg-gradient-to-r dark:from-sky-500 dark:to-emerald-400 from-sky-500 to-emerald-400 bg-clip-text text-transparent">
+		<div className="flex relative flex-col items-center mx-auto w-full max-w-full">
+			<span className="flex p-4 text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 dark:to-emerald-400 from-sky-500 dark:from-sky-500">
 				{title}
 			</span>
 			<div
 				ref={containerRef}
-				className="relative overflow-hidden rounded-lg shadow-lg w-full "
+				className="overflow-hidden relative w-full rounded-lg shadow-lg"
 				style={{ height: `${height}px`, maxWidth: `${width}px` }}
 			>
 				{/* After image (full width) */}
 				<Button className="absolute top-1/2 z-10" onClick={onClickPrev}>
 					<FaAngleLeft />
 				</Button>
-				<Button className="absolute top-1/2 right-0 z-10" onClick={onClickNext}>
+				<Button className="absolute right-0 top-1/2 z-10" onClick={onClickNext}>
 					<FaAngleRight />
 				</Button>
-				<div className="absolute inset-0 ">
+				<div className="absolute inset-0">
 					<Image
 						src={afterImage || "/placeholder.svg"}
 						alt={afterLabel}
 						fill
 						style={{ objectFit: "cover" }}
 					/>
-					<div className="absolute bottom-4 right-4 bg-black/70 text-white px-3 py-1 rounded-full text-sm font-medium">
+					<div className="absolute right-4 bottom-4 py-1 px-3 text-sm font-medium text-white rounded-full bg-black/70">
 						{afterLabel}
 					</div>
 				</div>
 
 				{/* Before image (clipped) */}
 				<div
-					className="absolute inset-0 overflow-hidden"
+					className="overflow-hidden absolute inset-0"
 					style={{ width: `${sliderPosition}%` }}
 				>
 					<Image
@@ -132,7 +132,7 @@ export default function BeforeAfterSlider({
 						fill
 						style={{ objectFit: "cover" }}
 					/>
-					<div className="absolute bottom-4 left-4 bg-black/70 text-white px-3 py-1 rounded-full text-sm font-medium">
+					<div className="absolute bottom-4 left-4 py-1 px-3 text-sm font-medium text-white rounded-full bg-black/70">
 						{beforeLabel}
 					</div>
 				</div>
@@ -152,7 +152,7 @@ export default function BeforeAfterSlider({
 					aria-label="Comparison slider"
 					tabIndex={0}
 				>
-					<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-md">
+					<div className="flex absolute top-1/2 left-1/2 justify-center items-center w-8 h-8 bg-white rounded-full shadow-md -translate-x-1/2 -translate-y-1/2">
 						{/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
 						<svg
 							width="16"

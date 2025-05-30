@@ -52,53 +52,53 @@ const technologies = {
 		},
 		{
 			name: "React",
-			icon: <FaReact className="h-6 w-6 text-sky-600 dark:text-sky-500" />,
+			icon: <FaReact className="w-6 h-6 text-sky-600 dark:text-sky-500" />,
 		},
-		{ name: "Next.js", icon: <SiNextdotjs className="h-6 w-6 " /> },
+		{ name: "Next.js", icon: <SiNextdotjs className="w-6 h-6" /> },
 		{
 			name: "Tailwind",
 			icon: (
-				<SiTailwindcss className="h-6 w-6 text-sky-500 dark:text-sky-300" />
+				<SiTailwindcss className="w-6 h-6 text-sky-500 dark:text-sky-300" />
 			),
 		},
 	],
 	backend: [
 		{
 			name: "Node.js",
-			icon: <FaNodeJs className="h-6 w-6 text-green-600 dark:text-green-400" />,
+			icon: <FaNodeJs className="w-6 h-6 text-green-600 dark:text-green-400" />,
 		},
-		{ name: "Express.js", icon: <SiExpress className="h-6 w-6" /> },
+		{ name: "Express.js", icon: <SiExpress className="w-6 h-6" /> },
 		{
 			name: "NestJS",
-			icon: <SiNestjs className="h-6 w-6 text-red-600 dark:text-red-400" />,
+			icon: <SiNestjs className="w-6 h-6 text-red-600 dark:text-red-400" />,
 		},
 		{
 			name: "SQL",
-			icon: <SiMysql className="h-6 w-6 text-blue-600 dark:text-blue-400" />,
+			icon: <SiMysql className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
 		},
 		{
 			name: "MongoDB",
 			icon: (
-				<SiMongodb className="h-6 w-6 text-green-600 dark:text-green-400" />
+				<SiMongodb className="w-6 h-6 text-green-600 dark:text-green-400" />
 			),
 		},
 	],
 	tools: [
 		{
 			name: "Git",
-			icon: <GitBranch className="h-6 w-6 text-red-600 dark:text-red-500" />,
+			icon: <GitBranch className="w-6 h-6 text-red-600 dark:text-red-500" />,
 		},
 		{
 			name: "Figma",
-			icon: <FaFigma className="h-6 w-6 text-orange-500 " />,
+			icon: <FaFigma className="w-6 h-6 text-orange-500" />,
 		},
 		{
 			name: "Jest",
-			icon: <SiJest className="h-6 w-6 text-amber-800 dark:text-red-500" />,
+			icon: <SiJest className="w-6 h-6 text-amber-800 dark:text-red-500" />,
 		},
 		{
 			name: "AWS",
-			icon: <FaAws className="h-6 w-6 text-yellow-600 dark:text-yellow-400" />,
+			icon: <FaAws className="w-6 h-6 text-yellow-600 dark:text-yellow-400" />,
 		},
 	],
 };
@@ -237,15 +237,15 @@ export default function TechStack() {
 			<div key={category} className="mt-1">
 				<div
 					ref={categoryRefs[category]}
-					className="opacity-0 mb-8 text-center"
+					className="mb-8 text-center opacity-0"
 				>
-					<h3 className="text-2xl font-bold font-mono text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-blue-600 dark:from-teal-400 dark:to-blue-500">
+					<h3 className="font-mono text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-blue-600 dark:from-teal-400 dark:to-blue-500">
 						{capitalizeFirstLetter(category)}
 					</h3>
-					<div className="w-24 h-1 bg-gradient-to-r from-teal-500 to-blue-600 dark:from-teal-400 dark:to-blue-500 mx-auto mt-1 rounded-full" />
+					<div className="mx-auto mt-1 w-24 h-1 bg-gradient-to-r from-teal-500 to-blue-600 rounded-full dark:from-teal-400 dark:to-blue-500" />
 				</div>
 
-				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto cursor-pointer">
+				<div className="grid grid-cols-1 gap-6 mx-auto max-w-5xl cursor-pointer sm:grid-cols-2 lg:grid-cols-3">
 					{technologies[category].map((tech, techIndex) => (
 						<div
 							key={tech.name}
@@ -254,13 +254,13 @@ export default function TechStack() {
 							}}
 							onClick={() => handleOnClick(tech.name)}
 							onKeyDown={() => handleOnClick(tech.name)}
-							className="p-4 rounded-lg bg-white dark:bg-gray-800 backdrop-blur-sm border border-gray-200 dark:border-gray-700 hover:border-teal-400 dark:hover:border-teal-500 transition-all opacity-0 group shadow-sm"
+							className="p-4 bg-white rounded-lg border border-gray-200 shadow-sm opacity-0 transition-all dark:bg-gray-800 dark:border-gray-700 hover:border-teal-400 backdrop-blur-sm group dark:hover:border-teal-500"
 						>
-							<div className="flex items-center gap-3 mb-3">
-								<div className="p-2 bg-gray-100 dark:bg-gray-700 rounded-md   ">
+							<div className="flex gap-3 items-center mb-3">
+								<div className="p-2 bg-gray-100 rounded-md dark:bg-gray-700">
 									{tech.icon}
 								</div>
-								<span className="text-gray-800 dark:text-gray-200 font-mono">
+								<span className="font-mono text-gray-800 dark:text-gray-200">
 									{tech.name}
 								</span>
 							</div>
@@ -273,8 +273,8 @@ export default function TechStack() {
 
 	return (
 		<section id="tech" className="py-16" ref={sectionRef}>
-			<div className="text-center mb-16">
-				<div className="inline-block px-3 py-1 bg-gray-100 dark:bg-gray-800 text-teal-600 dark:text-teal-400 rounded-md text-sm font-mono mb-4 border border-gray-200 dark:border-gray-700">
+			<div className="mb-16 text-center">
+				<div className="inline-block py-1 px-3 mb-4 font-mono text-sm text-teal-600 bg-gray-100 rounded-md border border-gray-200 dark:text-teal-400 dark:bg-gray-800 dark:border-gray-700">
 					<span className="text-pink-500 dark:text-pink-400">import</span>{" "}
 					&#123;{" "}
 					<span className="text-teal-600 dark:text-teal-400">skills</span>{" "}
@@ -282,10 +282,10 @@ export default function TechStack() {
 					<span className="text-sky-600 dark:text-sky-400">'./tech-stack'</span>
 					;
 				</div>
-				<h2 className="text-3xl font-bold mb-2 font-mono text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-blue-600 dark:from-teal-400 dark:to-blue-500">
+				<h2 className="mb-2 font-mono text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-blue-600 dark:from-teal-400 dark:to-blue-500">
 					Tech Stack
 				</h2>
-				<p className="text-gray-500 dark:text-gray-400 max-w-2xl mx-auto font-mono">
+				<p className="mx-auto max-w-2xl font-mono text-gray-500 dark:text-gray-400">
 					{" // Technologies I've been working with to bring ideas to life"}
 				</p>
 			</div>

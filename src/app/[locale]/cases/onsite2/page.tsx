@@ -23,26 +23,26 @@ export default function Page() {
 			<div className="flex flex-col">
 				{/* Hero Section */}
 				<section className="py-16 md:py-20">
-					<div className="container mx-auto px-4">
-						<div className="max-w-4xl mx-auto text-center">
-							<div className="mb-4 border w-fit py-1 px-3 text-sm rounded-full justify-self-center ">
+					<div className="container px-4 mx-auto">
+						<div className="mx-auto max-w-4xl text-center">
+							<div className="justify-self-center py-1 px-3 mb-4 text-sm rounded-full border w-fit">
 								Case Study
 							</div>
-							<h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6 bg-gradient-to-r dark:from-sky-500 dark:to-emerald-400 from-sky-500 to-emerald-400 bg-clip-text text-transparent">
+							<h1 className="mb-6 text-4xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 md:text-6xl dark:to-emerald-400 from-sky-500 dark:from-sky-500">
 								Onsite 2 | Full Rebuild
 							</h1>
-							<p className="text-xl md:text-2xl text-muted-foreground mb-8">
+							<p className="mb-8 text-xl md:text-2xl text-muted-foreground">
 								A ground-up redesign of a core legacy logistics app.
 							</p>
 
 							{/* Project Meta */}
-							<div className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground">
-								<div className="flex items-center gap-2">
-									<Users className="h-4 w-4" />
+							<div className="flex flex-wrap gap-6 justify-center text-sm text-muted-foreground">
+								<div className="flex gap-2 items-center">
+									<Users className="w-4 h-4" />
 									<span>Frontend Developer</span>
 								</div>
-								<div className="flex items-center gap-2">
-									<Calendar className="h-4 w-4" />
+								<div className="flex gap-2 items-center">
+									<Calendar className="w-4 h-4" />
 									<span>Ago 2024 – Ongoing Development</span>
 								</div>
 							</div>
@@ -50,8 +50,8 @@ export default function Page() {
 					</div>
 				</section>
 				{/* Main Content */}
-				<div className="container mx-auto px-4 pb-16">
-					<div className="max-w-4xl mx-auto">
+				<div className="container px-4 pb-16 mx-auto">
+					<div className="mx-auto max-w-4xl">
 						{/* Project Image */}
 						<div className="mb-16">
 							<ThemeImage
@@ -62,15 +62,15 @@ export default function Page() {
 
 						{/* Overview Section */}
 						<section className="mb-16">
-							<div className="flex items-center gap-3 mb-6">
-								<GrOverview className="h-6 w-6  text-sky-500 " />
-								<h2 className="text-3xl font-bold bg-gradient-to-r dark:from-sky-500 dark:to-emerald-400 from-sky-500 to-emerald-400 bg-clip-text text-transparent">
+							<div className="flex gap-3 items-center mb-6">
+								<GrOverview className="w-6 h-6 text-sky-500" />
+								<h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 dark:to-emerald-400 from-sky-500 dark:from-sky-500">
 									Overview
 								</h2>
 							</div>
 
-							<div className="prose prose-lg max-w-none">
-								<div className="text-lg leading-relaxed mb-4">
+							<div className="max-w-none prose prose-lg">
+								<div className="mb-4 text-lg leading-relaxed">
 									Onsite is our company’s primary logistics web app, used by
 									business clients to manage their shipping operations. Clients
 									can quote and send packages, track shipment status, view
@@ -90,17 +90,17 @@ export default function Page() {
 
 						{/* Goals & Challenges */}
 						<section className="mb-16">
-							<div className="flex items-center gap-3 mb-6">
-								<Target className="h-6 w-6 text-sky-500" />
-								<h2 className="text-3xl font-bold bg-gradient-to-r dark:from-sky-500 dark:to-emerald-400 from-sky-500 to-emerald-400 bg-clip-text text-transparent">
+							<div className="flex gap-3 items-center mb-6">
+								<Target className="w-6 h-6 text-sky-500" />
+								<h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 dark:to-emerald-400 from-sky-500 dark:from-sky-500">
 									Goals & Challenges
 								</h2>
 							</div>
 
-							<div className="grid md:grid-cols-2 gap-8">
+							<div className="grid gap-8 md:grid-cols-2">
 								<Card>
 									<CardContent className="p-6">
-										<h3 className="text-xl font-semibold mb-4 text-emerald-600 dark:text-emerald-500">
+										<h3 className="mb-4 text-xl font-semibold text-emerald-600 dark:text-emerald-500">
 											Goals
 										</h3>
 										<ul className="space-y-3">
@@ -126,7 +126,7 @@ export default function Page() {
 
 								<Card>
 									<CardContent className="p-6">
-										<h3 className="text-xl font-semibold mb-4 text-blue-600 dark:text-blue-500">
+										<h3 className="mb-4 text-xl font-semibold text-blue-600 dark:text-blue-500">
 											Key Challenges
 										</h3>
 										<ul className="space-y-3">
@@ -156,7 +156,7 @@ export default function Page() {
 								</Card>
 								<Card>
 									<CardContent className="p-6">
-										<h3 className="text-xl font-semibold mb-4 text-red-600 dark:text-red-500">
+										<h3 className="mb-4 text-xl font-semibold text-red-600 dark:text-red-500">
 											Major Problems
 										</h3>
 										<ul className="space-y-3">
@@ -186,19 +186,19 @@ export default function Page() {
 
 						{/* Solutions & Contributions */}
 						<section className="mb-16">
-							<div className="flex items-center gap-3 mb-6">
-								<Code className="h-6 w-6 text-sky-500" />
-								<h2 className="text-3xl font-bold bg-gradient-to-r dark:from-sky-500 dark:to-emerald-400 from-sky-500 to-emerald-400 bg-clip-text text-transparent">
+							<div className="flex gap-3 items-center mb-6">
+								<Code className="w-6 h-6 text-sky-500" />
+								<h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 dark:to-emerald-400 from-sky-500 dark:from-sky-500">
 									Solutions & My Contributions
 								</h2>
 							</div>
 
 							<div className="space-y-8">
 								<div>
-									<h3 className="text-xl font-semibold mb-4 bg-gradient-to-r dark:from-sky-500 dark:to-emerald-400 from-sky-500 to-emerald-400 bg-clip-text text-transparent">
+									<h3 className="mb-4 text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 dark:to-emerald-400 from-sky-500 dark:from-sky-500">
 										Technical Architecture
 									</h3>
-									<div className="bg-muted/50 p-6 rounded-lg mb-4">
+									<div className="p-6 mb-4 rounded-lg bg-muted/50">
 										<div className="flex flex-wrap gap-2">
 											<Badge variant="default">React 18</Badge>
 											<Badge variant="default">TypeScript</Badge>
@@ -217,7 +217,7 @@ export default function Page() {
 								</div>
 
 								<div>
-									<h3 className="text-xl font-semibold mb-4 bg-gradient-to-r dark:from-sky-500 dark:to-emerald-400 from-sky-500 to-emerald-400 bg-clip-text text-transparent">
+									<h3 className="mb-4 text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 dark:to-emerald-400 from-sky-500 dark:from-sky-500">
 										Performance Optimizations
 									</h3>
 									<ul className="space-y-3">
@@ -228,7 +228,7 @@ export default function Page() {
 								</div>
 
 								<div>
-									<h3 className="text-xl font-semibold mb-4 bg-gradient-to-r dark:from-sky-500 dark:to-emerald-400 from-sky-500 to-emerald-400 bg-clip-text text-transparent">
+									<h3 className="mb-4 text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 dark:to-emerald-400 from-sky-500 dark:from-sky-500">
 										Collaboration & Process
 									</h3>
 									<ul className="space-y-3">
@@ -243,20 +243,20 @@ export default function Page() {
 						<Separator className="my-16" />
 
 						{/* Before vs After */}
-						<section className="mb-16 flex w-full flex-col">
-							<h2 className="text-3xl font-bold mb-8 bg-gradient-to-r dark:from-sky-500 dark:to-emerald-400 from-sky-500 to-emerald-400 bg-clip-text text-transparent">
+						<section className="flex flex-col mb-16 w-full">
+							<h2 className="mb-8 text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 dark:to-emerald-400 from-sky-500 dark:from-sky-500">
 								Before vs. After
-								<span className="block text-xs text-primary font-light">
+								<span className="block text-xs font-light text-primary">
 									(Move the slider in the center of the image)
 								</span>
 							</h2>
 
-							<div className="flex w-full flex-col">
+							<div className="flex flex-col w-full">
 								<OnsiteComparison />
-								<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+								<div className="grid grid-cols-1 gap-4 pt-4 sm:grid-cols-2">
 									<Card>
 										<CardContent className="p-6">
-											<h3 className="text-xl font-semibold mb-4 text-red-600">
+											<h3 className="mb-4 text-xl font-semibold text-red-600">
 												Before
 											</h3>
 											<ul className="space-y-2 text-sm">
@@ -282,7 +282,7 @@ export default function Page() {
 
 									<Card>
 										<CardContent className="p-6">
-											<h3 className="text-xl font-semibold mb-4 text-emerald-500">
+											<h3 className="mb-4 text-xl font-semibold text-emerald-500">
 												After
 											</h3>
 											<ul className="space-y-2 text-sm">
@@ -301,17 +301,17 @@ export default function Page() {
 
 						{/* Impact & Results */}
 						<section className="mb-16">
-							<div className="flex items-center gap-3 mb-6">
-								<TrendingUp className="h-6 w-6  text-sky-500" />
-								<h2 className="text-3xl font-bold bg-gradient-to-r dark:from-sky-500 dark:to-emerald-400 from-sky-500 to-emerald-400 bg-clip-text text-transparent">
+							<div className="flex gap-3 items-center mb-6">
+								<TrendingUp className="w-6 h-6 text-sky-500" />
+								<h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 dark:to-emerald-400 from-sky-500 dark:from-sky-500">
 									Impact & Results
 								</h2>
 							</div>
 
-							<div className="grid md:grid-cols-3 gap-6">
+							<div className="grid gap-6 md:grid-cols-3">
 								<Card>
 									<CardContent className="p-6 text-center">
-										<div className="text-3xl font-bold text-emerald-500 mb-2">
+										<div className="mb-2 text-3xl font-bold text-emerald-500">
 											80%
 										</div>
 										<div className="text-sm text-muted-foreground">
@@ -321,7 +321,7 @@ export default function Page() {
 								</Card>
 								<Card>
 									<CardContent className="p-6 text-center">
-										<div className="text-3xl font-bold text-teal-500 mb-2">
+										<div className="mb-2 text-3xl font-bold text-teal-500">
 											60%
 										</div>
 										<div className="text-sm text-muted-foreground">
@@ -331,7 +331,7 @@ export default function Page() {
 								</Card>
 								<Card>
 									<CardContent className="p-6 text-center">
-										<div className="text-3xl font-bold text-cyan-500 mb-2">
+										<div className="mb-2 text-3xl font-bold text-cyan-500">
 											95%
 										</div>
 										<div className="text-sm text-muted-foreground">
@@ -341,7 +341,7 @@ export default function Page() {
 								</Card>
 							</div>
 
-							<div className="mt-8 prose prose-lg max-w-none">
+							<div className="mt-8 max-w-none prose prose-lg">
 								<p className="text-lg leading-relaxed">
 									The rebuild marks a major leap in usability and
 									maintainability. Internal stakeholders involved in testing
@@ -359,16 +359,16 @@ export default function Page() {
 
 						{/* Reflection */}
 						<section className="mb-16">
-							<div className="flex items-center gap-3 mb-6">
-								<Lightbulb className="h-6 w-6  text-sky-500" />
-								<h2 className="text-3xl font-bold bg-gradient-to-r dark:from-sky-500 dark:to-emerald-400 from-sky-500 to-emerald-400 bg-clip-text text-transparent">
+							<div className="flex gap-3 items-center mb-6">
+								<Lightbulb className="w-6 h-6 text-sky-500" />
+								<h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 dark:to-emerald-400 from-sky-500 dark:from-sky-500">
 									Reflection
 								</h2>
 							</div>
 
 							<div className="space-y-6">
 								<div>
-									<h3 className="text-xl font-semibold mb-3 bg-gradient-to-r dark:from-sky-500 dark:to-emerald-400 from-sky-500 to-emerald-400 bg-clip-text text-transparent">
+									<h3 className="mb-3 text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 dark:to-emerald-400 from-sky-500 dark:from-sky-500">
 										What I Learned
 									</h3>
 									<div className="text-lg leading-relaxed">
@@ -378,7 +378,7 @@ export default function Page() {
 										entire modules from architectural decisions to final UI
 										details often without direct guidance. This experience
 										sharpened my ability to:
-										<div className="py-1 flex flex-col gap-2">
+										<div className="flex flex-col gap-2 py-1">
 											<BulletPoint text="Make architectural and tech decisions confidently" />
 											<BulletPoint text="Prioritize maintainability while working under business pressure" />
 											<BulletPoint text="Break down large, ambiguous tasks into achievable steps" />
@@ -393,7 +393,7 @@ export default function Page() {
 								</div>
 
 								<div>
-									<h3 className="text-xl font-semibold mb-3 bg-gradient-to-r dark:from-sky-500 dark:to-emerald-400 from-sky-500 to-emerald-400 bg-clip-text text-transparent">
+									<h3 className="mb-3 text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 dark:to-emerald-400 from-sky-500 dark:from-sky-500">
 										What I'd Do Differently
 									</h3>
 									<div className="text-lg leading-relaxed">
@@ -403,7 +403,7 @@ export default function Page() {
 										more time-consuming and occasionally led to regressions
 										during development If given the chance to revisit this
 										project or in future projects I would advocate for:
-										<div className="py-1 flex flex-col gap-2">
+										<div className="flex flex-col gap-2 py-1">
 											<BulletPoint text="Introducing automated testing early in the development lifecycle" />
 											<BulletPoint text="Establishing a testing strategy appropriate to the project size (unit tests for logic-heavy code, integration tests for critical flows, and light e2e )" />
 											<BulletPoint text="Educating the team on how testing improves confidence, speeds up iteration, and reduces support overhead" />
@@ -412,7 +412,7 @@ export default function Page() {
 								</div>
 
 								<div>
-									<h3 className="text-xl font-semibold mb-3 bg-gradient-to-r dark:from-sky-500 dark:to-emerald-400 from-sky-500 to-emerald-400 bg-clip-text text-transparent">
+									<h3 className="mb-3 text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 dark:to-emerald-400 from-sky-500 dark:from-sky-500">
 										What I'm Proudest Of
 									</h3>
 									<div className="text-lg leading-relaxed">

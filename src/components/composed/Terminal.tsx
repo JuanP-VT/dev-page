@@ -33,19 +33,19 @@ export default function Terminal() {
 	} // avoid rendering during SSR
 
 	return (
-		<div className="relative mt-8 ">
-			<div className="absolute -top-3 right-3 z-10">
+		<div className="relative mt-8">
+			<div className="absolute right-3 -top-3 z-10">
 				<button
 					type="button"
 					onClick={() => setVisible(!visible)}
-					className="cursor-pointer rounded-md bg-gray-300 p-1 px-2 text-xs text-gray-700 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600"
+					className="p-1 px-2 text-xs text-gray-700 bg-gray-300 rounded-md cursor-pointer dark:text-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600"
 				>
 					{visible ? t("close") : t("open")}
 				</button>
 			</div>
-			<div className="overflow-hidden rounded-lg border border-gray-200 bg-white shadow-xl dark:border-gray-700 dark:bg-gray-900">
-				<div className="flex items-center gap-2 border-b border-gray-200 bg-gray-100 px-4 py-2 dark:border-gray-700 dark:bg-gray-800">
-					<TerminalIcon className="h-4 w-4 text-teal-400" />
+			<div className="overflow-hidden bg-white rounded-lg border border-gray-200 shadow-xl dark:bg-gray-900 dark:border-gray-700">
+				<div className="flex gap-2 items-center py-2 px-4 bg-gray-100 border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+					<TerminalIcon className="w-4 h-4 text-teal-400" />
 					<span className="font-mono text-sm text-gray-700 dark:text-gray-300">
 						terminal
 					</span>
@@ -141,7 +141,7 @@ function CommandLine({
 
 	return (
 		<div className="mb-3">
-			<div className="flex items-center gap-2">
+			<div className="flex gap-2 items-center">
 				<span className="font-medium text-teal-600 dark:text-teal-400">
 					dev@portfolio:~$
 				</span>
@@ -157,7 +157,7 @@ function CommandLine({
 				/>
 			</div>
 			{outputReady && (
-				<div className="mt-1 pl-6 text-gray-600 dark:text-gray-400">
+				<div className="pl-6 mt-1 text-gray-600 dark:text-gray-400">
 					{output}
 				</div>
 			)}
@@ -175,9 +175,9 @@ function FinalCommandLine({
 	}, [containerRef]);
 
 	return (
-		<div className="flex items-center gap-2">
+		<div className="flex gap-2 items-center">
 			<span className="text-teal-600 dark:text-teal-400">dev@portfolio:~$</span>
-			<span className="animate-caret-blink font-bold text-gray-300">_</span>
+			<span className="font-bold text-gray-300 animate-caret-blink">_</span>
 		</div>
 	);
 }

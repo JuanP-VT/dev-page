@@ -34,7 +34,7 @@ export const ThemeChanger = () => {
 			)}
 		>
 			<LuMoonStar className="text-white opacity-0 transition-all duration-200 dark:opacity-100 dark:animate-pulse" />
-			<MdOutlineWbSunny className="text-white transition-all duration-200 dark:opacity-0 animate-pulse dark:animate-none " />
+			<MdOutlineWbSunny className="text-white transition-all duration-200 animate-pulse dark:opacity-0 dark:animate-none" />
 			<span
 				className={clsx(
 					"absolute left-1 h-6 w-6 rounded-xl shadow-lg transition-all duration-500 border border-zinc-300/20 dark:border-zinc-300/50 ",
