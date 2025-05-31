@@ -2,91 +2,15 @@
 import React, { useEffect, useState } from "react";
 import BeforeAfterSlider from "./BeforeAfterSlider";
 import clsx from "clsx";
-const desktopData: CarrouselEntry[] = [
-	{
-		title: "Dashboard",
-		beforeImage: "/img/projects/onsite/carrousel/desktop/oldonsite-main.webp",
-		afterImage: "/img/projects/onsite2/carrousel/desktop/onsite-main.webp",
-	},
-	{
-		title: "Account Summary",
-		beforeImage:
-			"/img/projects/onsite/carrousel/desktop/oldonsite-accountstate.webp",
-		afterImage:
-			"/img/projects/onsite2/carrousel/desktop/onsite-accountstate.webp",
-	},
-	{
-		title: "Shipping",
-		beforeImage: "/img/projects/onsite/carrousel/desktop/oldonsite-doc.webp",
-		afterImage: "/img/projects/onsite2/carrousel/desktop/onsite-doc.webp",
-	},
-	{
-		title: "Mass Shipping",
-		beforeImage:
-			"/img/projects/onsite/carrousel/desktop/oldonsite-massdoc.webp",
-		afterImage: "/img/projects/onsite2/carrousel/desktop/onsite-massdoc.webp",
-	},
-	{
-		title: "My Profile",
-		beforeImage:
-			"/img/projects/onsite/carrousel/desktop/oldonsite-profile.webp",
-		afterImage: "/img/projects/onsite2/carrousel/desktop/onsite-profile.webp",
-	},
-	{
-		title: "My Shipments",
-		beforeImage:
-			"/img/projects/onsite/carrousel/desktop/oldonsite-shipments.webp",
-		afterImage: "/img/projects/onsite2/carrousel/desktop/onsite-shipments.webp",
-	},
-];
+import { useTranslations } from "next-intl";
 
-const mobileData: CarrouselEntry[] = [
-	{
-		title: "Dashboard",
-		beforeImage:
-			"/img/projects/onsite/carrousel/mobile/oldonsite-dashboard-m.webp",
-		afterImage:
-			"/img/projects/onsite2/carrousel/mobile/onsite-dashboard-m.webp",
-	},
-	{
-		title: "Account Summary",
-		beforeImage:
-			"/img/projects/onsite/carrousel/mobile/oldonsite-accountstate-m.webp",
-		afterImage:
-			"/img/projects/onsite2/carrousel/mobile/onsite-accoutstate-m.webp",
-	},
-	{
-		title: "Shipping",
-		beforeImage: "/img/projects/onsite/carrousel/mobile/oldonsite-doc-m.webp",
-		afterImage: "/img/projects/onsite2/carrousel/mobile/onsite-doc-m.webp",
-	},
-
-	{
-		title: "My Profile",
-		beforeImage:
-			"/img/projects/onsite/carrousel/mobile/oldonsite-profile-m.webp",
-		afterImage: "/img/projects/onsite2/carrousel/mobile/onsite-profile-m.webp",
-	},
-	{
-		title: "My Shipments",
-		beforeImage:
-			"/img/projects/onsite/carrousel/mobile/oldonsite-shipments-m.webp",
-		afterImage:
-			"/img/projects/onsite2/carrousel/mobile/onsite-shipments-m.webp",
-	},
-];
-
-type CarrouselEntry = {
-	title: string;
-	beforeImage: string;
-	afterImage: string;
-};
 const filters = ["Desktop", "Mobile"] as const;
 type Filter = (typeof filters)[number];
 export default function OnsiteComparison() {
 	const [currentIndex, setCurrentIndex] = useState(0);
 	const [currentFilter, setCurrentFilter] = useState<Filter>("Desktop");
 	const [data, setData] = useState<CarrouselEntry[]>([]);
+	const [desktopData, mobileData] = useGetCarrousel();
 
 	const handleNext = () => {
 		if (currentIndex + 1 < data.length) {
@@ -161,3 +85,88 @@ export default function OnsiteComparison() {
 		</div>
 	);
 }
+type CarrouselEntry = {
+	title: string;
+	beforeImage: string;
+	afterImage: string;
+};
+const useGetCarrousel = () => {
+	const t = useTranslations("cases.onsite2.BvsA");
+	const desktopData: CarrouselEntry[] = [
+		{
+			title: t("dashboard"),
+			beforeImage: "/img/projects/onsite/carrousel/desktop/oldonsite-main.webp",
+			afterImage: "/img/projects/onsite2/carrousel/desktop/onsite-main.webp",
+		},
+		{
+			title: t("account-summary"),
+			beforeImage:
+				"/img/projects/onsite/carrousel/desktop/oldonsite-accountstate.webp",
+			afterImage:
+				"/img/projects/onsite2/carrousel/desktop/onsite-accountstate.webp",
+		},
+		{
+			title: t("shipping"),
+			beforeImage: "/img/projects/onsite/carrousel/desktop/oldonsite-doc.webp",
+			afterImage: "/img/projects/onsite2/carrousel/desktop/onsite-doc.webp",
+		},
+		{
+			title: t("mass-shipping"),
+			beforeImage:
+				"/img/projects/onsite/carrousel/desktop/oldonsite-massdoc.webp",
+			afterImage: "/img/projects/onsite2/carrousel/desktop/onsite-massdoc.webp",
+		},
+		{
+			title: t("profile"),
+			beforeImage:
+				"/img/projects/onsite/carrousel/desktop/oldonsite-profile.webp",
+			afterImage: "/img/projects/onsite2/carrousel/desktop/onsite-profile.webp",
+		},
+		{
+			title: t("shipments"),
+			beforeImage:
+				"/img/projects/onsite/carrousel/desktop/oldonsite-shipments.webp",
+			afterImage:
+				"/img/projects/onsite2/carrousel/desktop/onsite-shipments.webp",
+		},
+	];
+
+	const mobileData: CarrouselEntry[] = [
+		{
+			title: t("dashboard"),
+			beforeImage:
+				"/img/projects/onsite/carrousel/mobile/oldonsite-dashboard-m.webp",
+			afterImage:
+				"/img/projects/onsite2/carrousel/mobile/onsite-dashboard-m.webp",
+		},
+		{
+			title: t("account-summary"),
+			beforeImage:
+				"/img/projects/onsite/carrousel/mobile/oldonsite-accountstate-m.webp",
+			afterImage:
+				"/img/projects/onsite2/carrousel/mobile/onsite-accoutstate-m.webp",
+		},
+		{
+			title: t("shipping"),
+			beforeImage: "/img/projects/onsite/carrousel/mobile/oldonsite-doc-m.webp",
+			afterImage: "/img/projects/onsite2/carrousel/mobile/onsite-doc-m.webp",
+		},
+
+		{
+			title: t("profile"),
+			beforeImage:
+				"/img/projects/onsite/carrousel/mobile/oldonsite-profile-m.webp",
+			afterImage:
+				"/img/projects/onsite2/carrousel/mobile/onsite-profile-m.webp",
+		},
+		{
+			title: t("shipments"),
+			beforeImage:
+				"/img/projects/onsite/carrousel/mobile/oldonsite-shipments-m.webp",
+			afterImage:
+				"/img/projects/onsite2/carrousel/mobile/onsite-shipments-m.webp",
+		},
+	];
+
+	return [desktopData, mobileData];
+};

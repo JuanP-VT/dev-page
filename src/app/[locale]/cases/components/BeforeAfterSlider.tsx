@@ -1,9 +1,10 @@
 "use client";
 import type React from "react";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useTransition } from "react";
 import Image from "next/image";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
+import { useTranslations } from "next-intl";
 
 type BeforeAfterSliderProps = {
 	beforeImage: string;
@@ -28,6 +29,7 @@ export default function BeforeAfterSlider({
 	onClickNext = () => {},
 	onClickPrev = () => {},
 }: BeforeAfterSliderProps) {
+	const t = useTranslations("cases.onsite2.BvsA");
 	const [sliderPosition, setSliderPosition] = useState(50);
 	const [isDragging, setIsDragging] = useState(false);
 	const containerRef = useRef<HTMLDivElement>(null);
@@ -122,7 +124,7 @@ export default function BeforeAfterSlider({
 						style={{ objectFit: "contain" }}
 					/>
 					<div className="absolute right-4 bottom-4 py-1 px-3 text-sm font-medium text-white rounded-full bg-black/70">
-						{afterLabel}
+						{t("after.title")}
 					</div>
 				</div>
 
@@ -138,7 +140,7 @@ export default function BeforeAfterSlider({
 						style={{ objectFit: "cover" }}
 					/>
 					<div className="absolute bottom-4 left-4 py-1 px-3 text-sm font-medium text-white rounded-full bg-black/70">
-						{beforeLabel}
+						{t("before.title")}
 					</div>
 				</div>
 

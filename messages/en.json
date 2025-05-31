@@ -102,7 +102,119 @@
   },
   "cases": {
     "common": {
-      "back": "Go Back"
+      "back": "Go Back",
+      "view": "View More Projects",
+      "case-study": "Case Study"
+    },
+    "onsite2": {
+      "title": "Onsite 2 | Full Rebuild",
+      "sub-title": "A ground-up redesign of a core legacy logistics app.",
+      "role": "Frontend Developer",
+      "duration": "Ago 2024 - Ongoing Development",
+      "overview-title": "Overview",
+      "overview-description": "Onsite is our company’s main logistics platform, used by business clients to manage every step of their shipping operations. Clients can quote and send packages, track shipments, download invoices, view historical data, and handle account settings from a single interface.",
+      "overview-description2": "The original version was a legacy jQuery application that grew without a clear structure, resulting in a fragile, inconsistent codebase that was hard to maintain and extend. The goal was to replace it with a fully modern web application. The result is a significantly improved user experience and a much more scalable and maintainable system..",
+      "g&c": {
+        "title": "Goals & Challenges",
+        "goals": {
+          "title": "Goals",
+          "1": "Modernize the user experience by replacing the outdated interface with a clean, responsive UI",
+          "2": "Improve maintainability by adopting a modern tech stack with reusable, well-structured components",
+          "3": "Optimize performance and reliability, particularly in data-heavy views and complex form interactions",
+          "4": "Ensure mobile compatibility for a seamless experience across all devices"
+        },
+        "challenges": {
+          "title": "Key Challenges",
+          "1": "Rebuilding UI components under tight business constraints and incomplete backend support",
+          "2": "Managing complex forms and application state while maintaining UI responsiveness",
+          "3": "Balancing fast delivery with long-term reusability and maintainability of the codebase",
+          "4": "Integrating with legacy backend systems that introduced technical debt and limitations"
+        },
+        "problems": {
+          "title": "Major Problems",
+          "1": "Inconsistent UI patterns across different parts of the app, leading to confusion and poor UX",
+          "2": "Performance bottlenecks when rendering or filtering large datasets",
+          "3": "Broken or unusable mobile experience, making the app frustrating on phones and tablets",
+          "4": "Unstructured legacy codebase with no documentation"
+        }
+      },
+      "solutions&contribution": {
+        "title": "Solutions & My Contributions",
+        "technical": {
+          "title": "Technical Architecture",
+          "1": "Built a modular, component-based architecture with React and TypeScript to improve scalability and long-term maintainability.",
+          "2": "Rebuilt the UI using Next.js App Router, leveraging server components and nested layouts for faster load times and clearer structure.",
+          "3": "Applied Tailwind CSS and Hero UI to deliver a fully responsive, accessible interface across all devices.",
+          "4": "Created reusable, business-specific UI components used across key modules like quotations, shipments, and invoices."
+        },
+        "performance": {
+          "title": "Performance Optimizations",
+          "1": "Implemented pagination and virtual scrolling for data-heavy tables, drastically improving load performance on shipment and tracking views..",
+          "2": "Used Next.js server components to cache key views and reduce redundant API calls, improving perceived speed.",
+          "3": "Minimized re-renders and reduced bundle size with code-splitting and lazy loading strategies."
+        },
+        "collaboration": {
+          "title": "Collaboration & Process",
+          "1": "Co-led the frontend rewrite as one of two developers, taking ownership of full modules from design to deployment",
+          "2": "Partnered closely with our coordinator (acting as UX) to iterate on flows and interfaces using client feedback.",
+          "3": "Integrated with legacy backend APIs, building resilient error handling and working around inconsistent data and undocumented endpoints"
+        }
+      },
+      "BvsA": {
+        "title": "Before vs. After",
+        "sub-title": "(Move the slider in the center of the image)",
+        "dashboard": "Dashboard",
+        "account-summary": "Account summary",
+        "shipping": "Shipping",
+        "mass-shipping": "Mass Shipping",
+        "profile": "Profile",
+        "shipments": "Shipments",
+        "before": {
+          "title": "Before",
+          "1": "Outdated interface that “felt like a 2004 government page”.",
+          "2": "Unpredictable loading times.",
+          "3": "Broken or unreliable mobile experience.",
+          "4": "Clunky user flows with frequent UX issues."
+        },
+        "after": {
+          "title": "After",
+          "1": "Clean, consistent design system with modern UI.",
+          "2": "Faster load times and smoother interactions.",
+          "3": "Responsive across devices.",
+          "4": "Clearer navigation and more intuitive user experience."
+        }
+      },
+      "i&r": {
+        "title": "Impact & Results",
+        "1": "Faster render times",
+        "2": "Estimated UI code reduction",
+        "3": "Positive feedback from internal stakeholders",
+        "description": "The rebuild marks a major leap in usability and maintainability. Internal stakeholders involved in testing have praised the cleaner design and clearer structure, noting that previously confusing workflows are now streamlined. From a development perspective, the new modular architecture has significantly improved scalability and speed of implementation, setting the foundation for faster iteration and long-term product evolution."
+      },
+      "reflection": {
+        "title": "Reflection",
+        "learned": {
+          "title": "What I Learned",
+          "description": "Working on Onsite 2 pushed me to a new level of ownership and problem-solving. As one of only two developers on the project, I was responsible for independently delivering entire modules from architectural decisions to final UI details often without direct guidance. This experience sharpened my ability to:",
+          "1": "Make architectural and tech decisions confidently.",
+          "2": "Balance maintainability with business-driven deadlines.",
+          "3": "Break down large, ambiguous tasks into achievable steps.",
+          "4": "Communicate effectively with non-technical stakeholders to clarify requirements.",
+          "description2": "While the autonomy was challenging, it helped me grow significantly as a frontend developer. I left this project with stronger technical instincts, more confidence in my judgment, and a deeper understanding of how to build scalable interfaces in real-world product environments."
+        },
+        "dif": {
+          "title": "What I'd Do Differently",
+          "description": "Due to the company's lack of a testing culture and resource constraints, we didn’t implement automated unit, integration, or end-to-end tests. This made manual testing more time-consuming and occasionally led to regressions during development If given the chance to revisit this project or in future projects I would advocate for:",
+          "1": "Introducing automated testing early in the development lifecycle.",
+          "2": "Establishing a testing strategy appropriate to the project size.",
+          "3": "Educating the team on how testing improves confidence, speeds up iteration, and reduces support ."
+        },
+        "proud": {
+          "title": "What I'm Proudest Of",
+          "description": "This project tested me in a real-world where I had to deliver production-ready software with minimal guidance, legacy constraints, and full responsibility over multiple modules.",
+          "description2": "Despite the pressure and challenges, I shipped high-quality features, learned to own my work end-to-end, and contributed to a product that truly matters to users. What makes me most proud is the personal growth: I went from dealing with impostor syndrome to feeling confident in my ability to solve complex problems, collaborate effectively, and make solid technical decisions. This experience solidified my identity as a capable, reliable developer and I'm ready for what’s next."
+        }
+      }
     }
   }
 }

@@ -16,8 +16,10 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import BulletPoint from "../components/BulletPoint";
 import OnsiteComparison from "../components/OnsiteComparison";
+import { useTranslations } from "next-intl";
 
 export default function Page() {
+	const t = useTranslations("cases");
 	return (
 		<div className="">
 			<div className="flex flex-col">
@@ -26,24 +28,24 @@ export default function Page() {
 					<div className="container px-4 mx-auto">
 						<div className="mx-auto max-w-4xl text-center">
 							<div className="justify-self-center py-1 px-3 mb-4 text-sm rounded-full border w-fit bg-zinc-200/60 dark:bg-zinc-800">
-								Case Study
+								{t("common.case-study")}
 							</div>
 							<h1 className="mb-6 text-4xl sm:text-6xl font-bold tracking-tight case-gradient-text">
-								Onsite 2 | Full Rebuild
+								{t("onsite2.title")}
 							</h1>
 							<p className="mb-8 text-xl md:text-2xl text-muted-foreground">
-								A ground-up redesign of a core legacy logistics app.
+								{t("onsite2.sub-title")}
 							</p>
 
 							{/* Project Meta */}
 							<div className="flex flex-wrap gap-6 justify-center text-sm text-muted-foreground">
 								<div className="flex gap-2 items-center">
 									<Users className="w-4 h-4" />
-									<span>Frontend Developer</span>
+									<span>{t("onsite2.role")}</span>
 								</div>
 								<div className="flex gap-2 items-center">
 									<Calendar className="w-4 h-4" />
-									<span>Ago 2024 – Ongoing Development</span>
+									<span>{t("onsite2.duration")}</span>
 								</div>
 							</div>
 						</div>
@@ -65,30 +67,16 @@ export default function Page() {
 							<div className="flex gap-3 items-center mb-6">
 								<GrOverview className="w-6 h-6 text-sky-500" />
 								<h2 className="text-3xl font-bold case-gradient-text">
-									Overview
+									{t("onsite2.overview-title")}
 								</h2>
 							</div>
 							<Card>
 								<CardContent>
 									<div className="max-w-none prose prose-lg">
 										<div className="mb-4 text-lg leading-relaxed">
-											<p>
-												Onsite is our company’s main logistics platform, used by
-												business clients to manage every step of their shipping
-												operations. Clients can quote and send packages, track
-												shipments, download invoices, view historical data, and
-												handle account settings from a single interface.
-											</p>
+											<p>{t("onsite2.overview-description")}</p>
 											<br />
-											<p>
-												The original version was a legacy jQuery application
-												that grew without a clear structure, resulting in a
-												fragile, inconsistent codebase that was hard to maintain
-												and extend. The goal was to replace it with a fully
-												modern web application. The result is a significantly
-												improved user experience and a much more scalable and
-												maintainable system.
-											</p>
+											<p>{t("onsite2.overview-description2")}</p>
 										</div>
 									</div>
 								</CardContent>
@@ -100,7 +88,7 @@ export default function Page() {
 							<div className="flex gap-3 items-center mb-6">
 								<Target className="w-6 h-6 text-sky-500" />
 								<h2 className="text-3xl font-bold case-gradient-text">
-									Goals & Challenges
+									{t("onsite2.g&c.title")}
 								</h2>
 							</div>
 
@@ -108,16 +96,13 @@ export default function Page() {
 								<Card>
 									<CardContent className="p-6">
 										<h3 className="mb-4 text-xl font-semibold text-emerald-600 dark:text-emerald-500">
-											Goals
+											{t("onsite2.g&c.goals.title")}
 										</h3>
 										<ul className="space-y-3">
-											<BulletPoint
-												text="Modernize the user experience by replacing the
-													outdated interface with a clean, responsive UI"
-											/>
-											<BulletPoint text="Improve maintainability by adopting a modern tech stack with reusable, well-structured components" />
-											<BulletPoint text="Optimize performance and reliability, particularly in data-heavy views and complex form interactions" />
-											<BulletPoint text="Ensure mobile compatibility for a seamless experience across all devices" />
+											<BulletPoint text={t("onsite2.g&c.goals.1")} />
+											<BulletPoint text={t("onsite2.g&c.goals.2")} />
+											<BulletPoint text={t("onsite2.g&c.goals.3")} />
+											<BulletPoint text={t("onsite2.g&c.goals.4")} />
 										</ul>
 									</CardContent>
 								</Card>
@@ -129,19 +114,19 @@ export default function Page() {
 										</h3>
 										<ul className="space-y-3">
 											<BulletPoint
-												text="Rebuilding UI components under tight business constraints and incomplete backend support"
+												text={t("onsite2.g&c.challenges.1")}
 												className="bg-blue-500"
 											/>
 											<BulletPoint
-												text="Managing complex forms and application state while maintaining UI responsiveness"
+												text={t("onsite2.g&c.challenges.2")}
 												className="bg-blue-500"
 											/>
 											<BulletPoint
-												text="Balancing fast delivery with long-term reusability and maintainability of the codebase"
+												text={t("onsite2.g&c.challenges.3")}
 												className="bg-blue-500"
 											/>
 											<BulletPoint
-												text="Integrating with legacy backend systems that introduced technical debt and limitations"
+												text={t("onsite2.g&c.challenges.4")}
 												className="bg-blue-500"
 											/>
 										</ul>
@@ -154,19 +139,19 @@ export default function Page() {
 										</h3>
 										<ul className="space-y-3">
 											<BulletPoint
-												text="Inconsistent UI patterns across different parts of the app, leading to confusion and poor UX"
+												text={t("onsite2.g&c.problems.1")}
 												className="bg-red-500"
 											/>
 											<BulletPoint
-												text="Performance bottlenecks when rendering or filtering large datasets"
+												text={t("onsite2.g&c.problems.2")}
 												className="bg-red-500"
 											/>
 											<BulletPoint
-												text="Broken or unusable mobile experience, making the app frustrating on phones and tablets"
+												text={t("onsite2.g&c.problems.3")}
 												className="bg-red-500"
 											/>
 											<BulletPoint
-												text="Unstructured legacy codebase with no documentation"
+												text={t("onsite2.g&c.problems.4")}
 												className="bg-red-500"
 											/>
 										</ul>
@@ -182,14 +167,14 @@ export default function Page() {
 							<div className="flex gap-3 items-center mb-6">
 								<Code className="w-6 h-6 text-sky-500" />
 								<h2 className="text-3xl font-bold case-gradient-text">
-									Solutions & My Contributions
+									{t("onsite2.solutions&contribution.title")}
 								</h2>
 							</div>
 
 							<div className="space-y-8">
 								<div>
 									<h3 className="text-xl font-semibold case-gradient-text">
-										Technical Architecture
+										{t("onsite2.solutions&contribution.technical.title")}
 									</h3>
 
 									<Card className="mt-3">
@@ -203,10 +188,18 @@ export default function Page() {
 												<Badge variant="outline">Zustand</Badge>
 											</div>
 											<ul className="space-y-3">
-												<BulletPoint text="Built a modular, component-based architecture with React and TypeScript to improve scalability and long-term maintainability." />
-												<BulletPoint text="Rebuilt the UI using Next.js App Router, leveraging server components and nested layouts for faster load times and clearer structure." />
-												<BulletPoint text="Applied Tailwind CSS and Hero UI to deliver a fully responsive, accessible interface across all devices." />
-												<BulletPoint text="Created reusable, business-specific UI components used across key modules like quotations, shipments, and invoices." />
+												<BulletPoint
+													text={t("onsite2.solutions&contribution.technical.1")}
+												/>
+												<BulletPoint
+													text={t("onsite2.solutions&contribution.technical.2")}
+												/>
+												<BulletPoint
+													text={t("onsite2.solutions&contribution.technical.3")}
+												/>
+												<BulletPoint
+													text={t("onsite2.solutions&contribution.technical.4")}
+												/>
 											</ul>
 										</CardContent>
 									</Card>
@@ -214,14 +207,26 @@ export default function Page() {
 
 								<div>
 									<h3 className="mb-4 text-xl font-semibold case-gradient-text">
-										Performance Optimizations
+										{t("onsite2.solutions&contribution.collaboration.title")}
 									</h3>
 									<Card>
 										<CardContent>
 											<ul className="space-y-3">
-												<BulletPoint text="Implemented pagination and virtual scrolling for data-heavy tables, drastically improving load performance on shipment and tracking views.." />
-												<BulletPoint text="Used Next.js server components to cache key views and reduce redundant API calls, improving perceived speed." />
-												<BulletPoint text="Minimized re-renders and reduced bundle size with code-splitting and lazy loading strategies." />
+												<BulletPoint
+													text={t(
+														"onsite2.solutions&contribution.collaboration.1",
+													)}
+												/>
+												<BulletPoint
+													text={t(
+														"onsite2.solutions&contribution.collaboration.2",
+													)}
+												/>
+												<BulletPoint
+													text={t(
+														"onsite2.solutions&contribution.collaboration.3",
+													)}
+												/>
 											</ul>
 										</CardContent>
 									</Card>
@@ -249,10 +254,10 @@ export default function Page() {
 						{/* Before vs After */}
 						<section className="flex flex-col mb-16 w-full">
 							<h2 className="mb-2 text-3xl font-bold case-gradient-text">
-								Before vs. After
+								{t("onsite2.BvsA.title")}
 							</h2>
 							<span className="block text-xs text-primary font-light ">
-								(Move the slider in the center of the image)
+								{t("onsite2.BvsA.sub-title")}
 							</span>
 
 							<div className="flex flex-col w-full">
@@ -261,24 +266,24 @@ export default function Page() {
 									<Card>
 										<CardContent className="p-6">
 											<h3 className="mb-4 text-xl font-semibold text-red-600">
-												Before
+												{t("onsite2.BvsA.before.title")}
 											</h3>
 											<ul className="space-y-2 text-sm">
 												<BulletPoint
 													className="bg-red-500"
-													text="Outdated interface that “felt like a 2004 government page”"
+													text={t("onsite2.BvsA.before.1")}
 												/>
 												<BulletPoint
 													className="bg-red-500"
-													text="Unpredictable loading times"
+													text={t("onsite2.BvsA.before.2")}
 												/>
 												<BulletPoint
 													className="bg-red-500"
-													text="Broken or unreliable mobile experience"
+													text={t("onsite2.BvsA.before.3")}
 												/>
 												<BulletPoint
 													className="bg-red-500"
-													text="Clunky user flows with frequent UX issues"
+													text={t("onsite2.BvsA.before.4")}
 												/>
 											</ul>
 										</CardContent>
@@ -287,13 +292,13 @@ export default function Page() {
 									<Card>
 										<CardContent className="p-6">
 											<h3 className="mb-4 text-xl font-semibold text-emerald-500">
-												After
+												{t("onsite2.BvsA.after.title")}
 											</h3>
 											<ul className="space-y-2 text-sm">
-												<BulletPoint text="Clean, consistent design system with modern UI" />
-												<BulletPoint text="Faster load times and smoother interactions" />
-												<BulletPoint text="Responsive across devices" />
-												<BulletPoint text="Clearer navigation and more intuitive user experience" />
+												<BulletPoint text={t("onsite2.BvsA.after.1")} />
+												<BulletPoint text={t("onsite2.BvsA.after.2")} />
+												<BulletPoint text={t("onsite2.BvsA.after.3")} />
+												<BulletPoint text={t("onsite2.BvsA.after.4")} />
 											</ul>
 										</CardContent>
 									</Card>
@@ -308,7 +313,7 @@ export default function Page() {
 							<div className="flex gap-3 items-center mb-6">
 								<TrendingUp className="w-6 h-6 text-sky-500" />
 								<h2 className="text-3xl font-bold case-gradient-text">
-									Impact & Results
+									{t("onsite2.i&r.title")}
 								</h2>
 							</div>
 
@@ -319,7 +324,7 @@ export default function Page() {
 											80%
 										</div>
 										<div className="text-sm text-muted-foreground">
-											Faster render times
+											{t("onsite2.i&r.1")}
 										</div>
 									</CardContent>
 								</Card>
@@ -329,7 +334,7 @@ export default function Page() {
 											60%
 										</div>
 										<div className="text-sm text-muted-foreground">
-											Estimated UI code reduction
+											{t("onsite2.i&r.2")}
 										</div>
 									</CardContent>
 								</Card>
@@ -339,7 +344,7 @@ export default function Page() {
 											95%
 										</div>
 										<div className="text-sm text-muted-foreground">
-											Positive feedback from internal stakeholders
+											{t("onsite2.i&r.3")}
 										</div>
 									</CardContent>
 								</Card>
@@ -349,15 +354,7 @@ export default function Page() {
 								<CardContent>
 									<div className=" max-w-none prose prose-lg">
 										<p className="text-lg leading-relaxed">
-											The rebuild marks a major leap in usability and
-											maintainability. Internal stakeholders involved in testing
-											have praised the cleaner design and clearer structure,
-											noting that previously confusing workflows are now
-											streamlined. From a development perspective, the new
-											modular architecture has significantly improved
-											scalability and speed of implementation, setting the
-											foundation for faster iteration and long-term product
-											evolution.
+											{t("onsite2.i&r.description")}
 										</p>
 									</div>
 								</CardContent>
@@ -371,38 +368,34 @@ export default function Page() {
 							<div className="flex gap-3 items-center mb-6">
 								<Lightbulb className="w-6 h-6 text-sky-500" />
 								<h2 className="text-3xl font-bold case-gradient-text">
-									Reflection
+									{t("onsite2.reflection.title")}
 								</h2>
 							</div>
 
 							<div className="space-y-6">
 								<div>
 									<h3 className="mb-3 text-xl font-semibold case-gradient-text">
-										What I Learned
+										{t("onsite2.reflection.learned.title")}
 									</h3>
 									<Card>
 										<CardContent>
-											{" "}
 											<div className="text-lg leading-relaxed">
-												Working on Onsite 2 pushed me to a new level of
-												ownership and problem-solving. As one of only two
-												developers on the project, I was responsible for
-												independently delivering entire modules from
-												architectural decisions to final UI details often
-												without direct guidance. This experience sharpened my
-												ability to:
+												{t("onsite2.reflection.learned.description")}
 												<div className="flex flex-col gap-2 py-2">
-													<BulletPoint text="Make architectural and tech decisions confidently" />
-													<BulletPoint text="Balance maintainability with business-driven deadlines" />
-													<BulletPoint text="Break down large, ambiguous tasks into achievable steps" />
-													<BulletPoint text="Communicate effectively with non-technical stakeholders to clarify requirements" />
+													<BulletPoint
+														text={t("onsite2.reflection.learned.1")}
+													/>
+													<BulletPoint
+														text={t("onsite2.reflection.learned.2")}
+													/>
+													<BulletPoint
+														text={t("onsite2.reflection.learned.3")}
+													/>
+													<BulletPoint
+														text={t("onsite2.reflection.learned.4")}
+													/>
 												</div>
-												While the autonomy was challenging, it helped me grow
-												significantly as a frontend developer. I left this
-												project with stronger technical instincts, more
-												confidence in my judgment, and a deeper understanding of
-												how to build scalable interfaces in real-world product
-												environments.
+												{t("onsite2.reflection.learned.description2")}
 											</div>
 										</CardContent>
 									</Card>
@@ -410,22 +403,16 @@ export default function Page() {
 
 								<div>
 									<h3 className="mb-3 text-xl font-semibold case-gradient-text">
-										What I'd Do Differently
+										{t("onsite2.reflection.dif.title")}
 									</h3>
 									<Card>
 										<CardContent>
 											<div className="text-lg leading-relaxed">
-												Due to the company's lack of a testing culture and
-												resource constraints, we didn’t implement automated
-												unit, integration, or end-to-end tests. This made manual
-												testing more time-consuming and occasionally led to
-												regressions during development If given the chance to
-												revisit this project or in future projects I would
-												advocate for:
+												{t("onsite2.reflection.dif.description")}
 												<div className="flex flex-col gap-2 py-2 mt-2">
-													<BulletPoint text="Introducing automated testing early in the development lifecycle." />
-													<BulletPoint text="Establishing a testing strategy appropriate to the project size." />
-													<BulletPoint text="Educating the team on how testing improves confidence, speeds up iteration, and reduces support ." />
+													<BulletPoint text={t("onsite2.reflection.dif.1")} />
+													<BulletPoint text={t("onsite2.reflection.dif.2")} />
+													<BulletPoint text={t("onsite2.reflection.dif.3")} />
 												</div>
 											</div>
 										</CardContent>
@@ -434,30 +421,14 @@ export default function Page() {
 
 								<div>
 									<h3 className="mb-3 text-xl font-semibold case-gradient-text">
-										What I'm Proudest Of
+										{t("onsite2.reflection.proud.title")}
 									</h3>
 									<Card>
 										<CardContent>
 											<div className="text-lg leading-relaxed">
-												<p>
-													This project tested me in a real-world where I had to
-													deliver production-ready software with minimal
-													guidance, legacy constraints, and full responsibility
-													over multiple modules.
-												</p>
+												<p>{t("onsite2.reflection.proud.description")}</p>
 												<br />
-												<p>
-													Despite the pressure and challenges, I shipped
-													high-quality features, learned to own my work
-													end-to-end, and contributed to a product that truly
-													matters to users. What makes me most proud is the
-													personal growth: I went from dealing with impostor
-													syndrome to feeling confident in my ability to solve
-													complex problems, collaborate effectively, and make
-													solid technical decisions. This experience solidified
-													my identity as a capable, reliable developer and I'm
-													ready for what’s next.
-												</p>
+												<p>{t("onsite2.reflection.proud.description2")}</p>
 											</div>
 										</CardContent>
 									</Card>
@@ -472,7 +443,7 @@ export default function Page() {
 									className="bg-gradient-to-r to-emerald-400 dark:to-emerald-400 from-sky-500 dark:from-sky-500"
 									href="/#projects"
 								>
-									View More Projects
+									{t("common.view")}
 								</Link>
 							</Button>
 						</div>
