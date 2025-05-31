@@ -68,26 +68,28 @@ export default function Page() {
 									Overview
 								</h2>
 							</div>
-
-							<div className="max-w-none prose prose-lg">
-								<div className="mb-4 text-lg leading-relaxed">
-									Onsite is our company’s main logistics platform, used by
-									business clients to manage every step of their shipping
-									operations. Clients can quote and send packages, track
-									shipments, download invoices, view historical data, and handle
-									account settings from a single interface. The original version
-									was a legacy jQuery application that grew without a clear
-									structure, resulting in a fragile, inconsistent codebase that
-									was hard to maintain and extend. The goal was to replace it
-									with a fully modern web application built with Next.js, React,
-									TypeScript, and Tailwind CSS. The result is a significantly
-									improved user experience and a much more scalable and
-									maintainable system.
-								</div>
-							</div>
+							<Card>
+								<CardContent>
+									<div className="max-w-none prose prose-lg">
+										<div className="mb-4 text-lg leading-relaxed">
+											Onsite is our company’s main logistics platform, used by
+											business clients to manage every step of their shipping
+											operations. Clients can quote and send packages, track
+											shipments, download invoices, view historical data, and
+											handle account settings from a single interface. The
+											original version was a legacy jQuery application that grew
+											without a clear structure, resulting in a fragile,
+											inconsistent codebase that was hard to maintain and
+											extend. The goal was to replace it with a fully modern web
+											application built with Next.js, React, TypeScript, and
+											Tailwind CSS. The result is a significantly improved user
+											experience and a much more scalable and maintainable
+											system.
+										</div>
+									</div>
+								</CardContent>
+							</Card>
 						</section>
-
-						<Separator className="my-16" />
 
 						{/* Goals & Challenges */}
 						<section className="mb-16">
@@ -195,34 +197,46 @@ export default function Page() {
 											<Badge variant="outline">Zustand</Badge>
 										</div>
 									</div>
-									<ul className="space-y-3">
-										<BulletPoint text="Built a modular, component-based architecture with React and TypeScript to improve scalability and long-term maintainability." />
-										<BulletPoint text="Rebuilt the UI using Next.js App Router, leveraging server components and nested layouts for faster load times and clearer structure." />
-										<BulletPoint text="Applied Tailwind CSS and Hero UI to deliver a fully responsive, accessible interface across all devices." />
-										<BulletPoint text="Created reusable, business-specific UI components used across key modules like quotations, shipments, and invoices." />
-									</ul>
+									<Card>
+										<CardContent>
+											<ul className="space-y-3">
+												<BulletPoint text="Built a modular, component-based architecture with React and TypeScript to improve scalability and long-term maintainability." />
+												<BulletPoint text="Rebuilt the UI using Next.js App Router, leveraging server components and nested layouts for faster load times and clearer structure." />
+												<BulletPoint text="Applied Tailwind CSS and Hero UI to deliver a fully responsive, accessible interface across all devices." />
+												<BulletPoint text="Created reusable, business-specific UI components used across key modules like quotations, shipments, and invoices." />
+											</ul>
+										</CardContent>
+									</Card>
 								</div>
 
 								<div>
 									<h3 className="mb-4 text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 dark:to-emerald-400 from-sky-500 dark:from-sky-500">
 										Performance Optimizations
 									</h3>
-									<ul className="space-y-3">
-										<BulletPoint text="Implemented pagination and virtual scrolling for data-heavy tables, drastically improving load performance on shipment and tracking views.." />
-										<BulletPoint text="Used Next.js server components to cache key views and reduce redundant API calls, improving perceived speed." />
-										<BulletPoint text="Minimized re-renders and reduced bundle size with code-splitting and lazy loading strategies." />
-									</ul>
+									<Card>
+										<CardContent>
+											<ul className="space-y-3">
+												<BulletPoint text="Implemented pagination and virtual scrolling for data-heavy tables, drastically improving load performance on shipment and tracking views.." />
+												<BulletPoint text="Used Next.js server components to cache key views and reduce redundant API calls, improving perceived speed." />
+												<BulletPoint text="Minimized re-renders and reduced bundle size with code-splitting and lazy loading strategies." />
+											</ul>
+										</CardContent>
+									</Card>
 								</div>
 
 								<div>
 									<h3 className="mb-4 text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 dark:to-emerald-400 from-sky-500 dark:from-sky-500">
 										Collaboration & Process
 									</h3>
-									<ul className="space-y-3">
-										<BulletPoint text="Co-led the frontend rewrite as one of two developers, taking ownership of full modules from design to deployment" />
-										<BulletPoint text="Partnered closely with our coordinator (acting as UX) to iterate on flows and interfaces using client feedback." />
-										<BulletPoint text="Integrated with legacy backend APIs, building resilient error handling and working around inconsistent data and undocumented endpoints." />
-									</ul>
+									<Card>
+										<CardContent>
+											<ul className="space-y-3">
+												<BulletPoint text="Co-led the frontend rewrite as one of two developers, taking ownership of full modules from design to deployment" />
+												<BulletPoint text="Partnered closely with our coordinator (acting as UX) to iterate on flows and interfaces using client feedback." />
+												<BulletPoint text="Integrated with legacy backend APIs, building resilient error handling and working around inconsistent data and undocumented endpoints." />
+											</ul>
+										</CardContent>
+									</Card>
 								</div>
 							</div>
 						</section>
@@ -328,18 +342,23 @@ export default function Page() {
 								</Card>
 							</div>
 
-							<div className="mt-8 max-w-none prose prose-lg">
-								<p className="text-lg leading-relaxed">
-									The rebuild marks a major leap in usability and
-									maintainability. Internal stakeholders involved in testing
-									have praised the cleaner design and clearer structure, noting
-									that previously confusing workflows are now streamlined. From
-									a development perspective, the new modular architecture has
-									significantly improved scalability and speed of
-									implementation, setting the foundation for faster iteration
-									and long-term product evolution.
-								</p>
-							</div>
+							<Card className="mt-6">
+								<CardContent>
+									<div className=" max-w-none prose prose-lg">
+										<p className="text-lg leading-relaxed">
+											The rebuild marks a major leap in usability and
+											maintainability. Internal stakeholders involved in testing
+											have praised the cleaner design and clearer structure,
+											noting that previously confusing workflows are now
+											streamlined. From a development perspective, the new
+											modular architecture has significantly improved
+											scalability and speed of implementation, setting the
+											foundation for faster iteration and long-term product
+											evolution.
+										</p>
+									</div>
+								</CardContent>
+							</Card>
 						</section>
 
 						<Separator className="my-16" />
@@ -358,64 +377,81 @@ export default function Page() {
 									<h3 className="mb-3 text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 dark:to-emerald-400 from-sky-500 dark:from-sky-500">
 										What I Learned
 									</h3>
-									<div className="text-lg leading-relaxed">
-										Working on Onsite 2 pushed me to a new level of ownership
-										and problem-solving. As one of only two developers on the
-										project, I was responsible for independently delivering
-										entire modules from architectural decisions to final UI
-										details often without direct guidance. This experience
-										sharpened my ability to:
-										<div className="flex flex-col gap-2 py-1">
-											<BulletPoint text="Make architectural and tech decisions confidently" />
-											<BulletPoint text="Balance maintainability with business-driven deadlines" />
-											<BulletPoint text="Break down large, ambiguous tasks into achievable steps" />
-											<BulletPoint text="Communicate effectively with non-technical stakeholders to clarify requirements" />
-										</div>
-										While the autonomy was challenging, it helped me grow
-										significantly as a frontend developer. I left this project
-										with stronger technical instincts, more confidence in my
-										judgment, and a deeper understanding of how to build
-										scalable interfaces in real-world product environments.
-									</div>
+									<Card>
+										<CardContent>
+											{" "}
+											<div className="text-lg leading-relaxed">
+												Working on Onsite 2 pushed me to a new level of
+												ownership and problem-solving. As one of only two
+												developers on the project, I was responsible for
+												independently delivering entire modules from
+												architectural decisions to final UI details often
+												without direct guidance. This experience sharpened my
+												ability to:
+												<div className="flex flex-col gap-2 py-1">
+													<BulletPoint text="Make architectural and tech decisions confidently" />
+													<BulletPoint text="Balance maintainability with business-driven deadlines" />
+													<BulletPoint text="Break down large, ambiguous tasks into achievable steps" />
+													<BulletPoint text="Communicate effectively with non-technical stakeholders to clarify requirements" />
+												</div>
+												While the autonomy was challenging, it helped me grow
+												significantly as a frontend developer. I left this
+												project with stronger technical instincts, more
+												confidence in my judgment, and a deeper understanding of
+												how to build scalable interfaces in real-world product
+												environments.
+											</div>
+										</CardContent>
+									</Card>
 								</div>
 
 								<div>
 									<h3 className="mb-3 text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 dark:to-emerald-400 from-sky-500 dark:from-sky-500">
 										What I'd Do Differently
 									</h3>
-									<div className="text-lg leading-relaxed">
-										Due to the company's lack of a testing culture and resource
-										constraints, we didn’t implement automated unit,
-										integration, or end-to-end tests. This made manual testing
-										more time-consuming and occasionally led to regressions
-										during development If given the chance to revisit this
-										project or in future projects I would advocate for:
-										<div className="flex flex-col gap-2 py-1">
-											<BulletPoint text="Introducing automated testing early in the development lifecycle" />
-											<BulletPoint text="Establishing a testing strategy appropriate to the project size" />
-											<BulletPoint text="Educating the team on how testing improves confidence, speeds up iteration, and reduces support overhead" />
-										</div>
-									</div>
+									<Card>
+										<CardContent>
+											<div className="text-lg leading-relaxed">
+												Due to the company's lack of a testing culture and
+												resource constraints, we didn’t implement automated
+												unit, integration, or end-to-end tests. This made manual
+												testing more time-consuming and occasionally led to
+												regressions during development If given the chance to
+												revisit this project or in future projects I would
+												advocate for:
+												<div className="flex flex-col gap-2 py-1">
+													<BulletPoint text="Introducing automated testing early in the development lifecycle" />
+													<BulletPoint text="Establishing a testing strategy appropriate to the project size" />
+													<BulletPoint text="Educating the team on how testing improves confidence, speeds up iteration, and reduces support overhead" />
+												</div>
+											</div>
+										</CardContent>
+									</Card>
 								</div>
 
 								<div>
 									<h3 className="mb-3 text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 dark:to-emerald-400 from-sky-500 dark:from-sky-500">
 										What I'm Proudest Of
 									</h3>
-									<div className="text-lg leading-relaxed">
-										This project tested me in a real-world where I had to
-										deliver production-ready software with minimal guidance,
-										legacy constraints, and full responsibility over multiple
-										modules. Despite the pressure and challenges, I shipped
-										high-quality features, learned to own my work end-to-end,
-										and contributed to a product that truly matters to users.
-										What makes me most proud is the personal growth: I went from
-										dealing with impostor syndrome to feeling confident in my
-										ability to solve complex problems, collaborate effectively,
-										and make solid technical decisions. This experience
-										solidified my identity as a capable, reliable developer and
-										I'm ready for what’s next
-									</div>
+									<Card>
+										<CardContent>
+											<div className="text-lg leading-relaxed">
+												This project tested me in a real-world where I had to
+												deliver production-ready software with minimal guidance,
+												legacy constraints, and full responsibility over
+												multiple modules. Despite the pressure and challenges, I
+												shipped high-quality features, learned to own my work
+												end-to-end, and contributed to a product that truly
+												matters to users. What makes me most proud is the
+												personal growth: I went from dealing with impostor
+												syndrome to feeling confident in my ability to solve
+												complex problems, collaborate effectively, and make
+												solid technical decisions. This experience solidified my
+												identity as a capable, reliable developer and I'm ready
+												for what’s next
+											</div>
+										</CardContent>
+									</Card>
 								</div>
 							</div>
 						</section>
@@ -423,7 +459,12 @@ export default function Page() {
 						{/* CTA */}
 						<div className="text-center">
 							<Button asChild size="lg">
-								<Link href="/">View More Projects</Link>
+								<Link
+									className="bg-gradient-to-r to-emerald-400 dark:to-emerald-400 from-sky-500 dark:from-sky-500"
+									href="/#projects"
+								>
+									View More Projects
+								</Link>
 							</Button>
 						</div>
 					</div>

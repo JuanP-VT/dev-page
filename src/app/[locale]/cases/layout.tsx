@@ -17,7 +17,7 @@ type LayoutProps = {
 
 export default async function Layout({ children }: LayoutProps) {
 	return (
-		<div className={geist.className}>
+		<div className={`${geist.className} dark:bg-gray-950/70`}>
 			<CasesNavBar />
 			{/* Scroll style is added in ScrollbarMount component*/}
 			<div
