@@ -207,6 +207,33 @@ export default function Page() {
 
 								<div>
 									<h3 className="mb-4 text-xl font-semibold case-gradient-text">
+										{t("onsite2.solutions&contribution.performance.title")}
+									</h3>
+									<Card>
+										<CardContent>
+											<ul className="space-y-3">
+												<BulletPoint
+													text={t(
+														"onsite2.solutions&contribution.performance.1",
+													)}
+												/>
+												<BulletPoint
+													text={t(
+														"onsite2.solutions&contribution.performance.2",
+													)}
+												/>
+												<BulletPoint
+													text={t(
+														"onsite2.solutions&contribution.performance.3",
+													)}
+												/>
+											</ul>
+										</CardContent>
+									</Card>
+								</div>
+
+								<div>
+									<h3 className="mb-4 text-xl font-semibold case-gradient-text">
 										{t("onsite2.solutions&contribution.collaboration.title")}
 									</h3>
 									<Card>
@@ -227,21 +254,6 @@ export default function Page() {
 														"onsite2.solutions&contribution.collaboration.3",
 													)}
 												/>
-											</ul>
-										</CardContent>
-									</Card>
-								</div>
-
-								<div>
-									<h3 className="mb-4 text-xl font-semibold case-gradient-text">
-										Collaboration & Process
-									</h3>
-									<Card>
-										<CardContent>
-											<ul className="space-y-3">
-												<BulletPoint text="Co-led the frontend rewrite as one of two developers, taking ownership of full modules from design to deployment" />
-												<BulletPoint text="Partnered closely with our coordinator (acting as UX) to iterate on flows and interfaces using client feedback." />
-												<BulletPoint text="Integrated with legacy backend APIs, building resilient error handling and working around inconsistent data and undocumented endpoints." />
 											</ul>
 										</CardContent>
 									</Card>

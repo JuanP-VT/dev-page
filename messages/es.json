@@ -102,7 +102,119 @@
   },
   "cases": {
     "common": {
-      "back": "Volver"
+      "back": "Regresar",
+      "view": "Ver Más Proyectos",
+      "case-study": "Estudio de Caso"
+    },
+    "onsite2": {
+      "title": "Onsite 2 | Reconstrucción Completa",
+      "sub-title": "Rediseño desde cero de la aplicación logística central para clientes.",
+      "role": "Desarrollador Frontend",
+      "duration": "Agosto 2024 - Desarrollo en Curso",
+      "overview-title": "Resumen",
+      "overview-description": "Onsite es la principal plataforma logística de nuestra empresa, utilizada por clientes comerciales para gestionar cada paso de sus operaciones de envío. Los clientes pueden cotizar y enviar paquetes, rastrear envíos, descargar facturas, ver datos históricos y manejar la configuración de la cuenta desde una única interfaz.",
+      "overview-description2": "La versión original era una aplicación legacy en jQuery que creció sin una estructura clara, lo que resultó en una base de código frágil e inconsistente que era difícil de mantener y extender. El objetivo era reemplazarla con una aplicación web completamente moderna. El resultado es una experiencia de usuario significativamente mejorada y un sistema mucho más escalable y mantenible.",
+      "g&c": {
+        "title": "Metas y Desafíos",
+        "goals": {
+          "title": "Metas",
+          "1": "Modernizar la experiencia del usuario reemplazando la interfaz desactualizada con una UI limpia y responsiva.",
+          "2": "Mejorar la mantenibilidad adoptando una pila de tecnología moderna con componentes reutilizables y bien estructurados.",
+          "3": "Optimizar el rendimiento y la fiabilidad, particularmente en vistas con muchos datos e interacciones complejas de formularios.",
+          "4": "Asegurar la compatibilidad móvil para una experiencia perfecta en todos los dispositivos."
+        },
+        "challenges": {
+          "title": "Desafíos Clave",
+          "1": "Reconstruir componentes de UI bajo estrictas limitaciones comerciales y soporte de backend incompleto.",
+          "2": "Gestionar formularios complejos y el estado de la aplicación mientras se mantiene la capacidad de respuesta de la UI.",
+          "3": "Equilibrar la entrega rápida con la reusabilidad y mantenibilidad a largo plazo de la base de código.",
+          "4": "Integrar con sistemas de backend viejos. que introdujeron deuda técnica y limitaciones."
+        },
+        "problems": {
+          "title": "Problemas Principales",
+          "1": "Patrones de UI inconsistentes en diferentes partes de la aplicación, lo que lleva a confusión y mala UX.",
+          "2": "Cuellos de botella de rendimiento al renderizar o filtrar grandes conjuntos de datos.",
+          "3": "Experiencia móvil rota o inutilizable, haciendo que la aplicación sea frustrante en teléfonos y tabletas.",
+          "4": "Base de código vieja y no estructurada sin documentación."
+        }
+      },
+      "solutions&contribution": {
+        "title": "Soluciones y Mis Contribuciones",
+        "technical": {
+          "title": "Arquitectura Técnica",
+          "1": "Construí una arquitectura modular basada en componentes con React y TypeScript para mejorar la escalabilidad y la mantenibilidad a largo plazo.",
+          "2": "Reconstruí la UI usando Next.js App Router, aprovechando los componentes del servidor y los layouts anidados para tiempos de carga más rápidos y una estructura más clara.",
+          "3": "Apliqué Tailwind CSS y Hero UI para ofrecer una interfaz totalmente responsiva y accesible en todos los dispositivos.",
+          "4": "Creé componentes de UI reutilizables y específicos para el negocio utilizados en módulos clave como cotizaciones, envíos y facturas."
+        },
+        "performance": {
+          "title": "Optimizaciones de Rendimiento",
+          "1": "Implementé paginación y desplazamiento virtual para tablas con muchos datos, mejorando drásticamente el rendimiento de carga en las vistas de envío y seguimiento.",
+          "2": "Utilicé server components de Next.js para almacenar en caché vistas clave y reducir llamadas redundantes a la API, mejorando la velocidad percibida.",
+          "3": "Minimicé renderizaciones y reduje el tamaño del paquete con estrategias de 'code splitting' y 'lazy loading'."
+        },
+        "collaboration": {
+          "title": "Colaboración y Proceso",
+          "1": "Co-lideré la reescritura del frontend como uno de los dos desarrolladores, asumiendo la responsabilidad de módulos completos desde el diseño hasta la implementación.",
+          "2": "Me asocié estrechamente con nuestra coordinadora (actuando como UX) para iterar sobre flujos e interfaces utilizando la retroalimentación del cliente.",
+          "3": "Me integré con APIs de backend viejas, construyendo un manejo de errores robusto y trabajando con datos inconsistentes y endpoints no documentados."
+        }
+      },
+      "BvsA": {
+        "title": "Antes vs. Después",
+        "sub-title": "(Mueve el deslizador en el centro de la imagen)",
+        "dashboard": "Panel de Control",
+        "account-summary": "Resumen de Cuenta",
+        "shipping": "Envío",
+        "mass-shipping": "Envío Masivo",
+        "profile": "Perfil",
+        "shipments": "Mis Envíos",
+        "before": {
+          "title": "Antes",
+          "1": "Interfaz anticuada que “parecía una página gubernamental de 2004”.",
+          "2": "Tiempos de carga impredecibles.",
+          "3": "Experiencia móvil rota o poco confiable.",
+          "4": "Flujos de usuario torpes con frecuentes problemas de UX."
+        },
+        "after": {
+          "title": "Después",
+          "1": "Diseño limpio y consistente con UI moderna.",
+          "2": "Tiempos de carga más rápidos e interacciones más fluidas.",
+          "3": "Responsive en todos los dispositivos.",
+          "4": "Navegación más clara y experiencia de usuario más intuitiva."
+        }
+      },
+      "i&r": {
+        "title": "Impacto y Resultados",
+        "1": "Tiempos de renderizado más rápidos",
+        "2": "Reducción estimada del código de UI",
+        "3": "Retroalimentación positiva de los miembros internos",
+        "description": "La reconstrucción marca un gran avance en usabilidad y mantenibilidad. El personal interno involucrado en las pruebas han elogiado el diseño más limpio y la estructura más clara, señalando que los flujos de trabajo previamente confusos ahora están optimizados. Desde la perspectiva del desarrollo, la nueva arquitectura modular ha mejorado significativamente la escalabilidad y la velocidad de implementación, sentando las bases para una iteración más rápida y una evolución del producto a largo plazo."
+      },
+      "reflection": {
+        "title": "Reflexión",
+        "learned": {
+          "title": "Lo que Aprendí",
+          "description": "Trabajar en Onsite 2 me llevó a un nuevo nivel de responsabilidad y resolución de problemas. Como uno de los dos únicos desarrolladores en el proyecto, fui responsable de entregar de forma independiente módulos completos, desde las decisiones arquitectónicas hasta los detalles finales de la UI, a menudo sin orientación directa. Esta experiencia agudizó mi capacidad para:",
+          "1": "Tomar decisiones arquitectónicas y tecnológicas con confianza.",
+          "2": "Equilibrar la mantenibilidad con los plazos impulsados por el negocio.",
+          "3": "Descomponer tareas grandes y ambiguas en pasos alcanzables.",
+          "4": "Comunicarse eficazmente con los interesados no técnicos para clarificar los requisitos.",
+          "description2": "Si bien la autonomía fue desafiante, me ayudó a crecer significativamente como desarrollador frontend. Salí de este proyecto con instintos técnicos más fuertes, más confianza en mi juicio y una comprensión más profunda de cómo construir interfaces escalables en entornos de productos del mundo real."
+        },
+        "dif": {
+          "title": "Lo que Haría Diferente",
+          "description": "Debido a la falta de una cultura de pruebas en la empresa y las limitaciones de recursos, no implementamos pruebas unitarias, de integración o de e2e automatizadas. Esto hizo que las pruebas manuales fueran más lentas y ocasionalmente provocó regresiones durante el desarrollo. Si tuviera la oportunidad de revisar este proyecto o en proyectos futuros, abogaría por:",
+          "1": "Introducir pruebas automatizadas temprano en el ciclo de vida de desarrollo.",
+          "2": "Establecer una estrategia de pruebas adecuada.",
+          "3": "Educar al equipo sobre cómo las pruebas mejoran la confianza, aceleran la iteración y reducen el soporte."
+        },
+        "proud": {
+          "title": "De lo que Estoy Más Orgulloso",
+          "description": "Este proyecto me puso a prueba en un entorno real donde tuve que entregar software listo para producción con una guía mínima, limitaciones heredadas y total responsabilidad sobre múltiples módulos.",
+          "description2": "A pesar de la presión y los desafíos, entregué características de alta calidad, aprendí a responsabilizarme de mi trabajo de principio a fin y contribuí a un producto que realmente importa a los usuarios. Lo que más me enorgullece es el crecimiento personal: pasé de lidiar con el síndrome del impostor a sentirme seguro en mi capacidad para resolver problemas complejos, colaborar eficazmente y tomar decisiones técnicas sólidas. Esta experiencia solidificó mi identidad como un desarrollador capaz y confiable, y estoy listo para lo que venga."
+        }
+      }
     }
   }
 }
