@@ -157,7 +157,7 @@ export default function BeforeAfterSlider({
 					aria-label="Comparison slider"
 					tabIndex={0}
 				>
-					<div className="flex absolute top-1/2 left-1/2 justify-center items-center w-8 h-8 bg-white rounded-full shadow-md -translate-x-1/2 -translate-y-20">
+					<div className="flex absolute top-1/2 left-1/2 justify-center items-center w-8 h-8 bg-gray-300 rounded-full shadow-md -translate-x-1/2 -translate-y-20">
 						<svg
 							width="16"
 							height="16"
@@ -168,14 +168,14 @@ export default function BeforeAfterSlider({
 							<title>Slider</title>
 							<path
 								d="M8.5 18.5L3 12M3 12L8.5 5.5M3 12H21"
-								stroke="black"
+								stroke="#71717a"
 								strokeWidth="2"
 								strokeLinecap="round"
 								strokeLinejoin="round"
 							/>
 							<path
 								d="M15.5 18.5L21 12M21 12L15.5 5.5M21 12H3"
-								stroke="black"
+								stroke="#71717a"
 								strokeWidth="2"
 								strokeLinecap="round"
 								strokeLinejoin="round"
