@@ -28,7 +28,7 @@ export default function Page() {
 							<div className="justify-self-center py-1 px-3 mb-4 text-sm rounded-full border w-fit bg-zinc-200/60 dark:bg-zinc-800">
 								Case Study
 							</div>
-							<h1 className="mb-6 text-4xl font-bold tracking-tight ">
+							<h1 className="mb-6 text-4xl sm:text-6xl font-bold tracking-tight case-gradient-text">
 								Onsite 2 | Full Rebuild
 							</h1>
 							<p className="mb-8 text-xl md:text-2xl text-muted-foreground">
@@ -72,19 +72,23 @@ export default function Page() {
 								<CardContent>
 									<div className="max-w-none prose prose-lg">
 										<div className="mb-4 text-lg leading-relaxed">
-											Onsite is our company’s main logistics platform, used by
-											business clients to manage every step of their shipping
-											operations. Clients can quote and send packages, track
-											shipments, download invoices, view historical data, and
-											handle account settings from a single interface. The
-											original version was a legacy jQuery application that grew
-											without a clear structure, resulting in a fragile,
-											inconsistent codebase that was hard to maintain and
-											extend. The goal was to replace it with a fully modern web
-											application built with Next.js, React, TypeScript, and
-											Tailwind CSS. The result is a significantly improved user
-											experience and a much more scalable and maintainable
-											system.
+											<p>
+												Onsite is our company’s main logistics platform, used by
+												business clients to manage every step of their shipping
+												operations. Clients can quote and send packages, track
+												shipments, download invoices, view historical data, and
+												handle account settings from a single interface.
+											</p>
+											<br />
+											<p>
+												The original version was a legacy jQuery application
+												that grew without a clear structure, resulting in a
+												fragile, inconsistent codebase that was hard to maintain
+												and extend. The goal was to replace it with a fully
+												modern web application. The result is a significantly
+												improved user experience and a much more scalable and
+												maintainable system.
+											</p>
 										</div>
 									</div>
 								</CardContent>
@@ -187,18 +191,17 @@ export default function Page() {
 									<h3 className="text-xl font-semibold case-gradient-text">
 										Technical Architecture
 									</h3>
-									<div className="p-6 rounded-lg">
-										<div className="flex flex-wrap gap-2">
-											<Badge variant="outline">React 18</Badge>
-											<Badge variant="outline">TypeScript</Badge>
-											<Badge variant="outline">Next.js 14</Badge>
-											<Badge variant="outline">Tailwind CSS</Badge>
-											<Badge variant="outline">Hero ui</Badge>
-											<Badge variant="outline">Zustand</Badge>
-										</div>
-									</div>
-									<Card>
+
+									<Card className="mt-3">
 										<CardContent>
+											<div className="flex flex-wrap gap-2 pb-4">
+												<Badge variant="outline">React 18</Badge>
+												<Badge variant="outline">TypeScript</Badge>
+												<Badge variant="outline">Next.js 14</Badge>
+												<Badge variant="outline">Tailwind CSS</Badge>
+												<Badge variant="outline">Hero ui</Badge>
+												<Badge variant="outline">Zustand</Badge>
+											</div>
 											<ul className="space-y-3">
 												<BulletPoint text="Built a modular, component-based architecture with React and TypeScript to improve scalability and long-term maintainability." />
 												<BulletPoint text="Rebuilt the UI using Next.js App Router, leveraging server components and nested layouts for faster load times and clearer structure." />
@@ -436,19 +439,25 @@ export default function Page() {
 									<Card>
 										<CardContent>
 											<div className="text-lg leading-relaxed">
-												This project tested me in a real-world where I had to
-												deliver production-ready software with minimal guidance,
-												legacy constraints, and full responsibility over
-												multiple modules. Despite the pressure and challenges, I
-												shipped high-quality features, learned to own my work
-												end-to-end, and contributed to a product that truly
-												matters to users. What makes me most proud is the
-												personal growth: I went from dealing with impostor
-												syndrome to feeling confident in my ability to solve
-												complex problems, collaborate effectively, and make
-												solid technical decisions. This experience solidified my
-												identity as a capable, reliable developer and I'm ready
-												for what’s next.
+												<p>
+													This project tested me in a real-world where I had to
+													deliver production-ready software with minimal
+													guidance, legacy constraints, and full responsibility
+													over multiple modules.
+												</p>
+												<br />
+												<p>
+													Despite the pressure and challenges, I shipped
+													high-quality features, learned to own my work
+													end-to-end, and contributed to a product that truly
+													matters to users. What makes me most proud is the
+													personal growth: I went from dealing with impostor
+													syndrome to feeling confident in my ability to solve
+													complex problems, collaborate effectively, and make
+													solid technical decisions. This experience solidified
+													my identity as a capable, reliable developer and I'm
+													ready for what’s next.
+												</p>
 											</div>
 										</CardContent>
 									</Card>
