@@ -111,9 +111,22 @@ export default function OnsiteComparison() {
 			setData(mobileData);
 		}
 	}, [currentFilter]);
+
+	//Check if user is in a mobile device
+	useEffect(() => {
+		const checkMobile = () => {
+			return window.matchMedia("(max-width: 767px)").matches;
+		};
+		if (checkMobile()) {
+			setCurrentFilter("Mobile");
+		} else {
+			setCurrentFilter("Desktop");
+		}
+	}, []);
+
 	return (
 		<div className="flex flex-col">
-			<div className="flex bg-gray-200 dark:bg-gray-800 rounded-sm p-1">
+			<div className="hidden sm:flex bg-gray-200 dark:bg-gray-800 rounded-sm p-1">
 				{filters.map((filter) => (
 					<button
 						key={filter}
