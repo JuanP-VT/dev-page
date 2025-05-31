@@ -25,10 +25,10 @@ export default function Page() {
 				<section className="py-10 md:py-16">
 					<div className="container px-4 mx-auto">
 						<div className="mx-auto max-w-4xl text-center">
-							<div className="justify-self-center py-1 px-3 mb-4 text-sm rounded-full border w-fit ">
+							<div className="justify-self-center py-1 px-3 mb-4 text-sm rounded-full border w-fit bg-zinc-200/60 dark:bg-zinc-800">
 								Case Study
 							</div>
-							<h1 className="mb-6 text-4xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 md:text-6xl dark:to-emerald-400 from-sky-500 dark:from-sky-500">
+							<h1 className="mb-6 text-4xl font-bold tracking-tight ">
 								Onsite 2 | Full Rebuild
 							</h1>
 							<p className="mb-8 text-xl md:text-2xl text-muted-foreground">
@@ -64,7 +64,7 @@ export default function Page() {
 						<section className="mb-16">
 							<div className="flex gap-3 items-center mb-6">
 								<GrOverview className="w-6 h-6 text-sky-500" />
-								<h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 dark:to-emerald-400 from-sky-500 dark:from-sky-500">
+								<h2 className="text-3xl font-bold case-gradient-text">
 									Overview
 								</h2>
 							</div>
@@ -95,7 +95,7 @@ export default function Page() {
 						<section className="mb-16">
 							<div className="flex gap-3 items-center mb-6">
 								<Target className="w-6 h-6 text-sky-500" />
-								<h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 dark:to-emerald-400 from-sky-500 dark:from-sky-500">
+								<h2 className="text-3xl font-bold case-gradient-text">
 									Goals & Challenges
 								</h2>
 							</div>
@@ -177,14 +177,14 @@ export default function Page() {
 						<section className="mb-16">
 							<div className="flex gap-3 items-center mb-6">
 								<Code className="w-6 h-6 text-sky-500" />
-								<h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 dark:to-emerald-400 from-sky-500 dark:from-sky-500">
+								<h2 className="text-3xl font-bold case-gradient-text">
 									Solutions & My Contributions
 								</h2>
 							</div>
 
 							<div className="space-y-8">
 								<div>
-									<h3 className="text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 dark:to-emerald-400 from-sky-500 dark:from-sky-500">
+									<h3 className="text-xl font-semibold case-gradient-text">
 										Technical Architecture
 									</h3>
 									<div className="p-6 rounded-lg">
@@ -210,7 +210,7 @@ export default function Page() {
 								</div>
 
 								<div>
-									<h3 className="mb-4 text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 dark:to-emerald-400 from-sky-500 dark:from-sky-500">
+									<h3 className="mb-4 text-xl font-semibold case-gradient-text">
 										Performance Optimizations
 									</h3>
 									<Card>
@@ -225,7 +225,7 @@ export default function Page() {
 								</div>
 
 								<div>
-									<h3 className="mb-4 text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 dark:to-emerald-400 from-sky-500 dark:from-sky-500">
+									<h3 className="mb-4 text-xl font-semibold case-gradient-text">
 										Collaboration & Process
 									</h3>
 									<Card>
@@ -245,7 +245,7 @@ export default function Page() {
 
 						{/* Before vs After */}
 						<section className="flex flex-col mb-16 w-full">
-							<h2 className="mb-2 text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 dark:to-emerald-400 from-sky-500 dark:from-sky-500">
+							<h2 className="mb-2 text-3xl font-bold case-gradient-text">
 								Before vs. After
 							</h2>
 							<span className="block text-xs text-primary font-light ">
@@ -304,7 +304,7 @@ export default function Page() {
 						<section className="mb-16">
 							<div className="flex gap-3 items-center mb-6">
 								<TrendingUp className="w-6 h-6 text-sky-500" />
-								<h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 dark:to-emerald-400 from-sky-500 dark:from-sky-500">
+								<h2 className="text-3xl font-bold case-gradient-text">
 									Impact & Results
 								</h2>
 							</div>
@@ -367,14 +367,14 @@ export default function Page() {
 						<section className="mb-16">
 							<div className="flex gap-3 items-center mb-6">
 								<Lightbulb className="w-6 h-6 text-sky-500" />
-								<h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 dark:to-emerald-400 from-sky-500 dark:from-sky-500">
+								<h2 className="text-3xl font-bold case-gradient-text">
 									Reflection
 								</h2>
 							</div>
 
 							<div className="space-y-6">
 								<div>
-									<h3 className="mb-3 text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 dark:to-emerald-400 from-sky-500 dark:from-sky-500">
+									<h3 className="mb-3 text-xl font-semibold case-gradient-text">
 										What I Learned
 									</h3>
 									<Card>
@@ -388,7 +388,7 @@ export default function Page() {
 												architectural decisions to final UI details often
 												without direct guidance. This experience sharpened my
 												ability to:
-												<div className="flex flex-col gap-2 py-1">
+												<div className="flex flex-col gap-2 py-2">
 													<BulletPoint text="Make architectural and tech decisions confidently" />
 													<BulletPoint text="Balance maintainability with business-driven deadlines" />
 													<BulletPoint text="Break down large, ambiguous tasks into achievable steps" />
@@ -406,7 +406,7 @@ export default function Page() {
 								</div>
 
 								<div>
-									<h3 className="mb-3 text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 dark:to-emerald-400 from-sky-500 dark:from-sky-500">
+									<h3 className="mb-3 text-xl font-semibold case-gradient-text">
 										What I'd Do Differently
 									</h3>
 									<Card>
@@ -419,10 +419,10 @@ export default function Page() {
 												regressions during development If given the chance to
 												revisit this project or in future projects I would
 												advocate for:
-												<div className="flex flex-col gap-2 py-1">
-													<BulletPoint text="Introducing automated testing early in the development lifecycle" />
-													<BulletPoint text="Establishing a testing strategy appropriate to the project size" />
-													<BulletPoint text="Educating the team on how testing improves confidence, speeds up iteration, and reduces support overhead" />
+												<div className="flex flex-col gap-2 py-2 mt-2">
+													<BulletPoint text="Introducing automated testing early in the development lifecycle." />
+													<BulletPoint text="Establishing a testing strategy appropriate to the project size." />
+													<BulletPoint text="Educating the team on how testing improves confidence, speeds up iteration, and reduces support ." />
 												</div>
 											</div>
 										</CardContent>
@@ -430,7 +430,7 @@ export default function Page() {
 								</div>
 
 								<div>
-									<h3 className="mb-3 text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 dark:to-emerald-400 from-sky-500 dark:from-sky-500">
+									<h3 className="mb-3 text-xl font-semibold case-gradient-text">
 										What I'm Proudest Of
 									</h3>
 									<Card>
@@ -448,7 +448,7 @@ export default function Page() {
 												complex problems, collaborate effectively, and make
 												solid technical decisions. This experience solidified my
 												identity as a capable, reliable developer and I'm ready
-												for what’s next
+												for what’s next.
 											</div>
 										</CardContent>
 									</Card>
