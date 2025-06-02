@@ -39,7 +39,20 @@
     "creativity": "creatividad",
     "brain": "'cerebro'"
   },
+  "tech": {
+    "description": "Tecnologías con las que he estado trabajando para dar vida a ideas",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "tools": "Herramientas"
+  },
   "projects": {
+    "title": "Proyectos",
+    "description": "Una selección de mi trabajo profesional reciente en PKT1 y proyectos personales",
+    "levels": {
+      "Professional": "Profesional",
+      "Freelance": "Freelance",
+      "Learning": "Aprendizaje"
+    },
     "os2-title": "Onsite 2 | Reconstrucción completa de la aplicación logística principal",
     "os2-description": "Como uno de los dos desarrolladores, contribuí significativamente a reconstruir la aplicación logística principal de nuestra empresa, utilizada por los clientes para cotizar y enviar paquetes. Reemplazamos una versión legacy basada en jQuery con tecnologías completamente moderna, entregando una nueva UI/UX, mejor rendimiento y mantenibilidad a largo plazo. Esta reescritura se convirtió en la nueva base para el crecimiento continuo del producto.",
 

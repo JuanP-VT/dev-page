@@ -3,11 +3,12 @@ import { useEffect } from "react";
 import ProjectCard from "../composed/ProjectCard";
 import clsx from "clsx";
 import { useProjects } from "@/lib/getProjects";
-import { useTranslations } from "next-intl";
 import { useGlobalStore } from "@/store/global-store";
 import { levels } from "@/types/project.type";
+import { useTranslations } from "next-intl";
 
 export default function Projects() {
+	const t = useTranslations("projects");
 	const filter = useGlobalStore.use.selectedTech();
 	const setFilter = useGlobalStore.use.setSelectedTech();
 	const { getProjects } = useProjects();
@@ -45,10 +46,10 @@ export default function Projects() {
 					<span className="text-cyan-600 dark:text-cyan-400">projects</span>
 				</div>
 				<h2 className="mb-2 font-mono text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">
-					Projects
+					{t("title")}
 				</h2>
 				<p className="mx-auto max-w-2xl font-mono text-gray-400">
-					A selection of my recent work and personal projects
+					{t("description")}
 				</p>
 			</div>
 
@@ -69,7 +70,7 @@ export default function Projects() {
 						}}
 					>
 						<span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 dark:from-teal-200 to-sky-900 dark:to-sky-300">
-							{level}
+							{t(`levels.${level}`)}
 						</span>
 					</button>
 				))}

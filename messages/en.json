@@ -39,7 +39,20 @@
     "creativity": "creativity",
     "brain": "'brain'"
   },
+  "tech": {
+    "description": "Technologies I've been working with to bring ideas to life",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "tools": "Herramientas"
+  },
   "projects": {
+    "title": "Projects",
+    "description": "A selection of my recent professional work at PKT1 and personal projects",
+    "levels": {
+      "Professional": "Professional",
+      "Freelance": "Freelance",
+      "Learning": "Learning"
+    },
     "os2-title": "Onsite 2 | Full Rebuild of Core Logistics App",
     "os2-description": "As one of two developers, I contributed significantly to rebuilding our company's main logistics app used by clients to quote and ship packages. We replaced a legacy jQuery-based version with a fully modern tech stack, delivering a fresh UI/UX, better performance, and long-term maintainability. This rewrite became the new foundation for the product's continued growth",
 

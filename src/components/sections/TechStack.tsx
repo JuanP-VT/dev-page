@@ -24,6 +24,7 @@ import {
 } from "react-icons/fa";
 import { useGlobalStore } from "@/store/global-store";
 import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
 
 // Organized technologies by category
 const technologies = {
@@ -104,6 +105,7 @@ const technologies = {
 };
 
 export default function TechStack() {
+	const t = useTranslations("tech");
 	const sectionRef = useRef<HTMLDivElement>(null);
 	const router = useRouter();
 	const categoryRefs = {
@@ -240,7 +242,7 @@ export default function TechStack() {
 					className="mb-8 text-center opacity-0"
 				>
 					<h3 className="font-mono text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-blue-600 dark:from-teal-400 dark:to-blue-500">
-						{capitalizeFirstLetter(category)}
+						{t(category)}
 					</h3>
 					<div className="mx-auto mt-1 w-24 h-1 bg-gradient-to-r from-teal-500 to-blue-600 rounded-full dark:from-teal-400 dark:to-blue-500" />
 				</div>
@@ -286,7 +288,7 @@ export default function TechStack() {
 					Tech Stack
 				</h2>
 				<p className="mx-auto max-w-2xl font-mono text-gray-500 dark:text-gray-400">
-					Technologies I've been working with to bring ideas to life
+					{t("description")}
 				</p>
 			</div>
 			{/* Render each category */}
@@ -295,9 +297,4 @@ export default function TechStack() {
 			{renderTechCategory("tools", 2)}
 		</section>
 	);
-}
-
-function capitalizeFirstLetter(str: string) {
-	const firstChar = str[0].toUpperCase();
-	return `${firstChar}${str.substring(1, 500)}`;
 }
