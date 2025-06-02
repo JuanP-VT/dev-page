@@ -149,9 +149,9 @@
         },
         "performance": {
           "title": "Performance Optimizations",
-          "1": "Implemented pagination and virtual scrolling for data-heavy tables, drastically improving load performance on shipment and tracking views..",
+          "1": "Implemented pagination and virtual scrolling for data-heavy tables, drastically improving load performance on shipment and tracking views.",
           "2": "Used Next.js server components to cache key views and reduce redundant API calls, improving perceived speed.",
-          "3": "Minimized re-renders and reduced bundle size with code-splitting and lazy loading strategies."
+          "3": "Optimized user interaction by implementing a debounce on searches and filters, preventing excessive server requests."
         },
         "collaboration": {
           "title": "Collaboration & Process",

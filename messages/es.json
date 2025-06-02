@@ -143,7 +143,7 @@
         "technical": {
           "title": "Arquitectura Técnica",
           "1": "Construí una arquitectura modular basada en componentes con React y TypeScript para mejorar la escalabilidad y la mantenibilidad a largo plazo.",
-          "2": "Reconstruí la UI usando Next.js App Router, aprovechando los componentes del servidor y los layouts anidados para tiempos de carga más rápidos y una estructura más clara.",
+          "2": "Reconstruí la UI usando Next.js App Router, aprovechando los server components y layouts para tiempos de carga más rápidos y una estructura más clara.",
           "3": "Apliqué Tailwind CSS y Hero UI para ofrecer una interfaz totalmente responsiva y accesible en todos los dispositivos.",
           "4": "Creé componentes de UI reutilizables y específicos para el negocio utilizados en módulos clave como cotizaciones, envíos y facturas."
         },
@@ -151,7 +151,7 @@
           "title": "Optimizaciones de Rendimiento",
           "1": "Implementé paginación y desplazamiento virtual para tablas con muchos datos, mejorando drásticamente el rendimiento de carga en las vistas de envío y seguimiento.",
           "2": "Utilicé server components de Next.js para almacenar en caché vistas clave y reducir llamadas redundantes a la API, mejorando la velocidad percibida.",
-          "3": "Minimicé renderizaciones y reduje el tamaño del paquete con estrategias de 'code splitting' y 'lazy loading'."
+          "3": "Optimicé la interacción del usuario implementando un debounce en las búsquedas y filtrados, evitando solicitudes excesivas al servidor."
         },
         "collaboration": {
           "title": "Colaboración y Proceso",
@@ -186,7 +186,7 @@
       },
       "i&r": {
         "title": "Impacto y Resultados",
-        "1": "Tiempos de renderizado más rápidos",
+        "1": "Eficiencia en renderizado",
         "2": "Reducción estimada del código de UI",
         "3": "Retroalimentación positiva de los miembros internos",
         "description": "La reconstrucción marca un gran avance en usabilidad y mantenibilidad. El personal interno involucrado en las pruebas han elogiado el diseño más limpio y la estructura más clara, señalando que los flujos de trabajo previamente confusos ahora están optimizados. Desde la perspectiva del desarrollo, la nueva arquitectura modular ha mejorado significativamente la escalabilidad y la velocidad de implementación, sentando las bases para una iteración más rápida y una evolución del producto a largo plazo."
@@ -199,7 +199,7 @@
           "1": "Tomar decisiones arquitectónicas y tecnológicas con confianza.",
           "2": "Equilibrar la mantenibilidad con los plazos impulsados por el negocio.",
           "3": "Descomponer tareas grandes y ambiguas en pasos alcanzables.",
-          "4": "Comunicarse eficazmente con los interesados no técnicos para clarificar los requisitos.",
+          "4": "Comuniqué eficazmente con los interesados para clarificar los requisitos.",
           "description2": "Si bien la autonomía fue desafiante, me ayudó a crecer significativamente como desarrollador frontend. Salí de este proyecto con instintos técnicos más fuertes, más confianza en mi juicio y una comprensión más profunda de cómo construir interfaces escalables en entornos de productos del mundo real."
         },
         "dif": {
