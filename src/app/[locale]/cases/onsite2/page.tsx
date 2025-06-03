@@ -15,7 +15,7 @@ import ThemeImage from "../components/ThemeImage";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import BulletPoint from "../components/BulletPoint";
-import OnsiteComparison from "../components/OnsiteComparison";
+import OnsiteComparison from "./components/OnsiteComparison";
 import { useTranslations } from "next-intl";
 
 export default function Page() {
