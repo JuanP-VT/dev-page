@@ -8,6 +8,7 @@ import { ThemeChanger } from "./buttons/ThemeChanger ";
 import { useGlobalStore } from "@/store/global-store";
 
 import MobileDrawer from "./dialogs/MobileDrawer";
+import Link from "next/link";
 
 export default function NavBar() {
 	const t = useTranslations("navbar");
@@ -16,13 +17,13 @@ export default function NavBar() {
 
 	function NavBarOption({ id }: { id: string }) {
 		return (
-			<a
+			<Link
 				href={`#${id}`}
 				className="relative font-mono font-medium text-gray-600 transition-colors dark:text-gray-300 hover:text-teal-400 group"
 			>
 				{t(id)}
 				<span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-teal-400 transition-all duration-300 group-hover:w-full" />
-			</a>
+			</Link>
 		);
 	}
 
