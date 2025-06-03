@@ -119,12 +119,12 @@
     "landing-description": "Diseñé una página de inicio simple con HTML y CSS básicos. Aprendí el modelo de caja, estructura de elementos y fundamentos de estilos - el primer paso en mi viaje como desarrollador."
   },
   "cases": {
-    "common": {
-      "back": "Regresar",
-      "view": "Ver Más Proyectos",
-      "case-study": "Estudio de Caso"
-    },
     "onsite2": {
+      "common": {
+        "back": "Regresar",
+        "view": "Ver Más Proyectos",
+        "case-study": "Estudio de Caso"
+      },
       "title": "Onsite 2 | Reconstrucción Completa",
       "sub-title": "Rediseño desde cero de la aplicación logística central para clientes.",
       "role": "Desarrollador Frontend",

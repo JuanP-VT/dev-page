@@ -119,12 +119,12 @@
     "landing-description": "Designed a simple homepage with foundational HTML and CSS. Learned the box model, element structure, and styling fundamentals — the very first step my dev journey."
   },
   "cases": {
-    "common": {
-      "back": "Go Back",
-      "view": "View More Projects",
-      "case-study": "Case Study"
-    },
     "onsite2": {
+      "common": {
+        "back": "Go Back",
+        "view": "View More Projects",
+        "case-study": "Case Study"
+      },
       "title": "Onsite 2 | Full Rebuild",
       "sub-title": "A ground-up redesign of a core legacy logistics app.",
       "role": "Frontend Developer",

@@ -19,7 +19,7 @@ import OnsiteComparison from "./components/OnsiteComparison";
 import { useTranslations } from "next-intl";
 
 export default function Page() {
-	const t = useTranslations("cases");
+	const t = useTranslations("cases.onsite2");
 	return (
 		<div className="">
 			<div className="flex flex-col">
@@ -31,21 +31,21 @@ export default function Page() {
 								{t("common.case-study")}
 							</div>
 							<h1 className="mb-6 text-4xl sm:text-6xl font-bold tracking-tight case-gradient-text">
-								{t("onsite2.title")}
+								{t("title")}
 							</h1>
 							<p className="mb-8 text-xl md:text-2xl text-muted-foreground">
-								{t("onsite2.sub-title")}
+								{t("sub-title")}
 							</p>
 
 							{/* Project Meta */}
 							<div className="flex flex-wrap gap-6 justify-center text-sm text-muted-foreground">
 								<div className="flex gap-2 items-center">
 									<Users className="w-4 h-4" />
-									<span>{t("onsite2.role")}</span>
+									<span>{t("role")}</span>
 								</div>
 								<div className="flex gap-2 items-center">
 									<Calendar className="w-4 h-4" />
-									<span>{t("onsite2.duration")}</span>
+									<span>{t("duration")}</span>
 								</div>
 							</div>
 						</div>
@@ -67,16 +67,16 @@ export default function Page() {
 							<div className="flex gap-3 items-center mb-6">
 								<GrOverview className="w-6 h-6 text-sky-500" />
 								<h2 className="text-3xl font-bold case-gradient-text">
-									{t("onsite2.overview-title")}
+									{t("overview-title")}
 								</h2>
 							</div>
 							<Card>
 								<CardContent>
 									<div className="max-w-none prose prose-lg">
 										<div className="mb-4 text-lg leading-relaxed">
-											<p>{t("onsite2.overview-description")}</p>
+											<p>{t("overview-description")}</p>
 											<br />
-											<p>{t("onsite2.overview-description2")}</p>
+											<p>{t("overview-description2")}</p>
 										</div>
 									</div>
 								</CardContent>
@@ -88,7 +88,7 @@ export default function Page() {
 							<div className="flex gap-3 items-center mb-6">
 								<Target className="w-6 h-6 text-sky-500" />
 								<h2 className="text-3xl font-bold case-gradient-text">
-									{t("onsite2.g&c.title")}
+									{t("g&c.title")}
 								</h2>
 							</div>
 
@@ -96,13 +96,13 @@ export default function Page() {
 								<Card>
 									<CardContent className="p-6">
 										<h3 className="mb-4 text-xl font-semibold text-emerald-600 dark:text-emerald-500">
-											{t("onsite2.g&c.goals.title")}
+											{t("g&c.goals.title")}
 										</h3>
 										<ul className="space-y-3">
-											<BulletPoint text={t("onsite2.g&c.goals.1")} />
-											<BulletPoint text={t("onsite2.g&c.goals.2")} />
-											<BulletPoint text={t("onsite2.g&c.goals.3")} />
-											<BulletPoint text={t("onsite2.g&c.goals.4")} />
+											<BulletPoint text={t("g&c.goals.1")} />
+											<BulletPoint text={t("g&c.goals.2")} />
+											<BulletPoint text={t("g&c.goals.3")} />
+											<BulletPoint text={t("g&c.goals.4")} />
 										</ul>
 									</CardContent>
 								</Card>
@@ -114,19 +114,19 @@ export default function Page() {
 										</h3>
 										<ul className="space-y-3">
 											<BulletPoint
-												text={t("onsite2.g&c.challenges.1")}
+												text={t("g&c.challenges.1")}
 												className="bg-blue-500"
 											/>
 											<BulletPoint
-												text={t("onsite2.g&c.challenges.2")}
+												text={t("g&c.challenges.2")}
 												className="bg-blue-500"
 											/>
 											<BulletPoint
-												text={t("onsite2.g&c.challenges.3")}
+												text={t("g&c.challenges.3")}
 												className="bg-blue-500"
 											/>
 											<BulletPoint
-												text={t("onsite2.g&c.challenges.4")}
+												text={t("g&c.challenges.4")}
 												className="bg-blue-500"
 											/>
 										</ul>
@@ -139,19 +139,19 @@ export default function Page() {
 										</h3>
 										<ul className="space-y-3">
 											<BulletPoint
-												text={t("onsite2.g&c.problems.1")}
+												text={t("g&c.problems.1")}
 												className="bg-red-500"
 											/>
 											<BulletPoint
-												text={t("onsite2.g&c.problems.2")}
+												text={t("g&c.problems.2")}
 												className="bg-red-500"
 											/>
 											<BulletPoint
-												text={t("onsite2.g&c.problems.3")}
+												text={t("g&c.problems.3")}
 												className="bg-red-500"
 											/>
 											<BulletPoint
-												text={t("onsite2.g&c.problems.4")}
+												text={t("g&c.problems.4")}
 												className="bg-red-500"
 											/>
 										</ul>
@@ -167,14 +167,14 @@ export default function Page() {
 							<div className="flex gap-3 items-center mb-6">
 								<Code className="w-6 h-6 text-sky-500" />
 								<h2 className="text-3xl font-bold case-gradient-text">
-									{t("onsite2.solutions&contribution.title")}
+									{t("solutions&contribution.title")}
 								</h2>
 							</div>
 
 							<div className="space-y-8">
 								<div>
 									<h3 className="text-xl font-semibold case-gradient-text">
-										{t("onsite2.solutions&contribution.technical.title")}
+										{t("solutions&contribution.technical.title")}
 									</h3>
 
 									<Card className="mt-3">
@@ -189,43 +189,16 @@ export default function Page() {
 											</div>
 											<ul className="space-y-3">
 												<BulletPoint
-													text={t("onsite2.solutions&contribution.technical.1")}
+													text={t("solutions&contribution.technical.1")}
 												/>
 												<BulletPoint
-													text={t("onsite2.solutions&contribution.technical.2")}
+													text={t("solutions&contribution.technical.2")}
 												/>
 												<BulletPoint
-													text={t("onsite2.solutions&contribution.technical.3")}
+													text={t("solutions&contribution.technical.3")}
 												/>
 												<BulletPoint
-													text={t("onsite2.solutions&contribution.technical.4")}
-												/>
-											</ul>
-										</CardContent>
-									</Card>
-								</div>
-
-								<div>
-									<h3 className="mb-4 text-xl font-semibold case-gradient-text">
-										{t("onsite2.solutions&contribution.performance.title")}
-									</h3>
-									<Card>
-										<CardContent>
-											<ul className="space-y-3">
-												<BulletPoint
-													text={t(
-														"onsite2.solutions&contribution.performance.1",
-													)}
-												/>
-												<BulletPoint
-													text={t(
-														"onsite2.solutions&contribution.performance.2",
-													)}
-												/>
-												<BulletPoint
-													text={t(
-														"onsite2.solutions&contribution.performance.3",
-													)}
+													text={t("solutions&contribution.technical.4")}
 												/>
 											</ul>
 										</CardContent>
@@ -234,25 +207,40 @@ export default function Page() {
 
 								<div>
 									<h3 className="mb-4 text-xl font-semibold case-gradient-text">
-										{t("onsite2.solutions&contribution.collaboration.title")}
+										{t("solutions&contribution.performance.title")}
 									</h3>
 									<Card>
 										<CardContent>
 											<ul className="space-y-3">
 												<BulletPoint
-													text={t(
-														"onsite2.solutions&contribution.collaboration.1",
-													)}
+													text={t("solutions&contribution.performance.1")}
 												/>
 												<BulletPoint
-													text={t(
-														"onsite2.solutions&contribution.collaboration.2",
-													)}
+													text={t("solutions&contribution.performance.2")}
 												/>
 												<BulletPoint
-													text={t(
-														"onsite2.solutions&contribution.collaboration.3",
-													)}
+													text={t("solutions&contribution.performance.3")}
+												/>
+											</ul>
+										</CardContent>
+									</Card>
+								</div>
+
+								<div>
+									<h3 className="mb-4 text-xl font-semibold case-gradient-text">
+										{t("solutions&contribution.collaboration.title")}
+									</h3>
+									<Card>
+										<CardContent>
+											<ul className="space-y-3">
+												<BulletPoint
+													text={t("solutions&contribution.collaboration.1")}
+												/>
+												<BulletPoint
+													text={t("solutions&contribution.collaboration.2")}
+												/>
+												<BulletPoint
+													text={t("solutions&contribution.collaboration.3")}
 												/>
 											</ul>
 										</CardContent>
@@ -266,10 +254,10 @@ export default function Page() {
 						{/* Before vs After */}
 						<section className="flex flex-col mb-16 w-full">
 							<h2 className="mb-2 text-3xl font-bold case-gradient-text">
-								{t("onsite2.BvsA.title")}
+								{t("BvsA.title")}
 							</h2>
 							<span className="block text-xs text-primary font-light ">
-								{t("onsite2.BvsA.sub-title")}
+								{t("BvsA.sub-title")}
 							</span>
 
 							<div className="flex flex-col w-full">
@@ -278,24 +266,24 @@ export default function Page() {
 									<Card>
 										<CardContent className="p-6">
 											<h3 className="mb-4 text-xl font-semibold text-red-600">
-												{t("onsite2.BvsA.before.title")}
+												{t("BvsA.before.title")}
 											</h3>
 											<ul className="space-y-2 text-sm">
 												<BulletPoint
 													className="bg-red-500"
-													text={t("onsite2.BvsA.before.1")}
+													text={t("BvsA.before.1")}
 												/>
 												<BulletPoint
 													className="bg-red-500"
-													text={t("onsite2.BvsA.before.2")}
+													text={t("BvsA.before.2")}
 												/>
 												<BulletPoint
 													className="bg-red-500"
-													text={t("onsite2.BvsA.before.3")}
+													text={t("BvsA.before.3")}
 												/>
 												<BulletPoint
 													className="bg-red-500"
-													text={t("onsite2.BvsA.before.4")}
+													text={t("BvsA.before.4")}
 												/>
 											</ul>
 										</CardContent>
@@ -304,13 +292,13 @@ export default function Page() {
 									<Card>
 										<CardContent className="p-6">
 											<h3 className="mb-4 text-xl font-semibold text-emerald-500">
-												{t("onsite2.BvsA.after.title")}
+												{t("BvsA.after.title")}
 											</h3>
 											<ul className="space-y-2 text-sm">
-												<BulletPoint text={t("onsite2.BvsA.after.1")} />
-												<BulletPoint text={t("onsite2.BvsA.after.2")} />
-												<BulletPoint text={t("onsite2.BvsA.after.3")} />
-												<BulletPoint text={t("onsite2.BvsA.after.4")} />
+												<BulletPoint text={t("BvsA.after.1")} />
+												<BulletPoint text={t("BvsA.after.2")} />
+												<BulletPoint text={t("BvsA.after.3")} />
+												<BulletPoint text={t("BvsA.after.4")} />
 											</ul>
 										</CardContent>
 									</Card>
@@ -325,7 +313,7 @@ export default function Page() {
 							<div className="flex gap-3 items-center mb-6">
 								<TrendingUp className="w-6 h-6 text-sky-500" />
 								<h2 className="text-3xl font-bold case-gradient-text">
-									{t("onsite2.i&r.title")}
+									{t("i&r.title")}
 								</h2>
 							</div>
 
@@ -336,7 +324,7 @@ export default function Page() {
 											80%
 										</div>
 										<div className="text-sm text-muted-foreground">
-											{t("onsite2.i&r.1")}
+											{t("i&r.1")}
 										</div>
 									</CardContent>
 								</Card>
@@ -346,7 +334,7 @@ export default function Page() {
 											60%
 										</div>
 										<div className="text-sm text-muted-foreground">
-											{t("onsite2.i&r.2")}
+											{t("i&r.2")}
 										</div>
 									</CardContent>
 								</Card>
@@ -356,7 +344,7 @@ export default function Page() {
 											95%
 										</div>
 										<div className="text-sm text-muted-foreground">
-											{t("onsite2.i&r.3")}
+											{t("i&r.3")}
 										</div>
 									</CardContent>
 								</Card>
@@ -366,7 +354,7 @@ export default function Page() {
 								<CardContent>
 									<div className=" max-w-none prose prose-lg">
 										<p className="text-lg leading-relaxed">
-											{t("onsite2.i&r.description")}
+											{t("i&r.description")}
 										</p>
 									</div>
 								</CardContent>
@@ -380,34 +368,26 @@ export default function Page() {
 							<div className="flex gap-3 items-center mb-6">
 								<Lightbulb className="w-6 h-6 text-sky-500" />
 								<h2 className="text-3xl font-bold case-gradient-text">
-									{t("onsite2.reflection.title")}
+									{t("reflection.title")}
 								</h2>
 							</div>
 
 							<div className="space-y-6">
 								<div>
 									<h3 className="mb-3 text-xl font-semibold case-gradient-text">
-										{t("onsite2.reflection.learned.title")}
+										{t("reflection.learned.title")}
 									</h3>
 									<Card>
 										<CardContent>
 											<div className="text-lg leading-relaxed">
-												{t("onsite2.reflection.learned.description")}
+												{t("reflection.learned.description")}
 												<div className="flex flex-col gap-2 py-2">
-													<BulletPoint
-														text={t("onsite2.reflection.learned.1")}
-													/>
-													<BulletPoint
-														text={t("onsite2.reflection.learned.2")}
-													/>
-													<BulletPoint
-														text={t("onsite2.reflection.learned.3")}
-													/>
-													<BulletPoint
-														text={t("onsite2.reflection.learned.4")}
-													/>
+													<BulletPoint text={t("reflection.learned.1")} />
+													<BulletPoint text={t("reflection.learned.2")} />
+													<BulletPoint text={t("reflection.learned.3")} />
+													<BulletPoint text={t("reflection.learned.4")} />
 												</div>
-												{t("onsite2.reflection.learned.description2")}
+												{t("reflection.learned.description2")}
 											</div>
 										</CardContent>
 									</Card>
@@ -415,16 +395,16 @@ export default function Page() {
 
 								<div>
 									<h3 className="mb-3 text-xl font-semibold case-gradient-text">
-										{t("onsite2.reflection.dif.title")}
+										{t("reflection.dif.title")}
 									</h3>
 									<Card>
 										<CardContent>
 											<div className="text-lg leading-relaxed">
-												{t("onsite2.reflection.dif.description")}
+												{t("reflection.dif.description")}
 												<div className="flex flex-col gap-2 py-2 mt-2">
-													<BulletPoint text={t("onsite2.reflection.dif.1")} />
-													<BulletPoint text={t("onsite2.reflection.dif.2")} />
-													<BulletPoint text={t("onsite2.reflection.dif.3")} />
+													<BulletPoint text={t("reflection.dif.1")} />
+													<BulletPoint text={t("reflection.dif.2")} />
+													<BulletPoint text={t("reflection.dif.3")} />
 												</div>
 											</div>
 										</CardContent>
@@ -433,14 +413,14 @@ export default function Page() {
 
 								<div>
 									<h3 className="mb-3 text-xl font-semibold case-gradient-text">
-										{t("onsite2.reflection.proud.title")}
+										{t("reflection.proud.title")}
 									</h3>
 									<Card>
 										<CardContent>
 											<div className="text-lg leading-relaxed">
-												<p>{t("onsite2.reflection.proud.description")}</p>
+												<p>{t("reflection.proud.description")}</p>
 												<br />
-												<p>{t("onsite2.reflection.proud.description2")}</p>
+												<p>{t("reflection.proud.description2")}</p>
 											</div>
 										</CardContent>
 									</Card>
