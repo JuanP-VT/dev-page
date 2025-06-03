@@ -6,7 +6,7 @@ import LanguageChanger from "./buttons/LanguageChanger";
 import { ThemeChanger } from "./buttons/ThemeChanger ";
 
 export default function CasesNavBar() {
-	const t = useTranslations("cases");
+	const t = useTranslations("cases.onsite2");
 	return (
 		<div className="flex justify-between p-3 w-full shadow-sm dark:border-b dark:border-gray-500 bg-slate-100 dark:bg-slate-900">
 			<Link
