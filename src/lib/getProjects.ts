@@ -13,6 +13,7 @@ export function useProjects() {
 			githubLink: "#",
 			featured: true,
 			level: "Professional",
+			caseStudyLink: "/cases/onsite2",
 		},
 		{
 			title: t("management-title"),

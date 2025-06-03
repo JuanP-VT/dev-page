@@ -53,6 +53,11 @@
       "Freelance": "Freelance",
       "Learning": "Learning"
     },
+    "links": {
+      "case": "Case Study",
+      "demo": "Live Demo",
+      "github": "GitHub"
+    },
     "os2-title": "Onsite 2 | Full Rebuild of Core Logistics App",
     "os2-description": "As one of two developers, I contributed significantly to rebuilding our company's main logistics app used by clients to quote and ship packages. We replaced a legacy jQuery-based version with a fully modern tech stack, delivering a fresh UI/UX, better performance, and long-term maintainability. This rewrite became the new foundation for the product's continued growth",
 

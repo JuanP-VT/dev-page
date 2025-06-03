@@ -6,8 +6,9 @@ export type Project = {
 	description: string;
 	image: string;
 	tags: string[];
-	liveLink: string;
-	githubLink: string;
+	liveLink?: string;
+	githubLink?: string;
 	featured: boolean;
 	level: Level;
+	caseStudyLink?: string;
 };
