@@ -3,20 +3,16 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { ExternalLink, Star, Folder } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
-
+import Link from "next/link";
+import { PiStudentFill } from "react-icons/pi";
+import type { Project } from "@/types/project.type";
+import { useTranslations } from "next-intl";
 interface ProjectCardProps {
-	project: {
-		title: string;
-		description: string;
-		image: string;
-		tags: string[];
-		liveLink: string;
-		githubLink: string;
-		featured: boolean;
-	};
+	project: Project;
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {
+	const t = useTranslations("projects.links");
 	const cardRef = useRef<HTMLDivElement | null>(null);
 	const [visible, setVisible] = useState(false);
 
@@ -98,18 +94,30 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 						))}
 					</div>
 					<div className="flex gap-4">
-						<a
-							href={project.liveLink}
-							className="flex gap-1 items-center font-mono text-sm text-teal-600 transition-colors dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300"
-						>
-							<ExternalLink className="w-4 h-4" /> Live Demo
-						</a>
-						<a
-							href={project.githubLink}
-							className="flex gap-1 items-center font-mono text-sm text-teal-600 transition-colors dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300"
-						>
-							<FaGithub className="w-4 h-4" /> GitHub
-						</a>
+						{project.caseStudyLink && (
+							<Link
+								href={project.caseStudyLink}
+								className="flex gap-1 items-center font-mono text-sm text-teal-600 transition-colors dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300"
+							>
+								<PiStudentFill className="w-4 h-4" /> {t("case")}
+							</Link>
+						)}
+						{project.liveLink && (
+							<Link
+								href={project.liveLink}
+								className="flex gap-1 items-center font-mono text-sm text-teal-600 transition-colors dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300"
+							>
+								<ExternalLink className="w-4 h-4" /> {t("demo")}
+							</Link>
+						)}
+						{project.githubLink && (
+							<Link
+								href={project.githubLink}
+								className="flex gap-1 items-center font-mono text-sm text-teal-600 transition-colors dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300"
+							>
+								<FaGithub className="w-4 h-4" /> {t("github")}
+							</Link>
+						)}
 					</div>
 				</div>
 			</div>
