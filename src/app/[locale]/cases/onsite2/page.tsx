@@ -95,47 +95,8 @@ export default function Page() {
 							<div className="grid gap-8 md:grid-cols-2">
 								<Card>
 									<CardContent className="p-6">
-										<h3 className="mb-4 text-xl font-semibold text-emerald-600 dark:text-emerald-500">
-											{t("g&c.goals.title")}
-										</h3>
-										<ul className="space-y-3">
-											<BulletPoint text={t("g&c.goals.1")} />
-											<BulletPoint text={t("g&c.goals.2")} />
-											<BulletPoint text={t("g&c.goals.3")} />
-											<BulletPoint text={t("g&c.goals.4")} />
-										</ul>
-									</CardContent>
-								</Card>
-
-								<Card>
-									<CardContent className="p-6">
-										<h3 className="mb-4 text-xl font-semibold text-blue-600 dark:text-blue-500">
-											Key Challenges
-										</h3>
-										<ul className="space-y-3">
-											<BulletPoint
-												text={t("g&c.challenges.1")}
-												className="bg-blue-500"
-											/>
-											<BulletPoint
-												text={t("g&c.challenges.2")}
-												className="bg-blue-500"
-											/>
-											<BulletPoint
-												text={t("g&c.challenges.3")}
-												className="bg-blue-500"
-											/>
-											<BulletPoint
-												text={t("g&c.challenges.4")}
-												className="bg-blue-500"
-											/>
-										</ul>
-									</CardContent>
-								</Card>
-								<Card>
-									<CardContent className="p-6">
 										<h3 className="mb-4 text-xl font-semibold text-red-600 dark:text-red-500">
-											Major Problems
+											{t("g&c.problems.title")}
 										</h3>
 										<ul className="space-y-3">
 											<BulletPoint
@@ -153,6 +114,45 @@ export default function Page() {
 											<BulletPoint
 												text={t("g&c.problems.4")}
 												className="bg-red-500"
+											/>
+										</ul>
+									</CardContent>
+								</Card>
+								<Card>
+									<CardContent className="p-6">
+										<h3 className="mb-4 text-xl font-semibold text-emerald-600 dark:text-emerald-500">
+											{t("g&c.goals.title")}
+										</h3>
+										<ul className="space-y-3">
+											<BulletPoint text={t("g&c.goals.1")} />
+											<BulletPoint text={t("g&c.goals.2")} />
+											<BulletPoint text={t("g&c.goals.3")} />
+											<BulletPoint text={t("g&c.goals.4")} />
+										</ul>
+									</CardContent>
+								</Card>
+
+								<Card>
+									<CardContent className="p-6">
+										<h3 className="mb-4 text-xl font-semibold text-blue-600 dark:text-blue-500">
+											{t("g&c.challenges.title")}
+										</h3>
+										<ul className="space-y-3">
+											<BulletPoint
+												text={t("g&c.challenges.1")}
+												className="bg-blue-500"
+											/>
+											<BulletPoint
+												text={t("g&c.challenges.2")}
+												className="bg-blue-500"
+											/>
+											<BulletPoint
+												text={t("g&c.challenges.3")}
+												className="bg-blue-500"
+											/>
+											<BulletPoint
+												text={t("g&c.challenges.4")}
+												className="bg-blue-500"
 											/>
 										</ul>
 									</CardContent>
