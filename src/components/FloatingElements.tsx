@@ -92,7 +92,7 @@ export default function FloatingElements() {
 				ctx.font = `${el.size}px monospace`;
 				ctx.fillStyle =
 					theme === "dark"
-						? `rgba(99, 230, 190, ${Math.random() * 0.1 + 0.1})`
+						? "rgba(99, 230, 190, 0.25)"
 						: "rgba(99, 230, 190, 0.45)";
 				ctx.fillText(el.element, el.x, el.y);
 			});
