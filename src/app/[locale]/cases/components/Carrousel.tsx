@@ -21,7 +21,7 @@ export default function Carrousel({ imgList = [] }: CarrouselProps) {
 					{imgList.map((img) => (
 						<CarouselItem key={img}>
 							<Image
-								className="w-full h-full noselect rounded-sm"
+								className="w-full h-full rounded-sm noselect"
 								src={img}
 								alt="Management Demo"
 								width={900}

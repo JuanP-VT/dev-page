@@ -30,7 +30,7 @@ export default function Page() {
 							<div className="justify-self-center py-1 px-3 mb-4 text-sm rounded-full border w-fit bg-zinc-200/60 dark:bg-zinc-800">
 								{t("common.case-study")}
 							</div>
-							<h1 className="mb-6 text-4xl sm:text-6xl font-bold tracking-tight case-gradient-text">
+							<h1 className="mb-6 text-4xl font-bold tracking-tight sm:text-6xl case-gradient-text">
 								{t("title")}
 							</h1>
 							<p className="mb-8 text-xl md:text-2xl text-muted-foreground">
@@ -256,7 +256,7 @@ export default function Page() {
 							<h2 className="mb-2 text-3xl font-bold case-gradient-text">
 								{t("BvsA.title")}
 							</h2>
-							<span className="block text-xs text-primary font-light ">
+							<span className="block text-xs font-light text-primary">
 								{t("BvsA.sub-title")}
 							</span>
 
@@ -352,7 +352,7 @@ export default function Page() {
 
 							<Card className="mt-6">
 								<CardContent>
-									<div className=" max-w-none prose prose-lg">
+									<div className="max-w-none prose prose-lg">
 										<p className="text-lg leading-relaxed">
 											{t("i&r.description")}
 										</p>

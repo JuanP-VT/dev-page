@@ -50,7 +50,7 @@ export default function OnsiteComparison() {
 
 	return (
 		<div className="flex flex-col">
-			<div className="hidden sm:flex bg-gray-200 dark:bg-gray-800 rounded-sm p-1">
+			<div className="hidden p-1 bg-gray-200 rounded-sm sm:flex dark:bg-gray-800">
 				{filters.map((filter) => (
 					<button
 						key={filter}
