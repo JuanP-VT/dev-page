@@ -233,6 +233,99 @@
           "description2": "A pesar de la presión y los desafíos, entregué características de alta calidad, aprendí a responsabilizarme de mi trabajo de principio a fin y contribuí a un producto que realmente importa a los usuarios. Lo que más me enorgullece es el crecimiento personal: pasé de lidiar con el síndrome del impostor a sentirme seguro en mi capacidad para resolver problemas complejos, colaborar eficazmente y tomar decisiones técnicas sólidas. Esta experiencia solidificó mi identidad como un desarrollador capaz y confiable, y estoy listo para lo que venga."
         }
       }
+    },
+
+    "management": {
+      "common": {
+        "view": "Ver Más Proyectos",
+        "case-study": "Caso de Estudio"
+      },
+      "title": "Management | Mejoras y Mantenimiento",
+      "sub-title": "Mejoras a nuestra plataforma interna de logística, enfocadas en nuevos módulos, actualizaciones de funcionalidades y corrección de bugs.",
+      "role": "Desarrollador Frontend",
+      "duration": "Julio 2024 - Mantenimiento Continuo",
+      "overview-title": "Resumen",
+      "overview-description": "La aplicación Management es una herramienta interna utilizada por nuestro personal administrativo y de soporte IT para supervisar las operaciones logísticas. Proporciona monitoreo en tiempo real, análisis detallados y reportes integrales que apoyan la toma de decisiones operativas y la respuesta a incidentes.",
+      "overview-description2": "Construido originalmente antes de mi incorporación a la empresa, el sistema requería mejoras continuas para satisfacer las necesidades empresariales en evolución. Mi rol involucró implementar nuevos módulos, corregir bugs y mejorar funcionalidades existentes para asegurar confiabilidad, escalabilidad y una mejor experiencia de usuario interna.",
+      "g&c": {
+        "title": "Objetivos y Desafíos",
+        "goals": {
+          "title": "Objetivos",
+          "1": "Mejorar las herramientas internas para optimizar las capacidades de monitoreo operativo, análisis y reportes.",
+          "2": "Mejorar la confiabilidad y rendimiento en módulos existentes mientras se extiende la funcionalidad con nuevas características.",
+          "3": "Optimizar el rendimiento y confiabilidad, particularmente en vistas con gran cantidad de datos y interacciones complejas de formularios.",
+          "4": "Agilizar los flujos de trabajo para el personal administrativo y de soporte IT a través de mejoras UX bien pensadas."
+        },
+        "challenges": {
+          "title": "Desafíos Clave",
+          "1": "Trabajar con un código base preexistente con muchas abstracciones.",
+          "2": "Entregar mejoras sin interrumpir las operaciones diarias.",
+          "3": "Navegar requisitos internos poco claros o en evolución de múltiples departamentos.",
+          "4": "Debuggear y extender funcionalidades sin documentación."
+        },
+        "problems": {
+          "title": "Problemas Principales",
+          "1": "Problemas de rendimiento al cargar algunos módulos."
+        }
+      },
+      "solutions&contribution": {
+        "title": "Soluciones y Mis Contribuciones",
+        "technical": {
+          "title": "Arquitectura Técnica",
+          "1": "Contribuí a una arquitectura basada en componentes usando React y Tailwind CSS para soportar patrones de UI consistentes y desarrollo escalable.",
+          "2": "Implementé nuevos módulos para análisis internos, dashboards de monitoreo y generación de reportes."
+        },
+        "performance": {
+          "title": "Optimizaciones de Rendimiento",
+          "1": "Implementé paginación y scroll virtual en vistas internas clave para mejorar el rendimiento al renderizar grandes conjuntos de datos.",
+          "2": "Apliqué debouncing de inputs a componentes de búsqueda y filtros, reduciendo re-renders innecesarios y carga de API.",
+          "3": "Optimicé la estructura de componentes y flujo de datos para minimizar renders innecesarios y mejorar la capacidad de respuesta en vistas complejas."
+        },
+        "collaboration": {
+          "title": "Colaboración y Proceso",
+          "1": "Me hice cargo de múltiples módulos y mejoras, trabajando de extremo a extremo desde la implementación hasta el despliegue.",
+          "2": "Colaboré estrechamente con el personal administrativo y de IT para aclarar requisitos y ajustar funcionalidades basándome en el uso del mundo real.",
+          "3": "Me coordiné con desarrolladores backend para integrar con APIs nuevas y heredadas, implementando manejo robusto de errores y compensando respuestas inconsistentes o no documentadas.",
+          "4": "Contribuí a los esfuerzos continuos de refactoring del código base, mejorando gradualmente la mantenibilidad mientras entregaba actualizaciones continuas."
+        }
+      },
+
+      "showcase": {
+        "title": "Showcase",
+        "sub-title": "Algunos de los Módulos que Creé"
+      },
+
+      "i&r": {
+        "title": "Impacto y Resultados",
+        "1": "Responsabilidad de módulos frontend",
+        "2": "Entrega de tareas",
+        "3": "Tiempo de actividad de la aplicación",
+        "description": "Aunque el diseño y estructura central de la plataforma Management se mantuvieron intactos, mis contribuciones se enfocaron en extender la funcionalidad, mejorar la mantenibilidad y asegurar la confiabilidad continua. Al construir nuevos módulos, optimizar componentes con gran cantidad de datos y abordar inconsistencias técnicas, ayudé a sostener una herramienta interna crítica sin interrumpir las operaciones. La entrega consistente de actualizaciones y correcciones ha reforzado la estabilidad de la plataforma y la ha posicionado para iteraciones más fluidas en futuros ciclos de desarrollo."
+      },
+      "reflection": {
+        "title": "Reflexión",
+        "learned": {
+          "title": "Lo que Aprendí",
+          "description": "La plataforma Management fue el primer proyecto en el que trabajé después de unirme a la empresa y vino con una curva de aprendizaje pronunciada. El código base, heredado de un desarrollador anterior, estaba muy abstraído y a menudo era difícil de navegar. Aunque algunos de los patrones eran técnicamente impresionantes de forma aislada, hacían que entender y extender el sistema fuera innecesariamente complejo. Había documentación mínima, muy pocos comentarios en línea y una fuerte dependencia en código 'auto-explicativo' que a menudo no lo era. Adaptarme a este entorno requirió persistencia, paciencia y un cambio en mi enfoque hacia arquitecturas desconocidas. Con el tiempo, aprendí cómo:",
+          "1": "Navegar lógica profundamente abstraída a través de archivos dispersos y hooks personalizados poco convencionales.",
+          "2": "Hacer ingeniería inversa de la intención a partir de estructuras poco claras y documentación limitada.",
+          "3": "Entregar nuevas funcionalidades y mejoras sin introducir regresiones en un código base frágil.",
+          "4": "Desarrollar un sentido más claro de cuándo la simplicidad es más valiosa que la inteligencia en el código.",
+          "description2": "Aunque el proyecto no involucró una reconstrucción completa, me empujó a crecer de maneras que a menudo se pasan por alto  adaptarme a sistemas existentes, mantener estabilidad y aprender cómo prosperar en código legacy sin control total sobre la arquitectura. Fortaleció mi capacidad para contribuir de manera significativa en escenarios del mundo real e imperfectos, y me enseñó el valor de escribir código mantenible y amigable para quienes vienen después."
+        },
+        "dif": {
+          "title": "Lo que Haría Diferente",
+          "description": "Aunque entregué todas las tareas y funcionalidades según lo solicitado, trabajar en la plataforma Management destacó algunas áreas más amplias donde el proyecto  y mi propio enfoque  podrían evolucionar. El código base que heredé era funcional pero excesivamente complejo, con abstracciones profundas y documentación mínima. En retrospectiva, habría presionado antes por:",
+          "1": "Simplificar gradualmente patrones innecesariamente complejos para hacer el código base más accesible para futuros desarrolladores.",
+          "2": "Introducir documentación interna más clara o comentarios en línea para reducir el tiempo de onboarding y la carga mental.",
+          "3": "Establecer prácticas de testing a pequeña escala para detectar regresiones y mejorar la confianza en los cambios."
+        },
+        "proud": {
+          "title": "De lo que me Siento Más Orgulloso",
+          "description": "Este fue mi primer proyecto después de unirme a la empresa, y me empujó a ponerme al día rápidamente en un código base que era complejo y desconocido. Adaptarme a la arquitectura de otra persona  especialmente una con abstracciones profundas y poca documentación no fue fácil, pero lo tomé paso a paso y me enfoqué en entregar lo que se necesitaba.",
+          "description2": "De lo que me siento más orgulloso es de cómo me mantuve consistente, aprendí a trabajar a través de la incertidumbre y gradualmente construí confianza en mi capacidad para contribuir de manera significativa. Puede que no haya hecho cambios arquitectónicos importantes, pero demostré que podía adaptarme, mantenerme confiable y manejar responsabilidad cualidades que sé que continuarán sirviéndome mientras crezco."
+        }
+      }
     }
   }
 }
