@@ -233,6 +233,98 @@
           "description2": "Despite the pressure and challenges, I shipped high-quality features, learned to own my work end-to-end, and contributed to a product that truly matters to users. What makes me most proud is the personal growth: I went from dealing with impostor syndrome to feeling confident in my ability to solve complex problems, collaborate effectively, and make solid technical decisions. This experience solidified my identity as a capable, reliable developer and I'm ready for what’s next."
         }
       }
+    },
+    "management": {
+      "common": {
+        "view": "View More Projects",
+        "case-study": "Case Study"
+      },
+      "title": "Management | Enhancements and Maintenance",
+      "sub-title": "Improvements to our internal logistics platform, focused on new modules, feature upgrades, and bugfixes.",
+      "role": "Frontend Developer",
+      "duration": "July 2024 - Ongoing Maintenance",
+      "overview-title": "Overview",
+      "overview-description": "The Management app is an internal tool used by our administrative and IT support staff to oversee logistics operations. It provides real-time monitoring, detailed analytics, and comprehensive reports that support operational decision-making and incident response.",
+      "overview-description2": "Originally built before my time at the company, the system required continuous improvements to meet evolving business needs. My role involved implementing new modules, fixing bugs, and enhancing existing features to ensure reliability, scalability, and a better internal user experience.",
+      "g&c": {
+        "title": "Goals & Challenges",
+        "goals": {
+          "title": "Goals",
+          "1": "Enhance internal tooling to improve operational monitoring, analytics, and reporting capabilities.",
+          "2": "Improve reliability and performance in existing modules while extending functionality with new features.",
+          "3": "Optimize performance and reliability, particularly in data-heavy views and complex form interactions.",
+          "4": "Streamline workflows for administrative and IT support staff through thoughtful UX improvements."
+        },
+        "challenges": {
+          "title": "Key Challenges",
+          "1": "Working with a pre-existing codebase with a lot of abstractions.",
+          "2": "Delivering improvements without disrupting daily operations.",
+          "3": "Navigating unclear or evolving internal requirements from multiple departments.",
+          "4": "Debugging and extending features no documentation."
+        },
+        "problems": {
+          "title": "Major Problems",
+          "1": "Performance issues when loading some modules."
+        }
+      },
+      "solutions&contribution": {
+        "title": "Solutions & My Contributions",
+        "technical": {
+          "title": "Technical Architecture",
+          "1": "Contributed to a component-based architecture using React and Tailwind CSS to support consistent UI patterns and scalable development.",
+          "2": "Implemented new modules for internal analytics, monitoring dashboards, and report generation."
+        },
+        "performance": {
+          "title": "Performance Optimizations",
+          "1": "Implemented pagination and virtual scrolling in key internal views to improve performance when rendering large datasets.",
+          "2": "Applied input debouncing to search and filter components, reducing unnecessary re-renders and API load.",
+          "3": "Optimized component structure and data flow to minimize unnecessary renders and improve responsiveness in complex views."
+        },
+        "collaboration": {
+          "title": "Collaboration & Process",
+          "1": "Took ownership of multiple modules and enhancements, working end-to-end from implementation to deployment.",
+          "2": "Collaborated closely with administrative and IT staff to clarify requirements and adjust features based on real-world usage.",
+          "3": "Coordinated with backend developers to integrate with new and legacy APIs, implementing robust error handling and compensating for inconsistent or undocumented responses.",
+          "4": "Contributed to ongoing codebase refactoring efforts, gradually improving maintainability while delivering continuous updates."
+        }
+      },
+
+      "showcase": {
+        "title": "Showcase",
+        "sub-title": "Some of the Modules I Created"
+      },
+
+      "i&r": {
+        "title": "Impact & Results",
+        "1": "Frontend module ownership",
+        "2": "Task delivery",
+        "3": "Application uptime",
+        "description": "While the core design and structure of the Management platform remained intact, my contributions focused on extending functionality, improving maintainability, and ensuring ongoing reliability. By building new modules, optimizing data-heavy components, and addressing technical inconsistencies, I helped sustain a critical internal tool without disrupting operations. The consistent delivery of updates and fixes has reinforced the platform’s stability and positioned it for smoother iteration in future development cycles."
+      },
+      "reflection": {
+        "title": "Reflection",
+        "learned": {
+          "title": "What I Learned",
+          "description": "The Management platform was the first project I worked on after joining the company  and it came with a steep learning curve. The codebase, inherited from a previous developer, was heavily abstracted and often difficult to navigate. While some of the patterns were technically impressive in isolation, they made understanding and extending the system unnecessarily complex. There was minimal documentation, very few inline comments, and a strong reliance on 'self-explanatory' code that often wasn't. Adapting to this environment required persistence, patience, and a shift in how I approach unfamiliar architectures. Over time, I learned how to:",
+          "1": "Navigate deeply abstracted logic across scattered files and unconventional custom hooks.",
+          "2": "Reverse-engineer intent from unclear structures and limited documentation.",
+          "3": "Deliver new features and improvements without introducing regressions in a fragile codebase.",
+          "4": "Develop a clearer sense of when simplicity is more valuable than cleverness in code.",
+          "description2": "While the project didn't involve a full rebuild, it pushed me to grow in ways that are often overlooked — adapting to existing systems, maintaining stability, and learning how to thrive in legacy code without full control over the architecture. It strengthened my ability to contribute meaningfully in real-world, imperfect scenarios, and taught me the value of writing maintainable, human-friendly code for those who come after."
+        },
+        "dif": {
+          "title": "What I'd Do Differently",
+          "description": "While I delivered all tasks and features as requested, working on the Management platform highlighted some broader areas where the project  and my own approach  could evolve. The codebase I inherited was functional but overly complex, with deep abstractions and minimal documentation. In hindsight, I would have pushed earlier for:",
+          "1": "Gradually simplifying unnecessarily complex patterns to make the codebase more approachable for future developers.",
+          "2": "Introducing clearer internal documentation or inline comments to reduce onboarding time and mental overhead.",
+          "3": "Establishing small-scale testing practices to catch regressions and improve confidence in changes."
+        },
+        "proud": {
+          "title": "What I'm Proudest Of",
+          "description": "This was my first project after joining the company, and it pushed me to get up to speed quickly in a codebase that was complex and unfamiliar. Adapting to someone else's architecture  especially one with deep abstractions and little documentation  wasn’t easy, but I took it step by step and focused on delivering what was needed.",
+          "description2": "What I’m most proud of is how I stayed consistent, learned to work through uncertainty, and gradually built confidence in my ability to contribute meaningfully. I may not have made major architectural changes, but I showed that I could adapt, stay reliable, and handle responsibility  qualities that I know will continue to serve me as I grow."
+        }
+      }
     }
   }
 }

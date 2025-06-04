@@ -24,6 +24,7 @@ export function useProjects() {
 			githubLink: "#",
 			featured: false,
 			level: "Professional",
+			caseStudyLink: "/cases/management",
 		},
 		{
 			title: t("onsite1-title"),
