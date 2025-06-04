@@ -15,22 +15,24 @@ type CarrouselProps = {
 
 export default function Carrousel({ imgList = [] }: CarrouselProps) {
 	return (
-		<Carousel className="w-full rounded-sm">
-			<CarouselContent>
-				{imgList.map((img) => (
-					<CarouselItem key={img}>
-						<Image
-							className="w-full h-full noselect rounded-sm"
-							src={img}
-							alt="Management Demo"
-							width={900}
-							height={500}
-						/>
-					</CarouselItem>
-				))}
-			</CarouselContent>
-			<CarouselPrevious />
-			<CarouselNext />
-		</Carousel>
+		<section>
+			<Carousel className="w-full rounded-sm">
+				<CarouselContent>
+					{imgList.map((img) => (
+						<CarouselItem key={img}>
+							<Image
+								className="w-full h-full noselect rounded-sm"
+								src={img}
+								alt="Management Demo"
+								width={900}
+								height={500}
+							/>
+						</CarouselItem>
+					))}
+				</CarouselContent>
+				<CarouselPrevious />
+				<CarouselNext />
+			</Carousel>
+		</section>
 	);
 }
