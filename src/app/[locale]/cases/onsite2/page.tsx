@@ -57,8 +57,8 @@ export default function Page() {
 						{/* Project Image */}
 						<div className="mb-16">
 							<ThemeImage
-								imgSrc="/img/projects/onsite2/main2.png"
-								imgSrcDark="/img/projects/onsite2/main2-dark.png"
+								imgSrc="/img/projects/onsite2/main2.webp"
+								imgSrcDark="/img/projects/onsite2/main2-dark.webp"
 							/>
 						</div>
 
