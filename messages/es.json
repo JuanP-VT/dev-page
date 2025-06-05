@@ -326,6 +326,95 @@
           "description2": "De lo que me siento más orgulloso es de cómo me mantuve consistente, aprendí a trabajar a través de la incertidumbre y gradualmente construí confianza en mi capacidad para contribuir de manera significativa. Puede que no haya hecho cambios arquitectónicos importantes, pero demostré que podía adaptarme, mantenerme confiable y manejar responsabilidad cualidades que sé que continuarán sirviéndome mientras crezco."
         }
       }
+    },
+    "regina": {
+      "common": {
+        "view": "Ver Más Proyectos",
+        "case-study": "Caso de Estudio"
+      },
+      "title": "Regina & Gael Studio | Plataforma E-commerce Fullstack",
+      "sub-title": "Una plataforma de e-commerce construida a medida para vender productos digitales, diseñada desde cero para soportar compras seguras, gestión de productos y entrega de archivos digitales.",
+      "role": "Desarrollador Full-Stack",
+      "duration": "Febrero 2024 - Mayo 2024",
+      "overview-title": "Resumen",
+      "overview-description": "Regina & Gael Studio era una pequeña tienda en línea que vendía arte imprimible y plantillas para manualidades. El cliente necesitaba una solución de e-commerce completamente personalizada para vender productos digitales con cuentas de usuario, carga de productos, entrega segura de archivos y pagos integrados.",
+      "overview-description2": "Como el único desarrollador, diseñé y construí la plataforma desde cero, cubriendo todo desde la UI del frontend hasta la infraestructura del backend. Esto incluyó gestión de productos y usuarios, procesamiento de pagos con PayPal y entrega segura de archivos digitales usando URLs firmadas a través de AWS. El objetivo era darle al cliente control total sobre su tienda mientras se aseguraba una experiencia de compra simple y segura para los clientes.",
+      "g&c": {
+        "title": "Objetivos y Desafíos",
+        "goals": {
+          "title": "Objetivos",
+          "1": "Construir una plataforma de e-commerce personalizada adaptada a la marca del cliente y necesidades de productos.",
+          "2": "Eliminar la dependencia de plataformas de terceros como Etsy, permitiendo control total sobre diseño, ventas y entrega de productos.",
+          "3": "Implementar un sistema backend que permita a usuarios no técnicos gestionar productos, pedidos y descargas digitales de forma independiente.",
+          "4": "Asegurar pagos seguros y fluidos y entrega de archivos digitales, con una interfaz amigable tanto para el cliente como para los compradores."
+        },
+        "challenges": {
+          "title": "Desafíos Clave",
+          "1": "Construir la plataforma solo, sin experiencia previa en pagos, almacenamiento en la nube o entrega de archivos digitales.",
+          "2": "Diseñar un sistema seguro para distribuir productos digitales mientras se previene acceso no autorizado o compartir.",
+          "3": "Configurar e integrar servicios de AWS (S3, URLs firmadas) con exposición mínima previa a infraestructura en la nube.",
+          "4": "Asegurar una experiencia de checkout de PayPal fluida y confiable sin acceso a recursos formales de diseño o QA.",
+          "5": "Balancear flexibilidad para el dueño de la tienda con simplicidad para usuarios finales"
+        },
+        "problems": {
+          "title": "Problemas Principales",
+          "1": "No había CMS preexistente o motor de e-commerce cada funcionalidad tuvo que ser implementada desde cero.",
+          "2": "Manejar flujo de pagos y casos edge de webhooks (ej. falla de pago, reintentos) sin introducir bugs",
+          "3": "Gestionar de forma segura el acceso a archivos para que solo usuarios que pagaron pudieran descargar sus productos comprados.",
+          "4": "Curva de aprendizaje con configuración de AWS y permisos para buckets S3 y URLs seguras de archivos."
+        }
+      },
+      "solutions&contribution": {
+        "title": "Soluciones y Mis Contribuciones",
+        "technical": {
+          "title": "Arquitectura Técnica",
+          "1": "Diseñé y construí la arquitectura fullstack desde cero, incluyendo lógica tanto del lado del cliente como del servidor.",
+          "2": "Implementé entrega segura de productos digitales usando AWS S3 con URLs firmadas.",
+          "3": "Integré PayPal Checkout para procesamiento de pagos, manejando verificación de pedidos y cumplimiento en el backend.",
+          "4": "Construí un dashboard de administración personalizado para gestionar listados de productos, rastrear pedidos y subir archivos descargables."
+        },
+        "performance": {
+          "title": "Rendimiento y UX",
+          "1": "Apliqué carga dinámica y server-side rendering con Next.js para mejorar tiempos de carga inicial.",
+          "2": "Usé validación de formularios, feedback de errores y flujos de usuario claros para simplificar el checkout y acceso a archivos.",
+          "3": "Diseñé layouts responsivos para una experiencia fluida en dispositivos de escritorio y móviles."
+        },
+        "collaboration": {
+          "title": "Colaboración y Proceso",
+          "1": "Definí el alcance y lideré todo el proyecto de forma independiente, desde wireframes hasta despliegue en producción.",
+          "2": "Trabajé estrechamente con el cliente (mi cuñada) para traducir ideas no técnicas en requisitos funcionales.",
+          "3": "Tomé la iniciativa de aprender servicios de AWS y procesamiento de pagos para entregar funcionalidades más allá de mi skillset original."
+        }
+      },
+
+      "showcase": {
+        "title": "Showcase",
+        "sub-title": "Algunos de los Módulos que Creé"
+      },
+
+      "i&r": {
+        "title": "Impacto y Resultados",
+        "1": "Entregué una plataforma de e-commerce completamente funcional y segura desde cero manejando todo desde listados de productos y checkout de PayPal hasta entrega digital.",
+        "2": "Gané experiencia de primera mano con desarrollo backend, servicios en la nube y arquitectura fullstack en un escenario del mundo real.",
+        "3": "Construí confianza en mi capacidad para definir alcance, gestionar y ejecutar un producto completo de forma independiente.",
+        "4": "Este proyecto jugó un rol clave en ayudarme a conseguir mi primer rol profesional como desarrollador en PKT1. 🚀",
+        "5": "Aunque el negocio finalmente se pausó por razones personales, el proyecto empujó mis límites técnicos y me enseñó a apropiarme de cada parte del proceso de desarrollo."
+      },
+      "reflection": {
+        "title": "Reflexión",
+        "learned": {
+          "title": "Lo que Aprendí",
+          "description": "Este proyecto me desafió a salir de mi zona de confort del frontend y tomar propiedad completa de un sistema de grado producción. Aprendí cómo integrar servicios de terceros como AWS y PayPal, diseñar flujos seguros de entrega de archivos y estructurar un backend para soportar lógica de negocio real todo mientras gestionaba alcance y expectativas por mi cuenta."
+        },
+        "dif": {
+          "title": "Lo que Haría Diferente",
+          "description": "Si pudiera revisar este proyecto, empezaría alineando expectativas más claramente tanto en términos de alcance como de involucramiento continuo. Desde un punto de vista técnico, desacoplaría dependencias en la nube como AWS S3 para hacer el despliegue y mantenimiento futuro más fácil. También aprendí la importancia de documentar el proyecto y capturar demos funcionales mientras está vivo, especialmente para uso en portafolio."
+        },
+        "proud": {
+          "title": "De lo que me Siento Más Orgulloso",
+          "description": "Me siento orgulloso de haber construido y entregado una app de e-commerce fullstack completa a pesar de que era mi primera vez trabajando con muchas de las tecnologías involucradas. Me empujó a aprender rápido, resolver problemas del mundo real y tomar propiedad completa de decisiones tanto de frontend como de backend. Este proyecto fue un factor clave para ayudarme a conseguir mi primer rol profesional en PKT1, probándome a mí mismo que podía tomar desafíos complejos y crecer a partir de ellos."
+        }
+      }
     }
   }
 }
