@@ -65,13 +65,13 @@
     "management-description": "Contributed to the ongoing development of our company's internal logistics platform, which supports operational monitoring, analytics, and administrative controls. Although the system was established prior to my tenure, I was responsible for implementing new modules, resolving bugs, and enhancing existing features.",
 
     "onsite1-title": "Onsite 1 | Legacy Code Maintenance",
-    "onsite1-description": "Maintained and debugged a legacy application critical to the company's logistics operations. The project was built with jQuery, HTML, and CSS, and had grown without architectural planning — resulting in long, unstructured files and inconsistent modularization. Despite the technical debt and lack of documentation, I successfully implemented fixes and improvements when needed.",
+    "onsite1-description": "Maintained and debugged a legacy application critical to the company's logistics operations. The project was built with jQuery, HTML, and CSS, and had grown without architectural planning resulting in long, unstructured files and inconsistent modularization. Despite the technical debt and lack of documentation, I successfully implemented fixes and improvements when needed.",
 
     "internal-tooling-title": "Internal Tooling | Temporary Node.js Backend APIs",
     "internal-tooling-description": "To help our .NET team manage load during peak demand, I proactively developed several Node.js endpoints to enable frontend progress and unblock workflows. These APIs were later replaced by .NET microservices, but played a key role in accelerating initial development and testing phases.",
 
     "temazcal-title": "Okayhey Temazcal | Web Presence + CMS Integration",
-    "temazcal-description": "Designed and developed a modern, responsive website for my brother's temazcal business. Integrated Contentful CMS to allow non-technical users to manage dynamic content such as blogs, gallery, and FAQs. The site included a homepage, blog, photo gallery, FAQ, and contact section — all aimed at boosting their online presence and improving client engagement.",
+    "temazcal-description": "Designed and developed a modern, responsive website for my brother's temazcal business. Integrated Contentful CMS to allow non-technical users to manage dynamic content such as blogs, gallery, and FAQs. The site included a homepage, blog, photo gallery, FAQ, and contact section all aimed at boosting their online presence and improving client engagement.",
 
     "regina-title": "Regina & Gael Studio | Fullstack E-commerce Platform",
     "regina-description": "Built a complete e-commerce platform for my sister-in-law's digital craft store. The app included user authentication, product management, PayPal payment integration, and secure digital file delivery via signed URLs. Developed the full backend and frontend architecture from scratch, creating a scalable solution for selling downloadable content online.",
@@ -116,7 +116,7 @@
     "signup-description": "Built a user registration form with attention to detail in styling, validation cues, and layout using HTML and CSS. Practiced PseudoClasses, PseudoElements, and form design fundamentals.",
 
     "landing-title": "Landing Page | Basic Static Homepage",
-    "landing-description": "Designed a simple homepage with foundational HTML and CSS. Learned the box model, element structure, and styling fundamentals — the very first step my dev journey."
+    "landing-description": "Designed a simple homepage with foundational HTML and CSS. Learned the box model, element structure, and styling fundamentals the very first step my dev journey."
   },
   "cases": {
     "onsite2": {
@@ -310,7 +310,7 @@
           "2": "Reverse-engineer intent from unclear structures and limited documentation.",
           "3": "Deliver new features and improvements without introducing regressions in a fragile codebase.",
           "4": "Develop a clearer sense of when simplicity is more valuable than cleverness in code.",
-          "description2": "While the project didn't involve a full rebuild, it pushed me to grow in ways that are often overlooked — adapting to existing systems, maintaining stability, and learning how to thrive in legacy code without full control over the architecture. It strengthened my ability to contribute meaningfully in real-world, imperfect scenarios, and taught me the value of writing maintainable, human-friendly code for those who come after."
+          "description2": "While the project didn't involve a full rebuild, it pushed me to grow in ways that are often overlooked adapting to existing systems, maintaining stability, and learning how to thrive in legacy code without full control over the architecture. It strengthened my ability to contribute meaningfully in real-world, imperfect scenarios, and taught me the value of writing maintainable, human-friendly code for those who come after."
         },
         "dif": {
           "title": "What I'd Do Differently",
@@ -323,6 +323,95 @@
           "title": "What I'm Proudest Of",
           "description": "This was my first project after joining the company, and it pushed me to get up to speed quickly in a codebase that was complex and unfamiliar. Adapting to someone else's architecture  especially one with deep abstractions and little documentation  wasn’t easy, but I took it step by step and focused on delivering what was needed.",
           "description2": "What I’m most proud of is how I stayed consistent, learned to work through uncertainty, and gradually built confidence in my ability to contribute meaningfully. I may not have made major architectural changes, but I showed that I could adapt, stay reliable, and handle responsibility  qualities that I know will continue to serve me as I grow."
+        }
+      }
+    },
+    "regina": {
+      "common": {
+        "view": "View More Projects",
+        "case-study": "Case Study"
+      },
+      "title": "Regina & Gael Studio | Fullstack E-commerce Platform",
+      "sub-title": "A custom-built e-commerce platform for selling digital products, designed from scratch to support secure purchases, product management, and digital file delivery.",
+      "role": "Full-Stack Developer",
+      "duration": "February 2024 - May 2024",
+      "overview-title": "Overview",
+      "overview-description": "Regina & Gael Studio was a small online store that sold printable artwork and crafting templates. The client needed a fully custom e-commerce solution to sell digital products with user accounts, product uploads, secure file delivery, and integrated payments.",
+      "overview-description2": "As the sole developer, I designed and built the platform from scratch, covering everything from the frontend UI to the backend infrastructure. This included product and user management, PayPal payment processing, and secure digital file delivery using signed URLs via AWS. The goal was to give the client full control over their store while ensuring a simple and secure buying experience for customers.",
+      "g&c": {
+        "title": "Goals & Challenges",
+        "goals": {
+          "title": "Goals",
+          "1": "Build a personalized e-commerce platform tailored to the client’s brand and product needs.",
+          "2": "Eliminate reliance on third-party platforms like Etsy, allowing full control over design, sales, and product delivery.",
+          "3": "Implement a backend system that enables non-technical users to manage products, orders, and digital downloads independently.",
+          "4": "Ensure secure, seamless payment and delivery of digital files, with a user-friendly interface for both the client and customers."
+        },
+        "challenges": {
+          "title": "Key Challenges",
+          "1": "Building the platform solo, without prior experience in payments, cloud storage, or digital file delivery.",
+          "2": "Designing a secure system for distributing digital products while preventing unauthorized access or sharing.",
+          "3": "Setting up and integrating AWS services (S3, signed URLs) with minimal prior exposure to cloud infrastructure.",
+          "4": "Ensuring a smooth and trustworthy PayPal checkout experience without access to formal design or QA resources.",
+          "5": "Balancing flexibility for the store owner with simplicity for end users"
+        },
+        "problems": {
+          "title": "Major Problems",
+          "1": "No pre-built CMS or e-commerce engine  every feature had to be implemented from scratch.",
+          "2": "Handling payment flow and webhook edge cases (e.g., payment failure, retries) without introducing bugs",
+          "3": "Safely managing file access so only paying users could download their purchased products.",
+          "4": "Learning curve with AWS setup and permissions for S3 buckets and secure file URLs."
+        }
+      },
+      "solutions&contribution": {
+        "title": "Solutions & My Contributions",
+        "technical": {
+          "title": "Technical Architecture",
+          "1": "Designed and built the fullstack architecture from scratch, including both client- and server-side logic.",
+          "2": "Implemented secure digital product delivery using AWS S3 with signed URLs.",
+          "3": "Integrated PayPal Checkout for payment processing, handling order verification and fulfillment on the backend.",
+          "4": "Built a custom admin dashboard to manage product listings, track orders, and upload downloadable files."
+        },
+        "performance": {
+          "title": "Performance & UX",
+          "1": "Applied dynamic loading and server-side rendering with Next.js to improve initial load times.",
+          "2": "Used form validation, error feedback, and clear user flows to simplify checkout and file access.",
+          "3": "Designed responsive layouts for seamless experience across desktop and mobile devices."
+        },
+        "collaboration": {
+          "title": "Collaboration & Process",
+          "1": "Scoped and led the entire project independently, from wireframes to production deployment.",
+          "2": "Worked closely with the client (my sister-in-law) to translate non-technical ideas into functional requirements.",
+          "3": "Took initiative to learn AWS services and payment processing to deliver features beyond my original skillset."
+        }
+      },
+
+      "showcase": {
+        "title": "Showcase",
+        "sub-title": "Some of the Modules I Created"
+      },
+
+      "i&r": {
+        "title": "Impact & Results",
+        "1": "Delivered a fully functional, secure e-commerce platform from scratch  handling everything from product listings and PayPal checkout to digital delivery.",
+        "2": "Gained firsthand experience with backend development, cloud services, and fullstack architecture in a real-world scenario.",
+        "3": "Built confidence in my ability to scope, manage, and execute a complete product independently.",
+        "4": " This project played a key role in helping me land my first professional developer role at PKT1. 🚀",
+        "5": "Although the business was ultimately paused due to personal reasons, the project pushed my technical limits and taught me to own every part of the development process."
+      },
+      "reflection": {
+        "title": "Reflection",
+        "learned": {
+          "title": "What I Learned",
+          "description": "This project challenged me to step outside my frontend comfort zone and take full ownership of a production-grade system. I learned how to integrate third-party services like AWS and PayPal, design secure file delivery flows, and structure a backend to support real business logic  all while managing scope and expectations on my own."
+        },
+        "dif": {
+          "title": "What I'd Do Differently",
+          "description": "If I could revisit this project, I’d start by aligning expectations more clearly  both in terms of scope and ongoing involvement. From a technical standpoint, I would decouple cloud dependencies like AWS S3 to make future deployment and maintenance easier. I also learned the importance of documenting the project and capturing working demos while it’s live, especially for portfolio use."
+        },
+        "proud": {
+          "title": "What I'm Proudest Of",
+          "description": "I’m proud of having built and delivered a complete fullstack e-commerce app despite it being my first time working with many of the technologies involved. It pushed me to learn fast, solve real-world problems, and take full ownership of both frontend and backend decisions. This project was a key factor in helping me land my first professional role at PKT1, proving to myself that I could take on complex challenges and grow from them."
         }
       }
     }
