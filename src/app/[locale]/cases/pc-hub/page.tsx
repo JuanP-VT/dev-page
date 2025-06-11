@@ -164,10 +164,7 @@ export default function ReginaGaelPage() {
 							<h2 className="mb-2 text-3xl font-bold case-gradient-text">
 								{t("showcase.title")}
 							</h2>
-							<span className="block text-xs font-light text-primary">
-								{t("showcase.sub-title")}
-							</span>
-							<div className="relative mt-2">
+							<div className="mt-2">
 								<VideoDemo />
 							</div>
 						</section>

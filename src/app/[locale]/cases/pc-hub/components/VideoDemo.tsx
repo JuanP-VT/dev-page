@@ -10,5 +10,13 @@ export default function VideoDemo() {
 	}, []);
 
 	if (!isMounted) return null;
-	return <ReactPlayer url="https://www.youtube.com/watch?v=HdrY0wZqlFk" />;
+	return (
+		<div>
+			<ReactPlayer
+				url="https://www.youtube.com/watch?v=HdrY0wZqlFk"
+				width="100%"
+				controls
+			/>
+		</div>
+	);
 }
