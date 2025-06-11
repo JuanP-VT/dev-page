@@ -493,7 +493,7 @@
         },
         "dif": {
           "title": "What I'd Do Differently",
-          "description": "If I were to do this again, I’d start by scoping the project more clearly and focusing on core features first. I also would have implemented better error handling and test coverage from the beginning to simulate more realistic development practices. Lastly, I’d avoid hard dependencies on services like S3 without mock or fallback solutions for long-term demos."
+          "description": "If I were to do this again, I’d start by scoping the project more clearly and focusing on core features first. I also would have implemented better error handling and test coverage from the beginning to simulate more realistic development practices."
         },
         "proud": {
           "title": "What I'm Proudest Of",

@@ -415,6 +415,90 @@
           "description": "Me siento orgulloso de haber construido y entregado una app de e-commerce fullstack completa a pesar de que era mi primera vez trabajando con muchas de las tecnologías involucradas. Me empujó a aprender rápido, resolver problemas del mundo real y tomar propiedad completa de decisiones tanto de frontend como de backend. Este proyecto fue un factor clave para ayudarme a conseguir mi primer rol profesional en PKT1, probándome a mí mismo que podía tomar desafíos complejos y crecer a partir de ellos."
         }
       }
+    },
+    "pchub": {
+      "common": {
+        "view": "Ver más proyectos",
+        "case-study": "Estudio de Caso"
+      },
+      "title": "PC Hub | Prototipo Funcional de eCommerce",
+      "sub-title": "Un proyecto fullstack auto-gestionado diseñado para consolidar mi aprendizaje y demostrar habilidades de desarrollo web.",
+      "role": "Desarrollador Full-Stack",
+      "duration": "Mayo 2023 - Ago 2023",
+      "overview-title": "Resumen",
+      "overview-description": "PC Hub es un prototipo de eCommerce que desarrollé por iniciativa propia para fortalecer mis habilidades de desarrollo fullstack tras varios meses de estudio intensivo. La aplicación incluye autenticación de usuarios, navegación de productos, gestión de carrito y herramientas administrativas, todo desarrollado desde cero con tecnologías modernas.",
+      "overview-description2": "El objetivo de este proyecto fue simular la creación de un producto real de principio a fin, aplicando lo aprendido sobre arquitectura frontend y backend. Utilicé TypeScript, React, Next.js (con backend serverless vía API routes), MongoDB y Tailwind CSS. Este proyecto marcó un hito importante en mi camino como autodidacta y fue clave para conseguir mi primer trabajo profesional como desarrollador.",
+      "g&c": {
+        "title": "Objetivos y Desafíos",
+        "goals": {
+          "title": "Objetivos",
+          "1": "Construir una aplicación eCommerce fullstack desde cero para consolidar y demostrar mis habilidades técnicas.",
+          "2": "Aprender y aplicar conceptos clave como autenticación de usuarios, gestión de estado, lógica del servidor y operaciones con bases de datos.",
+          "3": "Crear una interfaz moderna y responsiva usando Tailwind CSS y React.",
+          "4": "Adquirir experiencia en despliegue, integración backend y prácticas reales de arquitectura."
+        },
+        "challenges": {
+          "title": "Desafíos Clave",
+          "1": "Aprender a estructurar una aplicación fullstack sin guía formal.",
+          "2": "Balancear responsabilidades del backend (APIs, autenticación, esquemas de base de datos) con la complejidad de la interfaz de usuario.",
+          "3": "Diseñar flujos para usuarios y administradores dentro de una sola estructura de aplicación.",
+          "4": "Mantenerme productivo y motivado en un proyecto auto-dirigido y en solitario."
+        },
+        "problems": {
+          "title": "Problemas Principales",
+          "1": "Nunca había trabajado con MongoDB, autenticación de usuarios o APIs serverless; cada parte requirió investigación y prueba-error.",
+          "2": "Estilizar una interfaz completa con Tailwind CSS tomó tiempo en dominarse, especialmente con comportamiento responsivo.",
+          "3": "Crear un sistema de gestión de productos digitales seguro y flexible (páginas de producto, reseñas, filtros y edición por parte del administrador) involucró muchos casos límite y lógica de validación."
+        }
+      },
+      "solutions&contribution": {
+        "title": "Soluciones y Contribuciones",
+        "technical": {
+          "title": "Arquitectura Técnica",
+          "1": "Diseñé la arquitectura fullstack usando Next.js con rutas API serverless, permitiendo integración fluida entre frontend y backend en un solo repositorio.",
+          "2": "Implementé MongoDB para un almacenamiento flexible basado en documentos de productos, usuarios, pedidos y reseñas.",
+          "3": "Construí el sistema de autenticación y autorización desde cero, incluyendo inicio de sesión seguro con proveedores externos (como Google).",
+          "4": "Desarrollé funciones administrativas como creación/edición de productos y paneles de control para gestionar inventario y reseñas de usuarios."
+        },
+        "performance": {
+          "title": "Rendimiento y Experiencia de Usuario",
+          "1": "Apliqué paginación y filtros en los listados de productos para mantener una interfaz fluida incluso con muchos datos.",
+          "2": "Usé entradas con debounce en búsquedas para evitar consultas innecesarias y mejorar la experiencia.",
+          "3": "Aproveché la optimización de imágenes y el code-splitting de Next.js para reducir los tiempos de carga inicial y mejorar el rendimiento en ejecución."
+        },
+        "collaboration": {
+          "title": "Colaboración y Proceso",
+          "1": "Trabajé completamente solo: desde el diseño inicial y wireframes hasta backend, frontend y despliegue con Vercel.",
+          "2": "Escribí componentes de interfaz reutilizables con React y los estilicé usando Tailwind CSS para lograr consistencia y rapidez.",
+          "3": "Mantuve buenas prácticas con Git, utilizando commits organizados y control de versiones a través de GitHub.",
+          "4": "Usé Jest para escribir pruebas unitarias básicas en la lógica crítica, aprendiendo los fundamentos del testing en JavaScript."
+        }
+      },
+      "showcase": {
+        "title": "Demostración",
+        "sub-title": "Algunos de los módulos que creé"
+      },
+      "i&r": {
+        "title": "Impacto y Resultados",
+        "1": "Fortalecí mis conocimientos de backend trabajando con autenticación, APIs REST y modelado de bases de datos.",
+        "2": "Mejoré mi confianza técnica, capacidad de resolución de problemas y autonomía al desarrollar todo el stack por mi cuenta.",
+        "3": "Usé este proyecto como pieza clave de mi portafolio para conseguir mi primer trabajo profesional como desarrollador frontend."
+      },
+      "reflection": {
+        "title": "Reflexión",
+        "learned": {
+          "title": "Lo que Aprendí",
+          "description": "PC Hub fue mi proyecto autodidacta más ambicioso. Gané experiencia práctica construyendo una aplicación fullstack desde cero, profundizando en autenticación, diseño de APIs, integración de bases de datos y arquitectura escalable de UI. También mejoré mi capacidad para resolver problemas y depurar tanto en frontend como en backend."
+        },
+        "dif": {
+          "title": "Lo que Haría Diferente",
+          "description": "Si lo hiciera de nuevo, comenzaría delimitando el alcance del proyecto y enfocándome en las funcionalidades principales. También habría implementado un mejor manejo de errores y tests desde el inicio para simular un entorno más realista."
+        },
+        "proud": {
+          "title": "De lo que Estoy Más Orgulloso",
+          "description": "Estoy orgulloso de haber asumido un reto complejo con el objetivo de aprender  y haberlo completado. Construir PC Hub me obligó a conectar todo lo que había aprendido en una aplicación funcional, y me dio la confianza para buscar oportunidades reales. No es un proyecto de producción, pero sí uno construido con dedicación, curiosidad y ganas de crecer."
+        }
+      }
     }
   }
 }
