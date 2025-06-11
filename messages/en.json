@@ -48,6 +48,7 @@
   "projects": {
     "title": "Projects",
     "description": "A selection of my recent professional work at PKT1 and personal projects",
+    "all": "All",
     "levels": {
       "Professional": "Professional",
       "Freelance": "Freelance",

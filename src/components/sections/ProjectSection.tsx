@@ -86,7 +86,7 @@ export default function Projects() {
 							: "dark:bg-gray-800 bg-gray-200 text-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 hover:bg-gray-300"
 					}`}
 				>
-					All
+					{t("all")}
 				</button>
 				{allTags.map((tag) => (
 					<button
