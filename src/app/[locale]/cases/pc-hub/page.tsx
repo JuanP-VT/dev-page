@@ -16,6 +16,8 @@ import { Badge } from "@/components/ui/badge";
 import BulletPoint from "../components/BulletPoint";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import ReactPlayer from "react-player";
+import VideoDemo from "./components/VideoDemo";
 
 export default function ReginaGaelPage() {
 	const t = useTranslations("cases.pchub");
@@ -155,6 +157,18 @@ export default function ReginaGaelPage() {
 										</ul>
 									</CardContent>
 								</Card>
+							</div>
+						</section>
+
+						<section className="flex flex-col mb-16 w-full">
+							<h2 className="mb-2 text-3xl font-bold case-gradient-text">
+								{t("showcase.title")}
+							</h2>
+							<span className="block text-xs font-light text-primary">
+								{t("showcase.sub-title")}
+							</span>
+							<div className="relative mt-2">
+								<VideoDemo />
 							</div>
 						</section>
 
