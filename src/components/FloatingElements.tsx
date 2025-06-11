@@ -1,7 +1,7 @@
 "use client";
 
 import { useTheme } from "next-themes";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 type FloatingElement = {
 	x: number;
@@ -13,8 +13,11 @@ type FloatingElement = {
 };
 
 export default function FloatingElements() {
+	const [numberOfElements, setNumberOfElements] = useState(30);
 	const canvasRef = useRef<HTMLCanvasElement>(null);
 	const { theme = "dark" } = useTheme();
+
+	//Initialize canvas
 	useEffect(() => {
 		const canvas = canvasRef.current;
 		if (!canvas) return;
@@ -64,7 +67,7 @@ export default function FloatingElements() {
 			"~",
 		];
 
-		for (let i = 0; i < 30; i++) {
+		for (let i = 0; i < numberOfElements; i++) {
 			elements.push({
 				x: Math.random() * canvas.width,
 				y: Math.random() * canvas.height,
@@ -105,7 +108,13 @@ export default function FloatingElements() {
 		return () => {
 			window.removeEventListener("resize", setCanvasDimensions);
 		};
-	}, [theme]);
+	}, [numberOfElements, theme]);
+
+	//Mobile adjustment
+	useEffect(() => {
+		const isMobile = window.matchMedia("(max-width: 768px)").matches;
+		setNumberOfElements(isMobile ? 10 : 30);
+	}, []);
 
 	return (
 		<canvas
