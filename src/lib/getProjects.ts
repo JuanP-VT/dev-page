@@ -79,6 +79,7 @@ export function useProjects() {
 			githubLink: "#",
 			featured: true,
 			level: "Learning",
+			caseStudyLink: "/cases/pc-hub",
 		},
 		{
 			title: t("inventory-title"),
