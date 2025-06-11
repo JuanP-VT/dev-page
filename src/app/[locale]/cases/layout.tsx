@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import CasesNavBar from "@/components/composed/CasesNavBar";
 import { Geist } from "next/font/google";
 import ScrollbarMount from "@/components/ScrollbarMount";
+import FloatingElements from "@/components/FloatingElements";
 
 const geist = Geist({
 	subsets: ["latin"],
@@ -17,7 +18,9 @@ type LayoutProps = {
 
 export default async function Layout({ children }: LayoutProps) {
 	return (
-		<div className={`${geist.className} dark:bg-gray-950/70`}>
+		<div
+			className={`${geist.className} bg-zinc-300/30 antialiased dark:bg-[#1a202c]`}
+		>
 			<CasesNavBar />
 			{/* Scroll style is added in ScrollbarMount component*/}
 			<div
@@ -27,6 +30,7 @@ export default async function Layout({ children }: LayoutProps) {
 				{children}
 				<ScrollbarMount id="#cases-layout" />
 			</div>
+			<FloatingElements />
 		</div>
 	);
 }
