@@ -274,7 +274,7 @@ export default function TechStack() {
 	};
 
 	return (
-		<section id="tech" className="py-16" ref={sectionRef}>
+		<section id="tech" className="py-20" ref={sectionRef}>
 			<div className="mb-16 text-center">
 				<div className="inline-block py-1 px-3 mb-4 font-mono text-sm text-teal-600 bg-gray-100 rounded-md border border-gray-200 dark:text-teal-400 dark:bg-gray-800 dark:border-gray-700">
 					<span className="text-pink-500 dark:text-pink-400">import</span>{" "}
