@@ -8,7 +8,7 @@ import { ThemeChanger } from "./buttons/ThemeChanger ";
 export default function CasesNavBar() {
 	const t = useTranslations("cases.onsite2");
 	return (
-		<div className="flex justify-between p-3 w-full shadow-sm dark:border-b dark:border-gray-500 bg-slate-100 dark:bg-slate-900">
+		<div className="flex justify-between p-3 w-full shadow-sm dark:border-b dark:border-gray-700 bg-slate-100 dark:bg-slate-900">
 			<Link
 				href="/"
 				className="flex gap-2 items-center text-sm cursor-pointer group"
