@@ -184,8 +184,9 @@ export default function Page() {
 												<Badge variant="outline">TypeScript</Badge>
 												<Badge variant="outline">Next.js 14</Badge>
 												<Badge variant="outline">Tailwind CSS</Badge>
-												<Badge variant="outline">Hero ui</Badge>
 												<Badge variant="outline">Zustand</Badge>
+												<Badge variant="outline">Jest</Badge>
+												<Badge variant="outline">React Testing Library</Badge>
 											</div>
 											<ul className="space-y-3">
 												<BulletPoint

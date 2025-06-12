@@ -359,7 +359,6 @@ export default function ManagementPage() {
 												<div className="flex flex-col gap-2 py-2 mt-2">
 													<BulletPoint text={t("reflection.dif.1")} />
 													<BulletPoint text={t("reflection.dif.2")} />
-													<BulletPoint text={t("reflection.dif.3")} />
 												</div>
 											</div>
 										</CardContent>

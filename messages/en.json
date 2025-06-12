@@ -128,21 +128,22 @@
       "role": "Front-End Developer - PKT1 Centro de envíos",
       "description": "Full-time, in-office position focused on React development, implementing mockups from Figma, and occasionally building backend endpoints to support features.",
       "bullet": {
-        "1": "Co-led the complete rebuild of 'Onsite 2,' a core logistics application, replacing a legacy jQuery system with a modern React/Next.js/TypeScript platform. Internal testing showed user task completion improved from 64% to 90%+, while the new modular codebase greatly enhanced maintainability and feature delivery.",
-        "2": "Designed and implemented a modular, component-based frontend using Next.js App Router, and Tailwind CSS. UI consistency improved across modules, reducing duplicated styles and components by over 70% and speeding up development of new views.",
-        "3": "Optimized performance in data-heavy views with pagination, virtual scrolling, and input debouncing, reducing UI lag by approximately 60% and improving responsiveness when rendering 50+ items, resulting in up to 40% faster user interactions.",
-        "4": "Enhanced and maintained the internal 'Management' logistics platform by shipping new analytics and reporting features, reducing manual report generation time by ~50%. Stabilized legacy modules and consistently delivered goals with minimal regressions.",
-        "5": "Integrated with legacy backend APIs, implementing robust error handling and data consistency measures across both platforms."
+        "1": "Co-led the complete rebuild of 'Onsite 2', a core logistics application, replacing a fragile legacy jQuery system with a modern React/Next.js/TypeScript platform. This transformation significantly improved user experience and efficiency in task completion, and established a modular codebase that accelerated new feature delivery and improved system maintainability.",
+        "2": "Designed and implemented a modular, component-based frontend using Next.js App Router and Tailwind CSS. This architecture established robust UI consistency across all modules, reducing style and component duplication and optimizing development workflows for new views.",
+        "3": "Implemented unit tests with Jest for key components and integration tests with React Testing Library for critical workflows, ensuring the robustness of new features and contributing to the overall stability of the application.",
+        "4": "Optimized performance in data-heavy views by implementing pagination, virtual scrolling, and input debouncing. This notably reduced UI lag and improved responsiveness when rendering a large number of items, ensuring fluid interactions even under heavy data loads.",
+        "5": "Enhanced and maintained the internal 'Management' logistics platform, delivering new analytics and reporting features that streamlined decision-making by providing key insights. Additionally, stabilized legacy modules and consistently met sprint goals with minimal regressions.",
+        "6": "Integrated with legacy backend APIs, implementing robust error handling and data consistency measures across both platforms."
       }
     },
     "2": {
       "startDate": "January 2022",
       "endDate": "July 2024(2.5 years)",
       "role": "Freelance & Self-Taught Web Developer",
-      "description": "Focused on fullstack development while transitioning from an industrial engineering background. Delivered real-world projects for small businesses, combining hands-on learning with practical client needs.",
+      "description": "Focused on web development while transitioning from an industrial engineering background. Delivered real-world projects for small businesses, combining hands-on learning with practical client needs.",
       "bullet": {
-        "1": "Architected and built a complete fullstack e-commerce platform (Regina & Gael Studio) from scratch, integrating over 5 key features (user auth, PayPal, product management, secure file delivery) across 10 distinct routes/pages.",
-        "2": "Designed and launched a fully responsive marketing site (Okayhey Temazcal) with Contentful CMS, enabling non-technical content updates for 6+ content types (blogs, FAQs, galleries) and reducing manual content update time by an estimated 6-8 hours per month for the client.",
+        "1": "Architected and built a complete fullstack e-commerce platform (Regina & Gael Studio) from scratch, integrating complex functionalities such as user authentication, payment gateway (PayPal), product management, and secure digital file delivery.",
+        "2": "Designed and launched a fully responsive marketing site (Okayhey Temazcal) with Contentful CMS integration, which empowered non-technical clients to manage and update dynamic content, including blogs, FAQs, and photo galleries.",
         "3": "Managed complete development lifecycle independently, from design and planning through implementation and deployment",
         "4": "Applied self-taught expertise in TypeScript, serverless architecture, RESTful APIs, and modern frontend development using Tailwind CSS"
       }
@@ -252,7 +253,7 @@
         },
         "dif": {
           "title": "What I'd Do Differently",
-          "description": "Due to the company's lack of a testing culture and resource constraints, we didn’t implement automated unit, integration, or end-to-end tests. This made manual testing more time-consuming and occasionally led to regressions during development If given the chance to revisit this project or in future projects I would advocate for:",
+          "description": "While I implemented unit tests for critical components and integration tests for core workflows, the project faced limitations due to a company culture that didn't prioritize test automation, alongside significant time and resource constraints. This meant a comprehensive automated testing strategy, including extensive end-to-end coverage, wasn't established, leading to a higher reliance on manual testing and occasional regressions, i would advocate for:",
           "1": "Introducing automated testing early in the development lifecycle.",
           "2": "Establishing a testing strategy appropriate to the project size.",
           "3": "Educating the team on how testing improves confidence, speeds up iteration, and reduces support ."
@@ -346,8 +347,7 @@
           "title": "What I'd Do Differently",
           "description": "While I delivered all tasks and features as requested, working on the Management platform highlighted some broader areas where the project  and my own approach  could evolve. The codebase I inherited was functional but overly complex, with deep abstractions and minimal documentation. In hindsight, I would have pushed earlier for:",
           "1": "Gradually simplifying unnecessarily complex patterns to make the codebase more approachable for future developers.",
-          "2": "Introducing clearer internal documentation or inline comments to reduce onboarding time and mental overhead.",
-          "3": "Establishing small-scale testing practices to catch regressions and improve confidence in changes."
+          "2": "Introducing clearer internal documentation or inline comments to reduce onboarding time and mental overhead."
         },
         "proud": {
           "title": "What I'm Proudest Of",

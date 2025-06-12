@@ -129,406 +129,405 @@
       "role": "Desarrollador Front-End - PKT1 Centro de envíos",
       "description": "Posición de tiempo completo presencial enfocada en desarrollo con React, implementación de mockups desde Figma, y ocasionalmente construcción de endpoints backend para apoyar funcionalidades.",
       "bullet": {
-        "1": "Co-lideré la reconstrucción completa de 'Onsite 2,' una aplicación logística central, reemplazando un sistema legacy de jQuery con una plataforma moderna de React/Next.js/TypeScript. Las pruebas internas mostraron que la finalización exitosa de tareas de usuarios mejoró del 64% al 90%+, mientras que la nueva base de código modular mejoró significativamente la mantenibilidad y entrega de funcionalidades.",
-        "2": "Diseñé e implementé un frontend modular basado en componentes usando Next.js App Router y Tailwind CSS. La consistencia de UI mejoró entre módulos, reduciendo estilos y componentes duplicados en más del 70% y acelerando el desarrollo de nuevas vistas.",
-        "3": "Optimicé el rendimiento en vistas con gran carga de datos mediante paginación, scroll virtual, y debouncing de inputs, reduciendo el lag de UI en aproximadamente 60% y mejorando la respuesta al renderizar 50+ elementos, resultando en interacciones de usuario hasta 40% más rápidas.",
-        "4": "Mejoré y mantuve la plataforma logística interna 'Management' implementando nuevas funcionalidades de análisis y reportes, reduciendo el tiempo de generación manual de reportes en ~50%. Estabilicé módulos legacy y entregué objetivos consistentemente con regresiones mínimas.",
-        "5": "Integré con APIs backend legacy, implementando manejo robusto de errores y medidas de consistencia de datos en ambas plataformas."
+        "1": "Co-lideré la reconstrucción completa de 'Onsite 2', una aplicación logística central, reemplazando un sistema legado de jQuery por una plataforma moderna con React/Next.js/TypeScript. Esta transformación mejoró significativamente la experiencia del usuario y la eficiencia en la finalización de tareas, además de establecer una base de código modular que aceleró la entrega de nuevas funcionalidades y mejoró la mantenibilidad del sistema.",
+        "2": "Diseñé e implementé un frontend modular basado en componentes utilizando Next.js App Router y Tailwind CSS. Esta arquitectura estableció una consistencia UI robusta en todos los módulos, reduciendo la duplicación de estilos y componentes y optimizando los flujos de desarrollo para nuevas vistas.",
+        "3": "Implementé pruebas unitarias con Jest para componentes clave y pruebas de integración con React Testing Library para flujos críticos, asegurando la robustez de las nuevas funcionalidades y contribuyendo a la estabilidad general de la aplicación.",
+        "4": "Optimicé el rendimiento en vistas con gran volumen de datos mediante la implementación de paginación, virtual scrolling y debouncing de inputs. Esto redujo notablemente el lag de la interfaz de usuario y mejoró la respuesta al renderizar un alto número de ítems, asegurando interacciones fluidas incluso bajo cargas de datos pesadas.",
+        "5": "Mejoré y mantuve la plataforma logística interna 'Management', entregando nuevas funcionalidades de analíticas y reportes que agilizaron el proceso de toma de decisiones al proporcionar información clave. Además, estabilicé módulos legados y cumplí consistentemente los objetivos con mínimas regresiones.",
+        "6": "Integré con APIs backend legacy, implementando manejo robusto de errores y medidas de consistencia de datos en ambas plataformas."
       }
     },
     "2": {
       "startDate": "Enero 2022",
       "endDate": "Julio 2024 (2.5 años)",
       "role": "Desarrollador Web Freelance y Autodidacta",
-      "description": "Enfocado en desarrollo fullstack durante mi transición de la ingeniería industrial al desarrollo web. Desarrollé proyectos reales para pequeñas empresas, combinando aprendizaje autodidacta con necesidades específicas de cada cliente.",
+      "description": "Enfocado en desarrollo web durante mi transición de la ingeniería industrial al desarrollo web. Desarrollé proyectos reales para pequeñas empresas, combinando aprendizaje autodidacta con necesidades específicas de cada cliente.",
       "bullet": {
-        "1": "Arquitecturé y construí una plataforma e-commerce fullstack completa (Regina & Gael Studio) desde cero, integrando más de 5 funcionalidades clave (autenticación de usuarios, PayPal, gestión de productos, entrega segura de archivos) a través de 10 rutas/páginas distintas.",
-        "2": "Diseñé y lancé un sitio de marketing completamente responsivo (Okayhey Temazcal) con Contentful CMS, habilitando actualizaciones de contenido no-técnicas para 6+ tipos de contenido (blogs, FAQs, galerías) y reduciendo el tiempo de actualización manual de contenido en aproximadamente 6-8 horas por mes para el cliente.",
-        "3": "Gestioné el ciclo completo de desarrollo de forma independiente, desde diseño y planificación hasta implementación y despliegue",
-        "4": "Apliqué experiencia autodidacta en TypeScript, arquitectura serverless, APIs RESTful, y desarrollo frontend moderno usando Tailwind CSS"
+        "1": "Arquitecté y construí desde cero una plataforma completa de e-commerce fullstack (Regina & Gael Studio), integrando funcionalidades complejas como autenticación de usuario, pasarela de pagos (PayPal), gestión de productos y entrega segura de archivos digitales.",
+        "2": "Diseñé y lancé un sitio web de marketing completamente responsive (Okayhey Temazcal) con integración de Contentful CMS, lo que empoderó a clientes no técnicos para gestionar y actualizar contenido dinámico, incluyendo blogs, FAQs y galerías de fotos.",
+        "3": "Gestioné el ciclo de vida completo del desarrollo de forma independiente, abarcando desde la concepción y la planificación inicial hasta la implementación y el despliegue final del producto.",
+        "4": "Apliqué conocimientos autodidactas en tecnologías clave como TypeScript, arquitectura serverless, APIs RESTful y prácticas de desarrollo frontend moderno utilizando Tailwind CSS."
+      }
+    }
+  },
+  "cases": {
+    "onsite2": {
+      "common": {
+        "back": "Regresar",
+        "view": "Ver Más Proyectos",
+        "case-study": "Estudio de Caso"
+      },
+      "title": "Onsite 2 | Reconstrucción Completa",
+      "sub-title": "Rediseño desde cero de la aplicación logística central para clientes.",
+      "role": "Desarrollador Frontend",
+      "duration": "Agosto 2024 - Desarrollo en Curso",
+      "overview-title": "Resumen",
+      "overview-description": "Onsite es la principal plataforma logística de nuestra empresa, utilizada por clientes comerciales para gestionar cada paso de sus operaciones de envío. Los clientes pueden cotizar y enviar paquetes, rastrear envíos, descargar facturas, ver datos históricos y manejar la configuración de la cuenta desde una única interfaz.",
+      "overview-description2": "La versión original era una aplicación legacy en jQuery que creció sin una estructura clara, lo que resultó en una base de código frágil e inconsistente que era difícil de mantener y extender. El objetivo era reemplazarla con una aplicación web completamente moderna. El resultado es una experiencia de usuario significativamente mejorada y un sistema mucho más escalable y mantenible.",
+      "g&c": {
+        "title": "Metas y Desafíos",
+        "goals": {
+          "title": "Metas",
+          "1": "Modernizar la experiencia del usuario reemplazando la interfaz desactualizada con una UI limpia y responsiva.",
+          "2": "Mejorar la mantenibilidad adoptando una pila de tecnología moderna con componentes reutilizables y bien estructurados.",
+          "3": "Optimizar el rendimiento y la fiabilidad, particularmente en vistas con muchos datos e interacciones complejas de formularios.",
+          "4": "Asegurar la compatibilidad móvil para una experiencia perfecta en todos los dispositivos."
+        },
+        "challenges": {
+          "title": "Desafíos Clave",
+          "1": "Reconstruir componentes de UI bajo estrictas limitaciones comerciales y soporte de backend incompleto.",
+          "2": "Gestionar formularios complejos y el estado de la aplicación mientras se mantiene la capacidad de respuesta de la UI.",
+          "3": "Equilibrar la entrega rápida con la reusabilidad y mantenibilidad a largo plazo de la base de código.",
+          "4": "Integrar con sistemas de backend viejos. que introdujeron deuda técnica y limitaciones."
+        },
+        "problems": {
+          "title": "Problemas Principales",
+          "1": "Patrones de UI inconsistentes en diferentes partes de la aplicación, lo que lleva a confusión y mala UX.",
+          "2": "Cuellos de botella de rendimiento al renderizar o filtrar grandes conjuntos de datos.",
+          "3": "Experiencia móvil rota o inutilizable, haciendo que la aplicación sea frustrante en teléfonos y tabletas.",
+          "4": "Base de código vieja y no estructurada sin documentación."
+        }
+      },
+      "solutions&contribution": {
+        "title": "Soluciones y Mis Contribuciones",
+        "technical": {
+          "title": "Arquitectura Técnica",
+          "1": "Construí una arquitectura modular basada en componentes con React y TypeScript para mejorar la escalabilidad y la mantenibilidad a largo plazo.",
+          "2": "Reconstruí la UI usando Next.js App Router, aprovechando los server components y layouts para tiempos de carga más rápidos y una estructura más clara.",
+          "3": "Apliqué Tailwind CSS y Hero UI para ofrecer una interfaz totalmente responsiva y accesible en todos los dispositivos.",
+          "4": "Creé componentes de UI reutilizables y específicos para el negocio utilizados en módulos clave como cotizaciones, envíos y facturas."
+        },
+        "performance": {
+          "title": "Optimizaciones de Rendimiento",
+          "1": "Implementé paginación y desplazamiento virtual para tablas con muchos datos, mejorando drásticamente el rendimiento de carga en las vistas de envío y seguimiento.",
+          "2": "Utilicé server components de Next.js para almacenar en caché vistas clave y reducir llamadas redundantes a la API, mejorando la velocidad percibida.",
+          "3": "Optimicé la interacción del usuario implementando un debounce en las búsquedas y filtrados, evitando solicitudes excesivas al servidor."
+        },
+        "collaboration": {
+          "title": "Colaboración y Proceso",
+          "1": "Co-lideré la reescritura del frontend como uno de los dos desarrolladores, asumiendo la responsabilidad de módulos completos desde el diseño hasta la implementación.",
+          "2": "Me asocié estrechamente con nuestra coordinadora (actuando como UX) para iterar sobre flujos e interfaces utilizando la retroalimentación del cliente.",
+          "3": "Me integré con APIs de backend viejas, construyendo un manejo de errores robusto y trabajando con datos inconsistentes y endpoints no documentados."
+        }
+      },
+      "BvsA": {
+        "title": "Antes vs. Después",
+        "sub-title": "(Mueve el deslizador en el centro de la imagen)",
+        "dashboard": "Panel de Control",
+        "account-summary": "Resumen de Cuenta",
+        "shipping": "Envío",
+        "mass-shipping": "Envío Masivo",
+        "profile": "Perfil",
+        "shipments": "Mis Envíos",
+        "before": {
+          "title": "Antes",
+          "1": "Interfaz anticuada que “parecía una página gubernamental de 2004”.",
+          "2": "Tiempos de carga impredecibles.",
+          "3": "Experiencia móvil rota o poco confiable.",
+          "4": "Flujos de usuario torpes con frecuentes problemas de UX."
+        },
+        "after": {
+          "title": "Después",
+          "1": "Diseño limpio y consistente con UI moderna.",
+          "2": "Tiempos de carga más rápidos e interacciones más fluidas.",
+          "3": "Responsive en todos los dispositivos.",
+          "4": "Navegación más clara y experiencia de usuario más intuitiva."
+        }
+      },
+      "i&r": {
+        "title": "Impacto y Resultados",
+        "1": "Eficiencia en renderizado",
+        "2": "Reducción estimada del código de UI",
+        "3": "Retroalimentación positiva de los miembros internos",
+        "description": "La reconstrucción marca un gran avance en usabilidad y mantenibilidad. El personal interno involucrado en las pruebas han elogiado el diseño más limpio y la estructura más clara, señalando que los flujos de trabajo previamente confusos ahora están optimizados. Desde la perspectiva del desarrollo, la nueva arquitectura modular ha mejorado significativamente la escalabilidad y la velocidad de implementación, sentando las bases para una iteración más rápida y una evolución del producto a largo plazo."
+      },
+      "reflection": {
+        "title": "Reflexión",
+        "learned": {
+          "title": "Lo que Aprendí",
+          "description": "Trabajar en Onsite 2 me llevó a un nuevo nivel de responsabilidad y resolución de problemas. Como uno de los dos únicos desarrolladores en el proyecto, fui responsable de entregar de forma independiente módulos completos, desde las decisiones arquitectónicas hasta los detalles finales de la UI, a menudo sin orientación directa. Esta experiencia agudizó mi capacidad para:",
+          "1": "Tomar decisiones arquitectónicas y tecnológicas con confianza.",
+          "2": "Equilibrar la mantenibilidad con los plazos impulsados por el negocio.",
+          "3": "Descomponer tareas grandes y ambiguas en pasos alcanzables.",
+          "4": "Comuniqué eficazmente con los interesados para clarificar los requisitos.",
+          "description2": "Si bien la autonomía fue desafiante, me ayudó a crecer significativamente como desarrollador frontend. Salí de este proyecto con instintos técnicos más fuertes, más confianza en mi juicio y una comprensión más profunda de cómo construir interfaces escalables en entornos de productos del mundo real."
+        },
+        "dif": {
+          "title": "Lo que Haría Diferente",
+          "description": "Aunque implementé pruebas unitarias para componentes críticos y pruebas de integración para flujos principales, el proyecto enfrentó limitaciones debido a que la cultura de la empresa no priorizaba la automatización de pruebas, sumado a significativas restricciones de tiempo y recursos. Esto significó que no se estableció una estrategia de pruebas automatizadas más robusta, incluyendo cobertura end-to-end extensa, lo que llevó a una mayor dependencia de las pruebas manuales y a regresiones ocasionales, yo abogaría por:",
+          "1": "Introducir pruebas automatizadas temprano en el ciclo de vida de desarrollo.",
+          "2": "Establecer una estrategia de pruebas adecuada.",
+          "3": "Educar al equipo sobre cómo las pruebas mejoran la confianza, aceleran la iteración y reducen el soporte."
+        },
+        "proud": {
+          "title": "De lo que Estoy Más Orgulloso",
+          "description": "Este proyecto me puso a prueba en un entorno real donde tuve que entregar software listo para producción con una guía mínima, limitaciones heredadas y total responsabilidad sobre múltiples módulos.",
+          "description2": "A pesar de la presión y los desafíos, entregué características de alta calidad, aprendí a responsabilizarme de mi trabajo de principio a fin y contribuí a un producto que realmente importa a los usuarios. Lo que más me enorgullece es el crecimiento personal: pasé de lidiar con el síndrome del impostor a sentirme seguro en mi capacidad para resolver problemas complejos, colaborar eficazmente y tomar decisiones técnicas sólidas. Esta experiencia solidificó mi identidad como un desarrollador capaz y confiable, y estoy listo para lo que venga."
+        }
       }
     },
 
-    "cases": {
-      "onsite2": {
-        "common": {
-          "back": "Regresar",
-          "view": "Ver Más Proyectos",
-          "case-study": "Estudio de Caso"
+    "management": {
+      "common": {
+        "view": "Ver Más Proyectos",
+        "case-study": "Caso de Estudio"
+      },
+      "title": "Management | Mejoras y Mantenimiento",
+      "sub-title": "Mejoras a nuestra plataforma interna de logística, enfocadas en nuevos módulos, actualizaciones de funcionalidades y corrección de bugs.",
+      "role": "Desarrollador Frontend",
+      "duration": "Julio 2024 - Mantenimiento Continuo",
+      "overview-title": "Resumen",
+      "overview-description": "La aplicación Management es una herramienta interna utilizada por nuestro personal administrativo y de soporte IT para supervisar las operaciones logísticas. Proporciona monitoreo en tiempo real, análisis detallados y reportes integrales que apoyan la toma de decisiones operativas y la respuesta a incidentes.",
+      "overview-description2": "Construido originalmente antes de mi incorporación a la empresa, el sistema requería mejoras continuas para satisfacer las necesidades empresariales en evolución. Mi rol involucró implementar nuevos módulos, corregir bugs y mejorar funcionalidades existentes para asegurar confiabilidad, escalabilidad y una mejor experiencia de usuario interna.",
+      "g&c": {
+        "title": "Objetivos y Desafíos",
+        "goals": {
+          "title": "Objetivos",
+          "1": "Mejorar las herramientas internas para optimizar las capacidades de monitoreo operativo, análisis y reportes.",
+          "2": "Mejorar la confiabilidad y rendimiento en módulos existentes mientras se extiende la funcionalidad con nuevas características.",
+          "3": "Optimizar el rendimiento y confiabilidad, particularmente en vistas con gran cantidad de datos y interacciones complejas de formularios.",
+          "4": "Agilizar los flujos de trabajo para el personal administrativo y de soporte IT a través de mejoras UX bien pensadas."
         },
-        "title": "Onsite 2 | Reconstrucción Completa",
-        "sub-title": "Rediseño desde cero de la aplicación logística central para clientes.",
-        "role": "Desarrollador Frontend",
-        "duration": "Agosto 2024 - Desarrollo en Curso",
-        "overview-title": "Resumen",
-        "overview-description": "Onsite es la principal plataforma logística de nuestra empresa, utilizada por clientes comerciales para gestionar cada paso de sus operaciones de envío. Los clientes pueden cotizar y enviar paquetes, rastrear envíos, descargar facturas, ver datos históricos y manejar la configuración de la cuenta desde una única interfaz.",
-        "overview-description2": "La versión original era una aplicación legacy en jQuery que creció sin una estructura clara, lo que resultó en una base de código frágil e inconsistente que era difícil de mantener y extender. El objetivo era reemplazarla con una aplicación web completamente moderna. El resultado es una experiencia de usuario significativamente mejorada y un sistema mucho más escalable y mantenible.",
-        "g&c": {
-          "title": "Metas y Desafíos",
-          "goals": {
-            "title": "Metas",
-            "1": "Modernizar la experiencia del usuario reemplazando la interfaz desactualizada con una UI limpia y responsiva.",
-            "2": "Mejorar la mantenibilidad adoptando una pila de tecnología moderna con componentes reutilizables y bien estructurados.",
-            "3": "Optimizar el rendimiento y la fiabilidad, particularmente en vistas con muchos datos e interacciones complejas de formularios.",
-            "4": "Asegurar la compatibilidad móvil para una experiencia perfecta en todos los dispositivos."
-          },
-          "challenges": {
-            "title": "Desafíos Clave",
-            "1": "Reconstruir componentes de UI bajo estrictas limitaciones comerciales y soporte de backend incompleto.",
-            "2": "Gestionar formularios complejos y el estado de la aplicación mientras se mantiene la capacidad de respuesta de la UI.",
-            "3": "Equilibrar la entrega rápida con la reusabilidad y mantenibilidad a largo plazo de la base de código.",
-            "4": "Integrar con sistemas de backend viejos. que introdujeron deuda técnica y limitaciones."
-          },
-          "problems": {
-            "title": "Problemas Principales",
-            "1": "Patrones de UI inconsistentes en diferentes partes de la aplicación, lo que lleva a confusión y mala UX.",
-            "2": "Cuellos de botella de rendimiento al renderizar o filtrar grandes conjuntos de datos.",
-            "3": "Experiencia móvil rota o inutilizable, haciendo que la aplicación sea frustrante en teléfonos y tabletas.",
-            "4": "Base de código vieja y no estructurada sin documentación."
-          }
+        "challenges": {
+          "title": "Desafíos Clave",
+          "1": "Trabajar con un código base preexistente con muchas abstracciones.",
+          "2": "Entregar mejoras sin interrumpir las operaciones diarias.",
+          "3": "Navegar requisitos internos poco claros o en evolución de múltiples departamentos.",
+          "4": "Debuggear y extender funcionalidades sin documentación."
         },
-        "solutions&contribution": {
-          "title": "Soluciones y Mis Contribuciones",
-          "technical": {
-            "title": "Arquitectura Técnica",
-            "1": "Construí una arquitectura modular basada en componentes con React y TypeScript para mejorar la escalabilidad y la mantenibilidad a largo plazo.",
-            "2": "Reconstruí la UI usando Next.js App Router, aprovechando los server components y layouts para tiempos de carga más rápidos y una estructura más clara.",
-            "3": "Apliqué Tailwind CSS y Hero UI para ofrecer una interfaz totalmente responsiva y accesible en todos los dispositivos.",
-            "4": "Creé componentes de UI reutilizables y específicos para el negocio utilizados en módulos clave como cotizaciones, envíos y facturas."
-          },
-          "performance": {
-            "title": "Optimizaciones de Rendimiento",
-            "1": "Implementé paginación y desplazamiento virtual para tablas con muchos datos, mejorando drásticamente el rendimiento de carga en las vistas de envío y seguimiento.",
-            "2": "Utilicé server components de Next.js para almacenar en caché vistas clave y reducir llamadas redundantes a la API, mejorando la velocidad percibida.",
-            "3": "Optimicé la interacción del usuario implementando un debounce en las búsquedas y filtrados, evitando solicitudes excesivas al servidor."
-          },
-          "collaboration": {
-            "title": "Colaboración y Proceso",
-            "1": "Co-lideré la reescritura del frontend como uno de los dos desarrolladores, asumiendo la responsabilidad de módulos completos desde el diseño hasta la implementación.",
-            "2": "Me asocié estrechamente con nuestra coordinadora (actuando como UX) para iterar sobre flujos e interfaces utilizando la retroalimentación del cliente.",
-            "3": "Me integré con APIs de backend viejas, construyendo un manejo de errores robusto y trabajando con datos inconsistentes y endpoints no documentados."
-          }
+        "problems": {
+          "title": "Problemas Principales",
+          "1": "Problemas de rendimiento al cargar algunos módulos."
+        }
+      },
+      "solutions&contribution": {
+        "title": "Soluciones y Mis Contribuciones",
+        "technical": {
+          "title": "Arquitectura Técnica",
+          "1": "Contribuí a una arquitectura basada en componentes usando React y Tailwind CSS para soportar patrones de UI consistentes y desarrollo escalable.",
+          "2": "Implementé nuevos módulos para análisis internos, dashboards de monitoreo y generación de reportes."
         },
-        "BvsA": {
-          "title": "Antes vs. Después",
-          "sub-title": "(Mueve el deslizador en el centro de la imagen)",
-          "dashboard": "Panel de Control",
-          "account-summary": "Resumen de Cuenta",
-          "shipping": "Envío",
-          "mass-shipping": "Envío Masivo",
-          "profile": "Perfil",
-          "shipments": "Mis Envíos",
-          "before": {
-            "title": "Antes",
-            "1": "Interfaz anticuada que “parecía una página gubernamental de 2004”.",
-            "2": "Tiempos de carga impredecibles.",
-            "3": "Experiencia móvil rota o poco confiable.",
-            "4": "Flujos de usuario torpes con frecuentes problemas de UX."
-          },
-          "after": {
-            "title": "Después",
-            "1": "Diseño limpio y consistente con UI moderna.",
-            "2": "Tiempos de carga más rápidos e interacciones más fluidas.",
-            "3": "Responsive en todos los dispositivos.",
-            "4": "Navegación más clara y experiencia de usuario más intuitiva."
-          }
+        "performance": {
+          "title": "Optimizaciones de Rendimiento",
+          "1": "Implementé paginación y scroll virtual en vistas internas clave para mejorar el rendimiento al renderizar grandes conjuntos de datos.",
+          "2": "Apliqué debouncing de inputs a componentes de búsqueda y filtros, reduciendo re-renders innecesarios y carga de API.",
+          "3": "Optimicé la estructura de componentes y flujo de datos para minimizar renders innecesarios y mejorar la capacidad de respuesta en vistas complejas."
         },
-        "i&r": {
-          "title": "Impacto y Resultados",
-          "1": "Eficiencia en renderizado",
-          "2": "Reducción estimada del código de UI",
-          "3": "Retroalimentación positiva de los miembros internos",
-          "description": "La reconstrucción marca un gran avance en usabilidad y mantenibilidad. El personal interno involucrado en las pruebas han elogiado el diseño más limpio y la estructura más clara, señalando que los flujos de trabajo previamente confusos ahora están optimizados. Desde la perspectiva del desarrollo, la nueva arquitectura modular ha mejorado significativamente la escalabilidad y la velocidad de implementación, sentando las bases para una iteración más rápida y una evolución del producto a largo plazo."
-        },
-        "reflection": {
-          "title": "Reflexión",
-          "learned": {
-            "title": "Lo que Aprendí",
-            "description": "Trabajar en Onsite 2 me llevó a un nuevo nivel de responsabilidad y resolución de problemas. Como uno de los dos únicos desarrolladores en el proyecto, fui responsable de entregar de forma independiente módulos completos, desde las decisiones arquitectónicas hasta los detalles finales de la UI, a menudo sin orientación directa. Esta experiencia agudizó mi capacidad para:",
-            "1": "Tomar decisiones arquitectónicas y tecnológicas con confianza.",
-            "2": "Equilibrar la mantenibilidad con los plazos impulsados por el negocio.",
-            "3": "Descomponer tareas grandes y ambiguas en pasos alcanzables.",
-            "4": "Comuniqué eficazmente con los interesados para clarificar los requisitos.",
-            "description2": "Si bien la autonomía fue desafiante, me ayudó a crecer significativamente como desarrollador frontend. Salí de este proyecto con instintos técnicos más fuertes, más confianza en mi juicio y una comprensión más profunda de cómo construir interfaces escalables en entornos de productos del mundo real."
-          },
-          "dif": {
-            "title": "Lo que Haría Diferente",
-            "description": "Debido a la falta de una cultura de pruebas en la empresa y las limitaciones de recursos, no implementamos pruebas unitarias, de integración o de e2e automatizadas. Esto hizo que las pruebas manuales fueran más lentas y ocasionalmente provocó regresiones durante el desarrollo. Si tuviera la oportunidad de revisar este proyecto o en proyectos futuros, abogaría por:",
-            "1": "Introducir pruebas automatizadas temprano en el ciclo de vida de desarrollo.",
-            "2": "Establecer una estrategia de pruebas adecuada.",
-            "3": "Educar al equipo sobre cómo las pruebas mejoran la confianza, aceleran la iteración y reducen el soporte."
-          },
-          "proud": {
-            "title": "De lo que Estoy Más Orgulloso",
-            "description": "Este proyecto me puso a prueba en un entorno real donde tuve que entregar software listo para producción con una guía mínima, limitaciones heredadas y total responsabilidad sobre múltiples módulos.",
-            "description2": "A pesar de la presión y los desafíos, entregué características de alta calidad, aprendí a responsabilizarme de mi trabajo de principio a fin y contribuí a un producto que realmente importa a los usuarios. Lo que más me enorgullece es el crecimiento personal: pasé de lidiar con el síndrome del impostor a sentirme seguro en mi capacidad para resolver problemas complejos, colaborar eficazmente y tomar decisiones técnicas sólidas. Esta experiencia solidificó mi identidad como un desarrollador capaz y confiable, y estoy listo para lo que venga."
-          }
+        "collaboration": {
+          "title": "Colaboración y Proceso",
+          "1": "Me hice cargo de múltiples módulos y mejoras, trabajando de extremo a extremo desde la implementación hasta el despliegue.",
+          "2": "Colaboré estrechamente con el personal administrativo y de IT para aclarar requisitos y ajustar funcionalidades basándome en el uso del mundo real.",
+          "3": "Me coordiné con desarrolladores backend para integrar con APIs nuevas y heredadas, implementando manejo robusto de errores y compensando respuestas inconsistentes o no documentadas.",
+          "4": "Contribuí a los esfuerzos continuos de refactoring del código base, mejorando gradualmente la mantenibilidad mientras entregaba actualizaciones continuas."
         }
       },
 
-      "management": {
-        "common": {
-          "view": "Ver Más Proyectos",
-          "case-study": "Caso de Estudio"
-        },
-        "title": "Management | Mejoras y Mantenimiento",
-        "sub-title": "Mejoras a nuestra plataforma interna de logística, enfocadas en nuevos módulos, actualizaciones de funcionalidades y corrección de bugs.",
-        "role": "Desarrollador Frontend",
-        "duration": "Julio 2024 - Mantenimiento Continuo",
-        "overview-title": "Resumen",
-        "overview-description": "La aplicación Management es una herramienta interna utilizada por nuestro personal administrativo y de soporte IT para supervisar las operaciones logísticas. Proporciona monitoreo en tiempo real, análisis detallados y reportes integrales que apoyan la toma de decisiones operativas y la respuesta a incidentes.",
-        "overview-description2": "Construido originalmente antes de mi incorporación a la empresa, el sistema requería mejoras continuas para satisfacer las necesidades empresariales en evolución. Mi rol involucró implementar nuevos módulos, corregir bugs y mejorar funcionalidades existentes para asegurar confiabilidad, escalabilidad y una mejor experiencia de usuario interna.",
-        "g&c": {
-          "title": "Objetivos y Desafíos",
-          "goals": {
-            "title": "Objetivos",
-            "1": "Mejorar las herramientas internas para optimizar las capacidades de monitoreo operativo, análisis y reportes.",
-            "2": "Mejorar la confiabilidad y rendimiento en módulos existentes mientras se extiende la funcionalidad con nuevas características.",
-            "3": "Optimizar el rendimiento y confiabilidad, particularmente en vistas con gran cantidad de datos y interacciones complejas de formularios.",
-            "4": "Agilizar los flujos de trabajo para el personal administrativo y de soporte IT a través de mejoras UX bien pensadas."
-          },
-          "challenges": {
-            "title": "Desafíos Clave",
-            "1": "Trabajar con un código base preexistente con muchas abstracciones.",
-            "2": "Entregar mejoras sin interrumpir las operaciones diarias.",
-            "3": "Navegar requisitos internos poco claros o en evolución de múltiples departamentos.",
-            "4": "Debuggear y extender funcionalidades sin documentación."
-          },
-          "problems": {
-            "title": "Problemas Principales",
-            "1": "Problemas de rendimiento al cargar algunos módulos."
-          }
-        },
-        "solutions&contribution": {
-          "title": "Soluciones y Mis Contribuciones",
-          "technical": {
-            "title": "Arquitectura Técnica",
-            "1": "Contribuí a una arquitectura basada en componentes usando React y Tailwind CSS para soportar patrones de UI consistentes y desarrollo escalable.",
-            "2": "Implementé nuevos módulos para análisis internos, dashboards de monitoreo y generación de reportes."
-          },
-          "performance": {
-            "title": "Optimizaciones de Rendimiento",
-            "1": "Implementé paginación y scroll virtual en vistas internas clave para mejorar el rendimiento al renderizar grandes conjuntos de datos.",
-            "2": "Apliqué debouncing de inputs a componentes de búsqueda y filtros, reduciendo re-renders innecesarios y carga de API.",
-            "3": "Optimicé la estructura de componentes y flujo de datos para minimizar renders innecesarios y mejorar la capacidad de respuesta en vistas complejas."
-          },
-          "collaboration": {
-            "title": "Colaboración y Proceso",
-            "1": "Me hice cargo de múltiples módulos y mejoras, trabajando de extremo a extremo desde la implementación hasta el despliegue.",
-            "2": "Colaboré estrechamente con el personal administrativo y de IT para aclarar requisitos y ajustar funcionalidades basándome en el uso del mundo real.",
-            "3": "Me coordiné con desarrolladores backend para integrar con APIs nuevas y heredadas, implementando manejo robusto de errores y compensando respuestas inconsistentes o no documentadas.",
-            "4": "Contribuí a los esfuerzos continuos de refactoring del código base, mejorando gradualmente la mantenibilidad mientras entregaba actualizaciones continuas."
-          }
-        },
+      "showcase": {
+        "title": "Showcase",
+        "sub-title": "Algunos de los Módulos que Creé"
+      },
 
-        "showcase": {
-          "title": "Showcase",
-          "sub-title": "Algunos de los Módulos que Creé"
+      "i&r": {
+        "title": "Impacto y Resultados",
+        "1": "Responsabilidad de módulos frontend",
+        "2": "Entrega de tareas",
+        "3": "Tiempo de actividad de la aplicación",
+        "description": "Aunque el diseño y estructura central de la plataforma Management se mantuvieron intactos, mis contribuciones se enfocaron en extender la funcionalidad, mejorar la mantenibilidad y asegurar la confiabilidad continua. Al construir nuevos módulos, optimizar componentes con gran cantidad de datos y abordar inconsistencias técnicas, ayudé a sostener una herramienta interna crítica sin interrumpir las operaciones. La entrega consistente de actualizaciones y correcciones ha reforzado la estabilidad de la plataforma y la ha posicionado para iteraciones más fluidas en futuros ciclos de desarrollo."
+      },
+      "reflection": {
+        "title": "Reflexión",
+        "learned": {
+          "title": "Lo que Aprendí",
+          "description": "La plataforma Management fue el primer proyecto en el que trabajé después de unirme a la empresa y vino con una curva de aprendizaje pronunciada. El código base, heredado de un desarrollador anterior, estaba muy abstraído y a menudo era difícil de navegar. Aunque algunos de los patrones eran técnicamente impresionantes de forma aislada, hacían que entender y extender el sistema fuera innecesariamente complejo. Había documentación mínima, muy pocos comentarios en línea y una fuerte dependencia en código 'auto-explicativo' que a menudo no lo era. Adaptarme a este entorno requirió persistencia, paciencia y un cambio en mi enfoque hacia arquitecturas desconocidas. Con el tiempo, aprendí cómo:",
+          "1": "Navegar lógica profundamente abstraída a través de archivos dispersos y hooks personalizados poco convencionales.",
+          "2": "Hacer ingeniería inversa de la intención a partir de estructuras poco claras y documentación limitada.",
+          "3": "Entregar nuevas funcionalidades y mejoras sin introducir regresiones en un código base frágil.",
+          "4": "Desarrollar un sentido más claro de cuándo la simplicidad es más valiosa que la inteligencia en el código.",
+          "description2": "Aunque el proyecto no involucró una reconstrucción completa, me empujó a crecer de maneras que a menudo se pasan por alto  adaptarme a sistemas existentes, mantener estabilidad y aprender cómo prosperar en código legacy sin control total sobre la arquitectura. Fortaleció mi capacidad para contribuir de manera significativa en escenarios del mundo real e imperfectos, y me enseñó el valor de escribir código mantenible y amigable para quienes vienen después."
         },
-
-        "i&r": {
-          "title": "Impacto y Resultados",
-          "1": "Responsabilidad de módulos frontend",
-          "2": "Entrega de tareas",
-          "3": "Tiempo de actividad de la aplicación",
-          "description": "Aunque el diseño y estructura central de la plataforma Management se mantuvieron intactos, mis contribuciones se enfocaron en extender la funcionalidad, mejorar la mantenibilidad y asegurar la confiabilidad continua. Al construir nuevos módulos, optimizar componentes con gran cantidad de datos y abordar inconsistencias técnicas, ayudé a sostener una herramienta interna crítica sin interrumpir las operaciones. La entrega consistente de actualizaciones y correcciones ha reforzado la estabilidad de la plataforma y la ha posicionado para iteraciones más fluidas en futuros ciclos de desarrollo."
+        "dif": {
+          "title": "Lo que Haría Diferente",
+          "description": "Aunque entregué todas las tareas y funcionalidades según lo solicitado, trabajar en la plataforma Management destacó algunas áreas más amplias donde el proyecto  y mi propio enfoque  podrían evolucionar. El código base que heredé era funcional pero excesivamente complejo, con abstracciones profundas y documentación mínima. En retrospectiva, habría presionado antes por:",
+          "1": "Simplificar gradualmente patrones innecesariamente complejos para hacer el código base más accesible para futuros desarrolladores.",
+          "2": "Introducir documentación interna más clara o comentarios en línea para reducir el tiempo de onboarding y la carga mental."
         },
-        "reflection": {
-          "title": "Reflexión",
-          "learned": {
-            "title": "Lo que Aprendí",
-            "description": "La plataforma Management fue el primer proyecto en el que trabajé después de unirme a la empresa y vino con una curva de aprendizaje pronunciada. El código base, heredado de un desarrollador anterior, estaba muy abstraído y a menudo era difícil de navegar. Aunque algunos de los patrones eran técnicamente impresionantes de forma aislada, hacían que entender y extender el sistema fuera innecesariamente complejo. Había documentación mínima, muy pocos comentarios en línea y una fuerte dependencia en código 'auto-explicativo' que a menudo no lo era. Adaptarme a este entorno requirió persistencia, paciencia y un cambio en mi enfoque hacia arquitecturas desconocidas. Con el tiempo, aprendí cómo:",
-            "1": "Navegar lógica profundamente abstraída a través de archivos dispersos y hooks personalizados poco convencionales.",
-            "2": "Hacer ingeniería inversa de la intención a partir de estructuras poco claras y documentación limitada.",
-            "3": "Entregar nuevas funcionalidades y mejoras sin introducir regresiones en un código base frágil.",
-            "4": "Desarrollar un sentido más claro de cuándo la simplicidad es más valiosa que la inteligencia en el código.",
-            "description2": "Aunque el proyecto no involucró una reconstrucción completa, me empujó a crecer de maneras que a menudo se pasan por alto  adaptarme a sistemas existentes, mantener estabilidad y aprender cómo prosperar en código legacy sin control total sobre la arquitectura. Fortaleció mi capacidad para contribuir de manera significativa en escenarios del mundo real e imperfectos, y me enseñó el valor de escribir código mantenible y amigable para quienes vienen después."
-          },
-          "dif": {
-            "title": "Lo que Haría Diferente",
-            "description": "Aunque entregué todas las tareas y funcionalidades según lo solicitado, trabajar en la plataforma Management destacó algunas áreas más amplias donde el proyecto  y mi propio enfoque  podrían evolucionar. El código base que heredé era funcional pero excesivamente complejo, con abstracciones profundas y documentación mínima. En retrospectiva, habría presionado antes por:",
-            "1": "Simplificar gradualmente patrones innecesariamente complejos para hacer el código base más accesible para futuros desarrolladores.",
-            "2": "Introducir documentación interna más clara o comentarios en línea para reducir el tiempo de onboarding y la carga mental.",
-            "3": "Establecer prácticas de testing a pequeña escala para detectar regresiones y mejorar la confianza en los cambios."
-          },
-          "proud": {
-            "title": "De lo que me Siento Más Orgulloso",
-            "description": "Este fue mi primer proyecto después de unirme a la empresa, y me empujó a ponerme al día rápidamente en un código base que era complejo y desconocido. Adaptarme a la arquitectura de otra persona  especialmente una con abstracciones profundas y poca documentación no fue fácil, pero lo tomé paso a paso y me enfoqué en entregar lo que se necesitaba.",
-            "description2": "De lo que me siento más orgulloso es de cómo me mantuve consistente, aprendí a trabajar a través de la incertidumbre y gradualmente construí confianza en mi capacidad para contribuir de manera significativa. Puede que no haya hecho cambios arquitectónicos importantes, pero demostré que podía adaptarme, mantenerme confiable y manejar responsabilidad cualidades que sé que continuarán sirviéndome mientras crezco."
-          }
+        "proud": {
+          "title": "De lo que me Siento Más Orgulloso",
+          "description": "Este fue mi primer proyecto después de unirme a la empresa, y me empujó a ponerme al día rápidamente en un código base que era complejo y desconocido. Adaptarme a la arquitectura de otra persona  especialmente una con abstracciones profundas y poca documentación no fue fácil, pero lo tomé paso a paso y me enfoqué en entregar lo que se necesitaba.",
+          "description2": "De lo que me siento más orgulloso es de cómo me mantuve consistente, aprendí a trabajar a través de la incertidumbre y gradualmente construí confianza en mi capacidad para contribuir de manera significativa. Puede que no haya hecho cambios arquitectónicos importantes, pero demostré que podía adaptarme, mantenerme confiable y manejar responsabilidad cualidades que sé que continuarán sirviéndome mientras crezco."
+        }
+      }
+    },
+    "regina": {
+      "common": {
+        "view": "Ver Más Proyectos",
+        "case-study": "Caso de Estudio"
+      },
+      "title": "Regina & Gael Studio | Plataforma E-commerce Fullstack",
+      "sub-title": "Una plataforma de e-commerce construida a medida para vender productos digitales, diseñada desde cero para soportar compras seguras, gestión de productos y entrega de archivos digitales.",
+      "role": "Desarrollador Full-Stack",
+      "duration": "Febrero 2024 - Mayo 2024",
+      "overview-title": "Resumen",
+      "overview-description": "Regina & Gael Studio era una pequeña tienda en línea que vendía arte imprimible y plantillas para manualidades. El cliente necesitaba una solución de e-commerce completamente personalizada para vender productos digitales con cuentas de usuario, carga de productos, entrega segura de archivos y pagos integrados.",
+      "overview-description2": "Como el único desarrollador, diseñé y construí la plataforma desde cero, cubriendo todo desde la UI del frontend hasta la infraestructura del backend. Esto incluyó gestión de productos y usuarios, procesamiento de pagos con PayPal y entrega segura de archivos digitales usando URLs firmadas a través de AWS. El objetivo era darle al cliente control total sobre su tienda mientras se aseguraba una experiencia de compra simple y segura para los clientes.",
+      "g&c": {
+        "title": "Objetivos y Desafíos",
+        "goals": {
+          "title": "Objetivos",
+          "1": "Construir una plataforma de e-commerce personalizada adaptada a la marca del cliente y necesidades de productos.",
+          "2": "Eliminar la dependencia de plataformas de terceros como Etsy, permitiendo control total sobre diseño, ventas y entrega de productos.",
+          "3": "Implementar un sistema backend que permita a usuarios no técnicos gestionar productos, pedidos y descargas digitales de forma independiente.",
+          "4": "Asegurar pagos seguros y fluidos y entrega de archivos digitales, con una interfaz amigable tanto para el cliente como para los compradores."
+        },
+        "challenges": {
+          "title": "Desafíos Clave",
+          "1": "Construir la plataforma solo, sin experiencia previa en pagos, almacenamiento en la nube o entrega de archivos digitales.",
+          "2": "Diseñar un sistema seguro para distribuir productos digitales mientras se previene acceso no autorizado o compartir.",
+          "3": "Configurar e integrar servicios de AWS (S3, URLs firmadas) con exposición mínima previa a infraestructura en la nube.",
+          "4": "Asegurar una experiencia de checkout de PayPal fluida y confiable sin acceso a recursos formales de diseño o QA.",
+          "5": "Balancear flexibilidad para el dueño de la tienda con simplicidad para usuarios finales"
+        },
+        "problems": {
+          "title": "Problemas Principales",
+          "1": "No había CMS preexistente o motor de e-commerce cada funcionalidad tuvo que ser implementada desde cero.",
+          "2": "Manejar flujo de pagos y casos edge de webhooks (ej. falla de pago, reintentos) sin introducir bugs",
+          "3": "Gestionar de forma segura el acceso a archivos para que solo usuarios que pagaron pudieran descargar sus productos comprados.",
+          "4": "Curva de aprendizaje con configuración de AWS y permisos para buckets S3 y URLs seguras de archivos."
         }
       },
-      "regina": {
-        "common": {
-          "view": "Ver Más Proyectos",
-          "case-study": "Caso de Estudio"
+      "solutions&contribution": {
+        "title": "Soluciones y Mis Contribuciones",
+        "technical": {
+          "title": "Arquitectura Técnica",
+          "1": "Diseñé y construí la arquitectura fullstack desde cero, incluyendo lógica tanto del lado del cliente como del servidor.",
+          "2": "Implementé entrega segura de productos digitales usando AWS S3 con URLs firmadas.",
+          "3": "Integré PayPal Checkout para procesamiento de pagos, manejando verificación de pedidos y cumplimiento en el backend.",
+          "4": "Construí un dashboard de administración personalizado para gestionar listados de productos, rastrear pedidos y subir archivos descargables."
         },
-        "title": "Regina & Gael Studio | Plataforma E-commerce Fullstack",
-        "sub-title": "Una plataforma de e-commerce construida a medida para vender productos digitales, diseñada desde cero para soportar compras seguras, gestión de productos y entrega de archivos digitales.",
-        "role": "Desarrollador Full-Stack",
-        "duration": "Febrero 2024 - Mayo 2024",
-        "overview-title": "Resumen",
-        "overview-description": "Regina & Gael Studio era una pequeña tienda en línea que vendía arte imprimible y plantillas para manualidades. El cliente necesitaba una solución de e-commerce completamente personalizada para vender productos digitales con cuentas de usuario, carga de productos, entrega segura de archivos y pagos integrados.",
-        "overview-description2": "Como el único desarrollador, diseñé y construí la plataforma desde cero, cubriendo todo desde la UI del frontend hasta la infraestructura del backend. Esto incluyó gestión de productos y usuarios, procesamiento de pagos con PayPal y entrega segura de archivos digitales usando URLs firmadas a través de AWS. El objetivo era darle al cliente control total sobre su tienda mientras se aseguraba una experiencia de compra simple y segura para los clientes.",
-        "g&c": {
-          "title": "Objetivos y Desafíos",
-          "goals": {
-            "title": "Objetivos",
-            "1": "Construir una plataforma de e-commerce personalizada adaptada a la marca del cliente y necesidades de productos.",
-            "2": "Eliminar la dependencia de plataformas de terceros como Etsy, permitiendo control total sobre diseño, ventas y entrega de productos.",
-            "3": "Implementar un sistema backend que permita a usuarios no técnicos gestionar productos, pedidos y descargas digitales de forma independiente.",
-            "4": "Asegurar pagos seguros y fluidos y entrega de archivos digitales, con una interfaz amigable tanto para el cliente como para los compradores."
-          },
-          "challenges": {
-            "title": "Desafíos Clave",
-            "1": "Construir la plataforma solo, sin experiencia previa en pagos, almacenamiento en la nube o entrega de archivos digitales.",
-            "2": "Diseñar un sistema seguro para distribuir productos digitales mientras se previene acceso no autorizado o compartir.",
-            "3": "Configurar e integrar servicios de AWS (S3, URLs firmadas) con exposición mínima previa a infraestructura en la nube.",
-            "4": "Asegurar una experiencia de checkout de PayPal fluida y confiable sin acceso a recursos formales de diseño o QA.",
-            "5": "Balancear flexibilidad para el dueño de la tienda con simplicidad para usuarios finales"
-          },
-          "problems": {
-            "title": "Problemas Principales",
-            "1": "No había CMS preexistente o motor de e-commerce cada funcionalidad tuvo que ser implementada desde cero.",
-            "2": "Manejar flujo de pagos y casos edge de webhooks (ej. falla de pago, reintentos) sin introducir bugs",
-            "3": "Gestionar de forma segura el acceso a archivos para que solo usuarios que pagaron pudieran descargar sus productos comprados.",
-            "4": "Curva de aprendizaje con configuración de AWS y permisos para buckets S3 y URLs seguras de archivos."
-          }
+        "performance": {
+          "title": "Rendimiento y UX",
+          "1": "Apliqué carga dinámica y server-side rendering con Next.js para mejorar tiempos de carga inicial.",
+          "2": "Usé validación de formularios, feedback de errores y flujos de usuario claros para simplificar el checkout y acceso a archivos.",
+          "3": "Diseñé layouts responsivos para una experiencia fluida en dispositivos de escritorio y móviles."
         },
-        "solutions&contribution": {
-          "title": "Soluciones y Mis Contribuciones",
-          "technical": {
-            "title": "Arquitectura Técnica",
-            "1": "Diseñé y construí la arquitectura fullstack desde cero, incluyendo lógica tanto del lado del cliente como del servidor.",
-            "2": "Implementé entrega segura de productos digitales usando AWS S3 con URLs firmadas.",
-            "3": "Integré PayPal Checkout para procesamiento de pagos, manejando verificación de pedidos y cumplimiento en el backend.",
-            "4": "Construí un dashboard de administración personalizado para gestionar listados de productos, rastrear pedidos y subir archivos descargables."
-          },
-          "performance": {
-            "title": "Rendimiento y UX",
-            "1": "Apliqué carga dinámica y server-side rendering con Next.js para mejorar tiempos de carga inicial.",
-            "2": "Usé validación de formularios, feedback de errores y flujos de usuario claros para simplificar el checkout y acceso a archivos.",
-            "3": "Diseñé layouts responsivos para una experiencia fluida en dispositivos de escritorio y móviles."
-          },
-          "collaboration": {
-            "title": "Colaboración y Proceso",
-            "1": "Definí el alcance y lideré todo el proyecto de forma independiente, desde wireframes hasta despliegue en producción.",
-            "2": "Trabajé estrechamente con el cliente (mi cuñada) para traducir ideas no técnicas en requisitos funcionales.",
-            "3": "Tomé la iniciativa de aprender servicios de AWS y procesamiento de pagos para entregar funcionalidades más allá de mi skillset original."
-          }
-        },
-
-        "showcase": {
-          "title": "Showcase",
-          "sub-title": "Algunos de los Módulos que Creé"
-        },
-
-        "i&r": {
-          "title": "Impacto y Resultados",
-          "1": "Entregué una plataforma de e-commerce completamente funcional y segura desde cero manejando todo desde listados de productos y checkout de PayPal hasta entrega digital.",
-          "2": "Gané experiencia de primera mano con desarrollo backend, servicios en la nube y arquitectura fullstack en un escenario del mundo real.",
-          "3": "Construí confianza en mi capacidad para definir alcance, gestionar y ejecutar un producto completo de forma independiente.",
-          "4": "Este proyecto jugó un rol clave en ayudarme a conseguir mi primer rol profesional como desarrollador en PKT1. 🚀",
-          "5": "Aunque el negocio finalmente se pausó por razones personales, el proyecto empujó mis límites técnicos y me enseñó a apropiarme de cada parte del proceso de desarrollo."
-        },
-        "reflection": {
-          "title": "Reflexión",
-          "learned": {
-            "title": "Lo que Aprendí",
-            "description": "Este proyecto me desafió a salir de mi zona de confort del frontend y tomar propiedad completa de un sistema de grado producción. Aprendí cómo integrar servicios de terceros como AWS y PayPal, diseñar flujos seguros de entrega de archivos y estructurar un backend para soportar lógica de negocio real todo mientras gestionaba alcance y expectativas por mi cuenta."
-          },
-          "dif": {
-            "title": "Lo que Haría Diferente",
-            "description": "Si pudiera revisar este proyecto, empezaría alineando expectativas más claramente tanto en términos de alcance como de involucramiento continuo. Desde un punto de vista técnico, desacoplaría dependencias en la nube como AWS S3 para hacer el despliegue y mantenimiento futuro más fácil. También aprendí la importancia de documentar el proyecto y capturar demos funcionales mientras está vivo, especialmente para uso en portafolio."
-          },
-          "proud": {
-            "title": "De lo que me Siento Más Orgulloso",
-            "description": "Me siento orgulloso de haber construido y entregado una app de e-commerce fullstack completa a pesar de que era mi primera vez trabajando con muchas de las tecnologías involucradas. Me empujó a aprender rápido, resolver problemas del mundo real y tomar propiedad completa de decisiones tanto de frontend como de backend. Este proyecto fue un factor clave para ayudarme a conseguir mi primer rol profesional en PKT1, probándome a mí mismo que podía tomar desafíos complejos y crecer a partir de ellos."
-          }
+        "collaboration": {
+          "title": "Colaboración y Proceso",
+          "1": "Definí el alcance y lideré todo el proyecto de forma independiente, desde wireframes hasta despliegue en producción.",
+          "2": "Trabajé estrechamente con el cliente (mi cuñada) para traducir ideas no técnicas en requisitos funcionales.",
+          "3": "Tomé la iniciativa de aprender servicios de AWS y procesamiento de pagos para entregar funcionalidades más allá de mi skillset original."
         }
       },
-      "pchub": {
-        "common": {
-          "view": "Ver más proyectos",
-          "case-study": "Estudio de Caso"
+
+      "showcase": {
+        "title": "Showcase",
+        "sub-title": "Algunos de los Módulos que Creé"
+      },
+
+      "i&r": {
+        "title": "Impacto y Resultados",
+        "1": "Entregué una plataforma de e-commerce completamente funcional y segura desde cero manejando todo desde listados de productos y checkout de PayPal hasta entrega digital.",
+        "2": "Gané experiencia de primera mano con desarrollo backend, servicios en la nube y arquitectura fullstack en un escenario del mundo real.",
+        "3": "Construí confianza en mi capacidad para definir alcance, gestionar y ejecutar un producto completo de forma independiente.",
+        "4": "Este proyecto jugó un rol clave en ayudarme a conseguir mi primer rol profesional como desarrollador en PKT1. 🚀",
+        "5": "Aunque el negocio finalmente se pausó por razones personales, el proyecto empujó mis límites técnicos y me enseñó a apropiarme de cada parte del proceso de desarrollo."
+      },
+      "reflection": {
+        "title": "Reflexión",
+        "learned": {
+          "title": "Lo que Aprendí",
+          "description": "Este proyecto me desafió a salir de mi zona de confort del frontend y tomar propiedad completa de un sistema de grado producción. Aprendí cómo integrar servicios de terceros como AWS y PayPal, diseñar flujos seguros de entrega de archivos y estructurar un backend para soportar lógica de negocio real todo mientras gestionaba alcance y expectativas por mi cuenta."
         },
-        "title": "PC Hub | Prototipo Funcional de eCommerce",
-        "sub-title": "Un proyecto fullstack auto-gestionado diseñado para consolidar mi aprendizaje y demostrar habilidades de desarrollo web.",
-        "role": "Desarrollador Full-Stack",
-        "duration": "Mayo 2023 - Ago 2023",
-        "overview-title": "Resumen",
-        "overview-description": "PC Hub es un prototipo de eCommerce que desarrollé por iniciativa propia para fortalecer mis habilidades de desarrollo fullstack tras varios meses de estudio intensivo. La aplicación incluye autenticación de usuarios, navegación de productos, gestión de carrito y herramientas administrativas, todo desarrollado desde cero con tecnologías modernas.",
-        "overview-description2": "El objetivo de este proyecto fue simular la creación de un producto real de principio a fin, aplicando lo aprendido sobre arquitectura frontend y backend. Utilicé TypeScript, React, Next.js (con backend serverless vía API routes), MongoDB y Tailwind CSS. Este proyecto marcó un hito importante en mi camino como autodidacta y fue clave para conseguir mi primer trabajo profesional como desarrollador.",
-        "g&c": {
-          "title": "Objetivos y Desafíos",
-          "goals": {
-            "title": "Objetivos",
-            "1": "Construir una aplicación eCommerce fullstack desde cero para consolidar y demostrar mis habilidades técnicas.",
-            "2": "Aprender y aplicar conceptos clave como autenticación de usuarios, gestión de estado, lógica del servidor y operaciones con bases de datos.",
-            "3": "Crear una interfaz moderna y responsiva usando Tailwind CSS y React.",
-            "4": "Adquirir experiencia en despliegue, integración backend y prácticas reales de arquitectura."
-          },
-          "challenges": {
-            "title": "Desafíos Clave",
-            "1": "Aprender a estructurar una aplicación fullstack sin guía formal.",
-            "2": "Balancear responsabilidades del backend (APIs, autenticación, esquemas de base de datos) con la complejidad de la interfaz de usuario.",
-            "3": "Diseñar flujos para usuarios y administradores dentro de una sola estructura de aplicación.",
-            "4": "Mantenerme productivo y motivado en un proyecto auto-dirigido y en solitario."
-          },
-          "problems": {
-            "title": "Problemas Principales",
-            "1": "Nunca había trabajado con MongoDB, autenticación de usuarios o APIs serverless; cada parte requirió investigación y prueba-error.",
-            "2": "Estilizar una interfaz completa con Tailwind CSS tomó tiempo en dominarse, especialmente con comportamiento responsivo.",
-            "3": "Crear un sistema de gestión de productos digitales seguro y flexible (páginas de producto, reseñas, filtros y edición por parte del administrador) involucró muchos casos límite y lógica de validación."
-          }
+        "dif": {
+          "title": "Lo que Haría Diferente",
+          "description": "Si pudiera revisar este proyecto, empezaría alineando expectativas más claramente tanto en términos de alcance como de involucramiento continuo. Desde un punto de vista técnico, desacoplaría dependencias en la nube como AWS S3 para hacer el despliegue y mantenimiento futuro más fácil. También aprendí la importancia de documentar el proyecto y capturar demos funcionales mientras está vivo, especialmente para uso en portafolio."
         },
-        "solutions&contribution": {
-          "title": "Soluciones y Contribuciones",
-          "technical": {
-            "title": "Arquitectura Técnica",
-            "1": "Diseñé la arquitectura fullstack usando Next.js con rutas API serverless, permitiendo integración fluida entre frontend y backend en un solo repositorio.",
-            "2": "Implementé MongoDB para un almacenamiento flexible basado en documentos de productos, usuarios, pedidos y reseñas.",
-            "3": "Construí el sistema de autenticación y autorización desde cero, incluyendo inicio de sesión seguro con proveedores externos (como Google).",
-            "4": "Desarrollé funciones administrativas como creación/edición de productos y paneles de control para gestionar inventario y reseñas de usuarios."
-          },
-          "performance": {
-            "title": "Rendimiento y Experiencia de Usuario",
-            "1": "Apliqué paginación y filtros en los listados de productos para mantener una interfaz fluida incluso con muchos datos.",
-            "2": "Usé entradas con debounce en búsquedas para evitar consultas innecesarias y mejorar la experiencia.",
-            "3": "Aproveché la optimización de imágenes y el code-splitting de Next.js para reducir los tiempos de carga inicial y mejorar el rendimiento en ejecución."
-          },
-          "collaboration": {
-            "title": "Colaboración y Proceso",
-            "1": "Trabajé completamente solo: desde el diseño inicial y wireframes hasta backend, frontend y despliegue con Vercel.",
-            "2": "Escribí componentes de interfaz reutilizables con React y los estilicé usando Tailwind CSS para lograr consistencia y rapidez.",
-            "3": "Mantuve buenas prácticas con Git, utilizando commits organizados y control de versiones a través de GitHub.",
-            "4": "Usé Jest para escribir pruebas unitarias básicas en la lógica crítica, aprendiendo los fundamentos del testing en JavaScript."
-          }
+        "proud": {
+          "title": "De lo que me Siento Más Orgulloso",
+          "description": "Me siento orgulloso de haber construido y entregado una app de e-commerce fullstack completa a pesar de que era mi primera vez trabajando con muchas de las tecnologías involucradas. Me empujó a aprender rápido, resolver problemas del mundo real y tomar propiedad completa de decisiones tanto de frontend como de backend. Este proyecto fue un factor clave para ayudarme a conseguir mi primer rol profesional en PKT1, probándome a mí mismo que podía tomar desafíos complejos y crecer a partir de ellos."
+        }
+      }
+    },
+    "pchub": {
+      "common": {
+        "view": "Ver más proyectos",
+        "case-study": "Estudio de Caso"
+      },
+      "title": "PC Hub | Prototipo Funcional de eCommerce",
+      "sub-title": "Un proyecto fullstack auto-gestionado diseñado para consolidar mi aprendizaje y demostrar habilidades de desarrollo web.",
+      "role": "Desarrollador Full-Stack",
+      "duration": "Mayo 2023 - Ago 2023",
+      "overview-title": "Resumen",
+      "overview-description": "PC Hub es un prototipo de eCommerce que desarrollé por iniciativa propia para fortalecer mis habilidades de desarrollo fullstack tras varios meses de estudio intensivo. La aplicación incluye autenticación de usuarios, navegación de productos, gestión de carrito y herramientas administrativas, todo desarrollado desde cero con tecnologías modernas.",
+      "overview-description2": "El objetivo de este proyecto fue simular la creación de un producto real de principio a fin, aplicando lo aprendido sobre arquitectura frontend y backend. Utilicé TypeScript, React, Next.js (con backend serverless vía API routes), MongoDB y Tailwind CSS. Este proyecto marcó un hito importante en mi camino como autodidacta y fue clave para conseguir mi primer trabajo profesional como desarrollador.",
+      "g&c": {
+        "title": "Objetivos y Desafíos",
+        "goals": {
+          "title": "Objetivos",
+          "1": "Construir una aplicación eCommerce fullstack desde cero para consolidar y demostrar mis habilidades técnicas.",
+          "2": "Aprender y aplicar conceptos clave como autenticación de usuarios, gestión de estado, lógica del servidor y operaciones con bases de datos.",
+          "3": "Crear una interfaz moderna y responsiva usando Tailwind CSS y React.",
+          "4": "Adquirir experiencia en despliegue, integración backend y prácticas reales de arquitectura."
         },
-        "showcase": {
-          "title": "Demostración",
-          "sub-title": "Algunos de los módulos que creé"
+        "challenges": {
+          "title": "Desafíos Clave",
+          "1": "Aprender a estructurar una aplicación fullstack sin guía formal.",
+          "2": "Balancear responsabilidades del backend (APIs, autenticación, esquemas de base de datos) con la complejidad de la interfaz de usuario.",
+          "3": "Diseñar flujos para usuarios y administradores dentro de una sola estructura de aplicación.",
+          "4": "Mantenerme productivo y motivado en un proyecto auto-dirigido y en solitario."
         },
-        "i&r": {
-          "title": "Impacto y Resultados",
-          "1": "Fortalecí mis conocimientos de backend trabajando con autenticación, APIs REST y modelado de bases de datos.",
-          "2": "Mejoré mi confianza técnica, capacidad de resolución de problemas y autonomía al desarrollar todo el stack por mi cuenta.",
-          "3": "Usé este proyecto como pieza clave de mi portafolio para conseguir mi primer trabajo profesional como desarrollador frontend."
+        "problems": {
+          "title": "Problemas Principales",
+          "1": "Nunca había trabajado con MongoDB, autenticación de usuarios o APIs serverless; cada parte requirió investigación y prueba-error.",
+          "2": "Estilizar una interfaz completa con Tailwind CSS tomó tiempo en dominarse, especialmente con comportamiento responsivo.",
+          "3": "Crear un sistema de gestión de productos digitales seguro y flexible (páginas de producto, reseñas, filtros y edición por parte del administrador) involucró muchos casos límite y lógica de validación."
+        }
+      },
+      "solutions&contribution": {
+        "title": "Soluciones y Contribuciones",
+        "technical": {
+          "title": "Arquitectura Técnica",
+          "1": "Diseñé la arquitectura fullstack usando Next.js con rutas API serverless, permitiendo integración fluida entre frontend y backend en un solo repositorio.",
+          "2": "Implementé MongoDB para un almacenamiento flexible basado en documentos de productos, usuarios, pedidos y reseñas.",
+          "3": "Construí el sistema de autenticación y autorización desde cero, incluyendo inicio de sesión seguro con proveedores externos (como Google).",
+          "4": "Desarrollé funciones administrativas como creación/edición de productos y paneles de control para gestionar inventario y reseñas de usuarios."
         },
-        "reflection": {
-          "title": "Reflexión",
-          "learned": {
-            "title": "Lo que Aprendí",
-            "description": "PC Hub fue mi proyecto autodidacta más ambicioso. Gané experiencia práctica construyendo una aplicación fullstack desde cero, profundizando en autenticación, diseño de APIs, integración de bases de datos y arquitectura escalable de UI. También mejoré mi capacidad para resolver problemas y depurar tanto en frontend como en backend."
-          },
-          "dif": {
-            "title": "Lo que Haría Diferente",
-            "description": "Si lo hiciera de nuevo, comenzaría delimitando el alcance del proyecto y enfocándome en las funcionalidades principales. También habría implementado un mejor manejo de errores y tests desde el inicio para simular un entorno más realista."
-          },
-          "proud": {
-            "title": "De lo que Estoy Más Orgulloso",
-            "description": "Estoy orgulloso de haber asumido un reto complejo con el objetivo de aprender  y haberlo completado. Construir PC Hub me obligó a conectar todo lo que había aprendido en una aplicación funcional, y me dio la confianza para buscar oportunidades reales. No es un proyecto de producción, pero sí uno construido con dedicación, curiosidad y ganas de crecer."
-          }
+        "performance": {
+          "title": "Rendimiento y Experiencia de Usuario",
+          "1": "Apliqué paginación y filtros en los listados de productos para mantener una interfaz fluida incluso con muchos datos.",
+          "2": "Usé entradas con debounce en búsquedas para evitar consultas innecesarias y mejorar la experiencia.",
+          "3": "Aproveché la optimización de imágenes y el code-splitting de Next.js para reducir los tiempos de carga inicial y mejorar el rendimiento en ejecución."
+        },
+        "collaboration": {
+          "title": "Colaboración y Proceso",
+          "1": "Trabajé completamente solo: desde el diseño inicial y wireframes hasta backend, frontend y despliegue con Vercel.",
+          "2": "Escribí componentes de interfaz reutilizables con React y los estilicé usando Tailwind CSS para lograr consistencia y rapidez.",
+          "3": "Mantuve buenas prácticas con Git, utilizando commits organizados y control de versiones a través de GitHub.",
+          "4": "Usé Jest para escribir pruebas unitarias básicas en la lógica crítica, aprendiendo los fundamentos del testing en JavaScript."
+        }
+      },
+      "showcase": {
+        "title": "Demostración",
+        "sub-title": "Algunos de los módulos que creé"
+      },
+      "i&r": {
+        "title": "Impacto y Resultados",
+        "1": "Fortalecí mis conocimientos de backend trabajando con autenticación, APIs REST y modelado de bases de datos.",
+        "2": "Mejoré mi confianza técnica, capacidad de resolución de problemas y autonomía al desarrollar todo el stack por mi cuenta.",
+        "3": "Usé este proyecto como pieza clave de mi portafolio para conseguir mi primer trabajo profesional como desarrollador frontend."
+      },
+      "reflection": {
+        "title": "Reflexión",
+        "learned": {
+          "title": "Lo que Aprendí",
+          "description": "PC Hub fue mi proyecto autodidacta más ambicioso. Gané experiencia práctica construyendo una aplicación fullstack desde cero, profundizando en autenticación, diseño de APIs, integración de bases de datos y arquitectura escalable de UI. También mejoré mi capacidad para resolver problemas y depurar tanto en frontend como en backend."
+        },
+        "dif": {
+          "title": "Lo que Haría Diferente",
+          "description": "Si lo hiciera de nuevo, comenzaría delimitando el alcance del proyecto y enfocándome en las funcionalidades principales. También habría implementado un mejor manejo de errores y tests desde el inicio para simular un entorno más realista."
+        },
+        "proud": {
+          "title": "De lo que Estoy Más Orgulloso",
+          "description": "Estoy orgulloso de haber asumido un reto complejo con el objetivo de aprender  y haberlo completado. Construir PC Hub me obligó a conectar todo lo que había aprendido en una aplicación funcional, y me dio la confianza para buscar oportunidades reales. No es un proyecto de producción, pero sí uno construido con dedicación, curiosidad y ganas de crecer."
         }
       }
     }
