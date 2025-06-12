@@ -2,8 +2,10 @@
 
 import { useEffect, useRef } from "react";
 import { Calendar, MapPin, Briefcase, GraduationCap } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function ExperienceSection() {
+	const t = useTranslations("experience");
 	const sectionRef = useRef<HTMLDivElement>(null);
 	const timelineRefs = useRef<(HTMLDivElement | null)[]>([]);
 
@@ -44,10 +46,10 @@ export default function ExperienceSection() {
 					<span className="text-cyan-400">--oneline</span>
 				</div>
 				<h2 className="text-3xl font-bold mb-2 font-mono text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">
-					Work Experience
+					{t("title")}
 				</h2>
 				<p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto font-mono">
-					From Industrial Engineering to Professional Web Development
+					{t("subtitle")}
 				</p>
 			</div>
 
@@ -66,25 +68,25 @@ export default function ExperienceSection() {
 						</div>
 						<div className="flex items-center gap-2 text-gray-800 dark:text-gray-400 mb-2 font-mono text-sm">
 							<Calendar className="h-4 w-4 text-teal-400" />
-							<span className="font-medium">July 2024 - Present(1 year)</span>
+							<span className="font-medium">
+								{t("1.startDate")} - {t("1.endDate")}
+							</span>
 							<MapPin className="h-4 w-4 text-teal-400 ml-2" />
 							<span>Los Mochis, Sinaloa Mexico</span>
 						</div>
 						<h3 className="text-2xl font-bold mb-3 text-gray-800 dark:text-gray-200 font-mono">
-							Front-End Developer - PKT1 Centro de envíos
+							{t("1.role")}
 						</h3>
 						<p className="dark:text-gray-400 text-gray-700 mb-4 leading-relaxed">
-							Full-time, in-office position focused on React development,
-							implementing mockups from Figma, and occasionally building backend
-							endpoints to support features.
+							{t("1.description")}
 						</p>
 						<ul className="space-y-5">
 							{[
-								"Co-led the complete rebuild of 'Onsite 2,' a core logistics application, replacing a legacy jQuery system with a modern React/Next.js/TypeScript platform. Internal testing showed user task completion improved from 64% to 90%+, while the new modular codebase greatly enhanced maintainability and feature delivery.",
-								"Designed and implemented a modular, component-based frontend using Next.js App Router, and Tailwind CSS. UI consistency improved across modules, reducing duplicated styles and components by over 70% and speeding up development of new views.",
-								"Optimized performance in data-heavy views with pagination, virtual scrolling, and input debouncing, reducing UI lag by approximately 60% and improving responsiveness when rendering 50+ items, resulting in up to 40% faster user interactions.",
-								"Enhanced and maintained the internal 'Management' logistics platform by shipping new analytics and reporting features, reducing manual report generation time by ~50%. Stabilized legacy modules and consistently delivered goals with minimal regressions.",
-								"Integrated with legacy backend APIs, implementing robust error handling and data consistency measures across both platforms.",
+								t("1.bullet.1"),
+								t("1.bullet.2"),
+								t("1.bullet.3"),
+								t("1.bullet.4"),
+								t("1.bullet.5"),
 							].map((item) => (
 								<li key={item} className="flex items-start gap-2">
 									<span className="h-5 w-5 mt-px flex-shrink-0 rounded-full bg-teal-500/70 text-teal-800 dark:bg-teal-500/20 dark:text-teal-400 flex items-center justify-center text-xs">
@@ -111,24 +113,21 @@ export default function ExperienceSection() {
 						<div className="flex items-center gap-2 text-gray-800 dark:text-gray-400 mb-2 font-mono text-sm">
 							<Calendar className="h-4 w-4 text-teal-400" />
 							<span className="font-medium text-xs sm:text-base">
-								January 2022 - July 2024(2.5 years)
+								{t("2.startDate")} - {t("2.endDate")}
 							</span>
 						</div>
 						<h3 className="text-2xl font-bold mb-3 text-gray-800 dark:text-gray-200 font-mono">
-							Freelance & Self-Taught Web Developer
+							{t("2.role")}
 						</h3>
 						<p className="text-gray-800 dark:text-gray-400 mb-4 leading-relaxed">
-							Focused on fullstack development while transitioning from an
-							industrial engineering background. Delivered real-world projects
-							for small businesses, combining hands-on learning with practical
-							client needs.
+							{t("2.description")}
 						</p>
 						<ul className="space-y-5">
 							{[
-								"Architected and built a complete fullstack e-commerce platform (Regina & Gael Studio) from scratch, integrating over 5 key features (user auth, PayPal, product management, secure file delivery) across 10 distinct routes/pages.",
-								"Designed and launched a fully responsive marketing site (Okayhey Temazcal) with Contentful CMS, enabling non-technical content updates for 6+ content types (blogs, FAQs, galleries) and reducing manual content update time by an estimated 6-8 hours per month for the client",
-								"Managed complete development lifecycle independently, from design and planning through implementation and deployment",
-								"Applied self-taught expertise in TypeScript, serverless architecture, RESTful APIs, and modern frontend development using Tailwind CSS",
+								t("2.bullet.1"),
+								t("2.bullet.2"),
+								t("2.bullet.3"),
+								t("2.bullet.4"),
 							].map((item) => (
 								<li key={item} className="flex items-start gap-2">
 									<span className="h-5 w-5 mt-px flex-shrink-0 rounded-full bg-teal-500/70 text-teal-800 dark:bg-teal-500/20 dark:text-teal-400 flex items-center justify-center text-xs">
