@@ -14,7 +14,7 @@
   },
   "terminal": {
     "1-command": "whoami",
-    "1-output": "Juan Pablo, Full-Stack Developer",
+    "1-output": "Juan Pablo, Front-End Developer",
     "2-command": "cat skills.txt",
     "2-output": "JavaScript, TypeScript, React, Next.js, Node.js, Express, NestJS, SQL, NoSQL",
     "3-command": "grep experience resume.txt",
@@ -30,9 +30,9 @@
   },
   "hero": {
     "role-t": "role",
-    "role": "\"Full-Stack Developer\"",
+    "role": "\"Front-End Developer\"",
     "greeting": "Hi, I'm",
-    "description": "A self-taught developer who transitioned from industrial engineering. Bilingual (Spanish/English), based in Mexico, and passionate about creating beautiful, functional web experiences since January 2022.",
+    "description": "A Front-End Developer based in Mexico, fluent in Spanish and English, specializing in React and Next.js. My transition from Industrial Engineering to web development shaped a results-driven, analytical approach to building high-performance solutions. With 1 year of professional experience co-leading system rebuilds and 2.5 years of freelance fullstack work, I bring a comprehensive, end-to-end mindset to every challenge.",
     "contact": "Contact Me",
     "projects": "View Projects",
     "developer": "developer",
