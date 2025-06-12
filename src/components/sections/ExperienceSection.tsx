@@ -46,7 +46,7 @@ export default function ExperienceSection() {
         <h2 className="text-3xl font-bold mb-2 font-mono text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">
           Work Experience
         </h2>
-        <p className="text-gray-400 max-w-2xl mx-auto font-mono">
+        <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto font-mono">
           My professional journey from industrial engineering to professional
           web development
         </p>

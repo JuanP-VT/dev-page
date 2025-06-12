@@ -287,7 +287,7 @@ export default function TechStack() {
 				<h2 className="mb-2 font-mono text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-blue-600 dark:from-teal-400 dark:to-blue-500">
 					Tech Stack
 				</h2>
-				<p className="mx-auto max-w-2xl font-mono text-gray-500 dark:text-gray-400">
+				<p className="mx-auto max-w-2xl font-mono text-gray-600 dark:text-gray-400">
 					{t("description")}
 				</p>
 			</div>
