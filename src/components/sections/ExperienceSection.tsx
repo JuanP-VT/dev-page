@@ -80,8 +80,8 @@ export default function ExperienceSection() {
 						</p>
 						<ul className="space-y-5">
 							{[
-								"Co-led the complete rebuild of 'Onsite 2,' a core logistics application, replacing a legacy jQuery system with a modern React/Next.js/TypeScript platform. Internal testing by management showed user task completion success improved significantly, from around 64% to over 90%, while the new modular codebase greatly enhanced maintainability and feature delivery.",
-								"Designed and implemented a modular, component-based frontend using Next.js App Router, and Tailwind CSS. UI consistency improved significantly across modules, reducing duplicated styles and components by over 70% and speeding up development of new views.",
+								"Co-led the complete rebuild of 'Onsite 2,' a core logistics application, replacing a legacy jQuery system with a modern React/Next.js/TypeScript platform. Internal testing showed user task completion improved from 64% to 90%+, while the new modular codebase greatly enhanced maintainability and feature delivery.",
+								"Designed and implemented a modular, component-based frontend using Next.js App Router, and Tailwind CSS. UI consistency improved across modules, reducing duplicated styles and components by over 70% and speeding up development of new views.",
 								"Optimized performance in data-heavy views with pagination, virtual scrolling, and input debouncing, reducing UI lag by approximately 60% and improving responsiveness when rendering 50+ items, resulting in up to 40% faster user interactions.",
 								"Enhanced and maintained the internal 'Management' logistics platform by shipping new analytics and reporting features, reducing manual report generation time by ~50%. Stabilized legacy modules and consistently delivered goals with minimal regressions.",
 								"Integrated with legacy backend APIs, implementing robust error handling and data consistency measures across both platforms.",
