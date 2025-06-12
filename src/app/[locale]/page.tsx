@@ -5,6 +5,7 @@ import TechStack from "@/components/sections/TechStack";
 import ProjectSection from "@/components/sections/ProjectSection";
 import ScrollbarMount from "@/components/ScrollbarMount";
 import FloatingElements from "@/components/FloatingElements";
+import ExperienceSection from "@/components/sections/ExperienceSection";
 
 export default function Page() {
 	return (
@@ -19,6 +20,7 @@ export default function Page() {
 				<Terminal />
 				<TechStack />
 				<ProjectSection />
+				<ExperienceSection />
 				<ScrollbarMount id="#portfolio" />
 			</div>
 		</div>
