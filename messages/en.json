@@ -119,6 +119,35 @@
     "landing-title": "Landing Page | Basic Static Homepage",
     "landing-description": "Designed a simple homepage with foundational HTML and CSS. Learned the box model, element structure, and styling fundamentals the very first step my dev journey."
   },
+  "experience": {
+    "title": "Work Experience",
+    "subtitle": "From Industrial Engineering to Professional Web Development",
+    "1": {
+      "startDate": "July 2024",
+      "endDate": "Present(1 year)",
+      "role": "Front-End Developer - PKT1 Centro de envíos",
+      "description": "Full-time, in-office position focused on React development, implementing mockups from Figma, and occasionally building backend endpoints to support features.",
+      "bullet": {
+        "1": "Co-led the complete rebuild of 'Onsite 2,' a core logistics application, replacing a legacy jQuery system with a modern React/Next.js/TypeScript platform. Internal testing showed user task completion improved from 64% to 90%+, while the new modular codebase greatly enhanced maintainability and feature delivery.",
+        "2": "Designed and implemented a modular, component-based frontend using Next.js App Router, and Tailwind CSS. UI consistency improved across modules, reducing duplicated styles and components by over 70% and speeding up development of new views.",
+        "3": "Optimized performance in data-heavy views with pagination, virtual scrolling, and input debouncing, reducing UI lag by approximately 60% and improving responsiveness when rendering 50+ items, resulting in up to 40% faster user interactions.",
+        "4": "Enhanced and maintained the internal 'Management' logistics platform by shipping new analytics and reporting features, reducing manual report generation time by ~50%. Stabilized legacy modules and consistently delivered goals with minimal regressions.",
+        "5": "Integrated with legacy backend APIs, implementing robust error handling and data consistency measures across both platforms."
+      }
+    },
+    "2": {
+      "startDate": "January 2022",
+      "endDate": "July 2024(2.5 years)",
+      "role": "Freelance & Self-Taught Web Developer",
+      "description": "Focused on fullstack development while transitioning from an industrial engineering background. Delivered real-world projects for small businesses, combining hands-on learning with practical client needs.",
+      "bullet": {
+        "1": "Architected and built a complete fullstack e-commerce platform (Regina & Gael Studio) from scratch, integrating over 5 key features (user auth, PayPal, product management, secure file delivery) across 10 distinct routes/pages.",
+        "2": "Designed and launched a fully responsive marketing site (Okayhey Temazcal) with Contentful CMS, enabling non-technical content updates for 6+ content types (blogs, FAQs, galleries) and reducing manual content update time by an estimated 6-8 hours per month for the client.",
+        "3": "Managed complete development lifecycle independently, from design and planning through implementation and deployment",
+        "4": "Applied self-taught expertise in TypeScript, serverless architecture, RESTful APIs, and modern frontend development using Tailwind CSS"
+      }
+    }
+  },
   "cases": {
     "onsite2": {
       "common": {
