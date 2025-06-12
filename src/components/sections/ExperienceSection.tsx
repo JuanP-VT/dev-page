@@ -38,7 +38,7 @@ export default function ExperienceSection() {
   return (
     <section id="experience" className="py-20" ref={sectionRef}>
       <div className="text-center mb-16">
-        <div className="inline-block px-3 py-1 bg-gray-800 text-teal-400 rounded-md text-sm font-mono mb-4 border border-gray-700">
+				<div className="inline-block py-1 px-3 mb-4 font-mono text-sm text-teal-400 bg-gray-100 rounded-md border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
           <span className="text-pink-400">git</span>{" "}
           <span className="text-teal-400">log</span>{" "}
           <span className="text-cyan-400">--oneline</span>
@@ -60,21 +60,21 @@ export default function ExperienceSection() {
             ref={(el) => {
               timelineRefs.current[0] = el;
             }}
-            className="mb-12 bg-gray-800/50 backdrop-blur-sm p-6 rounded-lg border border-gray-700/50 hover:border-teal-500/30 transition-all opacity-0 relative"
+            className="mb-12 dark:bg-gray-800/50 bg-gray-200/70 backdrop-blur-sm p-4 sm:p-6 rounded-lg border border-gray-300 dark:border-gray-700/50 hover:border-teal-500/30 transition-opacity  opacity-0 relative"
           >
             <div className="absolute hidden -left-15 top-6 w-10 h-10 bg-teal-500 text-gray-900 rounded-full sm:flex items-center justify-center shadow-md">
               <Briefcase className="h-5 w-5" />
             </div>
-            <div className="flex items-center gap-2 text-gray-400 mb-2 font-mono text-sm">
+            <div className="flex items-center gap-2 text-gray-800 dark:text-gray-400 mb-2 font-mono text-sm">
               <Calendar className="h-4 w-4 text-teal-400" />
               <span className="font-medium">July 2024 - Present(1 year)</span>
               <MapPin className="h-4 w-4 text-teal-400 ml-2" />
               <span>Los Mochis, Sinaloa Mexico</span>
             </div>
-            <h3 className="text-2xl font-bold mb-3 text-gray-200 font-mono">
+            <h3 className="text-2xl font-bold mb-3 text-gray-800 dark:text-gray-200 font-mono">
               Front-End Developer - PKT1 Centro de envíos
             </h3>
-            <p className="text-gray-400 mb-4 leading-relaxed">
+            <p className="dark:text-gray-400 text-gray-700 mb-4 leading-relaxed">
               Full-time, in-office position focused on React development,
               implementing mockups from Figma, and occasionally building backend
               endpoints to support features.
@@ -88,10 +88,10 @@ export default function ExperienceSection() {
                 "Integrated with legacy backend APIs, implementing robust error handling and data consistency measures across both platforms.",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2">
-                  <span className="h-5 w-5 mt-0.5 flex-shrink-0 rounded-full bg-teal-500/20 text-teal-400 flex items-center justify-center text-xs">
+                  <span className="h-5 w-5 mt-px flex-shrink-0 rounded-full bg-teal-500/70 text-teal-800 dark:bg-teal-500/20 dark:text-teal-400 flex items-center justify-center text-xs">
                     ✓
                   </span>
-                  <span className="text-gray-300">{item}</span>
+                  <span className="dark:text-gray-300 text-gray-600">{item}</span>
                 </li>
               ))}
             </ul>
@@ -102,21 +102,21 @@ export default function ExperienceSection() {
             ref={(el) => {
               timelineRefs.current[1] = el;
             }}
-            className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-lg border border-gray-700/50 hover:border-teal-500/30 transition-all opacity-0 relative"
+            className="dark:bg-gray-800/50 bg-gray-200/70 backdrop-blur-sm p-6 rounded-lg border border-gray-300 dark:border-gray-700/50 hover:border-teal-500/30 transition-opacity opacity-0 relative"
           >
             <div className="absolute -left-15 top-6 w-10 h-10 bg-teal-500 text-gray-900 rounded-full flex items-center justify-center shadow-md">
               <GraduationCap className="h-5 w-5" />
             </div>
-            <div className="flex items-center gap-2 text-gray-400 mb-2 font-mono text-sm">
+            <div className="flex items-center gap-2 text-gray-800 dark:text-gray-400 mb-2 font-mono text-sm">
               <Calendar className="h-4 w-4 text-teal-400" />
-              <span className="font-medium">
+              <span className="font-medium text-xs sm:text-base">
                 January 2022 - July 2024(2.5 years)
               </span>
             </div>
-            <h3 className="text-xl font-bold mb-3 text-gray-200 font-mono">
+            <h3 className="text-2xl font-bold mb-3 text-gray-800 dark:text-gray-200 font-mono">
               Freelance & Self-Taught Web Developer
             </h3>
-            <p className="text-gray-400 mb-4 leading-relaxed">
+            <p className="text-gray-800 dark:text-gray-400 mb-4 leading-relaxed">
               Focused on fullstack development while transitioning from an
               industrial engineering background. Delivered real-world projects
               for small businesses, combining hands-on learning with practical
@@ -130,10 +130,10 @@ export default function ExperienceSection() {
                 "Applied self-taught expertise in TypeScript, serverless architecture, RESTful APIs, and modern frontend development using Tailwind CSS",
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-2">
-                  <span className="h-5 w-5 mt-0.5 flex-shrink-0 rounded-full bg-teal-500/20 text-teal-400 flex items-center justify-center text-xs">
+               <span className="h-5 w-5 mt-px flex-shrink-0 rounded-full bg-teal-500/70 text-teal-800 dark:bg-teal-500/20 dark:text-teal-400 flex items-center justify-center text-xs">
                     ✓
                   </span>
-                  <span className="text-gray-300">{item}</span>
+                  <span className="dark:text-gray-300 text-gray-600">{item}</span>
                 </li>
               ))}
             </ul>
