@@ -52,7 +52,7 @@ export default function ExperienceSection() {
         </p>
       </div>
 
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         <div className="relative sm:border-l-4 sm:border-teal-500/30 sm:pl-10 pb-10">
           <div className="hidden sm:block absolute w-6 h-6 bg-gradient-to-r from-teal-500 to-blue-500 rounded-full -left-[13px] top-0 shadow-md" />
 
@@ -62,7 +62,7 @@ export default function ExperienceSection() {
             }}
             className="mb-12 dark:bg-gray-800/50 bg-gray-200/70 backdrop-blur-sm p-4 sm:p-6 rounded-lg border border-gray-300 dark:border-gray-700/50 hover:border-teal-500/30 transition-opacity  opacity-0 relative"
           >
-            <div className="absolute hidden -left-15 top-6 w-10 h-10 bg-teal-500 text-gray-900 rounded-full sm:flex items-center justify-center shadow-md">
+            <div className="absolute hidden left-[-62] top-6 w-10 h-10 bg-teal-500 text-gray-900 rounded-full sm:flex items-center justify-center shadow-md">
               <Briefcase className="h-5 w-5" />
             </div>
             <div className="flex items-center gap-2 text-gray-800 dark:text-gray-400 mb-2 font-mono text-sm">
@@ -104,7 +104,7 @@ export default function ExperienceSection() {
             }}
             className="dark:bg-gray-800/50 bg-gray-200/70 backdrop-blur-sm p-6 rounded-lg border border-gray-300 dark:border-gray-700/50 hover:border-teal-500/30 transition-opacity opacity-0 relative"
           >
-            <div className="absolute -left-15 top-6 w-10 h-10 bg-teal-500 text-gray-900 rounded-full flex items-center justify-center shadow-md">
+            <div className="absolute left-[-62] top-6 w-10 h-10 bg-teal-500 text-gray-900 rounded-full flex items-center justify-center shadow-md">
               <GraduationCap className="h-5 w-5" />
             </div>
             <div className="flex items-center gap-2 text-gray-800 dark:text-gray-400 mb-2 font-mono text-sm">
