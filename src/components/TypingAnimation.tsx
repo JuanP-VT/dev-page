@@ -28,7 +28,7 @@ function TypingAnimation({ strings, className, onComplete = () => {} }: Props) {
 					self.cursor.innerText = "";
 					onComplete();
 				},
-				typeSpeed: 40,
+				typeSpeed: 50,
 				loop: false,
 				cursorChar: "_",
 			});
