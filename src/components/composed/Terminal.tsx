@@ -143,7 +143,7 @@ function CommandLine({
 		<div className="mb-3">
 			<div className="flex gap-2 items-center">
 				<span className="font-medium text-teal-600 dark:text-teal-400">
-					JP@portfolio:~$
+					jp@portfolio:~$
 				</span>
 				<TypingAnimation
 					strings={[command]}
@@ -176,7 +176,7 @@ function FinalCommandLine({
 
 	return (
 		<div className="flex gap-2 items-center">
-			<span className="text-teal-600 dark:text-teal-400">dev@portfolio:~$</span>
+			<span className="text-teal-600 dark:text-teal-400">jp@portfolio:~$</span>
 			<span className="font-bold text-gray-300 animate-caret-blink">_</span>
 		</div>
 	);
