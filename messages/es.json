@@ -126,15 +126,56 @@
     "1": {
       "startDate": "Julio 2024",
       "endDate": "Presente (1 año)",
-      "role": "Desarrollador Front-End - PKT1 Centro de envíos",
-      "description": "Posición de tiempo completo presencial enfocada en desarrollo con React, implementación de mockups desde Figma, y ocasionalmente construcción de endpoints backend para apoyar funcionalidades.",
+      "role": "Desarrollador Front-End - PKT1",
+      "description": "PKT1 es una empresa de logística sustentable con operaciones en México y Chile, especializada en servicios de envío para pequeñas y medianas empresas, con enfoque en soluciones ambientalmente responsables.",
       "bullet": {
-        "1": "Co-lideré la reconstrucción completa de 'Onsite 2', una aplicación logística central, reemplazando un sistema legado de jQuery por una plataforma moderna con React/Next.js/TypeScript. Esta transformación mejoró significativamente la experiencia del usuario y la eficiencia en la finalización de tareas, además de establecer una base de código modular que aceleró la entrega de nuevas funcionalidades y mejoró la mantenibilidad del sistema.",
-        "2": "Diseñé e implementé un frontend modular basado en componentes utilizando Next.js App Router y Tailwind CSS. Esta arquitectura estableció una consistencia UI robusta en todos los módulos, reduciendo la duplicación de estilos y componentes y optimizando los flujos de desarrollo para nuevas vistas.",
-        "3": "Implementé pruebas unitarias con Jest para componentes clave y pruebas de integración con React Testing Library para flujos críticos, asegurando la robustez de las nuevas funcionalidades y contribuyendo a la estabilidad general de la aplicación.",
-        "4": "Optimicé el rendimiento en vistas con gran volumen de datos mediante la implementación de paginación, virtual scrolling y debouncing de inputs. Esto redujo notablemente el lag de la interfaz de usuario y mejoró la respuesta al renderizar un alto número de ítems, asegurando interacciones fluidas incluso bajo cargas de datos pesadas.",
-        "5": "Mejoré y mantuve la plataforma logística interna 'Management', entregando nuevas funcionalidades de analíticas y reportes que agilizaron el proceso de toma de decisiones al proporcionar información clave. Además, estabilicé módulos legados y cumplí consistentemente los objetivos con mínimas regresiones.",
-        "6": "Integré con APIs backend legacy, implementando manejo robusto de errores y medidas de consistencia de datos en ambas plataformas."
+        "1": {
+          "main": "Co-lideré la reconstrucción completa de Onsite 2, plataforma logística crítica para el negocio",
+          "sub": {
+            "1": "Generé 85-90% de ahorro vs. outsourcing (estimado 1.2-2M pesos)",
+            "2": "Migré sistema legacy jQuery a React/Next.js/TypeScript en 10 meses",
+            "3": "Mejoré significativamente UX y mantenibilidad del código"
+          }
+        },
+        "2": {
+          "main": "Diseñé arquitectura frontend modular con Next.js App Router y Tailwind CSS",
+          "sub": {
+            "1": "Establecí consistencia UI robusta en todos los módulos",
+            "2": "Reduje duplicación de estilos y componentes",
+            "3": "Optimicé flujos de desarrollo para nuevas vistas"
+          }
+        },
+        "3": {
+          "main": "Implementé testing comprehensivo para componentes críticos",
+          "sub": {
+            "1": "Pruebas unitarias con Jest para componentes clave",
+            "2": "Pruebas de integración con React Testing Library",
+            "3": "Aseguré robustez y estabilidad de nuevas funcionalidades"
+          }
+        },
+        "4": {
+          "main": "Optimicé rendimiento en vistas con alto volumen de datos",
+          "sub": {
+            "1": "Implementé paginación, virtual scroll y debouncing para mejorar fluidez",
+            "2": "Eliminé input lag al escalar de 30 a 2,000 ítems manteniendo scroll fluido",
+            "3": "Reduje ~60% de llamadas a APIs al evitar peticiones innecesarias mediante debouncing"
+          }
+        },
+        "5": {
+          "main": "Desarrollé y mantuve plataforma 'Management' con nuevas funcionalidades",
+          "sub": {
+            "1": "Entregué analíticas y reportes que agilizaron toma de decisiones",
+            "2": "Estabilicé módulos legacy existentes",
+            "3": "Cumplí objetivos sprint consistentemente con mínimas regresiones"
+          }
+        },
+        "6": {
+          "main": "Integré APIs backend legacy con manejo robusto",
+          "sub": {
+            "1": "Implementé manejo de errores comprehensivo",
+            "2": "Aseguré consistencia de datos entre plataformas"
+          }
+        }
       }
     },
     "2": {

@@ -3,11 +3,14 @@
 import { useEffect, useRef } from "react";
 import { Calendar, MapPin, Briefcase, GraduationCap } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { FaCircle } from "react-icons/fa";
+import { getPKT1Experience } from "@/lib/getPKT1Experience";
 
 export default function ExperienceSection() {
 	const t = useTranslations("experience");
 	const sectionRef = useRef<HTMLDivElement>(null);
 	const timelineRefs = useRef<(HTMLDivElement | null)[]>([]);
+	const pkt1Experience = getPKT1Experience();
 
 	useEffect(() => {
 		const observer = new IntersectionObserver(
@@ -74,28 +77,37 @@ export default function ExperienceSection() {
 							<MapPin className="h-4 w-4 text-teal-400 ml-2" />
 							<span>Los Mochis, Sinaloa Mexico</span>
 						</div>
-						<h3 className="text-2xl font-bold mb-3 text-gray-800 dark:text-gray-200 font-mono">
+						<h3 className="text-2xl font-bold mb-3 text-teal-500 font-mono">
 							{t("1.role")}
 						</h3>
 						<p className="dark:text-gray-400 text-gray-700 mb-4 leading-relaxed">
 							{t("1.description")}
 						</p>
 						<ul className="space-y-5">
-							{[
-								t("1.bullet.1"),
-								t("1.bullet.2"),
-								t("1.bullet.3"),
-								t("1.bullet.4"),
-								t("1.bullet.5"),
-								t("1.bullet.6"),
-							].map((item) => (
-								<li key={item} className="flex items-start gap-2">
-									<span className="h-5 w-5 mt-px flex-shrink-0 rounded-full bg-teal-500/70 text-teal-800 dark:bg-teal-500/20 dark:text-teal-400 flex items-center justify-center text-xs">
-										✓
-									</span>
-									<span className="dark:text-gray-300 text-gray-600">
-										{item}
-									</span>
+							{pkt1Experience.map((item) => (
+								<li key={item.main} className="flex items-start gap-2">
+									<div className="flex flex-col">
+										<div className="flex gap-2">
+											<span className="h-5 w-5 mt-px flex-shrink-0 rounded-full bg-teal-500/70 text-teal-800 dark:bg-teal-500/20 dark:text-teal-400 flex items-center justify-center text-xs">
+												✓
+											</span>
+											<span className="dark:text-teal-400 text-teal-800">
+												{item.main}
+											</span>
+										</div>
+										<div className="flex flex-col ml-10 mt-2">
+											{Object.values(item.sub).map((sub) => (
+												<div className="flex gap-2" key={sub}>
+													<span className="flex items-center">
+														<FaCircle size="0.5rem" className="text-teal-500" />
+													</span>
+													<span className="dark:text-gray-300 text-gray-600">
+														{sub}
+													</span>
+												</div>
+											))}
+										</div>
+									</div>
 								</li>
 							))}
 						</ul>
@@ -117,7 +129,7 @@ export default function ExperienceSection() {
 								{t("2.startDate")} - {t("2.endDate")}
 							</span>
 						</div>
-						<h3 className="text-2xl font-bold mb-3 text-gray-800 dark:text-gray-200 font-mono">
+						<h3 className="text-2xl font-bold mb-3 text-teal-500 font-mono">
 							{t("2.role")}
 						</h3>
 						<p className="text-gray-800 dark:text-gray-400 mb-4 leading-relaxed">
