@@ -95,10 +95,10 @@ export default function ExperienceSection() {
 												{item.main}
 											</span>
 										</div>
-										<div className="flex flex-col ml-10 mt-2">
+										<div className="flex flex-col gap-2 ml-10 mt-2">
 											{Object.values(item.sub).map((sub) => (
 												<div className="flex gap-2" key={sub}>
-													<span className="flex items-center">
+													<span className="flex pt-2">
 														<FaCircle size="0.5rem" className="text-teal-500" />
 													</span>
 													<span className="dark:text-gray-300 text-gray-600">

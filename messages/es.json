@@ -132,7 +132,7 @@
         "1": {
           "main": "Co-lideré la reconstrucción completa de Onsite 2, plataforma logística crítica para el negocio",
           "sub": {
-            "1": "Generé 85-90% de ahorro vs. outsourcing (estimado 1.2-2M pesos)",
+            "1": "Generé 55-75% de ahorro vs. outsourcing (estimado 450-650 mil pesos)",
             "2": "Migré sistema legacy jQuery a React/Next.js/TypeScript en 10 meses",
             "3": "Mejoré significativamente UX y mantenibilidad del código"
           }
@@ -146,14 +146,6 @@
           }
         },
         "3": {
-          "main": "Implementé testing comprehensivo para componentes críticos",
-          "sub": {
-            "1": "Pruebas unitarias con Jest para componentes clave",
-            "2": "Pruebas de integración con React Testing Library",
-            "3": "Aseguré robustez y estabilidad de nuevas funcionalidades"
-          }
-        },
-        "4": {
           "main": "Optimicé rendimiento en vistas con alto volumen de datos",
           "sub": {
             "1": "Implementé paginación, virtual scroll y debouncing para mejorar fluidez",
@@ -161,12 +153,21 @@
             "3": "Reduje ~60% de llamadas a APIs al evitar peticiones innecesarias mediante debouncing"
           }
         },
+        "4": {
+          "main": "Implementé testing comprehensivo para componentes críticos",
+          "sub": {
+            "1": "Pruebas unitarias con Jest para componentes clave",
+            "2": "Pruebas de integración con React Testing Library",
+            "3": "Aseguré robustez y estabilidad de nuevas funcionalidades"
+          }
+        },
+
         "5": {
           "main": "Desarrollé y mantuve plataforma 'Management' con nuevas funcionalidades",
           "sub": {
-            "1": "Entregué analíticas y reportes que agilizaron toma de decisiones",
+            "1": "Cree módulos de analíticas y monitoreo que agilizan tomas de decisiones",
             "2": "Estabilicé módulos legacy existentes",
-            "3": "Cumplí objetivos sprint consistentemente con mínimas regresiones"
+            "3": "Cumplí objetivos consistentemente con mínimas regresiones"
           }
         },
         "6": {

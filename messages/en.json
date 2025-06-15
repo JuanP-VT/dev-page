@@ -131,7 +131,7 @@
         "1": {
           "main": "Co-led the complete rebuild of Onsite 2, a business-critical logistics platform",
           "sub": {
-            "1": "Generated 85-90% cost savings vs. outsourcing (estimated 1.2-2M pesos)",
+            "1": "Generated 55-75% cost savings vs. outsourcing (estimated $450-650K pesos)",
             "2": "Migrated legacy jQuery system to React/Next.js/TypeScript in 10 months",
             "3": "Significantly improved UX and code maintainability"
           }
@@ -145,14 +145,6 @@
           }
         },
         "3": {
-          "main": "Implemented comprehensive testing for critical components",
-          "sub": {
-            "1": "Unit tests with Jest for key components",
-            "2": "Integration tests with React Testing Library",
-            "3": "Ensured robustness and stability of new functionalities"
-          }
-        },
-        "4": {
           "main": "Optimized performance in views with high data volume",
           "sub": {
             "1": "Implemented pagination, virtual scrolling, and debouncing to improve responsiveness",
@@ -160,10 +152,19 @@
             "3": "Reduced API calls by ~60% by preventing unnecessary requests through debouncing"
           }
         },
+        "4": {
+          "main": "Implemented comprehensive testing for critical components",
+          "sub": {
+            "1": "Unit tests with Jest for key components",
+            "2": "Integration tests with React Testing Library",
+            "3": "Ensured robustness and stability of new functionalities"
+          }
+        },
+
         "5": {
           "main": "Developed and maintained 'Management' platform with new features",
           "sub": {
-            "1": "Delivered analytics and reports that streamlined decision-making",
+            "1": "Delivered analytics and monitoring modules that streamlined decision-making",
             "2": "Stabilized existing legacy modules",
             "3": "Consistently met objectives with minimal regressions"
           }
