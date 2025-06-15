@@ -132,49 +132,49 @@
         "1": {
           "main": "Co-lideré la reconstrucción completa de Onsite 2, plataforma logística crítica para el negocio",
           "sub": {
-            "1": "Generé 55-75% de ahorro vs. outsourcing (estimado 450-650 mil pesos)",
-            "2": "Migré sistema legacy jQuery a React/Next.js/TypeScript en 10 meses",
-            "3": "Mejoré significativamente UX y mantenibilidad del código"
+            "1": "Entregué un proyecto clave internamente, resultando en un ahorro de ~60% (aproximadamente ~$360K pesos) frente al outsourcing.",
+            "2": "Migré el sistema legacy en jQuery a React/Next.js/TypeScript en 10 meses.",
+            "3": "Mejoré significativamente la UX y mantenibilidad del código."
           }
         },
         "2": {
           "main": "Diseñé arquitectura frontend modular con Next.js App Router y Tailwind CSS",
           "sub": {
-            "1": "Establecí consistencia UI robusta en todos los módulos",
-            "2": "Reduje duplicación de estilos y componentes",
-            "3": "Optimicé flujos de desarrollo para nuevas vistas"
+            "1": "Establecí una sólida consistencia en la UI a través de todos los módulos.",
+            "2": "Reduje duplicación de estilos y componentes.",
+            "3": "Optimicé flujos de desarrollo para nuevas vistas."
           }
         },
         "3": {
           "main": "Optimicé rendimiento en vistas con alto volumen de datos",
           "sub": {
-            "1": "Implementé paginación, virtual scroll y debouncing para mejorar fluidez",
-            "2": "Eliminé input lag al escalar de 30 a 2,000 ítems manteniendo scroll fluido",
-            "3": "Reduje ~60% de llamadas a APIs al evitar peticiones innecesarias mediante debouncing"
+            "1": "Implementé paginación, virtual scroll y debouncing para mejorar fluidez.",
+            "2": "Eliminé el input lag al renderizar de 10 a 2,000 ítems, manteniendo un desplazamiento suave y fluido.",
+            "3": "Reduje ~60% de llamadas a APIs al evitar peticiones innecesarias mediante debouncing."
           }
         },
         "4": {
           "main": "Implementé testing comprehensivo para componentes críticos",
           "sub": {
-            "1": "Pruebas unitarias con Jest para componentes clave",
-            "2": "Pruebas de integración con React Testing Library",
-            "3": "Aseguré robustez y estabilidad de nuevas funcionalidades"
+            "1": "Pruebas unitarias con Jest para funciones clave.",
+            "2": "Pruebas de integración con React Testing Library.",
+            "3": "Aseguré robustez y estabilidad de nuevas funcionalidades."
           }
         },
 
         "5": {
-          "main": "Desarrollé y mantuve plataforma 'Management' con nuevas funcionalidades",
+          "main": "Desarrollé y mantuve la plataforma 'Management' con nuevas funcionalidades",
           "sub": {
-            "1": "Cree módulos de analíticas y monitoreo que agilizan tomas de decisiones",
-            "2": "Estabilicé módulos legacy existentes",
-            "3": "Cumplí objetivos consistentemente con mínimas regresiones"
+            "1": "Creé módulos de analíticas y monitoreo que agilizan la toma de decisiones.",
+            "2": "Estabilicé módulos legacy existentes.",
+            "3": "Cumplí con los objetivos consistentemente con mínimas regresiones."
           }
         },
         "6": {
-          "main": "Integré APIs backend legacy con manejo robusto",
+          "main": "Realicé integraciones confiables con APIs legacy del backend",
           "sub": {
-            "1": "Implementé manejo de errores comprehensivo",
-            "2": "Aseguré consistencia de datos entre plataformas"
+            "1": "Implementé un manejo de errores comprehensivo.",
+            "2": "Aseguré la consistencia de datos entre plataformas."
           }
         }
       }
@@ -186,7 +186,7 @@
       "description": "Enfocado en desarrollo web durante mi transición de la ingeniería industrial al desarrollo web. Desarrollé proyectos reales para pequeñas empresas, combinando aprendizaje autodidacta con necesidades específicas de cada cliente.",
       "bullet": {
         "1": "Arquitecté y construí desde cero una plataforma completa de e-commerce fullstack (Regina & Gael Studio), integrando funcionalidades complejas como autenticación de usuario, pasarela de pagos (PayPal), gestión de productos y entrega segura de archivos digitales.",
-        "2": "Diseñé y lancé un sitio web de marketing completamente responsive (Okayhey Temazcal) con integración de Contentful CMS, lo que empoderó a clientes no técnicos para gestionar y actualizar contenido dinámico, incluyendo blogs, FAQs y galerías de fotos.",
+        "2": "Diseñé y lancé un sitio web de marketing completamente responsive (Okayhey Temazcal) con integración de Contentful CMS, lo que permitió a usuarios no técnicos para gestionar y actualizar contenido dinámico, incluyendo blogs, FAQs y galerías de fotos.",
         "3": "Gestioné el ciclo de vida completo del desarrollo de forma independiente, abarcando desde la concepción y la planificación inicial hasta la implementación y el despliegue final del producto.",
         "4": "Apliqué conocimientos autodidactas en tecnologías clave como TypeScript, arquitectura serverless, APIs RESTful y prácticas de desarrollo frontend moderno utilizando Tailwind CSS."
       }

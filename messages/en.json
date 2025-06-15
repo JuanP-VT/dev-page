@@ -131,49 +131,49 @@
         "1": {
           "main": "Co-led the complete rebuild of Onsite 2, a business-critical logistics platform",
           "sub": {
-            "1": "Generated 55-75% cost savings vs. outsourcing (estimated $450-650K pesos)",
-            "2": "Migrated legacy jQuery system to React/Next.js/TypeScript in 10 months",
-            "3": "Significantly improved UX and code maintainability"
+            "1": "Delivered a key project in-house, generating ~60% cost savings (approx. ~$360K pesos) compared to outsourcing.",
+            "2": "Migrated legacy jQuery system to React/Next.js/TypeScript in 10 months.",
+            "3": "Significantly improved UX and code maintainability."
           }
         },
         "2": {
           "main": "Designed modular frontend architecture with Next.js App Router and Tailwind CSS",
           "sub": {
-            "1": "Established robust UI consistency across all modules",
-            "2": "Reduced style and component duplication",
-            "3": "Optimized development workflows for new views"
+            "1": "Established robust UI consistency across all modules.",
+            "2": "Reduced style and component duplication.",
+            "3": "Optimized development workflows for new views."
           }
         },
         "3": {
           "main": "Optimized performance in views with high data volume",
           "sub": {
-            "1": "Implemented pagination, virtual scrolling, and debouncing to improve responsiveness",
-            "2": "Eliminated input lag when scaling from 30 to 2,000 items, maintaining smooth scrolling",
-            "3": "Reduced API calls by ~60% by preventing unnecessary requests through debouncing"
+            "1": "Implemented pagination, virtual scrolling, and debouncing to improve responsiveness.",
+            "2": "Eliminated input lag when rendering from 10 to 2,000 items, maintaining smooth scrolling.",
+            "3": "Reduced API calls by ~60% by preventing unnecessary requests through debouncing."
           }
         },
         "4": {
           "main": "Implemented comprehensive testing for critical components",
           "sub": {
-            "1": "Unit tests with Jest for key components",
-            "2": "Integration tests with React Testing Library",
-            "3": "Ensured robustness and stability of new functionalities"
+            "1": "Unit tests with Jest for key functions.",
+            "2": "Integration tests with React Testing Library.",
+            "3": "Ensured robustness and stability of new functionalities."
           }
         },
 
         "5": {
           "main": "Developed and maintained 'Management' platform with new features",
           "sub": {
-            "1": "Delivered analytics and monitoring modules that streamlined decision-making",
-            "2": "Stabilized existing legacy modules",
-            "3": "Consistently met objectives with minimal regressions"
+            "1": "Delivered analytics and monitoring modules that streamlined decision-making.",
+            "2": "Stabilized existing legacy modules.",
+            "3": "Consistently met objectives with minimal regressions."
           }
         },
         "6": {
           "main": "Integrated legacy backend APIs with robust handling",
           "sub": {
-            "1": "Implemented comprehensive error handling",
-            "2": "Ensured data consistency across platforms"
+            "1": "Implemented comprehensive error handling.",
+            "2": "Ensured data consistency across platforms."
           }
         }
       }
@@ -186,8 +186,8 @@
       "bullet": {
         "1": "Architected and built a complete fullstack e-commerce platform (Regina & Gael Studio) from scratch, integrating complex functionalities such as user authentication, payment gateway (PayPal), product management, and secure digital file delivery.",
         "2": "Designed and launched a fully responsive marketing site (Okayhey Temazcal) with Contentful CMS integration, which empowered non-technical clients to manage and update dynamic content, including blogs, FAQs, and photo galleries.",
-        "3": "Managed complete development lifecycle independently, from design and planning through implementation and deployment",
-        "4": "Applied self-taught expertise in TypeScript, serverless architecture, RESTful APIs, and modern frontend development using Tailwind CSS"
+        "3": "Managed complete development lifecycle independently, from design and planning through implementation and deployment.",
+        "4": "Applied self-taught expertise in TypeScript, serverless architecture, RESTful APIs, and modern frontend development using Tailwind CSS."
       }
     }
   },
