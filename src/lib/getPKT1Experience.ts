@@ -34,7 +34,6 @@ export function getPKT1Experience() {
 			sub: {
 				"1": t("4.sub.1"),
 				"2": t("4.sub.2"),
-				"3": t("4.sub.3"),
 			},
 		},
 		{
@@ -42,7 +41,6 @@ export function getPKT1Experience() {
 			sub: {
 				"1": t("5.sub.1"),
 				"2": t("5.sub.2"),
-				"3": t("5.sub.3"),
 			},
 		},
 		{

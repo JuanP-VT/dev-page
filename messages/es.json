@@ -32,7 +32,7 @@
     "role-t": "rol",
     "role": " \"Desarrollador Front-End\"",
     "greeting": "Hola, soy",
-    "description": "Soy un Desarrollador Front-End bilingüe que transforma frustraciones de usuarios en experiencias fluidas. Con sede en México y especializado en React y Next.js, cuento con un año de experiencia profesional respaldado por más de dos años de aprendizaje autodidacta, trabajos freelance y un título en ingeniería.",
+    "description": "Desarrollador Front-End bilingüe especializado en React y Next.js. Transformo las frustraciones del usuario en experiencias fluidas, combinando un año de experiencia profesional con más de dos años de desarrollo autodidacta y proyectos freelance. Ingeniero con base en México.",
     "contact": "Contáctame",
     "projects": "Ver Proyectos",
     "developer": "desarrollador",
@@ -126,55 +126,52 @@
     "1": {
       "startDate": "Julio 2024",
       "endDate": "Presente (1 año)",
-      "role": "Desarrollador Front-End - PKT1",
-      "description": "PKT1 es una empresa de logística sustentable con operaciones en México y Chile, especializada en servicios de envío para pequeñas y medianas empresas, con enfoque en soluciones ambientalmente responsables.",
+      "role": "Desarrollador Front-End",
+      "description": "PKT1 - Empresa logística sustentable, México-Chile",
       "bullet": {
         "1": {
-          "main": "Co-lideré la reconstrucción completa de Onsite 2, plataforma logística crítica para el negocio",
+          "main": "Co-lideré la reconstrucción completa de Onsite 2, plataforma logística crítica",
           "sub": {
-            "1": "Entregué un proyecto clave internamente, resultando en un ahorro de ~60% (aproximadamente ~$360K pesos) frente al outsourcing.",
-            "2": "Migré el sistema legacy en jQuery a React/Next.js/TypeScript en 10 meses.",
-            "3": "Mejoré significativamente la UX y mantenibilidad del código."
+            "1": "Migré sistema legacy (jQuery) a React/Next.js/TypeScript en 10 meses",
+            "2": "Contribuí a lograr 60% de ahorro vs outsourcing (~$360K pesos) entregando internamente.",
+            "3": "Mejoré significativamente UX y mantenibilidad del código base."
           }
         },
         "2": {
-          "main": "Diseñé arquitectura frontend modular con Next.js App Router y Tailwind CSS",
+          "main": "Optimicé el rendimiento en vistas con alto volumen de datos",
           "sub": {
-            "1": "Establecí una sólida consistencia en la UI a través de todos los módulos.",
-            "2": "Reduje duplicación de estilos y componentes.",
-            "3": "Optimicé flujos de desarrollo para nuevas vistas."
+            "1": "Logré 0.4s First Contentful Paint (4.5x mejor que el estándar de Google de 1.8s).",
+            "2": "Eliminé input lag escalando de 10 a 2,000+ ítems mediante virtual scroll y paginación.",
+            "3": "Reduje 60% de llamadas API implementando debouncing inteligente."
           }
         },
         "3": {
-          "main": "Optimicé rendimiento en vistas con alto volumen de datos",
+          "main": "Establecí arquitectura frontend moderna y escalable",
           "sub": {
-            "1": "Implementé paginación, virtual scroll y debouncing para mejorar fluidez.",
-            "2": "Eliminé el input lag al renderizar de 10 a 2,000 ítems, manteniendo un desplazamiento suave y fluido.",
-            "3": "Reduje ~60% de llamadas a APIs al evitar peticiones innecesarias mediante debouncing."
+            "1": "Diseñé sistema modular con Next.js App Router y Tailwind CSS.",
+            "2": "Reduje duplicación creando componentes reutilizables y escalables.",
+            "3": "Documenté patrones de desarrollo para el equipo."
           }
         },
         "4": {
-          "main": "Implementé testing comprehensivo para componentes críticos",
-          "sub": {
-            "1": "Pruebas unitarias con Jest para funciones clave.",
-            "2": "Pruebas de integración con React Testing Library.",
-            "3": "Aseguré robustez y estabilidad de nuevas funcionalidades."
-          }
-        },
-
-        "5": {
           "main": "Desarrollé y mantuve la plataforma 'Management' con nuevas funcionalidades",
           "sub": {
             "1": "Creé módulos de analíticas y monitoreo que agilizan la toma de decisiones.",
-            "2": "Estabilicé módulos legacy existentes.",
-            "3": "Cumplí con los objetivos consistentemente con mínimas regresiones."
+            "2": "Estabilicé módulos legacy con mínimas regresiones."
+          }
+        },
+        "5": {
+          "main": "Realicé integraciones confiables con APIs legacy del backend",
+          "sub": {
+            "1": "Implementé manejo de errores comprehensivo manteniendo la estabilidad del sistema.",
+            "2": "Aseguré consistencia de datos entre plataformas."
           }
         },
         "6": {
-          "main": "Realicé integraciones confiables con APIs legacy del backend",
+          "main": "Implementé testing comprehensivo para estabilidad",
           "sub": {
-            "1": "Implementé un manejo de errores comprehensivo.",
-            "2": "Aseguré la consistencia de datos entre plataformas."
+            "1": "Establecí pruebas unitarias (Jest) e integración (React Testing Library).",
+            "2": "Aseguré robustez en componentes críticos de la plataforma."
           }
         }
       }

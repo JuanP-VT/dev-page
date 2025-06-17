@@ -32,7 +32,7 @@
     "role-t": "role",
     "role": "\"Front-End Developer\"",
     "greeting": "Hi, I'm",
-    "description": "I'm a bilingual Front-End Developer who turns user frustrations into smooth experiences. Based in Mexico and specializing in React and Next.js, I bring one year of professional experience backed by over two years of self-taught learning, freelance work, and an engineering degree.",
+    "description": "Bilingual Front-End Developer specialized in React and Next.js. I transform user frustrations into seamless experiences, combining one year of professional experience with over two years of self-taught development and freelance projects. Engineer based in Mexico.",
     "contact": "Contact Me",
     "projects": "View Projects",
     "developer": "developer",
@@ -125,55 +125,52 @@
     "1": {
       "startDate": "July 2024",
       "endDate": "Present(1 year)",
-      "role": "Front-End Developer - PKT1",
-      "description": "PKT1 is a sustainable logistics company with operations in Mexico and Chile, specializing in shipping services for small and medium-sized businesses, with a focus on environmentally responsible solutions.",
+      "role": "Front-End Developer",
+      "description": "PKT1 - Sustainable Logistics Company, Mexico-Chile.",
       "bullet": {
         "1": {
-          "main": "Co-led the complete rebuild of Onsite 2, a business-critical logistics platform",
+          "main": "Co-led the complete rebuild of Onsite 2, a critical logistics platform",
           "sub": {
-            "1": "Delivered a key project in-house, generating ~60% cost savings (approx. ~$360K pesos) compared to outsourcing.",
-            "2": "Migrated legacy jQuery system to React/Next.js/TypeScript in 10 months.",
-            "3": "Significantly improved UX and code maintainability."
+            "1": "Migrated legacy system (jQuery) to React/Next.js/TypeScript over 10 months.",
+            "2": "Contributed to achieving 60% cost savings vs outsourcing (~$360K pesos) through internal delivery.",
+            "3": "Significantly improved UX and codebase maintainability."
           }
         },
         "2": {
-          "main": "Designed modular frontend architecture with Next.js App Router and Tailwind CSS",
+          "main": "Optimized performance for high-volume data views",
           "sub": {
-            "1": "Established robust UI consistency across all modules.",
-            "2": "Reduced style and component duplication.",
-            "3": "Optimized development workflows for new views."
+            "1": "Achieved 0.4s First Contentful Paint (4.5x better than Google's 1.8s standard).",
+            "2": "Eliminated input lag by scaling from 10 to 2,000+ items using virtual scroll and pagination.",
+            "3": "Reduced API calls by 60% implementing intelligent debouncing."
           }
         },
         "3": {
-          "main": "Optimized performance in views with high data volume",
+          "main": "Established modern, scalable frontend architecture",
           "sub": {
-            "1": "Implemented pagination, virtual scrolling, and debouncing to improve responsiveness.",
-            "2": "Eliminated input lag when rendering from 10 to 2,000 items, maintaining smooth scrolling.",
-            "3": "Reduced API calls by ~60% by preventing unnecessary requests through debouncing."
+            "1": "Designed modular system using Next.js App Router and Tailwind CSS.",
+            "2": "Reduced code duplication by creating reusable, scalable components.",
+            "3": "Documented development patterns for team knowledge sharing."
           }
         },
         "4": {
-          "main": "Implemented comprehensive testing for critical components",
-          "sub": {
-            "1": "Unit tests with Jest for key functions.",
-            "2": "Integration tests with React Testing Library.",
-            "3": "Ensured robustness and stability of new functionalities."
-          }
-        },
-
-        "5": {
           "main": "Developed and maintained 'Management' platform with new features",
           "sub": {
-            "1": "Delivered analytics and monitoring modules that streamlined decision-making.",
-            "2": "Stabilized existing legacy modules.",
-            "3": "Consistently met objectives with minimal regressions."
+            "1": "Built analytics and monitoring modules that accelerate decision-making.",
+            "2": "Stabilized legacy modules with minimal regressions."
+          }
+        },
+        "5": {
+          "main": "Delivered reliable integrations with legacy backend APIs",
+          "sub": {
+            "1": "Implemented comprehensive error handling while maintaining system stability.",
+            "2": "Ensured data consistency across platforms."
           }
         },
         "6": {
-          "main": "Integrated legacy backend APIs with robust handling",
+          "main": "Implemented comprehensive testing for platform stability",
           "sub": {
-            "1": "Implemented comprehensive error handling.",
-            "2": "Ensured data consistency across platforms."
+            "1": "Established unit testing (Jest) and integration testing (React Testing Library).",
+            "2": "Ensured robustness across critical platform components."
           }
         }
       }
