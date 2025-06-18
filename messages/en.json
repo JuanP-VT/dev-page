@@ -188,6 +188,15 @@
       }
     }
   },
+  "contact": {
+    "title": "Let's Connect",
+    "subtitle": "Ready to explore how I can add value to your team. Please feel free to get in touch",
+    "reach": "Reach Out",
+    "toast": {
+      "whatsapp": "WhatsApp number copied to clipboard!",
+      "email": "Email copied to clipboard!"
+    }
+  },
   "cases": {
     "onsite2": {
       "common": {

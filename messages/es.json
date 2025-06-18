@@ -142,7 +142,7 @@
           "sub": {
             "1": "Logré 0.4s First Contentful Paint (4.5x mejor que el estándar de Google de 1.8s).",
             "2": "Eliminé input lag escalando de 10 a 2,000+ ítems mediante virtual scroll y paginación.",
-            "3": "Reduje 60% de llamadas API implementando debouncing inteligente."
+            "3": "Reduje 60% de llamadas API implementando un debouncing eficiente."
           }
         },
         "3": {
@@ -187,6 +187,15 @@
         "3": "Gestioné el ciclo de vida completo del desarrollo de forma independiente, abarcando desde la concepción y la planificación inicial hasta la implementación y el despliegue final del producto.",
         "4": "Apliqué expertise autodidacta en TypeScript, arquitectura serverless, APIs RESTful y desarrollo frontend moderno con React."
       }
+    }
+  },
+  "contact": {
+    "title": "Conectemos",
+    "subtitle": "Estoy listo para demostrar cómo puedo aportar valor a tu equipo. No dudes en ponerte en contacto.",
+    "reach": "Contáctame",
+    "toast": {
+      "whatsapp": "¡Número de WhatsApp copiado al portapapeles!",
+      "email": "¡Correo electrónico copiado al portapapeles!"
     }
   },
   "cases": {

@@ -91,7 +91,7 @@ export default function ExperienceSection() {
                       <span className="h-5 w-5 mt-px flex-shrink-0 rounded-full bg-teal-500/70 text-teal-800 dark:bg-teal-500/20 dark:text-teal-400 flex items-center justify-center text-xs">
                         ✓
                       </span>
-                      <span className="dark:text-teal-400 text-teal-800">
+                      <span className="dark:text-teal-400 text-teal-600">
                         {item.main}
                       </span>
                     </div>

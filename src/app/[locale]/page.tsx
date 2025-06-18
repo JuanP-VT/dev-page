@@ -6,23 +6,25 @@ import ProjectSection from "@/components/sections/ProjectSection";
 import ScrollbarMount from "@/components/ScrollbarMount";
 import FloatingElements from "@/components/FloatingElements";
 import ExperienceSection from "@/components/sections/ExperienceSection";
+import ContactSection from "@/components/sections/ContactSection";
 
 export default function Page() {
-	return (
-		<div>
-			<NavBar />
-			<FloatingElements />
-			<div
-				id="portfolio"
-				className="px-4 md:px-24 h-[calc(100dvh-70px)] overflow-y-scroll relative"
-			>
-				<HeroSection />
-				<Terminal />
-				<TechStack />
-				<ProjectSection />
-				<ExperienceSection />
-				<ScrollbarMount id="#portfolio" />
-			</div>
-		</div>
-	);
+  return (
+    <div>
+      <NavBar />
+      <FloatingElements />
+      <div
+        id="portfolio"
+        className="px-4 md:px-24 h-[calc(100dvh-70px)] overflow-y-scroll relative"
+      >
+        <HeroSection />
+        <Terminal />
+        <TechStack />
+        <ProjectSection />
+        <ExperienceSection />
+        <ContactSection />
+        <ScrollbarMount id="#portfolio" />
+      </div>
+    </div>
+  );
 }
