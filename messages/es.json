@@ -127,7 +127,7 @@
       "startDate": "Julio 2024",
       "endDate": "Presente (1 año)",
       "role": "Desarrollador Front-End",
-      "description": "PKT1 - Empresa logística sustentable, México-Chile",
+      "description": "PKT1 - Empresa logística sustentable, México-Chile.",
       "bullet": {
         "1": {
           "main": "Co-lideré la reconstrucción completa de Onsite 2, plataforma logística crítica",
@@ -180,12 +180,12 @@
       "startDate": "Enero 2022",
       "endDate": "Julio 2024 (2.5 años)",
       "role": "Desarrollador Web Freelance y Autodidacta",
-      "description": "Enfocado en desarrollo web durante mi transición de la ingeniería industrial al desarrollo web. Desarrollé proyectos reales para pequeñas empresas, combinando aprendizaje autodidacta con necesidades específicas de cada cliente.",
+      "description": "Desarrollo de proyectos web completos como parte de mi transición autodidacta de ingeniería industrial a desarrollo web.",
       "bullet": {
         "1": "Arquitecté y construí desde cero una plataforma completa de e-commerce fullstack (Regina & Gael Studio), integrando funcionalidades complejas como autenticación de usuario, pasarela de pagos (PayPal), gestión de productos y entrega segura de archivos digitales.",
-        "2": "Diseñé y lancé un sitio web de marketing completamente responsive (Okayhey Temazcal) con integración de Contentful CMS, lo que permitió a usuarios no técnicos para gestionar y actualizar contenido dinámico, incluyendo blogs, FAQs y galerías de fotos.",
+        "2": "Diseñé y lancé un sitio web de marketing completamente responsive (Okayhey Temazcal) con integración de Contentful CMS, lo que permitió a usuarios no técnicos gestionar y actualizar contenido dinámico, incluyendo blogs, FAQs y galerías de fotos.",
         "3": "Gestioné el ciclo de vida completo del desarrollo de forma independiente, abarcando desde la concepción y la planificación inicial hasta la implementación y el despliegue final del producto.",
-        "4": "Apliqué conocimientos autodidactas en tecnologías clave como TypeScript, arquitectura serverless, APIs RESTful y prácticas de desarrollo frontend moderno utilizando Tailwind CSS."
+        "4": "Apliqué expertise autodidacta en TypeScript, arquitectura serverless, APIs RESTful y desarrollo frontend moderno con React."
       }
     }
   },

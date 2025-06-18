@@ -179,12 +179,12 @@
       "startDate": "January 2022",
       "endDate": "July 2024(2.5 years)",
       "role": "Freelance & Self-Taught Web Developer",
-      "description": "Focused on web development while transitioning from an industrial engineering background. Delivered real-world projects for small businesses, combining hands-on learning with practical client needs.",
+      "description": "Complete web project development as part of my self-taught transition from industrial engineering to web development.",
       "bullet": {
-        "1": "Architected and built a complete fullstack e-commerce platform (Regina & Gael Studio) from scratch, integrating complex functionalities such as user authentication, payment gateway (PayPal), product management, and secure digital file delivery.",
-        "2": "Designed and launched a fully responsive marketing site (Okayhey Temazcal) with Contentful CMS integration, which empowered non-technical clients to manage and update dynamic content, including blogs, FAQs, and photo galleries.",
+        "1": "Architected and built from scratch a complete fullstack e-commerce platform (Regina & Gael Studio), integrating complex functionalities such as user authentication, payment gateway (PayPal), product management, and secure digital file delivery.",
+        "2": "Designed and launched a fully responsive marketing website (Okayhey Temazcal) with Contentful CMS integration, enabling non-technical users to manage and update dynamic content, including blogs, FAQs, and photo galleries.",
         "3": "Managed complete development lifecycle independently, from design and planning through implementation and deployment.",
-        "4": "Applied self-taught expertise in TypeScript, serverless architecture, RESTful APIs, and modern frontend development using Tailwind CSS."
+        "4": "Applied self-taught expertise in TypeScript, serverless architecture, RESTful APIs, and modern frontend development using React."
       }
     }
   },
