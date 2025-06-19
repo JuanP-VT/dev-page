@@ -433,7 +433,7 @@ export default function Page() {
 						<div className="text-center">
 							<Button asChild size="lg">
 								<Link
-									className="bg-gradient-to-r to-emerald-400 dark:to-emerald-400 from-sky-500 dark:from-sky-500"
+									className="bg-gradient-to-r to-emerald-400 dark:to-emerald-400 text-zinc-100 from-sky-500 dark:from-sky-500"
 									href="/#projects"
 								>
 									{t("common.view")}

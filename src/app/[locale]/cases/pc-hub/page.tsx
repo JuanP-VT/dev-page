@@ -270,7 +270,7 @@ export default function ReginaGaelPage() {
 							</div>
 							<div className="flex flex-col">
 								<Card>
-									<CardContent className="gap-3 flex flex-col">
+									<CardContent className="flex flex-col gap-3">
 										<BulletPoint text={t("i&r.1")} />
 										<BulletPoint text={t("i&r.2")} />
 										<BulletPoint text={t("i&r.3")} />
@@ -336,7 +336,7 @@ export default function ReginaGaelPage() {
 						<div className="text-center">
 							<Button asChild size="lg">
 								<Link
-									className="bg-gradient-to-r to-emerald-400 dark:to-emerald-400 from-sky-500 dark:from-sky-500"
+									className="bg-gradient-to-r to-emerald-400 dark:to-emerald-400 text-zinc-100 from-sky-500 dark:from-sky-500"
 									href="/#projects"
 								>
 									{t("common.view")}
