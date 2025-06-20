@@ -121,7 +121,7 @@ export default function BeforeAfterSlider({
 						src={afterImage || "/placeholder.svg"}
 						alt={afterLabel}
 						fill
-						style={{ objectFit: "contain" }}
+						style={{ objectFit: "cover" }}
 					/>
 					<div className="absolute right-4 bottom-4 py-1 px-3 text-sm font-medium text-white rounded-full bg-black/70">
 						{t("after.title")}
