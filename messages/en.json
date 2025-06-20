@@ -61,6 +61,7 @@
     },
     "os2-title": "Onsite 2 | Full Rebuild of Core Logistics App",
     "os2-description": "As one of two developers, I contributed significantly to rebuilding our company's main logistics app used by clients to quote and ship packages. We replaced a legacy jQuery-based version with a fully modern tech stack, delivering a fresh UI/UX, better performance, and long-term maintainability. This rewrite became the new foundation for the product's continued growth",
+    "os2-disclaimer": "The project is deployed on a private vercel.app instance for internal PKT1 use. Currently in its final development phase, it requires a company account for access. Please refer to the case study or contact me for a walkthrough.",
 
     "management-title": "Management | Enhancements and Maintenance",
     "management-description": "Contributed to the ongoing development of our company's internal logistics platform, which supports operational monitoring, analytics, and administrative controls. Although the system was established prior to my tenure, I was responsible for implementing new modules, resolving bugs, and enhancing existing features.",
@@ -140,8 +141,9 @@
           "main": "Optimized performance for high-volume data views",
           "sub": {
             "1": "Achieved 0.4s First Contentful Paint (4.5x better than Google's 1.8s standard).",
-            "2": "Eliminated input lag by scaling from 10 to 2,000+ items using virtual scroll and pagination.",
-            "3": "Reduced API calls by 60% implementing intelligent debouncing."
+            "2": "Reached 1.6s maximum Largest Contentful Paint (37% better than Google's 2.5s standard).",
+            "3": "Eliminated input lag by scaling from 10 to 2,000+ items through virtual scrolling and pagination.",
+            "4": "Reduced API calls by 60% implementing intelligent debouncing, improving user experience and reducing server costs."
           }
         },
         "3": {

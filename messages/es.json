@@ -141,8 +141,9 @@
           "main": "Optimicé el rendimiento en vistas con alto volumen de datos",
           "sub": {
             "1": "Logré 0.4s First Contentful Paint (4.5x mejor que el estándar de Google de 1.8s).",
-            "2": "Eliminé input lag escalando de 10 a 2,000+ ítems mediante virtual scroll y paginación.",
-            "3": "Reduje 60% de llamadas API implementando un debouncing eficiente."
+            "2": "Optimicé el Largest Contentful Paint a máximo 1.6s (37% mejor que el estándar de Google de 2.5s).",
+            "3": "Eliminé input lag escalando de 10 a 2,000+ ítems mediante virtual scroll y paginación.",
+            "4": "Reduje 60% de llamadas API implementando un debouncing inteligente mejorando la experiencia del usuario y reduciendo costos de servidor."
           }
         },
         "3": {
