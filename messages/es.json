@@ -74,7 +74,7 @@
 
 		"temazcal-title": "Okayhey Temazcal | Presencia Web + Integración CMS",
 		"temazcal-description": "Diseñé y desarrollé un sitio web moderno y responsive para el negocio de temazcal de mi hermano. Integré Contentful CMS para permitir a usuarios no técnicos gestionar contenido dinámico como blogs, galerías y FAQs. El sitio incluía página principal, blog, galería de fotos, FAQ y sección de contacto, todo orientado a impulsar su presencia online y mejorar el compromiso con los clientes.",
-		"temazcal-disclaimer": "Este proyecto estuvo en línea y en uso durante varios meses como la página oficial del negocio familiar. Actualmente, el sitio no está activo debido al cierre del negocio. Aun así, el código fuente y la arquitectura del CMS siguen disponibles para revisión. Consulta el caso de estudio o contáctame para una demostración técnica.",
+		"temazcal-disclaimer": "Este proyecto estuvo en línea y en uso durante varios meses como la página oficial del negocio familiar. Actualmente, el sitio no está activo debido al cierre del negocio. Aun así, el código fuente y la arquitectura del CMS siguen disponibles para revisión. Consulta el código en GitHub o contáctame para una demostración técnica.",
 
 		"regina-title": "Regina & Gael Studio | Plataforma E-commerce Fullstack",
 		"regina-description": "Construí una plataforma de e-commerce completa para la tienda digital de artesanías de mi cuñada. La aplicación incluía autenticación de usuarios, gestión de productos, integración con PayPal y entrega segura de archivos digitales mediante URLs firmadas. Desarrollé la arquitectura completa de frontend y backend desde cero, creando una solución escalable para vender contenido descargable online.",
@@ -88,6 +88,7 @@
 
 		"fortnite-title": "App de Carrito de Compras Fortnite | Integración API & Lógica de Carrito",
 		"fortnite-description": "Construí una aplicación estilo eCommerce dinámica que obtiene datos de productos en vivo desde la API Pública de Fortnite. La app incluye página principal, catálogo de productos y un sistema de carrito de compras completamente funcional. Desarrollado con TypeScript y React, enfocándome en componentes funcionales, hooks y enrutamiento del lado del cliente con React Router.",
+		"fortnite-disclaimer":"Este proyecto lo desarrollé en las primeras etapas de mi aprendizaje con el objetivo de investigar sobre APIs, manejo de estados y arquitectura de componentes. Desde entonces, la API original de Fortnite (https://fortnite-api.com/v2/shop/br) de la que dependía ha quedado obsoleta, lo que hace que la aplicación esté inoperativa en este momento. La conservo en mi portafolio como un testimonio de mi proceso de autoaprendizaje y mi evolución.",
 
 		"curriculum-title": "Generador de Currículums | Creador Dinámico de PDFs",
 		"curriculum-description": "Creé una aplicación React que permite a los usuarios ingresar información personal y profesional para generar un currículum en PDF descargable. Construido con TypeScript usando componentes basados en clases, este proyecto profundizó mi comprensión del estado de los componentes, métodos de ciclo de vida y manejo de entrada estructurada de usuarios.",

@@ -74,7 +74,7 @@
 
 		"temazcal-title": "Okayhey Temazcal | Web Presence + CMS Integration",
 		"temazcal-description": "Designed and developed a modern, responsive website for my brother's temazcal business. Integrated Contentful CMS to allow non-technical users to manage dynamic content such as blogs, gallery, and FAQs. The site included a homepage, blog, photo gallery, FAQ, and contact section all aimed at boosting their online presence and improving client engagement.",
-		"temazcal-disclaimer": "This project has been online and in use for several months as the official website for the family business. Currently, the site is not active due to the closure of the business. However, the source code and CMS architecture are still available for review. Check out the case study or contact me for a technical demo.",
+		"temazcal-disclaimer": "This project has been online and in use for several months as the official website for the family business. Currently, the site is not active due to the closure of the business. However, the source code and CMS architecture are still available for review. Check out the code on GitHub or contact me for a technical demo.",
 
 		"regina-title": "Regina & Gael Studio | Fullstack E-commerce Platform",
 		"regina-description": "Built a complete e-commerce platform for my sister-in-law's digital craft store. The app included user authentication, product management, PayPal payment integration, and secure digital file delivery via signed URLs. Developed the full backend and frontend architecture from scratch, creating a scalable solution for selling downloadable content online.",
@@ -88,6 +88,7 @@
 
 		"fortnite-title": "Fortnite Shopping Cart App | API Integration & Cart Logic",
 		"fortnite-description": "Built a dynamic eCommerce-style app that fetches live product data from the Fortnite Public API. The app features a homepage, product catalog, and a fully functional shopping cart system. Developed with TypeScript and React, focusing on functional components, hooks, and client-side routing with React Router.",
+		"fortnite-disclaimer":"This project was created early in my learning journey as a way to explore APIs, state management, and component architecture. The original Fortnite API(https://fortnite-api.com/v2/shop/br) it relied on has since been deprecated, so the app is currently non-functional. I’ve kept it in my portfolio as a milestone of my self-taught path and progression",
 
 		"curriculum-title": "Curriculum Builder | Dynamic PDF Generator",
 		"curriculum-description": "Created a React application that allows users to input personal and professional information and generate a downloadable PDF résumé. Built with TypeScript using class-based components, this project deepened my understanding of component state, lifecycle methods, and handling structured user input.",

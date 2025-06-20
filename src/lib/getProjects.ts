@@ -104,6 +104,7 @@ export function useProjects() {
 			githubLink: "https://github.com/JuanP-VT/shop-app",
 			featured: false,
 			level: "Learning",
+			disclaimer: t("fortnite-disclaimer"),
 		},
 		{
 			title: t("curriculum-title"),
