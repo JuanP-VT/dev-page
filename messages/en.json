@@ -88,7 +88,7 @@
 
 		"fortnite-title": "Fortnite Shopping Cart App | API Integration & Cart Logic",
 		"fortnite-description": "Built a dynamic eCommerce-style app that fetches live product data from the Fortnite Public API. The app features a homepage, product catalog, and a fully functional shopping cart system. Developed with TypeScript and React, focusing on functional components, hooks, and client-side routing with React Router.",
-		"fortnite-disclaimer":"This project was created early in my learning journey as a way to explore APIs, state management, and component architecture. The original Fortnite API(https://fortnite-api.com/v2/shop/br) it relied on has since been deprecated, so the app is currently non-functional. I’ve kept it in my portfolio as a milestone of my self-taught path and progression",
+		"fortnite-disclaimer": "This project was created early in my learning journey as a way to explore APIs, state management, and component architecture. The original Fortnite API(https://fortnite-api.com/v2/shop/br) it relied on has since been deprecated, so the app is currently non-functional. I’ve kept it in my portfolio as a milestone of my self-taught path and progression",
 
 		"curriculum-title": "Curriculum Builder | Dynamic PDF Generator",
 		"curriculum-description": "Created a React application that allows users to input personal and professional information and generate a downloadable PDF résumé. Built with TypeScript using class-based components, this project deepened my understanding of component state, lifecycle methods, and handling structured user input.",
@@ -209,13 +209,13 @@
 				"view": "View More Projects",
 				"case-study": "Case Study"
 			},
-			"title": "Onsite 2 | Full Rebuild",
-			"sub-title": "A ground-up redesign of a core legacy logistics app.",
+			"title": "Onsite 2 | From jQuery to React: Total Overhaul",
+			"sub-title": "Redesign from scratch of the main logistics application for clients.",
 			"role": "Frontend Developer",
 			"duration": "Ago 2024 - Ongoing Development",
 			"overview-title": "Overview",
-			"overview-description": "Onsite is our company’s main logistics platform, used by business clients to manage every step of their shipping operations. Clients can quote and send packages, track shipments, download invoices, view historical data, and handle account settings from a single interface.",
-			"overview-description2": "The original version was a legacy jQuery application that grew without a clear structure, resulting in a fragile, inconsistent codebase that was hard to maintain and extend. The goal was to replace it with a fully modern web application. The result is a significantly improved user experience and a much more scalable and maintainable system..",
+			"overview-description": "Onsite is the company's main logistics platform, used by business clients to manage the entire lifecycle of their shipments. From quoting and scheduling pickups to tracking packages, downloading invoices, and accessing historical reports, users can handle their entire logistics operation from a single interface.",
+			"overview-description2": "The previous version, built with jQuery, had evolved without a defined architecture, resulting in a fragile, hard-to-maintain, and poorly scalable codebase. The goal was to completely replace it with a modern, robust, and user-centered application. The result: a significantly smoother experience, a faster system, and a tech foundation ready to scale.",
 			"g&c": {
 				"title": "Goals & Challenges",
 				"goals": {
@@ -288,20 +288,19 @@
 			},
 			"i&r": {
 				"title": "Impact & Results",
-				"1": "Faster render times",
-				"2": "Estimated UI code reduction",
-				"3": "Positive feedback from internal stakeholders",
-				"description": "The rebuild marks a major leap in usability and maintainability. Internal stakeholders involved in testing have praised the cleaner design and clearer structure, noting that previously confusing workflows are now streamlined. From a development perspective, the new modular architecture has significantly improved scalability and speed of implementation, setting the foundation for faster iteration and long-term product evolution."
+				"1": "4.5 times better than Google's standard (1.8s)",
+				"2": "Surpassing Google's 2.5-second standard by 37%",
+				"3": "Cost savings compared to outsourcing (approx. $360K MXN)",
+				"description": "My role in the complete rebuild of Onsite 2 was key. With significant autonomy, I was able to define and execute the technical vision of the project, driving substantial improvements in performance and maintainability with proactive solutions. Not only did I modernize and optimize the platform in just 10 months, but this approach also generated 95% positive feedback from the internal team."
 			},
 			"reflection": {
 				"title": "Reflection",
 				"learned": {
 					"title": "What I Learned",
 					"description": "Working on Onsite 2 pushed me to a new level of ownership and problem-solving. As one of only two developers on the project, I was responsible for independently delivering entire modules from architectural decisions to final UI details often without direct guidance. This experience sharpened my ability to:",
-					"1": "Make architectural and tech decisions confidently.",
-					"2": "Balance maintainability with business-driven deadlines.",
-					"3": "Break down large, ambiguous tasks into achievable steps.",
-					"4": "Communicate effectively with non-technical stakeholders to clarify requirements.",
+					"1": "Balance maintainability with business-driven deadlines.",
+					"2": "Break down large, ambiguous tasks into achievable steps.",
+					"3": "Communicate effectively with stakeholders to clarify requirements.",
 					"description2": "While the autonomy was challenging, it helped me grow significantly as a frontend developer. I left this project with stronger technical instincts, more confidence in my judgment, and a deeper understanding of how to build scalable interfaces in real-world product environments."
 				},
 				"dif": {

@@ -322,7 +322,7 @@ export default function Page() {
 								<Card>
 									<CardContent className="p-6 text-center">
 										<div className="mb-2 text-3xl font-bold text-emerald-500">
-											80%
+											0.4s FCP
 										</div>
 										<div className="text-sm text-muted-foreground">
 											{t("i&r.1")}
@@ -332,7 +332,7 @@ export default function Page() {
 								<Card>
 									<CardContent className="p-6 text-center">
 										<div className="mb-2 text-3xl font-bold text-teal-500">
-											60%
+											1.6s max LCP
 										</div>
 										<div className="text-sm text-muted-foreground">
 											{t("i&r.2")}
@@ -342,7 +342,7 @@ export default function Page() {
 								<Card>
 									<CardContent className="p-6 text-center">
 										<div className="mb-2 text-3xl font-bold text-cyan-500">
-											95%
+											~60%
 										</div>
 										<div className="text-sm text-muted-foreground">
 											{t("i&r.3")}
@@ -386,7 +386,6 @@ export default function Page() {
 													<BulletPoint text={t("reflection.learned.1")} />
 													<BulletPoint text={t("reflection.learned.2")} />
 													<BulletPoint text={t("reflection.learned.3")} />
-													<BulletPoint text={t("reflection.learned.4")} />
 												</div>
 												{t("reflection.learned.description2")}
 											</div>
