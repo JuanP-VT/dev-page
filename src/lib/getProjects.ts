@@ -12,6 +12,8 @@ export function useProjects() {
 			featured: true,
 			level: "Professional",
 			caseStudyLink: "/cases/onsite2",
+			liveLink: "https://onsite-pkt1-v2-test.vercel.app/",
+			disclaimer: t("os2-disclaimer"),
 		},
 		{
 			title: t("management-title"),

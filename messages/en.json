@@ -1,585 +1,585 @@
 {
-  "navbar": {
-    "portfolio": "Portfolio",
-    "about": "About",
-    "tech": "Tech",
-    "projects": "Projects",
-    "experience": "Experience",
-    "contact": "Contact"
-  },
-  "lang": {
-    "language": "Language",
-    "spanish": "Spanish",
-    "english": "English"
-  },
-  "terminal": {
-    "1-command": "whoami",
-    "1-output": "Juan Pablo, Front-End Developer",
-    "2-command": "cat skills.txt",
-    "2-output": "JavaScript, TypeScript, React, Next.js, Node.js, Express, NestJS, SQL, NoSQL",
-    "3-command": "grep experience resume.txt",
-    "3-output": "1 year professional | 2.5+ years self-taught & freelance dev",
-    "4-command": "ls -la projects/",
-    "4-output": "OnSite-rebuild / Regina & Gael Studio / Temazcal Los Mochis / PC-Hub /",
-    "5-command": "echo $LOCATION",
-    "5-output": "Mexico",
-    "6-command": "echo $LANGUAGES",
-    "6-output": "Spanish, English",
-    "close": "close",
-    "open": "open"
-  },
-  "hero": {
-    "role-t": "role",
-    "role": "\"Front-End Developer\"",
-    "greeting": "Hi, I'm",
-    "description": "Bilingual Front-End Developer specialized in React and Next.js. I transform user frustrations into seamless experiences, combining one year of professional experience with over two years of self-taught development and freelance projects. Engineer based in Mexico.",
-    "contact": "Contact Me",
-    "projects": "View Projects",
-    "developer": "developer",
-    "creativity": "creativity",
-    "brain": "'brain'"
-  },
-  "tech": {
-    "description": "Technologies I've been working with to bring ideas to life",
-    "frontend": "Frontend",
-    "backend": "Backend",
-    "tools": "Herramientas"
-  },
-  "projects": {
-    "title": "Projects",
-    "description": "A selection of my recent professional work at PKT1 and personal projects",
-    "all": "All",
-    "levels": {
-      "Professional": "Professional",
-      "Freelance": "Freelance",
-      "Learning": "Learning"
-    },
-    "links": {
-      "case": "Case Study",
-      "demo": "Live Demo",
-      "github": "GitHub"
-    },
-    "os2-title": "Onsite 2 | Full Rebuild of Core Logistics App",
-    "os2-description": "As one of two developers, I contributed significantly to rebuilding our company's main logistics app used by clients to quote and ship packages. We replaced a legacy jQuery-based version with a fully modern tech stack, delivering a fresh UI/UX, better performance, and long-term maintainability. This rewrite became the new foundation for the product's continued growth",
-    "os2-disclaimer": "The project is deployed on a private vercel.app instance for internal PKT1 use. Currently in its final development phase, it requires a company account for access. Please refer to the case study or contact me for a walkthrough.",
+	"navbar": {
+		"portfolio": "Portfolio",
+		"about": "About",
+		"tech": "Tech",
+		"projects": "Projects",
+		"experience": "Experience",
+		"contact": "Contact"
+	},
+	"lang": {
+		"language": "Language",
+		"spanish": "Spanish",
+		"english": "English"
+	},
+	"terminal": {
+		"1-command": "whoami",
+		"1-output": "Juan Pablo, Front-End Developer",
+		"2-command": "cat skills.txt",
+		"2-output": "JavaScript, TypeScript, React, Next.js, Node.js, Express, NestJS, SQL, NoSQL",
+		"3-command": "grep experience resume.txt",
+		"3-output": "1 year professional | 2.5+ years self-taught & freelance dev",
+		"4-command": "ls -la projects/",
+		"4-output": "OnSite-rebuild / Regina & Gael Studio / Temazcal Los Mochis / PC-Hub /",
+		"5-command": "echo $LOCATION",
+		"5-output": "Mexico",
+		"6-command": "echo $LANGUAGES",
+		"6-output": "Spanish, English",
+		"close": "close",
+		"open": "open"
+	},
+	"hero": {
+		"role-t": "role",
+		"role": "\"Front-End Developer\"",
+		"greeting": "Hi, I'm",
+		"description": "Bilingual Front-End Developer specialized in React and Next.js. I transform user frustrations into seamless experiences, combining one year of professional experience with over two years of self-taught development and freelance projects. Engineer based in Mexico.",
+		"contact": "Contact Me",
+		"projects": "View Projects",
+		"developer": "developer",
+		"creativity": "creativity",
+		"brain": "'brain'"
+	},
+	"tech": {
+		"description": "Technologies I've been working with to bring ideas to life",
+		"frontend": "Frontend",
+		"backend": "Backend",
+		"tools": "Herramientas"
+	},
+	"projects": {
+		"title": "Projects",
+		"description": "A selection of my recent professional work at PKT1 and personal projects",
+		"all": "All",
+		"levels": {
+			"Professional": "Professional",
+			"Freelance": "Freelance",
+			"Learning": "Learning"
+		},
+		"links": {
+			"case": "Case Study",
+			"demo": "Live Demo",
+			"github": "GitHub"
+		},
+		"os2-title": "Onsite 2 | Full Rebuild of Core Logistics App",
+		"os2-description": "As one of two developers, I contributed significantly to rebuilding our company's main logistics app used by clients to quote and ship packages. We replaced a legacy jQuery-based version with a fully modern tech stack, delivering a fresh UI/UX, better performance, and long-term maintainability. This rewrite became the new foundation for the product's continued growth",
+		"os2-disclaimer": "The project is deployed on a private vercel.app instance for internal PKT1 use. Currently in its final development phase, it requires a company account for access. Please refer to the case study or contact me for a walkthrough.",
 
-    "management-title": "Management | Enhancements and Maintenance",
-    "management-description": "Contributed to the ongoing development of our company's internal logistics platform, which supports operational monitoring, analytics, and administrative controls. Although the system was established prior to my tenure, I was responsible for implementing new modules, resolving bugs, and enhancing existing features.",
+		"management-title": "Management | Enhancements and Maintenance",
+		"management-description": "Contributed to the ongoing development of our company's internal logistics platform, which supports operational monitoring, analytics, and administrative controls. Although the system was established prior to my tenure, I was responsible for implementing new modules, resolving bugs, and enhancing existing features.",
 
-    "onsite1-title": "Onsite 1 | Legacy Code Maintenance",
-    "onsite1-description": "Maintained and debugged a legacy application critical to the company's logistics operations. The project was built with jQuery, HTML, and CSS, and had grown without architectural planning resulting in long, unstructured files and inconsistent modularization. Despite the technical debt and lack of documentation, I successfully implemented fixes and improvements when needed.",
+		"onsite1-title": "Onsite 1 | Legacy Code Maintenance",
+		"onsite1-description": "Maintained and debugged a legacy application critical to the company's logistics operations. The project was built with jQuery, HTML, and CSS, and had grown without architectural planning resulting in long, unstructured files and inconsistent modularization. Despite the technical debt and lack of documentation, I successfully implemented fixes and improvements when needed.",
 
-    "internal-tooling-title": "Internal Tooling | Temporary Node.js Backend APIs",
-    "internal-tooling-description": "To help our .NET team manage load during peak demand, I proactively developed several Node.js endpoints to enable frontend progress and unblock workflows. These APIs were later replaced by .NET microservices, but played a key role in accelerating initial development and testing phases.",
+		"internal-tooling-title": "Internal Tooling | Temporary Node.js Backend APIs",
+		"internal-tooling-description": "To help our .NET team manage load during peak demand, I proactively developed several Node.js endpoints to enable frontend progress and unblock workflows. These APIs were later replaced by .NET microservices, but played a key role in accelerating initial development and testing phases.",
 
-    "temazcal-title": "Okayhey Temazcal | Web Presence + CMS Integration",
-    "temazcal-description": "Designed and developed a modern, responsive website for my brother's temazcal business. Integrated Contentful CMS to allow non-technical users to manage dynamic content such as blogs, gallery, and FAQs. The site included a homepage, blog, photo gallery, FAQ, and contact section all aimed at boosting their online presence and improving client engagement.",
+		"temazcal-title": "Okayhey Temazcal | Web Presence + CMS Integration",
+		"temazcal-description": "Designed and developed a modern, responsive website for my brother's temazcal business. Integrated Contentful CMS to allow non-technical users to manage dynamic content such as blogs, gallery, and FAQs. The site included a homepage, blog, photo gallery, FAQ, and contact section all aimed at boosting their online presence and improving client engagement.",
 
-    "regina-title": "Regina & Gael Studio | Fullstack E-commerce Platform",
-    "regina-description": "Built a complete e-commerce platform for my sister-in-law's digital craft store. The app included user authentication, product management, PayPal payment integration, and secure digital file delivery via signed URLs. Developed the full backend and frontend architecture from scratch, creating a scalable solution for selling downloadable content online.",
+		"regina-title": "Regina & Gael Studio | Fullstack E-commerce Platform",
+		"regina-description": "Built a complete e-commerce platform for my sister-in-law's digital craft store. The app included user authentication, product management, PayPal payment integration, and secure digital file delivery via signed URLs. Developed the full backend and frontend architecture from scratch, creating a scalable solution for selling downloadable content online.",
 
-    "pchub-title": "PC Hub | Fullstack Ecommerce Learning Project",
-    "pchub-description": "Developed a fully functional eCommerce prototype from scratch to showcase fullstack skills. Features include user authentication, product catalog with filters, shopping cart, checkout, user profiles, and an admin panel for product management.",
+		"pchub-title": "PC Hub | Fullstack Ecommerce Learning Project",
+		"pchub-description": "Developed a fully functional eCommerce prototype from scratch to showcase fullstack skills. Features include user authentication, product catalog with filters, shopping cart, checkout, user profiles, and an admin panel for product management.",
 
-    "inventory-title": "Inventory Manager App | Fullstack CRUD System",
-    "inventory-description": "Developed a fullstack inventory management tool. Practiced API integration, CRUD operations, and NoSQL data modeling. This project laid the foundation for more complex work like PC-Hub.",
+		"inventory-title": "Inventory Manager App | Fullstack CRUD System",
+		"inventory-description": "Developed a fullstack inventory management tool. Practiced API integration, CRUD operations, and NoSQL data modeling. This project laid the foundation for more complex work like PC-Hub.",
 
-    "fortnite-title": "Fortnite Shopping Cart App | API Integration & Cart Logic",
-    "fortnite-description": "Built a dynamic eCommerce-style app that fetches live product data from the Fortnite Public API. The app features a homepage, product catalog, and a fully functional shopping cart system. Developed with TypeScript and React, focusing on functional components, hooks, and client-side routing with React Router.",
+		"fortnite-title": "Fortnite Shopping Cart App | API Integration & Cart Logic",
+		"fortnite-description": "Built a dynamic eCommerce-style app that fetches live product data from the Fortnite Public API. The app features a homepage, product catalog, and a fully functional shopping cart system. Developed with TypeScript and React, focusing on functional components, hooks, and client-side routing with React Router.",
 
-    "curriculum-title": "Curriculum Builder | Dynamic PDF Generator",
-    "curriculum-description": "Created a React application that allows users to input personal and professional information and generate a downloadable PDF résumé. Built with TypeScript using class-based components, this project deepened my understanding of component state, lifecycle methods, and handling structured user input.",
+		"curriculum-title": "Curriculum Builder | Dynamic PDF Generator",
+		"curriculum-description": "Created a React application that allows users to input personal and professional information and generate a downloadable PDF résumé. Built with TypeScript using class-based components, this project deepened my understanding of component state, lifecycle methods, and handling structured user input.",
 
-    "weather-title": "Weather Forecast App | Global Weather Lookup",
-    "weather-description": "Built a weather application that fetches real-time data and a five-day forecast for any location worldwide. Focused on API integration, reading third-party documentation, and improving code quality with linters and cleaner styling.",
+		"weather-title": "Weather Forecast App | Global Weather Lookup",
+		"weather-description": "Built a weather application that fetches real-time data and a five-day forecast for any location worldwide. Focused on API integration, reading third-party documentation, and improving code quality with linters and cleaner styling.",
 
-    "library-title": "Library App | Book Tracking Interface",
-    "library-description": "Developed a simple book management app that stores user input as stylized cards. Practiced clean code principles, worked with JavaScript data structures, and implemented persistence using LocalStorage.",
+		"library-title": "Library App | Book Tracking Interface",
+		"library-description": "Developed a simple book management app that stores user input as stylized cards. Practiced clean code principles, worked with JavaScript data structures, and implemented persistence using LocalStorage.",
 
-    "todo-title": "To Do List App | Personal Task Manager",
-    "todo-description": "Built a task management app allowing users to organize activities into projects. Focused on modular architecture, clean code principles, and deepened object-oriented programming knowledge. Utilized Webpack to bundle and structure the application.",
+		"todo-title": "To Do List App | Personal Task Manager",
+		"todo-description": "Built a task management app allowing users to organize activities into projects. Focused on modular architecture, clean code principles, and deepened object-oriented programming knowledge. Utilized Webpack to bundle and structure the application.",
 
-    "restaurant-title": "Restaurant Page | Dynamic Interface with Vanilla JS",
-    "restaurant-description": "Built a modular, multi-section restaurant website using vanilla JavaScript and Webpack. Focused on dynamic content generation, clean code structure, and modularization principles.",
+		"restaurant-title": "Restaurant Page | Dynamic Interface with Vanilla JS",
+		"restaurant-description": "Built a modular, multi-section restaurant website using vanilla JavaScript and Webpack. Focused on dynamic content generation, clean code structure, and modularization principles.",
 
-    "etch-title": "Etch A Sketch | Interactive Drawing Board",
-    "etch-description": "Developed a browser-based drawing board with multiple modes using vanilla JavaScript. Practiced complex DOM manipulation, event handling, and code organization.",
+		"etch-title": "Etch A Sketch | Interactive Drawing Board",
+		"etch-description": "Developed a browser-based drawing board with multiple modes using vanilla JavaScript. Practiced complex DOM manipulation, event handling, and code organization.",
 
-    "tictactoe-title": "Tic Tac Toe | Classic Game",
-    "tictactoe-description": "Created a fully playable Tic Tac Toe game for one player. Focused on JavaScript object modeling, design patterns, and applying more advanced logic and DOM interaction techniques.",
+		"tictactoe-title": "Tic Tac Toe | Classic Game",
+		"tictactoe-description": "Created a fully playable Tic Tac Toe game for one player. Focused on JavaScript object modeling, design patterns, and applying more advanced logic and DOM interaction techniques.",
 
-    "rps-title": "Rock Paper Scissors | Simple Game vs CPU",
-    "rps-description": "Built a classic Rock-Paper-Scissors game. Practiced core logic implementation and DOM manipulation fundamentals.",
+		"rps-title": "Rock Paper Scissors | Simple Game vs CPU",
+		"rps-description": "Built a classic Rock-Paper-Scissors game. Practiced core logic implementation and DOM manipulation fundamentals.",
 
-    "admin-title": "Admin Dashboard | Static Layout with CSS Grid & Flexbox",
-    "admin-description": "Created a responsive admin dashboard layout using only HTML and CSS. Focused on mastering Flexbox and Grid to build clean and structured layouts.",
+		"admin-title": "Admin Dashboard | Static Layout with CSS Grid & Flexbox",
+		"admin-description": "Created a responsive admin dashboard layout using only HTML and CSS. Focused on mastering Flexbox and Grid to build clean and structured layouts.",
 
-    "signup-title": "Sign Up Page | Styled Registration Form",
-    "signup-description": "Built a user registration form with attention to detail in styling, validation cues, and layout using HTML and CSS. Practiced PseudoClasses, PseudoElements, and form design fundamentals.",
+		"signup-title": "Sign Up Page | Styled Registration Form",
+		"signup-description": "Built a user registration form with attention to detail in styling, validation cues, and layout using HTML and CSS. Practiced PseudoClasses, PseudoElements, and form design fundamentals.",
 
-    "landing-title": "Landing Page | Basic Static Homepage",
-    "landing-description": "Designed a simple homepage with foundational HTML and CSS. Learned the box model, element structure, and styling fundamentals the very first step my dev journey."
-  },
-  "experience": {
-    "title": "Work Experience",
-    "subtitle": "From Industrial Engineering to Professional Web Development",
-    "1": {
-      "startDate": "July 2024",
-      "endDate": "Present(1 year)",
-      "role": "Front-End Developer",
-      "description": "PKT1 - Sustainable Logistics Company, Mexico-Chile.",
-      "bullet": {
-        "1": {
-          "main": "Co-led the complete rebuild of Onsite 2, a critical logistics platform",
-          "sub": {
-            "1": "Migrated legacy system (jQuery) to React/Next.js/TypeScript over 10 months.",
-            "2": "Contributed to achieving 60% cost savings vs outsourcing (~$360K pesos) through internal delivery.",
-            "3": "Significantly improved UX and codebase maintainability."
-          }
-        },
-        "2": {
-          "main": "Optimized performance for high-volume data views",
-          "sub": {
-            "1": "Achieved 0.4s First Contentful Paint (4.5x better than Google's 1.8s standard).",
-            "2": "Reached 1.6s maximum Largest Contentful Paint (37% better than Google's 2.5s standard).",
-            "3": "Eliminated input lag by scaling from 10 to 2,000+ items through virtual scrolling and pagination.",
-            "4": "Reduced API calls by 60% implementing intelligent debouncing, improving user experience and reducing server costs."
-          }
-        },
-        "3": {
-          "main": "Established modern, scalable frontend architecture",
-          "sub": {
-            "1": "Designed modular system using Next.js App Router and Tailwind CSS.",
-            "2": "Reduced code duplication by creating reusable, scalable components.",
-            "3": "Documented development patterns for team knowledge sharing."
-          }
-        },
-        "4": {
-          "main": "Developed and maintained 'Management' platform with new features",
-          "sub": {
-            "1": "Built analytics and monitoring modules that accelerate decision-making.",
-            "2": "Stabilized legacy modules with minimal regressions."
-          }
-        },
-        "5": {
-          "main": "Delivered reliable integrations with legacy backend APIs",
-          "sub": {
-            "1": "Implemented comprehensive error handling while maintaining system stability.",
-            "2": "Ensured data consistency across platforms."
-          }
-        },
-        "6": {
-          "main": "Implemented comprehensive testing for platform stability",
-          "sub": {
-            "1": "Established unit testing (Jest) and integration testing (React Testing Library).",
-            "2": "Ensured robustness across critical platform components."
-          }
-        }
-      }
-    },
-    "2": {
-      "startDate": "January 2022",
-      "endDate": "July 2024(2.5 years)",
-      "role": "Freelance & Self-Taught Web Developer",
-      "description": "Complete web project development as part of my self-taught transition from industrial engineering to web development.",
-      "bullet": {
-        "1": "Architected and built from scratch a complete fullstack e-commerce platform (Regina & Gael Studio), integrating complex functionalities such as user authentication, payment gateway (PayPal), product management, and secure digital file delivery.",
-        "2": "Designed and launched a fully responsive marketing website (Okayhey Temazcal) with Contentful CMS integration, enabling non-technical users to manage and update dynamic content, including blogs, FAQs, and photo galleries.",
-        "3": "Managed complete development lifecycle independently, from design and planning through implementation and deployment.",
-        "4": "Applied self-taught expertise in TypeScript, serverless architecture, RESTful APIs, and modern frontend development using React."
-      }
-    }
-  },
-  "contact": {
-    "title": "Let's Connect",
-    "subtitle": "Ready to explore how I can add value to your team. Please feel free to get in touch",
-    "reach": "Reach Out",
-    "toast": {
-      "whatsapp": "WhatsApp number copied to clipboard!",
-      "email": "Email copied to clipboard!"
-    }
-  },
-  "cases": {
-    "onsite2": {
-      "common": {
-        "back": "Go Back",
-        "view": "View More Projects",
-        "case-study": "Case Study"
-      },
-      "title": "Onsite 2 | Full Rebuild",
-      "sub-title": "A ground-up redesign of a core legacy logistics app.",
-      "role": "Frontend Developer",
-      "duration": "Ago 2024 - Ongoing Development",
-      "overview-title": "Overview",
-      "overview-description": "Onsite is our company’s main logistics platform, used by business clients to manage every step of their shipping operations. Clients can quote and send packages, track shipments, download invoices, view historical data, and handle account settings from a single interface.",
-      "overview-description2": "The original version was a legacy jQuery application that grew without a clear structure, resulting in a fragile, inconsistent codebase that was hard to maintain and extend. The goal was to replace it with a fully modern web application. The result is a significantly improved user experience and a much more scalable and maintainable system..",
-      "g&c": {
-        "title": "Goals & Challenges",
-        "goals": {
-          "title": "Goals",
-          "1": "Modernize the user experience by replacing the outdated interface with a clean, responsive UI",
-          "2": "Improve maintainability by adopting a modern tech stack with reusable, well-structured components",
-          "3": "Optimize performance and reliability, particularly in data-heavy views and complex form interactions",
-          "4": "Ensure mobile compatibility for a seamless experience across all devices"
-        },
-        "challenges": {
-          "title": "Key Challenges",
-          "1": "Rebuilding UI components under tight business constraints and incomplete backend support",
-          "2": "Managing complex forms and application state while maintaining UI responsiveness",
-          "3": "Balancing fast delivery with long-term reusability and maintainability of the codebase",
-          "4": "Integrating with legacy backend systems that introduced technical debt and limitations"
-        },
-        "problems": {
-          "title": "Major Problems",
-          "1": "Inconsistent UI patterns across different parts of the app, leading to confusion and poor UX",
-          "2": "Performance bottlenecks when rendering or filtering large datasets",
-          "3": "Broken or unusable mobile experience, making the app frustrating on phones and tablets",
-          "4": "Unstructured legacy codebase with no documentation"
-        }
-      },
-      "solutions&contribution": {
-        "title": "Solutions & My Contributions",
-        "technical": {
-          "title": "Technical Architecture",
-          "1": "Built a modular, component-based architecture with React and TypeScript to improve scalability and long-term maintainability.",
-          "2": "Rebuilt the UI using Next.js App Router, leveraging server components and nested layouts for faster load times and clearer structure.",
-          "3": "Applied Tailwind CSS and Hero UI to deliver a fully responsive, accessible interface across all devices.",
-          "4": "Created reusable, business-specific UI components used across key modules like quotations, shipments, and invoices."
-        },
-        "performance": {
-          "title": "Performance Optimizations",
-          "1": "Implemented pagination and virtual scrolling for data-heavy tables, drastically improving load performance on shipment and tracking views.",
-          "2": "Used Next.js server components to cache key views and reduce redundant API calls, improving perceived speed.",
-          "3": "Optimized user interaction by implementing a debounce on searches and filters, preventing excessive server requests."
-        },
-        "collaboration": {
-          "title": "Collaboration & Process",
-          "1": "Co-led the frontend rewrite as one of two developers, taking ownership of full modules from design to deployment",
-          "2": "Partnered closely with our coordinator (acting as UX) to iterate on flows and interfaces using client feedback.",
-          "3": "Integrated with legacy backend APIs, building resilient error handling and working around inconsistent data and undocumented endpoints"
-        }
-      },
-      "BvsA": {
-        "title": "Before vs. After",
-        "sub-title": "(Move the slider in the center of the image)",
-        "dashboard": "Dashboard",
-        "account-summary": "Account summary",
-        "shipping": "Shipping",
-        "mass-shipping": "Mass Shipping",
-        "profile": "Profile",
-        "shipments": "Shipments",
-        "before": {
-          "title": "Before",
-          "1": "Outdated interface that “felt like a 2004 government page”.",
-          "2": "Unpredictable loading times.",
-          "3": "Broken or unreliable mobile experience.",
-          "4": "Clunky user flows with frequent UX issues."
-        },
-        "after": {
-          "title": "After",
-          "1": "Clean, consistent design system with modern UI.",
-          "2": "Faster load times and smoother interactions.",
-          "3": "Responsive across devices.",
-          "4": "Clearer navigation and more intuitive user experience."
-        }
-      },
-      "i&r": {
-        "title": "Impact & Results",
-        "1": "Faster render times",
-        "2": "Estimated UI code reduction",
-        "3": "Positive feedback from internal stakeholders",
-        "description": "The rebuild marks a major leap in usability and maintainability. Internal stakeholders involved in testing have praised the cleaner design and clearer structure, noting that previously confusing workflows are now streamlined. From a development perspective, the new modular architecture has significantly improved scalability and speed of implementation, setting the foundation for faster iteration and long-term product evolution."
-      },
-      "reflection": {
-        "title": "Reflection",
-        "learned": {
-          "title": "What I Learned",
-          "description": "Working on Onsite 2 pushed me to a new level of ownership and problem-solving. As one of only two developers on the project, I was responsible for independently delivering entire modules from architectural decisions to final UI details often without direct guidance. This experience sharpened my ability to:",
-          "1": "Make architectural and tech decisions confidently.",
-          "2": "Balance maintainability with business-driven deadlines.",
-          "3": "Break down large, ambiguous tasks into achievable steps.",
-          "4": "Communicate effectively with non-technical stakeholders to clarify requirements.",
-          "description2": "While the autonomy was challenging, it helped me grow significantly as a frontend developer. I left this project with stronger technical instincts, more confidence in my judgment, and a deeper understanding of how to build scalable interfaces in real-world product environments."
-        },
-        "dif": {
-          "title": "What I'd Do Differently",
-          "description": "While I implemented unit tests for critical components and integration tests for core workflows, the project faced limitations due to a company culture that didn't prioritize test automation, alongside significant time and resource constraints. This meant a comprehensive automated testing strategy, including extensive end-to-end coverage, wasn't established, leading to a higher reliance on manual testing and occasional regressions, i would advocate for:",
-          "1": "Introducing automated testing early in the development lifecycle.",
-          "2": "Establishing a testing strategy appropriate to the project size.",
-          "3": "Educating the team on how testing improves confidence, speeds up iteration, and reduces support ."
-        },
-        "proud": {
-          "title": "What I'm Proudest Of",
-          "description": "This project tested me in a real-world where I had to deliver production-ready software with minimal guidance, legacy constraints, and full responsibility over multiple modules.",
-          "description2": "Despite the pressure and challenges, I shipped high-quality features, learned to own my work end-to-end, and contributed to a product that truly matters to users. What makes me most proud is the personal growth: I went from dealing with impostor syndrome to feeling confident in my ability to solve complex problems, collaborate effectively, and make solid technical decisions. This experience solidified my identity as a capable, reliable developer and I'm ready for what’s next."
-        }
-      }
-    },
-    "management": {
-      "common": {
-        "view": "View More Projects",
-        "case-study": "Case Study"
-      },
-      "title": "Management | Enhancements and Maintenance",
-      "sub-title": "Improvements to our internal logistics platform, focused on new modules, feature upgrades, and bugfixes.",
-      "role": "Frontend Developer",
-      "duration": "July 2024 - Ongoing Maintenance",
-      "overview-title": "Overview",
-      "overview-description": "The Management app is an internal tool used by our administrative and IT support staff to oversee logistics operations. It provides real-time monitoring, detailed analytics, and comprehensive reports that support operational decision-making and incident response.",
-      "overview-description2": "Originally built before my time at the company, the system required continuous improvements to meet evolving business needs. My role involved implementing new modules, fixing bugs, and enhancing existing features to ensure reliability, scalability, and a better internal user experience.",
-      "g&c": {
-        "title": "Goals & Challenges",
-        "goals": {
-          "title": "Goals",
-          "1": "Enhance internal tooling to improve operational monitoring, analytics, and reporting capabilities.",
-          "2": "Improve reliability and performance in existing modules while extending functionality with new features.",
-          "3": "Optimize performance and reliability, particularly in data-heavy views and complex form interactions.",
-          "4": "Streamline workflows for administrative and IT support staff through thoughtful UX improvements."
-        },
-        "challenges": {
-          "title": "Key Challenges",
-          "1": "Working with a pre-existing codebase with a lot of abstractions.",
-          "2": "Delivering improvements without disrupting daily operations.",
-          "3": "Navigating unclear or evolving internal requirements from multiple departments.",
-          "4": "Debugging and extending features no documentation."
-        },
-        "problems": {
-          "title": "Major Problems",
-          "1": "Performance issues when loading some modules."
-        }
-      },
-      "solutions&contribution": {
-        "title": "Solutions & My Contributions",
-        "technical": {
-          "title": "Technical Architecture",
-          "1": "Contributed to a component-based architecture using React and Tailwind CSS to support consistent UI patterns and scalable development.",
-          "2": "Implemented new modules for internal analytics, monitoring dashboards, and report generation."
-        },
-        "performance": {
-          "title": "Performance Optimizations",
-          "1": "Implemented pagination and virtual scrolling in key internal views to improve performance when rendering large datasets.",
-          "2": "Applied input debouncing to search and filter components, reducing unnecessary re-renders and API load.",
-          "3": "Optimized component structure and data flow to minimize unnecessary renders and improve responsiveness in complex views."
-        },
-        "collaboration": {
-          "title": "Collaboration & Process",
-          "1": "Took ownership of multiple modules and enhancements, working end-to-end from implementation to deployment.",
-          "2": "Collaborated closely with administrative and IT staff to clarify requirements and adjust features based on real-world usage.",
-          "3": "Coordinated with backend developers to integrate with new and legacy APIs, implementing robust error handling and compensating for inconsistent or undocumented responses.",
-          "4": "Contributed to ongoing codebase refactoring efforts, gradually improving maintainability while delivering continuous updates."
-        }
-      },
+		"landing-title": "Landing Page | Basic Static Homepage",
+		"landing-description": "Designed a simple homepage with foundational HTML and CSS. Learned the box model, element structure, and styling fundamentals the very first step my dev journey."
+	},
+	"experience": {
+		"title": "Work Experience",
+		"subtitle": "From Industrial Engineering to Professional Web Development",
+		"1": {
+			"startDate": "July 2024",
+			"endDate": "Present(1 year)",
+			"role": "Front-End Developer",
+			"description": "PKT1 - Sustainable Logistics Company, Mexico-Chile.",
+			"bullet": {
+				"1": {
+					"main": "Co-led the complete rebuild of Onsite 2, a critical logistics platform",
+					"sub": {
+						"1": "Migrated legacy system (jQuery) to React/Next.js/TypeScript over 10 months.",
+						"2": "Contributed to achieving 60% cost savings vs outsourcing (~$360K pesos) through internal delivery.",
+						"3": "Significantly improved UX and codebase maintainability."
+					}
+				},
+				"2": {
+					"main": "Optimized performance for high-volume data views",
+					"sub": {
+						"1": "Achieved 0.4s First Contentful Paint (4.5x better than Google's 1.8s standard).",
+						"2": "Reached 1.6s maximum Largest Contentful Paint (37% better than Google's 2.5s standard).",
+						"3": "Eliminated input lag by scaling from 10 to 2,000+ items through virtual scrolling and pagination.",
+						"4": "Reduced API calls by 60% implementing intelligent debouncing, improving user experience and reducing server costs."
+					}
+				},
+				"3": {
+					"main": "Established modern, scalable frontend architecture",
+					"sub": {
+						"1": "Designed modular system using Next.js App Router and Tailwind CSS.",
+						"2": "Reduced code duplication by creating reusable, scalable components.",
+						"3": "Documented development patterns for team knowledge sharing."
+					}
+				},
+				"4": {
+					"main": "Developed and maintained 'Management' platform with new features",
+					"sub": {
+						"1": "Built analytics and monitoring modules that accelerate decision-making.",
+						"2": "Stabilized legacy modules with minimal regressions."
+					}
+				},
+				"5": {
+					"main": "Delivered reliable integrations with legacy backend APIs",
+					"sub": {
+						"1": "Implemented comprehensive error handling while maintaining system stability.",
+						"2": "Ensured data consistency across platforms."
+					}
+				},
+				"6": {
+					"main": "Implemented comprehensive testing for platform stability",
+					"sub": {
+						"1": "Established unit testing (Jest) and integration testing (React Testing Library).",
+						"2": "Ensured robustness across critical platform components."
+					}
+				}
+			}
+		},
+		"2": {
+			"startDate": "January 2022",
+			"endDate": "July 2024(2.5 years)",
+			"role": "Freelance & Self-Taught Web Developer",
+			"description": "Transitioning from industrial engineering to web development, I self-taught and built custom solutions for entrepreneurs, addressing real client needs. While some businesses closed for personal reasons, my delivered products consistently met their technical purpose and operated successfully.",
+			"bullet": {
+				"1": "Architected and built from scratch a complete fullstack e-commerce platform (Regina & Gael Studio), integrating complex functionalities such as user authentication, payment gateway (PayPal), product management, and secure digital file delivery.",
+				"2": "Designed and launched a fully responsive marketing website (Okayhey Temazcal) with Contentful CMS integration, enabling non-technical users to manage and update dynamic content, including blogs, FAQs, and photo galleries.",
+				"3": "Managed complete development lifecycle independently, from design and planning through implementation and deployment.",
+				"4": "Applied self-taught expertise in TypeScript, serverless architecture, RESTful APIs, and modern frontend development using React."
+			}
+		}
+	},
+	"contact": {
+		"title": "Let's Connect",
+		"subtitle": "Ready to explore how I can add value to your team. Please feel free to get in touch",
+		"reach": "Reach Out",
+		"toast": {
+			"whatsapp": "WhatsApp number copied to clipboard!",
+			"email": "Email copied to clipboard!"
+		}
+	},
+	"cases": {
+		"onsite2": {
+			"common": {
+				"back": "Go Back",
+				"view": "View More Projects",
+				"case-study": "Case Study"
+			},
+			"title": "Onsite 2 | Full Rebuild",
+			"sub-title": "A ground-up redesign of a core legacy logistics app.",
+			"role": "Frontend Developer",
+			"duration": "Ago 2024 - Ongoing Development",
+			"overview-title": "Overview",
+			"overview-description": "Onsite is our company’s main logistics platform, used by business clients to manage every step of their shipping operations. Clients can quote and send packages, track shipments, download invoices, view historical data, and handle account settings from a single interface.",
+			"overview-description2": "The original version was a legacy jQuery application that grew without a clear structure, resulting in a fragile, inconsistent codebase that was hard to maintain and extend. The goal was to replace it with a fully modern web application. The result is a significantly improved user experience and a much more scalable and maintainable system..",
+			"g&c": {
+				"title": "Goals & Challenges",
+				"goals": {
+					"title": "Goals",
+					"1": "Modernize the user experience by replacing the outdated interface with a clean, responsive UI",
+					"2": "Improve maintainability by adopting a modern tech stack with reusable, well-structured components",
+					"3": "Optimize performance and reliability, particularly in data-heavy views and complex form interactions",
+					"4": "Ensure mobile compatibility for a seamless experience across all devices"
+				},
+				"challenges": {
+					"title": "Key Challenges",
+					"1": "Rebuilding UI components under tight business constraints and incomplete backend support",
+					"2": "Managing complex forms and application state while maintaining UI responsiveness",
+					"3": "Balancing fast delivery with long-term reusability and maintainability of the codebase",
+					"4": "Integrating with legacy backend systems that introduced technical debt and limitations"
+				},
+				"problems": {
+					"title": "Major Problems",
+					"1": "Inconsistent UI patterns across different parts of the app, leading to confusion and poor UX",
+					"2": "Performance bottlenecks when rendering or filtering large datasets",
+					"3": "Broken or unusable mobile experience, making the app frustrating on phones and tablets",
+					"4": "Unstructured legacy codebase with no documentation"
+				}
+			},
+			"solutions&contribution": {
+				"title": "Solutions & My Contributions",
+				"technical": {
+					"title": "Technical Architecture",
+					"1": "Built a modular, component-based architecture with React and TypeScript to improve scalability and long-term maintainability.",
+					"2": "Rebuilt the UI using Next.js App Router, leveraging server components and nested layouts for faster load times and clearer structure.",
+					"3": "Applied Tailwind CSS and Hero UI to deliver a fully responsive, accessible interface across all devices.",
+					"4": "Created reusable, business-specific UI components used across key modules like quotations, shipments, and invoices."
+				},
+				"performance": {
+					"title": "Performance Optimizations",
+					"1": "Implemented pagination and virtual scrolling for data-heavy tables, drastically improving load performance on shipment and tracking views.",
+					"2": "Used Next.js server components to cache key views and reduce redundant API calls, improving perceived speed.",
+					"3": "Optimized user interaction by implementing a debounce on searches and filters, preventing excessive server requests."
+				},
+				"collaboration": {
+					"title": "Collaboration & Process",
+					"1": "Co-led the frontend rewrite as one of two developers, taking ownership of full modules from design to deployment",
+					"2": "Partnered closely with our coordinator (acting as UX) to iterate on flows and interfaces using client feedback.",
+					"3": "Integrated with legacy backend APIs, building resilient error handling and working around inconsistent data and undocumented endpoints"
+				}
+			},
+			"BvsA": {
+				"title": "Before vs. After",
+				"sub-title": "(Move the slider in the center of the image)",
+				"dashboard": "Dashboard",
+				"account-summary": "Account summary",
+				"shipping": "Shipping",
+				"mass-shipping": "Mass Shipping",
+				"profile": "Profile",
+				"shipments": "Shipments",
+				"before": {
+					"title": "Before",
+					"1": "Outdated interface that “felt like a 2004 government page”.",
+					"2": "Unpredictable loading times.",
+					"3": "Broken or unreliable mobile experience.",
+					"4": "Clunky user flows with frequent UX issues."
+				},
+				"after": {
+					"title": "After",
+					"1": "Clean, consistent design system with modern UI.",
+					"2": "Faster load times and smoother interactions.",
+					"3": "Responsive across devices.",
+					"4": "Clearer navigation and more intuitive user experience."
+				}
+			},
+			"i&r": {
+				"title": "Impact & Results",
+				"1": "Faster render times",
+				"2": "Estimated UI code reduction",
+				"3": "Positive feedback from internal stakeholders",
+				"description": "The rebuild marks a major leap in usability and maintainability. Internal stakeholders involved in testing have praised the cleaner design and clearer structure, noting that previously confusing workflows are now streamlined. From a development perspective, the new modular architecture has significantly improved scalability and speed of implementation, setting the foundation for faster iteration and long-term product evolution."
+			},
+			"reflection": {
+				"title": "Reflection",
+				"learned": {
+					"title": "What I Learned",
+					"description": "Working on Onsite 2 pushed me to a new level of ownership and problem-solving. As one of only two developers on the project, I was responsible for independently delivering entire modules from architectural decisions to final UI details often without direct guidance. This experience sharpened my ability to:",
+					"1": "Make architectural and tech decisions confidently.",
+					"2": "Balance maintainability with business-driven deadlines.",
+					"3": "Break down large, ambiguous tasks into achievable steps.",
+					"4": "Communicate effectively with non-technical stakeholders to clarify requirements.",
+					"description2": "While the autonomy was challenging, it helped me grow significantly as a frontend developer. I left this project with stronger technical instincts, more confidence in my judgment, and a deeper understanding of how to build scalable interfaces in real-world product environments."
+				},
+				"dif": {
+					"title": "What I'd Do Differently",
+					"description": "While I implemented unit tests for critical components and integration tests for core workflows, the project faced limitations due to a company culture that didn't prioritize test automation, alongside significant time and resource constraints. This meant a comprehensive automated testing strategy, including extensive end-to-end coverage, wasn't established, leading to a higher reliance on manual testing and occasional regressions, i would advocate for:",
+					"1": "Introducing automated testing early in the development lifecycle.",
+					"2": "Establishing a testing strategy appropriate to the project size.",
+					"3": "Educating the team on how testing improves confidence, speeds up iteration, and reduces support ."
+				},
+				"proud": {
+					"title": "What I'm Proudest Of",
+					"description": "This project tested me in a real-world where I had to deliver production-ready software with minimal guidance, legacy constraints, and full responsibility over multiple modules.",
+					"description2": "Despite the pressure and challenges, I shipped high-quality features, learned to own my work end-to-end, and contributed to a product that truly matters to users. What makes me most proud is the personal growth: I went from dealing with impostor syndrome to feeling confident in my ability to solve complex problems, collaborate effectively, and make solid technical decisions. This experience solidified my identity as a capable, reliable developer and I'm ready for what’s next."
+				}
+			}
+		},
+		"management": {
+			"common": {
+				"view": "View More Projects",
+				"case-study": "Case Study"
+			},
+			"title": "Management | Enhancements and Maintenance",
+			"sub-title": "Improvements to our internal logistics platform, focused on new modules, feature upgrades, and bugfixes.",
+			"role": "Frontend Developer",
+			"duration": "July 2024 - Ongoing Maintenance",
+			"overview-title": "Overview",
+			"overview-description": "The Management app is an internal tool used by our administrative and IT support staff to oversee logistics operations. It provides real-time monitoring, detailed analytics, and comprehensive reports that support operational decision-making and incident response.",
+			"overview-description2": "Originally built before my time at the company, the system required continuous improvements to meet evolving business needs. My role involved implementing new modules, fixing bugs, and enhancing existing features to ensure reliability, scalability, and a better internal user experience.",
+			"g&c": {
+				"title": "Goals & Challenges",
+				"goals": {
+					"title": "Goals",
+					"1": "Enhance internal tooling to improve operational monitoring, analytics, and reporting capabilities.",
+					"2": "Improve reliability and performance in existing modules while extending functionality with new features.",
+					"3": "Optimize performance and reliability, particularly in data-heavy views and complex form interactions.",
+					"4": "Streamline workflows for administrative and IT support staff through thoughtful UX improvements."
+				},
+				"challenges": {
+					"title": "Key Challenges",
+					"1": "Working with a pre-existing codebase with a lot of abstractions.",
+					"2": "Delivering improvements without disrupting daily operations.",
+					"3": "Navigating unclear or evolving internal requirements from multiple departments.",
+					"4": "Debugging and extending features no documentation."
+				},
+				"problems": {
+					"title": "Major Problems",
+					"1": "Performance issues when loading some modules."
+				}
+			},
+			"solutions&contribution": {
+				"title": "Solutions & My Contributions",
+				"technical": {
+					"title": "Technical Architecture",
+					"1": "Contributed to a component-based architecture using React and Tailwind CSS to support consistent UI patterns and scalable development.",
+					"2": "Implemented new modules for internal analytics, monitoring dashboards, and report generation."
+				},
+				"performance": {
+					"title": "Performance Optimizations",
+					"1": "Implemented pagination and virtual scrolling in key internal views to improve performance when rendering large datasets.",
+					"2": "Applied input debouncing to search and filter components, reducing unnecessary re-renders and API load.",
+					"3": "Optimized component structure and data flow to minimize unnecessary renders and improve responsiveness in complex views."
+				},
+				"collaboration": {
+					"title": "Collaboration & Process",
+					"1": "Took ownership of multiple modules and enhancements, working end-to-end from implementation to deployment.",
+					"2": "Collaborated closely with administrative and IT staff to clarify requirements and adjust features based on real-world usage.",
+					"3": "Coordinated with backend developers to integrate with new and legacy APIs, implementing robust error handling and compensating for inconsistent or undocumented responses.",
+					"4": "Contributed to ongoing codebase refactoring efforts, gradually improving maintainability while delivering continuous updates."
+				}
+			},
 
-      "showcase": {
-        "title": "Showcase",
-        "sub-title": "Some of the Modules I Created"
-      },
+			"showcase": {
+				"title": "Showcase",
+				"sub-title": "Some of the Modules I Created"
+			},
 
-      "i&r": {
-        "title": "Impact & Results",
-        "1": "Frontend module ownership",
-        "2": "Task delivery",
-        "3": "Application uptime",
-        "description": "While the core design and structure of the Management platform remained intact, my contributions focused on extending functionality, improving maintainability, and ensuring ongoing reliability. By building new modules, optimizing data-heavy components, and addressing technical inconsistencies, I helped sustain a critical internal tool without disrupting operations. The consistent delivery of updates and fixes has reinforced the platform’s stability and positioned it for smoother iteration in future development cycles."
-      },
-      "reflection": {
-        "title": "Reflection",
-        "learned": {
-          "title": "What I Learned",
-          "description": "The Management platform was the first project I worked on after joining the company  and it came with a steep learning curve. The codebase, inherited from a previous developer, was heavily abstracted and often difficult to navigate. While some of the patterns were technically impressive in isolation, they made understanding and extending the system unnecessarily complex. There was minimal documentation, very few inline comments, and a strong reliance on 'self-explanatory' code that often wasn't. Adapting to this environment required persistence, patience, and a shift in how I approach unfamiliar architectures. Over time, I learned how to:",
-          "1": "Navigate deeply abstracted logic across scattered files and unconventional custom hooks.",
-          "2": "Reverse-engineer intent from unclear structures and limited documentation.",
-          "3": "Deliver new features and improvements without introducing regressions in a fragile codebase.",
-          "4": "Develop a clearer sense of when simplicity is more valuable than cleverness in code.",
-          "description2": "While the project didn't involve a full rebuild, it pushed me to grow in ways that are often overlooked adapting to existing systems, maintaining stability, and learning how to thrive in legacy code without full control over the architecture. It strengthened my ability to contribute meaningfully in real-world, imperfect scenarios, and taught me the value of writing maintainable, human-friendly code for those who come after."
-        },
-        "dif": {
-          "title": "What I'd Do Differently",
-          "description": "While I delivered all tasks and features as requested, working on the Management platform highlighted some broader areas where the project  and my own approach  could evolve. The codebase I inherited was functional but overly complex, with deep abstractions and minimal documentation. In hindsight, I would have pushed earlier for:",
-          "1": "Gradually simplifying unnecessarily complex patterns to make the codebase more approachable for future developers.",
-          "2": "Introducing clearer internal documentation or inline comments to reduce onboarding time and mental overhead."
-        },
-        "proud": {
-          "title": "What I'm Proudest Of",
-          "description": "This was my first project after joining the company, and it pushed me to get up to speed quickly in a codebase that was complex and unfamiliar. Adapting to someone else's architecture  especially one with deep abstractions and little documentation  wasn’t easy, but I took it step by step and focused on delivering what was needed.",
-          "description2": "What I’m most proud of is how I stayed consistent, learned to work through uncertainty, and gradually built confidence in my ability to contribute meaningfully. I may not have made major architectural changes, but I showed that I could adapt, stay reliable, and handle responsibility  qualities that I know will continue to serve me as I grow."
-        }
-      }
-    },
-    "regina": {
-      "common": {
-        "view": "View More Projects",
-        "case-study": "Case Study"
-      },
-      "title": "Regina & Gael Studio | Fullstack E-commerce Platform",
-      "sub-title": "A custom-built e-commerce platform for selling digital products, designed from scratch to support secure purchases, product management, and digital file delivery.",
-      "role": "Full-Stack Developer",
-      "duration": "February 2024 - May 2024",
-      "overview-title": "Overview",
-      "overview-description": "Regina & Gael Studio was a small online store that sold printable artwork and crafting templates. The client needed a fully custom e-commerce solution to sell digital products with user accounts, product uploads, secure file delivery, and integrated payments.",
-      "overview-description2": "As the sole developer, I designed and built the platform from scratch, covering everything from the frontend UI to the backend infrastructure. This included product and user management, PayPal payment processing, and secure digital file delivery using signed URLs via AWS. The goal was to give the client full control over their store while ensuring a simple and secure buying experience for customers.",
-      "g&c": {
-        "title": "Goals & Challenges",
-        "goals": {
-          "title": "Goals",
-          "1": "Build a personalized e-commerce platform tailored to the client’s brand and product needs.",
-          "2": "Eliminate reliance on third-party platforms like Etsy, allowing full control over design, sales, and product delivery.",
-          "3": "Implement a backend system that enables non-technical users to manage products, orders, and digital downloads independently.",
-          "4": "Ensure secure, seamless payment and delivery of digital files, with a user-friendly interface for both the client and customers."
-        },
-        "challenges": {
-          "title": "Key Challenges",
-          "1": "Building the platform solo, without prior experience in payments, cloud storage, or digital file delivery.",
-          "2": "Designing a secure system for distributing digital products while preventing unauthorized access or sharing.",
-          "3": "Setting up and integrating AWS services (S3, signed URLs) with minimal prior exposure to cloud infrastructure.",
-          "4": "Ensuring a smooth and trustworthy PayPal checkout experience without access to formal design or QA resources.",
-          "5": "Balancing flexibility for the store owner with simplicity for end users"
-        },
-        "problems": {
-          "title": "Major Problems",
-          "1": "No pre-built CMS or e-commerce engine  every feature had to be implemented from scratch.",
-          "2": "Handling payment flow and webhook edge cases (e.g., payment failure, retries) without introducing bugs",
-          "3": "Safely managing file access so only paying users could download their purchased products.",
-          "4": "Learning curve with AWS setup and permissions for S3 buckets and secure file URLs."
-        }
-      },
-      "solutions&contribution": {
-        "title": "Solutions & My Contributions",
-        "technical": {
-          "title": "Technical Architecture",
-          "1": "Designed and built the fullstack architecture from scratch, including both client- and server-side logic.",
-          "2": "Implemented secure digital product delivery using AWS S3 with signed URLs.",
-          "3": "Integrated PayPal Checkout for payment processing, handling order verification and fulfillment on the backend.",
-          "4": "Built a custom admin dashboard to manage product listings, track orders, and upload downloadable files."
-        },
-        "performance": {
-          "title": "Performance & UX",
-          "1": "Applied dynamic loading and server-side rendering with Next.js to improve initial load times.",
-          "2": "Used form validation, error feedback, and clear user flows to simplify checkout and file access.",
-          "3": "Designed responsive layouts for seamless experience across desktop and mobile devices."
-        },
-        "collaboration": {
-          "title": "Collaboration & Process",
-          "1": "Scoped and led the entire project independently, from wireframes to production deployment.",
-          "2": "Worked closely with the client (my sister-in-law) to translate non-technical ideas into functional requirements.",
-          "3": "Took initiative to learn AWS services and payment processing to deliver features beyond my original skillset."
-        }
-      },
+			"i&r": {
+				"title": "Impact & Results",
+				"1": "Frontend module ownership",
+				"2": "Task delivery",
+				"3": "Application uptime",
+				"description": "While the core design and structure of the Management platform remained intact, my contributions focused on extending functionality, improving maintainability, and ensuring ongoing reliability. By building new modules, optimizing data-heavy components, and addressing technical inconsistencies, I helped sustain a critical internal tool without disrupting operations. The consistent delivery of updates and fixes has reinforced the platform’s stability and positioned it for smoother iteration in future development cycles."
+			},
+			"reflection": {
+				"title": "Reflection",
+				"learned": {
+					"title": "What I Learned",
+					"description": "The Management platform was the first project I worked on after joining the company  and it came with a steep learning curve. The codebase, inherited from a previous developer, was heavily abstracted and often difficult to navigate. While some of the patterns were technically impressive in isolation, they made understanding and extending the system unnecessarily complex. There was minimal documentation, very few inline comments, and a strong reliance on 'self-explanatory' code that often wasn't. Adapting to this environment required persistence, patience, and a shift in how I approach unfamiliar architectures. Over time, I learned how to:",
+					"1": "Navigate deeply abstracted logic across scattered files and unconventional custom hooks.",
+					"2": "Reverse-engineer intent from unclear structures and limited documentation.",
+					"3": "Deliver new features and improvements without introducing regressions in a fragile codebase.",
+					"4": "Develop a clearer sense of when simplicity is more valuable than cleverness in code.",
+					"description2": "While the project didn't involve a full rebuild, it pushed me to grow in ways that are often overlooked adapting to existing systems, maintaining stability, and learning how to thrive in legacy code without full control over the architecture. It strengthened my ability to contribute meaningfully in real-world, imperfect scenarios, and taught me the value of writing maintainable, human-friendly code for those who come after."
+				},
+				"dif": {
+					"title": "What I'd Do Differently",
+					"description": "While I delivered all tasks and features as requested, working on the Management platform highlighted some broader areas where the project  and my own approach  could evolve. The codebase I inherited was functional but overly complex, with deep abstractions and minimal documentation. In hindsight, I would have pushed earlier for:",
+					"1": "Gradually simplifying unnecessarily complex patterns to make the codebase more approachable for future developers.",
+					"2": "Introducing clearer internal documentation or inline comments to reduce onboarding time and mental overhead."
+				},
+				"proud": {
+					"title": "What I'm Proudest Of",
+					"description": "This was my first project after joining the company, and it pushed me to get up to speed quickly in a codebase that was complex and unfamiliar. Adapting to someone else's architecture  especially one with deep abstractions and little documentation  wasn’t easy, but I took it step by step and focused on delivering what was needed.",
+					"description2": "What I’m most proud of is how I stayed consistent, learned to work through uncertainty, and gradually built confidence in my ability to contribute meaningfully. I may not have made major architectural changes, but I showed that I could adapt, stay reliable, and handle responsibility  qualities that I know will continue to serve me as I grow."
+				}
+			}
+		},
+		"regina": {
+			"common": {
+				"view": "View More Projects",
+				"case-study": "Case Study"
+			},
+			"title": "Regina & Gael Studio | Fullstack E-commerce Platform",
+			"sub-title": "A custom-built e-commerce platform for selling digital products, designed from scratch to support secure purchases, product management, and digital file delivery.",
+			"role": "Full-Stack Developer",
+			"duration": "February 2024 - May 2024",
+			"overview-title": "Overview",
+			"overview-description": "Regina & Gael Studio was a small online store that sold printable artwork and crafting templates. The client needed a fully custom e-commerce solution to sell digital products with user accounts, product uploads, secure file delivery, and integrated payments.",
+			"overview-description2": "As the sole developer, I designed and built the platform from scratch, covering everything from the frontend UI to the backend infrastructure. This included product and user management, PayPal payment processing, and secure digital file delivery using signed URLs via AWS. The goal was to give the client full control over their store while ensuring a simple and secure buying experience for customers.",
+			"g&c": {
+				"title": "Goals & Challenges",
+				"goals": {
+					"title": "Goals",
+					"1": "Build a personalized e-commerce platform tailored to the client’s brand and product needs.",
+					"2": "Eliminate reliance on third-party platforms like Etsy, allowing full control over design, sales, and product delivery.",
+					"3": "Implement a backend system that enables non-technical users to manage products, orders, and digital downloads independently.",
+					"4": "Ensure secure, seamless payment and delivery of digital files, with a user-friendly interface for both the client and customers."
+				},
+				"challenges": {
+					"title": "Key Challenges",
+					"1": "Building the platform solo, without prior experience in payments, cloud storage, or digital file delivery.",
+					"2": "Designing a secure system for distributing digital products while preventing unauthorized access or sharing.",
+					"3": "Setting up and integrating AWS services (S3, signed URLs) with minimal prior exposure to cloud infrastructure.",
+					"4": "Ensuring a smooth and trustworthy PayPal checkout experience without access to formal design or QA resources.",
+					"5": "Balancing flexibility for the store owner with simplicity for end users"
+				},
+				"problems": {
+					"title": "Major Problems",
+					"1": "No pre-built CMS or e-commerce engine  every feature had to be implemented from scratch.",
+					"2": "Handling payment flow and webhook edge cases (e.g., payment failure, retries) without introducing bugs",
+					"3": "Safely managing file access so only paying users could download their purchased products.",
+					"4": "Learning curve with AWS setup and permissions for S3 buckets and secure file URLs."
+				}
+			},
+			"solutions&contribution": {
+				"title": "Solutions & My Contributions",
+				"technical": {
+					"title": "Technical Architecture",
+					"1": "Designed and built the fullstack architecture from scratch, including both client- and server-side logic.",
+					"2": "Implemented secure digital product delivery using AWS S3 with signed URLs.",
+					"3": "Integrated PayPal Checkout for payment processing, handling order verification and fulfillment on the backend.",
+					"4": "Built a custom admin dashboard to manage product listings, track orders, and upload downloadable files."
+				},
+				"performance": {
+					"title": "Performance & UX",
+					"1": "Applied dynamic loading and server-side rendering with Next.js to improve initial load times.",
+					"2": "Used form validation, error feedback, and clear user flows to simplify checkout and file access.",
+					"3": "Designed responsive layouts for seamless experience across desktop and mobile devices."
+				},
+				"collaboration": {
+					"title": "Collaboration & Process",
+					"1": "Scoped and led the entire project independently, from wireframes to production deployment.",
+					"2": "Worked closely with the client (my sister-in-law) to translate non-technical ideas into functional requirements.",
+					"3": "Took initiative to learn AWS services and payment processing to deliver features beyond my original skillset."
+				}
+			},
 
-      "showcase": {
-        "title": "Showcase",
-        "sub-title": "Some of the Modules I Created"
-      },
+			"showcase": {
+				"title": "Showcase",
+				"sub-title": "Some of the Modules I Created"
+			},
 
-      "i&r": {
-        "title": "Impact & Results",
-        "1": "Delivered a fully functional, secure e-commerce platform from scratch  handling everything from product listings and PayPal checkout to digital delivery.",
-        "2": "Gained firsthand experience with backend development, cloud services, and fullstack architecture in a real-world scenario.",
-        "3": "Built confidence in my ability to scope, manage, and execute a complete product independently.",
-        "4": " This project played a key role in helping me land my first professional developer role at PKT1. 🚀",
-        "5": "Although the business was ultimately paused due to personal reasons, the project pushed my technical limits and taught me to own every part of the development process."
-      },
-      "reflection": {
-        "title": "Reflection",
-        "learned": {
-          "title": "What I Learned",
-          "description": "This project challenged me to step outside my frontend comfort zone and take full ownership of a production-grade system. I learned how to integrate third-party services like AWS and PayPal, design secure file delivery flows, and structure a backend to support real business logic  all while managing scope and expectations on my own."
-        },
-        "dif": {
-          "title": "What I'd Do Differently",
-          "description": "If I could revisit this project, I’d start by aligning expectations more clearly  both in terms of scope and ongoing involvement. From a technical standpoint, I would decouple cloud dependencies like AWS S3 to make future deployment and maintenance easier. I also learned the importance of documenting the project and capturing working demos while it’s live, especially for portfolio use."
-        },
-        "proud": {
-          "title": "What I'm Proudest Of",
-          "description": "I’m proud of having built and delivered a complete fullstack e-commerce app despite it being my first time working with many of the technologies involved. It pushed me to learn fast, solve real-world problems, and take full ownership of both frontend and backend decisions. This project was a key factor in helping me land my first professional role at PKT1, proving to myself that I could take on complex challenges and grow from them."
-        }
-      }
-    },
-    "pchub": {
-      "common": {
-        "view": "View More Projects",
-        "case-study": "Case Study"
-      },
-      "title": "PC Hub | Functional eCommerce Prototype",
-      "sub-title": "A self-initiated fullstack project designed to consolidate my learning and demonstrate real-world web application development skills.",
-      "role": "Full-Stack Developer",
-      "duration": "May 2023 - Ago 2023",
-      "overview-title": "Overview",
-      "overview-description": "PC Hub is a self-initiated eCommerce prototype I built to solidify my fullstack development skills after months of dedicated learning. The app includes user authentication, product browsing, cart management, and admin tools for product handling all developed from scratch using modern technologies.",
-      "overview-description2": "The goal of this project was to simulate building a real-world product end-to-end, while applying what I had learned about frontend and backend architecture. I used TypeScript, React, Next.js (with serverless backend via API routes), MongoDB, and Tailwind CSS.This project marked a major milestone in my self-taught journey and played a key role in helping me land my first professional role as a developer.",
-      "g&c": {
-        "title": "Goals & Challenges",
-        "goals": {
-          "title": "Goals",
-          "1": "Build a fullstack eCommerce app from scratch to consolidate and showcase my technical skills.",
-          "2": "Learn and apply key concepts in user authentication, state management, server-side logic, and database operations.",
-          "3": "Create a responsive and modern UI using Tailwind CSS and React.",
-          "4": "Gain experience with deployment, backend integration, and real-world architecture practices."
-        },
-        "challenges": {
-          "title": "Key Challenges",
-          "1": "Learning to structure a fullstack application without formal guidance.",
-          "2": "Balancing backend responsibilities (APIs, authentication, database schemas) with frontend UI complexity.",
-          "3": "Designing for both user and admin flows within a single app structure.",
-          "4": "Staying productive and motivated on a self-directed, solo project."
-        },
-        "problems": {
-          "title": "Major Problems",
-          "1": "I had never worked with MongoDB, user authentication, or serverless APIs before every part required research and trial-and-error.",
-          "2": "Styling a full UI with Tailwind CSS took time to master, especially with responsive behavior.",
-          "3": "Creating a secure and flexible digital product management system (including product pages, reviews, filters, and admin editing) involved many edge cases and validation logic."
-        }
-      },
-      "solutions&contribution": {
-        "title": "Solutions & My Contributions",
-        "technical": {
-          "title": "Technical Architecture",
-          "1": "Designed the fullstack architecture using Next.js with serverless API routes, enabling seamless frontend-backend integration in a single codebase..",
-          "2": "Implemented MongoDB for flexible, document-based storage of products, users, orders, and reviews.",
-          "3": "Built user authentication and authorization from scratch, including secure login with third-party providers (e.g., Google).",
-          "4": "Developed admin features such as product creation/editing, and dashboard views for managing inventory and user reviews.."
-        },
-        "performance": {
-          "title": "Performance & UX",
-          "1": "Applied pagination and filtering in product listings to keep views responsive, even with large datasets.",
-          "2": "Used debounced search inputs to prevent excessive queries and improve user experience.",
-          "3": "Leveraged Next.js image optimization and code-splitting to improve initial load time and runtime performance."
-        },
-        "collaboration": {
-          "title": "Collaboration & Process",
-          "1": "Worked completely solo   from planning and wireframing to backend design, frontend development, and deployment via Vercel.",
-          "2": "Wrote reusable UI components with React and styled them using Tailwind CSS for consistency and speed.",
-          "3": "Maintained clean git practices with organized commits and version control via GitHub.",
-          "4": "Used Jest to write basic unit tests for critical logic, learning the foundations of testing in JavaScript"
-        }
-      },
+			"i&r": {
+				"title": "Impact & Results",
+				"1": "Delivered a fully functional, secure e-commerce platform from scratch  handling everything from product listings and PayPal checkout to digital delivery.",
+				"2": "Gained firsthand experience with backend development, cloud services, and fullstack architecture in a real-world scenario.",
+				"3": "Built confidence in my ability to scope, manage, and execute a complete product independently.",
+				"4": " This project played a key role in helping me land my first professional developer role at PKT1. 🚀",
+				"5": "Although the business was ultimately paused due to personal reasons, the project pushed my technical limits and taught me to own every part of the development process."
+			},
+			"reflection": {
+				"title": "Reflection",
+				"learned": {
+					"title": "What I Learned",
+					"description": "This project challenged me to step outside my frontend comfort zone and take full ownership of a production-grade system. I learned how to integrate third-party services like AWS and PayPal, design secure file delivery flows, and structure a backend to support real business logic  all while managing scope and expectations on my own."
+				},
+				"dif": {
+					"title": "What I'd Do Differently",
+					"description": "If I could revisit this project, I’d start by aligning expectations more clearly  both in terms of scope and ongoing involvement. From a technical standpoint, I would decouple cloud dependencies like AWS S3 to make future deployment and maintenance easier. I also learned the importance of documenting the project and capturing working demos while it’s live, especially for portfolio use."
+				},
+				"proud": {
+					"title": "What I'm Proudest Of",
+					"description": "I’m proud of having built and delivered a complete fullstack e-commerce app despite it being my first time working with many of the technologies involved. It pushed me to learn fast, solve real-world problems, and take full ownership of both frontend and backend decisions. This project was a key factor in helping me land my first professional role at PKT1, proving to myself that I could take on complex challenges and grow from them."
+				}
+			}
+		},
+		"pchub": {
+			"common": {
+				"view": "View More Projects",
+				"case-study": "Case Study"
+			},
+			"title": "PC Hub | Functional eCommerce Prototype",
+			"sub-title": "A self-initiated fullstack project designed to consolidate my learning and demonstrate real-world web application development skills.",
+			"role": "Full-Stack Developer",
+			"duration": "May 2023 - Ago 2023",
+			"overview-title": "Overview",
+			"overview-description": "PC Hub is a self-initiated eCommerce prototype I built to solidify my fullstack development skills after months of dedicated learning. The app includes user authentication, product browsing, cart management, and admin tools for product handling all developed from scratch using modern technologies.",
+			"overview-description2": "The goal of this project was to simulate building a real-world product end-to-end, while applying what I had learned about frontend and backend architecture. I used TypeScript, React, Next.js (with serverless backend via API routes), MongoDB, and Tailwind CSS.This project marked a major milestone in my self-taught journey and played a key role in helping me land my first professional role as a developer.",
+			"g&c": {
+				"title": "Goals & Challenges",
+				"goals": {
+					"title": "Goals",
+					"1": "Build a fullstack eCommerce app from scratch to consolidate and showcase my technical skills.",
+					"2": "Learn and apply key concepts in user authentication, state management, server-side logic, and database operations.",
+					"3": "Create a responsive and modern UI using Tailwind CSS and React.",
+					"4": "Gain experience with deployment, backend integration, and real-world architecture practices."
+				},
+				"challenges": {
+					"title": "Key Challenges",
+					"1": "Learning to structure a fullstack application without formal guidance.",
+					"2": "Balancing backend responsibilities (APIs, authentication, database schemas) with frontend UI complexity.",
+					"3": "Designing for both user and admin flows within a single app structure.",
+					"4": "Staying productive and motivated on a self-directed, solo project."
+				},
+				"problems": {
+					"title": "Major Problems",
+					"1": "I had never worked with MongoDB, user authentication, or serverless APIs before every part required research and trial-and-error.",
+					"2": "Styling a full UI with Tailwind CSS took time to master, especially with responsive behavior.",
+					"3": "Creating a secure and flexible digital product management system (including product pages, reviews, filters, and admin editing) involved many edge cases and validation logic."
+				}
+			},
+			"solutions&contribution": {
+				"title": "Solutions & My Contributions",
+				"technical": {
+					"title": "Technical Architecture",
+					"1": "Designed the fullstack architecture using Next.js with serverless API routes, enabling seamless frontend-backend integration in a single codebase..",
+					"2": "Implemented MongoDB for flexible, document-based storage of products, users, orders, and reviews.",
+					"3": "Built user authentication and authorization from scratch, including secure login with third-party providers (e.g., Google).",
+					"4": "Developed admin features such as product creation/editing, and dashboard views for managing inventory and user reviews.."
+				},
+				"performance": {
+					"title": "Performance & UX",
+					"1": "Applied pagination and filtering in product listings to keep views responsive, even with large datasets.",
+					"2": "Used debounced search inputs to prevent excessive queries and improve user experience.",
+					"3": "Leveraged Next.js image optimization and code-splitting to improve initial load time and runtime performance."
+				},
+				"collaboration": {
+					"title": "Collaboration & Process",
+					"1": "Worked completely solo   from planning and wireframing to backend design, frontend development, and deployment via Vercel.",
+					"2": "Wrote reusable UI components with React and styled them using Tailwind CSS for consistency and speed.",
+					"3": "Maintained clean git practices with organized commits and version control via GitHub.",
+					"4": "Used Jest to write basic unit tests for critical logic, learning the foundations of testing in JavaScript"
+				}
+			},
 
-      "showcase": {
-        "title": "Showcase",
-        "sub-title": "Some of the Modules I Created"
-      },
+			"showcase": {
+				"title": "Showcase",
+				"sub-title": "Some of the Modules I Created"
+			},
 
-      "i&r": {
-        "title": "Impact & Results",
-        "1": "Strengthened my backend knowledge by working hands-on with authentication, RESTful APIs, and database modeling.",
-        "2": "Improved technical confidence, problem-solving, and self-reliance by building every part of the stack solo.",
-        "3": "Used this project as a key portfolio piece that helped me land my first professional job as a frontend developer."
-      },
-      "reflection": {
-        "title": "Reflection",
-        "learned": {
-          "title": "What I Learned",
-          "description": "PC Hub was my most ambitious self-study project. I gained hands-on experience building a fullstack app from scratch, deepening my understanding of authentication flows, API design, database integration, and scalable UI architecture. It also helped me improve my problem-solving and debugging skills across both frontend and backend codebases."
-        },
-        "dif": {
-          "title": "What I'd Do Differently",
-          "description": "If I were to do this again, I’d start by scoping the project more clearly and focusing on core features first. I also would have implemented better error handling and test coverage from the beginning to simulate more realistic development practices."
-        },
-        "proud": {
-          "title": "What I'm Proudest Of",
-          "description": "I'm proud of taking on a complex challenge with the goal of learning   and seeing it through. Building PC Hub pushed me to connect everything I had studied into a working application, and it gave me the confidence to pursue real-world opportunities. It wasn’t built for production, but it was built with care, curiosity, and commitment to growth."
-        }
-      }
-    }
-  }
+			"i&r": {
+				"title": "Impact & Results",
+				"1": "Strengthened my backend knowledge by working hands-on with authentication, RESTful APIs, and database modeling.",
+				"2": "Improved technical confidence, problem-solving, and self-reliance by building every part of the stack solo.",
+				"3": "Used this project as a key portfolio piece that helped me land my first professional job as a frontend developer."
+			},
+			"reflection": {
+				"title": "Reflection",
+				"learned": {
+					"title": "What I Learned",
+					"description": "PC Hub was my most ambitious self-study project. I gained hands-on experience building a fullstack app from scratch, deepening my understanding of authentication flows, API design, database integration, and scalable UI architecture. It also helped me improve my problem-solving and debugging skills across both frontend and backend codebases."
+				},
+				"dif": {
+					"title": "What I'd Do Differently",
+					"description": "If I were to do this again, I’d start by scoping the project more clearly and focusing on core features first. I also would have implemented better error handling and test coverage from the beginning to simulate more realistic development practices."
+				},
+				"proud": {
+					"title": "What I'm Proudest Of",
+					"description": "I'm proud of taking on a complex challenge with the goal of learning   and seeing it through. Building PC Hub pushed me to connect everything I had studied into a working application, and it gave me the confidence to pursue real-world opportunities. It wasn’t built for production, but it was built with care, curiosity, and commitment to growth."
+				}
+			}
+		}
+	}
 }

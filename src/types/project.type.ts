@@ -11,4 +11,5 @@ export type Project = {
 	featured: boolean;
 	level: Level;
 	caseStudyLink?: string;
+	disclaimer?: string;
 };

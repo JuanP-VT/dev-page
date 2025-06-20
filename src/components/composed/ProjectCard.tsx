@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
+import Swal from "sweetalert2";
 import Image from "next/image";
 import { ExternalLink, Star, Folder } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
@@ -7,6 +8,7 @@ import Link from "next/link";
 import { PiStudentFill } from "react-icons/pi";
 import type { Project } from "@/types/project.type";
 import { useTranslations } from "next-intl";
+
 interface ProjectCardProps {
 	project: Project;
 }
@@ -34,6 +36,21 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 		return () => observer.disconnect();
 	}, []);
 
+	const handleLiveLinkClick = () => {
+		if (project.disclaimer) {
+			Swal.fire({
+				text: project.disclaimer,
+				icon: "info",
+				confirmButtonColor: "#3085d6",
+				confirmButtonText: "Continue",
+				background: "#e4e4e7",
+			}).then((result) => {
+				if (result.isConfirmed) {
+					window.open(project.liveLink, "_blank");
+				}
+			});
+		}
+	};
 	return (
 		<div
 			ref={cardRef}
@@ -97,18 +114,19 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 						{project.caseStudyLink && (
 							<Link
 								href={project.caseStudyLink}
-								className="flex gap-1 items-center font-mono text-sm text-teal-600 transition-colors dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300"
+								className="flex gap-1 items-center font-mono text-sm text-cyan-600 transition-colors dark:text-cyan-400 hover:text-cyan-500 dark:hover:text-cyan-300"
 							>
 								<PiStudentFill className="w-4 h-4" /> {t("case")}
 							</Link>
 						)}
 						{project.liveLink && (
-							<Link
-								href={project.liveLink}
-								className="flex gap-1 items-center font-mono text-sm text-teal-600 transition-colors dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300"
+							<button
+								type="button"
+								onClick={handleLiveLinkClick}
+								className="flex gap-1 cursor-pointer items-center font-mono text-sm text-teal-600 transition-colors dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300"
 							>
 								<ExternalLink className="w-4 h-4" /> {t("demo")}
-							</Link>
+							</button>
 						)}
 						{project.githubLink && (
 							<Link

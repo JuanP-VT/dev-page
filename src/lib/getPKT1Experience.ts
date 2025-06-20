@@ -19,6 +19,7 @@ export function getPKT1Experience() {
 				"1": t("2.sub.1"),
 				"2": t("2.sub.2"),
 				"3": t("2.sub.3"),
+				"4": t("2.sub.4"),
 			},
 		},
 		{
