@@ -5,6 +5,7 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import localFont from "next/font/local";
+import { Toaster } from "sonner";
 
 const sfMono = localFont({
 	src: "../../../public/fonts/SFMono-Regular.otf",
@@ -34,6 +35,7 @@ export default async function LocaleLayout({
 				<NextIntlClientProvider>
 					<ThemeProvider attribute="class" defaultTheme="dark">
 						{children}
+						<Toaster />
 					</ThemeProvider>
 				</NextIntlClientProvider>
 			</body>
