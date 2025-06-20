@@ -74,9 +74,11 @@
 
 		"temazcal-title": "Okayhey Temazcal | Web Presence + CMS Integration",
 		"temazcal-description": "Designed and developed a modern, responsive website for my brother's temazcal business. Integrated Contentful CMS to allow non-technical users to manage dynamic content such as blogs, gallery, and FAQs. The site included a homepage, blog, photo gallery, FAQ, and contact section all aimed at boosting their online presence and improving client engagement.",
+		"temazcal-disclaimer": "This project has been online and in use for several months as the official website for the family business. Currently, the site is not active due to the closure of the business. However, the source code and CMS architecture are still available for review. Check out the case study or contact me for a technical demo.",
 
 		"regina-title": "Regina & Gael Studio | Fullstack E-commerce Platform",
 		"regina-description": "Built a complete e-commerce platform for my sister-in-law's digital craft store. The app included user authentication, product management, PayPal payment integration, and secure digital file delivery via signed URLs. Developed the full backend and frontend architecture from scratch, creating a scalable solution for selling downloadable content online.",
+		"regina-disclaimer": "This project was developed as a custom solution for my sister-in-law's digital store. Although it's deployed online, it's not currently in active use, and its AWS storage (images and files) has been disabled, so some assets aren't displaying correctly. For more information about the project, check out the case study or contact me.",
 
 		"pchub-title": "PC Hub | Fullstack Ecommerce Learning Project",
 		"pchub-description": "Developed a fully functional eCommerce prototype from scratch to showcase fullstack skills. Features include user authentication, product catalog with filters, shopping cart, checkout, user profiles, and an admin panel for product management.",

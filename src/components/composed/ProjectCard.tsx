@@ -37,19 +37,22 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 	}, []);
 
 	const handleLiveLinkClick = () => {
-		if (project.disclaimer) {
-			Swal.fire({
-				text: project.disclaimer,
-				icon: "info",
-				confirmButtonColor: "#3085d6",
-				confirmButtonText: "Continue",
-				background: "#e4e4e7",
-			}).then((result) => {
-				if (result.isConfirmed) {
-					window.open(project.liveLink, "_blank");
-				}
-			});
+		if (!project.disclaimer) {
+			window.open(project.liveLink, "_blank");
+			return;
 		}
+
+		Swal.fire({
+			text: project.disclaimer,
+			icon: "info",
+			confirmButtonColor: "#3085d6",
+			confirmButtonText: "Continue",
+			background: "#e4e4e7",
+		}).then((result) => {
+			if (result.isConfirmed) {
+				window.open(project.liveLink, "_blank");
+			}
+		});
 	};
 	return (
 		<div
@@ -130,6 +133,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 						)}
 						{project.githubLink && (
 							<Link
+								target="_blank"
 								href={project.githubLink}
 								className="flex gap-1 items-center font-mono text-sm text-teal-600 transition-colors dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300"
 							>

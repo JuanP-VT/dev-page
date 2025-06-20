@@ -74,9 +74,11 @@
 
 		"temazcal-title": "Okayhey Temazcal | Presencia Web + Integración CMS",
 		"temazcal-description": "Diseñé y desarrollé un sitio web moderno y responsive para el negocio de temazcal de mi hermano. Integré Contentful CMS para permitir a usuarios no técnicos gestionar contenido dinámico como blogs, galerías y FAQs. El sitio incluía página principal, blog, galería de fotos, FAQ y sección de contacto, todo orientado a impulsar su presencia online y mejorar el compromiso con los clientes.",
+		"temazcal-disclaimer": "Este proyecto estuvo en línea y en uso durante varios meses como la página oficial del negocio familiar. Actualmente, el sitio no está activo debido al cierre del negocio. Aun así, el código fuente y la arquitectura del CMS siguen disponibles para revisión. Consulta el caso de estudio o contáctame para una demostración técnica.",
 
 		"regina-title": "Regina & Gael Studio | Plataforma E-commerce Fullstack",
 		"regina-description": "Construí una plataforma de e-commerce completa para la tienda digital de artesanías de mi cuñada. La aplicación incluía autenticación de usuarios, gestión de productos, integración con PayPal y entrega segura de archivos digitales mediante URLs firmadas. Desarrollé la arquitectura completa de frontend y backend desde cero, creando una solución escalable para vender contenido descargable online.",
+		"regina-disclaimer": "Este proyecto fue desarrollado como una solución personalizada para la tienda digital de mi cuñada. Aunque está desplegado en línea, actualmente no se encuentra en uso activo y su almacenamiento en AWS (imágenes y archivos) fue desactivado, por lo que algunos recursos no se muestran correctamente. Para mas información del proyecto, consulta el caso de estudio o contáctame.",
 
 		"pchub-title": "PC Hub | Proyecto de Aprendizaje E-commerce Fullstack",
 		"pchub-description": "Desarrollé un prototipo de eCommerce completamente funcional desde cero para mostrar habilidades fullstack. Incluye autenticación de usuarios, catálogo de productos con filtros, carrito de compras, checkout, perfiles de usuario y panel de administración para gestión de productos.",
