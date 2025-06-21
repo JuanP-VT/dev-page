@@ -40,7 +40,7 @@ export default function Projects() {
 	return (
 		<section id="projects" className="py-20 min-h-[100vh]">
 			<div className="mb-10 text-center">
-				<div className="inline-block py-1 px-3 mb-4 font-mono text-sm bg-gray-100 rounded-md border border-gray-200  dark:bg-gray-800 dark:border-gray-700">
+				<div className="inline-block py-1 px-3 mb-4 font-mono text-sm bg-gray-100 rounded-md border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
 					<span className="text-pink-700 dark:text-pink-400">git</span>{" "}
 					<span className="text-teal-700 dark:text-teal-400">checkout</span>{" "}
 					<span className="text-cyan-700 dark:text-cyan-400">projects</span>

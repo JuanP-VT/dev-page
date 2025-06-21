@@ -105,14 +105,14 @@ export default function BeforeAfterSlider({
 			>
 				{/* After image (full width) */}
 				<Button
-				aria-label="Previous"
+					aria-label="Previous"
 					className="absolute top-1/2 z-10 transition-all bg-zinc-200 hover:bg-zinc-200/90 active:bg-zic-200"
 					onClick={onClickPrev}
 				>
 					<FaAngleLeft className="text-zinc-500" />
 				</Button>
 				<Button
-				aria-label="Next"
+					aria-label="Next"
 					className="absolute right-0 top-1/2 z-10 transition-all bg-zinc-200 hover:bg-zinc-200/70 active:bg-zic-200"
 					onClick={onClickNext}
 				>

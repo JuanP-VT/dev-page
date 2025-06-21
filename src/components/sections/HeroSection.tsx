@@ -58,7 +58,7 @@ export default function HeroSection() {
 					= <span className="dark:text-cyan-400 text-sky-700">{t("role")}</span>
 					;
 				</div>
-				<h1 className="pt-4 mb-4 font-mono text-4xl font-bold md:text-5xl text-gray-600 dark:text-gray-300">
+				<h1 className="pt-4 mb-4 font-mono text-4xl font-bold text-gray-600 md:text-5xl dark:text-gray-300">
 					{t("greeting")}{" "}
 					<span className="relative text-transparent bg-clip-text from-teal-500 dark:from-teal-300 bg-linear-to-r to-sky-600 dark:to-sky-400">
 						Juan Pablo
@@ -72,7 +72,7 @@ export default function HeroSection() {
 				<div className="flex gap-4">
 					<a
 						href="#contact"
-						className="flex gap-2 items-center text-zinc-100 py-3 px-4 font-mono text-sm bg-gradient-to-r to-emerald-400 rounded-md transition-all md:px-6 dark:to-emerald-400 hover:shadow-lg from-sky-500 group bg-linear-to-r dark:from-sky-500"
+						className="flex gap-2 items-center py-3 px-4 font-mono text-sm bg-gradient-to-r to-emerald-400 rounded-md transition-all md:px-6 dark:to-emerald-400 hover:shadow-lg text-zinc-100 from-sky-500 group bg-linear-to-r dark:from-sky-500"
 					>
 						<Terminal className="w-4 h-4" />
 						{t("contact")}

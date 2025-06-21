@@ -27,7 +27,7 @@ export default function Page() {
 				<section className="py-10 md:py-16">
 					<div className="container px-4 mx-auto">
 						<div className="mx-auto max-w-4xl text-center">
-							<div className="justify-self-center py-1 px-3 mb-4 text-sm rounded-full border w-fit bg-teal-700 text-zinc-50 ">
+							<div className="justify-self-center py-1 px-3 mb-4 text-sm bg-teal-700 rounded-full border w-fit text-zinc-50">
 								{t("common.case-study")}
 							</div>
 							<h1 className="mb-6 text-4xl font-bold tracking-tight sm:text-6xl case-gradient-text">
@@ -124,10 +124,22 @@ export default function Page() {
 											{t("g&c.goals.title")}
 										</h3>
 										<ul className="space-y-3">
-											<BulletPoint text={t("g&c.goals.1")} className="bg-emerald-700"/>
-											<BulletPoint text={t("g&c.goals.2")} className="bg-emerald-700"/>
-											<BulletPoint text={t("g&c.goals.3")} className="bg-emerald-700"/>
-											<BulletPoint text={t("g&c.goals.4")} className="bg-emerald-700"/>
+											<BulletPoint
+												text={t("g&c.goals.1")}
+												className="bg-emerald-700"
+											/>
+											<BulletPoint
+												text={t("g&c.goals.2")}
+												className="bg-emerald-700"
+											/>
+											<BulletPoint
+												text={t("g&c.goals.3")}
+												className="bg-emerald-700"
+											/>
+											<BulletPoint
+												text={t("g&c.goals.4")}
+												className="bg-emerald-700"
+											/>
 										</ul>
 									</CardContent>
 								</Card>
@@ -296,10 +308,22 @@ export default function Page() {
 												{t("BvsA.after.title")}
 											</h3>
 											<ul className="space-y-2 text-sm">
-												<BulletPoint text={t("BvsA.after.1")} className="bg-emerald-700"/>
-												<BulletPoint text={t("BvsA.after.2")} className="bg-emerald-700"/>
-												<BulletPoint text={t("BvsA.after.3")} className="bg-emerald-700"/>
-												<BulletPoint text={t("BvsA.after.4")} className="bg-emerald-700"/>
+												<BulletPoint
+													text={t("BvsA.after.1")}
+													className="bg-emerald-700"
+												/>
+												<BulletPoint
+													text={t("BvsA.after.2")}
+													className="bg-emerald-700"
+												/>
+												<BulletPoint
+													text={t("BvsA.after.3")}
+													className="bg-emerald-700"
+												/>
+												<BulletPoint
+													text={t("BvsA.after.4")}
+													className="bg-emerald-700"
+												/>
 											</ul>
 										</CardContent>
 									</Card>
@@ -382,7 +406,7 @@ export default function Page() {
 										<CardContent>
 											<div className="text-lg leading-relaxed">
 												{t("reflection.learned.description")}
-												<ul className="space-y-2 my-2">
+												<ul className="my-2 space-y-2">
 													<BulletPoint text={t("reflection.learned.1")} />
 													<BulletPoint text={t("reflection.learned.2")} />
 													<BulletPoint text={t("reflection.learned.3")} />
@@ -401,7 +425,7 @@ export default function Page() {
 										<CardContent>
 											<div className="text-lg leading-relaxed">
 												{t("reflection.dif.description")}
-									<ul className="space-y-2 my-2">
+												<ul className="my-2 space-y-2">
 													<BulletPoint text={t("reflection.dif.1")} />
 													<BulletPoint text={t("reflection.dif.2")} />
 													<BulletPoint text={t("reflection.dif.3")} />
