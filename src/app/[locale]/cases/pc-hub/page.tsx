@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { Separator } from "@radix-ui/react-select";
 import {
 	Calendar,
 	Code,
@@ -16,7 +15,6 @@ import { Badge } from "@/components/ui/badge";
 import BulletPoint from "../components/BulletPoint";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import ReactPlayer from "react-player";
 import VideoDemo from "./components/VideoDemo";
 
 export default function ReginaGaelPage() {
@@ -34,12 +32,12 @@ export default function ReginaGaelPage() {
 							<h1 className="mb-6 text-4xl font-bold tracking-tight sm:text-6xl case-gradient-text">
 								{t("title")}
 							</h1>
-							<p className="mb-8 text-xl md:text-2xl text-muted-foreground">
+							<p className="mb-8 text-xl md:text-2xl text-zinc-600 dark:text-muted-foreground">
 								{t("sub-title")}
 							</p>
 
 							{/* Project Meta */}
-							<div className="flex flex-wrap gap-6 justify-center text-sm text-muted-foreground">
+							<div className="flex flex-wrap gap-6 justify-center text-zinc-600 dark:text-muted-foreground">
 								<div className="flex gap-2 items-center">
 									<Users className="w-4 h-4" />
 									<span>{t("role")}</span>
@@ -100,59 +98,59 @@ export default function ReginaGaelPage() {
 							<div className="grid gap-8 md:grid-cols-2">
 								<Card>
 									<CardContent className="p-6">
-										<h3 className="mb-4 text-xl font-semibold text-red-600 dark:text-red-500">
+										<h3 className="mb-4 text-xl font-semibold text-red-700 dark:text-red-400">
 											{t("g&c.problems.title")}
 										</h3>
 										<ul className="space-y-3">
 											<BulletPoint
 												text={t("g&c.problems.1")}
-												className="bg-red-500"
+												className="bg-red-700 dark:bg-red-400"
 											/>
 											<BulletPoint
 												text={t("g&c.problems.2")}
-												className="bg-red-500"
+												className="bg-red-700 dark:bg-red-400"
 											/>
 											<BulletPoint
 												text={t("g&c.problems.3")}
-												className="bg-red-500"
+												className="bg-red-700 dark:bg-red-400"
 											/>
 										</ul>
 									</CardContent>
 								</Card>
 								<Card>
 									<CardContent className="p-6">
-										<h3 className="mb-4 text-xl font-semibold text-emerald-600 dark:text-emerald-500">
+										<h3 className="mb-4 text-xl font-semibold text-emerald-700 dark:text-emerald-500">
 											{t("g&c.goals.title")}
 										</h3>
 										<ul className="space-y-3">
-											<BulletPoint text={t("g&c.goals.1")} />
-											<BulletPoint text={t("g&c.goals.2")} />
-											<BulletPoint text={t("g&c.goals.3")} />
-											<BulletPoint text={t("g&c.goals.4")} />
+											<BulletPoint text={t("g&c.goals.1")} className="bg-emerald-700 dark:bg-emerald-400"/>
+											<BulletPoint text={t("g&c.goals.2")} className="bg-emerald-700 dark:bg-emerald-400"/>
+											<BulletPoint text={t("g&c.goals.3")} className="bg-emerald-700 dark:bg-emerald-400"/>
+											<BulletPoint text={t("g&c.goals.4")} className="bg-emerald-700 dark:bg-emerald-400"/>
 										</ul>
 									</CardContent>
 								</Card>
 								<Card>
 									<CardContent className="p-6">
-										<h3 className="mb-4 text-xl font-semibold text-blue-600 dark:text-blue-500">
+										<h3 className="mb-4 text-xl font-semibold text-blue-700 dark:text-blue-400">
 											{t("g&c.challenges.title")}
 										</h3>
 										<ul className="space-y-3">
 											<BulletPoint
 												text={t("g&c.challenges.1")}
-												className="bg-blue-500"
+												className="bg-blue-700 dark:bg-blue-400"
 											/>
 											<BulletPoint
 												text={t("g&c.challenges.2")}
-												className="bg-blue-500"
+												className="bg-blue-700 dark:bg-blue-400"
 											/>
 											<BulletPoint
 												text={t("g&c.challenges.3")}
-												className="bg-blue-500"
+												className="bg-blue-700 dark:bg-blue-400"
 											/>
 											<BulletPoint
 												text={t("g&c.challenges.4")}
-												className="bg-blue-500"
+												className="bg-blue-700 dark:bg-blue-400"
 											/>
 										</ul>
 									</CardContent>
@@ -168,8 +166,6 @@ export default function ReginaGaelPage() {
 								<VideoDemo />
 							</div>
 						</section>
-
-						<Separator className="my-16" />
 
 						{/* Solutions & Contributions */}
 						<section className="mb-16">
@@ -258,8 +254,6 @@ export default function ReginaGaelPage() {
 							</div>
 						</section>
 
-						<Separator className="my-16" />
-
 						{/* Impact & Results */}
 						<section className="mb-16">
 							<div className="flex gap-3 items-center mb-6">
@@ -271,15 +265,15 @@ export default function ReginaGaelPage() {
 							<div className="flex flex-col">
 								<Card>
 									<CardContent className="flex flex-col gap-3">
-										<BulletPoint text={t("i&r.1")} />
+								<ul className="space-y-3">
+											<BulletPoint text={t("i&r.1")} />
 										<BulletPoint text={t("i&r.2")} />
 										<BulletPoint text={t("i&r.3")} />
+								</ul>
 									</CardContent>
 								</Card>
 							</div>
 						</section>
-
-						<Separator className="my-16" />
 
 						{/* Reflection */}
 						<section className="mb-16">
