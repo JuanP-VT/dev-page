@@ -44,9 +44,9 @@ export default function ExperienceSection() {
 		<section id="experience" className="py-20" ref={sectionRef}>
 			<div className="mb-16 text-center">
 				<div className="inline-block py-1 px-3 mb-4 font-mono text-sm text-teal-400 bg-gray-100 rounded-md border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
-					<span className="text-pink-400">git</span>{" "}
-					<span className="text-teal-400">log</span>{" "}
-					<span className="text-cyan-400">--oneline</span>
+					<span className="text-pink-700 dark:text-pink-400">git</span>{" "}
+					<span className="text-teal-700 dark:text-teal-400">log</span>{" "}
+					<span className="text-cyan-700 dark:text-cyan-400">--oneline</span>
 				</div>
 				<h2 className="mb-2 font-mono text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">
 					{t("title")}
@@ -91,7 +91,7 @@ export default function ExperienceSection() {
 											<span className="flex flex-shrink-0 justify-center items-center mt-px w-5 h-5 text-xs text-teal-800 rounded-full dark:text-teal-400 bg-teal-500/70 dark:bg-teal-500/20">
 												✓
 											</span>
-											<span className="text-teal-600 dark:text-teal-400">
+											<span className="text-teal-700 dark:text-teal-400">
 												{item.main}
 											</span>
 										</div>

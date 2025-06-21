@@ -32,7 +32,7 @@ export default function NavBar() {
 			<MobileDrawer />
 			<nav className="flex z-50 justify-between py-3 px-6 w-full text-gray-800 bg-white rounded-b-lg shadow-sm dark:text-gray-200 dark:bg-gray-800 dark:border dark:border-gray-700/50">
 				<div className="flex text-lg font-bold">
-					<span className="text-teal-400">jp</span>
+					<span className="text-teal-700 dark:text-teal-400">jp</span>
 					<span>@{t("portfolio")}</span>
 					<span className="text-sky-500">:~$</span>
 				</div>

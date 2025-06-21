@@ -33,8 +33,8 @@ export default function ContactSection() {
 		<section id="contact" className="py-20">
 			<div className="mb-16 text-center">
 				<div className="inline-block py-1 px-3 mb-4 font-mono text-sm text-teal-400 bg-gray-100 rounded-md border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
-					<span className="text-pink-400">ssh</span>{" "}
-					<span className="text-teal-400">jp@contact</span>
+					<span className="text-pink-700 dark:text-pink-400">ssh</span>{" "}
+					<span className="text-teal-700 dark:text-teal-400">jp@contact</span>
 				</div>
 				<h2 className="mb-2 font-mono text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">
 					{t("title")}

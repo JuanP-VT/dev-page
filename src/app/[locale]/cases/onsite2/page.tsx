@@ -331,7 +331,7 @@ export default function Page() {
 								</Card>
 								<Card>
 									<CardContent className="p-6 text-center">
-										<div className="mb-2 text-3xl font-bold text-teal-600 dark:text-teal-400">
+										<div className="mb-2 text-3xl font-bold text-teal-700 dark:text-teal-400">
 											1.6s max LCP
 										</div>
 										<div className="text-sm text-zinc-600 dark:text-muted-foreground">

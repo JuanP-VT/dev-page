@@ -50,15 +50,15 @@ export default function HeroSection() {
 			ref={containerRef}
 		>
 			<div className="flex-1 opacity-0" ref={textRef}>
-				<div className="inline-block py-1 px-3 mb-4 font-mono text-sm text-teal-600 bg-gray-100 rounded-md border border-gray-200 dark:text-teal-400 dark:bg-gray-800 dark:border-slate-700">
-					<span className="text-pink-500 dark:text-pink-400">const</span>{" "}
-					<span className="text-teal-600 dark:text-teal-400">
+				<div className="inline-block py-1 px-3 mb-4 font-mono text-sm text-teal-700 bg-gray-100 rounded-md border border-gray-200 dark:text-teal-400 dark:bg-gray-800 dark:border-slate-700">
+					<span className="text-pink-700 dark:text-pink-400">const</span>{" "}
+					<span className="text-teal-700 dark:text-teal-400">
 						{t("role-t")}
 					</span>{" "}
-					= <span className="dark:text-cyan-400 text-sky-600">{t("role")}</span>
+					= <span className="dark:text-cyan-400 text-sky-700">{t("role")}</span>
 					;
 				</div>
-				<h1 className="pt-4 mb-4 font-mono text-4xl font-bold md:text-5xl">
+				<h1 className="pt-4 mb-4 font-mono text-4xl font-bold md:text-5xl text-gray-600 dark:text-gray-300">
 					{t("greeting")}{" "}
 					<span className="relative text-transparent bg-clip-text from-teal-500 dark:from-teal-300 bg-linear-to-r to-sky-600 dark:to-sky-400">
 						Juan Pablo
@@ -72,14 +72,14 @@ export default function HeroSection() {
 				<div className="flex gap-4">
 					<a
 						href="#contact"
-						className="flex gap-2 items-center py-3 px-4 font-mono text-sm bg-gradient-to-r to-emerald-400 rounded-md transition-all md:px-6 dark:to-emerald-400 hover:shadow-lg from-sky-500 group bg-linear-to-r dark:from-sky-500"
+						className="flex gap-2 items-center text-zinc-100 py-3 px-4 font-mono text-sm bg-gradient-to-r to-emerald-400 rounded-md transition-all md:px-6 dark:to-emerald-400 hover:shadow-lg from-sky-500 group bg-linear-to-r dark:from-sky-500"
 					>
 						<Terminal className="w-4 h-4" />
 						{t("contact")}
 					</a>
 					<a
 						href="#projects"
-						className="py-3 px-2 font-mono text-sm text-teal-600 rounded-md border-2 border-teal-500 transition-all md:px-6 dark:text-teal-400 dark:hover:bg-teal-800/50 hover:bg-teal-100/50"
+						className="py-3 px-2 font-mono text-sm text-teal-700 rounded-md border-2 border-teal-500 transition-all md:px-6 dark:text-teal-400 dark:hover:bg-teal-800/50 hover:bg-teal-100/50"
 					>
 						<Code className="inline-block mr-2 w-4 h-4" />
 						{t("projects")}
@@ -103,25 +103,25 @@ export default function HeroSection() {
 					{/* Code snippets floating around */}
 					<div className="absolute -top-10 -left-10 p-3 bg-white rounded-md border border-gray-200 shadow-md rotate-6 dark:bg-gray-800 animate-float dark:border-slate-700">
 						<pre className="font-mono text-xs">
-							<span className="text-pink-600 dark:text-pink-400">const</span>{" "}
-							<span className="dark:text-cyan-400 text-sky-600">
+							<span className="text-pink-700 dark:text-pink-400">const</span>{" "}
+							<span className="dark:text-cyan-400 text-sky-700">
 								{t("developer")}
 							</span>{" "}
-							= <span className="text-teal-600 dark:text-teal-400">true</span>
+							= <span className="text-teal-700 dark:text-teal-400">true</span>
 							{";"}
 						</pre>
 					</div>
 
 					<div className="absolute -right-5 -bottom-10 p-3 bg-white rounded-md border border-gray-200 shadow-md -rotate-6 dark:bg-gray-800 animate-float-delay dark:border-slate-700">
 						<pre className="font-mono text-xs">
-							<span className="text-pink-600 dark:text-pink-400">import</span>{" "}
+							<span className="text-pink-700 dark:text-pink-400">import</span>{" "}
 							&#123;{" "}
-							<span className="dark:text-cyan-400 text-sky-600">
+							<span className="dark:text-cyan-400 text-sky-700">
 								{t("creativity")}
 							</span>{" "}
 							&#125;{" "}
-							<span className="text-pink-600 dark:text-pink-400">from</span>{" "}
-							<span className="text-teal-600 dark:text-teal-400">
+							<span className="text-pink-700 dark:text-pink-400">from</span>{" "}
+							<span className="text-teal-700 dark:text-teal-400">
 								{t("brain")}
 							</span>
 							;
