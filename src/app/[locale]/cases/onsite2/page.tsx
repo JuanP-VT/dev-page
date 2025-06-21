@@ -27,7 +27,7 @@ export default function Page() {
 				<section className="py-10 md:py-16">
 					<div className="container px-4 mx-auto">
 						<div className="mx-auto max-w-4xl text-center">
-							<div className="justify-self-center py-1 px-3 mb-4 text-sm rounded-full border w-fit bg-zinc-200/60 dark:bg-zinc-800">
+							<div className="justify-self-center py-1 px-3 mb-4 text-sm rounded-full border w-fit bg-teal-500 text-teal-50 ">
 								{t("common.case-study")}
 							</div>
 							<h1 className="mb-6 text-4xl font-bold tracking-tight sm:text-6xl case-gradient-text">
@@ -95,32 +95,32 @@ export default function Page() {
 							<div className="grid gap-8 md:grid-cols-2">
 								<Card>
 									<CardContent className="p-6">
-										<h3 className="mb-4 text-xl font-semibold text-red-600 dark:text-red-500">
+										<h3 className="mb-4 text-xl font-semibold text-red-600 dark:text-red-400">
 											{t("g&c.problems.title")}
 										</h3>
 										<ul className="space-y-3">
 											<BulletPoint
 												text={t("g&c.problems.1")}
-												className="bg-red-500"
+												className="bg-red-600 dark:bg-red-400"
 											/>
 											<BulletPoint
 												text={t("g&c.problems.2")}
-												className="bg-red-500"
+												className="bg-red-600 dark:bg-red-400"
 											/>
 											<BulletPoint
 												text={t("g&c.problems.3")}
-												className="bg-red-500"
+												className="bg-red-600 dark:bg-red-400"
 											/>
 											<BulletPoint
 												text={t("g&c.problems.4")}
-												className="bg-red-500"
+												className="bg-red-600 dark:bg-red-400"
 											/>
 										</ul>
 									</CardContent>
 								</Card>
 								<Card>
 									<CardContent className="p-6">
-										<h3 className="mb-4 text-xl font-semibold text-emerald-600 dark:text-emerald-500">
+										<h3 className="mb-4 text-xl font-semibold text-emerald-600 dark:text-emerald-400">
 											{t("g&c.goals.title")}
 										</h3>
 										<ul className="space-y-3">
@@ -134,25 +134,25 @@ export default function Page() {
 
 								<Card>
 									<CardContent className="p-6">
-										<h3 className="mb-4 text-xl font-semibold text-blue-600 dark:text-blue-500">
+										<h3 className="mb-4 text-xl font-semibold text-blue-600 dark:text-blue-400">
 											{t("g&c.challenges.title")}
 										</h3>
 										<ul className="space-y-3">
 											<BulletPoint
 												text={t("g&c.challenges.1")}
-												className="bg-blue-500"
+												className="bg-blue-600 dark:bg-blue-400"
 											/>
 											<BulletPoint
 												text={t("g&c.challenges.2")}
-												className="bg-blue-500"
+												className="bg-blue-600 dark:bg-blue-400"
 											/>
 											<BulletPoint
 												text={t("g&c.challenges.3")}
-												className="bg-blue-500"
+												className="bg-blue-600 dark:bg-blue-400"
 											/>
 											<BulletPoint
 												text={t("g&c.challenges.4")}
-												className="bg-blue-500"
+												className="bg-blue-600 dark:bg-blue-400"
 											/>
 										</ul>
 									</CardContent>
@@ -266,7 +266,7 @@ export default function Page() {
 								<div className="grid grid-cols-1 gap-4 pt-4 sm:grid-cols-2">
 									<Card>
 										<CardContent className="p-6">
-											<h3 className="mb-4 text-xl font-semibold text-red-600">
+											<h3 className="mb-4 text-xl font-semibold text-red-600 dark:text-red-400">
 												{t("BvsA.before.title")}
 											</h3>
 											<ul className="space-y-2 text-sm">
@@ -292,7 +292,7 @@ export default function Page() {
 
 									<Card>
 										<CardContent className="p-6">
-											<h3 className="mb-4 text-xl font-semibold text-emerald-500">
+											<h3 className="mb-4 text-xl font-semibold text-emerald-600 dark:text-emerald-400">
 												{t("BvsA.after.title")}
 											</h3>
 											<ul className="space-y-2 text-sm">
@@ -382,11 +382,11 @@ export default function Page() {
 										<CardContent>
 											<div className="text-lg leading-relaxed">
 												{t("reflection.learned.description")}
-												<div className="flex flex-col gap-2 py-2">
+												<ul className="space-y-2 my-2">
 													<BulletPoint text={t("reflection.learned.1")} />
 													<BulletPoint text={t("reflection.learned.2")} />
 													<BulletPoint text={t("reflection.learned.3")} />
-												</div>
+												</ul>
 												{t("reflection.learned.description2")}
 											</div>
 										</CardContent>
@@ -401,11 +401,11 @@ export default function Page() {
 										<CardContent>
 											<div className="text-lg leading-relaxed">
 												{t("reflection.dif.description")}
-												<div className="flex flex-col gap-2 py-2 mt-2">
+									<ul className="space-y-2 my-2">
 													<BulletPoint text={t("reflection.dif.1")} />
 													<BulletPoint text={t("reflection.dif.2")} />
 													<BulletPoint text={t("reflection.dif.3")} />
-												</div>
+												</ul>
 											</div>
 										</CardContent>
 									</Card>
