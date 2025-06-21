@@ -6,7 +6,8 @@ import createNextIntlPlugin from "next-intl/plugin";
 // 1. Import the bundle analyzer
 //$env:ANALYZE="true"; npm run build
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
-  enabled: process.env.ANALYZE === 'true', // Only enable if ANALYZE=true is set in your command
+  // enabled: process.env.ANALYZE === 'true', 
+  enabled: false
 });
 
 const nextConfig: NextConfig = {
