@@ -30,7 +30,7 @@ export default async function LocaleLayout({
 	return (
 		<html lang={locale} suppressHydrationWarning>
 			<body
-				className={`${sfMono.className} bg-zinc-300/30 antialiased dark:bg-[#1a202c]`}
+				className={`${sfMono.className} bg-zinc-100 antialiased dark:bg-[#1a202c]`}
 			>
 				<NextIntlClientProvider>
 					<ThemeProvider attribute="class" defaultTheme="dark">
