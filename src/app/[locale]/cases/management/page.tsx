@@ -11,7 +11,6 @@ import {
 import { GrOverview } from "react-icons/gr";
 import Link from "next/link";
 import React from "react";
-import ThemeImage from "../components/ThemeImage";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import BulletPoint from "../components/BulletPoint";
@@ -43,12 +42,12 @@ export default function ManagementPage() {
 							<h1 className="mb-6 text-4xl font-bold tracking-tight sm:text-6xl case-gradient-text">
 								{t("title")}
 							</h1>
-							<p className="mb-8 text-xl md:text-2xl text-muted-foreground">
+							<p className="mb-8 text-xl md:text-2xl text-zinc-600 dark:text-muted-foreground">
 								{t("sub-title")}
 							</p>
 
 							{/* Project Meta */}
-							<div className="flex flex-wrap gap-6 justify-center text-sm text-muted-foreground">
+							<div className="flex flex-wrap gap-6 justify-center text-sm text-zinc-600 dark:text-muted-foreground">
 								<div className="flex gap-2 items-center">
 									<Users className="w-4 h-4" />
 									<span>{t("role")}</span>
@@ -108,52 +107,64 @@ export default function ManagementPage() {
 							<div className="grid gap-8 md:grid-cols-2">
 								<Card>
 									<CardContent className="p-6">
-										<h3 className="mb-4 text-xl font-semibold text-emerald-600 dark:text-emerald-500">
+										<h3 className="mb-4 text-xl font-semibold text-emerald-700 dark:text-emerald-400">
 											{t("g&c.goals.title")}
 										</h3>
 										<ul className="space-y-3">
-											<BulletPoint text={t("g&c.goals.1")} />
-											<BulletPoint text={t("g&c.goals.2")} />
-											<BulletPoint text={t("g&c.goals.3")} />
-											<BulletPoint text={t("g&c.goals.4")} />
+											<BulletPoint
+												text={t("g&c.goals.1")}
+												className="bg-emerald-700 dark:bg-emerald-400"
+											/>
+											<BulletPoint
+												text={t("g&c.goals.2")}
+												className="bg-emerald-700 dark:bg-emerald-400"
+											/>
+											<BulletPoint
+												text={t("g&c.goals.3")}
+												className="bg-emerald-700 dark:bg-emerald-400"
+											/>
+											<BulletPoint
+												text={t("g&c.goals.4")}
+												className="bg-emerald-700 dark:bg-emerald-400"
+											/>
 										</ul>
 									</CardContent>
 								</Card>
 
 								<Card>
 									<CardContent className="p-6">
-										<h3 className="mb-4 text-xl font-semibold text-blue-600 dark:text-blue-500">
+										<h3 className="mb-4 text-xl font-semibold text-blue-700 dark:text-blue-400">
 											{t("g&c.challenges.title")}
 										</h3>
 										<ul className="space-y-3">
 											<BulletPoint
 												text={t("g&c.challenges.1")}
-												className="bg-blue-500"
+												className="bg-blue-700 dark:bg-blue-400"
 											/>
 											<BulletPoint
 												text={t("g&c.challenges.2")}
-												className="bg-blue-500"
+												className="bg-blue-700 dark:bg-blue-400"
 											/>
 											<BulletPoint
 												text={t("g&c.challenges.3")}
-												className="bg-blue-500"
+												className="bg-blue-700 dark:bg-blue-400"
 											/>
 											<BulletPoint
 												text={t("g&c.challenges.4")}
-												className="bg-blue-500"
+												className="bg-blue-700 dark:bg-blue-400"
 											/>
 										</ul>
 									</CardContent>
 								</Card>
 								<Card>
 									<CardContent className="p-6">
-										<h3 className="mb-4 text-xl font-semibold text-red-600 dark:text-red-500">
+										<h3 className="mb-4 text-xl font-semibold text-red-700 dark:text-red-400">
 											{t("g&c.problems.title")}
 										</h3>
 										<ul className="space-y-3">
 											<BulletPoint
 												text={t("g&c.problems.1")}
-												className="bg-red-500"
+												className="bg-red-700 dark:bg-red-400"
 											/>
 										</ul>
 									</CardContent>
@@ -275,30 +286,30 @@ export default function ManagementPage() {
 							<div className="grid gap-6 md:grid-cols-3">
 								<Card>
 									<CardContent className="p-6 text-center">
-										<div className="mb-2 text-3xl font-bold text-emerald-500">
+										<div className="mb-2 text-3xl font-bold text-emerald-700 dark:text-emerald-400">
 											100%
 										</div>
-										<div className="text-sm text-muted-foreground">
+										<div className="text-sm text-zinc-600 dark:text-muted-foreground">
 											{t("i&r.1")}
 										</div>
 									</CardContent>
 								</Card>
 								<Card>
 									<CardContent className="p-6 text-center">
-										<div className="mb-2 text-3xl font-bold text-teal-500">
+										<div className="mb-2 text-3xl font-bold text-teal-700 dark:text-teal-400">
 											100%
 										</div>
-										<div className="text-sm text-muted-foreground">
+										<div className="text-sm text-zinc-600 dark:text-muted-foreground">
 											{t("i&r.2")}
 										</div>
 									</CardContent>
 								</Card>
 								<Card>
 									<CardContent className="p-6 text-center">
-										<div className="mb-2 text-3xl font-bold text-cyan-500">
+										<div className="mb-2 text-3xl font-bold text-cyan-700 dark:text-cyan-400">
 											99.8%
 										</div>
-										<div className="text-sm text-muted-foreground">
+										<div className="text-sm text-zinc-600 dark:text-muted-foreground">
 											{t("i&r.3")}
 										</div>
 									</CardContent>
@@ -336,12 +347,12 @@ export default function ManagementPage() {
 										<CardContent>
 											<div className="text-lg leading-relaxed">
 												{t("reflection.learned.description")}
-												<div className="flex flex-col gap-2 py-2">
+												<ul className="space-y-3 my-2">
 													<BulletPoint text={t("reflection.learned.1")} />
 													<BulletPoint text={t("reflection.learned.2")} />
 													<BulletPoint text={t("reflection.learned.3")} />
 													<BulletPoint text={t("reflection.learned.4")} />
-												</div>
+												</ul>
 												{t("reflection.learned.description2")}
 											</div>
 										</CardContent>
@@ -356,10 +367,10 @@ export default function ManagementPage() {
 										<CardContent>
 											<div className="text-lg leading-relaxed">
 												{t("reflection.dif.description")}
-												<div className="flex flex-col gap-2 py-2 mt-2">
+												<ul className="space-y-3 my-2">
 													<BulletPoint text={t("reflection.dif.1")} />
 													<BulletPoint text={t("reflection.dif.2")} />
-												</div>
+												</ul>
 											</div>
 										</CardContent>
 									</Card>
