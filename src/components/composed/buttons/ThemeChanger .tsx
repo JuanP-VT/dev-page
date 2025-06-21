@@ -28,6 +28,7 @@ export const ThemeChanger = () => {
 	return (
 		<Button
 			size="sm"
+			aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} theme`}
 			onClick={handleThemeSwitch}
 			className={clsx(
 				"relative  flex border-1 h-[32px] dark:border-slate-700 w-20 gap-7  rounded-xl bg-gradient-to-r from-red-200 via-orange-300 to-lime-300 dark:from-indigo-900 dark:via-purple-700 dark:to-blue-500",

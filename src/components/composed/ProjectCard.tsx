@@ -133,6 +133,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 						)}
 						{project.githubLink && (
 							<Link
+							aria-label="GitHub"
 								target="_blank"
 								href={project.githubLink}
 								className="flex gap-1 items-center font-mono text-sm text-teal-600 transition-colors dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300"
