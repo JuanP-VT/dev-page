@@ -119,7 +119,7 @@ export default function ReginaGaelPage() {
 								</Card>
 								<Card>
 									<CardContent className="p-6">
-										<h3 className="mb-4 text-xl font-semibold text-emerald-700 dark:text-emerald-500">
+										<h3 className="mb-4 text-xl font-semibold text-emerald-700 dark:text-emerald-400">
 											{t("g&c.goals.title")}
 										</h3>
 										<ul className="space-y-3">
