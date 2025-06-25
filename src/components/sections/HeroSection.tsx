@@ -91,11 +91,10 @@ export default function HeroSection() {
 					<div className="flex h-64 w-64 rotate-3 items-center justify-center rounded-lg bg-linear-to-r from-teal-500 to-sky-500 text-6xl font-bold text-white shadow-[0_0_25px_8px_rgba(20,184,166,0.6)] md:h-80 md:w-80">
 						<div className="flex absolute justify-center items-center bg-white rounded-lg inset-[3px]">
 							<Image
-								src="/Dobberman.webp"
-								width={200}
-								height={200}
+								src="/me.webp"
+								fill
 								alt="profile picture"
-								className="h-full w-full rounded-lg object-cover object-[25%_15%]"
+								className="h-full w-full rounded-lg object-fit dark:brightness-[0.8]"
 							/>
 						</div>
 					</div>
