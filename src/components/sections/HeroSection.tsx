@@ -50,14 +50,14 @@ export default function HeroSection() {
 			ref={containerRef}
 		>
 			<div className="flex-1 opacity-0" ref={textRef}>
-				<div className="inline-block py-1 px-3 mb-4 font-mono text-sm text-teal-700 bg-gray-100 rounded-md border border-gray-200 dark:text-teal-400 dark:bg-gray-800 dark:border-slate-700">
+				{/* <div className="inline-block py-1 px-3 mb-4 font-mono text-sm text-teal-700 bg-gray-100 rounded-md border border-gray-200 dark:text-teal-400 dark:bg-gray-800 dark:border-slate-700">
 					<span className="text-pink-700 dark:text-pink-400">const</span>{" "}
 					<span className="text-teal-700 dark:text-teal-400">
 						{t("role-t")}
 					</span>{" "}
 					= <span className="dark:text-cyan-400 text-sky-700">{t("role")}</span>
 					;
-				</div>
+				</div> */}
 				<h1 className="pt-4 mb-4 font-mono text-4xl font-bold text-gray-600 md:text-5xl dark:text-gray-300">
 					{t("greeting")}{" "}
 					<span className="relative text-transparent bg-clip-text from-teal-500 dark:from-teal-300 bg-linear-to-r to-sky-600 dark:to-sky-400">
@@ -88,13 +88,13 @@ export default function HeroSection() {
 			</div>
 			<div className="flex flex-1 justify-center py-2 opacity-0" ref={imageRef}>
 				<div className="relative">
-					<div className="flex h-64 w-64 rotate-3 items-center justify-center rounded-lg bg-linear-to-r from-teal-500 to-sky-500 text-6xl font-bold text-white shadow-[0_0_25px_8px_rgba(20,184,166,0.6)] md:h-80 md:w-80">
-						<div className="flex absolute justify-center items-center bg-white rounded-lg inset-[3px]">
+					<div className="flex h-64 w-64 rotate-3 items-center justify-center rounded-lg bg-linear-to-r from-teal-500 to-sky-500 text-6xl font-bold text-white shadow-[0_0_5px_5px_rgba(20,184,166,0.6)] md:h-80 md:w-80">
+						<div className="flex absolute justify-center items-center bg-white rounded-lg inset-[2px]">
 							<Image
 								src="/me.webp"
 								fill
 								alt="profile picture"
-								className="h-full w-full rounded-lg object-fit dark:brightness-[0.8]"
+								className="h-full w-full rounded-lg object-fit dark:brightness-[0.8] brightness-95"
 							/>
 						</div>
 					</div>
@@ -104,7 +104,7 @@ export default function HeroSection() {
 						<pre className="font-mono text-xs">
 							<span className="text-pink-700 dark:text-pink-400">const</span>{" "}
 							<span className="dark:text-cyan-400 text-sky-700">
-								{t("developer")}
+								dev
 							</span>{" "}
 							= <span className="text-teal-700 dark:text-teal-400">true</span>
 							{";"}

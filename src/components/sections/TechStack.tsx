@@ -282,7 +282,7 @@ export default function TechStack() {
 					<span className="text-teal-700 dark:text-teal-400">skills</span>{" "}
 					&#125; <span className="text-pink-700 dark:text-pink-400">from</span>{" "}
 					<span className="text-sky-700 dark:text-sky-400">'./tech-stack'</span>
-					;
+					
 				</div>
 				<h2 className="mb-2 font-mono text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-blue-600 dark:from-teal-400 dark:to-blue-500">
 					Tech Stack
