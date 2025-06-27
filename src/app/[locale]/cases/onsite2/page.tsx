@@ -17,6 +17,7 @@ import { Badge } from "@/components/ui/badge";
 import BulletPoint from "../components/BulletPoint";
 import OnsiteComparison from "./components/OnsiteComparison";
 import { useTranslations } from "next-intl";
+import Metrics from "./components/Metrics";
 
 export default function Page() {
 	const t = useTranslations("cases.onsite2");
@@ -262,7 +263,59 @@ export default function Page() {
 							</div>
 						</section>
 
-						<Separator className="my-16" />
+										{/* Impact & Results */}
+						<section className="mb-16">
+							<div className="flex gap-3 items-center mb-2">
+								<TrendingUp className="w-6 h-6 text-sky-500" />
+								<h2 className="text-3xl font-bold case-gradient-text">
+									{t("i&r.title")}
+								</h2>
+							</div>
+							<Metrics/>
+
+							<div className="grid gap-6 md:grid-cols-3">
+								<Card>
+									<CardContent className="p-6 text-center">
+										<div className="mb-2 text-3xl font-bold text-emerald-600 dark:text-emerald-400">
+											0.4s FCP
+										</div>
+										<div className="text-sm text-zinc-600 dark:text-muted-foreground">
+											{t("i&r.1")}
+										</div>
+									</CardContent>
+								</Card>
+								<Card>
+									<CardContent className="p-6 text-center">
+										<div className="mb-2 text-3xl font-bold text-teal-700 dark:text-teal-400">
+											1.4s max LCP
+										</div>
+										<div className="text-sm text-zinc-600 dark:text-muted-foreground">
+											{t("i&r.2")}
+										</div>
+									</CardContent>
+								</Card>
+								<Card>
+									<CardContent className="p-6 text-center">
+										<div className="mb-2 text-3xl font-bold text-cyan-600 dark:text-cyan-400">
+											~60%
+										</div>
+										<div className="text-sm text-zinc-600 dark:text-muted-foreground">
+											{t("i&r.3")}
+										</div>
+									</CardContent>
+								</Card>
+							</div>
+
+							<Card className="mt-6">
+								<CardContent>
+									<div className="max-w-none prose prose-lg">
+										<p className="text-lg leading-relaxed">
+											{t("i&r.description")}
+										</p>
+									</div>
+								</CardContent>
+							</Card>
+						</section>						
 
 						{/* Before vs After */}
 						<section className="flex flex-col mb-16 w-full">
@@ -329,64 +382,7 @@ export default function Page() {
 									</Card>
 								</div>
 							</div>
-						</section>
-
-						<Separator className="my-16" />
-
-						{/* Impact & Results */}
-						<section className="mb-16">
-							<div className="flex gap-3 items-center mb-6">
-								<TrendingUp className="w-6 h-6 text-sky-500" />
-								<h2 className="text-3xl font-bold case-gradient-text">
-									{t("i&r.title")}
-								</h2>
-							</div>
-
-							<div className="grid gap-6 md:grid-cols-3">
-								<Card>
-									<CardContent className="p-6 text-center">
-										<div className="mb-2 text-3xl font-bold text-emerald-600 dark:text-emerald-400">
-											0.4s FCP
-										</div>
-										<div className="text-sm text-zinc-600 dark:text-muted-foreground">
-											{t("i&r.1")}
-										</div>
-									</CardContent>
-								</Card>
-								<Card>
-									<CardContent className="p-6 text-center">
-										<div className="mb-2 text-3xl font-bold text-teal-700 dark:text-teal-400">
-											1.6s max LCP
-										</div>
-										<div className="text-sm text-zinc-600 dark:text-muted-foreground">
-											{t("i&r.2")}
-										</div>
-									</CardContent>
-								</Card>
-								<Card>
-									<CardContent className="p-6 text-center">
-										<div className="mb-2 text-3xl font-bold text-cyan-600 dark:text-cyan-400">
-											~60%
-										</div>
-										<div className="text-sm text-zinc-600 dark:text-muted-foreground">
-											{t("i&r.3")}
-										</div>
-									</CardContent>
-								</Card>
-							</div>
-
-							<Card className="mt-6">
-								<CardContent>
-									<div className="max-w-none prose prose-lg">
-										<p className="text-lg leading-relaxed">
-											{t("i&r.description")}
-										</p>
-									</div>
-								</CardContent>
-							</Card>
-						</section>
-
-						<Separator className="my-16" />
+						</section>		
 
 						{/* Reflection */}
 						<section className="mb-16">

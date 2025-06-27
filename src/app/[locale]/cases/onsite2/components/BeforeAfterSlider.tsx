@@ -95,7 +95,7 @@ export default function BeforeAfterSlider({
 
 	return (
 		<div className="flex relative flex-col items-center mx-auto w-full max-w-full">
-			<span className="flex p-4 py-5 text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 dark:to-emerald-400 from-sky-500 dark:from-sky-500">
+			<span className="flex p-4 py-5 text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 dark:to-emerald-400 from-sky-500 dark:from-sky-500">
 				{title}
 			</span>
 			<div

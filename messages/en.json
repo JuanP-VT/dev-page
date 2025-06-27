@@ -287,8 +287,21 @@
 			},
 			"i&r": {
 				"title": "Impact & Results",
+				"metrics":{
+					"description":"Migrating from jQuery to Next.js resulted in significant improvements in performance and user experience. The following Lighthouse metrics demonstrate the quantifiable impact of this technological upgrade.",
+					"after":"After",
+					"before":"Before",
+					"account-summary":"Account Summary",
+					"boxes":"Boxes",
+					"customers":"Customers",
+					"dashboard":"Dashboard",
+					"login":"Login",
+					"mass-shipping":"Mass Shipping",
+					"pickup-request":"Pickup Request",
+					"shipments":"Shipments"					
+				},
 				"1": "4.5 times better than Google's standard (1.8s)",
-				"2": "Surpassing Google's 2.5-second standard by 37%",
+				"2": "Surpassing Google's 2.5-second standard by 44%",
 				"3": "Cost savings compared to outsourcing (approx. $360K MXN)",
 				"description": "My role in the complete rebuild of Onsite 2 was key. With significant autonomy, I was able to define and execute the technical vision of the project, driving substantial improvements in performance and maintainability with proactive solutions. Not only did I modernize and optimize the platform in just 10 months, but this approach also generated 95% positive feedback from the internal team."
 			},

@@ -87,7 +87,7 @@
 
 		"fortnite-title": "App de Carrito de Compras Fortnite | Integración API & Lógica de Carrito",
 		"fortnite-description": "Construí una aplicación estilo eCommerce dinámica que obtiene datos de productos en vivo desde la API Pública de Fortnite. La app incluye página principal, catálogo de productos y un sistema de carrito de compras completamente funcional. Desarrollado con TypeScript y React, enfocándome en componentes funcionales, hooks y enrutamiento del lado del cliente con React Router.",
-		"fortnite-disclaimer":"Este proyecto lo desarrollé en las primeras etapas de mi aprendizaje con el objetivo de investigar sobre APIs, manejo de estados y arquitectura de componentes. Desde entonces, la API original de Fortnite (https://fortnite-api.com/v2/shop/br) de la que dependía ha quedado obsoleta, lo que hace que la aplicación esté inoperativa en este momento. La conservo en mi portafolio como un testimonio de mi proceso de autoaprendizaje y mi evolución.",
+		"fortnite-disclaimer": "Este proyecto lo desarrollé en las primeras etapas de mi aprendizaje con el objetivo de investigar sobre APIs, manejo de estados y arquitectura de componentes. Desde entonces, la API original de Fortnite (https://fortnite-api.com/v2/shop/br) de la que dependía ha quedado obsoleta, lo que hace que la aplicación esté inoperativa en este momento. La conservo en mi portafolio como un testimonio de mi proceso de autoaprendizaje y mi evolución.",
 
 		"curriculum-title": "Generador de Currículums | Creador Dinámico de PDFs",
 		"curriculum-description": "Creé una aplicación React que permite a los usuarios ingresar información personal y profesional para generar un currículum en PDF descargable. Construido con TypeScript usando componentes basados en clases, este proyecto profundizó mi comprensión del estado de los componentes, métodos de ciclo de vida y manejo de entrada estructurada de usuarios.",
@@ -214,7 +214,7 @@
 			"role": "Desarrollador Frontend",
 			"duration": "Agosto 2024 - Desarrollo en Curso",
 			"overview-title": "Resumen",
-			"overview-description": "Onsite es la plataforma logística principal de la empresa, utilizada por clientes comerciales para gestionar todo el ciclo de sus envíos. Desde cotizar y programar recolecciones hasta rastrear paquetes, descargar facturas y acceder a reportes históricos, los usuarios pueden operar toda su logística desde una sola interfaz.",			
+			"overview-description": "Onsite es la plataforma logística principal de la empresa, utilizada por clientes comerciales para gestionar todo el ciclo de sus envíos. Desde cotizar y programar recolecciones hasta rastrear paquetes, descargar facturas y acceder a reportes históricos, los usuarios pueden operar toda su logística desde una sola interfaz.",
 			"overview-description2": "La versión anterior, construida con jQuery, había evolucionado sin una arquitectura definida, resultando en una base de código frágil, difícil de mantener y poco escalable. El objetivo fue reemplazarla por completo con una aplicación moderna, robusta y centrada en el usuario. El resultado: una experiencia significativamente más fluida, un sistema más veloz y una base tecnológica preparada para crecer.",
 			"g&c": {
 				"title": "Metas y Desafíos",
@@ -288,8 +288,21 @@
 			},
 			"i&r": {
 				"title": "Impacto y Resultados",
+				"metrics": {
+					"description": "La migración de jQuery a Next.js generó mejoras significativas en el rendimiento y la experiencia del usuario. Las siguientes métricas de Lighthouse demuestran el impacto cuantificable de esta modernización tecnológica",
+					"after": "Después",
+					"before": "Antes",
+					"account-summary": "Resumen de Cuenta",
+					"boxes": "Cajas",
+					"customers": "Clientes",
+					"dashboard": "Panel de Control",
+					"login": "Iniciar Sesión",
+					"mass-shipping": "Envío Masivo",
+					"pickup-request": "Solicitud de Recolección",
+					"shipments": "Envíos"
+				},
 				"1": "4.5 veces mejor que el estándar de Google(1.8s)",
-				"2": "Superando el estándar de Google de 2.5 segundos en un 37%",
+				"2": "Superando el estándar de Google de 2.5 segundos en un 44%",
 				"3": "Ahorro, comparado con el costo de outsourcing (aprox. $360K pesos)",
 				"description": "Mi rol en la reconstrucción completa de Onsite 2 fue fundamental. Con una autonomía significativa, pude definir y ejecutar la visión técnica del proyecto, impulsando mejoras sustanciales en rendimiento y mantenibilidad con soluciones proactivas. No solo modernicé y optimicé la plataforma en solo 10 meses, sino que este enfoque generó un 95% de retroalimentación positiva del equipo interno."
 			},
