@@ -109,8 +109,8 @@ function useGetOSMetrics() {
 			},
 			{
 				title: t("pickup-request"),
-				old: "/img/projects/onsite2/metrics/old/pickuprequest.webp",
-				new: "/img/projects/onsite2/metrics/new/pickuprequest.webp",
+				old: "/img/projects/onsite2/metrics/old/pickup-request.webp",
+				new: "/img/projects/onsite2/metrics/new/pickup-request.webp",
 			},
 			{
 				title: t("shipments"),
