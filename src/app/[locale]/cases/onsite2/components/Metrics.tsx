@@ -104,8 +104,8 @@ function useGetOSMetrics() {
 		},
 		{
 			title: t("mass-shipping"),
-			old: "/img/projects/onsite2/metrics/old/massdoc.webp",
-			new: "/img/projects/onsite2/metrics/new/massdoc.webp",
+			old: "/img/projects/onsite2/metrics/old/mass-doc.webp",
+			new: "/img/projects/onsite2/metrics/new/mass-doc.webp",
 		},
 		{
 			title: t("pickup-request"),
