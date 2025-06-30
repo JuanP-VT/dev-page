@@ -75,7 +75,7 @@ export default function OnsiteComparison() {
 				<BeforeAfterSlider
 					title={data[currentIndex]?.title}
 					width={currentFilter === "Desktop" ? 815 : 305}
-					height={currentFilter === "Desktop" ? 450 : 650}
+					height={currentFilter === "Desktop" ? 400 : 650}
 					beforeImage={data[currentIndex]?.beforeImage}
 					afterImage={data[currentIndex]?.afterImage}
 					onClickNext={handleNext}

@@ -59,7 +59,7 @@
 			"github": "GitHub"
 		},
 		"os2-title": "Onsite 2 | Full Rebuild of Core Logistics App",
-		"os2-description": "As one of two developers, I contributed significantly to rebuilding our company's main logistics app used by clients to quote and ship packages. We replaced a legacy jQuery-based version with a fully modern tech stack, delivering a fresh UI/UX, better performance, and long-term maintainability. This rewrite became the new foundation for the product's continued growth",
+		"os2-description": "As one of two developers, I contributed significantly to rebuilding our company's main logistics app used by clients to quote and ship packages. We replaced a legacy jQuery-based version with a fully modern tech stack, delivering a fresh UI/UX, better performance, and long-term maintainability.",
 		"os2-disclaimer": "The project is deployed on a private vercel.app instance for internal PKT1 use. Currently in its final development phase, it requires a company account for access. Please refer to the case study or contact me for a walkthrough.",
 
 		"management-title": "Management | Enhancements and Maintenance",
@@ -219,24 +219,24 @@
 				"title": "Goals & Challenges",
 				"goals": {
 					"title": "Goals",
-					"1": "Modernize the user experience by replacing the outdated interface with a clean, responsive UI",
-					"2": "Improve maintainability by adopting a modern tech stack with reusable, well-structured components",
-					"3": "Optimize performance and reliability, particularly in data-heavy views and complex form interactions",
-					"4": "Ensure mobile compatibility for a seamless experience across all devices"
+					"1": "Modernize the user experience by replacing the outdated interface with a clean, responsive UI.",
+					"2": "Improve maintainability by adopting a modern tech stack with reusable, well-structured components.",
+					"3": "Optimize performance and reliability, particularly in data-heavy views and complex form interactions.",
+					"4": "Ensure mobile compatibility for a seamless experience across all devices."
 				},
 				"challenges": {
 					"title": "Key Challenges",
-					"1": "Rebuilding UI components under tight business constraints and incomplete backend support",
-					"2": "Managing complex forms and application state while maintaining UI responsiveness",
-					"3": "Balancing fast delivery with long-term reusability and maintainability of the codebase",
-					"4": "Integrating with legacy backend systems that introduced technical debt and limitations"
+					"1": "Rebuilding UI components under tight business constraints and incomplete backend support.",
+					"2": "Managing complex forms and application state while maintaining UI responsiveness.",
+					"3": "Balancing fast delivery with long-term reusability and maintainability of the codebase.",
+					"4": "Integrating with legacy backend systems that introduced technical debt and limitations."
 				},
 				"problems": {
 					"title": "Major Problems",
-					"1": "Inconsistent UI patterns across different parts of the app, leading to confusion and poor UX",
-					"2": "Performance bottlenecks when rendering or filtering large datasets",
-					"3": "Broken or unusable mobile experience, making the app frustrating on phones and tablets",
-					"4": "Unstructured legacy codebase with no documentation"
+					"1": "Inconsistent UI patterns across different parts of the app, leading to confusion and poor UX.",
+					"2": "Performance bottlenecks when rendering or filtering large datasets.",
+					"3": "Broken or unusable mobile experience, making the app frustrating on phones.",
+					"4": "Unstructured legacy codebase with no documentation."
 				}
 			},
 			"solutions&contribution": {

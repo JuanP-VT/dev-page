@@ -59,7 +59,7 @@
 			"github": "GitHub"
 		},
 		"os2-title": "Onsite 2 | Reconstrucción completa de la aplicación logística principal",
-		"os2-description": "Como uno de los dos desarrolladores, contribuí significativamente a reconstruir la aplicación logística principal de nuestra empresa, utilizada por los clientes para cotizar y enviar paquetes. Reemplazamos una versión legacy basada en jQuery con tecnologías completamente moderna, entregando una nueva UI/UX, mejor rendimiento y mantenibilidad a largo plazo. Esta reescritura se convirtió en la nueva base para el crecimiento continuo del producto.",
+		"os2-description": "Como uno de los dos desarrolladores, contribuí significativamente a reconstruir la aplicación logística principal de nuestra empresa, utilizada por los clientes para cotizar y enviar paquetes. Reemplazamos una versión legacy basada en jQuery con tecnologías completamente moderna, entregando una nueva UI/UX, mejor rendimiento y mantenibilidad a largo plazo.",
 		"os2-disclaimer": "El proyecto está desplegado en una instancia privada de vercel.app para uso interno de PKT1. Actualmente está en su fase final de desarrollo, requiere una cuenta de empresa para su acceso. Por favor, consulta el caso de estudio o contáctame para una demostración.",
 
 		"management-title": "Management | Mejoras y Mantenimiento",
@@ -230,13 +230,13 @@
 					"1": "Reconstruir componentes de UI bajo estrictas limitaciones comerciales y soporte de backend incompleto.",
 					"2": "Gestionar formularios complejos y el estado de la aplicación mientras se mantiene la capacidad de respuesta de la UI.",
 					"3": "Equilibrar la entrega rápida con la reusabilidad y mantenibilidad a largo plazo de la base de código.",
-					"4": "Integrar con sistemas de backend viejos. que introdujeron deuda técnica y limitaciones."
+					"4": "Integrar con sistemas de backend viejos, que introdujeron deuda técnica y limitaciones."
 				},
 				"problems": {
 					"title": "Problemas Principales",
 					"1": "Patrones de UI inconsistentes en diferentes partes de la aplicación, lo que lleva a confusión y mala UX.",
 					"2": "Cuellos de botella de rendimiento al renderizar o filtrar grandes conjuntos de datos.",
-					"3": "Experiencia móvil rota o inutilizable, haciendo que la aplicación sea frustrante en teléfonos y tabletas.",
+					"3": "Experiencia móvil rota o inutilizable, haciendo que la aplicación sea frustrante en teléfonos.",
 					"4": "Base de código vieja y no estructurada sin documentación."
 				}
 			},
@@ -244,7 +244,7 @@
 				"title": "Soluciones y Mis Contribuciones",
 				"technical": {
 					"title": "Arquitectura Técnica",
-					"1": "Construí una arquitectura modular basada en componentes con React y TypeScript para mejorar la escalabilidad y la mantenibilidad a largo plazo.",
+					"1": "Contribuí a una arquitectura modular basada en componentes con React y TypeScript para mejorar la escalabilidad y la mantenibilidad a largo plazo.",
 					"2": "Reconstruí la UI usando Next.js App Router, aprovechando los server components y layouts para tiempos de carga más rápidos y una estructura más clara.",
 					"3": "Apliqué Tailwind CSS y Hero UI para ofrecer una interfaz totalmente responsiva y accesible en todos los dispositivos.",
 					"4": "Creé componentes de UI reutilizables y específicos para el negocio utilizados en módulos clave como cotizaciones, envíos y facturas."
@@ -267,7 +267,7 @@
 				"sub-title": "(Mueve el deslizador en el centro de la imagen)",
 				"dashboard": "Panel de Control",
 				"account-summary": "Resumen de Cuenta",
-				"shipping": "Envío",
+				"shipping": "Cotizar y enviar",
 				"mass-shipping": "Envío Masivo",
 				"profile": "Perfil",
 				"shipments": "Mis Envíos",

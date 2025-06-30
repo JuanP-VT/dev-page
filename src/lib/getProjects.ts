@@ -39,7 +39,7 @@ export function useProjects() {
 			description: t("internal-tooling-description"),
 			image: "/img/projects/tooling/main.webp",
 			tags: ["TypeScript", "Node.js", "SQL", "Express.js", "NestJS"],
-			githubLink: "#",
+			githubLink: "https://github.com/JuanP-VT/internal-tooling-api",
 			featured: false,
 			level: "Professional",
 		},
