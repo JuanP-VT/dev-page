@@ -14,9 +14,9 @@
 	},
 	"terminal": {
 		"1-command": "whoami",
-		"1-output": "Juan Pablo, Desarrollador Front-End",
+		"1-output": "Juan Pablo, Desarrollador Full-Stack",
 		"2-command": "cat skills.txt",
-		"2-output": "JavaScript, TypeScript, React, Next.js, Node.js, Express, NestJS, SQL, NoSQL",
+		"2-output": ".NET (C#), JavaScript, TypeScript, React, Next.js, Node.js, Express.js, Nest.js, SQL, NoSQL",
 		"3-command": "grep experience resume.txt",
 		"3-output": "1 año profesional | 2.5+ años autodidacta y desarrollador freelance",
 		"4-command": "ls -la projects/",
@@ -30,9 +30,9 @@
 	},
 	"hero": {
 		"role-t": "rol",
-		"role": " \"Desarrollador Front-End\"",
+		"role": " \"Desarrollador Full-Stack\"",
 		"greeting": "Hola, soy",
-		"description": "Desarrollador Front-End bilingüe especializado en React y Next.js. Transformo las frustraciones del usuario en experiencias fluidas, combinando un año de experiencia profesional con más de dos años de desarrollo autodidacta y proyectos freelance. Ingeniero con base en México.",
+		"description": "Este sitio es un repositorio de evidencia técnica de mi trabajo profesional, destacando mi capacidad para entregar aplicaciones escalables end-to-end. Explora los casos de estudio a continuación para ver la arquitectura y la implementación detrás de mi trabajo. También incluyo proyectos personales (freelance) y de pasatiempo iniciales para demostrar la adquisición de habilidades full-stack.",
 		"contact": "Contáctame",
 		"projects": "Ver Proyectos",
 		"creativity": "creatividad",
@@ -51,7 +51,7 @@
 		"levels": {
 			"Professional": "Profesional",
 			"Freelance": "Freelance",
-			"Learning": "Aprendizaje"
+			"Learning": "Personal"
 		},
 		"links": {
 			"case": "Caso de Estudio",
@@ -59,18 +59,14 @@
 			"github": "GitHub"
 		},
 		"os2-title": "Onsite 2 | Reconstrucción completa de la aplicación logística principal",
-		"os2-description": "Como uno de los dos desarrolladores, contribuí significativamente a reconstruir la aplicación logística principal de nuestra empresa, utilizada por los clientes para cotizar y enviar paquetes. Reemplazamos una versión legacy basada en jQuery con tecnologías completamente moderna, entregando una nueva UI/UX, mejor rendimiento y mantenibilidad a largo plazo.",
-		"os2-disclaimer": "El proyecto está desplegado en una instancia privada de vercel.app para uso interno de PKT1. Actualmente está en su fase final de desarrollo, requiere una cuenta de empresa para su acceso. Por favor, consulta el caso de estudio o contáctame para una demostración.",
+		"os2-description": "Lideré conjuntamente la renovación completa de 'Onsite 2', la plataforma logística central de la empresa para clientes. Reemplazamos un sistema heredado basado en jQuery con una arquitectura moderna full-stack construida sobre Next.js/TypeScript y C#/.NET Core. Esta exitosa migración interna evitó costos de subcontratación por aproximadamente $20,000 USD.",
+		"os2-disclaimer": "El proyecto esta en su fase de implementación a clientes.",
 
 		"management-title": "Management | Mejoras y Mantenimiento",
-		"management-description": "Contribuí al desarrollo continuo de la plataforma logística interna de nuestra empresa, que soporta monitoreo operacional, análisis y controles administrativos. Aunque el sistema se estableció antes de mi llegada, fui responsable de implementar nuevos módulos, resolver errores y mejorar características existentes.",
+		"management-description": "Contribuí a la mejora continua de la plataforma de logística interna de nuestra empresa, que funciona como el centro neurálgico para el monitoreo operativo, el análisis de datos y el control administrativo. Mi enfoque principal fue la expansión de las capacidades de la plataforma para incrementar la eficiencia interna..",
 
 		"onsite1-title": "Onsite 1 | Mantenimiento de Código Legacy",
-		"onsite1-description": "Mantuve y depuré una aplicación legacy crítica para las operaciones logísticas de la empresa. El proyecto fue construido con jQuery, HTML y CSS, y había crecido sin planificación arquitectónica, resultando en archivos largos, desestructurados y modularización inconsistente. A pesar de la deuda técnica y falta de documentación, implementé con éxito correcciones y mejoras cuando fue necesario.",
-
-		"internal-tooling-title": "Herramientas Internas | APIs Backend Temporales con Node.js",
-		"internal-tooling-description": "Para ayudar a nuestro equipo .NET a manejar la carga durante picos de demanda, desarrollé proactivamente varios endpoints en Node.js para permitir el progreso del frontend y desbloquear flujos de trabajo. Estas APIs fueron luego reemplazadas por microservicios .NET, pero jugaron un papel clave en acelerar las fases iniciales de desarrollo y pruebas.",
-
+		"onsite1-description": "Mantuve y depuré esta aplicación legacy crítica para las operaciones logísticas de la empresa. El proyecto fue construido con jQuery, HTML y CSS, y había crecido sin planificación arquitectónica, resultando en archivos largos, desestructurados y modularización inconsistente. A pesar de la deuda técnica y falta de documentación, implementé con éxito correcciones y mejoras cuando fue necesario.",
 		"temazcal-title": "Okayhey Temazcal | Presencia Web + Integración CMS",
 		"temazcal-description": "Diseñé y desarrollé un sitio web moderno y responsive para el negocio de temazcal de mi hermano. Integré Contentful CMS para permitir a usuarios no técnicos gestionar contenido dinámico como blogs, galerías y FAQs. El sitio incluía página principal, blog, galería de fotos, FAQ y sección de contacto, todo orientado a impulsar su presencia online y mejorar el compromiso con los clientes.",
 		"temazcal-disclaimer": "Este proyecto estuvo en línea y en uso durante varios meses como la página oficial del negocio familiar. Actualmente, el sitio no está activo debido al cierre del negocio. Aun así, el código fuente y la arquitectura del CMS siguen disponibles para revisión. Consulta el código en GitHub o contáctame para una demostración técnica.",
@@ -125,66 +121,38 @@
 
 	"experience": {
 		"title": "Experiencia Profesional",
-		"subtitle": "De Ingeniería Industrial al Desarrollo Web Profesional",
+		"subtitle": "",
 		"1": {
-			"startDate": "Julio 2024",
-			"endDate": "Presente (1 año)",
-			"role": "Desarrollador Front-End",
-			"description": "PKT1 - Empresa logística sustentable, México-Chile.",
+			"startDate": "2024",
+			"endDate": "Presente",
+			"role": "Desarrollador Full-Stack",
+			"description": "PKT1 - Centro de envíos lógísticos.",
 			"bullet": {
 				"1": {
-					"main": "Co-lideré la reconstrucción completa de Onsite 2, plataforma logística crítica",
-					"sub": {
-						"1": "Migré sistema legacy (jQuery) a React/Next.js/TypeScript en 10 meses",
-						"2": "Contribuí a lograr 60% de ahorro vs outsourcing (~$360K pesos) entregando internamente.",
-						"3": "Mejoré significativamente UX y mantenibilidad del código base."
-					}
-				},
+					"main": "Colideré la reconstrucción de Onsite 2, la plataforma de logística de la empresa; migré un sistema jQuery heredado a React/Next.js/TypeScript en 10 meses , lo entregué internamente, evitando $20K en costes de outsourcing."
+				},				
 				"2": {
-					"main": "Optimicé el rendimiento en vistas con alto volumen de datos",
-					"sub": {
-						"1": "Logré 0.4s First Contentful Paint (4.5x mejor que el estándar de Google de 1.8s).",
-						"2": "Optimicé el Largest Contentful Paint a máximo 1.6s (37% mejor que el estándar de Google de 2.5s).",
-						"3": "Eliminé input lag escalando de 10 a 2,000+ ítems mediante virtual scroll y paginación.",
-						"4": "Reduje 60% de llamadas API implementando un debouncing inteligente mejorando la experiencia del usuario y reduciendo costos de servidor."
-					}
+					"main": "Logré importantes mejoras de rendimiento: FCP 0.4s, LCP 1.4s, CLS 0.014, 94% de Accesibilidad, 100% SEO. Eliminé el input retraso en la entrada (10→2,000+ ítems) mediante virtualización/paginación y reduje las llamadas innecesarias a la API en un ~60% a través de debouncing."
 				},
 				"3": {
-					"main": "Establecí arquitectura frontend moderna y escalable",
-					"sub": {
-						"1": "Diseñé sistema modular con Next.js App Router y Tailwind CSS.",
-						"2": "Reduje duplicación creando componentes reutilizables y escalables.",
-						"3": "Documenté patrones de desarrollo para el equipo."
-					}
+					"main": "Diseñé e implementé un sistema de alta de clientes totalmente digital en .NET (C#), reemplazando procesos manuales, automatizando validaciones/aprobaciones multifase y desacoplando la alta del sistema viejo. Entregué servicios de backend adicionales para dar soporte a nuevas funcionalidades de Onsite 2, mejorando flujos de trabajo e incrementando la fiabilidad y el rendimiento de la plataforma."	
 				},
 				"4": {
-					"main": "Desarrollé y mantuve la plataforma 'Management' con nuevas funcionalidades",
-					"sub": {
-						"1": "Creé módulos de analíticas y monitoreo que agilizan la toma de decisiones.",
-						"2": "Estabilicé módulos legacy con mínimas regresiones."
-					}
+					"main": "Implementé una arquitectura de frontend escalable utilizando App Router de Next.js y patrones de componentes reutilizables, reduciendo la duplicación y mejorando la mantenibilidad."		
 				},
 				"5": {
-					"main": "Realicé integraciones confiables con APIs legacy del backend",
-					"sub": {
-						"1": "Implementé manejo de errores comprehensivo manteniendo la estabilidad del sistema.",
-						"2": "Aseguré consistencia de datos entre plataformas."
-					}
+					"main": "Construí módulos de analítica y monitoreo para mejorar la visibilidad operativa y dar soporte a la toma de decisiones basada en datos."		
 				},
 				"6": {
-					"main": "Implementé testing comprehensivo para estabilidad",
-					"sub": {
-						"1": "Establecí pruebas unitarias (Jest) e integración (React Testing Library).",
-						"2": "Aseguré robustez en componentes críticos de la plataforma."
-					}
+					"main": "Reforcé la calidad del código introduciendo pruebas unitarias y de integración (xUnit, Jest, React Testing Library) y documentando patrones, estándares y decisiones arquitectónicas."		
 				}
 			}
 		},
 		"2": {
-			"startDate": "Enero 2022",
-			"endDate": "Julio 2024 (2.5 años)",
+			"startDate": "2022",
+			"endDate": "2024",
 			"role": "Desarrollador Web Freelance y Autodidacta",
-			"description": "Durante mi transición de ingeniería industrial a desarrollo web, construí soluciones personalizadas para emprendedores, combinando aprendizaje autodidacta con necesidades reales de clientes. Aunque algunos negocios cesaron operaciones por motivos personales, los productos entregados cumplieron su propósito técnico y operaron exitosamente durante su vida útil.",
+			"description": "Desarrollé aplicaciones web para pequeños negocios locales, lo que llevó directamente a mi contratación en PKT1. Entregué tanto trabajo de frontend como de backend utilizando TypeScript, React, Next.js y MongoDB.",
 			"bullet": {
 				"1": "Arquitecté y construí desde cero una plataforma completa de e-commerce fullstack (Regina & Gael Studio), integrando funcionalidades complejas como autenticación de usuario, pasarela de pagos (PayPal), gestión de productos y entrega segura de archivos digitales.",
 				"2": "Diseñé y lancé un sitio web de marketing completamente responsive (Okayhey Temazcal) con integración de Contentful CMS, lo que permitió a usuarios no técnicos gestionar y actualizar contenido dinámico, incluyendo blogs, FAQs y galerías de fotos.",
@@ -195,7 +163,7 @@
 	},
 	"contact": {
 		"title": "Conectemos",
-		"subtitle": "Estoy listo para demostrar cómo puedo aportar valor a tu equipo. No dudes en ponerte en contacto.",
+		"subtitle": "Estoy listo para aportar valor a tu equipo. No dudes en ponerte en contacto.",
 		"reach": "Contáctame",
 		"toast": {
 			"whatsapp": "¡Número de WhatsApp copiado al portapapeles!",
@@ -211,7 +179,7 @@
 			},
 			"title": "Onsite 2 | De jQuery a React: Reconstrucción Total",
 			"sub-title": "Rediseño desde cero de la aplicación logística central para clientes.",
-			"role": "Desarrollador Frontend",
+			"role": "Desarrollador Full-Stack",
 			"duration": "Agosto 2024 - Desarrollo en Curso",
 			"overview-title": "Resumen",
 			"overview-description": "Onsite es la plataforma logística principal de la empresa, utilizada por clientes comerciales para gestionar todo el ciclo de sus envíos. Desde cotizar y programar recolecciones hasta rastrear paquetes, descargar facturas y acceder a reportes históricos, los usuarios pueden operar toda su logística desde una sola interfaz.",
@@ -314,7 +282,7 @@
 					"1": "Equilibrar la mantenibilidad con los plazos impulsados por el negocio.",
 					"2": "Descomponer tareas grandes y ambiguas en pasos alcanzables.",
 					"3": "Comunicarme eficazmente con los clientes internos para clarificar requerimientos.",
-					"description2": "Si bien la autonomía fue desafiante, me ayudó a crecer significativamente como desarrollador frontend. Salí de este proyecto con instintos técnicos más fuertes, más confianza en mi juicio y una comprensión más profunda de cómo construir interfaces escalables en entornos de productos del mundo real."
+					"description2": "Si bien la autonomía fue desafiante, me ayudó a crecer significativamente como desarrollador. Salí de este proyecto con instintos técnicos más fuertes, más confianza en mi juicio y una comprensión más profunda de cómo construir interfaces escalables en entornos de productos del mundo real."
 				},
 				"dif": {
 					"title": "Lo que Haría Diferente",
@@ -338,7 +306,7 @@
 			},
 			"title": "Management | Mejoras y Mantenimiento",
 			"sub-title": "Mejoras a nuestra plataforma interna de logística, enfocadas en nuevos módulos, actualizaciones de funcionalidades y corrección de bugs.",
-			"role": "Desarrollador Frontend",
+			"role": "Desarrollador Full-Stack",
 			"duration": "Julio 2024 - Mantenimiento Continuo",
 			"overview-title": "Resumen",
 			"overview-description": "La aplicación Management es una herramienta interna utilizada por nuestro personal administrativo y de soporte IT para supervisar las operaciones logísticas. Proporciona monitoreo en tiempo real, análisis detallados y reportes integrales que apoyan la toma de decisiones operativas y la respuesta a incidentes.",
@@ -393,7 +361,7 @@
 
 			"i&r": {
 				"title": "Impacto y Resultados",
-				"1": "Responsabilidad de módulos frontend",
+				"1": "Responsabilidad de módulos nuevos completos",
 				"2": "Entrega de tareas",
 				"3": "Tiempo de actividad de la aplicación",
 				"description": "Aunque el diseño y estructura central de la plataforma Management se mantuvieron intactos, mis contribuciones se enfocaron en extender la funcionalidad, mejorar la mantenibilidad y asegurar la confiabilidad continua. Al construir nuevos módulos, optimizar componentes con gran cantidad de datos y abordar inconsistencias técnicas, ayudé a sostener una herramienta interna crítica sin interrumpir las operaciones. La entrega consistente de actualizaciones y correcciones ha reforzado la estabilidad de la plataforma y la ha posicionado para iteraciones más fluidas en futuros ciclos de desarrollo."
@@ -499,7 +467,7 @@
 				"title": "Reflexión",
 				"learned": {
 					"title": "Lo que Aprendí",
-					"description": "Este proyecto me desafió a salir de mi zona de confort del frontend y tomar propiedad completa de un sistema de grado producción. Aprendí cómo integrar servicios de terceros como AWS y PayPal, diseñar flujos seguros de entrega de archivos y estructurar un backend para soportar lógica de negocio real todo mientras gestionaba alcance y expectativas por mi cuenta."
+					"description": "Este proyecto me desafió a salir de mi zona de confort  y tomar propiedad completa de un sistema en producción. Aprendí cómo integrar servicios de terceros como AWS y PayPal, diseñar flujos seguros de entrega de archivos y estructurar un backend para soportar lógica de negocio real todo mientras gestionaba alcance y expectativas por mi cuenta."
 				},
 				"dif": {
 					"title": "Lo que Haría Diferente",
@@ -577,13 +545,13 @@
 				"title": "Impacto y Resultados",
 				"1": "Fortalecí mis conocimientos de backend trabajando con autenticación, APIs REST y modelado de bases de datos.",
 				"2": "Mejoré mi confianza técnica, capacidad de resolución de problemas y autonomía al desarrollar todo el stack por mi cuenta.",
-				"3": "Usé este proyecto como pieza clave de mi portafolio para conseguir mi primer trabajo profesional como desarrollador frontend."
+				"3": "Usé este proyecto como pieza clave de mi portafolio para conseguir mi primer trabajo profesional como desarrollador."
 			},
 			"reflection": {
 				"title": "Reflexión",
 				"learned": {
 					"title": "Lo que Aprendí",
-					"description": "PC Hub fue mi proyecto autodidacta más ambicioso. Gané experiencia práctica construyendo una aplicación fullstack desde cero, profundizando en autenticación, diseño de APIs, integración de bases de datos y arquitectura escalable de UI. También mejoré mi capacidad para resolver problemas y depurar tanto en frontend como en backend."
+					"description": "PC Hub fue mi proyecto autodidacta más ambicioso. Gané experiencia práctica construyendo una aplicación fullstack desde cero, profundizando en autenticación, diseño de APIs, integración de bases de datos y arquitectura escalable de UI. También mejoré mi capacidad para resolver problemas y depurar."
 				},
 				"dif": {
 					"title": "Lo que Haría Diferente",

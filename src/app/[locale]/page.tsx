@@ -18,7 +18,7 @@ export default function Page() {
 				className="px-4 md:px-24 h-[calc(100dvh-70px)] overflow-y-scroll relative"
 			>
 				<HeroSection />
-				<Terminal />
+				{/* <Terminal /> */}
 				<TechStack />
 				<ProjectSection />
 				<ExperienceSection />

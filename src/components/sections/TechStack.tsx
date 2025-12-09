@@ -25,6 +25,8 @@ import {
 import { useGlobalStore } from "@/store/global-store";
 import { useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
+import { TbBrandCSharp } from "react-icons/tb";
+import { AiOutlineDotNet } from "react-icons/ai";
 
 // Organized technologies by category
 const technologies = {
@@ -42,6 +44,11 @@ const technologies = {
 			),
 		},
 		{
+			name: "React",
+			icon: <FaReact className="w-6 h-6 text-sky-600 dark:text-sky-500" />,
+		},
+		{ name: "Next.js", icon: <SiNextdotjs className="w-6 h-6" /> },
+				{
 			name: "HTML",
 			icon: (
 				<FaHtml5 className="w-6 h-6 text-orange-600 dark:text-orange-400" />
@@ -52,18 +59,21 @@ const technologies = {
 			icon: <FaCss3Alt className="w-6 h-6 text-blue-700 dark:text-blue-500" />,
 		},
 		{
-			name: "React",
-			icon: <FaReact className="w-6 h-6 text-sky-600 dark:text-sky-500" />,
-		},
-		{ name: "Next.js", icon: <SiNextdotjs className="w-6 h-6" /> },
-		{
 			name: "Tailwind",
 			icon: (
 				<SiTailwindcss className="w-6 h-6 text-sky-500 dark:text-sky-300" />
 			),
 		},
 	],
-	backend: [
+	backend: [				
+		{
+			name: "C#",
+			icon: <TbBrandCSharp  className="w-6 h-6 text-purple-600 dark:text-purple-400" />,
+		},
+		{
+			name: ".NET",
+			icon: <AiOutlineDotNet  className="w-6 h-6 text-blue-600 dark:text-blue-400" />,
+		},
 		{
 			name: "Node.js",
 			icon: <FaNodeJs className="w-6 h-6 text-green-600 dark:text-green-400" />,
@@ -276,14 +286,13 @@ export default function TechStack() {
 	return (
 		<section id="tech" className="py-20" ref={sectionRef}>
 			<div className="mb-16 text-center">
-				<div className="inline-block py-1 px-3 mb-4 font-mono text-sm bg-gray-100 rounded-md border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+				{/* <div className="inline-block py-1 px-3 mb-4 font-mono text-sm bg-gray-100 rounded-md border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
 					<span className="text-pink-700 dark:text-pink-400">import</span>{" "}
 					&#123;{" "}
 					<span className="text-teal-700 dark:text-teal-400">skills</span>{" "}
 					&#125; <span className="text-pink-700 dark:text-pink-400">from</span>{" "}
-					<span className="text-sky-700 dark:text-sky-400">'./tech-stack'</span>
-					
-				</div>
+					<span className="text-sky-700 dark:text-sky-400">'./tech-stack'</span>					
+				</div> */}
 				<h2 className="mb-2 font-mono text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-blue-600 dark:from-teal-400 dark:to-blue-500">
 					Tech Stack
 				</h2>

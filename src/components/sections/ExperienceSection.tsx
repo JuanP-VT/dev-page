@@ -91,22 +91,10 @@ export default function ExperienceSection() {
 											<span className="flex flex-shrink-0 justify-center items-center mt-px w-5 h-5 text-xs text-teal-800 rounded-full dark:text-teal-400 bg-teal-500/70 dark:bg-teal-500/20">
 												✓
 											</span>
-											<span className="text-teal-700 dark:text-teal-400">
+											<span className="text-gray-600 dark:text-gray-300 text-sm">
 												{item.main}
 											</span>
-										</div>
-										<div className="flex flex-col gap-2 mt-2 ml-10">
-											{Object.values(item.sub).map((sub) => (
-												<div className="flex gap-2" key={sub}>
-													<span className="flex pt-2">
-														<FaCircle size="0.5rem" className="text-teal-500" />
-													</span>
-													<span className="text-gray-600 dark:text-gray-300">
-														{sub}
-													</span>
-												</div>
-											))}
-										</div>
+										</div>					
 									</div>
 								</li>
 							))}
@@ -146,7 +134,7 @@ export default function ExperienceSection() {
 									<span className="flex flex-shrink-0 justify-center items-center mt-px w-5 h-5 text-xs text-teal-800 rounded-full dark:text-teal-400 bg-teal-500/70 dark:bg-teal-500/20">
 										✓
 									</span>
-									<span className="text-gray-600 dark:text-gray-300">
+									<span className="text-gray-600 dark:text-gray-300 text-sm">
 										{item}
 									</span>
 								</li>
