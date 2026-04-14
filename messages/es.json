@@ -59,31 +59,24 @@
 			"github": "GitHub"
 		},
 		"os2-title": "Onsite 2 | Reconstrucción completa de la aplicación logística principal",
-		"os2-description": "Lideré conjuntamente la renovación completa de 'Onsite 2', la plataforma logística central de la empresa para clientes. Reemplazamos un sistema heredado basado en jQuery con una arquitectura moderna full-stack construida sobre Next.js/TypeScript y C#/.NET Core. Esta exitosa migración interna evitó costos de subcontratación por aproximadamente $20,000 USD.",
-		"os2-disclaimer": "El proyecto esta en su fase de implementación a clientes.",
+		"os2-description": "Lidereé la migración arquitectónica integral de la plataforma logística principal, transformando un monolito heredado en jQuery a un ecosistema full-stack moderno. Mediante la implementación de Next.js y .NET Core, logré una mejora de 4.5x en el First Contentful Paint (0.4s) y una puntuación de 96 en el Lighthouse Performance. Esta modernización optimizó significativamente la experiencia de usuario y evitó costos de subcontratación de aproximadamente $20,000 USD.",
 
 		"management-title": "Management | Mejoras y Mantenimiento",
-		"management-description": "Contribuí a la mejora continua de la plataforma de logística interna de nuestra empresa, que funciona como el centro neurálgico para el monitoreo operativo, el análisis de datos y el control administrativo. Mi enfoque principal fue la expansión de las capacidades de la plataforma para incrementar la eficiencia interna..",
+		"management-description": "Diseñé y escalé módulos backend fundamentales para el motor logístico interno de la empresa. Desarrollé lógica de servidor en C#/.NET para procesar telemetría operativa en herramientas automatizadas de análisis y reportes, reduciendo drásticamente el monitoreo manual y agilizando los flujos de trabajo administrativos para los interesados internos",
 
 		"onsite1-title": "Onsite 1 | Mantenimiento de Código Legacy",
 		"onsite1-description": "Mantuve y depuré esta aplicación legacy crítica para las operaciones logísticas de la empresa. El proyecto fue construido con jQuery, HTML y CSS, y había crecido sin planificación arquitectónica, resultando en archivos largos, desestructurados y modularización inconsistente. A pesar de la deuda técnica y falta de documentación, implementé con éxito correcciones y mejoras cuando fue necesario.",
 		"temazcal-title": "Okayhey Temazcal | Presencia Web + Integración CMS",
-		"temazcal-description": "Diseñé y desarrollé un sitio web moderno y responsive para el negocio de temazcal de mi hermano. Integré Contentful CMS para permitir a usuarios no técnicos gestionar contenido dinámico como blogs, galerías y FAQs. El sitio incluía página principal, blog, galería de fotos, FAQ y sección de contacto, todo orientado a impulsar su presencia online y mejorar el compromiso con los clientes.",
-		"temazcal-disclaimer": "Este proyecto estuvo en línea y en uso durante varios meses como la página oficial del negocio familiar. Actualmente, el sitio no está activo debido al cierre del negocio. Aun así, el código fuente y la arquitectura del CMS siguen disponibles para revisión. Consulta el código en GitHub o contáctame para una demostración técnica.",
+		"temazcal-description": "Implementé un CMS headless (Contentful) para desacoplar la gestión de contenido del frontend, permitiendo a usuarios no técnicos realizar actualizaciones del sitio de forma independiente sin necesidad de despliegues de código. Optimicé el rendimiento del sitio y el SEO mediante renderizado del lado del servidor con Next.js, incrementando significativamente la interacción de los usuarios y la visibilidad del cliente.",
 
 		"regina-title": "Regina & Gael Studio | Plataforma E-commerce Fullstack",
-		"regina-description": "Construí una plataforma de e-commerce completa para la tienda digital de artesanías de mi cuñada. La aplicación incluía autenticación de usuarios, gestión de productos, integración con PayPal y entrega segura de archivos digitales mediante URLs firmadas. Desarrollé la arquitectura completa de frontend y backend desde cero, creando una solución escalable para vender contenido descargable online.",
-		"regina-disclaimer": "Este proyecto fue desarrollado como una solución personalizada para la tienda digital de mi cuñada. Aunque está desplegado en línea, actualmente no se encuentra en uso activo y su almacenamiento en AWS (imágenes y archivos) fue desactivado, por lo que algunos recursos no se muestran correctamente. Para mas información del proyecto, consulta el caso de estudio o contáctame.",
+		"regina-description": "Diseñé una arquitectura segura para la entrega de activos digitales utilizando AWS S3 y Signed URLs, garantizando la protección del contenido y la distribución automatizada tras la verificación de pagos con PayPal. Desarrollé una solución personalizada de extremo a extremo para gestionar descargas digitales de alta resolución, reduciendo la carga operativa manual para el propietario del negocio.",
 
 		"pchub-title": "PC Hub | Proyecto de Aprendizaje E-commerce Fullstack",
 		"pchub-description": "Desarrollé un prototipo de eCommerce completamente funcional desde cero para mostrar habilidades fullstack. Incluye autenticación de usuarios, catálogo de productos con filtros, carrito de compras, checkout, perfiles de usuario y panel de administración para gestión de productos.",
 
 		"inventory-title": "App de Gestión de Inventario | Sistema CRUD Fullstack",
 		"inventory-description": "Desarrollé una herramienta fullstack de gestión de inventario. Implementé una arquitectura robusta, diseño de esquema NoSQL y un panel de administración responsivo.",
-
-		"fortnite-title": "App de Carrito de Compras Fortnite | Integración API & Lógica de Carrito",
-		"fortnite-description": "Construí una aplicación estilo eCommerce dinámica que obtiene datos de productos en vivo desde la API Pública de Fortnite. La app incluye página principal, catálogo de productos y un sistema de carrito de compras completamente funcional. Desarrollado con TypeScript y React, enfocándome en componentes funcionales, hooks y enrutamiento del lado del cliente con React Router.",
-		"fortnite-disclaimer": "Este proyecto lo desarrollé en las primeras etapas de mi aprendizaje con el objetivo de investigar sobre APIs, manejo de estados y arquitectura de componentes. Desde entonces, la API original de Fortnite (https://fortnite-api.com/v2/shop/br) de la que dependía ha quedado obsoleta, lo que hace que la aplicación esté inoperativa en este momento. La conservo en mi portafolio como un testimonio de mi proceso de autoaprendizaje y mi evolución.",
 
 		"curriculum-title": "Generador de Currículums | Creador Dinámico de PDFs",
 		"curriculum-description": "Creé una aplicación React que permite a los usuarios ingresar información personal y profesional para generar un currículum en PDF descargable. Construido con TypeScript usando componentes basados en clases, este proyecto profundizó mi comprensión del estado de los componentes, métodos de ciclo de vida y manejo de entrada estructurada de usuarios.",

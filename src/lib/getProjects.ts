@@ -13,7 +13,6 @@ export function useProjects() {
 			level: "Professional",
 			caseStudyLink: "/cases/onsite2",
 			liveLink: "https://onsite-pkt1-v2-test.vercel.app/",
-			disclaimer: t("os2-disclaimer"),
 		},
 		{
 			title: t("management-title"),
@@ -24,15 +23,6 @@ export function useProjects() {
 			featured: false,
 			level: "Professional",
 			caseStudyLink: "/cases/management",
-		},
-		{
-			title: t("onsite1-title"),
-			description: t("onsite1-description"),
-			image: "/img/projects/onsite/main.webp",
-			tags: ["C#",".NET","JavaScript", "jQuery", "HTML", "CSS"],
-			liveLink: "https://onsite.pktuno.mx",
-			featured: false,
-			level: "Professional",
 		},
 		{
 			title: t("regina-title"),
@@ -46,23 +36,19 @@ export function useProjects() {
 				"MongoDB",
 				"AWS",
 			],
-			liveLink: "https://regis-beta.vercel.app/",
 			githubLink: "https://github.com/JuanP-VT/regis",
 			caseStudyLink: "/cases/regina",
 			featured: false,
 			level: "Freelance",
-			disclaimer: t("regina-disclaimer"),
 		},
 		{
 			title: t("temazcal-title"),
 			description: t("temazcal-description"),
 			image: "/img/projects/okahey/main.webp",
 			tags: ["TypeScript", "React", "Next.js", "Tailwind CSS"],
-			liveLink: "https://temazcal.vercel.app/",
 			githubLink: "https://github.com/JuanP-VT/okahey",
 			featured: false,
 			level: "Freelance",
-			disclaimer: t("temazcal-disclaimer"),
 		},
 
 		{

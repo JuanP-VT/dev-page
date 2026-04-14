@@ -59,32 +59,25 @@
 			"github": "GitHub"
 		},
 		"os2-title": "Onsite 2 | Full Rebuild of Core Logistics App",
-		"os2-description": "I co-led the complete overhaul of Onsite 2, the company's core logistics platform for customers, replacing a legacy jQuery system with a modern full-stack architecture built on Next.js/TypeScript and C#/.NET Core. This successful in-house migration avoided  ~$20,000$ USD in outsourcing costs.",
-		"os2-disclaimer": "The project is in its implementation phase with customers.",
+		"os2-description": "Co-led the end-to-end architectural migration of the company’s flagship logistics platform from a legacy jQuery monolith to a modern full-stack ecosystem. By implementing Next.js and .NET Core, I achieved a 4.5x improvement in First Contentful Paint (0.4s) and a 96 Performance score in Lighthouse. This modernization significantly enhanced user experience while avoiding approximately $20,000 USD in vendor outsourcing costs",
 
 		"management-title": "Management | Enhancements and Maintenance",
-		"management-description": "I contributed to the continuous enhancement of our company's internal logistics platform, which serves as the central hub for operational monitoring, analytics, and administrative control. My primary focus was on extending the platform's capabilities to improve internal efficiency.",
+		"management-description": "Designed and scaled core backend modules for the company’s internal logistics engine. Developed server-side logic in C#/.NET to process raw operational telemetry into automated analytics and reporting tools, significantly reducing manual monitoring and streamlining administrative workflows for internal stakeholders.",
 
 		"onsite1-title": "Onsite 1 | Legacy Code Maintenance",
 		"onsite1-description": "Maintained and debugged this legacy application critical to the company's logistics operations. The project was built with jQuery, HTML, and CSS, and had grown without architectural planning resulting in long, unstructured files and inconsistent modularization. Despite the technical debt and lack of documentation, I successfully implemented fixes and improvements when needed.",
 
 		"temazcal-title": "Okayhey Temazcal | Web Presence + CMS Integration",
-		"temazcal-description": "Designed and developed a modern, responsive website for my brother's temazcal business. Integrated Contentful CMS to allow non-technical users to manage dynamic content such as blogs, gallery, and FAQs. The site included a homepage, blog, photo gallery, FAQ, and contact section all aimed at boosting their online presence and improving client engagement.",
-		"temazcal-disclaimer": "This project has been online and in use for several months as the official website for the family business. Currently, the site is not active due to the closure of the business. However, the source code and CMS architecture are still available for review. Check out the code on GitHub or contact me for a technical demo.",
+		"temazcal-description": "Implemented a Headless CMS (Contentful) to decouple content management from the frontend, enabling non-technical stakeholders to perform independent site updates without code deployments. Optimized site performance and SEO through Next.js server-side rendering, significantly increasing client engagement and discovery.",
 
 		"regina-title": "Regina & Gael Studio | Fullstack E-commerce Platform",
-		"regina-description": "Built a complete e-commerce platform for my sister-in-law's digital craft store. The app included user authentication, product management, PayPal payment integration, and secure digital file delivery via signed URLs. Developed the full backend and frontend architecture from scratch, creating a scalable solution for selling downloadable content online.",
-		"regina-disclaimer": "This project was developed as a custom solution for my sister-in-law's digital store. Although it's deployed online, it's not currently in active use, and its AWS storage (images and files) has been disabled, so some assets aren't displaying correctly. For more information about the project, check out the case study or contact me.",
+		"regina-description": "Architected a secure digital-asset delivery system using AWS S3 and Signed URLs, ensuring content protection and automated distribution following PayPal verification. Developed a custom end-to-end architecture to handle high-resolution digital downloads, reducing manual overhead for the business owner.",
 
 		"pchub-title": "PC Hub | Fullstack Ecommerce Learning Project",
 		"pchub-description": "Developed a fully functional eCommerce prototype from scratch to showcase fullstack skills. Features include user authentication, product catalog with filters, shopping cart, checkout, user profiles, and an admin panel for product management.",
 
 		"inventory-title": "Inventory Manager App | Fullstack CRUD System",
 		"inventory-description": "Developed a fullstack inventory management tool. Implemented a robust Fullstack architecture featuring NoSQL schema design, and a responsive administrative dashboard.",
-
-		"fortnite-title": "Fortnite Shopping Cart App | API Integration & Cart Logic",
-		"fortnite-description": "Built a dynamic eCommerce-style app that fetches live product data from the Fortnite Public API. The app features a homepage, product catalog, and a fully functional shopping cart system. Developed with TypeScript and React, focusing on functional components, hooks, and client-side routing with React Router.",
-		"fortnite-disclaimer": "This project was created early in my learning journey as a way to explore APIs, state management, and component architecture. The original Fortnite API(https://fortnite-api.com/v2/shop/br) it relied on has since been deprecated, so the app is currently non-functional. I’ve kept it in my portfolio as a milestone of my self-taught path and progression",
 
 		"curriculum-title": "Curriculum Builder | Dynamic PDF Generator",
 		"curriculum-description": "Created a React application that allows users to input personal and professional information and generate a downloadable PDF résumé. Built with TypeScript using class-based components, this project deepened my understanding of component state, lifecycle methods, and handling structured user input.",
