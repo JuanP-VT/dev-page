@@ -51,7 +51,7 @@
 		"levels": {
 			"Professional": "Professional",
 			"Freelance": "Freelance",
-			"Learning": "Personal"
+			"Learning": "Legacy"
 		},
 		"links": {
 			"case": "Case Study",
@@ -80,7 +80,7 @@
 		"pchub-description": "Developed a fully functional eCommerce prototype from scratch to showcase fullstack skills. Features include user authentication, product catalog with filters, shopping cart, checkout, user profiles, and an admin panel for product management.",
 
 		"inventory-title": "Inventory Manager App | Fullstack CRUD System",
-		"inventory-description": "Developed a fullstack inventory management tool. Practiced API integration, CRUD operations, and NoSQL data modeling. This project laid the foundation for more complex work like PC-Hub.",
+		"inventory-description": "Developed a fullstack inventory management tool. Implemented a robust Fullstack architecture featuring NoSQL schema design, and a responsive administrative dashboard.",
 
 		"fortnite-title": "Fortnite Shopping Cart App | API Integration & Cart Logic",
 		"fortnite-description": "Built a dynamic eCommerce-style app that fetches live product data from the Fortnite Public API. The app features a homepage, product catalog, and a fully functional shopping cart system. Developed with TypeScript and React, focusing on functional components, hooks, and client-side routing with React Router.",

@@ -51,7 +51,7 @@
 		"levels": {
 			"Professional": "Profesional",
 			"Freelance": "Freelance",
-			"Learning": "Personal"
+			"Learning": "Legacy"
 		},
 		"links": {
 			"case": "Caso de Estudio",
@@ -79,7 +79,7 @@
 		"pchub-description": "Desarrollé un prototipo de eCommerce completamente funcional desde cero para mostrar habilidades fullstack. Incluye autenticación de usuarios, catálogo de productos con filtros, carrito de compras, checkout, perfiles de usuario y panel de administración para gestión de productos.",
 
 		"inventory-title": "App de Gestión de Inventario | Sistema CRUD Fullstack",
-		"inventory-description": "Desarrollé una herramienta fullstack de gestión de inventario. Practiqué integración de APIs, operaciones CRUD y modelado de datos NoSQL. Este proyecto sentó las bases para trabajos más complejos como PC-Hub.",
+		"inventory-description": "Desarrollé una herramienta fullstack de gestión de inventario. Implementé una arquitectura robusta, diseño de esquema NoSQL y un panel de administración responsivo.",
 
 		"fortnite-title": "App de Carrito de Compras Fortnite | Integración API & Lógica de Carrito",
 		"fortnite-description": "Construí una aplicación estilo eCommerce dinámica que obtiene datos de productos en vivo desde la API Pública de Fortnite. La app incluye página principal, catálogo de productos y un sistema de carrito de compras completamente funcional. Desarrollado con TypeScript y React, enfocándome en componentes funcionales, hooks y enrutamiento del lado del cliente con React Router.",
@@ -89,34 +89,8 @@
 		"curriculum-description": "Creé una aplicación React que permite a los usuarios ingresar información personal y profesional para generar un currículum en PDF descargable. Construido con TypeScript usando componentes basados en clases, este proyecto profundizó mi comprensión del estado de los componentes, métodos de ciclo de vida y manejo de entrada estructurada de usuarios.",
 
 		"weather-title": "App de Pronóstico del Tiempo | Consulta Global del Clima",
-		"weather-description": "Construí una aplicación meteorológica que obtiene datos en tiempo real y un pronóstico de cinco días para cualquier ubicación en el mundo. Enfocado en integración de APIs, lectura de documentación de terceros y mejora de calidad de código con linters y estilos más limpios.",
+		"weather-description": "Construí una aplicación meteorológica que obtiene datos en tiempo real y un pronóstico de cinco días para cualquier ubicación en el mundo. Enfocado en integración de APIs, lectura de documentación de terceros y mejora de calidad de código con linters y estilos más limpios."
 
-		"library-title": "App de Biblioteca | Interfaz de Seguimiento de Libros",
-		"library-description": "Desarrollé una aplicación simple de gestión de libros que almacena la entrada del usuario como tarjetas estilizadas. Practiqué principios de código limpio, trabajé con estructuras de datos de JavaScript e implementé persistencia usando LocalStorage.",
-
-		"todo-title": "App Lista de Tareas | Gestor Personal de Actividades",
-		"todo-description": "Construí una aplicación de gestión de tareas que permite a los usuarios organizar actividades en proyectos. Enfocado en arquitectura modular, principios de código limpio y profundización en conocimiento de programación orientada a objetos. Utilicé Webpack para empaquetar y estructurar la aplicación.",
-
-		"restaurant-title": "Página de Restaurante | Interfaz Dinámica con Vanilla JS",
-		"restaurant-description": "Construí un sitio web modular para restaurante con múltiples secciones usando JavaScript vanilla y Webpack. Enfocado en generación dinámica de contenido, estructura de código limpia y principios de modularización.",
-
-		"etch-title": "Etch A Sketch | Pizarra de Dibujo Interactiva",
-		"etch-description": "Desarrollé una pizarra de dibujo basada en navegador con múltiples modos usando JavaScript vanilla. Practiqué manipulación compleja del DOM, manejo de eventos y organización de código.",
-
-		"tictactoe-title": "Tres en Raya | Juego Clásico",
-		"tictactoe-description": "Creé un juego completamente funcional de Tres en Raya para un jugador. Enfocado en modelado de objetos con JavaScript, patrones de diseño y aplicación de lógica más avanzada y técnicas de interacción con el DOM.",
-
-		"rps-title": "Piedra Papel Tijeras | Juego Simple contra la CPU",
-		"rps-description": "Construí el clásico juego de Piedra, Papel o Tijeras. Practiqué implementación de lógica básica y fundamentos de manipulación del DOM.",
-
-		"admin-title": "Panel de Administración | Diseño Estático con CSS Grid & Flexbox",
-		"admin-description": "Creé un diseño responsive de panel de administración usando solo HTML y CSS. Enfocado en dominar Flexbox y Grid para construir diseños limpios y estructurados.",
-
-		"signup-title": "Página de Registro | Formulario Estilizado",
-		"signup-description": "Construí un formulario de registro de usuarios con atención al detalle en estilos, indicaciones de validación y diseño usando HTML y CSS. Practiqué PseudoClases, PseudoElementos y fundamentos de diseño de formularios.",
-
-		"landing-title": "Página de Inicio | Homepage Estática Básica",
-		"landing-description": "Diseñé una página de inicio simple con HTML y CSS básicos. Aprendí el modelo de caja, estructura de elementos y fundamentos de estilos - el primer paso en mi viaje como desarrollador."
 	},
 
 	"experience": {
