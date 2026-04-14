@@ -64,8 +64,9 @@
 		"management-title": "Management | Mejoras y Mantenimiento",
 		"management-description": "Diseñé y escalé módulos backend fundamentales para el motor logístico interno de la empresa. Desarrollé lógica de servidor en C#/.NET para procesar telemetría operativa en herramientas automatizadas de análisis y reportes, reduciendo drásticamente el monitoreo manual y agilizando los flujos de trabajo administrativos para los interesados internos",
 
-		"onsite1-title": "Onsite 1 | Mantenimiento de Código Legacy",
-		"onsite1-description": "Mantuve y depuré esta aplicación legacy crítica para las operaciones logísticas de la empresa. El proyecto fue construido con jQuery, HTML y CSS, y había crecido sin planificación arquitectónica, resultando en archivos largos, desestructurados y modularización inconsistente. A pesar de la deuda técnica y falta de documentación, implementé con éxito correcciones y mejoras cuando fue necesario.",
+		"cloud-storage-migration-title":"Migración de Almacenamiento | Optimización de Rendimiento",
+		"cloud-storage-migration-description":"Diseñé una migración de almacenamiento de alta eficiencia, trasladando registros de archivos heredados de MySQL (Base64) a AWS S3. Al eliminar el 33% de sobrecarga inherente a la codificación Base64, reduje la saturación de la base de datos y mejoré la latencia de las consultas, logrando una reducción del 30% en costos de almacenamiento",
+
 		"temazcal-title": "Okayhey Temazcal | Presencia Web + Integración CMS",
 		"temazcal-description": "Implementé un CMS headless (Contentful) para desacoplar la gestión de contenido del frontend, permitiendo a usuarios no técnicos realizar actualizaciones del sitio de forma independiente sin necesidad de despliegues de código. Optimicé el rendimiento del sitio y el SEO mediante renderizado del lado del servidor con Next.js, incrementando significativamente la interacción de los usuarios y la visibilidad del cliente.",
 

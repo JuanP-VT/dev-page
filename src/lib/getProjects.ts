@@ -8,7 +8,7 @@ export function useProjects() {
 			title: t("os2-title"),
 			description: t("os2-description"),
 			image: "/img/projects/onsite2/main.webp",
-			tags: ["C#",".NET","TypeScript", "React", "Next.js", "Tailwind CSS"],
+			tags: ["C#", ".NET", "TypeScript", "React", "Next.js", "Tailwind CSS"],
 			featured: true,
 			level: "Professional",
 			caseStudyLink: "/cases/onsite2",
@@ -18,8 +18,17 @@ export function useProjects() {
 			title: t("management-title"),
 			description: t("management-description"),
 			image: "/img/projects/management/main.webp",
-			tags: ["C#",".NET","JavaScript", "React", "Tailwind CSS"],
+			tags: ["C#", ".NET", "JavaScript", "React", "Tailwind CSS"],
 			liveLink: "https://mgmtview.pktuno.mx/",
+			featured: false,
+			level: "Professional",
+			caseStudyLink: "/cases/management",
+		},
+		{
+			title: t("cloud-storage-migration-title"),
+			description: t("cloud-storage-migration-description"),
+			image: "/img/projects/s3/s3-migration.png",
+			tags: ["C#", ".NET", "SQL", "AWS S3"],
 			featured: false,
 			level: "Professional",
 			caseStudyLink: "/cases/management",
@@ -91,7 +100,7 @@ export function useProjects() {
 			githubLink: "https://github.com/JuanP-VT/Weather-App",
 			featured: false,
 			level: "Learning",
-		},		
+		},
 	];
 
 	const getProjects = () => data;
