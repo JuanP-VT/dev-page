@@ -388,6 +388,84 @@
 				}
 			}
 		},
+
+			"s3": {
+			"common": {
+				"view": "View More Projects",
+				"case-study": "Case Study"
+			},
+			"title": "Enterprise Data Optimization: The MySQL to AWS S3 Migration",
+			"sub-title": "Architecting a high-performance storage strategy to eliminate database bloat, reduce infrastructure costs by 30%, and ensure scalable file management.",
+			"role": "Full-Stack Developer",
+			"duration": "December 2025",
+			"overview-title": "Overview",
+			"overview-description": "The core logistics platform was originally designed using a monolithic data approach, where all files including large shipping labels, customer documentation, and photos were encoded as Base64 strings and stored directly within MySQL columns. As the platform scaled, this led to exponential database growth, causing significant performance degradation during query execution and making database backups increasingly slow and risky.",
+			"overview-description2": "To resolve this, I engineered a storage decoupling strategy to move all binary data to AWS S3. This involved creating a high-performance migration pipeline and a new service layer in .NET to handle secure object streaming via pre-signed URLs. The result was a leaner database, faster application response times, and a major reduction in cloud storage expenditure.",
+			"g&c": {
+				"title": "Goals & Challenges",
+				"goals": {
+					"title": "Goals",
+					"1": "Reduce database storage footprint by migrating binary data to an external Object Storage solution (AWS S3).",
+					"2": "Improve system scalability by decoupling file management from the relational database engine.",
+					"3": "Implement a secure access layer using AWS S3 Pre-signed URLs to protect sensitive logistics documentation.",
+					"4": "Eliminate the 33% storage overhead caused by Base64 encoding at the database level."
+				},
+				"challenges": {
+					"title": "Key Challenges",
+					"1": "Safely migrating thousands of existing records without downtime or data corruption.",
+					"2": "Ensuring the transition from DB-blobs to S3-references was completely transparent to the end-users.",
+					"3": "Maintaining strict access control for private customer files once they left the internal network environment."
+				},
+				"problems": {
+					"title": "Major Problems",
+					"1": "The primary bottleneck was the existing Base64 Bloat; since Base64 encoding increases file size by roughly one-third, the MySQL server was working 30% harder than necessary for every read/write operation involving files."
+				}
+			},
+			"solutions&contribution": {
+				"title": "Solutions & My Contributions",
+				"technical": {
+					"title": "Technical Architecture",
+					"1": "Designed a .NET migration utility to asynchronously extract, decode, and upload Base64 records to AWS S3.",
+					"2": "Implemented a Repository Pattern adjustment to swap direct DB file-fetching for S3 object-key referencing.",
+					"3":"Configured S3 Lifecycle Policies to automate data tiering, further optimizing costs for older, less-frequently accessed documents."
+				},
+				"performance": {
+					"title": "Performance Optimizations",
+					"1": "Developed a Stream-to-S3 pipeline that avoided loading entire files into server memory during the upload process, preventing OOM (Out of Memory) errors during large batch migrations.",
+					"2": "Integrated a caching layer for S3 metadata to reduce the number of redundant API calls to AWS."
+				},
+				"collaboration": {
+					"title": "Security & Reliability",
+					"1": "Leveraged AWS IAM roles and policies to ensure Least Privilege access for the .NET service layer.",
+					"2": "Implemented Pre-signed URLs with short expiration windows, ensuring that sensitive files are only accessible to authorized users for a specific duration."
+				}
+			},
+			"i&r": {
+				"title": "Impact & Results",
+				"1": "Cost Reduction",
+				"2": "Storage Savings",
+				"3": "Reliability",
+				"description": "Significantly lowered monthly infrastructure bills by moving data from expensive DB storage to cost-effective S3 buckets. Reclaimed massive amounts of disk space by storing files in their native binary format rather than encoded strings and Established a robust, distributed storage architecture that isolated file-serving from application logic, preventing the database from becoming a single point of failure."
+			},
+			"reflection": {
+				"title": "Reflection",
+				"learned": {
+					"title": "What I Learned",
+					"description": "This project taught me the critical importance of choosing the right tool for the job. While storing files in a database is easy for small prototypes, it quickly becomes a liability in an enterprise environment. I gained deep experience in AWS SDK integration, cloud security best practices, and the technical nuances of data encoding and streaming."
+				},
+				"dif": {
+					"title": "What I'd Do Differently",
+					"description": "In hindsight, I would have implemented a Dual-Write phase earlier in the process. Initially, I focused on a batch migration, but writing to both the DB and S3 simultaneously for a few days before the final cutover would have provided an even higher level of data validation and peace of mind during the transition."
+				},
+				"proud": {
+					"title": "What I'm Proudest Of",
+					"description": "I am proudest of the quantifiable impact this had on the business. It wasn't just a technical cleanup; it was a strategic move that saved the company money and made the platform noticeably faster for our customers. Successfully moving that much legacy data without a single byte being lost or corrupted was a major professional win for me."
+				}
+			}
+		},
+
+
+	
 		"regina": {
 			"common": {
 				"view": "View More Projects",

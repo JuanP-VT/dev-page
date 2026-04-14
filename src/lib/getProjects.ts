@@ -31,7 +31,7 @@ export function useProjects() {
 			tags: ["C#", ".NET", "SQL", "AWS S3"],
 			featured: false,
 			level: "Professional",
-			caseStudyLink: "/cases/management",
+			caseStudyLink: "/cases/s3-migration",
 		},
 				{
 			title: t("error-translation-title"),
@@ -40,7 +40,7 @@ export function useProjects() {
 			tags: ["C#", ".NET", "SQL", "AWS S3"],
 			featured: false,
 			level: "Professional",
-			caseStudyLink: "/cases/management",
+			caseStudyLink: "/cases/error-translation",
 		},
 		{
 			title: t("regina-title"),
