@@ -362,6 +362,154 @@
 				}
 			}
 		},
+		"s3": {
+    "common": {
+      "view": "Ver más proyectos",
+      "case-study": "Caso de estudio"
+    },
+    "title": "Optimización de datos empresariales: Migración de MySQL a AWS S3",
+    "sub-title": "Arquitectura de una estrategia de almacenamiento de alto rendimiento para eliminar la saturación de la base de datos, reducir costos de infraestructura en un 30% y asegurar una gestión de archivos escalable.",
+    "role": "Desarrollador Full-Stack",
+    "duration": "Diciembre 2025",
+    "overview-title": "Resumen general",
+    "overview-description": "La plataforma logística principal se diseñó originalmente bajo un enfoque monolítico de datos, donde todos los archivos (incluyendo etiquetas de envío de gran tamaño, documentación de clientes y fotos) se codificaban como cadenas Base64 y se almacenaban directamente en columnas de MySQL. A medida que la plataforma escaló, esto provocó un crecimiento exponencial de la base de datos, degradando significativamente el rendimiento de las consultas y haciendo que los respaldos fueran cada vez más lentos y riesgosos.",
+    "overview-description2": "Para resolverlo, diseñé una estrategia de desacoplamiento de almacenamiento para mover todos los datos binarios a AWS S3. Esto implicó la creación de un pipeline de migración de alto rendimiento y una nueva capa de servicio en .NET para gestionar el streaming seguro de objetos mediante URLs presignadas. El resultado fue una base de datos más ligera, tiempos de respuesta más rápidos y una reducción considerable en el gasto de almacenamiento en la nube.",
+    "g&c": {
+      "title": "Metas y desafíos",
+      "goals": {
+        "title": "Objetivos",
+        "1": "Reducir la huella de almacenamiento de la base de datos migrando los datos binarios a una solución externa de almacenamiento de objetos (AWS S3).",
+        "2": "Mejorar la escalabilidad del sistema desacoplando la gestión de archivos del motor de la base de datos relacional.",
+        "3": "Implementar una capa de acceso seguro mediante URLs presignadas de AWS S3 para proteger la documentación logística sensible.",
+        "4": "Eliminar el exceso de almacenamiento del 33% causado por la codificación Base64 a nivel de base de datos."
+      },
+      "challenges": {
+        "title": "Desafíos clave",
+        "1": "Migrar de forma segura miles de registros existentes sin tiempo de inactividad ni corrupción de datos.",
+        "2": "Garantizar que la transición de blobs en BD a referencias en S3 fuera completamente transparente para los usuarios finales.",
+        "3": "Mantener un control de acceso estricto para los archivos privados de los clientes una vez que salieran del entorno de la red interna."
+      },
+      "problems": {
+        "title": "Problemas principales",
+        "1": "El cuello de botella principal era la saturación por Base64; dado que esta codificación aumenta el tamaño del archivo en casi un tercio, el servidor MySQL trabajaba un 30% más de lo necesario en cada operación de lectura/escritura de archivos."
+      }
+    },
+    "solutions&contribution": {
+      "title": "Soluciones y aportes",
+      "technical": {
+        "title": "Arquitectura técnica",
+        "1": "Diseñé una utilidad de migración en .NET para extraer, decodificar y cargar registros Base64 a AWS S3 de forma asíncrona.",
+        "2": "Ajusté el patrón Repository para sustituir la obtención directa de archivos desde la BD por referencias a claves de objetos en S3.",
+        "3": "Configuré políticas de ciclo de vida en S3 para automatizar la clasificación de datos por niveles (tiering), optimizando aún más los costos para documentos antiguos o de acceso poco frecuente."
+      },
+      "performance": {
+        "title": "Optimización de rendimiento",
+        "1": "Desarrollé un pipeline de 'Stream-to-S3' que evitó cargar archivos completos en la memoria del servidor durante la carga, previniendo errores de memoria insuficiente (OOM) durante migraciones masivas.",
+        "2": "Integré una capa de caché para los metadatos de S3 con el fin de reducir el número de llamadas redundantes a la API de AWS."
+      },
+      "collaboration": {
+        "title": "Seguridad y confiabilidad",
+        "1": "Utilicé roles y políticas de AWS IAM para garantizar el acceso de menor privilegio a la capa de servicio de .NET.",
+        "2": "Implementé URLs presignadas con ventanas de expiración cortas, asegurando que los archivos sensibles solo sean accesibles para usuarios autorizados durante un tiempo específico."
+      }
+    },
+    "i&r": {
+      "title": "Impacto y resultados",
+      "1": "Reducción de costos",
+      "2": "Ahorro de almacenamiento",
+      "3": "Confiabilidad",
+      "description": "Se redujeron significativamente las facturas mensuales de infraestructura al mover los datos de un almacenamiento de BD costoso a buckets de S3 económicos. Se recuperó una cantidad masiva de espacio en disco al almacenar los archivos en su formato binario nativo en lugar de cadenas codificadas, y se estableció una arquitectura de almacenamiento robusta y distribuida que aisló el servicio de archivos de la lógica de la aplicación, evitando que la base de datos fuera un punto único de falla."
+    },
+    "reflection": {
+      "title": "Reflexión",
+      "learned": {
+        "title": "Aprendizajes",
+        "description": "Este proyecto me enseñó la importancia crítica de elegir la herramienta adecuada para cada tarea. Aunque almacenar archivos en una base de datos es sencillo para prototipos pequeños, se convierte rápidamente en un lastre en un entorno empresarial. Obtuve experiencia profunda en la integración del SDK de AWS, mejores prácticas de seguridad en la nube y los matices técnicos de la codificación y streaming de datos."
+      },
+      "dif": {
+        "title": "Qué haría diferente",
+        "description": "Viéndolo en retrospectiva, habría implementado una fase de 'escritura dual' (Dual-Write) más temprano en el proceso. Inicialmente me enfoqué en una migración por lotes, pero escribir tanto en la BD como en S3 simultáneamente durante unos días antes del corte final habría proporcionado un nivel de validación de datos y tranquilidad aún mayor durante la transición."
+      },
+      "proud": {
+        "title": "Mi mayor orgullo",
+        "description": "Lo que más me enorgullece es el impacto cuantificable que esto tuvo en el negocio. No fue solo una limpieza técnica; fue un movimiento estratégico que ahorró dinero a la empresa y aceleró notablemente la plataforma para nuestros clientes. Migrar con éxito tal cantidad de datos heredados sin perder ni corromper un solo byte fue un gran logro profesional para mí."
+      }
+    }
+  },
+"error-translation": {
+    "common": {
+      "view": "Ver más proyectos",
+      "case-study": "Caso de estudio"
+    },
+    "title": "Normalización de errores con IA: Creación de una capa de traducción semántica",
+    "sub-title": "Implementación de un motor de huellas heurísticas y una estrategia Cache-Aside para estandarizar las respuestas de APIs de transportistas, reduciendo costos de LLM y brindando claridad a los usuarios finales.",
+    "role": "Desarrollador Full-Stack",
+    "duration": "Enero 2026",
+    "overview-title": "Resumen general",
+    "overview-description": "En un entorno logístico con múltiples transportistas, los mensajes de error suelen ser inconsistentes: desde crípticos stack traces técnicos hasta complejos objetos JSON. Esta falta de estandarización imposibilitaba dar retroalimentación clara a los clientes o crear una lógica de reintentos automatizada. Para resolverlo, desarrollé un servicio de Identidad de Errores que actúa como intermediario entre las respuestas crudas del transportista y la interfaz de usuario final.",
+    "overview-description2": "El sistema utiliza un filtro de ruido heurístico y un normalizador basado en Regex para eliminar datos transitorios como timestamps, IDs de sesión y ruido técnico. Al aplanar las estructuras JSON en 'huellas' canónicas únicas (hashes), el sistema identifica patrones de error recurrentes. Esto permite usar un Caché Semántico donde solo consultamos el servicio de IA para patrones nuevos, mejorando drásticamente los tiempos de respuesta y minimizando costos operativos.",
+    "g&c": {
+      "title": "Metas y desafíos",
+      "goals": {
+        "title": "Objetivos",
+        "1": "Estandarizar miles de mensajes de error dispares en un conjunto único y canónico de traducciones comprensibles para humanos.",
+        "2": "Minimizar el gasto en tokens de API mediante la implementación de una estrategia Cache-Aside de alta eficiencia.",
+        "3": "Automatizar la identificación de 'Familias de Errores' mediante huellas estructurales en lugar de coincidencias simples de texto.",
+        "4": "Mejorar la productividad de los desarrolladores filtrando stack traces y ruido en Base64 de los logs de producción."
+      },
+      "challenges": {
+        "title": "Desafíos clave",
+        "1": "Gestionar errores que llegan en diversos formatos (HTML, texto plano y JSON anidado).",
+        "2": "Prevenir la 'hemorragia de tokens', donde llamadas redundantes para el mismo tipo de error inflaban los costos de IA.",
+        "3": "Garantizar que los filtros de normalización (como la eliminación de IDs) no eliminaran accidentalmente información diagnóstica crítica."
+      },
+      "problems": {
+        "title": "Problemas principales",
+        "1": "El cuello de botella principal era la relación señal-ruido. Las respuestas de los transportistas incluían IDs de solicitud o marcas de tiempo únicas en cada mensaje, lo que hacía que el caché tradicional basado en texto fuera inútil hasta que se implementó el motor de huellas digitales."
+      }
+    },
+    "solutions&contribution": {
+      "title": "Soluciones y aportes",
+      "technical": {
+        "title": "Arquitectura técnica",
+        "1": "Aplanamiento de JSON y extracción de hojas: Desarrollé una utilidad para recorrer árboles JSON complejos y extraer pares clave-valor, permitiendo el análisis estructural sin importar la profundidad del anidamiento.",
+        "2": "Huellas canónicas (Fingerprinting): Creé un generador de huellas que ordena y genera hashes de atributos de error normalizados para crear una identidad permanente para problemas recurrentes.",
+        "3": "Caché multinivel: Implementé una estrategia de caché de dos niveles usando MemoryCache para búsquedas instantáneas y una capa persistente en base de datos para el reconocimiento de patrones a largo plazo."
+      },
+      "performance": {
+        "title": "Optimización de rendimiento",
+        "1": "Filtrado heurístico de ruido: Creé un filtro de 'palabras clave prohibidas' y 'patrones técnicos' para descartar automáticamente stack traces, direcciones de memoria y cadenas Base64 antes del procesamiento.",
+        "2": "Jerarquía de normalización por Regex: Diseñé un orden específico de operaciones para filtros Regex (URLs -> Emails -> IDs) para evitar que los patrones simples alteraran estructuras de datos más complejas."
+      },
+      "collaboration": {
+        "title": "Analítica y monitoreo",
+        "1": "Herramienta de análisis de eficiencia: Construí una suite de diagnóstico para calcular el 'Potencial de Acierto de Caché' (Cache Hit Potential), demostrando que el sistema podía eliminar hasta el 90% de las llamadas redundantes a la IA basándose en logs históricos."
+      }
+    },
+    "i&r": {
+      "title": "Impacto y resultados",
+      "1": "Reducción de costos de IA",
+      "2": "Búsquedas en sub-milisegundos",
+      "3": "Confiabilidad",
+      "description": "Al generar huellas de patrones estructurales, el sistema evita llamar al LLM para cualquier familia de errores ya conocida. El 98% de los errores conocidos se resuelven vía Memory Cache, brindando respuesta instantánea al frontend. Logré traducir la jerga técnica de los transportistas en instrucciones accionables para el cliente (ej. 'Código postal inválido' en lugar de 'Exception at Service.Address.Validator.Line 402')."
+    },
+    "reflection": {
+      "title": "Reflexión",
+      "learned": {
+        "title": "Aprendizajes",
+        "description": "Este proyecto profundizó mi comprensión sobre la normalización de datos y el patrón Cache-Aside. Aprendí que, al trabajar con IA, el trabajo más importante ocurre antes de la llamada a la API. Una buena ingeniería de datos (limpieza y generación de huellas) es lo que hace que la IA sea escalable y costeable en una empresa."
+      },
+      "dif": {
+        "title": "Qué haría diferente",
+        "description": "Consideraría mover la lógica de generación de huellas (Fingerprinting) a una librería compartida o microservicio desde el inicio. A medida que el sistema creció, otras herramientas internas empezaron a requerir estas capacidades, y centralizarlo desde el primer día habría facilitado la integración."
+      },
+      "proud": {
+        "title": "Mi mayor orgullo",
+        "description": "Me enorgullece la lógica del filtro de ruido. Ver cómo el sistema identificaba con éxito que un stack trace de 50 líneas y un mensaje de error de una sola línea eran en realidad el mismo problema subyacente fue extremadamente satisfactorio. Convirtió un log caótico en un panel de control limpio y manejable."
+      }
+    }
+  },
+
 		"regina": {
 			"common": {
 				"view": "Ver Más Proyectos",
