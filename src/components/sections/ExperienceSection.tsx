@@ -128,7 +128,6 @@ export default function ExperienceSection() {
 								t("2.bullet.1"),
 								t("2.bullet.2"),
 								t("2.bullet.3"),
-								t("2.bullet.4"),
 							].map((item) => (
 								<li key={item} className="flex gap-2 items-start">
 									<span className="flex flex-shrink-0 justify-center items-center mt-px w-5 h-5 text-xs text-teal-800 rounded-full dark:text-teal-400 bg-teal-500/70 dark:bg-teal-500/20">

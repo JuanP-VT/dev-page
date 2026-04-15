@@ -64,11 +64,11 @@
 		"management-title": "Management | Enhancements and Maintenance",
 		"management-description": "Designed and scaled core backend modules for the company’s internal logistics engine. Developed server-side logic in C#/.NET to process raw operational telemetry into automated analytics and reporting tools, significantly reducing manual monitoring and streamlining administrative workflows for internal stakeholders.",
 
-		"cloud-storage-migration-title":"Cloud Storage Migration | Performance Optimization",
-		"cloud-storage-migration-description":"Engineered a high-efficiency storage migration, offloading legacy file records from MySQL (Base64) to AWS S3. By eliminating the 33% storage overhead inherent in Base64 encoding, I reduced database bloat and improved query latency, resulting in a 30% reduction in storage costs and more reliable data backups for the enterprise",
+		"cloud-storage-migration-title": "Cloud Storage Migration | Performance Optimization",
+		"cloud-storage-migration-description": "Engineered a high-efficiency storage migration, offloading legacy file records from MySQL (Base64) to AWS S3. By eliminating the 33% storage overhead inherent in Base64 encoding, I reduced database bloat and improved query latency, resulting in a 30% reduction in storage costs and more reliable data backups for the enterprise",
 
-		"error-translation-title":"AI Carrier Integration | Semantic Error Layer",
-		"error-translation-description":"Developed an AI-driven normalization pipeline to standardize disparate error responses from multiple global carriers into a single canonical format. Implemented a Semantic Cache layer to optimize LLM token usage and minimize API latency, providing a unified error interface that streamlines troubleshooting and automated retry logic across the entire logistics suite",
+		"error-translation-title": "AI Carrier Integration | Semantic Error Layer",
+		"error-translation-description": "Developed an AI-driven normalization pipeline to standardize disparate error responses from multiple global carriers into a single canonical format. Implemented a Semantic Cache layer to optimize LLM token usage and minimize API latency, providing a unified error interface that streamlines troubleshooting and automated retry logic across the entire logistics suite",
 
 		"onsite1-title": "Onsite 1 | Legacy Code Maintenance",
 		"onsite1-description": "Maintained and debugged this legacy application critical to the company's logistics operations. The project was built with jQuery, HTML, and CSS, and had grown without architectural planning resulting in long, unstructured files and inconsistent modularization. Despite the technical debt and lack of documentation, I successfully implemented fixes and improvements when needed.",
@@ -128,35 +128,34 @@
 			"description": "PKT1 - Shipping logistics center.",
 			"bullet": {
 				"1": {
-					"main": "Co-led the rebuild of Onsite 2, the company’s logistics platform; migrated a legacy jQuery system to React/Next.js/TypeScript over 10 months and delivered it in-house, avoiding $20K in outsourcing costs."				
+					"main": "Architectural Overhaul: Co-led the end-to-end reconstruction of Onsite 2, migrating a legacy jQuery monolith to a modern Next.js/TypeScript and .NET 10 architecture. Delivered a production-ready internal solution in 10 months, avoiding $20,000 USD in projected outsourcing costs."
 				},
 				"2": {
-					"main": "Achieved major end-to-end performance gains: FCP 0.4s, LCP 1.4s, CLS 0.014, 94% Accessibility, 100% SEO, eliminated input lag (10→2,000+ items) through virtualization/pagination and cut unnecessary API calls by ~60% via debouncing."					
+					"main": "Performance Engineering: Achieved elite performance metrics (0.4s FCP, 1.4s LCP) through virtualization, pagination, and API call optimization (debouncing), resulting in a 60% reduction in unnecessary network traffic."
 				},
 				"3": {
-					"main": "Architected and implemented a fully digital client-onboarding system in .NET (C#) replacing manual processes, automating multi-step validations/approvals, and decoupling onboarding from legacy systems. Delivered additional backend services to support new Onsite 2 features, improving workflows and increasing platform reliability and throughput."					
+					"main": "Infrastructure Optimization (S3 Migration): Engineered a high-efficiency storage migration, offloading legacy Base64 file records from MySQL to AWS S3. Eliminated 33% storage overhead, reducing database bloat and storage costs by 30%."
 				},
 				"4": {
-					"main": "Implemented scalable frontend architecture using Next.js App Router and reusable component patterns, reducing duplication and improving maintainability."					
+					"main": "AI Integration & Semantic Caching: Developed an AI-driven normalization pipeline to canonicalize disparate carrier error responses. Implemented a Heuristic Fingerprinting engine and MemoryCache/Redis layer, reducing AI token costs by 90% and providing instant error resolution for end-users."
 				},
 				"5": {
-					"main": "Built analytics and monitoring modules to improve operational visibility and support data-driven decisions."					
+					"main": "Backend Automation: Architected a fully digital client-onboarding system in .NET, replacing manual verification with automated multi-step validation. Decoupled onboarding from legacy services, significantly increasing platform reliability and throughput."
 				},
 				"6": {
-					"main": "Strengthened code quality by introducing unit and integration testing (xUnit, Jest, React Testing Library) and documenting patterns, standards, and architectural decisions."					
+					"main": "Quality & Standards: Strengthened codebase stability by introducing a rigorous testing culture (xUnit, Jest, React Testing Library) and documenting architectural patterns to ensure long-term maintainability for the engineering team."
 				}
 			}
 		},
 		"2": {
-			"startDate": "2022",
+			"startDate": "2023",
 			"endDate": "2024",
 			"role": "Freelance  Developer",
-			"description": "Developed end-to-end web applications for small local businesses, which directly led to my recruitment at PKT1. Delivered both frontend and backend work using TypeScript, React, Next.js, and MongoDB..",
+			"description": "Engineered end-to-end web solutions for local businesses, directly leading to my recruitment at PKT1. Managed the entire development lifecycle independently, from initial architecture and UI/UX design to cloud deployment and maintenance",
 			"bullet": {
-				"1": "Architected and built from scratch a complete fullstack e-commerce platform (Regina & Gael Studio), integrating complex functionalities such as user authentication, payment gateway (PayPal), product management, and secure digital file delivery.",
-				"2": "Designed and launched a fully responsive marketing website (Okayhey Temazcal) with Contentful CMS integration, enabling non-technical users to manage and update dynamic content, including blogs, FAQs, and photo galleries.",
-				"3": "Managed complete development lifecycle independently, from design and planning through implementation and deployment.",
-				"4": "Applied self-taught expertise in TypeScript, serverless architecture, RESTful APIs, and modern frontend development using React."
+				"1": "E-Commerce Architecture (Regina & Gael Studio): Architected and launched a comprehensive full-stack e-commerce platform. Integrated secure user authentication, complex product management systems, and a PayPal API payment gateway, including an automated system for secure digital file delivery.",
+				"2": "Headless CMS Integration (Okayhey Temazcal): Designed and deployed a responsive marketing site integrated with Contentful CMS. This decoupling enabled non-technical stakeholders to manage dynamic content (blogs, galleries, FAQs) independently, eliminating the need for code-level updates for content changes.",
+				"3": "Technical Self-Sufficiency: Leveraged self-taught expertise in TypeScript, serverless architecture, and RESTful APIs to deliver production-ready applications, maintaining a high standard of code quality and mobile-first responsiveness."
 			}
 		}
 	},
@@ -255,22 +254,22 @@
 			},
 			"i&r": {
 				"title": "Impact & Results",
-				"metrics":{
-					"description":"Migrating from jQuery to Next.js resulted in significant improvements in performance and user experience. The following Lighthouse metrics demonstrate the quantifiable impact of this technological upgrade.",
-					"after":"After",
-					"before":"Before",
-					"account-summary":"Account Summary",
-					"boxes":"Boxes",
-					"customers":"Customers",
-					"dashboard":"Dashboard",
-					"login":"Login",
-					"mass-shipping":"Mass Shipping",
-					"pickup-request":"Pickup Request",
-					"shipments":"Shipments"					
+				"metrics": {
+					"description": "Migrating from jQuery to Next.js resulted in significant improvements in performance and user experience. The following Lighthouse metrics demonstrate the quantifiable impact of this technological upgrade.",
+					"after": "After",
+					"before": "Before",
+					"account-summary": "Account Summary",
+					"boxes": "Boxes",
+					"customers": "Customers",
+					"dashboard": "Dashboard",
+					"login": "Login",
+					"mass-shipping": "Mass Shipping",
+					"pickup-request": "Pickup Request",
+					"shipments": "Shipments"
 				},
 				"1": "4.5 times better than Google's standard (1.8s)",
 				"2": "Surpassing Google's 2.5-second standard by 44%",
-				"3": "Cost savings compared to outsourcing (approx. $360K MXN)",
+				"3": "Cost savings compared to outsourcing (approx. 20,000 USD)",
 				"description": "My role in the complete rebuild of Onsite 2 was key. With significant autonomy, I was able to define and execute the technical vision of the project, driving substantial improvements in performance and maintainability with proactive solutions. Not only did I modernize and optimize the platform in just 10 months, but this approach also generated 95% positive feedback from the internal team."
 			},
 			"reflection": {
@@ -389,7 +388,7 @@
 			}
 		},
 
-			"s3": {
+		"s3": {
 			"common": {
 				"view": "View More Projects",
 				"case-study": "Case Study"
@@ -427,7 +426,7 @@
 					"title": "Technical Architecture",
 					"1": "Designed a .NET migration utility to asynchronously extract, decode, and upload Base64 records to AWS S3.",
 					"2": "Implemented a Repository Pattern adjustment to swap direct DB file-fetching for S3 object-key referencing.",
-					"3":"Configured S3 Lifecycle Policies to automate data tiering, further optimizing costs for older, less-frequently accessed documents."
+					"3": "Configured S3 Lifecycle Policies to automate data tiering, further optimizing costs for older, less-frequently accessed documents."
 				},
 				"performance": {
 					"title": "Performance Optimizations",
@@ -464,8 +463,80 @@
 			}
 		},
 
+		"error-translation": {
+			"common": {
+				"view": "View More Projects",
+				"case-study": "Case Study"
+			},
+			"title": "AI-Powered Error Normalization: Building a Semantic Translation Layer",
+			"sub-title": "Implementing a heuristic fingerprinting engine and Cache-Aside strategy to standardize disparate carrier API responses, reducing LLM costs and providing human-readable clarity for end-users.",
+			"role": "Full-Stack Developer",
+			"duration": "January 2026",
+			"overview-title": "Overview",
+			"overview-description": "In a multi-carrier logistics environment, error messages are notoriously inconsistent, ranging from cryptic technical stack traces to verbose JSON payloads. This lack of standardization made it impossible to provide clear feedback to customers or build automated retry logic. To solve this, I developed a sophisticated Error Identity service that acts as a middleware between raw carrier responses and the final user interface.",
+			"overview-description2": "The system utilizes a custom Heuristic Noise Filter and Regex-based Normalizer to strip out transient data like timestamps, session IDs, and technical noise. By flattening JSON structures into unique canonical fingerprints (hashes), the system can identify recurring error patterns. This allows us to use a Semantic Cache where we only call an AI translation service for new error patterns drastically improving response times and minimizing operational costs",
+			"g&c": {
+				"title": "Goals & Challenges",
+				"goals": {
+					"title": "Goals",
+					"1": "Standardize thousands of disparate carrier error messages into a single, canonical set of human-readable translations.",
+					"2": "Minimize API token expenditure by implementing a high-efficiency Cache-Aside strategy.",
+					"3": "Automate the identification of Error Families using structural fingerprinting rather than simple string matching",
+					"4": "Improve developer productivity by filtering out technical stack traces and Base64 noise from production logs."
+				},
+				"challenges": {
+					"title": "Key Challenges",
+					"1": "Managing errors that arrive in various formats (HTML, plain text, and nested JSON).",
+					"2": "Preventing 'Token Hemorrhage' where redundant calls for the same error type would inflate AI costs..",
+					"3": "Ensuring that normalization filters (like ID stripping) didn't accidentally remove critical diagnostic information."
+				},
+				"problems": {
+					"title": "Major Problems",
+					"1": "The primary bottleneck was the Noise-to-Signal ratio. Carrier responses frequently included unique request IDs or timestamps in every message, which made traditional string-based caching 100% ineffective until the fingerprinting engine was implemented."
+				}
+			},
+			"solutions&contribution": {
+				"title": "Solutions & My Contributions",
+				"technical": {
+					"title": "Technical Architecture",
+					"1": "JSON Flattening & Leaf Extraction: Developed a utility to traverse complex JSON trees and extract key-value pairs, allowing for structural analysis regardless of nesting depth.",
+					"2": "Canonical Fingerprinting: Built a Fingerprint Generator that sorts and hashes normalized error attributes to create a permanent identity for recurring issues.",
+					"3": "Multi-Level Cache: Implemented a two-tier caching strategy using MemoryCache for instant lookups and a Database Persistent Layer for long-term pattern recognition."
+				},
+				"performance": {
+					"title": "Performance Optimizations",
+					"1": "Heuristic Noise Filtering: Created a 'Banned Keyword' and 'Technical Pattern' filter to automatically discard stack traces, memory addresses, and Base64 strings before processing.",
+					"2": "Regex Normalization Hierarchy: Designed a specific order of operations for Regex filters (URLs -> Emails -> IDs) to prevent simpler patterns from 'breaking' more complex data structures."
+				},
+				"collaboration": {
+					"title": "Analytics & Monitoring",
+					"1": "Efficiency Analysis Tool: Built a diagnostic suite to calculate 'Cache Hit Potential,' proving that the system could eliminate up to 90% of redundant AI translation calls based on historical error logs."
+				}
+			},
+			"i&r": {
+				"title": "Impact & Results",
+				"1": "Reduction in AI Costs",
+				"2": "Sub-millisecond Lookups",
+				"3": "Reliability",
+				"description": "By fingerprinting structural patterns, the system avoids calling the LLM for any error family it has seen before. 98% of known errors are resolved via the Memory Cache, providing instant feedback to the frontend without waiting for external API calls. Successfully translated technical shipper jargon into actionable customer instructions (e.g., 'Invalid Postal Code' instead of 'Exception at Service.Address.Validator.Line 402')."
+			},
+			"reflection": {
+				"title": "Reflection",
+				"learned": {
+					"title": "What I Learned",
+					"description": "This project deepened my understanding of data normalization and the 'Cache-Aside pattern. I learned that when dealing with AI, the most important work happens before the API call. Good data engineering (cleaning and fingerprinting) is what makes AI scalable and affordable in an enterprise environment."
+				},
+				"dif": {
+					"title": "What I'd Do Differently",
+					"description": "I would consider moving the Fingerprinting logic to a shared library or a micro-service earlier. As the system grew, other internal tools started needing 'Error Identity' capabilities, and having this logic centralized from Day 1 would have made integration even smoother."
+				},
+				"proud": {
+					"title": "What I'm Proudest Of",
+					"description": "I am proud of the Noise Filter logic. Seeing the system successfully identify that a 50-line stack trace and a 1-line error message were actually the 'same' underlying issue was extremely satisfying. It turned a chaotic log into a clean, manageable dashboard."
+				}
+			}
+		},
 
-	
 		"regina": {
 			"common": {
 				"view": "View More Projects",
