@@ -32,7 +32,7 @@
 		"role-t": "role",
 		"role": "\"Full-Stack Developer\"",
 		"greeting": "Hi, I'm",
-		"description": "This site is a technical evidence repository for my professional work, highlighting my ability to deliver scalable, end-to-end applications. Explore the case studies below to see the architecture and implementation behind my work. I also include early freelance and hobby projects to demonstrate skill acquisition and full-stack ownership.",
+		"description": "I am a Full-Stack Developer specializing in the .NET ecosystem and modern Frontend architectures. This site is a technical evidence repository of my work delivering scalable, end-to-end solutions: from complex legacy migrations to AI-powered optimizations. Explore the case studies below to see the architecture and implementation behind my code.",
 		"contact": "Contact Me",
 		"projects": "View Projects",
 		"creativity": "creativity",
@@ -131,7 +131,7 @@
 					"main": "Architectural Overhaul: Co-led the end-to-end reconstruction of Onsite 2, migrating a legacy jQuery monolith to a modern Next.js/TypeScript and .NET 10 architecture. Delivered a production-ready internal solution in 10 months, avoiding $20,000 USD in projected outsourcing costs."
 				},
 				"2": {
-					"main": "Performance Engineering: Achieved elite performance metrics (0.4s FCP, 1.4s LCP) through virtualization, pagination, and API call optimization (debouncing), resulting in a 60% reduction in unnecessary network traffic."
+					"main": "Performance Engineering: Achieved elite performance metrics (0.4s FCP, 1.4s LCP) by optimizing the full data delivery pipeline. Implemented SQL query optimization and indexing to reduce server response times, paired with frontend virtualization, pagination, and debouncing, resulting in a 60% reduction in unnecessary network traffic and database load."
 				},
 				"3": {
 					"main": "Infrastructure Optimization (S3 Migration): Engineered a high-efficiency storage migration, offloading legacy Base64 file records from MySQL to AWS S3. Eliminated 33% storage overhead, reducing database bloat and storage costs by 30%."

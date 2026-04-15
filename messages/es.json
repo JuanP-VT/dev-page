@@ -32,7 +32,7 @@
 		"role-t": "rol",
 		"role": " \"Desarrollador Full-Stack\"",
 		"greeting": "Hola, soy",
-		"description": "Este sitio es un repositorio de evidencia técnica de mi trabajo profesional, destacando mi capacidad para entregar aplicaciones escalables end-to-end. Explora los casos de estudio a continuación para ver la arquitectura y la implementación detrás de mi trabajo. También incluyo proyectos personales (freelance) y de pasatiempo iniciales para demostrar la adquisición de habilidades full-stack.",
+		"description": "Soy un Desarrollador Full-Stack especializado en el ecosistema .NET y arquitecturas Frontend modernas. Este sitio es un repositorio de evidencia técnica de mi trabajo entregando soluciones escalables: desde migraciones complejas de sistemas heredados hasta optimizaciones impulsadas por IA. Explora los casos de estudio a continuación para conocer la arquitectura e implementación detrás de mi código.",
 		"contact": "Contáctame",
 		"projects": "Ver Proyectos",
 		"creativity": "creatividad",
@@ -91,48 +91,47 @@
 
 	},
 
-	"experience": {
-		"title": "Experiencia Profesional",
-		"subtitle": "",
-		"1": {
-			"startDate": "2024",
-			"endDate": "Presente",
-			"role": "Desarrollador Full-Stack",
-			"description": "PKT1 - Centro de envíos lógísticos.",
-			"bullet": {
-				"1": {
-					"main": "Colideré la reconstrucción de Onsite 2, la plataforma de logística de la empresa; migré un sistema jQuery heredado a React/Next.js/TypeScript en 10 meses , lo entregué internamente, evitando $20K en costes de outsourcing."
-				},				
-				"2": {
-					"main": "Logré importantes mejoras de rendimiento: FCP 0.4s, LCP 1.4s, CLS 0.014, 94% de Accesibilidad, 100% SEO. Eliminé el input retraso en la entrada (10→2,000+ ítems) mediante virtualización/paginación y reduje las llamadas innecesarias a la API en un ~60% a través de debouncing."
-				},
-				"3": {
-					"main": "Diseñé e implementé un sistema de alta de clientes totalmente digital en .NET (C#), reemplazando procesos manuales, automatizando validaciones/aprobaciones multifase y desacoplando la alta del sistema viejo. Entregué servicios de backend adicionales para dar soporte a nuevas funcionalidades de Onsite 2, mejorando flujos de trabajo e incrementando la fiabilidad y el rendimiento de la plataforma."	
-				},
-				"4": {
-					"main": "Implementé una arquitectura de frontend escalable utilizando App Router de Next.js y patrones de componentes reutilizables, reduciendo la duplicación y mejorando la mantenibilidad."		
-				},
-				"5": {
-					"main": "Construí módulos de analítica y monitoreo para mejorar la visibilidad operativa y dar soporte a la toma de decisiones basada en datos."		
-				},
-				"6": {
-					"main": "Reforcé la calidad del código introduciendo pruebas unitarias y de integración (xUnit, Jest, React Testing Library) y documentando patrones, estándares y decisiones arquitectónicas."		
-				}
-			}
-		},
-		"2": {
-			"startDate": "2022",
-			"endDate": "2024",
-			"role": "Desarrollador Web Freelance y Autodidacta",
-			"description": "Desarrollé aplicaciones web para pequeños negocios locales, lo que llevó directamente a mi contratación en PKT1. Entregué tanto trabajo de frontend como de backend utilizando TypeScript, React, Next.js y MongoDB.",
-			"bullet": {
-				"1": "Arquitecté y construí desde cero una plataforma completa de e-commerce fullstack (Regina & Gael Studio), integrando funcionalidades complejas como autenticación de usuario, pasarela de pagos (PayPal), gestión de productos y entrega segura de archivos digitales.",
-				"2": "Diseñé y lancé un sitio web de marketing completamente responsive (Okayhey Temazcal) con integración de Contentful CMS, lo que permitió a usuarios no técnicos gestionar y actualizar contenido dinámico, incluyendo blogs, FAQs y galerías de fotos.",
-				"3": "Gestioné el ciclo de vida completo del desarrollo de forma independiente, abarcando desde la concepción y la planificación inicial hasta la implementación y el despliegue final del producto.",
-				"4": "Apliqué expertise autodidacta en TypeScript, arquitectura serverless, APIs RESTful y desarrollo frontend moderno con React."
-			}
-		}
-	},
+"experience": {
+    "title": "Experiencia Laboral",
+    "subtitle": "",
+    "1": {
+      "startDate": "2024",
+      "endDate": "Presente",
+      "role": "Desarrollador Full-Stack",
+      "description": "PKT1 - Centro logístico de envíos.",
+      "bullet": {
+        "1": {
+          "main": "Reestructuración Arquitectónica: Colideré la reconstrucción integral de Onsite 2, migrando un monolito legado en jQuery a una arquitectura moderna con Next.js/TypeScript y .NET 10. Entregué una solución interna lista para producción en 10 meses, ahorrando $20,000 USD en costos proyectados de outsourcing."
+        },
+        "2": {
+          "main": "Ingeniería de Rendimiento: Logré métricas de rendimiento de élite (0.4s FCP, 1.4s LCP) mediante la optimización integral del flujo de entrega de datos. Implementé optimización de consultas SQL e indexación para reducir los tiempos de respuesta del servidor, complementado con virtualización en el frontend, paginación y debouncing, lo que resultó en una reducción del 60% en el tráfico innecesario de red y en la carga de la base de datos."
+        },
+        "3": {
+          "main": "Optimización de Infraestructura (Migración a S3): Diseñé una migración de almacenamiento de alta eficiencia, trasladando registros de archivos legados en Base64 desde MySQL hacia AWS S3. Eliminé un 33% de sobrecarga de almacenamiento, reduciendo la saturación de la base de datos y los costos de almacenamiento en un 30%."
+        },
+        "4": {
+          "main": "Integración de IA y Caché Semántico: Desarrollé un pipeline de normalización impulsado por IA para canonizar respuestas de error dispares de diversos transportistas. Implementé un motor de huellas heurísticas y una capa de MemoryCache/Redis, reduciendo los costos de tokens de IA en un 90% y proporcionando resolución instantánea de errores para los usuarios finales."
+        },
+        "5": {
+          "main": "Automatización de Backend: Arquitecté un sistema de alta de clientes (onboarding) totalmente digital en .NET, sustituyendo la verificación manual con validación automatizada de múltiples pasos. Desacoplé el proceso de onboarding de los servicios legados, aumentando significativamente la confiabilidad y el rendimiento de la plataforma."
+        },
+        "6": {
+          "main": "Calidad y Estándares: Fortalecí la estabilidad del código introduciendo una cultura de pruebas rigurosa (xUnit, Jest, React Testing Library) y documentando patrones arquitectónicos para garantizar el mantenimiento a largo plazo por parte del equipo de ingeniería."
+        }
+      }
+    },
+    "2": {
+      "startDate": "2023",
+      "endDate": "2024",
+      "role": "Desarrollador Freelance",
+      "description": "Desarrollé soluciones web integrales para negocios locales, lo que derivó directamente en mi contratación por parte de PKT1. Gestioné de forma independiente todo el ciclo de vida del desarrollo, desde la arquitectura inicial y diseño UI/UX hasta el despliegue en la nube y mantenimiento.",
+      "bullet": {
+        "1": "Arquitectura de E-Commerce (Regina & Gael Studio): Arquitecté y lancé una plataforma integral de comercio electrónico full-stack. Integré autenticación segura de usuarios, sistemas complejos de gestión de productos y pasarela de pagos con la API de PayPal, incluyendo un sistema automatizado para la entrega segura de archivos digitales.",
+        "2": "Integración de CMS Headless (Okayhey Temazcal): Diseñé y desplegué un sitio de marketing responsivo integrado con Contentful CMS. Este desacoplamiento permitió a los interesados no técnicos gestionar contenido dinámico (blogs, galerías, preguntas frecuentes) de forma independiente, eliminando la necesidad de actualizaciones a nivel de código para cambios de contenido.",
+        "3": "Autosuficiencia Técnica: Aproveché mi experiencia autodidacta en TypeScript, arquitectura serverless y APIs RESTful para entregar aplicaciones listas para producción, manteniendo un alto estándar de calidad de código y diseño enfocado en dispositivos móviles (mobile-first)."
+      }
+    }
+  },
 	"contact": {
 		"title": "Conectemos",
 		"subtitle": "Estoy listo para aportar valor a tu equipo. No dudes en ponerte en contacto.",
