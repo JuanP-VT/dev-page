@@ -52,7 +52,7 @@
 		"cloud-storage-migration-description":"Diseñé una migración de almacenamiento de alta eficiencia, trasladando registros de archivos heredados de MySQL (Base64) a AWS S3. Al eliminar el 33% de sobrecarga inherente a la codificación Base64, reduje la saturación de la base de datos y mejoré la latencia de las consultas, logrando una reducción del 30% en costos de almacenamiento",
 
 		"error-translation-title":"Integración de IA | Capa de Errores Semánticos",
-		"error-translation-description":"Desarrollé un pipeline de normalización impulsado por IA para estandarizar respuestas de error de múltiples transportistas globales en un formato canónico único. Implementé una capa de Caché Semántico para optimizar el uso de tokens y reducir la latencia de la API, proporcionando una interfaz de errores unificada que agiliza el soporte técnico y la lógica de reintentos automáticos",
+		"error-translation-description":"Desarrollé un pipeline de normalización impulsado por IA para estandarizar respuestas de error de múltiples transportistas globales en un formato canónico único. Implementé una capa de Caché Semántico para optimizar el uso de tokens y reducir la latencia de la API, proporcionando una interfaz de errores unificada que agiliza el soporte técnico.",
 
 
 		"temazcal-title": "Okayhey Temazcal | Presencia Web + Integración CMS",
