@@ -1,20 +1,23 @@
 "use client";
 import { useGlobalStore } from "@/store/global-store";
-import React, { useRef, useEffect } from "react";
+import type React from "react";
+import { useRef, useEffect } from "react";
 import { ThemeChanger } from "../buttons/ThemeChanger ";
-import { useTranslations } from "next-intl";
 import clsx from "clsx";
 import LanguageChanger from "../buttons/LanguageChanger";
 
-export default function MobileDrawer() {
+export default function MobileDrawer({ buttonRef }: { buttonRef: React.RefObject<HTMLButtonElement | null>}) {
   const isOpen = useGlobalStore.use.isDrawerOpen();
   const setIsOpen = useGlobalStore.use.setIsDrawerOpen();  
-  const drawerRef = useRef<HTMLDivElement>(null);  
-  const t = useTranslations("navbar");
+  const drawerRef = useRef<HTMLDivElement>(null);    
 
-  useEffect(() => {
+ useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
-      if (drawerRef.current && !drawerRef.current.contains(event.target as Node)) {
+      // Check if click is outside drawer AND outside the button
+      const isClickInsideDrawer = drawerRef.current?.contains(event.target as Node);
+      const isClickOnButton = buttonRef?.current?.contains(event.target as Node);
+
+      if (!isClickInsideDrawer && !isClickOnButton) {
         setIsOpen(false);
       }
     }
@@ -26,19 +29,19 @@ export default function MobileDrawer() {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [isOpen, setIsOpen]);
+  }, [isOpen, setIsOpen, buttonRef]);
 
-	function NavBarOption({ id }: { id: string }) {
-  return (
-    <a
-      href={`#${id}`}
-      onClick={()=> setIsOpen(false)}
-      className="relative p-3 font-mono font-medium text-gray-600 rounded-sm transition-colors dark:text-gray-300 hover:text-teal-500 group dark:hover:bg-gray-700 dark:hover:text-teal-400 hover:bg-neutral-50"
-    >
-      {t(id)}
-    </a>
-  );
-}
+  function NavBarOption({ id }: { id: string }) {
+    return (
+      <a
+        href={`#${id}`}
+        onClick={() => setIsOpen(false)}
+        className="relative p-3 font-mono font-medium text-gray-600 rounded-sm transition-colors dark:text-gray-300 hover:text-teal-500 group dark:hover:bg-gray-700 dark:hover:text-teal-400 hover:bg-neutral-50"
+      >
+        {id}
+      </a>
+    );
+  }
 
   return (
     <div
@@ -52,11 +55,11 @@ export default function MobileDrawer() {
       )}
     >
       <div className="flex flex-col font-mono">
-        <NavBarOption id="about" />
-        <NavBarOption id="tech" />
-        <NavBarOption id="projects" />
-        <NavBarOption id="experience" />
-        <NavBarOption id="contact" />
+        <NavBarOption id="About" />
+        <NavBarOption id="Tech" />
+        <NavBarOption id="Projects" />
+        <NavBarOption id="Experience" />
+        <NavBarOption id="Contact" />
       </div>
       <div className="flex gap-5 py-5 w-full">
         <LanguageChanger />
