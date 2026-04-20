@@ -2,14 +2,12 @@
 
 import { useEffect, useRef } from "react";
 import { Code, Terminal } from "lucide-react";
-import { useTranslations } from "next-intl";
 import ThemeImage from "@/app/[locale]/cases/components/ThemeImage";
 
 export default function HeroSection() {
   const containerRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLDivElement>(null);
-  const t = useTranslations("hero");
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -49,17 +47,9 @@ export default function HeroSection() {
       className="flex flex-col gap-20 items-center py-10 sm:py-20 lg:flex-row lg:gap-10"
       ref={containerRef}
     >
-      <div className="flex-1 opacity-0" ref={textRef}>
-        {/* <div className="inline-block py-1 px-3 mb-4 font-mono text-sm text-teal-700 bg-gray-100 rounded-md border border-gray-200 dark:text-teal-400 dark:bg-gray-800 dark:border-slate-700">
-					<span className="text-pink-700 dark:text-pink-400">const</span>{" "}
-					<span className="text-teal-700 dark:text-teal-400">
-						{t("role-t")}
-					</span>{" "}
-					= <span className="dark:text-cyan-400 text-sky-700">{t("role")}</span>
-					;
-				</div> */}
+      <div className="flex-1 opacity-0" ref={textRef}>    
         <h1 className="pt-4 mb-4 font-mono text-4xl font-bold text-gray-600 md:text-5xl dark:text-gray-300">
-          {t("greeting")}{" "}
+          Hi, I'm{" "}
           <span className="relative text-transparent bg-clip-text from-teal-500 dark:from-teal-300 bg-linear-to-r to-sky-600 dark:to-sky-400">
             Juan Pablo
             <span className="absolute bottom-0 left-0 w-full h-1 from-teal-600 bg-linear-to-r to-sky-600" />
@@ -67,7 +57,7 @@ export default function HeroSection() {
         </h1>
 
         <p className="pb-4 mb-8 text-lg leading-relaxed text-gray-600 dark:text-gray-300">
-          {t("description")}
+          I am a Full-Stack Developer specializing in the .NET ecosystem and modern Frontend architectures. This site is a technical evidence repository of my work delivering scalable, end-to-end solutions: from complex legacy migrations to AI-powered optimizations. Explore the case studies below to see the architecture and implementation behind my code.
         </p>
         <div className="flex gap-4">
           <a
@@ -75,14 +65,14 @@ export default function HeroSection() {
             className="flex gap-2 items-center py-3 px-4 font-mono text-sm bg-gradient-to-r to-emerald-400 rounded-md transition-all md:px-6 dark:to-emerald-400 hover:shadow-lg text-zinc-100 from-sky-500 group bg-linear-to-r dark:from-sky-500"
           >
             <Terminal className="w-4 h-4" />
-            {t("contact")}
+            Contact Me
           </a>
           <a
             href="#projects"
             className="py-3 px-2 font-mono text-sm text-teal-700 rounded-md border-2 border-teal-500 transition-all md:px-6 dark:text-teal-400 dark:hover:bg-teal-800/50 hover:bg-teal-100/50"
           >
             <Code className="inline-block mr-2 w-4 h-4" />
-            {t("projects")}
+            View Projects
           </a>
         </div>
       </div>
@@ -109,12 +99,12 @@ export default function HeroSection() {
               <span className="text-pink-700 dark:text-pink-400">import</span>{" "}
               &#123;{" "}
               <span className="dark:text-cyan-400 text-sky-700">
-                {t("creativity")}
+                creativity
               </span>{" "}
               &#125;{" "}
               <span className="text-pink-700 dark:text-pink-400">from</span>{" "}
               <span className="text-teal-700 dark:text-teal-400">
-                {t("brain")}
+                'brain'
               </span>
               ;
             </pre>
