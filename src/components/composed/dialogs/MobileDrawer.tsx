@@ -4,7 +4,6 @@ import type React from "react";
 import { useRef, useEffect } from "react";
 import { ThemeChanger } from "../buttons/ThemeChanger ";
 import clsx from "clsx";
-import LanguageChanger from "../buttons/LanguageChanger";
 
 export default function MobileDrawer({ buttonRef }: { buttonRef: React.RefObject<HTMLButtonElement | null>}) {
   const isOpen = useGlobalStore.use.isDrawerOpen();
@@ -62,7 +61,6 @@ export default function MobileDrawer({ buttonRef }: { buttonRef: React.RefObject
         <NavBarOption id="Contact" />
       </div>
       <div className="flex gap-5 py-5 w-full">
-        <LanguageChanger />
         <ThemeChanger />
       </div>
     </div>

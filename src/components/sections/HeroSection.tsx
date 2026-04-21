@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { Code, Terminal } from "lucide-react";
-import ThemeImage from "@/app/[locale]/cases/components/ThemeImage";
+import ThemeImage from "@/app/cases/components/ThemeImage";
 
 export default function HeroSection() {
   const containerRef = useRef<HTMLDivElement>(null);

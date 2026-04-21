@@ -2,7 +2,6 @@
 import { Button } from "../ui/button";
 import { FaBars } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
-import LanguageChanger from "./buttons/LanguageChanger";
 import { ThemeChanger } from "./buttons/ThemeChanger ";
 import { useGlobalStore } from "@/store/global-store";
 
@@ -46,7 +45,6 @@ export default function NavBar() {
           </div>
           <div className="flex gap-6">
             <span className="rounded-lg w-[1px] bg-zinc-300/60" />
-            <LanguageChanger />
             <ThemeChanger />
           </div>
         </div>
