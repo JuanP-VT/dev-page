@@ -53,8 +53,8 @@ export default function ManagementPage() {
             {/* Project Image */}
             <div className="mb-16">
               <Image
-                src="/img/projects/error-translation/error-translation.png"
-                alt="Onsite 2 Screenshot"
+                src="/img/projects/error-translation/error-translation.webp"
+                alt="Error translation Hero Image"
                 width={800}
                 height={400}
                 className="w-full rounded-lg border shadow-lg"

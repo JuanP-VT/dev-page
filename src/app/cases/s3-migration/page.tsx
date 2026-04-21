@@ -55,8 +55,8 @@ export default function ManagementPage() {
             {/* Project Image */}
             <div className="mb-16">
               <Image
-                src="/img/projects/s3/s3-migration.png"
-                alt="Onsite 2 Screenshot"
+                src="/img/projects/s3/s3-migration.webp"
+                alt="S3 Migration Image"
                 width={800}
                 height={400}
                 className="w-full rounded-lg border shadow-lg"

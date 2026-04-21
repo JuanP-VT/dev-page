@@ -25,7 +25,7 @@ export function useProjects() {
     {
       title: "Cloud Storage Migration | Performance Optimization",
       description: "Engineered a high-efficiency storage migration, offloading legacy file records from MySQL (Base64) to AWS S3. By eliminating the 33% storage overhead inherent in Base64 encoding, I reduced database bloat and improved query latency, resulting in a 30% reduction in storage costs and more reliable data backups for the enterprise",
-      image: "/img/projects/s3/s3-migration.png",
+      image: "/img/projects/s3/s3-migration.webp",
       tags: ["C#", ".NET", "SQL", "AWS S3"],
       featured: false,
       level: "Professional",
@@ -34,7 +34,7 @@ export function useProjects() {
     {
       title: "AI Carrier Integration | Semantic Error Layer",
       description: "Developed an AI-driven normalization pipeline to standardize disparate error responses from multiple global carriers into a single canonical format. Implemented a Semantic Cache layer to optimize LLM token usage and minimize API latency, providing a unified error interface that streamlines troubleshooting.",
-      image: "/img/projects/error-translation/error-translation.png",
+      image: "/img/projects/error-translation/error-translation.webp",
       tags: ["C#", ".NET", "SQL", "AWS S3"],
       featured: false,
       level: "Professional",
