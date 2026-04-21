@@ -33,26 +33,9 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 		return () => observer.disconnect();
 	}, []);
 
-	const handleLiveLinkClick = async () => {
-		if (!project.disclaimer) {
-			window.open(project.liveLink, "_blank");
-			return;
-		}
+	const handleLiveLinkClick = () => 
+			window.open(project.liveLink, "_blank");							
 
-		const Swal = (await import("sweetalert2")).default;
-
-		Swal.fire({
-			text: project.disclaimer,
-			icon: "info",
-			confirmButtonColor: "#3085d6",
-			confirmButtonText: "Continue",
-			background: "#e4e4e7",
-		}).then((result) => {
-			if (result.isConfirmed) {
-				window.open(project.liveLink, "_blank");
-			}
-		});
-	};
 	return (
 		<div
 			ref={cardRef}
