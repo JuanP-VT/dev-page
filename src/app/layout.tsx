@@ -7,10 +7,17 @@ import { Toaster } from "sonner";
 const sfMono = localFont({
 	src: "/../../public/fonts/SFMono-Regular.otf",
 });
+
+const baseUrl = "https://www.jpablo.dev";
+
 export const metadata: Metadata = {
-  title: "Juan Pablo Valdez Torres | Full-Stack Engineer | .NET & Next.js",
+  metadataBase: new URL(baseUrl), 
+  title: {
+    default: "Juan Pablo Valdez Torres | Software Engineer | .NET & Next.js",
+    template: "%s | Juan Pablo Valdez Torres", 
+  },
   description: 
-    "Full-Stack Software Engineer specialized in .NET 10, C#, and modern Next.js architectures. " + 
+    "Software Engineer specialized in .NET 10, C#, and modern frontend architectures. " + 
     "Expert in migrating complex legacy systems to scalable, performant, and maintainable solutions. " + 
     "Building clean, user-centric logistics platforms.",
   authors: [{ name: "Juan Pablo Valdez Torres" }],
@@ -24,16 +31,20 @@ export const metadata: Metadata = {
     "TypeScript", 
     "Mexico"
   ],
+  alternates: {
+    canonical: baseUrl, 
+  },
   openGraph: {
     title: "Juan Pablo Valdez Torres | Software Engineer",
-    description: "Full-Stack Engineer building scalable .NET & Next.js solutions.",
-    url: "https://www.jpablo.dev", 
+    description: "Software Engineer building scalable .NET & Next.js solutions.",
+    url: baseUrl, 
     siteName: "Juan Pablo Portfolio",
     images: [
       {
-        url: "/og-image.png", // Make sure to add an OG image in your public folder
+        url: "/og-image.png",
         width: 1200,
         height: 630,
+        alt: "Juan Pablo Valdez Torres Portfolio",
       },
     ],
     locale: "en_US",
@@ -42,11 +53,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Juan Pablo | Software Engineer",
-    description: "Full-Stack Engineer building scalable .NET & Next.js solutions.",
+    description: "Software Engineer building scalable .NET & Next.js solutions.",
     images: ["/og-image.png"],
   },
 };
-
 export default async function LocaleLayout({
 	children,
 }: {

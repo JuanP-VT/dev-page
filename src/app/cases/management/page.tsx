@@ -48,7 +48,7 @@ export default function ManagementPage() {
               <div className="flex flex-wrap gap-6 justify-center text-sm text-zinc-600 dark:text-muted-foreground">
                 <div className="flex gap-2 items-center">
                   <Users className="w-4 h-4" />
-                  <span>Full-Stack Developer</span>
+                  <span>Software Engineer</span>
                 </div>
                 <div className="flex gap-2 items-center">
                   <Calendar className="w-4 h-4" />

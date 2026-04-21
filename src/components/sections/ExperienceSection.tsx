@@ -13,7 +13,7 @@ export default function ExperienceSection() {
 			id : 1,
       startDate: "2024",
       endDate: "Current",
-      role: "Full-Stack Developer",
+      role: "Software Engineer",
       company: "PKT1 - Shipping logistics center.",
       location: "Los Mochis, Sinaloa, Mexico",
       bullets: [
