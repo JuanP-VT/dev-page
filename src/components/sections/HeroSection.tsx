@@ -57,7 +57,7 @@ export default function HeroSection() {
         </h1>
 
         <p className="pb-4 mb-8 text-lg leading-relaxed text-gray-600 dark:text-gray-300">
-          I am a Full-Stack Developer specializing in the .NET ecosystem and modern Frontend architectures. This site is a technical evidence repository of my work delivering scalable, end-to-end solutions: from complex legacy migrations to AI-powered optimizations. Explore the case studies below to see the architecture and implementation behind my code.
+          I am a Software Engineer specializing in the .NET ecosystem and modern Frontend architectures. This site is a technical evidence repository of my work delivering scalable, end-to-end solutions: from complex legacy migrations to AI-powered optimizations. Explore the case studies below to see the architecture and implementation behind my code.
         </p>
         <div className="flex gap-4">
           <a
