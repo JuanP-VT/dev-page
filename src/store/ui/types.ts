@@ -11,5 +11,4 @@ export type Actions = {
 	setIsDrawerOpen: (isOpen: boolean) => void;
 	setSelectedTech: (tech: string) => void;
 	setLevel: (level: Level) => void;
-	setProjects: (projects: Project[]) => void;
 };

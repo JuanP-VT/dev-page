@@ -3,12 +3,13 @@ import createSelectors from "./selectors";
 import type { State, Actions } from "./ui/types";
 import { create } from "zustand";
 import type { Level } from "@/types/project.type";
+import { Projects } from "@/lib/getProjects";
 
 const initialState: State = {
 	isDrawerOpen: false,
 	selectedTech: "",
 	level: "Professional",
-	projects: [],
+	projects: Projects,
 };
 
 const globalStore = create<State & Actions>()(
@@ -28,11 +29,8 @@ const globalStore = create<State & Actions>()(
 		setLevel: (level: Level) =>
 			set((state) => {
 				state.level = level;
-			}),
-		setProjects: (projects) =>
-			set((state) => {
-				state.projects = projects;
-			}),
+			})
+	
 	})),
 );
 

@@ -11,8 +11,8 @@ export default function ExperienceSection() {
   const experienceData = {
     job1: {
 			id : 1,
-      startDate: "2024",
-      endDate: "Current",
+      startDate: "July 2024",
+      endDate: "Present",
       role: "Software Engineer",
       company: "PKT1 - Shipping logistics center.",
       location: "Los Mochis, Sinaloa, Mexico",
@@ -26,8 +26,8 @@ export default function ExperienceSection() {
       ]
     },
     job2: {
-      startDate: "2023",
-      endDate: "2024",
+      startDate: "February 2022",
+      endDate: "July 2024",
       location: "Los Mochis, Sinaloa, Mexico",
       role: "Freelance Developer",
       description: "Engineered end-to-end web solutions for local businesses, directly leading to my recruitment at PKT1. Managed the entire development lifecycle independently, from initial architecture and UI/UX design to cloud deployment and maintenance.",

@@ -38,7 +38,7 @@ export default function ManagementPage() {
                 Case Study
               </div>
               <h1 className="mb-6 text-4xl font-bold tracking-tight sm:text-6xl case-gradient-text">
-                Management | Enhancements and Maintenance
+                Internal Logistics Engine | Telemetry & Analytics
               </h1>
               <p className="mb-8 text-xl md:text-2xl text-zinc-600 dark:text-muted-foreground">
                 Improvements to our internal logistics platform, focused on new modules, feature upgrades, and bugfixes.

@@ -1,17 +1,13 @@
 "use client";
 
-import { useEffect } from "react";
 import ProjectCard from "../composed/ProjectCard";
 import clsx from "clsx";
-import { useProjects } from "@/lib/getProjects";
 import { useGlobalStore } from "@/store/global-store";
 import { levels } from "@/types/project.type";
 
-export default function Projects() {
+export default function ProjectsSection() {
   const filter = useGlobalStore.use.selectedTech();
   const setFilter = useGlobalStore.use.setSelectedTech();
-  const { getProjects } = useProjects();
-  const setProjects = useGlobalStore.use.setProjects();
   const currentLevel = useGlobalStore.use.level();
   const setLevel = useGlobalStore.use.setLevel();
   const projects = useGlobalStore.use.projects();
@@ -37,12 +33,6 @@ export default function Projects() {
     ),
   );
 
-  // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
-  useEffect(() => {
-    const projects = getProjects();
-    setProjects(projects);
-  }, []);
-
   return (
     <section id="projects" className="py-20 min-h-[100vh]">
       <div className="mb-10 text-center"> 
@@ -50,11 +40,12 @@ export default function Projects() {
           Projects
         </h2>
         <p className="mx-auto max-w-2xl font-mono text-gray-600 dark:text-gray-400">
-          A selection of my recent professional work at PKT1 and personal projects
+          A selection of my recent professional work and personal projects
         </p>
       </div>
 
-      <div className="flex p-1 mb-2 w-full bg-gray-200 rounded-md dark:bg-gray-800">
+   <div className="flex w-full justify-center">
+       <div className="flex  max-w-6xl p-1 mb-2 w-full bg-gray-200 rounded-md dark:bg-gray-800">
         {levels.map((level) => (
           <button
             key={level}
@@ -76,6 +67,7 @@ export default function Projects() {
           </button>
         ))}
       </div>
+   </div>
 
       <div className="flex flex-wrap gap-2 justify-center mb-8">
         <button
