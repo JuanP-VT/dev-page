@@ -176,13 +176,6 @@ export default function ManagementPage() {
 
                   <Card className="mt-3">
                     <CardContent>
-                      <div className="flex flex-wrap gap-2 pb-4">
-                        <Badge variant="outline">Javascript</Badge>
-                        <Badge variant="outline">React 18</Badge>
-                        <Badge variant="outline">Material UI</Badge>
-                        <Badge variant="outline">Redux</Badge>
-                        <Badge variant="outline">RTK Query</Badge>
-                      </div>
                       <ul className="space-y-3">
                         <BulletPoint
                           text="Designed a .NET migration utility to asynchronously extract, decode, and upload Base64 records to AWS S3."
