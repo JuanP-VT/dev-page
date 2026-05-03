@@ -6,7 +6,7 @@ export const DATA_TRANSFORMATION_PIPELINE = `flowchart TD
     end
     
     subgraph Phase 2: Sanitization & Normalization
-        Leaf --> Filter{Hard Noise Filter}
+        Leaf --> Filter{Hard Noise Filter Removal}
         Filter -.->|Drop| Noise[Discard: Timestamps, GUIDs, PII, IPs]
         Filter -->|Keep| Logical[Retain Logical Error Nodes]
         
