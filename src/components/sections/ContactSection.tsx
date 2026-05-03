@@ -76,6 +76,8 @@ export default function ContactSection() {
                 </div>
                 <div className="flex gap-4 mt-6">
                   <a
+                    target="_blank"
+                    rel="noreferrer"
                     aria-label="Github"
                     href="https://github.com/JuanP-VT"
                     className="text-gray-600 transition-colors dark:text-gray-300 hover:text-teal-400 dark:hover:text-teal-400"
@@ -83,6 +85,8 @@ export default function ContactSection() {
                     <FaGithub className="w-8 h-8" />
                   </a>
                   <a
+                    target="_blank"
+                    rel="noreferrer"
                     aria-label="Linkedin"
                     href="https://www.linkedin.com/in/pavatbdev/"
                     className="text-gray-600 transition-colors dark:text-gray-300 hover:text-teal-400 dark:hover:text-teal-400"
