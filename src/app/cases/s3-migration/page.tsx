@@ -36,7 +36,6 @@ export default function S3MigrationPage() {
                 database bloat, reduce infrastructure costs by 30%, and ensure
                 scalable file management.
               </p>
-
               {/* Project Meta */}
               <div className="flex flex-wrap gap-6 justify-center text-sm text-zinc-600 dark:text-muted-foreground">
                 <div className="flex gap-2 items-center">
@@ -206,11 +205,6 @@ export default function S3MigrationPage() {
                 </Card>
               </div>
             </section>
-
-            <Separator className="my-16" />
-
-            <Separator className="my-16" />
-
             {/* Solutions & Contributions */}
             <section className="mb-16">
               <div className="flex gap-3 items-center mb-6">
@@ -219,7 +213,6 @@ export default function S3MigrationPage() {
                   Solutions & My Contributions
                 </h2>
               </div>
-
               <DiagramCard
                 title="Modern Upload Process (Presigned URL + Event-Driven)"
                 chart={DIAGRAMS.NEW_UPLOAD}
@@ -237,7 +230,6 @@ export default function S3MigrationPage() {
                   <h3 className="text-xl font-semibold case-gradient-text">
                     Technical Architecture
                   </h3>
-
                   <Card className="mt-3">
                     <CardContent>
                       <ul className="space-y-3">
@@ -251,7 +243,6 @@ export default function S3MigrationPage() {
                     </CardContent>
                   </Card>
                 </div>
-
                 <div>
                   <h3 className="mb-4 text-xl font-semibold case-gradient-text">
                     Performance Optimizations
@@ -266,7 +257,6 @@ export default function S3MigrationPage() {
                     </CardContent>
                   </Card>
                 </div>
-
                 <div>
                   <h3 className="mb-4 text-xl font-semibold case-gradient-text">
                     Security & Reliability
@@ -282,10 +272,6 @@ export default function S3MigrationPage() {
                 </div>
               </div>
             </section>
-
-            <Separator className="my-16" />
-            <Separator className="my-16" />
-
             {/* Impact & Results */}
             <section className="mb-16">
               <div className="flex gap-3 items-center mb-6">
@@ -294,7 +280,6 @@ export default function S3MigrationPage() {
                   Impact & Results
                 </h2>
               </div>
-
               <Card className="mt-6">
                 <CardContent>
                   <div className="flex flex-col gap-3">
@@ -307,9 +292,6 @@ export default function S3MigrationPage() {
                 </CardContent>
               </Card>
             </section>
-
-            <Separator className="my-16" />
-
             {/* Reflection */}
             <section className="mb-16">
               <div className="flex gap-3 items-center mb-6">
@@ -318,7 +300,6 @@ export default function S3MigrationPage() {
                   Reflection
                 </h2>
               </div>
-
               <div className="space-y-6">
                 <div>
                   <h3 className="mb-3 text-xl font-semibold case-gradient-text">
@@ -338,7 +319,6 @@ export default function S3MigrationPage() {
                     </CardContent>
                   </Card>
                 </div>
-
                 <div>
                   <h3 className="mb-3 text-xl font-semibold case-gradient-text">
                     What I'd Do Differently
@@ -357,7 +337,6 @@ export default function S3MigrationPage() {
                     </CardContent>
                   </Card>
                 </div>
-
                 <div>
                   <h3 className="mb-3 text-xl font-semibold case-gradient-text">
                     What I'm Proudest Of
@@ -381,7 +360,6 @@ export default function S3MigrationPage() {
                 </div>
               </div>
             </section>
-
             {/* CTA */}
             <div className="text-center">
               <Button asChild size="lg">
