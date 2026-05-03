@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { Separator } from "@radix-ui/react-select";
 import {
   Calendar,
   Code,
@@ -15,6 +14,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import BulletPoint from "../components/BulletPoint";
 import Image from "next/image";
+import { DiagramCard } from "@/components/composed/DiagramCard";
+import { DIAGRAMS } from "@/lib/mermaid/diagrams/diagrams";
 
 export default function ReginaGaelPage() {
   return (
@@ -101,7 +102,7 @@ export default function ReginaGaelPage() {
                     </h3>
                     <ul className="space-y-3">
                       <BulletPoint
-                        text="No pre-built CMS or e-commerce engine  every feature had to be implemented from scratch."
+                        text="No pre-built CMS or e-commerce engine, every feature had to be implemented from scratch."
                         className="bg-red-700 dark:bg-red-400"
                       />
                       <BulletPoint
@@ -171,9 +172,6 @@ export default function ReginaGaelPage() {
                 </Card>
               </div>
             </section>
-
-            <Separator className="my-16" />
-
             {/* Solutions & Contributions */}
             <section className="mb-16">
               <div className="flex gap-3 items-center mb-6">
@@ -182,6 +180,8 @@ export default function ReginaGaelPage() {
                   Solutions & My Contributions
                 </h2>
               </div>
+
+              <DiagramCard title="Solution Architecture" chart={DIAGRAMS.REGINA_CORE_FLOW} />
 
               <div className="space-y-8">
                 <div>
@@ -260,9 +260,6 @@ export default function ReginaGaelPage() {
                 </div>
               </div>
             </section>
-
-            <Separator className="my-16" />
-
             {/* Impact & Results */}
             <section className="mb-16">
               <div className="flex gap-3 items-center mb-6">
@@ -275,19 +272,16 @@ export default function ReginaGaelPage() {
                 <Card>
                   <CardContent className="flex flex-col gap-3">
                     <ul className="space-y-3">
-                      <BulletPoint text="Delivered a fully functional, secure e-commerce platform from scratch  handling everything from product listings and PayPal checkout to digital delivery." />
+                      <BulletPoint text="Delivered a fully functional, secure e-commerce platform from scratch, handling everything from product listings and PayPal checkout to digital delivery." />
                       <BulletPoint text="Gained firsthand experience with backend development, cloud services, and fullstack architecture in a real-world scenario." />
                       <BulletPoint text="Built confidence in my ability to scope, manage, and execute a complete product independently." />
-                      <BulletPoint text=" This project played a key role in helping me land my first professional developer role at PKT1. 🚀" />
+                      <BulletPoint text="This project played a key role in helping me land my first professional developer role at PKT1. 🚀" />
                       <BulletPoint text="Although the business was ultimately paused due to personal reasons, the project pushed my technical limits and taught me to own every part of the development process." />
                     </ul>
                   </CardContent>
                 </Card>
               </div>
             </section>
-
-            <Separator className="my-16" />
-
             {/* Reflection */}
             <section className="mb-16">
               <div className="flex gap-3 items-center mb-6">
@@ -305,7 +299,7 @@ export default function ReginaGaelPage() {
                   <Card>
                     <CardContent>
                       <div className="text-lg leading-relaxed">
-                        This project challenged me to step outside my frontend comfort zone and take full ownership of a production-grade system. I learned how to integrate third-party services like AWS and PayPal, design secure file delivery flows, and structure a backend to support real business logic  all while managing scope and expectations on my own.
+                        This project challenged me to step outside my frontend comfort zone and take full ownership of a production-grade system. Because I was greener back then, I didn't fully prepare for the nuances of distributed systems when working with AWS S3, such as handling race conditions and failed background processes. Navigating these roadblocks taught me a lot. I ultimately learned how to integrate third-party services like AWS and PayPal, design secure file delivery flows, and structure a backend to support real business logic, all while managing scope and expectations on my own.
                       </div>
                     </CardContent>
                   </Card>
@@ -318,7 +312,7 @@ export default function ReginaGaelPage() {
                   <Card>
                     <CardContent>
                       <div className="text-lg leading-relaxed">
-                        If I could revisit this project, I’d start by aligning expectations more clearly  both in terms of scope and ongoing involvement. From a technical standpoint, I would decouple cloud dependencies like AWS S3 to make future deployment and maintenance easier. I also learned the importance of documenting the project and capturing working demos while it’s live, especially for portfolio use.
+                        If I could revisit this project, I’d start by aligning expectations more clearly, both in terms of scope and ongoing involvement. From a technical standpoint, I would decouple cloud dependencies like AWS S3 to make future deployment and maintenance easier. I also learned the importance of documenting the project and capturing working demos while it’s live, especially for portfolio use.
                       </div>
                     </CardContent>
                   </Card>
@@ -338,7 +332,6 @@ export default function ReginaGaelPage() {
                 </div>
               </div>
             </section>
-
             {/* CTA */}
             <div className="text-center">
               <Button asChild size="lg">
