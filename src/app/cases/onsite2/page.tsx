@@ -33,7 +33,9 @@ export default function Page() {
                 Onsite 2 | Full-Stack Overhaul: Next.js & .NET Core
               </h1>
               <p className="mb-8 text-xl md:text-2xl text-zinc-600 dark:text-muted-foreground">
-                A complete architectural redesign of the main logistics application, from a legacy jQuery monolith to a modern React and .NET ecosystem.
+                A complete architectural redesign of the main logistics
+                application, from a legacy jQuery monolith to a modern React and
+                .NET ecosystem.
               </p>
 
               {/* Project Meta */}
@@ -73,9 +75,26 @@ export default function Page() {
                 <CardContent>
                   <div className="max-w-none prose prose-lg">
                     <div className="mb-4 text-lg leading-relaxed">
-                      <p>Onsite is the company's main logistics platform, used by business clients to manage the entire lifecycle of their shipments. From quoting and scheduling pickups to tracking packages, downloading invoices, and accessing historical reports, users can handle their entire logistics operation from a single interface.</p>
+                      <p>
+                        Onsite is the company's main logistics platform, used by
+                        business clients to manage the entire lifecycle of their
+                        shipments. From quoting and scheduling pickups to
+                        tracking packages, downloading invoices, and accessing
+                        historical reports, users can handle their entire
+                        logistics operation from a single interface.
+                      </p>
                       <br />
-                      <p>The previous version, built with jQuery and legacy backend services, had evolved without a defined architecture, resulting in a fragile, hard-to-maintain, and poorly scalable codebase. The goal was to completely replace it over a 10-month migration period with a modern, robust, and user-centered application. The result: a significantly smoother experience, a faster backend data layer, and a tech foundation ready to scale.</p>
+                      <p>
+                        The previous version, built with jQuery and legacy
+                        backend services, had evolved without a defined
+                        architecture, resulting in a fragile, hard-to-maintain,
+                        and poorly scalable codebase. The goal was to completely
+                        replace it over a 10-month migration period with a
+                        modern, robust, and user-centered application. The
+                        result: a significantly smoother experience, a faster
+                        backend data layer, and a tech foundation ready to
+                        scale.
+                      </p>
                     </div>
                   </div>
                 </CardContent>
@@ -201,21 +220,11 @@ export default function Page() {
                         <Badge variant="outline">Zustand</Badge>
                       </div>
                       <ul className="space-y-3">
-                        <BulletPoint
-                          text="Architected robust backend services in .NET Core, providing clean, structured endpoints to serve the new frontend client."
-                        />
-                        <BulletPoint
-                          text="Built a modular, component-based UI architecture with React and TypeScript to improve scalability and long-term maintainability."
-                        />
-                        <BulletPoint
-                          text="Rebuilt the client using Next.js App Router, leveraging server components and nested layouts for faster load times."
-                        />
-                        <BulletPoint
-                          text="Applied Tailwind CSS and Hero UI to deliver a fully responsive, accessible interface across all devices."
-                        />
-                        <BulletPoint
-                          text="Created reusable, business-specific UI components and backend validation logic used across key modules like quotations, shipments, and invoices."
-                        />
+                        <BulletPoint text="Architected robust backend services in .NET Core, providing clean, structured endpoints to serve the new frontend client." />
+                        <BulletPoint text="Built a modular, component-based UI architecture with React and TypeScript to improve scalability and long-term maintainability." />
+                        <BulletPoint text="Rebuilt the client using Next.js App Router, leveraging server components and nested layouts for faster load times." />
+                        <BulletPoint text="Applied Tailwind CSS and Hero UI to deliver a fully responsive, accessible interface across all devices." />
+                        <BulletPoint text="Created reusable, business-specific UI components and backend validation logic used across key modules like quotations, shipments, and invoices." />
                       </ul>
                     </CardContent>
                   </Card>
@@ -228,18 +237,10 @@ export default function Page() {
                   <Card>
                     <CardContent className="pt-6">
                       <ul className="space-y-3">
-                        <BulletPoint
-                          text="Engineered paginated backend API services to efficiently query database logs, drastically reducing payload sizes for the client."
-                        />
-                        <BulletPoint
-                          text="Implemented virtual scrolling on the frontend to seamlessly consume paginated APIs, eliminating UI freezes on heavy shipment and tracking views."
-                        />
-                        <BulletPoint
-                          text="Used Next.js server components to cache key views and reduce redundant backend API calls, improving perceived speed."
-                        />
-                        <BulletPoint
-                          text="Optimized user interaction by implementing a debounce on searches and filters, preventing excessive server requests and database load."
-                        />
+                        <BulletPoint text="Engineered paginated backend API services to efficiently query database logs, drastically reducing payload sizes for the client." />
+                        <BulletPoint text="Implemented virtual scrolling on the frontend to seamlessly consume paginated APIs, eliminating UI freezes on heavy shipment and tracking views." />
+                        <BulletPoint text="Used Next.js server components to cache key views and reduce redundant backend API calls, improving perceived speed." />
+                        <BulletPoint text="Optimized user interaction by implementing a debounce on searches and filters, preventing excessive server requests and database load." />
                       </ul>
                     </CardContent>
                   </Card>
@@ -252,15 +253,9 @@ export default function Page() {
                   <Card>
                     <CardContent className="pt-6">
                       <ul className="space-y-3">
-                        <BulletPoint
-                          text="Co-led the full-stack rewrite as one of two developers, taking ownership of complete modules from database queries to final UI deployment."
-                        />
-                        <BulletPoint
-                          text="Partnered closely with our project manager and coordinator to iterate on data flows and interfaces using client feedback."
-                        />
-                        <BulletPoint
-                          text="Replaced undocumented legacy endpoints with modernized .NET Core APIs, establishing clear data contracts for future development."
-                        />
+                        <BulletPoint text="Co-led the full-stack rewrite as one of two developers, taking ownership of complete modules from database queries to final UI deployment." />
+                        <BulletPoint text="Partnered closely with our project manager and coordinator to iterate on data flows and interfaces using client feedback." />
+                        <BulletPoint text="Replaced undocumented legacy endpoints with modernized .NET Core APIs, establishing clear data contracts for future development." />
                       </ul>
                     </CardContent>
                   </Card>
@@ -276,7 +271,7 @@ export default function Page() {
                   Impact & Results
                 </h2>
               </div>
-              <Metrics/>
+              <Metrics />
 
               <div className="grid gap-6 md:grid-cols-3">
                 <Card>
@@ -315,12 +310,19 @@ export default function Page() {
                 <CardContent className="pt-6">
                   <div className="max-w-none prose prose-lg">
                     <p className="text-lg leading-relaxed">
-                      My role in the complete rebuild of Onsite 2 was key. With significant autonomy over both the API layer and the frontend client, I was able to define and execute the technical vision of the project, driving substantial improvements in data processing and UI responsiveness. Not only did I modernize and optimize the platform in just 10 months, but this full-stack approach also generated 95% positive feedback from the internal team.
+                      My role in the complete rebuild of Onsite 2 was key. With
+                      significant autonomy over both the API layer and the
+                      frontend client, I was able to define and execute the
+                      technical vision of the project, driving substantial
+                      improvements in data processing and UI responsiveness. Not
+                      only did I modernize and optimize the platform in just 10
+                      months, but this full-stack approach also generated 95%
+                      positive feedback from the internal team.
                     </p>
                   </div>
                 </CardContent>
               </Card>
-            </section>            
+            </section>
 
             {/* Before vs After */}
             <section className="flex flex-col mb-16 w-full">
@@ -337,7 +339,7 @@ export default function Page() {
                   <Card>
                     <CardContent className="p-6">
                       <h3 className="mb-4 text-xl font-semibold text-red-700 dark:text-red-400">
-                        Before 
+                        Before (Legacy Monolith)
                       </h3>
                       <ul className="space-y-2 text-sm">
                         <BulletPoint
@@ -346,15 +348,15 @@ export default function Page() {
                         />
                         <BulletPoint
                           className="bg-red-700 dark:bg-red-400"
-                          text="Unpredictable loading times and heavy, unoptimized API responses."
+                          text="Unpredictable loading times due to heavy, unoptimized monolithic responses."
                         />
                         <BulletPoint
                           className="bg-red-700 dark:bg-red-400"
-                          text="Broken or unreliable mobile experience."
+                          text="Fragile 'headless' jQuery implementation on top of a distributed monolith backend."
                         />
                         <BulletPoint
                           className="bg-red-700 dark:bg-red-400"
-                          text="Clunky user flows tied to monolithic, inflexible backend logic."
+                          text="Clunky user flows restricted by inflexible, tightly-coupled business logic."
                         />
                       </ul>
                     </CardContent>
@@ -363,23 +365,23 @@ export default function Page() {
                   <Card>
                     <CardContent className="p-6">
                       <h3 className="mb-4 text-xl font-semibold text-emerald-700 dark:text-emerald-400">
-                        After (Next.js & .NET Core)
+                        After (Modern Headless)
                       </h3>
                       <ul className="space-y-2 text-sm">
                         <BulletPoint
-                          text="Clean, consistent design system with modern UI."
+                          text="Clean design system with a modern React-based UI layer."
                           className="bg-emerald-700"
                         />
                         <BulletPoint
-                          text="Faster load times powered by paginated APIs and server components."
+                          text="Optimized load times via paginated .NET Core APIs and Next.js Server Components."
                           className="bg-emerald-700"
                         />
                         <BulletPoint
-                          text="Fully responsive across all mobile and desktop devices."
+                          text="Fully responsive across devices with a mobile-first approach."
                           className="bg-emerald-700"
                         />
                         <BulletPoint
-                          text="Clearer navigation and structured, predictable data handling."
+                          text="Clearer navigation and structured, predictable data handling through decoupled services."
                           className="bg-emerald-700"
                         />
                       </ul>
@@ -387,7 +389,7 @@ export default function Page() {
                   </Card>
                 </div>
               </div>
-            </section>    
+            </section>
 
             {/* Reflection */}
             <section className="mb-16">
@@ -406,13 +408,24 @@ export default function Page() {
                   <Card>
                     <CardContent className="pt-6">
                       <div className="text-lg leading-relaxed">
-                        Working on Onsite 2 pushed me to a new level of ownership and problem-solving. As one of only two developers on the project, I was responsible for independently delivering entire full-stack modules—from database architecture to final UI details—often without direct guidance. This experience sharpened my ability to:
+                        Working on Onsite 2 pushed me to a new level of
+                        ownership and problem-solving. As one of only two
+                        developers on the project, I was responsible for
+                        independently delivering entire full-stack modules—from
+                        database architecture to final UI details—often without
+                        direct guidance. This experience sharpened my ability
+                        to:
                         <ul className="my-4 space-y-2">
                           <BulletPoint text="Balance backend maintainability with business-driven frontend deadlines." />
                           <BulletPoint text="Break down large, ambiguous legacy monoliths into achievable, modern API services." />
                           <BulletPoint text="Communicate effectively with stakeholders to clarify requirements." />
                         </ul>
-                        While the autonomy was challenging, it helped me grow significantly as a full-stack engineer. I left this project with stronger technical instincts, more confidence in my architectural judgment, and a deeper understanding of how to build scalable systems in real-world product environments.
+                        While the autonomy was challenging, it helped me grow
+                        significantly as a full-stack engineer. I left this
+                        project with stronger technical instincts, more
+                        confidence in my architectural judgment, and a deeper
+                        understanding of how to build scalable systems in
+                        real-world product environments.
                       </div>
                     </CardContent>
                   </Card>
@@ -425,7 +438,14 @@ export default function Page() {
                   <Card>
                     <CardContent className="pt-6">
                       <div className="text-lg leading-relaxed">
-                        While I implemented unit tests for critical components and integration tests for core API workflows, the project faced limitations due to a company culture that didn't prioritize test automation, alongside significant time constraints. This meant a comprehensive automated testing strategy wasn't established from day one, leading to a higher reliance on manual testing. Moving forward, I would advocate for:
+                        While I implemented unit tests for critical components
+                        and integration tests for core API workflows, the
+                        project faced limitations due to a company culture that
+                        didn't prioritize test automation, alongside significant
+                        time constraints. This meant a comprehensive automated
+                        testing strategy wasn't established from day one,
+                        leading to a higher reliance on manual testing. Moving
+                        forward, I would advocate for:
                         <ul className="my-4 space-y-2">
                           <BulletPoint text="Introducing automated CI/CD testing pipelines early in the development lifecycle." />
                           <BulletPoint text="Establishing a balanced testing strategy for both API endpoints and React components." />
@@ -443,9 +463,24 @@ export default function Page() {
                   <Card>
                     <CardContent className="pt-6">
                       <div className="text-lg leading-relaxed">
-                        <p>This project tested me in a real-world environment where I had to deliver production-ready software with minimal guidance, legacy constraints, and full responsibility over multiple layers of the stack.</p>
+                        <p>
+                          This project tested me in a real-world environment
+                          where I had to deliver production-ready software with
+                          minimal guidance, legacy constraints, and full
+                          responsibility over multiple layers of the stack.
+                        </p>
                         <br />
-                        <p>Despite the pressure, I shipped high-quality features, learned to own my work end-to-end, and contributed to a product that truly matters to users. What makes me most proud is the personal growth: I transitioned from dealing with impostor syndrome to feeling absolute confidence in my ability to engineer complex database queries, scale APIs, and build reactive UIs. This experience solidified my identity as a highly capable, reliable developer, and I'm ready for what’s next.</p>
+                        <p>
+                          Despite the pressure, I shipped high-quality features,
+                          learned to own my work end-to-end, and contributed to
+                          a product that truly matters to users. What makes me
+                          most proud is the personal growth: I transitioned from
+                          dealing with impostor syndrome to feeling absolute
+                          confidence in my ability to engineer complex database
+                          queries, scale APIs, and build reactive UIs. This
+                          experience solidified my identity as a highly capable,
+                          reliable developer, and I'm ready for what’s next.
+                        </p>
                       </div>
                     </CardContent>
                   </Card>
