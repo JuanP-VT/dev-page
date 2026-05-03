@@ -12,7 +12,7 @@ mermaid.initialize({
 export default function MermaidDiagram({ chart }: { chart: string }) {
   const ref = useRef<HTMLDivElement>(null)  
   const { theme = "dark" } = useTheme()
-console.log(theme)
+
  const darkTheme = `{
   init: {
     'theme': 'base',
@@ -34,13 +34,15 @@ const lightTheme = `{
   init: {
     'theme': 'base',
     'themeVariables': {
-      'primaryColor': '#ffffff',
+      'primaryColor': '#FFFFFF',
       'primaryBorderColor': '#94a3b8',
-      'primaryTextColor': '#0f172a',
+      'primaryTextColor': '#1e293b',
       'lineColor': '#475569',
       'fontFamily': 'ui-sans-serif, system-ui, -apple-system, sans-serif',
-      'clusterBkg': '#f8fafc',
-      'clusterBorder': '#cbd5e1'
+      'clusterBkg': '#F1F5F9',
+      'clusterBorder': '#CBD5E1',
+      'edgeLabelBackground': '#F1F5F9',
+      'background': 'transparent'
     }
   }
 }`;
