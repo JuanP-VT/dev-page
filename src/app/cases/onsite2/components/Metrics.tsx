@@ -60,7 +60,7 @@ export default function Metrics() {
   };
 
   return (
-    <div className="flex flex-col">
+    <div className="hidden sm:flex flex-col">
       <span>
         Migrating from jQuery to Next.js resulted in significant improvements in performance and user experience. The following Lighthouse metrics demonstrate the quantifiable impact of this technological upgrade.
       </span>

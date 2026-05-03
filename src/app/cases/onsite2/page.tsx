@@ -327,7 +327,7 @@ export default function Page() {
               <h2 className="mb-2 text-3xl font-bold case-gradient-text">
                 Before vs. After
               </h2>
-              <span className="block text-xs font-light text-primary">
+              <span className="text-xs font-light text-primary hidden sm:block">
                 (Move the slider in the center of the image)
               </span>
 

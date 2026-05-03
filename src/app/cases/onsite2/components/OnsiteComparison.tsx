@@ -48,7 +48,7 @@ export default function OnsiteComparison() {
   }, []);
 
   return (
-    <div className="flex flex-col">
+    <div className="flex-col hidden sm:flex">
       <div className="hidden p-1 bg-gray-200 rounded-sm sm:flex dark:bg-gray-800">
         {filters.map((filter) => (
           <button
