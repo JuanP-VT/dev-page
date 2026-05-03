@@ -37,11 +37,11 @@ export default function NavBar() {
         </div>
         <div className="hidden gap-6 lg:flex">
           <div className="flex gap-5 items-center font-mono text-gray-300">
-            <NavBarOption id="About" />
-            <NavBarOption id="Tech" />
-            <NavBarOption id="Projects" />
-            <NavBarOption id="Experience" />
-            <NavBarOption id="Contact" />
+            <NavBarOption id="about" />
+            <NavBarOption id="tech" />
+            <NavBarOption id="projects" />
+            <NavBarOption id="experience" />
+            <NavBarOption id="contact" />
           </div>
           <div className="flex gap-6">
             <span className="rounded-lg w-[1px] bg-zinc-300/60" />
