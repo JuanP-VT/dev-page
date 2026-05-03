@@ -63,7 +63,7 @@ export default async function LocaleLayout({
 	children: React.ReactNode;	
 }) {
 	return (
-		<html lang={"en"} suppressHydrationWarning>
+		<html lang={"en"} suppressHydrationWarning data-scroll-behavior="smooth">
 			<body
 				className={`${sfMono.className} bg-zinc-100 antialiased dark:bg-[#1a202c]`}
 			>
