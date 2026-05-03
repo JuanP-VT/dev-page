@@ -10,12 +10,13 @@ import {
 } from "lucide-react";
 import { GrOverview } from "react-icons/gr";
 import Link from "next/link";
-import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import BulletPoint from "../components/BulletPoint";
 import Image from "next/image";
+import { DiagramCard } from "@/components/composed/DiagramCard";
+import { DIAGRAMS } from "@/lib/mermaid/diagrams/diagrams";
 
-export default function ManagementPage() {
+export default function ErrorTranslationPage() {
   return (
     <div className="">
       <div className="flex flex-col">
@@ -32,7 +33,6 @@ export default function ManagementPage() {
               <p className="mb-8 text-xl md:text-2xl text-zinc-600 dark:text-muted-foreground">
                 Implementing a heuristic fingerprinting engine and Cache-Aside strategy to standardize disparate carrier API responses, reducing LLM costs and providing human-readable clarity for end-users.
               </p>
-
               {/* Project Meta */}
               <div className="flex flex-wrap gap-6 justify-center text-sm text-zinc-600 dark:text-muted-foreground">
                 <div className="flex gap-2 items-center">
@@ -60,7 +60,6 @@ export default function ManagementPage() {
                 className="w-full rounded-lg border shadow-lg"
               />
             </div>
-
             {/* Overview Section */}
             <section className="mb-16">
               <div className="flex gap-3 items-center mb-6">
@@ -73,15 +72,14 @@ export default function ManagementPage() {
                 <CardContent>
                   <div className="max-w-none prose prose-lg">
                     <div className="mb-4 text-lg leading-relaxed">
-                      <p>In a multi-carrier logistics environment, error messages are notoriously inconsistent, ranging from cryptic technical stack traces to verbose JSON payloads. This lack of standardization made it impossible to provide clear feedback to customers or build automated retry logic. To solve this, I developed a sophisticated Error Identity service that acts as a middleware between raw carrier responses and the final user interface.</p>
+                      <p>In a multi-carrier logistics environment interacting with various platforms (WooCommerce, Jumpseller, and proprietary legacy apps), error messages are notoriously inconsistent. They range from cryptic technical stack traces to verbose, unstructured JSON payloads. This lack of standardization made it impossible to provide clear feedback to users or build automated retry logic.</p>
                       <br />
-                      <p>The system utilizes a custom Heuristic Noise Filter and Regex-based Normalizer to strip out transient data like timestamps, session IDs, and technical noise. By flattening JSON structures into unique canonical fingerprints (hashes), the system can identify recurring error patterns. This allows us to use a Semantic Cache where we only call an AI translation service for new error patterns drastically improving response times and minimizing operational costs</p>
+                      <p>To solve this, I developed a sophisticated Error Identity service that acts as a proxy middleware between raw carrier API responses and the final user interface. The system utilizes a custom Heuristic Noise Filter and Regex-based Normalizer to strip out transient data. By flattening unpredictable JSON structures into a collection of uniform nodes and hashing them, the system identifies recurring error patterns. This enables a Semantic Cache where we only call an OpenAI translation service for entirely new error structures, drastically improving response times and minimizing operational costs.</p>
                     </div>
                   </div>
                 </CardContent>
               </Card>
             </section>
-
             {/* Goals & Challenges */}
             <section className="mb-16">
               <div className="flex gap-3 items-center mb-6">
@@ -90,7 +88,6 @@ export default function ManagementPage() {
                   Goals & Challenges
                 </h2>
               </div>
-
               <div className="grid gap-8 md:grid-cols-2">
                 <Card>
                   <CardContent className="p-6">
@@ -103,7 +100,7 @@ export default function ManagementPage() {
                         className="bg-emerald-700 dark:bg-emerald-400"
                       />
                       <BulletPoint
-                        text="Minimize API token expenditure by implementing a high-efficiency Cache-Aside strategy."
+                        text="Minimize OpenAI API token expenditure by implementing a high-efficiency Cache-Aside strategy."
                         className="bg-emerald-700 dark:bg-emerald-400"
                       />
                       <BulletPoint
@@ -111,13 +108,12 @@ export default function ManagementPage() {
                         className="bg-emerald-700 dark:bg-emerald-400"
                       />
                       <BulletPoint
-                        text="Improve developer productivity by filtering out technical stack traces and Base64 noise from production logs."
+                        text="Improve developer productivity by filtering out technical noise from production logs."
                         className="bg-emerald-700 dark:bg-emerald-400"
                       />
                     </ul>
                   </CardContent>
                 </Card>
-
                 <Card>
                   <CardContent className="p-6">
                     <h3 className="mb-4 text-xl font-semibold text-blue-700 dark:text-blue-400">
@@ -125,11 +121,11 @@ export default function ManagementPage() {
                     </h3>
                     <ul className="space-y-3">
                       <BulletPoint
-                        text="Managing errors that arrive in various formats (HTML, plain text, and nested JSON)."
+                        text="Managing unstructured error payloads that arrive in wildly unpredictable nested JSON schemas across different integrations."
                         className="bg-blue-700 dark:bg-blue-400"
                       />
                       <BulletPoint
-                        text="Preventing 'Token Hemorrhage' where redundant calls for the same error type would inflate AI costs.."
+                        text="Preventing 'Token Hemorrhage' where redundant calls for the same error type would inflate AI costs."
                         className="bg-blue-700 dark:bg-blue-400"
                       />
                       <BulletPoint
@@ -154,9 +150,8 @@ export default function ManagementPage() {
                 </Card>
               </div>
             </section>
-
-            <Separator className="my-16" />
-
+            <DiagramCard title="Process Flow" chart={DIAGRAMS.ERROR_TRANSLATION_MACRO}/>
+            <DiagramCard title="Data Transformation Pipeline" chart={DIAGRAMS.DATA_TRANSFORMATION_PIPELINE}/>
             {/* Solutions & Contributions */}
             <section className="mb-16">
               <div className="flex gap-3 items-center mb-6">
@@ -165,30 +160,27 @@ export default function ManagementPage() {
                   Solutions & My Contributions
                 </h2>
               </div>
-
               <div className="space-y-8">
                 <div>
                   <h3 className="text-xl font-semibold case-gradient-text">
                     Technical Architecture
                   </h3>
-
                   <Card className="mt-3">
                     <CardContent>                
                       <ul className="space-y-3">
                         <BulletPoint
-                          text="JSON Flattening & Leaf Extraction: Developed a utility to traverse complex JSON trees and extract key-value pairs, allowing for structural analysis regardless of nesting depth."
+                          text="JSON Decomposition (NodeLeaf Extraction): Developed a utility to parse and flatten complex JSON trees into a standardized NodeLeaf collection (extracting Path, Type, and Value), allowing for structural analysis regardless of nesting depth."
                         />
                         <BulletPoint
-                          text="Canonical Fingerprinting: Built a Fingerprint Generator that sorts and hashes normalized error attributes to create a permanent identity for recurring issues."
+                          text="Canonical Fingerprinting: Built a deterministic pipeline that alphabetically sorts the surviving nodes and applies a SHA-256 algorithm. This creates a permanent, immutable hash identity for recurring error structures."
                         />
                         <BulletPoint
-                          text="Multi-Level Cache: Implemented a two-tier caching strategy using MemoryCache for instant lookups and a Database Persistent Layer for long-term pattern recognition."
+                          text="Multi-Level Cache Strategy: Implemented a two-tier architecture using a fast .NET Memory Cache (L1) for instant lookups, backed by a persistent Database Layer (L2) for long-term pattern recognition and L1 hydration."
                         />
                       </ul>
                     </CardContent>
                   </Card>
                 </div>
-
                 <div>
                   <h3 className="mb-4 text-xl font-semibold case-gradient-text">
                     Performance Optimizations
@@ -197,16 +189,15 @@ export default function ManagementPage() {
                     <CardContent>
                       <ul className="space-y-3">
                         <BulletPoint
-                          text="Heuristic Noise Filtering: Created a 'Banned Keyword' and 'Technical Pattern' filter to automatically discard stack traces, memory addresses, and Base64 strings before processing."
+                          text="Hard Noise Filtering: Created a deterministic filter to immediately drop nodes containing high-entropy data (timestamps, GUIDs, IPs, and PII) before processing."
                         />
                         <BulletPoint
-                          text="Regex Normalization Hierarchy: Designed a specific order of operations for Regex filters (URLs -> Emails -> IDs) to prevent simpler patterns from 'breaking' more complex data structures."
+                          text="Regex Normalization Pass: Designed compiled Regex filters to replace surviving dynamic strings with standardized {PLACEHOLDERS}, ensuring that subtle variations of the same error yield the exact same structural hash."
                         />
                       </ul>
                     </CardContent>
                   </Card>
                 </div>
-
                 <div>
                   <h3 className="mb-4 text-xl font-semibold case-gradient-text">
                     Analytics & Monitoring
@@ -223,9 +214,6 @@ export default function ManagementPage() {
                 </div>
               </div>
             </section>
-
-            <Separator className="my-16" />
-
             {/* Impact & Results */}
             <section className="mb-16">
               <div className="flex gap-3 items-center mb-6">
@@ -234,7 +222,6 @@ export default function ManagementPage() {
                   Impact & Results
                 </h2>
               </div>
-
               <div className="grid gap-6 md:grid-cols-3">
                 <Card>
                   <CardContent className="p-6 text-center">
@@ -257,7 +244,6 @@ export default function ManagementPage() {
                   </CardContent>
                 </Card>        
               </div>
-
               <Card className="mt-6">
                 <CardContent>
                   <div className="max-w-none prose prose-lg">
@@ -268,9 +254,6 @@ export default function ManagementPage() {
                 </CardContent>
               </Card>
             </section>
-
-            <Separator className="my-16" />
-
             {/* Reflection */}
             <section className="mb-16">
               <div className="flex gap-3 items-center mb-6">
@@ -279,7 +262,6 @@ export default function ManagementPage() {
                   Reflection
                 </h2>
               </div>
-
               <div className="space-y-6">
                 <div>
                   <h3 className="mb-3 text-xl font-semibold case-gradient-text">
@@ -293,7 +275,6 @@ export default function ManagementPage() {
                     </CardContent>
                   </Card>
                 </div>
-
                 <div>
                   <h3 className="mb-3 text-xl font-semibold case-gradient-text">
                     What I'd Do Differently
@@ -306,7 +287,6 @@ export default function ManagementPage() {
                     </CardContent>
                   </Card>
                 </div>
-
                 <div>
                   <h3 className="mb-3 text-xl font-semibold case-gradient-text">
                     What I'm Proudest Of
@@ -322,7 +302,6 @@ export default function ManagementPage() {
                 </div>
               </div>
             </section>
-
             {/* CTA */}
             <div className="text-center">
               <Button asChild size="lg">
