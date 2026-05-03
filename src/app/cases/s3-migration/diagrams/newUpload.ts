@@ -16,11 +16,11 @@ export const NEW_UPLOAD_DIAGRAM = `graph TD
 
     W -- "1. Request Upload URL (Metadata)" --> API
     M -- "1. Request Upload URL (Metadata)" --> API
-    API -- "2. Generate Pre-signed PUT URL" --> IAM
+    API -- "2. Generate Pre-signed POST Policy" --> IAM
     API -- "3. INSERT (Status: Pending)" --> DB
     API -- "4. Return Secure URL" --> W
     
-    W -- "5. PUT Binary File Directly" --> S3
+    W -- "5. POST Multipart File Directly" --> S3
     W -- "6. Confirm Upload Success" --> API
     API -- "7. UPDATE (Status: Complete)" --> DB`.trim();
 
@@ -39,7 +39,7 @@ export const NEW_UPLOAD_DIAGRAM = `graph TD
         DB[(MySQL Database)]
     end
 
-    C -- "1. PUT Binary File" --> S3
+    C -- "1. POST Multipart File" --> S3
     S3 -- "2. s3:ObjectCreated Event" --> SQS
     SQS -- "3. Poll for Messages" --> WORKER
     WORKER -- "4. Validate File & Extract ETag" --> WORKER

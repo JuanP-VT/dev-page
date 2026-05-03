@@ -10,14 +10,15 @@ import {
 } from "lucide-react";
 import { GrOverview } from "react-icons/gr";
 import Link from "next/link";
-import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import BulletPoint from "../components/BulletPoint";
 import Image from "next/image";
-import Carrousel from "../components/Carrousel";
+import dynamic from "next/dynamic";
+import MermaidDiagram from "../../../components/composed/MermaidDiagram";
+import { DIAGRAMS } from "@/lib/mermaid/diagrams/diagrams";
 
-export default function ManagementPage() {
+export default function S3MigrationPage() {
+
   return (
     <div className="">
       <div className="flex flex-col">
@@ -32,7 +33,9 @@ export default function ManagementPage() {
                 Enterprise Data Optimization: The MySQL to AWS S3 Migration
               </h1>
               <p className="mb-8 text-xl md:text-2xl text-zinc-600 dark:text-muted-foreground">
-                Architecting a high-performance storage strategy to eliminate database bloat, reduce infrastructure costs by 30%, and ensure scalable file management.
+                Architecting a high-performance storage strategy to eliminate
+                database bloat, reduce infrastructure costs by 30%, and ensure
+                scalable file management.
               </p>
 
               {/* Project Meta */}
@@ -75,13 +78,50 @@ export default function ManagementPage() {
                 <CardContent>
                   <div className="max-w-none prose prose-lg">
                     <div className="mb-4 text-lg leading-relaxed">
-                      <p>The core logistics platform was originally designed using a monolithic data approach, where all files including large shipping labels, customer documentation, and photos were encoded as Base64 strings and stored directly within MySQL columns. As the platform scaled, this led to exponential database growth, causing significant performance degradation during query execution and making database backups increasingly slow and risky.</p>
+                      <p>
+                        The core logistics platform was originally designed
+                        using a monolithic data approach, where all files
+                        including large shipping labels, customer documentation,
+                        and photos were encoded as Base64 strings and stored
+                        directly within MySQL columns. As the platform scaled,
+                        this led to exponential database growth, causing
+                        significant performance degradation during query
+                        execution and making database backups increasingly slow
+                        and risky.
+                      </p>
                       <br />
-                      <p>To resolve this, I engineered a storage decoupling strategy to move all binary data to AWS S3. This involved creating a high-performance migration pipeline and a new service layer in .NET to handle secure object streaming via pre-signed URLs. The result was a leaner database, faster application response times, and a major reduction in cloud storage expenditure.</p>
+                      <p>
+                        To resolve this, I engineered a storage decoupling
+                        strategy to move all binary data to AWS S3. This
+                        involved creating a high-performance migration pipeline
+                        and a new service layer in .NET to handle secure object
+                        streaming via pre-signed URLs. The result was a leaner
+                        database, faster application response times, and a major
+                        reduction in cloud storage expenditure.
+                      </p>
                     </div>
                   </div>
                 </CardContent>
               </Card>
+
+
+              <Separator className="my-8" />
+                <div className="flex flex-col mb-12">
+              <h2 className="text-2xl font-bold case-gradient-text mb-2">
+                Legacy Upload Process (The Memory Bottleneck)
+              </h2>
+              <Card>
+                <MermaidDiagram chart={DIAGRAMS.LEGACY_UPLOAD} />
+              </Card>
+            </div>
+            <div className="flex flex-col mb-12">
+              <h2 className="text-2xl font-bold case-gradient-text mb-2">
+                Legacy Retrieval Process (The Bandwidth Hog)
+              </h2>
+              <Card>
+                <MermaidDiagram chart={DIAGRAMS.LEGACY_RETRIEVAL} />
+              </Card>
+            </div>            
             </section>
 
             {/* Goals & Challenges */}
@@ -119,7 +159,6 @@ export default function ManagementPage() {
                     </ul>
                   </CardContent>
                 </Card>
-
                 <Card>
                   <CardContent className="p-6">
                     <h3 className="mb-4 text-xl font-semibold text-blue-700 dark:text-blue-400">
@@ -127,7 +166,7 @@ export default function ManagementPage() {
                     </h3>
                     <ul className="space-y-3">
                       <BulletPoint
-                        text="Safely migrating thousands of existing records without downtime or data corruption."
+                        text="Executing a safe, data-complete migration within a strictly scheduled maintenance window to prioritize data integrity and avoid unnecessary architectural complexity."
                         className="bg-blue-700 dark:bg-blue-400"
                       />
                       <BulletPoint
@@ -159,6 +198,9 @@ export default function ManagementPage() {
 
             <Separator className="my-16" />
 
+          
+            <Separator className="my-16" />
+
             {/* Solutions & Contributions */}
             <section className="mb-16">
               <div className="flex gap-3 items-center mb-6">
@@ -166,6 +208,42 @@ export default function ManagementPage() {
                 <h2 className="text-3xl font-bold case-gradient-text">
                   Solutions & My Contributions
                 </h2>
+              </div>
+
+              <div className="flex flex-col mb-12">
+                <h2 className="text-2xl font-bold case-gradient-text mb-2">
+                  Modern Upload Process (Stream-to-S3)
+                </h2>
+                <Card>
+                  <MermaidDiagram chart={DIAGRAMS.NEW_UPLOAD} />
+                </Card>
+              </div>
+
+              <div className="flex flex-col mb-12">
+                <h2 className="text-2xl font-bold case-gradient-text mb-2">
+                  Eventual Consistency (The SQS Worker Pattern)
+                </h2>
+                <Card>
+                  <MermaidDiagram chart={DIAGRAMS.NEW_UPLOAD_EV} />
+                </Card>
+              </div>
+
+              <div className="flex flex-col mb-12">
+                <h2 className="text-2xl font-bold case-gradient-text mb-2">
+                  Modern Private Retrieval (Pre-signed URLs)
+                </h2>
+                <Card>
+                  <MermaidDiagram chart={DIAGRAMS.NEW_RETRIEVAL} />
+                </Card>
+              </div>
+
+              <div className="flex flex-col mb-12">
+                <h2 className="text-2xl font-bold case-gradient-text mb-2">
+                  Data Migration Process (Maintenance Window)
+                </h2>
+                <Card>
+                  <MermaidDiagram chart={DIAGRAMS.MIGRATION} />
+                </Card>
               </div>
 
               <div className="space-y-8">
@@ -177,15 +255,10 @@ export default function ManagementPage() {
                   <Card className="mt-3">
                     <CardContent>
                       <ul className="space-y-3">
-                        <BulletPoint
-                          text="Designed a .NET migration utility to asynchronously extract, decode, and upload Base64 records to AWS S3."
-                        />
-                        <BulletPoint
-                          text="Implemented a Repository Pattern adjustment to swap direct DB file-fetching for S3 object-key referencing."
-                        />
-                        <BulletPoint
-                          text="Configured S3 Lifecycle Policies to automate data tiering, further optimizing costs for older, less-frequently accessed documents."
-                        />
+                        <BulletPoint text="Developed a purpose-built .NET migration script that fetched legacy Base64 batches, decoded them in-memory, and streamed the binary data directly to S3. This diskless, stream-based approach maximized throughput and allowed us to meet strict maintenance window deadlines." />
+                        <BulletPoint text="Implemented a Repository Pattern adjustment to swap direct DB file-fetching for S3 object-key referencing." />
+                        <BulletPoint text="Configured S3 Lifecycle Policies to automate data tiering, further optimizing costs for older, less-frequently accessed documents." />
+                        <BulletPoint text="Designed an event-driven validation pipeline using AWS SQS and a .NET Background Service. Rather than trusting client-side upload confirmations, the system listens for native s3:ObjectCreated events, validates the file's ETag, and asynchronously updates the MySQL database to an 'Active' state, ensuring 100% data integrity." />
                       </ul>
                     </CardContent>
                   </Card>
@@ -198,12 +271,8 @@ export default function ManagementPage() {
                   <Card>
                     <CardContent>
                       <ul className="space-y-3">
-                        <BulletPoint
-                          text="Developed a Stream-to-S3 pipeline that avoided loading entire files into server memory during the upload process, preventing OOM (Out of Memory) errors during large batch migrations."
-                        />
-                        <BulletPoint
-                          text="Integrated a caching layer for S3 metadata to reduce the number of redundant API calls to AWS."
-                        />
+                        <BulletPoint text="Completely offloaded file payload processing from the .NET monolith. By generating Pre-signed POST URLs and policy documents, clients upload binary files directly to the AWS bucket via multipart/form-data. This bypassed the backend entirely for file payloads, reducing CPU overhead and permanently eliminating OOM errors." />
+                        <BulletPoint text="Integrated a caching layer for S3 metadata to reduce the number of redundant API calls to AWS." />
                       </ul>
                     </CardContent>
                   </Card>
@@ -216,12 +285,8 @@ export default function ManagementPage() {
                   <Card>
                     <CardContent>
                       <ul className="space-y-3">
-                        <BulletPoint
-                          text="Leveraged AWS IAM roles and policies to ensure Least Privilege access for the .NET service layer."
-                        />
-                        <BulletPoint
-                          text="Implemented Pre-signed URLs with short expiration windows, ensuring that sensitive files are only accessible to authorized users for a specific duration."
-                        />
+                        <BulletPoint text="Leveraged AWS IAM roles and policies to ensure Least Privilege access for the .NET service layer." />
+                        <BulletPoint text="Implemented Pre-signed POST policies for all client uploads. Instead of issuing simple PUT URLs, the .NET backend generated cryptographically signed POST policies that enforced strict file size limits and content-type validations directly at the AWS edge, ensuring malicious or oversized payloads were rejected before consuming internal bandwidth." />
                       </ul>
                     </CardContent>
                   </Card>
@@ -278,7 +343,14 @@ export default function ManagementPage() {
                 <CardContent>
                   <div className="max-w-none prose prose-lg">
                     <p className="text-lg leading-relaxed">
-                      Significantly lowered monthly infrastructure bills by moving data from expensive DB storage to cost-effective S3 buckets. Reclaimed massive amounts of disk space by storing files in their native binary format rather than encoded strings and Established a robust, distributed storage architecture that isolated file-serving from application logic, preventing the database from becoming a single point of failure.
+                      Significantly lowered monthly infrastructure bills by
+                      moving data from expensive DB storage to cost-effective S3
+                      buckets. Reclaimed massive amounts of disk space by
+                      storing files in their native binary format rather than
+                      encoded strings and Established a robust, distributed
+                      storage architecture that isolated file-serving from
+                      application logic, preventing the database from becoming a
+                      single point of failure.
                     </p>
                   </div>
                 </CardContent>
@@ -304,7 +376,13 @@ export default function ManagementPage() {
                   <Card>
                     <CardContent>
                       <div className="text-lg leading-relaxed">
-                        This project taught me the critical importance of choosing the right tool for the job. While storing files in a database is easy for small prototypes, it quickly becomes a liability in an enterprise environment. I gained deep experience in AWS SDK integration, cloud security best practices, and the technical nuances of data encoding and streaming.
+                        This project taught me the critical importance of
+                        choosing the right tool for the job. While storing files
+                        in a database is easy for small prototypes, it quickly
+                        becomes a liability in an enterprise environment. I
+                        gained deep experience in AWS SDK integration, cloud
+                        security best practices, and the technical nuances of
+                        data encoding and streaming.
                       </div>
                     </CardContent>
                   </Card>
@@ -317,7 +395,13 @@ export default function ManagementPage() {
                   <Card>
                     <CardContent>
                       <div className="text-lg leading-relaxed">
-                        In hindsight, I would have implemented a Dual-Write phase earlier in the process. Initially, I focused on a batch migration, but writing to both the DB and S3 simultaneously for a few days before the final cutover would have provided an even higher level of data validation and peace of mind during the transition.
+                        In hindsight, I would have implemented a Dual-Write
+                        phase or utilized a temporary shadow table earlier in
+                        the process. Writing to both the legacy DB columns and
+                        the new S3 buckets simultaneously for a few days before
+                        the final cutover would have provided live traffic
+                        validation and allowed for seamless rollback
+                        capabilities if anomalies were detected..
                       </div>
                     </CardContent>
                   </Card>
@@ -330,7 +414,15 @@ export default function ManagementPage() {
                   <Card>
                     <CardContent>
                       <div className="text-lg leading-relaxed">
-                        <p>I am proudest of the quantifiable impact this had on the business. It wasn't just a technical cleanup; it was a strategic move that saved the company money and made the platform noticeably faster for our customers. Successfully moving that much legacy data without a single byte being lost or corrupted was a major professional win for me.</p>
+                        <p>
+                          I am proudest of the quantifiable impact this had on
+                          the business. It wasn't just a technical cleanup; it
+                          was a strategic move that saved the company money and
+                          made the platform noticeably faster for our customers.
+                          Successfully moving that much legacy data without a
+                          single byte being lost or corrupted was a major
+                          professional win for me.
+                        </p>
                         <br />
                       </div>
                     </CardContent>
