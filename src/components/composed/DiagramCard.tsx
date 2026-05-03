@@ -8,7 +8,7 @@ type Props = {
 export function DiagramCard({ title, chart }: Props) {
   return (
     <div className="flex flex-col mb-12">
-      <h2 className="text-2xl font-bold case-gradient-text mb-2">{title}</h2>
+      <h2 className="mb-2 text-2xl font-bold case-gradient-text">{title}</h2>
       <Card>
         <MermaidDiagram chart={chart} />
       </Card>

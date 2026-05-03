@@ -112,7 +112,7 @@ export default function ExperienceSection() {
                   <span className="flex flex-shrink-0 justify-center items-center mt-px w-5 h-5 text-xs text-teal-800 rounded-full dark:text-teal-400 bg-teal-500/70 dark:bg-teal-500/20">
                     ✓
                   </span>
-                  <span className="text-gray-600 dark:text-gray-300 text-sm">
+                  <span className="text-sm text-gray-600 dark:text-gray-300">
                     {bullet}
                   </span>
                 </li>
@@ -150,7 +150,7 @@ export default function ExperienceSection() {
                   <span className="flex flex-shrink-0 justify-center items-center mt-px w-5 h-5 text-xs text-teal-800 rounded-full dark:text-teal-400 bg-teal-500/70 dark:bg-teal-500/20">
                     ✓
                   </span>
-                  <span className="text-gray-600 dark:text-gray-300 text-sm">
+                  <span className="text-sm text-gray-600 dark:text-gray-300">
                     {bullet}
                   </span>
                 </li>

@@ -14,7 +14,7 @@ export default function Page() {
 			<FloatingElements />
 			<div
 				id="portfolio"
-				className="px-4 md:px-24 h-[calc(100dvh-70px)] overflow-y-scroll relative"
+				className="overflow-y-scroll relative px-4 md:px-24 h-[calc(100dvh-70px)]"
 			>
 				<HeroSection />
 				<TechStack />

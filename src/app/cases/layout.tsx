@@ -25,7 +25,7 @@ export default async function Layout({ children }: LayoutProps) {
 			{/* Scroll style is added in ScrollbarMount component*/}
 			<div
 				id="cases-layout"
-				className="h-[calc(100dvh-57px)] overflow-y-scroll"
+				className="overflow-y-scroll h-[calc(100dvh-57px)]"
 			>
 				{children}
 				<ScrollbarMount id="#cases-layout" />

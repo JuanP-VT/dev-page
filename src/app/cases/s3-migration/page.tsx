@@ -13,9 +13,8 @@ import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 import BulletPoint from "../components/BulletPoint";
 import Image from "next/image";
-import dynamic from "next/dynamic";
-import MermaidDiagram from "../../../components/composed/MermaidDiagram";
 import { DIAGRAMS } from "@/lib/mermaid/diagrams/diagrams";
+import { DiagramCard } from "@/components/composed/DiagramCard";
 
 export default function S3MigrationPage() {
 
@@ -65,7 +64,6 @@ export default function S3MigrationPage() {
                 className="w-full rounded-lg border shadow-lg"
               />
             </div>
-
             {/* Overview Section */}
             <section className="mb-16">
               <div className="flex gap-3 items-center mb-6">
@@ -103,27 +101,16 @@ export default function S3MigrationPage() {
                   </div>
                 </CardContent>
               </Card>
-
-
               <Separator className="my-8" />
-                <div className="flex flex-col mb-12">
-              <h2 className="text-2xl font-bold case-gradient-text mb-2">
-                Legacy Upload Process (The Memory Bottleneck)
-              </h2>
-              <Card>
-                <MermaidDiagram chart={DIAGRAMS.LEGACY_UPLOAD} />
-              </Card>
-            </div>
-            <div className="flex flex-col mb-12">
-              <h2 className="text-2xl font-bold case-gradient-text mb-2">
-                Legacy Retrieval Process (The Bandwidth Hog)
-              </h2>
-              <Card>
-                <MermaidDiagram chart={DIAGRAMS.LEGACY_RETRIEVAL} />
-              </Card>
-            </div>            
+              <DiagramCard
+                title="Legacy Upload Process (The Memory Bottleneck)"
+                chart={DIAGRAMS.LEGACY_UPLOAD}
+              />
+              <DiagramCard
+                title="Legacy Retrieval Process (The Bandwidth Hog)"
+                chart={DIAGRAMS.LEGACY_RETRIEVAL}
+              />
             </section>
-
             {/* Goals & Challenges */}
             <section className="mb-16">
               <div className="flex gap-3 items-center mb-6">
@@ -141,7 +128,7 @@ export default function S3MigrationPage() {
                     </h3>
                     <ul className="space-y-3">
                       <BulletPoint
-                        text="Reduce database storage footprint by migrating binary data to an external Object Storage solution (AWS S3)."
+                        text="Reduce database storage footprint by offloading binary storage from MySQL to object storage (S3)"
                         className="bg-emerald-700 dark:bg-emerald-400"
                       />
                       <BulletPoint
@@ -156,6 +143,10 @@ export default function S3MigrationPage() {
                         text="Eliminate the 33% storage overhead caused by Base64 encoding at the database level."
                         className="bg-emerald-700 dark:bg-emerald-400"
                       />
+                      <BulletPoint
+                        text="Reduce server memory and CPU usage during file upload/download flows by eliminating full in-memory transformations."
+                        className="bg-emerald-700 dark:bg-emerald-400"
+                      />
                     </ul>
                   </CardContent>
                 </Card>
@@ -166,7 +157,7 @@ export default function S3MigrationPage() {
                     </h3>
                     <ul className="space-y-3">
                       <BulletPoint
-                        text="Executing a safe, data-complete migration within a strictly scheduled maintenance window to prioritize data integrity and avoid unnecessary architectural complexity."
+                        text="Executing a safe, data-complete migration within a strictly scheduled maintenance window to prioritize data integrity."
                         className="bg-blue-700 dark:bg-blue-400"
                       />
                       <BulletPoint
@@ -175,6 +166,10 @@ export default function S3MigrationPage() {
                       />
                       <BulletPoint
                         text="Maintaining strict access control for private customer files once they left the internal network environment."
+                        className="bg-blue-700 dark:bg-blue-400"
+                      />
+                      <BulletPoint
+                        text="Handling partial failures and ensuring consistency between database records and S3 objects (avoiding orphaned files or broken references).."
                         className="bg-blue-700 dark:bg-blue-400"
                       />
                     </ul>
@@ -187,7 +182,23 @@ export default function S3MigrationPage() {
                     </h3>
                     <ul className="space-y-3">
                       <BulletPoint
-                        text="The primary bottleneck was the existing Base64 Bloat; since Base64 encoding increases file size by roughly one-third, the MySQL server was working 30% harder than necessary for every read/write operation involving files."
+                        text="Base64 Storage Overhead (~33%), inflated storage size, larger indexes, slower I/O."
+                        className="bg-red-700 dark:bg-red-400"
+                      />
+                      <BulletPoint
+                        text="Critical Memory Bottleneck, Files are fully loaded into memory during both upload and retrieval, causing:High RAM usage, Increased GC pressure and Risk of OOM under concurrency."
+                        className="bg-red-700 dark:bg-red-400"
+                      />
+                      <BulletPoint
+                        text="Constant Base64 encode/decode cycles add unnecessary CPU load on every request."
+                        className="bg-red-700 dark:bg-red-400"
+                      />
+                      <BulletPoint
+                        text="Database Misuse (Core Design Flaw), MySQL is being used as a blob store instead of what it’s good at (relational data), leading to: Slower queries, Larger backups, Poor scaling characteristics."
+                        className="bg-red-700 dark:bg-red-400"
+                      />
+                      <BulletPoint
+                        text="Bandwidth Amplification, base64 increases payload size over the wire, meaning: Slower responses, Higher network costs, Worse performance for mobile clients."
                         className="bg-red-700 dark:bg-red-400"
                       />
                     </ul>
@@ -198,7 +209,6 @@ export default function S3MigrationPage() {
 
             <Separator className="my-16" />
 
-          
             <Separator className="my-16" />
 
             {/* Solutions & Contributions */}
@@ -210,42 +220,18 @@ export default function S3MigrationPage() {
                 </h2>
               </div>
 
-              <div className="flex flex-col mb-12">
-                <h2 className="text-2xl font-bold case-gradient-text mb-2">
-                  Modern Upload Process (Stream-to-S3)
-                </h2>
-                <Card>
-                  <MermaidDiagram chart={DIAGRAMS.NEW_UPLOAD} />
-                </Card>
-              </div>
-
-              <div className="flex flex-col mb-12">
-                <h2 className="text-2xl font-bold case-gradient-text mb-2">
-                  Eventual Consistency (The SQS Worker Pattern)
-                </h2>
-                <Card>
-                  <MermaidDiagram chart={DIAGRAMS.NEW_UPLOAD_EV} />
-                </Card>
-              </div>
-
-              <div className="flex flex-col mb-12">
-                <h2 className="text-2xl font-bold case-gradient-text mb-2">
-                  Modern Private Retrieval (Pre-signed URLs)
-                </h2>
-                <Card>
-                  <MermaidDiagram chart={DIAGRAMS.NEW_RETRIEVAL} />
-                </Card>
-              </div>
-
-              <div className="flex flex-col mb-12">
-                <h2 className="text-2xl font-bold case-gradient-text mb-2">
-                  Data Migration Process (Maintenance Window)
-                </h2>
-                <Card>
-                  <MermaidDiagram chart={DIAGRAMS.MIGRATION} />
-                </Card>
-              </div>
-
+              <DiagramCard
+                title="Modern Upload Process (Presigned URL + Event-Driven)"
+                chart={DIAGRAMS.NEW_UPLOAD}
+              />        
+              <DiagramCard
+                title="Modern Private Retrieval (Pre-signed URLs)"
+                chart={DIAGRAMS.NEW_RETRIEVAL}
+              />
+              <DiagramCard
+                title="Data Migration Process (Maintenance Window)"
+                chart={DIAGRAMS.MIGRATION}
+              />
               <div className="space-y-8">
                 <div>
                   <h3 className="text-xl font-semibold case-gradient-text">
@@ -255,10 +241,12 @@ export default function S3MigrationPage() {
                   <Card className="mt-3">
                     <CardContent>
                       <ul className="space-y-3">
-                        <BulletPoint text="Developed a purpose-built .NET migration script that fetched legacy Base64 batches, decoded them in-memory, and streamed the binary data directly to S3. This diskless, stream-based approach maximized throughput and allowed us to meet strict maintenance window deadlines." />
-                        <BulletPoint text="Implemented a Repository Pattern adjustment to swap direct DB file-fetching for S3 object-key referencing." />
+                        <BulletPoint text="Developed a purpose-built .NET migration script that processed legacy Base64 data in controlled batches, decoding and streaming files directly to S3 in a diskless manner. The pipeline was designed to be idempotent and resumable, allowing safe retries without duplicating objects or corrupting database references in the event of partial failures. Batch sizing and throughput were tuned to meet strict maintenance window constraints while maintaining data integrity." />
+                        <BulletPoint text="Refactored the data access layer to replace database-stored blobs with lightweight S3 object references. Introduced a resolution layer responsible for generating pre-signed URLs on demand, fully decoupling file retrieval from the relational database and eliminating binary payload handling within the application layer." />
                         <BulletPoint text="Configured S3 Lifecycle Policies to automate data tiering, further optimizing costs for older, less-frequently accessed documents." />
-                        <BulletPoint text="Designed an event-driven validation pipeline using AWS SQS and a .NET Background Service. Rather than trusting client-side upload confirmations, the system listens for native s3:ObjectCreated events, validates the file's ETag, and asynchronously updates the MySQL database to an 'Active' state, ensuring 100% data integrity." />
+                        <BulletPoint text="Designed an event-driven validation pipeline using AWS SQS and a .NET Background Service to decouple upload confirmation from persistence logic. Instead of trusting client-side acknowledgements, the system reacts to native s3:ObjectCreated events, validates uploaded objects via ETag inspection, and asynchronously updates the database state. The SQS consumer was implemented as an idempotent handler to safely process duplicate messages under SQS’s at-least-once delivery model, ensuring consistency in an eventually consistent architecture." />
+                        <BulletPoint text="Implemented compensating mechanisms to handle edge cases where uploads succeeded but downstream processing failed, preventing orphaned S3 objects and stale database records. This ensured long-term consistency between storage and metadata layers despite asynchronous processing boundaries." />
+                        <BulletPoint text="Introduced structured logging and monitoring across the upload and processing pipeline to track system health, SQS message handling, and failure scenarios, enabling faster debugging and operational visibility in a distributed environment." />
                       </ul>
                     </CardContent>
                   </Card>
@@ -271,7 +259,8 @@ export default function S3MigrationPage() {
                   <Card>
                     <CardContent>
                       <ul className="space-y-3">
-                        <BulletPoint text="Completely offloaded file payload processing from the .NET monolith. By generating Pre-signed POST URLs and policy documents, clients upload binary files directly to the AWS bucket via multipart/form-data. This bypassed the backend entirely for file payloads, reducing CPU overhead and permanently eliminating OOM errors." />
+                        <BulletPoint text="Completely offloaded file payload processing from the .NET monolith by introducing pre-signed POST policies. Clients upload files directly to S3 using multipart/form-data, removing the backend from the data path entirely. This eliminated CPU-intensive encoding/decoding operations and reduced memory usage by avoiding full in-memory buffering, effectively resolving OOM issues under concurrent load." />
+                        <BulletPoint text="Leveraged S3 multipart uploads to support large files with parallelized chunk transfers, improving upload resilience and throughput while reducing the impact of network instability on client operations." />
                         <BulletPoint text="Integrated a caching layer for S3 metadata to reduce the number of redundant API calls to AWS." />
                       </ul>
                     </CardContent>
@@ -286,7 +275,7 @@ export default function S3MigrationPage() {
                     <CardContent>
                       <ul className="space-y-3">
                         <BulletPoint text="Leveraged AWS IAM roles and policies to ensure Least Privilege access for the .NET service layer." />
-                        <BulletPoint text="Implemented Pre-signed POST policies for all client uploads. Instead of issuing simple PUT URLs, the .NET backend generated cryptographically signed POST policies that enforced strict file size limits and content-type validations directly at the AWS edge, ensuring malicious or oversized payloads were rejected before consuming internal bandwidth." />
+                        <BulletPoint text="Implemented pre-signed POST policies for all client uploads, enforcing strict constraints such as file size limits, content-type validation, and object key scoping directly at the S3 level. All signed requests were short-lived and tightly scoped, minimizing exposure and mitigating replay risks while ensuring that invalid or malicious payloads were rejected before reaching internal systems." />
                       </ul>
                     </CardContent>
                   </Card>
@@ -306,52 +295,14 @@ export default function S3MigrationPage() {
                 </h2>
               </div>
 
-              <div className="grid gap-6 md:grid-cols-3">
-                <Card>
-                  <CardContent className="p-6 text-center">
-                    <div className="mb-2 text-3xl font-bold text-emerald-700 dark:text-emerald-400">
-                      30%
-                    </div>
-                    <div className="text-sm text-zinc-600 dark:text-muted-foreground">
-                      Cost Reduction
-                    </div>
-                  </CardContent>
-                </Card>
-                <Card>
-                  <CardContent className="p-6 text-center">
-                    <div className="mb-2 text-3xl font-bold text-teal-700 dark:text-teal-400">
-                      33%
-                    </div>
-                    <div className="text-sm text-zinc-600 dark:text-muted-foreground">
-                      Storage Savings
-                    </div>
-                  </CardContent>
-                </Card>
-                <Card>
-                  <CardContent className="p-6 text-center">
-                    <div className="mb-2 text-3xl font-bold text-cyan-700 dark:text-cyan-400">
-                      99.8%
-                    </div>
-                    <div className="text-sm text-zinc-600 dark:text-muted-foreground">
-                      Reliability
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
-
               <Card className="mt-6">
                 <CardContent>
-                  <div className="max-w-none prose prose-lg">
-                    <p className="text-lg leading-relaxed">
-                      Significantly lowered monthly infrastructure bills by
-                      moving data from expensive DB storage to cost-effective S3
-                      buckets. Reclaimed massive amounts of disk space by
-                      storing files in their native binary format rather than
-                      encoded strings and Established a robust, distributed
-                      storage architecture that isolated file-serving from
-                      application logic, preventing the database from becoming a
-                      single point of failure.
-                    </p>
+                  <div className="flex flex-col gap-3">
+                      <BulletPoint text="Reduced storage costs by approximately 30% by eliminating Base64 encoding overhead and offloading binary data from MySQL to S3, leveraging cost-efficient storage tiers for infrequently accessed files." />
+                      <BulletPoint text="Decreased database storage footprint by over 33% by storing files in their native binary format rather than encoded strings, resulting in faster query performance and smaller backup sizes." />
+                      <BulletPoint text="Improved system reliability by removing the backend from the file transfer path and introducing asynchronous validation, eliminating failure modes related to memory pressure, request timeouts, and large payload handling." />
+                      <BulletPoint text="Reduced application server memory usage during file operations by an estimated 80–90%, enabling the system to handle higher concurrency without degradation." />
+                      <BulletPoint text="Established a scalable, decoupled architecture where file storage, validation, and metadata management operate independently, allowing horizontal scaling of background workers and preventing the database from becoming a system-wide bottleneck." />
                   </div>
                 </CardContent>
               </Card>

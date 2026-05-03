@@ -78,7 +78,7 @@ export default function HeroSection() {
       </div>
       <div className="flex flex-1 justify-center py-2 opacity-0" ref={imageRef}>
         <div className="relative">
-          <div className="flex h-64 w-64 rotate-3 items-center justify-center rounded-lg bg-linear-to-r from-teal-500 to-sky-500 text-6xl font-bold text-white shadow-[0_0_5px_5px_rgba(20,184,166,0.6)] md:h-80 md:w-80">
+          <div className="flex justify-center items-center w-64 h-64 text-6xl font-bold text-white from-teal-500 rounded-lg rotate-3 md:w-80 md:h-80 bg-linear-to-r to-sky-500 shadow-[0_0_5px_5px_rgba(20,184,166,0.6)]">
             <div className="flex absolute justify-center items-center bg-white rounded-lg inset-[2px]">
               <ThemeImage imgSrc="/me.webp" imgSrcDark="/rel.webp" />
             </div>

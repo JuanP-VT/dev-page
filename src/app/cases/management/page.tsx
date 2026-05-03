@@ -345,7 +345,7 @@ export default function ManagementPage() {
                     <CardContent>
                       <div className="text-lg leading-relaxed">
                         The Management platform was the first project I worked on after joining the company  and it came with a steep learning curve. The codebase, inherited from a previous developer, was heavily abstracted and often difficult to navigate. While some of the patterns were technically impressive in isolation, they made understanding and extending the system unnecessarily complex. There was minimal documentation, very few inline comments, and a strong reliance on 'self-explanatory' code that often wasn't. Adapting to this environment required persistence, patience, and a shift in how I approach unfamiliar architectures. Over time, I learned how to:
-                        <ul className="space-y-3 my-2">
+                        <ul className="my-2 space-y-3">
                           <BulletPoint text="Navigate deeply abstracted logic across scattered files and unconventional custom hooks." />
                           <BulletPoint text="Reverse-engineer intent from unclear structures and limited documentation." />
                           <BulletPoint text="Deliver new features and improvements without introducing regressions in a fragile codebase." />
@@ -365,7 +365,7 @@ export default function ManagementPage() {
                     <CardContent>
                       <div className="text-lg leading-relaxed">
                         While I delivered all tasks and features as requested, working on the Management platform highlighted some broader areas where the project  and my own approach  could evolve. The codebase I inherited was functional but overly complex, with deep abstractions and minimal documentation. In hindsight, I would have pushed earlier for:
-                        <ul className="space-y-3 my-2">
+                        <ul className="my-2 space-y-3">
                           <BulletPoint text="Gradually simplifying unnecessarily complex patterns to make the codebase more approachable for future developers." />
                           <BulletPoint text="Introducing clearer internal documentation or inline comments to reduce onboarding time and mental overhead." />
                         </ul>

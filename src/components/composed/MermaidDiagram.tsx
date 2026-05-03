@@ -55,5 +55,5 @@ const lightTheme = `{
     })
   }, [chart, themeString])
 
-return <div ref={ref} className="mermaid-diagram flex justify-center" />
+return <div ref={ref} className="flex justify-center mermaid-diagram" />
 }
