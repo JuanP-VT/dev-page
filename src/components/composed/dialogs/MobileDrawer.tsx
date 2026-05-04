@@ -54,11 +54,11 @@ export default function MobileDrawer({ buttonRef }: { buttonRef: React.RefObject
       )}
     >
       <div className="flex flex-col font-mono">
-        <NavBarOption id="About" />
-        <NavBarOption id="Tech" />
-        <NavBarOption id="Projects" />
-        <NavBarOption id="Experience" />
-        <NavBarOption id="Contact" />
+        <NavBarOption id="about" />
+        <NavBarOption id="tech" />
+        <NavBarOption id="projects" />
+        <NavBarOption id="experience" />
+        <NavBarOption id="contact" />
       </div>
       <div className="flex gap-5 py-5 w-full">
         <ThemeChanger />
