@@ -14,7 +14,7 @@ export const NEW_UPLOAD_DIAGRAM = `graph TD
     end
 
     subgraph Backend Infrastructure
-        WORKER[Background Worker / Lambda]
+        WORKER[Background Worker]
         DB[(MySQL Database)]
         OBS[CloudWatch Logs & Metrics]
     end
@@ -22,7 +22,7 @@ export const NEW_UPLOAD_DIAGRAM = `graph TD
     C -- "1. Request upload (user, metadata)" --> API
     API -- "2. Create record status='pending', correlation ID" --> DB
     API -- "3. Return presigned URL + fileId" --> C
-    C -- "4. PUT file with metadata (correlation ID, fileId)" --> S3
+    C -- "4. POST file with metadata (correlation ID, fileId)" --> S3
     S3 -- "5. s3:ObjectCreated event" --> SQS
     SQS -- "6. Poll (maxReceiveCount=3)" --> WORKER
     WORKER -- "7. Validate file, extract ETag + correlation ID" --> WORKER
