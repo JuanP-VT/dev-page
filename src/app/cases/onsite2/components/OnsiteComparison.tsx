@@ -97,7 +97,7 @@ const useGetCarrousel = () => {
         title: "Dashboard",
         beforeImage:
           "/img/projects/onsite/carrousel/desktop/oldonsite-main.webp",
-        afterImage: "/img/projects/onsite2/carrousel/desktop/onsite-main.webp",
+        afterImage: "/img/projects/onsite2/carrousel/desktop/onsite-dashboard.webp",
       },
       {
         title: "Account Summary",
